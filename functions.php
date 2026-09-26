@@ -13,6 +13,18 @@ add_action('after_setup_theme', function() {
     add_theme_support('title-tag');
 });
 
+// ── Retired Zip pages → Finance Options (301) ──────────────────────────────
+// Zip exited NZ (July 2026). Old /zip-car-repairs/ and /zip-mechanic-*/ URLs
+// may still be indexed from the previous site.
+add_action('template_redirect', function() {
+    if (!is_404()) return;
+    $path = trim((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    if (preg_match('#^zip-(car-repairs|mechanic-[a-z-]+)$#', $path)) {
+        wp_safe_redirect(home_url('/finance-options/'), 301);
+        exit;
+    }
+});
+
 add_action( 'wp_enqueue_scripts', 'taas_child_enqueue_styles' );
 function taas_child_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );

@@ -127,7 +127,6 @@ $services = [
 // ── FAQs — from shared library when provider_id matches, generic fallback ────
 $faq_map = [
     'afterpay' => ['afterpay_any_repair','afterpay_account_setup','afterpay_spend_limit','afterpay_interest_free','afterpay_missed_payment','afterpay_how_to_pay','afterpay_credit_score'],
-    'zip'      => ['zip_any_repair','zip_account_setup','zip_spend_limit','zip_interest_free','zip_how_to_pay','zip_missed_payment','zip_credit_score'],
     'qcard'    => ['qcard_any_repair','qcard_how_to_get','qcard_spend_limit','qcard_interest_free','qcard_repayments','qcard_after_promo'],
     'gem'      => ['gem_any_repair','gem_account_setup','gem_spend_limit','gem_interest_free','gem_how_to_pay','gem_missed_payment'],
     'aotea'    => ['aotea_any_repair','aotea_how_to_apply','aotea_interest','aotea_approval_time','aotea_declined_elsewhere','aotea_arrange_before'],

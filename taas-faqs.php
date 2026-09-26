@@ -447,41 +447,6 @@ $taas_faqs['afterpay_credit_score'] = [
    FINANCE — ZIP SPOKE
 ═══════════════════════════════════════════════════════════════════════════ */
 
-$taas_faqs['zip_any_repair'] = [
-    'q' => 'Can I use Zip for any repair at Tony Allen Auto Service?',
-    'a' => 'Yes. Zip is accepted across our full range of services — WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, clutch, diagnostics, and more. The only limit is your available Zip account balance. Check your limit in the Zip app before booking a large repair.',
-];
-
-$taas_faqs['zip_account_setup'] = [
-    'q' => 'Do I need a Zip account before I come in?',
-    'a' => 'Yes. You need an active Zip account before paying in-store. Download the Zip app and complete sign-up before your collection appointment. Approval is usually instant. Once approved, add the Zip Card to your digital wallet (Apple Pay, Google Pay, or Samsung Pay) to pay in-store.',
-];
-
-$taas_faqs['zip_spend_limit'] = [
-    'q' => 'How much can I spend with Zip?',
-    'a' => 'Zip account limits are set when you apply and can be up to $5,000 depending on your assessment. Your current available balance is shown in the Zip app. We recommend checking before booking a large job.',
-];
-
-$taas_faqs['zip_interest_free'] = [
-    'q' => 'Is Zip interest-free?',
-    'a' => 'Zip Pay offers interest-free if you pay your balance in full by the due date each month. If you carry a balance, interest applies. Zip Money offers interest-free periods on purchases over a set amount — check the Zip website for current NZ terms.',
-];
-
-$taas_faqs['zip_how_to_pay'] = [
-    'q' => 'How do I pay with Zip when I pick up my vehicle?',
-    'a' => 'Before you arrive, open the Zip app and ensure the Zip Card is added to your phone\'s digital wallet. When you collect your vehicle, let our service desk know you\'re paying with Zip and tap your phone at the payment terminal. The amount is charged to your Zip account immediately.',
-];
-
-$taas_faqs['zip_missed_payment'] = [
-    'q' => 'What happens if I miss a Zip payment?',
-    'a' => 'Zip sends payment reminders before your due date. If a payment is missed, a late fee may apply. Check the Zip app or zip.co/nz for current NZ fee details. Keeping up with repayments helps maintain your account in good standing.',
-];
-
-$taas_faqs['zip_credit_score'] = [
-    'q' => 'Will using Zip affect my credit score?',
-    'a' => 'Zip performs a credit assessment when you first apply. This check may be visible to other lenders. Responsible use of your Zip account — keeping repayments on time and within your limit — can have a positive effect over time.',
-];
-
 
 /* ═══════════════════════════════════════════════════════════════════════════
    FINANCE — Q CARD SPOKE
