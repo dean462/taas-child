@@ -1,0 +1,340 @@
+<?php
+/**
+ * Template Name: Air Conditioning Location Spoke
+ * Template Post Type: page
+ *
+ * Tony Allen Auto Service — taas.co.nz
+ * URL pattern: /air-conditioning-[suburb]/
+ * Serves 17 suburb spoke pages with unique distance data.
+ * CSS namespace: .acl-
+ *
+ * Rebuilt June 2026 — full design system compliance
+ * Self-contained suburbs array, CF7 inline, pricing section
+ * Section order: Hero → Trust → What to expect → Services → Pricing → Enquiry → Suburbs → FAQ
+ */
+
+require_once get_stylesheet_directory() . '/taas-constants.php';
+require_once get_stylesheet_directory() . '/taas-faqs.php';
+wp_enqueue_style('taas-global', get_stylesheet_directory_uri() . '/taas-global.css');
+wp_enqueue_style('taas-font', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+// ── Constants ────────────────────────────────────────────────────────────────
+$site_url      = get_site_url();
+$page_url      = get_permalink();
+$post_id       = get_the_ID();
+$phone_free    = defined('TAAS_PHONE_FREE')    ? TAAS_PHONE_FREE    : '0800 100 876';
+$phone_local   = defined('TAAS_PHONE_LOCAL')   ? TAAS_PHONE_LOCAL   : '09 278 9556';
+$email         = defined('TAAS_EMAIL')         ? TAAS_EMAIL         : 'enquiries@taas.co.nz';
+$address       = defined('TAAS_ADDRESS')       ? TAAS_ADDRESS       : '139 Cavendish Drive, Manukau, Auckland 2104';
+$hours         = defined('TAAS_HOURS')         ? TAAS_HOURS         : 'Monday–Friday 7:30am–5:00pm';
+$established   = defined('TAAS_ESTABLISHED')   ? TAAS_ESTABLISHED   : '1985';
+$rating        = defined('TAAS_RATING')        ? TAAS_RATING        : '4.2';
+$reviews       = defined('TAAS_REVIEWS')       ? TAAS_REVIEWS       : '200+';
+$customers     = defined('TAAS_CUSTOMERS')     ? TAAS_CUSTOMERS     : '10,000+';
+$division_count = defined('TAAS_DIVISION_COUNT') ? TAAS_DIVISION_COUNT : '7';
+$finance_list    = defined('TAAS_FINANCE_LIST')   ? TAAS_FINANCE_LIST   : 'Afterpay, Q Card, GEM, Aotea Finance';
+$mbi_list        = defined('TAAS_MBI_LIST')       ? TAAS_MBI_LIST       : 'Autosure, Assurant, Provident, Janssen, Autolife';
+$aircon_price  = defined('TAAS_AIRCON_PRICE')  ? TAAS_AIRCON_PRICE  : 'from $280';
+$euro_brands   = defined('TAAS_EURO_BRANDS')   ? TAAS_EURO_BRANDS   : 'Audi, BMW, Volkswagen, Skoda, Mercedes-Benz, Land Rover, Range Rover & more';
+$cf7_general   = defined('TAAS_CF7_GENERAL')   ? TAAS_CF7_GENERAL   : '';
+$phone_tel     = preg_replace('/[^0-9+]/', '', $phone_free);
+$years         = date('Y') - intval($established);
+$maps_url      = 'https://www.google.com/maps/search/?api=1&query=Tony+Allen+Auto+Service+139+Cavendish+Drive+Manukau';
+$hero_img = defined('TAAS_HERO_DEFAULT') ? TAAS_HERO_DEFAULT : '';
+$hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%,rgba(17,17,17,.92) 100%),url('" . esc_url($hero_img) . "') center 38%/cover no-repeat;" : '';
+$review_count  = preg_replace('/\D+/', '', $reviews);
+
+// ── Master suburbs array ─────────────────────────────────────────────────────
+$suburbs_master = [
+    'papatoetoe'     => ['label'=>'Papatoetoe',     'distance'=>'~5 min via Great South Rd','area'=>'Papatoetoe, Hunters Corner, Manukau, Ōtāhuhu, Māngere, and Wiri'],
+    'manukau'        => ['label'=>'Manukau',         'distance'=>'at our address on Cavendish Drive','area'=>'Manukau CBD, Wiri, Papatoetoe, Hunters Corner, Ōtara, and Māngere'],
+    'mangere'        => ['label'=>'Māngere',         'distance'=>'~10 min from Māngere town centre','area'=>'Māngere, Māngere Bridge, Māngere East, Favona, Papatoetoe, and Ōtāhuhu'],
+    'mangere-bridge' => ['label'=>'Māngere Bridge',  'distance'=>'~12 min via Māngere Bridge Rd','area'=>'Māngere Bridge, Māngere, Favona, Ōtāhuhu, Papatoetoe, and Manukau'],
+    'otahuhu'        => ['label'=>'Ōtāhuhu',         'distance'=>'~10 min via Great South Rd','area'=>'Ōtāhuhu, Māngere, Papatoetoe, Mt Wellington, Sylvia Park, and Manukau'],
+    'wiri'           => ['label'=>'Wiri',             'distance'=>'~5 min via Cavendish Drive','area'=>'Wiri, Manukau, Manurewa, Papatoetoe, Ōtara, and Takanini'],
+    'manurewa'       => ['label'=>'Manurewa',         'distance'=>'~10 min via Great South Rd','area'=>'Manurewa, Clendon, Wiri, Manukau, Weymouth, and Takanini'],
+    'flat-bush'      => ['label'=>'Flat Bush',        'distance'=>'~15 min via Ormiston Rd','area'=>'Flat Bush, Ormiston, Clover Park, Ōtara, Manukau, Howick, and Dannemora'],
+    'takanini'       => ['label'=>'Takanini',         'distance'=>'~12 min via Great South Rd','area'=>'Takanini, Conifer Grove, Manurewa, Papakura, Wiri, Manukau, and Clendon'],
+    'papakura'       => ['label'=>'Papakura',         'distance'=>'~15 min via Great South Rd','area'=>'Papakura, Takanini, Manurewa, Clendon, Drury, and Manukau'],
+    'otara'          => ['label'=>'Ōtara',            'distance'=>'~8 min via East Tāmaki Rd','area'=>'Ōtara, East Tāmaki, Clover Park, Flat Bush, Hunters Corner, and Wiri'],
+    'botany'         => ['label'=>'Botany',           'distance'=>'~20 min via Ti Rakau Drive','area'=>'Botany Downs, Botany Town Centre, Chapel Downs, Dannemora, Flat Bush, and Howick'],
+    'howick'         => ['label'=>'Howick',           'distance'=>'~20 min via Ti Rakau Drive','area'=>'Howick, Pakuranga, Half Moon Bay, Bucklands Beach, Flat Bush, Clover Park, and Botany'],
+    'clover-park'    => ['label'=>'Clover Park',      'distance'=>'~10 min via Ti Rakau Drive','area'=>'Clover Park, Ōtara, Flat Bush, Manukau, Howick, and Hunters Corner'],
+    'weymouth'       => ['label'=>'Weymouth',         'distance'=>'~18 min via Weymouth Rd','area'=>'Weymouth, Wattle Downs, Manurewa, Clendon, Manukau, Wiri, and Takanini'],
+    'clendon'        => ['label'=>'Clendon',          'distance'=>'~15 min via Roscommon Rd','area'=>'Clendon Park, Manurewa, Weymouth, Manukau, Wiri, and Takanini'],
+    'hunters-corner' => ['label'=>'Hunters Corner',   'distance'=>'~5 min via Lambie Drive','area'=>'Hunters Corner, Papatoetoe, Manukau, Ōtara, Wiri, and Middlemore'],
+];
+
+// ── Current suburb data ──────────────────────────────────────────────────────
+$has_acf     = function_exists('get_field');
+$suburb_name = ($has_acf ? get_field('suburb_name') : null) ?: get_post_meta($post_id, 'suburb_name', true) ?: 'South Auckland';
+$suburb_slug = ($has_acf ? get_field('suburb_slug') : null) ?: get_post_meta($post_id, 'suburb_slug', true) ?: sanitize_title($suburb_name);
+
+$sub = isset($suburbs_master[$suburb_slug]) ? $suburbs_master[$suburb_slug] : null;
+$distance    = $sub ? $sub['distance'] : 'a short drive';
+$area_served = $sub ? $sub['area'] : $suburb_name;
+
+if ($suburb_slug === 'manukau') {
+    $distance_text = 'at 139 Cavendish Drive, Manukau';
+} elseif (strpos($distance, 'from') !== false) {
+    $distance_text = $distance;
+} else {
+    $distance_text = $distance . ' from ' . $suburb_name;
+}
+
+// Custom FAQs
+$custom_faq_q1 = get_post_meta($post_id, 'custom_faq_q1', true) ?: '';
+$custom_faq_a1 = get_post_meta($post_id, 'custom_faq_a1', true) ?: '';
+$custom_faq_q2 = get_post_meta($post_id, 'custom_faq_q2', true) ?: '';
+$custom_faq_a2 = get_post_meta($post_id, 'custom_faq_a2', true) ?: '';
+
+// ── Badge helper ─────────────────────────────────────────────────────────────
+function acl_badge($initials, $size = 36) {
+    $len = strlen($initials);
+    $fs = $len > 3 ? intval($size * 0.225) : ($len > 2 ? intval($size * 0.275) : intval($size * 0.35));
+    return '<svg width="'.$size.'" height="'.$size.'" viewBox="0 0 '.$size.' '.$size.'" xmlns="http://www.w3.org/2000/svg"><circle cx="'.($size/2).'" cy="'.($size/2).'" r="'.($size/2).'" fill="#1A1A1A"/><text x="'.($size/2).'" y="'.($size/2+1).'" text-anchor="middle" dominant-baseline="central" fill="#FFC800" font-family="Inter,Arial,sans-serif" font-size="'.$fs.'" font-weight="800">'.$initials.'</text></svg>';
+}
+
+// ── FAQs ─────────────────────────────────────────────────────────────────────
+$faqs = [
+    ['q'=>'How much does a car air conditioning regas cost near '.$suburb_name.'?',
+     'a'=>'A standard regas and dye test starts '.$aircon_price.' at Tony Allen Auto Service — '.$distance_text.'. We test the system first and always tell you what we find before starting any work. Call '.$phone_free.' for a current estimate.'],
+    ['q'=>'How far is Tony Allen Auto Service from '.$suburb_name.'?',
+     'a'=>'Tony Allen Auto Service is '.$distance_text.'. Our address is 139 Cavendish Drive, Manukau, Auckland 2104. We serve '.$area_served.'. Open '.$hours.'.'],
+    ['q'=>'Do you diagnose before recommending AC repairs?',
+     'a'=>'Yes — always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure. Estimate provided before proceeding.'],
+    ['q'=>'What air conditioning services do you offer near '.$suburb_name.'?',
+     'a'=>'We offer regas and dye test, system diagnosis and repair, leak and blockage detection, compressor repair, climate control repair, cabin filter replacement, custom hose manufacture, odour treatment, and windscreen demisting diagnosis. All work done in-house at our Manukau workshop.'],
+    ['q'=>'Can you work on European vehicle AC systems?',
+     'a'=>'Yes. We service air conditioning on all makes including '.$euro_brands.'. European vehicles often have specific refrigerant requirements and dual-zone climate systems — we have the equipment and knowledge to handle these.'],
+    ['q'=>'My car AC smells musty — can you fix it?',
+     'a'=>'Yes. A musty smell usually comes from bacterial growth on the evaporator inside the dashboard. We carry out an antibacterial treatment and cabin filter replacement. This is a common issue, especially after winter when the AC has not been used for months.'],
+    ['q'=>'Do I need to book for an AC service?',
+     'a'=>'Booking is recommended to guarantee a time slot. Walk-ins are welcome mornings subject to availability. If your AC has stopped working suddenly, call '.$phone_free.' and we will do our best to fit you in. Diagnosis often available same day.'],
+    ['q'=>'Can I pay for AC repairs with Afterpay near '.$suburb_name.'?',
+     'a'=>'Yes — Tony Allen Auto Service accepts Afterpay, Q Card, GEM Finance, and Aotea Finance. You can spread the cost of your repair over time.'],
+    ['q'=>'How long does an AC regas take?',
+     'a'=>'A standard regas takes around 45 to 60 minutes. If diagnosis is needed first, allow 1 to 1.5 hours. Repairs take longer depending on the fault — we advise you of the timeframe when we provide your estimate.'],
+    ['q'=>'Where is your air conditioning workshop?',
+     'a'=>'Tony Allen Auto Service is at 139 Cavendish Drive, Manukau, Auckland 2104 — '.$distance_text.'. Open '.$hours.'. Call '.$phone_free.' to book.'],
+];
+if ($custom_faq_q1 && $custom_faq_a1) { $faqs[] = ['q'=>$custom_faq_q1,'a'=>$custom_faq_a1]; }
+if ($custom_faq_q2 && $custom_faq_a2) { $faqs[] = ['q'=>$custom_faq_q2,'a'=>$custom_faq_a2]; }
+
+// ── Schema ───────────────────────────────────────────────────────────────────
+$schema_faqs = [];
+foreach ($faqs as $f) { $schema_faqs[] = ['@type'=>'Question','name'=>$f['q'],'acceptedAnswer'=>['@type'=>'Answer','text'=>$f['a']]]; }
+$schema = [
+    '@context'=>'https://schema.org',
+    '@graph'=>[
+        ['@type'=>'BreadcrumbList','itemListElement'=>[
+            ['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],
+            ['@type'=>'ListItem','position'=>2,'name'=>'Air Conditioning','item'=>$site_url.'/air-conditioning/'],
+            ['@type'=>'ListItem','position'=>3,'name'=>'Air Conditioning '.$suburb_name,'item'=>$page_url]]],
+        ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,
+         'telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10',
+         'address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],
+         'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],
+         'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],
+         'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>$review_count,'bestRating'=>'5'],
+         'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],
+         'sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],
+         'paymentAccepted'=>['Cash','EFTPOS','Visa','Mastercard','Afterpay','Zip','Q Card','Gem Finance'],
+         'areaServed'=>['@type'=>'Place','name'=>$suburb_name.', South Auckland']],
+        ['@type'=>'FAQPage','mainEntity'=>$schema_faqs],
+        ['@type'=>'SpeakableSpecification','cssSelector'=>['.acl-hero__sub','.acl-faq__a:first-of-type p']],
+    ],
+];
+
+get_header();
+echo '<script type="application/ld+json">'.wp_json_encode($schema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE).'</script>';
+?>
+<style>
+.page-template-template-aircon-location .site-content,.page-template-template-aircon-location .entry-content,.page-template-template-aircon-location .entry-header,.page-template-template-aircon-location article,.page-template-template-aircon-location #primary,.page-template-template-aircon-location #content{padding:0!important;margin:0!important;max-width:100%!important;}
+body.page-template-template-aircon-location{overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%;font-weight:300;}
+.acl-hero h1,.acl-sec__h2,.acl-faq__q,.acl-svc__title{font-family:var(--taas-font,'Inter',Arial,sans-serif);}
+.acl-hero{background:var(--taas-black,#111111);padding:var(--taas-sec-pad,72px) 0 60px;text-align:center;}
+.acl-hero__inner{max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;}
+.acl-hero__eyebrow{display:inline-block;background:var(--taas-yellow,#FFC800);color:var(--taas-dark,#1A1A1A);font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:var(--taas-eye-size,10px);font-weight:700;letter-spacing:var(--taas-eye-ls,0.12em);text-transform:uppercase;padding:4px 12px;border-radius:3px;margin-bottom:20px;}
+.acl-hero h1{font-size:var(--taas-h1-spoke,clamp(30px,5vw,50px));font-weight:800;color:var(--taas-white,#FFFFFF);letter-spacing:-0.02em;line-height:1.1;margin:0 0 16px;}
+.acl-hero h1 span{color:var(--taas-yellow,#FFC800);}
+.acl-hero__sub{font-size:16px;color:#aaa;max-width:600px;margin:0 auto 12px;line-height:1.75;}
+.acl-hero__price{font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:15px;font-weight:600;color:var(--taas-yellow,#FFC800);margin-bottom:24px;}
+.acl-hero__ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.acl-trust{background:var(--taas-yellow,#FFC800);padding:18px 0;}
+.acl-trust__inner{max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;gap:40px;align-items:center;justify-content:center;flex-wrap:wrap;}
+.acl-trust__item{font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;font-weight:600;color:var(--taas-dark,#1A1A1A);display:flex;align-items:center;gap:7px;white-space:nowrap;}
+.acl-trust__item::before{content:'✓';font-weight:900;}
+.acl-sec{padding:var(--taas-sec-pad,72px) 0;}
+.acl-sec--white{background:var(--taas-white,#FFFFFF);}
+.acl-sec--grey{background:var(--taas-panel,#F7F7F5);}
+.acl-sec--dark{background:var(--taas-dark,#1A1A1A);}
+.acl-sec__inner{max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;}
+.acl-sec__eyebrow{display:inline-block;background:var(--taas-dark,#1A1A1A);color:var(--taas-yellow,#FFC800);font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:var(--taas-eye-size,10px);font-weight:700;letter-spacing:var(--taas-eye-ls,0.12em);text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:14px;}
+.acl-sec--dark .acl-sec__eyebrow{background:var(--taas-yellow,#FFC800);color:var(--taas-dark,#1A1A1A);}
+.acl-sec__h2{font-size:var(--taas-h2,clamp(26px,3.5vw,36px));font-weight:700;color:var(--taas-black,#111111);letter-spacing:-0.01em;margin:0 0 12px;}
+.acl-sec--dark .acl-sec__h2{color:var(--taas-white,#FFFFFF);}
+.acl-sec__body{font-size:16px;color:var(--taas-body,#333333);line-height:1.75;max-width:780px;margin:0 0 20px;}
+.acl-svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px;}
+.acl-svc{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--taas-white,#FFFFFF);border:1px solid var(--taas-border,#E8E8E4);border-radius:var(--taas-radius,6px);text-decoration:none;transition:border-color 0.15s,box-shadow 0.15s;}
+.acl-svc:hover{border-color:var(--taas-yellow,#FFC800);box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.acl-svc__title{font-size:14px;font-weight:600;color:var(--taas-black,#111111);}
+.acl-price-box{border-left:4px solid var(--taas-yellow,#FFC800);background:#fffbea;padding:24px 28px;border-radius:0 var(--taas-radius,6px) var(--taas-radius,6px) 0;margin-top:24px;}
+.acl-price-box__title{font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;font-weight:700;color:var(--taas-dark,#1A1A1A);margin-bottom:8px;}
+.acl-price-box__body{font-size:15px;color:var(--taas-body,#333333);line-height:1.75;}
+.acl-enquiry{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.acl-enquiry__phone{display:block;font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow,#FFC800);text-decoration:none;margin:16px 0 6px;}
+.acl-enquiry__phone:hover{opacity:.65;}
+.acl-enquiry__detail{font-size:15px;color:#aaa;line-height:1.75;}
+.acl-enquiry__detail strong{color:var(--taas-white,#FFFFFF);}
+.acl-sec--dark .wpcf7 label,.acl-sec--dark .wpcf7 span:not(.wpcf7-spinner),.acl-sec--dark .wpcf7 div:not(.wpcf7-response-output),.acl-sec--dark .wpcf7 p{color:#ccc!important;font-size:14px;}
+.acl-sec--dark .wpcf7 input[type="text"],.acl-sec--dark .wpcf7 input[type="email"],.acl-sec--dark .wpcf7 input[type="tel"],.acl-sec--dark .wpcf7 textarea{background:#2a2a2a;border:1px solid #444;color:#fff;border-radius:var(--taas-radius,6px);padding:10px 14px;width:100%;font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:15px;}
+.acl-sec--dark .wpcf7 input::placeholder,.acl-sec--dark .wpcf7 textarea::placeholder{color:#666;}
+.acl-sec--dark .wpcf7 input:focus,.acl-sec--dark .wpcf7 textarea:focus{outline:none;border-color:var(--taas-yellow,#FFC800);}
+.acl-sec--dark .wpcf7 input[type="submit"]{background:var(--taas-yellow,#FFC800);color:var(--taas-dark,#1A1A1A);font-family:var(--taas-font,'Inter',Arial,sans-serif);font-weight:700;font-size:var(--taas-btn-size,14px);letter-spacing:0.05em;text-transform:uppercase;border:none;padding:14px 32px;border-radius:var(--taas-radius,6px);cursor:pointer;width:100%;margin-top:4px;}
+.acl-sec--dark .wpcf7 input[type="submit"]:hover{background:var(--taas-yellow2,#e6b400);}
+.acl-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;list-style:none;padding:0;}
+.acl-pills li a{display:inline-block;padding:7px 18px;border:1px solid var(--taas-border,#E8E8E4);border-radius:100px;background:var(--taas-white,#FFFFFF);font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;color:var(--taas-body,#333333);text-decoration:none;transition:all 0.15s;}
+.acl-pills li a:hover{background:var(--taas-yellow,#FFC800);border-color:var(--taas-yellow,#FFC800);color:var(--taas-dark,#1A1A1A);font-weight:600;}
+.acl-pills li a[aria-current="page"]{background:var(--taas-yellow,#FFC800);border-color:var(--taas-yellow,#FFC800);color:var(--taas-dark,#1A1A1A);font-weight:700;}
+.acl-faq{max-width:780px;margin:28px auto 0;}
+.acl-faq__item{border-bottom:1px solid var(--taas-border,#E8E8E4);}
+.acl-faq__q{width:100%;text-align:left;background:none;border:none;padding:18px 40px 18px 0;font-size:15px;font-weight:700;color:var(--taas-black,#111111);cursor:pointer;position:relative;line-height:1.4;display:block;}
+.acl-faq__q::after{content:'+';position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:22px;font-weight:400;color:var(--taas-mid,#666666);}
+.acl-faq__item--open .acl-faq__q::after{content:'−';}
+.acl-faq__a{display:none;padding:0 0 18px;}
+.acl-faq__a p{font-size:15px;color:var(--taas-mid,#666666);line-height:1.75;margin:0;}
+.acl-faq__item--open .acl-faq__a{display:block;}
+@media(max-width:960px){.acl-svcs{grid-template-columns:repeat(2,1fr);}.acl-enquiry{grid-template-columns:1fr;gap:32px;}}
+@media(max-width:640px){.acl-enquiry{display:flex;flex-direction:column-reverse;}.acl-hero{padding:48px 0 40px;}.acl-hero h1{font-size:clamp(26px,6vw,38px);}.acl-hero__sub{font-size:14px;}.acl-hero__ctas{flex-direction:column;align-items:stretch;}.acl-hero__ctas .taas-btn{text-align:center;}.acl-sec{padding:48px 0;}.acl-sec__h2{font-size:clamp(22px,5vw,30px);}.acl-trust__inner{flex-direction:column;gap:8px;align-items:flex-start;}.acl-trust__item{font-size:12px;}.acl-svcs{grid-template-columns:1fr;}.acl-faq__q{font-size:14px;padding:16px 32px 16px 0;}.acl-faq__a p{font-size:13px;}.acl-enquiry__phone{font-size:clamp(24px,6vw,32px);}}
+</style>
+
+<!-- 1. HERO -->
+<section class="acl-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
+  <div class="acl-hero__inner">
+    <span class="acl-hero__eyebrow">Air Conditioning — <?php echo esc_html($suburb_name); ?></span>
+    <h1>Air Conditioning<br><span><?php echo esc_html($suburb_name); ?></span></h1>
+    <p class="acl-hero__sub">Regas, diagnosis and repairs for <?php echo esc_html($suburb_name); ?> customers — <?php echo esc_html($distance_text); ?>. All makes and models. Estimate before we start. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+    <div class="acl-hero__price">Standard regas &amp; dye test <?php echo esc_html($aircon_price); ?></div>
+    <div class="acl-hero__ctas">
+      <a href="#enquire" class="taas-btn taas-btn--primary">Enquire About AC Service</a>
+      <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html($phone_free); ?></a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. TRUST STRIP -->
+<div class="acl-trust"><div class="acl-trust__inner">
+  <div class="acl-trust__item">MTA Assured</div>
+  <div class="acl-trust__item">Estimate Before We Start</div>
+  <div class="acl-trust__item">Diagnosis Often Available Same Day</div>
+  <div class="acl-trust__item"><?php echo esc_html($rating); ?>★ · <?php echo esc_html($reviews); ?> Reviews</div>
+  <div class="acl-trust__item"><?php echo esc_html($distance); ?></div>
+</div></div>
+
+<!-- 3. WHAT TO EXPECT -->
+<section class="acl-sec acl-sec--white">
+  <div class="acl-sec__inner">
+    <span class="acl-sec__eyebrow">Air Conditioning for <?php echo esc_html($suburb_name); ?></span>
+    <h2 class="acl-sec__h2">Air Conditioning Services Near <?php echo esc_html($suburb_name); ?></h2>
+    <p class="acl-sec__body">Tony Allen Auto Service provides full air conditioning service and repair from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a> — <?php echo esc_html($distance_text); ?>. We diagnose before we recommend — find the fault first, fix it right.</p>
+    <p class="acl-sec__body">We serve <?php echo esc_html($area_served); ?> with regas and dye testing, system diagnosis, leak detection, compressor repair, climate control repair, cabin filter replacement, custom hose manufacture, and odour treatment. R134a and R1234yf refrigerant — covering older and newer vehicles.</p>
+    <p class="acl-sec__body">Family-owned since <?php echo esc_html($established); ?>, MTA Assured. Estimate provided before any work begins. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> to book.</p>
+  </div>
+</section>
+
+<!-- 4. SERVICES -->
+<section class="acl-sec acl-sec--grey">
+  <div class="acl-sec__inner">
+    <span class="acl-sec__eyebrow">Services</span>
+    <h2 class="acl-sec__h2">Air Conditioning Services Available</h2>
+    <div class="acl-svcs">
+      <?php
+      $svc_links = [
+        ['badge'=>'DR','name'=>'Regas & Dye Test','slug'=>'air-conditioning-regas-manukau'],
+        ['badge'=>'SD','name'=>'System Diagnosis','slug'=>'air-conditioning-diagnosis-manukau'],
+        ['badge'=>'CH','name'=>'AC Repair','slug'=>'car-air-conditioning-repair-manukau'],
+        ['badge'=>'CF','name'=>'Cabin Filter','slug'=>'cabin-filter-replacement-manukau'],
+        ['badge'=>'CC','name'=>'Climate Control','slug'=>'climate-control-repair-manukau'],
+        ['badge'=>'LD','name'=>'Leak Detection','slug'=>'air-conditioning'],
+        ['badge'=>'PH','name'=>'Custom Hose Manufacture','slug'=>'air-conditioning'],
+        ['badge'=>'OT','name'=>'Odour Treatment','slug'=>'air-conditioning'],
+        ['badge'=>'WD','name'=>'Demisting Diagnosis','slug'=>'air-conditioning'],
+      ];
+      foreach ($svc_links as $svc) {
+        echo '<a href="'.esc_url($site_url.'/'.$svc['slug'].'/').'" class="acl-svc">';
+        echo '<div>'.acl_badge($svc['badge']).'</div>';
+        echo '<div class="acl-svc__title">'.esc_html($svc['name']).'</div>';
+        echo '</a>';
+      }
+      ?>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PRICING -->
+<section class="acl-sec acl-sec--white">
+  <div class="acl-sec__inner">
+    <span class="acl-sec__eyebrow">Pricing</span>
+    <h2 class="acl-sec__h2">Air Conditioning Pricing for <?php echo esc_html($suburb_name); ?> Customers</h2>
+    <div class="acl-price-box">
+      <div class="acl-price-box__title">Standard regas &amp; dye test <?php echo esc_html($aircon_price); ?></div>
+      <p class="acl-price-box__body">Estimate provided before any work begins. Repair costs depend on the fault and parts required. We test the system first and tell you what we find. All pricing includes GST. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ENQUIRY -->
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Zip</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<section class="acl-sec acl-sec--dark" id="enquire">
+  <div class="acl-sec__inner">
+    <div class="acl-enquiry">
+      <div>
+        <span class="acl-sec__eyebrow">Enquire Now</span>
+        <h2 class="acl-sec__h2">Book an AC Service</h2>
+        <p style="font-size:16px;color:#aaa;line-height:1.75;margin-bottom:8px;">Tell us your vehicle make, model and what the AC is doing. We'll come back to you with an estimate.</p>
+        <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="acl-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
+        <div class="acl-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;"><?php echo esc_html($address); ?></a><br><?php echo esc_html($hours); ?></div>
+      </div>
+      <div><?php echo do_shortcode($cf7_general); ?></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. SUBURB PILLS -->
+<section class="acl-sec acl-sec--grey">
+  <div class="acl-sec__inner">
+    <span class="acl-sec__eyebrow">South Auckland</span>
+    <h2 class="acl-sec__h2">Air Conditioning Near You</h2>
+    <ul class="acl-pills">
+      <?php foreach ($suburbs_master as $slug => $data) :
+        $is_current = ($slug === $suburb_slug);
+        $aria = $is_current ? ' aria-current="page"' : '';
+      ?>
+      <li><a href="<?php echo esc_url($site_url.'/air-conditioning-'.$slug.'/'); ?>"<?php echo $aria; ?>>Air Conditioning <?php echo esc_html($data['label']); ?></a></li>
+      <?php endforeach; ?>
+    </ul>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="acl-sec acl-sec--white">
+  <div class="acl-sec__inner">
+    <span class="acl-sec__eyebrow">FAQ</span>
+    <h2 class="acl-sec__h2">Air Conditioning — <?php echo esc_html($suburb_name); ?> Questions</h2>
+    <div class="acl-faq">
+      <?php foreach ($faqs as $i => $faq) : ?>
+      <div class="acl-faq__item<?php echo $i===0?' acl-faq__item--open':''; ?>">
+        <button class="acl-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>"><?php echo esc_html($faq['q']); ?></button>
+        <div class="acl-faq__a"><p><?php echo wp_kses_post($faq['a']); ?></p></div>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.acl-faq__q').forEach(function(b){b.addEventListener('click',function(){var i=this.closest('.acl-faq__item'),o=i.classList.contains('acl-faq__item--open');document.querySelectorAll('.acl-faq__item--open').forEach(function(x){x.classList.remove('acl-faq__item--open');});if(!o)i.classList.add('acl-faq__item--open');});});
+</script>
+
+<?php get_footer(); ?>

@@ -1,0 +1,428 @@
+/* TAAS Global CSS — Design System */
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: var(--taas-font); color: var(--taas-body); background: var(--taas-white); margin: 0; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+:root {
+    /* ── Colours ──────────────────────────────────────────────────────────── */
+    --taas-yellow:    #FFC800;
+    --taas-yellow2:   #e6b400;
+    --taas-black:     #111111;
+    --taas-dark:      #1A1A1A;
+    --taas-body:      #333333;
+    --taas-mid:       #666666;
+    --taas-light:     #888888;
+    --taas-panel:     #F7F7F5;
+    --taas-white:     #FFFFFF;
+    --taas-border:    #E8E8E4;
+    --taas-alert:     #C0392B;
+
+    /* ── Layout ───────────────────────────────────────────────────────────── */
+    --taas-radius:    6px;
+    --taas-font:      'Inter', Arial, sans-serif;
+    --taas-container: 1140px;
+    --taas-gutter:    24px;
+
+    /* ── Typography — headings ────────────────────────────────────────────── */
+    --taas-h1:        clamp(38px, 6vw, 58px);   /* hero H1 — full width */
+    --taas-h1-hub:    clamp(34px, 5.5vw, 54px); /* hub with sidebar */
+    --taas-h1-spoke:  clamp(30px, 5vw, 50px);   /* location spoke pages */
+    --taas-h2:        clamp(26px, 3.5vw, 36px); /* section H2 */
+    --taas-h3:        16px;                      /* card titles, sub-headings */
+
+    /* ── Typography — body ────────────────────────────────────────────────── */
+    --taas-lead-size: 17px;      /* hero sub, section descriptions */
+    --taas-lead-lh:   1.75;      /* lead/paragraph line-height */
+    --taas-lead-wt:   300;       /* lead/paragraph font-weight */
+    --taas-lead-ls:   -0.1px;    /* lead/paragraph letter-spacing */
+    --taas-body-size: 16px;      /* general body text */
+    --taas-body-sm:   15px;      /* problems, diagnostics, FAQ body */
+    --taas-small:     14px;      /* card descriptions, sidebar text */
+    --taas-xs:        13px;      /* nav links, sidebar list items */
+    --taas-xxs:       12px;      /* card links, header CTA */
+
+    /* ── Buttons ──────────────────────────────────────────────────────────── */
+    --taas-btn-size:  15px;
+    --taas-btn-wt:    600;
+    --taas-btn-pad:   14px 28px;
+    --taas-btn-radius: var(--taas-radius);
+
+    /* ── Header ───────────────────────────────────────────────────────────── */
+    --taas-header-phone:    14px;
+    --taas-header-phone-wt: 800;
+    --taas-header-btn-size: 12px;
+    --taas-header-btn-pad:  10px 18px;
+    --taas-nav-size:        13px;
+    --taas-nav-wt:          600;
+
+    /* ── Eyebrow labels ───────────────────────────────────────────────────── */
+    --taas-eye-size:  10px;
+    --taas-eye-ls:    0.12em;
+
+    /* ── Trust strip ──────────────────────────────────────────────────────── */
+    --taas-trust-size: 14px;
+    --taas-trust-wt:   600;
+    --taas-trust-pad:  18px;
+
+    /* ── Cards ─────────────────────────────────────────────────────────────── */
+    --taas-card-title: var(--taas-h3);    /* 16px */
+    --taas-card-desc:  var(--taas-small); /* 14px */
+    --taas-card-link:  var(--taas-xxs);   /* 12px */
+    --taas-card-pad:   20px 18px;
+
+    /* ── FAQ ───────────────────────────────────────────────────────────────── */
+    --taas-faq-q:     15px;
+    --taas-faq-a:     15px;
+
+    /* ── Sidebar (hub pages) ──────────────────────────────────────────────── */
+    --taas-sidebar-title: 11px;
+    --taas-sidebar-li:    var(--taas-xs);    /* 13px */
+    --taas-sidebar-phone: 22px;
+
+    /* ── CTA section ──────────────────────────────────────────────────────── */
+    --taas-cta-phone: 40px;
+    --taas-cta-phone-wt: 800;
+
+    /* ── Spacing ──────────────────────────────────────────────────────────── */
+    --taas-sec-pad:   72px;
+    --taas-sec-pad-m: 48px;
+    --taas-hero-pad:  72px;
+    --taas-hero-pad-b:60px;
+
+    /* ── Breakpoint (reference only — CSS vars can't be used in @media) ─── */
+    /* Mobile: 640px */
+}
+
+/* ── Global font reset — overrides parent theme (Manrope) ──────────────── */
+body, h1, h2, h3, h4, h5, h6, p, li, span, div, a, button, input, textarea, select, label, th, td { font-family: var(--taas-font) !important; }
+
+.taas-container { max-width: var(--taas-container); margin-left: auto; margin-right: auto; padding-left: var(--taas-gutter); padding-right: var(--taas-gutter); }
+
+/* ── Buttons ──────────────────────────────────────────────────────────── */
+.taas-btn { display: inline-flex; align-items: center; gap: 8px; padding: var(--taas-btn-pad); border-radius: var(--taas-btn-radius); font-family: var(--taas-font); font-weight: var(--taas-btn-wt); font-size: var(--taas-btn-size); letter-spacing: .04em; text-transform: uppercase; cursor: pointer; border: 2px solid transparent; transition: background 0.18s, color 0.18s, border-color 0.18s; text-decoration: none; line-height: 1; }
+.taas-btn--primary { background: var(--taas-yellow); color: var(--taas-dark); border-color: var(--taas-yellow); }
+.taas-btn--primary:hover { background: var(--taas-yellow2); border-color: var(--taas-yellow2); }
+.taas-btn--outline { background: transparent; color: var(--taas-yellow); border-color: var(--taas-yellow); }
+.taas-btn--outline:hover { background: var(--taas-yellow); color: var(--taas-dark); }
+.taas-btn--dark { background: var(--taas-dark); color: var(--taas-white); border-color: var(--taas-dark); }
+.taas-btn--dark:hover { background: #2a2a2a; border-color: #2a2a2a; }
+
+/* ── Eyebrow labels ───────────────────────────────────────────────────── */
+.taas-eyebrow { display: inline-block; font-size: var(--taas-eye-size); font-weight: 700; letter-spacing: var(--taas-eye-ls); text-transform: uppercase; border-radius: 3px; padding: 4px 12px; margin-bottom: 14px; }
+.taas-eyebrow--dark { background: var(--taas-yellow); color: var(--taas-dark); }
+.taas-eyebrow--light { background: var(--taas-dark); color: var(--taas-yellow); }
+
+/* ── Sections ─────────────────────────────────────────────────────────── */
+.taas-section { padding: var(--taas-sec-pad) 0; }
+.taas-section--hero { background: var(--taas-black); color: var(--taas-white); padding: var(--taas-hero-pad) 0 var(--taas-hero-pad-b); }
+.taas-section--panel { background: var(--taas-panel); }
+.taas-section--dark { background: var(--taas-dark); color: var(--taas-white); }
+.taas-section--white { background: var(--taas-white); }
+
+/* ── Headings ─────────────────────────────────────────────────────────── */
+.taas-h1 { font-size: var(--taas-h1); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px; }
+.taas-h1--hub { font-size: var(--taas-h1-hub); }
+.taas-h1--spoke { font-size: var(--taas-h1-spoke); }
+.taas-h2 { font-size: var(--taas-h2); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }
+.taas-h3 { font-size: var(--taas-h3); font-weight: 700; line-height: 1.3; margin: 0 0 8px; }
+.taas-lead { font-size: var(--taas-lead-size); line-height: var(--taas-lead-lh); font-weight: var(--taas-lead-wt); letter-spacing: var(--taas-lead-ls); margin: 0 0 28px; color: var(--taas-mid); max-width: 640px; }
+
+/* ── Text helpers ─────────────────────────────────────────────────────── */
+.taas-mid-text { color: var(--taas-mid); }
+.taas-light-text { color: var(--taas-light); }
+.taas-white-text { color: var(--taas-white); }
+.taas-yellow-text { color: var(--taas-yellow); }
+
+/* ── Trust strip ──────────────────────────────────────────────────────── */
+.taas-trust-strip { background: var(--taas-yellow); padding: var(--taas-trust-pad) 0; }
+.taas-trust-strip__inner { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 40px; max-width: var(--taas-container); margin: 0 auto; padding: 0 var(--taas-gutter); }
+.taas-trust-strip__item { font-size: var(--taas-trust-size); font-weight: var(--taas-trust-wt); color: var(--taas-dark); white-space: nowrap; }
+.taas-trust-strip__item::before { content: '✓ '; font-weight: 900; }
+
+/* ── Cards ─────────────────────────────────────────────────────────────── */
+
+.taas-card { background: var(--taas-white); border: 1px solid var(--taas-border); border-radius: var(--taas-radius); padding: 28px; }
+.taas-card-grid { display: grid; gap: 24px; }
+.taas-card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.taas-card-grid--2 { grid-template-columns: repeat(2, 1fr); }
+
+.taas-alert-bar { border-left: 4px solid var(--taas-alert); padding: 14px 18px; background: #fdf0ee; border-radius: 0 var(--taas-radius) var(--taas-radius) 0; font-size: 15px; }
+
+/* ── FAQ accordion ────────────────────────────────────────────────────── */
+.taas-faq { border-top: 1px solid var(--taas-border); }
+.taas-faq__item { border-bottom: 1px solid var(--taas-border); }
+.taas-faq__q { width: 100%; text-align: left; background: none; border: none; padding: 18px 40px 18px 0; font-family: var(--taas-font); font-size: var(--taas-faq-q); font-weight: 700; color: var(--taas-dark); cursor: pointer; position: relative; line-height: 1.4; display: block; }
+.taas-faq__q::after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 22px; font-weight: 400; color: var(--taas-mid); transition: transform .2s; }
+.taas-faq__q[aria-expanded="true"]::after { content: '−'; }
+.taas-faq__a { font-size: var(--taas-faq-a); line-height: 1.65; color: var(--taas-mid); padding: 0 0 18px; display: none; }
+.taas-faq__a[style*="display:block"], .taas-faq__a.is-open { display: block; }
+
+/* ── Checklist ────────────────────────────────────────────────────────── */
+.taas-checklist { list-style: none; padding: 0; margin: 0; }
+.taas-checklist li { padding: 6px 0 6px 28px; position: relative; font-size: var(--taas-body-size); line-height: 1.5; }
+.taas-checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--taas-yellow); font-weight: 700; }
+
+/* ── Process steps ────────────────────────────────────────────────────── */
+.taas-step__num { width: 36px; height: 36px; background: var(--taas-yellow); color: var(--taas-dark); font-size: 14px; font-weight: 800; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+/* ── Suburb pills ─────────────────────────────────────────────────────── */
+.taas-pills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+.taas-pills a { display: inline-block; padding: 7px 18px; border: 1px solid var(--taas-border); border-radius: 100px; background: var(--taas-white); font-size: var(--taas-small); color: var(--taas-body); text-decoration: none; transition: all .15s; }
+.taas-pills a:hover, .taas-pills a[aria-current="page"] { background: var(--taas-yellow); border-color: var(--taas-yellow); color: var(--taas-dark); font-weight: 600; }
+
+/* ── Google Maps link ─────────────────────────────────────────────────── */
+.taas-maps-link { color: var(--taas-yellow); font-weight: 600; text-decoration: none; }
+.taas-maps-link:hover { text-decoration: underline; }
+
+/* ── Responsive ───────────────────────────────────────────────────────── */
+@media (max-width: 900px) { .taas-card-grid--3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) {
+  .taas-card-grid--3, .taas-card-grid--2 { grid-template-columns: 1fr; }
+  .taas-section { padding: var(--taas-sec-pad-m) 0; }
+  .taas-section--hero { padding: 56px 0 48px; }
+  .taas-h1 { font-size: clamp(28px, 7vw, 42px); }
+  .taas-h2 { font-size: clamp(20px, 5vw, 28px); }
+  .taas-trust-strip__inner { flex-direction: column; gap: 8px; align-items: flex-start; padding: 0 var(--taas-gutter); }
+  .taas-trust-strip__item { font-size: 12px; }
+  .taas-btn { font-size: 13px; padding: 12px 22px; }
+}
+
+/* ── Contact Form 7 — global styles ─────────────────────────────────────── */
+.wpcf7-form p { margin: 0 0 16px; }
+.wpcf7-form label { display: block; font-size: 13px; font-weight: 600; color: var(--taas-body); margin-bottom: 6px; font-family: var(--taas-font); }
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form input[type="number"],
+.wpcf7-form select,
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 11px 14px;
+    font-family: var(--taas-font);
+    font-size: 14px;
+    color: var(--taas-body);
+    background: var(--taas-white);
+    border: 1px solid var(--taas-border);
+    border-radius: var(--taas-radius);
+    transition: border-color 0.15s ease;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.wpcf7-form input:focus,
+.wpcf7-form select:focus,
+.wpcf7-form textarea:focus {
+    outline: none;
+    border-color: var(--taas-yellow);
+    box-shadow: 0 0 0 3px rgba(255,200,0,0.15);
+}
+.wpcf7-form textarea { min-height: 110px; resize: vertical; }
+.wpcf7-form input[type="submit"].wpcf7-submit,
+.wpcf7 input[type="submit"],
+input.wpcf7-submit,
+.wpcf7-submit,
+input.wpcf7-submit.adminbar-button,
+.wpcf7 input.adminbar-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: 14px 28px !important;
+    background: #FFC800 !important;
+    color: #1A1A1A !important;
+    font-family: 'Inter', Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: background 0.18s ease !important;
+    margin-top: 4px !important;
+    letter-spacing: 0.01em !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+}
+.wpcf7-form input[type="submit"].wpcf7-submit:hover,
+.wpcf7 input[type="submit"]:hover,
+input.wpcf7-submit:hover,
+.wpcf7-submit:hover,
+input.wpcf7-submit.adminbar-button:hover,
+.wpcf7 input.adminbar-button:hover { background: #e6b400 !important; }
+.wpcf7-not-valid-tip { font-size: 12px; color: var(--taas-alert); margin-top: 4px; display: block; }
+.wpcf7-response-output { margin-top: 16px; padding: 12px 16px; border-radius: var(--taas-radius); font-size: 14px; border: none !important; }
+.wpcf7-mail-sent-ok { background: #eafaf1; color: #1e8449; }
+.wpcf7-validation-errors,
+.wpcf7-mail-sent-ng { background: #fdf0ee; color: var(--taas-alert); }
+
+
+.wpcf7 form p {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 0 0 16px 0 !important;
+}
+.wpcf7 form p:has(label + label) {
+  grid-template-columns: 1fr 1fr;
+}
+.wpcf7 form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+.wpcf7 form input[type="text"],
+.wpcf7 form input[type="email"],
+.wpcf7 form input[type="tel"],
+.wpcf7 form input[type="date"],
+.wpcf7 form textarea,
+.wpcf7 form select {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1px solid #E8E8E4;
+  border-radius: 6px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color .15s;
+}
+.wpcf7 form input:focus,
+.wpcf7 form textarea:focus,
+.wpcf7 form select:focus {
+  outline: none;
+  border-color: #FFC800;
+}
+.wpcf7 form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.wpcf7 form .wpcf7-submit,
+.wpcf7 form input[type="submit"] {
+  width: 100%;
+  background: #FFC800;
+  color: #1A1A1A;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transition: background .15s;
+  margin-top: 4px;
+}
+.wpcf7 form .wpcf7-submit:hover,
+.wpcf7 form input[type="submit"]:hover {
+  background: #e6b400;
+}
+@media (max-width: 640px) {
+  .wpcf7 form p:has(label + label) {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* ══ CF7 FORM SPACING — FINAL ══════════════════════════════════════════════ */
+div.wpcf7 p,
+div.wpcf7-form p,
+form.wpcf7-form p,
+.wpcf7 form p,
+.wpcf7 p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.wpcf7 form br,
+.wpcf7 br { display: none !important; }
+
+.wpcf7 form label,
+.wpcf7 label {
+  display: block !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  margin-top: 0 !important;
+  margin-bottom: 14px !important;
+  padding: 0 !important;
+}
+.wpcf7 .wpcf7-form-control-wrap {
+  display: block !important;
+  margin-top: 4px !important;
+  margin-bottom: 0 !important;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="date"],
+.wpcf7 textarea,
+.wpcf7 select {
+  width: 100% !important;
+  padding: 10px 13px !important;
+  border: 1px solid #E8E8E4 !important;
+  border-radius: 6px !important;
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 14px !important;
+  color: #333 !important;
+  background: #ffffff !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  margin: 0 !important;
+}
+.wpcf7 input:focus,
+.wpcf7 textarea:focus,
+.wpcf7 select:focus {
+  outline: none !important;
+  border-color: #FFC800 !important;
+  box-shadow: none !important;
+}
+.wpcf7 textarea {
+  min-height: 90px !important;
+  resize: vertical !important;
+}
+.wpcf7 input[type="submit"],
+.wpcf7 .wpcf7-submit {
+  width: 100% !important;
+  background: #FFC800 !important;
+  color: #1A1A1A !important;
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 13px !important;
+  border: none !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  letter-spacing: .04em !important;
+  text-transform: uppercase !important;
+  transition: background .15s !important;
+  display: block !important;
+  margin: 0 !important;
+}
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 .wpcf7-submit:hover {
+  background: #e6b400 !important;
+}
+
+
+
+/* CF7 empty paragraph gap fix */
+.wpcf7 form p:empty { display:none!important; margin:0!important; }
+.wpcf7 form p > br:only-child { display:none!important; }
+.wpcf7 form p:not(:has(label)):not(:has(input[type="submit"])) {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
