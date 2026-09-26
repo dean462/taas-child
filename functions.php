@@ -6,11 +6,6 @@
 
 require_once get_stylesheet_directory() . '/taas-constants.php';
 
-// ── Runner (self-deletes after execution) ────────────────────────────────────
-if (file_exists(get_stylesheet_directory() . '/taas-runner-finance-spoke-switch.php')) {
-    require_once get_stylesheet_directory() . '/taas-runner-finance-spoke-switch.php';
-}
-
 add_action( 'wp_enqueue_scripts', 'taas_child_enqueue_styles' );
 function taas_child_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
