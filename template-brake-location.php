@@ -87,7 +87,7 @@ $faqs = [
 $schema_faqs = [];
 foreach ($faqs as $faq) { $schema_faqs[] = ['@type'=>'Question','name'=>$faq['q'],'acceptedAnswer'=>['@type'=>'Answer','text'=>strip_tags($faq['a'])]]; }
 $schema = ['@context'=>'https://schema.org','@graph'=>[
-    ['@type'=>'BreadcrumbList','itemListElement'=>[['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],['@type'=>'ListItem','position'=>2,'name'=>'Brake Repairs Servicing','item'=>$site_url.'//brake-repairs-manukau/'],['@type'=>'ListItem','position'=>3,'name'=>'Brake Repairs Service ' . $suburb_name,'item'=>$page_url]]],
+    ['@type'=>'BreadcrumbList','itemListElement'=>[['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],['@type'=>'ListItem','position'=>2,'name'=>'Brake Repairs','item'=>$site_url.'//brake-repairs-manukau/'],['@type'=>'ListItem','position'=>3,'name'=>'Brake Repairs Service ' . $suburb_name,'item'=>$page_url]]],
     ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Brake repairs and servicing for ' . $suburb_name . ', South Auckland. Pad and rotor replacement, callipers, drums, brake fluid, handbrake — all makes. MTA Assured. NZTA Authorised. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'areaServed'=>$suburb_name,'sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, GEM Finance, Aotea Finance'],
     ['@type'=>'FAQPage','mainEntity'=>$schema_faqs],
     ['@type'=>'SpeakableSpecification','cssSelector'=>['.brl-hero__sub','.brl-faq__a:first-of-type']],
@@ -161,7 +161,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="brl-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="brl-w">
   <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'//brake-repairs-manukau/'); ?>" style="color:#555;text-decoration:none;">Brake Repairs</a><span style="margin:0 6px;">›</span><span style="color:#888;"><?php echo esc_html($suburb_name); ?></span></nav>
   <span class="brl-eye brl-eye--green">Brake Repairs — <?php echo esc_html($suburb_name); ?></span>
-  <h1>Brake Repairs Servicing<br><span><?php echo esc_html($suburb_name); ?></span></h1>
+  <h1>Brake Repairs<br><span><?php echo esc_html($suburb_name); ?></span></h1>
   <p class="brl-hero__sub">Brake repairs and servicing for <?php echo esc_html($suburb_name); ?> drivers. All makes and models — Pad and rotor replacement, callipers, drums, brake fluid, handbrake. On-site disc skimming. <?php echo ($distance_note ? esc_html(ucfirst($distance_note)) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?><?php echo esc_html($customers); ?> customers serviced.</p>
   <div class="brl-hero__ctas">
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="brl-btn brl-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
@@ -217,7 +217,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="brl-section brl-section--grey"><div class="brl-w">
   <span class="brl-eye brl-eye--dark">Common Questions</span>
-  <h2 class="brl-h2">Brake Repairs Servicing <?php echo esc_html($suburb_name); ?> — FAQ</h2>
+  <h2 class="brl-h2">Brake Repairs <?php echo esc_html($suburb_name); ?> — FAQ</h2>
   <div class="brl-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="brl-faq__item<?php echo $i===0?' brl-faq__item--open':''; ?>"><button class="brl-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="brl-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="brl-a-<?php echo $i; ?>" class="brl-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>
