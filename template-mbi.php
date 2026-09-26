@@ -362,10 +362,10 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 .mbi-pcard__tagline { font-family:var(--taas-font, 'Inter', Arial, sans-serif); font-size:18px; font-weight:900; color:#0D0D0D; text-transform:uppercase; margin-bottom:10px; }
 .mbi-pcard__about { font-size:14px; font-weight:300; color:#666; line-height:1.75; margin-bottom:12px; }
 .mbi-pcard__detail { margin-bottom:14px; }
-.mbi-pcard__detail-head { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--taas-yellow, #FFC800); margin-bottom:4px; }
+.mbi-pcard__detail-head { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--taas-dark, #1A1A1A); margin-bottom:4px; padding-left:8px; border-left:3px solid var(--taas-yellow, #FFC800); }
 .mbi-pcard__detail-text { font-size:13px; font-weight:300; color:#555; line-height:1.75; }
 .mbi-pcard__facts { display:flex; gap:20px; padding-top:14px; border-top:1px solid var(--taas-border, #E8E8E4); flex-wrap:wrap; }
-.mbi-fact__val { font-family:var(--taas-font, 'Inter', Arial, sans-serif); font-size:24px; font-weight:900; color:var(--taas-yellow, #FFC800); line-height:1; }
+.mbi-fact__val { font-family:var(--taas-font, 'Inter', Arial, sans-serif); font-size:24px; font-weight:900; color:var(--taas-dark, #1A1A1A); line-height:1; }
 .mbi-fact__lbl { font-size:11px; color:#999; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
 .mbi-pcard__cta {
   border-left:1px solid var(--taas-border, #E8E8E4); padding:24px 20px;
@@ -389,7 +389,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 .mbi-finance { background:var(--taas-panel, #F7F7F5); padding:24px 0; border-top:1px solid var(--taas-border, #E8E8E4); border-bottom:1px solid var(--taas-border, #E8E8E4); }
 .mbi-finance__inner { display:flex; align-items:center; justify-content:center; gap:24px; flex-wrap:wrap; text-align:center; }
 .mbi-finance__text { font-size:14px; font-weight:300; color:#555; line-height:1.75; }
-.mbi-finance__text a { color:var(--taas-yellow, #FFC800); font-weight:600; }
+.mbi-finance__text a { color:var(--taas-dark, #1A1A1A); font-weight:600; text-decoration:underline; text-decoration-color:var(--taas-yellow, #FFC800); text-decoration-thickness:2px; text-underline-offset:3px; }
 .mbi-finance__badges { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
 .mbi-finance__badge { font-size:12px; font-weight:700; color:var(--taas-dark, #1A1A1A); background:#fff; border:1px solid var(--taas-border, #E8E8E4); padding:4px 12px; border-radius:3px; white-space:nowrap; }
 
@@ -468,7 +468,9 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 @media (max-width:1024px) {
   .mbi-hero__inner, .mbi-what__inner, .mbi-enquiry__inner { grid-template-columns:1fr; gap:40px; }
   .mbi-hero__card { display:none; }
-  .mbi-pcard { grid-template-columns:1fr; }
+  .mbi-pcard { grid-template-columns:minmax(0,1fr); }
+  .mbi-pcard > * { min-width:0; }
+  .mbi-pcard__logo { flex-wrap:wrap; row-gap:8px; }
   .mbi-pcard__logo { flex-direction:row; padding:16px 20px; border-right:none; border-bottom:1px solid var(--taas-border, #E8E8E4); justify-content:flex-start; }
   .mbi-pcard__cta { border-left:none; border-top:1px solid var(--taas-border, #E8E8E4); flex-direction:row; flex-wrap:wrap; padding:16px 20px; }
   .mbi-steps { grid-template-columns:1fr 1fr; }
@@ -502,6 +504,12 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
   .mbi-pcard__detail-text { font-size:12px; }
   .mbi-pcard__body { padding:20px 18px; }
   .mbi-pcard__cta { flex-direction:column; }
+  .mbi-pcard__cta .mbi-btn { width:100%; }
+  .mbi-pcard__logo-img { max-width:120px; max-height:44px; }
+  .mbi-pcard__about, .mbi-pcard__detail-text { overflow-wrap:anywhere; }
+  /* Shorter cards on phones — full cover and claim detail lives on each provider's page */
+  .mbi-pcard__detail { display:none; }
+  .mbi-pcard__about { margin-bottom:14px; }
   .mbi-fact__val { font-size:20px; }
   .mbi-fact__lbl { font-size:10px; }
   .mbi-checklist li { font-size:13px; gap:10px; }
@@ -619,7 +627,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <h2 class="mbi-sec-h2" id="mbi-what-head">Mechanical Breakdown Insurance — What It Covers</h2>
         <p class="mbi-body">Mechanical Breakdown Insurance covers the cost of repairing or replacing mechanical and electrical components that fail due to sudden or unforeseen breakdown. It fills the gap left by your standard car insurance, which only covers accidents, theft, and fire — not mechanical failures.</p>
         <p class="mbi-body">Think of it as an extended warranty backed by an insurance company. When your transmission fails, your engine overheats, or your air conditioning stops working, MBI pays for the repair — you just pay the excess and we handle the rest with your provider.</p>
-        <p class="mbi-body">All four providers we work with require your vehicle to be serviced at regular intervals and at an approved workshop to keep your policy valid. As an MTA Assured workshop, TAAS satisfies the servicing requirements of all four.</p>
+        <p class="mbi-body">All five providers we work with require your vehicle to be serviced at regular intervals and at an approved workshop to keep your policy valid. As an MTA Assured workshop, TAAS satisfies the servicing requirements of all five.</p>
       </div>
 
       <div>
@@ -661,7 +669,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
   <div class="mbi-w">
     <span class="mbi-sec-eye mbi-sec-eye--yellow">Approved Providers</span>
     <h2 class="mbi-sec-h2" id="mbi-providers-head">Five MBI Providers — One Approved Workshop</h2>
-    <p class="mbi-body" style="max-width:640px;">If you hold a policy with any of these providers, TAAS is an approved repairer. Bring your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow, #FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a> — we liaise with your insurer and manage the claim process.</p>
+    <p class="mbi-body" style="max-width:640px;">If you hold a policy with any of these providers, TAAS is an approved repairer. Bring your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-dark, #1A1A1A);font-weight:600;text-decoration:underline;text-decoration-color:var(--taas-yellow, #FFC800);text-decoration-thickness:2px;text-underline-offset:3px;">139 Cavendish Drive, Manukau</a> — we liaise with your insurer and manage the claim process.</p>
 
     <div class="mbi-providers__grid">
       <?php foreach ($providers as $p):
@@ -731,7 +739,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <div class="mbi-step">
         <div class="mbi-step__num">2</div>
         <div class="mbi-step__title">Bring your vehicle to TAAS</div>
-        <p class="mbi-step__text">Drive or tow your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a>. We are an approved repairer for all four providers. Call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> if you need help coordinating.</p>
+        <p class="mbi-step__text">Drive or tow your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a>. We are an approved repairer for all five providers. Call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> if you need help coordinating.</p>
       </div>
       <div class="mbi-step">
         <div class="mbi-step__num">3</div>
@@ -771,7 +779,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <h2 class="mbi-sec-h2" id="mbi-why-head">Why South Auckland MBI holders choose TAAS</h2>
     <ul class="mbi-checklist">
       <li>Approved repairer for <?php echo esc_html($mbi_list); ?></li>
-      <li>MTA Assured — satisfies the servicing requirements of all four providers</li>
+      <li>MTA Assured — satisfies the servicing requirements of all five providers</li>
       <li>Trading since <?php echo esc_html($established); ?> — <?php echo esc_html($years); ?> years of experience with MBI claims</li>
       <li><?php echo esc_html($division_count); ?> specialist divisions under one roof — most repairs handled in-house</li>
       <li>Raj leads diagnostics — fault confirmed before parts are replaced</li>
@@ -837,11 +845,11 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <div class="mbi-related__grid">
       <a href="<?php echo esc_url($site_url . '/vehicle-servicing/'); ?>" class="mbi-related__card">
         <div class="mbi-related__card-title">Vehicle Servicing</div>
-        <p class="mbi-related__card-text">Regular servicing keeps your MBI valid. Minor, major, and full services from <?php echo esc_html(defined('TAAS_SERVICE_PRICE') ? TAAS_SERVICE_PRICE : 'from $230'); ?>.</p>
+        <p class="mbi-related__card-text">Regular servicing keeps your MBI valid. Essential, Standard and Premium services <?php echo esc_html(defined('TAAS_SERVICE_PRICE') ? TAAS_SERVICE_PRICE : 'from $230'); ?>.</p>
       </a>
       <a href="<?php echo esc_url($site_url . '/auto-electrical/'); ?>" class="mbi-related__card">
         <div class="mbi-related__card-title">Auto Electrical &amp; Diagnostics</div>
-        <p class="mbi-related__card-text">Specialist fault diagnosis with Raj. Diagnostic scan from <?php echo esc_html(defined('TAAS_SCAN_PRICE') ? TAAS_SCAN_PRICE : 'from $75'); ?> — printout included, no pressure to proceed.</p>
+        <p class="mbi-related__card-text">Specialist fault diagnosis with Raj. Diagnostic scan <?php echo esc_html(defined('TAAS_SCAN_PRICE') ? TAAS_SCAN_PRICE : 'from $75'); ?> — printout included, no pressure to proceed.</p>
       </a>
       <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" class="mbi-related__card">
         <div class="mbi-related__card-title">Finance Options</div>

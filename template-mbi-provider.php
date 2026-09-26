@@ -708,7 +708,7 @@ if ($_logo_id) {
       <?php endforeach; ?>
       <a href="<?php echo esc_url($site_url . '/mechanical-breakdown-insurance/'); ?>" class="mp-related__card">
         <div class="mp-related__card-title">All MBI Providers</div>
-        <p class="mp-related__card-text">Compare all four MBI providers we work with and how the claim process works.</p>
+        <p class="mp-related__card-text">Compare all five MBI providers we work with and how the claim process works.</p>
       </a>
       <a href="<?php echo esc_url($site_url . '/vehicle-servicing/'); ?>" class="mp-related__card">
         <div class="mp-related__card-title">Vehicle Servicing</div>

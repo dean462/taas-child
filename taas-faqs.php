@@ -563,7 +563,7 @@ $taas_faqs['mbi_what_is'] = [
 ];
 
 $taas_faqs['mbi_all_providers'] = [
-    'q' => 'Does TAAS work with all four MBI providers?',
+    'q' => 'Does TAAS work with all five MBI providers?',
     'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Autosure, Assurant (formerly Protecta), Provident, Janssen Insurance, and Autolife. If you hold a policy with any of these providers and your vehicle breaks down, bring it to 139 Cavendish Drive, Manukau. We liaise with your insurer directly.',
 ];
 
@@ -574,7 +574,7 @@ $taas_faqs['mbi_breakdown_steps'] = [
 
 $taas_faqs['mbi_servicing_valid'] = [
     'q' => 'Does my vehicle need to be serviced to keep MBI valid?',
-    'a' => 'Yes. All four providers require your vehicle to be serviced at regular intervals at a qualified workshop. Keep all service invoices. Most providers require servicing at a registered MTA workshop — Tony Allen Auto Service is MTA Assured, which satisfies the workshop requirements of all four providers. Failure to provide service records is one of the most common reasons MBI claims are declined.',
+    'a' => 'Yes. All five providers require your vehicle to be serviced at regular intervals at a qualified workshop. Keep all service invoices. Most providers require servicing at a registered MTA workshop — Tony Allen Auto Service is MTA Assured, which satisfies the workshop requirements of all four providers. Failure to provide service records is one of the most common reasons MBI claims are declined.',
 ];
 
 $taas_faqs['mbi_claim_help'] = [
@@ -594,7 +594,7 @@ $taas_faqs['mbi_exclusions'] = [
 
 $taas_faqs['mbi_service_at_taas'] = [
     'q' => 'Can I use TAAS as my regular service provider to keep my MBI valid?',
-    'a' => 'Yes. Tony Allen Auto Service is MTA Assured, which satisfies the servicing requirements of all four MBI providers we work with. Regular servicing at TAAS keeps your MBI policy valid and your vehicle in the best condition to avoid claims in the first place. We are at 139 Cavendish Drive, Manukau — call ' . $_fq_phone . ' to book.',
+    'a' => 'Yes. Tony Allen Auto Service is MTA Assured, which satisfies the servicing requirements of all five MBI providers we work with. Regular servicing at TAAS keeps your MBI policy valid and your vehicle in the best condition to avoid claims in the first place. We are at 139 Cavendish Drive, Manukau — call ' . $_fq_phone . ' to book.',
 ];
 
 $taas_faqs['mbi_european'] = [

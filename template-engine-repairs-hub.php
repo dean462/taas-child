@@ -451,7 +451,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
         <p class="erh-approach__text">Every engine repair starts with a diagnostic. We use a combination of scan tools, mechanical testing, and visual inspection to identify the actual fault. We then explain what we have found, what it means, and what the repair involves — including the cost. You decide whether to proceed.</p>
         <div class="erh-callout">
           <div class="erh-callout__title">We diagnose first — always</div>
-          <p class="erh-callout__body">No guesswork. No replacing parts on a hunch. We confirm the fault before recommending the repair. Diagnostic assessment from <?php echo esc_html($scan_price); ?> (scan) or <?php echo esc_html($mech_diag); ?> (full mechanical).</p>
+          <p class="erh-callout__body">No guesswork. No replacing parts on a hunch. We confirm the fault before recommending the repair. Diagnostic assessment <?php echo esc_html($scan_price); ?> (scan) or <?php echo esc_html($mech_diag); ?> (full mechanical).</p>
         </div>
       </div>
       <div class="erh-panel">
@@ -560,7 +560,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
     <div class="erh-mbi">
       <span class="erh-section__eyebrow">MBI Approved Repairer</span>
       <h2 class="erh-section__heading">Got an MBI policy? We handle the claim.</h2>
-      <p class="erh-mbi__text">Engine repairs are one of the most common MBI claims. Tony Allen Auto Service is an approved repairer for all four major MBI providers in New Zealand. Call your provider first, then bring your vehicle to us. We liaise with the insurer, get the work authorised, and carry out the repair. You pay the excess — your insurer pays the balance.</p>
+      <p class="erh-mbi__text">Engine repairs are one of the most common MBI claims. Tony Allen Auto Service is an approved repairer for all five major MBI providers in New Zealand. Call your provider first, then bring your vehicle to us. We liaise with the insurer, get the work authorised, and carry out the repair. You pay the excess — your insurer pays the balance.</p>
       <div class="erh-mbi__badges">
         <span class="erh-mbi__badge">Autosure</span>
         <span class="erh-mbi__badge">Assurant</span>
