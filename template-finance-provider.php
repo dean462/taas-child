@@ -90,7 +90,7 @@ if ($distance_note) {
 // Parse JSON fields
 $steps = [];
 if ($steps_raw) {
-    $parsed = json_decode($steps_raw, true);
+    $parsed = (is_array($steps_raw) ? $steps_raw : json_decode($steps_raw, true));
     if (is_array($parsed)) $steps = $parsed;
 }
 if (empty($steps)) {
@@ -104,7 +104,7 @@ if (empty($steps)) {
 
 $facts = [];
 if ($facts_raw) {
-    $parsed = json_decode($facts_raw, true);
+    $parsed = is_array($facts_raw) ? $facts_raw : json_decode($facts_raw, true);
     if (is_array($parsed)) $facts = $parsed;
 }
 
