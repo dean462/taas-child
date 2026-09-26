@@ -362,3 +362,23 @@ add_action('wp_footer', function() {
     </script>
     <?php
 }, 21);
+
+
+// ── CF7 → Thank You redirect ────────────────────────────────────────────────
+// After a successful send, go to /thank-you/ so GA4 can fire generate_lead.
+// Short delay lets the form_submit event above go out first.
+add_action('wp_footer', function() {
+    if (is_admin()) return;
+    ?>
+    <script>
+    document.addEventListener('wpcf7mailsent', function(e) {
+        var url = '<?php echo esc_js(home_url('/thank-you/')); ?>'
+            + '?sent=1'
+            + '&form=' + encodeURIComponent((e.detail && e.detail.contactFormId) || '')
+            + '&from=' + encodeURIComponent(window.location.pathname)
+            + '&t=' + Date.now();
+        setTimeout(function() { window.location.href = url; }, 400);
+    });
+    </script>
+    <?php
+}, 22);
