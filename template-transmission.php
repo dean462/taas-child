@@ -99,7 +99,7 @@ $related = [
     ['label' => 'Cooling System',        'url' => '/cooling-system/'],
     ['label' => 'TAAS European',         'url' => '/european/'],
     ['label' => 'Cambelt & Water Pump',  'url' => '/cambelts-and-water-pumps/'],
-    ['label' => 'Clutch Repair',         'url' => '/clutch-servicing-repair-and-replacement/'],
+    ['label' => 'Clutch Repair',         'url' => '/clutch-repair-manukau/'],
     ['label' => 'Finance Options',       'url' => '/finance-options/'],
     ['label' => 'MBI Approved Repairer', 'url' => '/mechanical-breakdown-insurance/'],
     ['label' => 'Commercial Vehicles',   'url' => '/commercial-vehicles/'],

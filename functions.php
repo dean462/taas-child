@@ -6,6 +6,13 @@
 
 require_once get_stylesheet_directory() . '/taas-constants.php';
 
+// ── Page titles ─────────────────────────────────────────────────────────────
+// Parent is a block theme; our classic header.php needs this so WordPress
+// (and AIOSEO) output the <title> tag.
+add_action('after_setup_theme', function() {
+    add_theme_support('title-tag');
+});
+
 add_action( 'wp_enqueue_scripts', 'taas_child_enqueue_styles' );
 function taas_child_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
@@ -106,7 +113,7 @@ add_action('wp_head', function() {
     $current = get_page_template_slug();
     if (!in_array($current, $tyre_templates)) return;
     // Only output if AIOSEO hasn't already set one
-    $og_image_url = 'https://wordpress-1623285-6409270.cloudwaysapps.com/wp-content/uploads/2026/05/taas-og-image.png';
+    $og_image_url = home_url('/wp-content/uploads/2026/05/taas-og-image.png');
     echo '<meta property="og:image" content="' . esc_url($og_image_url) . '" />' . "\n";
     echo '<meta property="og:image:width" content="1200" />' . "\n";
     echo '<meta property="og:image:height" content="630" />' . "\n";

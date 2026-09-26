@@ -731,7 +731,6 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <div class="wl-finance__inner">
       <span class="wl-finance__lbl">Finance available</span>
       <span class="wl-finance__badge">Afterpay</span>
-      <span class="wl-finance__badge">Zip</span>
       <span class="wl-finance__badge">Q Card</span>
       <span class="wl-finance__badge">Gem Finance</span>
       <span class="wl-finance__badge">Aotea Finance</span>

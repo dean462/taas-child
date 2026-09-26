@@ -594,7 +594,6 @@ if ($_logo_id) {
       <span class="mp-finance__text">Excess or uncovered repairs? <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Split the cost</a> —</span>
       <div class="mp-finance__badges">
         <span class="mp-finance__badge">Afterpay</span>
-        <span class="mp-finance__badge">Zip</span>
         <span class="mp-finance__badge">Q Card</span>
         <span class="mp-finance__badge">Gem Finance</span>
         <span class="mp-finance__badge">Aotea Finance</span>
@@ -643,7 +642,6 @@ if ($_logo_id) {
         <p class="mp-enquiry__drumbeat">Estimate before we start — nothing happens without your approval.</p>
         <div class="mp-enquiry__finance">
           <span class="mp-enquiry__finance-badge">Afterpay</span>
-          <span class="mp-enquiry__finance-badge">Zip</span>
           <span class="mp-enquiry__finance-badge">Q Card</span>
           <span class="mp-enquiry__finance-badge">Gem</span>
           <span class="mp-enquiry__finance-badge">Aotea</span>

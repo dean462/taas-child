@@ -699,7 +699,6 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
       <div class="vs-spec">
         <div class="vs-spec__title">Diesel Vehicles</div>
         <p class="vs-spec__body">Same three-tier structure with additional diesel-specific checks — fuel filter, DPF status via diagnostic scan including soot load and regeneration cycle data, turbocharger inspection, and AdBlue levels where applicable.</p>
-        <a href="<?php echo esc_url($site_url . '/diesel-vehicle-servicing/'); ?>" class="vs-spec__link">Diesel Servicing →</a>
       </div>
       <div class="vs-spec">
         <div class="vs-spec__title">Hybrid Vehicles</div>

@@ -907,13 +907,6 @@ get_header();
                         <td>Afterpay app</td>
                     </tr>
                     <tr>
-                        <td>Zip</td>
-                        <td><span class="taas-tick">✓ Pay in full by due date</span></td>
-                        <td>Flexible</td>
-                        <td>Up to $5,000</td>
-                        <td>Zip app</td>
-                    </tr>
-                    <tr>
                         <td>GEM Visa</td>
                         <td><span class="taas-tick">✓ 6 months on $250+</span></td>
                         <td>Flexible</td>
@@ -1176,16 +1169,12 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">More Ways to Pay</span>
         <h2 class="taas-section__title" id="options-heading">Other Finance Options <span>at TAAS</span></h2>
-        <p class="taas-section__sub">Q Card isn't the only flexible payment option we accept. If Q Card doesn't suit your situation, we have four other options available.</p>
+        <p class="taas-section__sub">Q Card isn't the only flexible payment option we accept. If Q Card doesn't suit your situation, we have three other options available.</p>
 
         <div class="taas-options">
             <div class="taas-option-card">
-                <div class="taas-option-card__name">Zip</div>
+                <div class="taas-option-card__name">Afterpay</div>
                 <div class="taas-option-card__desc">Buy now, pay later. Pay in 4 fortnightly instalments, interest-free.</div>
-            </div>
-            <div class="taas-option-card">
-                <div class="taas-option-card__name">QCard</div>
-                <div class="taas-option-card__desc">Minimum 3 months no payments, no interest on in-store purchases.</div>
             </div>
             <div class="taas-option-card">
                 <div class="taas-option-card__name">Gem Finance</div>

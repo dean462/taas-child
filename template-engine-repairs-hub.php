@@ -412,19 +412,19 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
     <h2 class="erh-section__heading">What we diagnose and repair</h2>
     <p class="erh-section__sub">Engine problems rarely fix themselves. The sooner you get it looked at, the less it costs to put right. We diagnose first, explain clearly, then repair — with your approval at every step.</p>
     <div class="erh-services">
-      <a href="<?php echo esc_url($site_url . '/engine-oil-leak-repair/'); ?>" class="erh-service">
+      <a href="<?php echo esc_url($site_url . '/engine-oil-leak-repair-manukau/'); ?>" class="erh-service">
         <div class="erh-service__icon"><?php echo erh_badge('OL'); ?></div>
         <div class="erh-service__title">Oil Leak Diagnosis &amp; Repair</div>
         <p class="erh-service__desc">Rocker cover gaskets, sump gaskets, cam seals, crank seals, oil cooler seals. We find the source first — sometimes what looks like one leak is actually two.</p>
         <span class="erh-service__link">Oil Leak Repair →</span>
       </a>
-      <a href="<?php echo esc_url($site_url . '/engine-misfire-diagnosis/'); ?>" class="erh-service">
+      <a href="<?php echo esc_url($site_url . '/engine-misfire-manukau/'); ?>" class="erh-service">
         <div class="erh-service__icon"><?php echo erh_badge('MF'); ?></div>
         <div class="erh-service__title">Misfire Diagnosis &amp; Repair</div>
         <p class="erh-service__desc">Spark plugs, ignition coils, fuel injectors, vacuum leaks, low compression. We use scan data and live testing to identify which cylinder and why.</p>
         <span class="erh-service__link">Misfire Repair →</span>
       </a>
-      <a href="<?php echo esc_url($site_url . '/engine-noise-diagnosis/'); ?>" class="erh-service">
+      <a href="<?php echo esc_url($site_url . '/engine-noise-diagnosis-manukau/'); ?>" class="erh-service">
         <div class="erh-service__icon"><?php echo erh_badge('EN'); ?></div>
         <div class="erh-service__title">Engine Noise Investigation</div>
         <p class="erh-service__desc">Knocking, ticking, rattling, whining — every noise has a cause. We use stethoscope diagnosis and systematic testing to isolate the source.</p>

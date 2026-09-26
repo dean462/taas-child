@@ -755,7 +755,6 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <span class="mbi-finance__text">Excess or uncovered repairs? <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Split the cost</a> —</span>
       <div class="mbi-finance__badges">
         <span class="mbi-finance__badge">Afterpay</span>
-        <span class="mbi-finance__badge">Zip</span>
         <span class="mbi-finance__badge">Q Card</span>
         <span class="mbi-finance__badge">Gem Finance</span>
         <span class="mbi-finance__badge">Aotea Finance</span>
@@ -801,7 +800,6 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <p class="mbi-enquiry__drumbeat">Estimate before we start — nothing happens without your approval.</p>
         <div class="mbi-enquiry__finance">
           <span class="mbi-enquiry__finance-badge">Afterpay</span>
-          <span class="mbi-enquiry__finance-badge">Zip</span>
           <span class="mbi-enquiry__finance-badge">Q Card</span>
           <span class="mbi-enquiry__finance-badge">Gem</span>
           <span class="mbi-enquiry__finance-badge">Aotea</span>

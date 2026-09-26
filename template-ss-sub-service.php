@@ -573,7 +573,6 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
       <span class="sss-finance__text">Spread the cost of steering &amp; suspension repairs — <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">finance available</a></span>
       <div class="sss-finance__badges">
         <span class="sss-finance__badge">Afterpay</span>
-        <span class="sss-finance__badge">Zip</span>
         <span class="sss-finance__badge">Q Card</span>
         <span class="sss-finance__badge">Gem Finance</span>
         <span class="sss-finance__badge">Aotea Finance</span>

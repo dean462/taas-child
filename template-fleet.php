@@ -73,7 +73,7 @@ $schema = ['@context'=>'https://schema.org','@graph'=>[
      'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>$review_count,'bestRating'=>'5'],
      'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],
      'sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],
-     'paymentAccepted'=>['Cash','EFTPOS','Visa','Mastercard','Afterpay','Zip','Q Card','Gem Finance'],
+     'paymentAccepted'=>['Cash','EFTPOS','Visa','Mastercard','Afterpay','Q Card','Gem Finance'],
      'priceRange'=>'$$','areaServed'=>['@type'=>'Place','name'=>'South Auckland']],
     ['@type'=>'BreadcrumbList','itemListElement'=>[
         ['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],

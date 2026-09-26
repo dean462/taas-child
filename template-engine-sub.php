@@ -520,7 +520,6 @@ body.page-template-template-engine-sub { overflow-x:hidden; }
       <span class="ers-finance__text">Spread the cost of engine repairs — <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">finance available</a></span>
       <div class="ers-finance__badges">
         <span class="ers-finance__badge">Afterpay</span>
-        <span class="ers-finance__badge">Zip</span>
         <span class="ers-finance__badge">Q Card</span>
         <span class="ers-finance__badge">Gem Finance</span>
         <span class="ers-finance__badge">Aotea Finance</span>
