@@ -109,3 +109,32 @@ define('TAAS_HERO_DEFAULT', '/wp-content/uploads/2026/06/hero-services.webp');
 define('TAAS_HERO_FINANCE', '/wp-content/uploads/2026/06/hero-finance.webp');
 define('TAAS_HERO_MBI',     '/wp-content/uploads/2026/06/hero-mbi.webp');
 define('TAAS_HERO_CONTACT', '/wp-content/uploads/2026/06/hero-contact.webp');
+
+// ── Contact links ────────────────────────────────────────────────────────────
+// Use these in templates so phone numbers, email and address are always tappable.
+if (!defined('TAAS_MAPS_URL')) {
+    define('TAAS_MAPS_URL', 'https://www.google.com/maps/search/?api=1&query=Tony+Allen+Auto+Service+139+Cavendish+Drive+Manukau');
+}
+
+if (!function_exists('taas_phone')) {
+    function taas_phone($number = null, $class = '') {
+        $num = $number ?: TAAS_PHONE_FREE;
+        $tel = preg_replace('/[^0-9+]/', '', $num);
+        $cls = $class ? ' class="' . esc_attr($class) . '"' : '';
+        return '<a href="tel:' . esc_attr($tel) . '"' . $cls . '>' . esc_html($num) . '</a>';
+    }
+}
+
+if (!function_exists('taas_email')) {
+    function taas_email($class = '') {
+        $cls = $class ? ' class="' . esc_attr($class) . '"' : '';
+        return '<a href="mailto:' . esc_attr(TAAS_EMAIL) . '"' . $cls . '>' . esc_html(TAAS_EMAIL) . '</a>';
+    }
+}
+
+if (!function_exists('taas_address')) {
+    function taas_address($class = '') {
+        $cls = $class ? ' class="' . esc_attr($class) . '"' : '';
+        return '<a href="' . esc_url(TAAS_MAPS_URL) . '" target="_blank" rel="noopener"' . $cls . '>' . esc_html(TAAS_ADDRESS) . '</a>';
+    }
+}

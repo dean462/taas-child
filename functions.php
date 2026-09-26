@@ -25,6 +25,74 @@ add_action('template_redirect', function() {
     }
 });
 
+// ── Auto-link contact details ───────────────────────────────────────────────
+// Turns every TAAS phone number, email and street address in visible page text
+// into a tappable link (tel:, mailto:, Google Maps). Runs once on the final
+// HTML so it covers templates, FAQ library answers and stored page content.
+// Skips anything already inside <a>, <button>, <script>, <style>, <head>,
+// <textarea>, <select>, <title> — and never touches tag attributes, so schema
+// JSON and meta tags stay plain text.
+function taas_linkify_contacts($html) {
+    if (!is_string($html) || stripos($html, '<html') === false) return $html;
+
+    $maps = defined('TAAS_MAPS_URL') ? TAAS_MAPS_URL
+          : 'https://www.google.com/maps/search/?api=1&query=Tony+Allen+Auto+Service+139+Cavendish+Drive+Manukau';
+
+    $rules = [
+        // 0800 100 876 (spaces, dashes or none)
+        '/\b0800[ \x{00A0}-]?100[ \x{00A0}-]?876\b/u' => function ($m) {
+            return '<a href="tel:0800100876" class="taas-autolink">' . $m[0] . '</a>';
+        },
+        // 09 278 9556
+        '/(?<![\d-])09[ \x{00A0}-]?278[ \x{00A0}-]?9556\b/u' => function ($m) {
+            return '<a href="tel:092789556" class="taas-autolink">' . $m[0] . '</a>';
+        },
+        // enquiries@taas.co.nz
+        '/\benquiries@taas\.co\.nz\b/i' => function ($m) {
+            return '<a href="mailto:enquiries@taas.co.nz" class="taas-autolink">' . $m[0] . '</a>';
+        },
+        // 139 Cavendish Drive[, Manukau[, Auckland[ 2104]]]
+        '/139 Cavendish (?:Drive|Dr\.?)(?:,? Manukau(?:,? Auckland)?(?: 2104)?)?/u' => function ($m) use ($maps) {
+            return '<a href="' . esc_url($maps) . '" target="_blank" rel="noopener" class="taas-autolink">' . $m[0] . '</a>';
+        },
+    ];
+
+    $skip  = ['a', 'button', 'script', 'style', 'head', 'textarea', 'select', 'option', 'title', 'noscript', 'svg'];
+    $depth = array_fill_keys($skip, 0);
+    $parts = preg_split('/(<!--.*?-->|<[^>]+>)/s', $html, -1, PREG_SPLIT_DELIM_CAPTURE);
+    if ($parts === false) return $html;
+
+    foreach ($parts as $i => $part) {
+        if ($part === '') continue;
+        if ($part[0] === '<') {
+            if (preg_match('#^<(/?)([a-zA-Z][a-zA-Z0-9-]*)#', $part, $t)) {
+                $tag = strtolower($t[2]);
+                if (isset($depth[$tag]) && substr($part, -2) !== '/>') {
+                    $depth[$tag] += ($t[1] === '/') ? -1 : 1;
+                    if ($depth[$tag] < 0) $depth[$tag] = 0;
+                }
+            }
+            continue;
+        }
+        if (array_sum($depth) > 0) continue;
+        if (!preg_match('/0800|09[ \x{00A0}-]?278|enquiries@|Cavendish/u', $part)) continue;
+        foreach ($rules as $re => $cb) {
+            $part = preg_replace_callback($re, $cb, $part);
+        }
+        $parts[$i] = $part;
+    }
+    return implode('', $parts);
+}
+
+add_action('template_redirect', function() {
+    if (is_admin() || is_feed() || wp_doing_ajax() || (defined('REST_REQUEST') && REST_REQUEST)) return;
+    ob_start('taas_linkify_contacts');
+}, 99);
+
+add_action('wp_head', function() {
+    echo '<style>.taas-autolink{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}.taas-autolink:hover{text-decoration-thickness:2px}</style>' . "\n";
+}, 99);
+
 add_action( 'wp_enqueue_scripts', 'taas_child_enqueue_styles' );
 function taas_child_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
