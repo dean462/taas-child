@@ -389,7 +389,7 @@ $taas_faqs['finance_afterpay_manukau'] = [
 
 $taas_faqs['finance_missed_payment'] = [
     'q' => 'What happens if I miss a payment on Afterpay?',
-    'a' => 'Late fees apply. Afterpay charges a late fee capped at 25% of the order value or $68, whichever is less. Zip terms vary — check the Zip app for current fee details. Both providers may pause your account until the missed payment is cleared. Tony Allen Auto Service is not involved in payment collection — that sits entirely between you and the provider.',
+    'a' => 'Late fees apply. Afterpay charges a late fee capped at 25% of the order value or $68, whichever is less. Afterpay may also pause your account until the missed payment is cleared. Tony Allen Auto Service is not involved in payment collection — that sits entirely between you and the provider.',
 ];
 
 $taas_faqs['finance_afterpay_setup'] = [
