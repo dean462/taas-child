@@ -655,14 +655,33 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         ['name'=>'Raj',              'role'=>'Lead Diagnostics &amp; Auto Electrical','bio'=>'TAAS diagnostics and auto electrical specialist. Fault diagnosis, electrical systems, alternators, wiring — fault confirmed before any parts are replaced. NZTA WOF authority holder.'],
         ['name'=>'Hayden',           'role'=>'Technician',                  'bio'=>'Four-year apprenticeship completed. Broad mechanical skill range across servicing, brakes, and general repairs. Also looks after our tyre shop.'],
         ['name'=>'Mana',             'role'=>'Technician',                            'bio'=>'Strong problem-solving and attention to detail. Works across a wide range of mechanical services with a focus on getting it right first time. NZTA WOF authority holder.'],
+        ['name'=>'Jack',             'role'=>'Technician',                            'bio'=>'Brings strong problem-solving to fault finding and repairs, with close attention to detail on every job card.'],
         ['name'=>'Kiritnesh',        'role'=>'Technician',                            'bio'=>'Versatile technician working across a range of services, including our tyre shop. Developing his skills and a reliable part of the workshop team day to day.'],
+        ['name'=>'Lushen Govender',  'role'=>'Technician',                            'bio'=>'Recently joined the TAAS workshop team, working across servicing and general mechanical repairs.'],
+        ['name'=>'Tom Le Blanc',     'role'=>'Technician',                            'bio'=>'Recently joined the TAAS workshop team, working across servicing and general mechanical repairs.'],
         ['name'=>'Lincoln',          'role'=>'Apprentice Technician',                 'bio'=>'Progressing through his apprenticeship across the workshop and tyre shop under qualified supervision — part of TAAS\'s commitment to developing the next generation.'],
       ];
       foreach ($team as $member): ?>
       <div class="au-team-card">
+        <?php
+          // Photo: set 'photo' => media URL on the member, or upload a file named
+          // staff-<first-name>.jpg (e.g. staff-lushen.jpg) and it is picked up here.
+          $photo = !empty($member['photo']) ? $member['photo'] : '';
+          if (!$photo) {
+              $first = sanitize_title(strtok($member['name'], ' '));
+              $att   = get_posts(['post_type'=>'attachment','name'=>'staff-' . $first,'posts_per_page'=>1,'fields'=>'ids']);
+              if ($att) $photo = wp_get_attachment_image_url($att[0], 'medium_large');
+          }
+        ?>
+        <?php if ($photo): ?>
+        <div style="width:100%;aspect-ratio:3/4;background:#1A1A1A;margin-bottom:18px;overflow:hidden;">
+          <img src="<?php echo esc_url($photo); ?>" alt="<?php echo esc_attr(wp_strip_all_tags($member['name'] . ', ' . html_entity_decode($member['role']))); ?> at Tony Allen Auto Service" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <?php else: ?>
         <div style="width:100%;aspect-ratio:3/4;background:#1A1A1A;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
           <span style="font-size:11px;color:#444;font-weight:600;letter-spacing:.1em;text-transform:uppercase;">Photo<br>Coming Soon</span>
         </div>
+        <?php endif; ?>
         <div class="au-team-card__name"><?php echo $member['name']; ?></div>
         <div class="au-team-card__role"><?php echo $member['role']; ?></div>
         <p class="au-team-card__bio"><?php echo esc_html($member['bio']); ?></p>
