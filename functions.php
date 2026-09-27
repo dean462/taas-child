@@ -5,6 +5,7 @@
  */
 
 require_once get_stylesheet_directory() . '/taas-constants.php';
+require_once get_stylesheet_directory() . '/taas-deploy.php'; // GitHub → Cloudways auto-deploy
 
 // ── Page titles ─────────────────────────────────────────────────────────────
 // Parent is a block theme; our classic header.php needs this so WordPress
