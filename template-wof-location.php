@@ -70,13 +70,13 @@ $maps_url      = 'https://www.google.com/maps/search/?api=1&query=Tony+Allen+Aut
 $faqs = [
   // Suburb-specific (need $suburb_name interpolation — can't live in shared library)
   ['q' => "Where is the nearest WOF station to {$suburb_name}?",
-   'a' => "Tony Allen Auto Service is at 139 Cavendish Drive, Manukau — {$distance_text}. " . rtrim($sub['getting_here'], '.') . ". We are NZTA Authorised and have been providing WOF inspections to {$suburb_name} and surrounding South Auckland suburbs since {$established}. Walk-ins welcome mornings, or call {$phone_free} to book."],
+   'a' => "Tony Allen Auto Service is at 139 Cavendish Drive, Manukau — {$distance_text}. " . rtrim($sub['getting_here'], '.') . ". We are NZTA Authorised and have been providing WOF inspections to {$suburb_name} and surrounding South Auckland suburbs since {$established}. Call {$phone_free} or book online to arrange a drop-off."],
   ['q' => "How much does a WOF cost near {$suburb_name}?",
-   'a' => "A Warrant of Fitness at Tony Allen Auto Service is {$price} incl. GST — all makes, all models, no hidden charges. We're at 139 Cavendish Drive, Manukau ({$distance_text}). If we find anything that needs attention, we give you a clear written estimate before touching it. Free re-inspection within 28 days."],
-  ['q' => "Do I need to book or can I walk in from {$suburb_name}?",
-   'a' => "Walk-ins are welcome mornings, Monday to Friday. Afternoons fill quickly, so booking ahead is recommended for {$suburb_name} drivers. Most inspections take 30–45 minutes. Call {$phone_free} to book a time, or send an enquiry through our website."],
+   'a' => "A Warrant of Fitness at Tony Allen Auto Service is {$price} incl. GST — all makes, all models, no hidden charges. We're at 139 Cavendish Drive, Manukau ({$distance_text}). If anything fails, we give you a written estimate, and most repairs can be done the same visit."],
+  ['q' => "Do I need to book a WOF from {$suburb_name}?",
+   'a' => "Yes. WOF inspections are booked as drop-offs so we can allow time to fix anything that fails on the same visit. Dropping off early (7:30–9:00am) gives {$suburb_name} drivers the best chance of having it inspected, repaired and re-checked the same day. Call {$phone_free} or book online. If you need to wait with your vehicle, tell us when you book and we'll confirm whether we can fit it in."],
   ['q' => "What happens if my car fails its WOF?",
-   'a' => "We give you a clear written estimate before any work begins — no obligation to proceed. The re-inspection is free within 28 days. You can have the repairs done here, somewhere else, or do them yourself — the recheck is free either way. Because we run {$division_count} specialist divisions under one roof at 139 Cavendish Drive, we can often carry out repairs on the same visit — saving {$suburb_name} drivers a second trip."],
+   'a' => "We show you what failed and why, and give you a written estimate before any work begins. There's no obligation to proceed. Because we run {$division_count} specialist divisions under one roof at 139 Cavendish Drive, most repairs can be done the same visit, subject to parts, saving {$suburb_name} drivers a second trip. If the repairs are done elsewhere, re-checks are by booking. Book within 28 days of the inspection so it's at no charge."],
   // Shared library FAQs
   $taas_faqs['wof_frequency_2026'],
   $taas_faqs['wof_checklist'],
@@ -93,7 +93,11 @@ $faqs = [
 // ── Suburb pills — from shared library ────────────────────────────────────────
 $all_suburbs = [];
 foreach (taas_suburbs_library() as $slug => $data) {
-    $all_suburbs[] = [$data['name'], '/wof-inspection-' . $slug . '/'];
+    // Only link suburb pages that are published, so no pill points at a 404.
+    $pg = get_page_by_path('wof-inspection-' . $slug);
+    if ($pg && $pg->post_status === 'publish') {
+        $all_suburbs[] = [$data['name'], '/wof-inspection-' . $slug . '/'];
+    }
 }
 
 // ── Schema ────────────────────────────────────────────────────────────────────
@@ -151,7 +155,7 @@ $schema = [
     [
       '@type'       => 'Service',
       'name'        => 'WOF ' . $suburb_name . ' — Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Walk-ins welcome mornings — booking recommended. Free re-inspection within 28 days.',
+      'description' => 'NZTA-authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Booked drop-off — if anything fails, we quote it and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => $site_url . '/#organization'],
       'areaServed'  => $suburb_name . ', South Auckland, New Zealand',
       'offers'      => [
@@ -637,16 +641,16 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         </div>
         <h1 class="wl-hero__h1">
           WOF Inspection<br>
-          <span><?php echo esc_html($suburb_name); ?> — <?php echo esc_html($price); ?> Flat Rate</span>
+          <span><?php echo esc_html($suburb_name); ?> — Inspected, Quoted &amp; Fixed</span>
         </h1>
-        <div class="wl-hero__pill"><?php echo esc_html(strtoupper('Booking recommended · ' . $hours . ($sub['distance'] ? ' · ' . $sub['distance'] : ''))); ?></div>
+        <div class="wl-hero__pill"><?php echo esc_html(strtoupper('Booked drop-off · ' . $hours . ($sub['distance'] ? ' · ' . $sub['distance'] : ''))); ?></div>
         <p class="wl-hero__sub">
-          NZTA-authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?> — <?php echo esc_html($distance_text); ?><?php endif; ?>. One fixed price for every vehicle. Free re-inspection within 28 days.
+          NZTA-authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?> — <?php echo esc_html($distance_text); ?><?php endif; ?>. <?php echo esc_html($price); ?> for all makes and models. If anything fails, you get a written estimate on the spot, and most repairs can be done the same visit.
         </p>
         <div class="wl-hero__ctas">
           <a href="#wl-book" class="wl-btn wl-btn--yellow">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
-            Book My WOF — <?php echo esc_html($price); ?>
+            Book My WOF
           </a>
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wl-btn wl-btn--outline">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
@@ -661,7 +665,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
           <div class="wl-card-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
           <div>
             <div class="wl-card-label">Inspection time</div>
-            <div class="wl-card-val">30–45 minutes</div>
+            <div class="wl-card-val">Drop off · we'll call when it's done</div>
           </div>
         </div>
         <div class="wl-card-item">
@@ -707,7 +711,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wl-pstrip__num"><?php echo esc_html($phone_free); ?></a>
         <span class="wl-pstrip__hours"><?php echo esc_html($hours); ?></span>
       </div>
-      <span class="wl-pstrip__walkin">Walk-ins welcome mornings · Bookings recommended</span>
+      <span class="wl-pstrip__walkin">Booked drop-off WOFs — drop off early for same-day repairs</span>
     </div>
   </div>
 </div>
@@ -764,14 +768,15 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
           <ul class="wl-choose">
             <li>NZTA authorised — every inspector trained and certified</li>
             <li><?php echo esc_html($price); ?> flat rate — all makes, all models, no hidden charges</li>
-            <li>Free re-inspection within 28 days of the initial inspection date</li>
+            <li>Drop off early and we'll aim to inspect, quote and repair the same day</li>
             <li>Repairs carried out in Manukau — no need to book elsewhere</li>
+            <li>Re-inspection within 28 days at no charge</li>
             <li>Afterpay, Q Card, Gem Finance, Aotea Finance accepted</li>
             <li>Trading since <?php echo esc_html($established); ?> — <?php echo esc_html($years); ?> years serving South Auckland</li>
           </ul>
         </div>
         <div class="wl-cta-panel">
-          <p class="wl-cta-panel__head">Book a time or walk in</p>
+          <p class="wl-cta-panel__head">Book a drop-off</p>
           <p class="wl-cta-panel__sub"><?php echo esc_html($hours); ?> · <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:none;">139 Cavendish Drive, Manukau</a></p>
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wl-btn wl-btn--dark">Call <?php echo esc_html($phone_free); ?></a>
         </div>
@@ -852,7 +857,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <h2 class="wl-book__h2" id="wl-book-head">
       Book Your WOF <span><?php echo esc_html($suburb_name); ?></span>
     </h2>
-    <p class="wl-book__sub">Book a time and we'll have a bay ready. Walk-ins welcome mornings — booking recommended for afternoons.</p>
+    <p class="wl-book__sub">Fill in your details and we'll confirm a time. Early drop-offs give us the best chance of fixing anything on the same day.</p>
 
     <div class="wl-book__grid">
       <div class="wl-form-wrap">
@@ -862,7 +867,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
           <?php echo do_shortcode($cf7_wof); ?>
         <?php else: ?>
           <h3>Book Your WOF Today</h3>
-          <p>Call or email — or walk in mornings, Monday to Friday at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:none;">139 Cavendish Drive, Manukau</a>.</p>
+          <p>Call or email to book a drop-off, Monday to Friday at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:none;">139 Cavendish Drive, Manukau</a>.</p>
           <div style="display:flex;flex-direction:column;gap:12px;">
             <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wl-btn wl-btn--yellow" style="justify-content:center;">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
@@ -902,7 +907,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         </div>
         <div class="wl-contact-row">
           <span class="wl-contact-label">WOF Price</span>
-          <span class="wl-contact-val wl-contact-val--price"><?php echo esc_html($price); ?> · Free re-inspection within 28 days</span>
+          <span class="wl-contact-val wl-contact-val--price"><?php echo esc_html($price); ?> · All makes &amp; models</span>
         </div>
         <?php if ($distance_text): ?>
         <div class="wl-contact-row">
@@ -960,6 +965,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <p class="wl-suburbs__sub">We serve drivers from across South Auckland. Select your area for local information.</p>
     <?php endif; ?>
 
+    <?php if ($all_suburbs): ?>
     <h3 style="font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#999;margin-bottom:16px;">All WOF Locations</h3>
     <div class="wl-suburbs__grid">
       <?php foreach ($all_suburbs as $s):
@@ -972,6 +978,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       </a>
       <?php endforeach; ?>
     </div>
+    <?php endif; ?>
   </div>
 </section>
 
@@ -980,11 +987,11 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 <section class="wl-cta" aria-label="Book your WOF">
   <div class="wl-w">
     <h2 class="wl-cta__h2">Ready for your <span>WOF</span><br>near <?php echo esc_html($suburb_name); ?>?</h2>
-    <p class="wl-cta__sub">Walk-ins welcome mornings, Monday to Friday. Book ahead for afternoons.</p>
+    <p class="wl-cta__sub">Book ahead and drop off early. Anything that fails can usually be fixed the same visit.</p>
     <div class="wl-cta__price"><?php echo esc_html($price); ?> flat rate · All makes &amp; models · NZTA Authorised</div>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wl-cta__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="wl-cta__btns">
-      <a href="#wl-book" class="wl-btn wl-btn--yellow">Book My WOF — <?php echo esc_html($price); ?></a>
+      <a href="#wl-book" class="wl-btn wl-btn--yellow">Book My WOF</a>
       <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="wl-btn wl-btn--outline">Send Enquiry</a>
     </div>
   </div>

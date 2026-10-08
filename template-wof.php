@@ -10,7 +10,7 @@
  *   1. Drop into wp-content/themes/taas-child/
  *   2. WP Admin → Pages → Add New → Title: "Warrant of Fitness Manukau" → Slug: wof
  *   3. Template → "WOF Hub" → Publish
- *   4. AIOSEO → Title: "WOF Manukau $80 | Warrant of Fitness | Tony Allen Auto Service"
+ *   4. AIOSEO → Title: "WOF Manukau — Inspection & Same-Visit Repairs | TAAS"
  *   5. AIOSEO → Focus keyword: wof manukau
  *   6. Purge cache
  */
@@ -50,8 +50,11 @@ get_header();
 $wof_faqs = [
     $taas_faqs['wof_cost'],
     $taas_faqs['wof_appointment'],
+    $taas_faqs['wof_wait'],
     $taas_faqs['wof_frequency_2026'],
     $taas_faqs['wof_fail_detail'],
+    $taas_faqs['wof_recheck_booking'],
+    $taas_faqs['wof_vs_service'],
     $taas_faqs['wof_checklist'],
     $taas_faqs['wof_fine_2026'],
     $taas_faqs['wof_older_vehicles'],
@@ -127,7 +130,7 @@ $schema = [
     [
       '@type'       => 'Service',
       'name'        => 'Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Walk-ins welcome mornings — booking recommended for afternoons. Free re-inspection within 28 days.',
+      'description' => 'NZTA-authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Booked drop-off — if anything fails, we quote it and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => get_site_url() . '/#organization'],
       'areaServed'  => 'Manukau, South Auckland, New Zealand',
       'offers'      => [
@@ -563,14 +566,14 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         </div>
         <h1 class="wof-hero__h1">
           WOF Inspection Manukau<br>
-          <span><?php echo esc_html($wof_price); ?> Flat Rate — All Makes &amp; Models</span>
+          <span>Inspected, Quoted &amp; Fixed — One Visit</span>
         </h1>
-        <div class="wof-hero__price">Walk-ins welcome mornings · Mon–Fri 7:30am–5:00pm</div>
-        <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA-authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. One fixed price for every vehicle, and if it doesn't pass first time, the re-inspection within 28 days is free.</p>
+        <div class="wof-hero__price">Booked drop-off · Mon–Fri 7:30am–5:00pm</div>
+        <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA-authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. <?php echo esc_html($wof_price); ?> for all makes and models. If anything fails, you get a written estimate on the spot, and with seven specialist divisions under one roof, most repairs can be done the same visit.</p>
         <div class="wof-hero__ctas">
           <a href="#wof-book" class="wof-btn wof-btn--yellow">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
-            Book My WOF — <?php echo esc_html($wof_price); ?>
+            Book My WOF
           </a>
           <a href="tel:<?php echo preg_replace('/\s+/','',$phone_free); ?>" class="wof-btn wof-btn--outline">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
@@ -585,7 +588,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
           <div class="wof-card-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
           <div>
             <div class="wof-card-label">Inspection time</div>
-            <div class="wof-card-val">30–45 minutes</div>
+            <div class="wof-card-val">Drop off · we'll call when it's done</div>
           </div>
         </div>
         <div class="wof-card-item">
@@ -599,7 +602,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
           <div class="wof-card-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg></div>
           <div>
             <div class="wof-card-label">If you fail</div>
-            <div class="wof-card-val">Free re-inspection within 28 days</div>
+            <div class="wof-card-val">Written estimate · repairs same visit where possible</div>
           </div>
         </div>
         <div class="wof-card-item">
@@ -624,7 +627,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         <a href="tel:<?php echo preg_replace('/\s+/','',$phone_free); ?>" class="wof-pstrip__num"><?php echo esc_html($phone_free); ?></a>
         <span class="wof-pstrip__hours">Mon–Fri 7:30am–5:00pm</span>
       </div>
-      <span class="wof-pstrip__walkin">Walk-ins welcome mornings · Bookings recommended</span>
+      <span class="wof-pstrip__walkin">Booked drop-off WOFs — drop off early for same-day repairs</span>
     </div>
   </div>
 </div>
@@ -639,14 +642,14 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         <p class="wof-facts__body">Tony Allen Auto Service has been carrying out NZTA-authorised Warrant of Fitness inspections in Manukau since 1985. We are a family-owned independent workshop with a dedicated WOF inspection bay and a team of qualified technicians.</p>
         <p class="wof-facts__body">We operate seven specialist divisions under one roof. If your vehicle fails its WOF — whether it needs brakes, tyres, suspension, or electrical work — we can often carry out repairs on the same visit, depending on the work required and parts availability. No referrals. No second booking needed in many cases.</p>
         <ul class="wof-checklist">
+          <li>Drop off early and we'll aim to inspect, quote and repair the same day</li>
           <li>NZTA Authorised — <?php echo esc_html($ms_number); ?></li>
           <li>MTA Assured — independently assessed quality standard</li>
           <li>Dedicated WOF inspection bay</li>
-          <li><?php echo esc_html($wof_price); ?> flat rate — all makes, all models, incl. GST</li>
           <li>Written repair estimate before any work begins</li>
-          <li>Free re-inspection within 28 days</li>
           <li>Repairs often carried out on the same visit — subject to work required and parts</li>
-          <li>Free Wi-Fi and coffee in customer lounge while you wait</li>
+          <li><?php echo esc_html($wof_price); ?> flat rate — all makes, all models, incl. GST</li>
+          <li>Re-inspection within 28 days at no charge</li>
         </ul>
       </div>
 
@@ -655,29 +658,29 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
           <div class="wof-step">
             <div class="wof-step__num">1</div>
             <div>
-              <div class="wof-step__head">Drive in or book ahead</div>
-              <div class="wof-step__body">Walk-ins welcome mornings, Monday to Friday. Afternoons fill quickly, so booking ahead is recommended. Call <?php echo esc_html($phone_free); ?> to secure a time.</div>
+              <div class="wof-step__head">Book a drop-off</div>
+              <div class="wof-step__body">Book online or call <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>" style="color:inherit;font-weight:600;text-decoration:underline;"><?php echo esc_html($phone_free); ?></a>. Early drop-off (7:30–9:00am) gives us the most time to fix anything on the same day.</div>
             </div>
           </div>
           <div class="wof-step">
             <div class="wof-step__num">2</div>
             <div>
-              <div class="wof-step__head">Inspection in 30–45 minutes</div>
-              <div class="wof-step__body">Relax in our customer lounge with free Wi-Fi and a coffee. You can watch through the window as your vehicle goes through the inspection bay.</div>
+              <div class="wof-step__head">Inspection</div>
+              <div class="wof-step__body">Leave the car with us and we'll call or text you as soon as it's been inspected.</div>
             </div>
           </div>
           <div class="wof-step">
             <div class="wof-step__num">3</div>
             <div>
-              <div class="wof-step__head">Pass or full written report</div>
-              <div class="wof-step__body">If your vehicle passes, we issue the WOF. If it fails, you get a written repair estimate before we touch anything. Your choice whether to proceed.</div>
+              <div class="wof-step__head">Pass, or a clear explanation</div>
+              <div class="wof-step__body">If it passes, we issue the WOF. If anything fails, we show you what failed and why, and give you a written estimate before we touch anything. Your choice whether to proceed.</div>
             </div>
           </div>
           <div class="wof-step">
             <div class="wof-step__num">4</div>
             <div>
-              <div class="wof-step__head">Free re-inspection within 28 days</div>
-              <div class="wof-step__body">The re-inspection is free within 28 days. You can have the repairs done here, somewhere else, or do them yourself &mdash; the recheck is free either way. Where possible, repairs are completed on the same visit &mdash; subject to the work required and parts availability.</div>
+              <div class="wof-step__head">Fixed and re-checked</div>
+              <div class="wof-step__body">Approve the repairs and we'll aim to complete them and re-check the vehicle in the same visit, subject to parts. If the repairs are done elsewhere, book your re-check with us. It's at no charge within 28 days.</div>
             </div>
           </div>
         </div>
@@ -704,8 +707,8 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         <div class="wof-stat__lbl">Google reviews · <?php echo esc_html($rating); ?>★ average</div>
       </div>
       <div>
-        <div class="wof-stat__num">28</div>
-        <div class="wof-stat__lbl">Days free re-inspection window</div>
+        <div class="wof-stat__num"><?php echo esc_html($division_count); ?></div>
+        <div class="wof-stat__lbl">Specialist divisions on site</div>
       </div>
     </div>
   </div>
@@ -774,7 +777,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
     <div class="wof-book__grid">
       <div>
         <h2 class="wof-book__h2" id="wof-book-head">Book Your <span style="color:#FFC800">WOF</span></h2>
-        <p class="wof-book__sub">Fill in your details and we'll confirm a time. Walk-ins welcome mornings, Monday to Friday — booking recommended for afternoons.</p>
+        <p class="wof-book__sub">Fill in your details and we'll confirm a time. Early drop-offs give us the best chance of fixing anything on the same day.</p>
         <?php echo do_shortcode($cf7_wof); ?>
       </div>
       <div class="wof-book__info">
@@ -810,8 +813,8 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
             <svg viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
           <div>
-            <div class="wof-book__info-lbl">Walk-ins</div>
-            <div class="wof-book__info-val">Welcome mornings<br><span style="color:#999;font-size:13px;">Booking recommended for afternoons</span></div>
+            <div class="wof-book__info-lbl">Drop-off</div>
+            <div class="wof-book__info-val">Drop off from 7:30am. We'll contact you as soon as the inspection's done.</div>
           </div>
         </div>
         <div class="wof-book__info-item">
@@ -877,8 +880,8 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         <div class="wof-why__card-body">Seven specialist divisions under one roof — brakes, tyres, suspension, electrics. Where the work and parts allow, we aim to have repairs done on the same visit. We'll always tell you upfront what's possible.</div>
       </div>
       <div class="wof-why__card">
-        <div class="wof-why__card-head">Free re-inspection</div>
-        <div class="wof-why__card-body">Re-inspection is free within 28 days &mdash; even if you get the repairs done somewhere else. No questions asked.</div>
+        <div class="wof-why__card-head">What a WOF is (and isn't)</div>
+        <div class="wof-why__card-body">A WOF is a safety check against NZTA standards on the day. It isn't a service or a guarantee of mechanical condition. If something fails, we'll explain it plainly and show you.</div>
       </div>
       <div class="wof-why__card">
         <div class="wof-why__card-head">Calibrated equipment</div>
@@ -901,11 +904,11 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
 <section class="wof-cta" aria-label="Book your WOF">
   <div class="wof-w">
     <h2 class="wof-cta__h2">Ready for your <span>WOF</span><br>in Manukau?</h2>
-    <p class="wof-cta__sub">Walk-ins welcome mornings, Monday to Friday. Book ahead for afternoons.</p>
+    <p class="wof-cta__sub">Book ahead and drop off early. Anything that fails can usually be fixed the same visit.</p>
     <div class="wof-cta__price"><?php echo esc_html($wof_price); ?> flat rate · All makes &amp; models · NZTA Authorised</div>
     <a href="tel:<?php echo preg_replace('/\s+/','',$phone_free); ?>" class="wof-cta__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="wof-cta__btns">
-      <a href="#wof-book" class="wof-btn wof-btn--yellow">Book My WOF — <?php echo esc_html($wof_price); ?></a>
+      <a href="#wof-book" class="wof-btn wof-btn--yellow">Book My WOF</a>
       <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="wof-btn wof-btn--outline">Send Enquiry</a>
     </div>
   </div>
@@ -926,14 +929,20 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
 </section>
 
 
-<!-- ══ SUBURB SPOKES ══════════════════════════════════════════════════════ -->
-<section class="wof-suburbs" aria-labelledby="wof-suburbs-head">
+<!-- ══ FAILED ELSEWHERE ═══════════════════════════════════════════════════ -->
+<section class="wof-elsewhere" aria-labelledby="wof-elsewhere-head" style="background:#fff;padding:64px 0;border-top:1px solid #E8E8E4;">
   <div class="wof-w">
-    <h2 class="wof-suburbs__h2" id="wof-suburbs-head">WOF Near Me — South Auckland</h2>
-    <p class="wof-suburbs__sub">We serve drivers from across South Auckland from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>. Select your suburb for local WOF information and directions.</p>
-    <div class="wof-suburbs__grid">
-      <?php
-      $suburbs = [
+    <h2 id="wof-elsewhere-head" style="font-family:var(--taas-font);font-size:var(--taas-h2, clamp(26px,3.5vw,36px));font-weight:700;color:var(--taas-dark, #1A1A1A);margin-bottom:12px;">Failed your WOF somewhere else?</h2>
+    <p style="font-size:17px;color:#555;line-height:1.75;font-weight:300;letter-spacing:-0.1px;margin-bottom:24px;max-width:700px;">Bring us the fail sheet. We'll quote the repairs, get them done, often the same day, and either you take it back for the free re-check, or we can carry out a fresh WOF here. Brakes, tyres, suspension, lights and electrics are all handled in-house.</p>
+    <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="wof-btn wof-btn--dark" style="background:#1A1A1A;color:#fff!important;">Send Us Your Fail Sheet</a>
+  </div>
+</section>
+
+
+<?php
+// Suburb links: only suburbs whose wof-inspection page is published are shown.
+// The whole block stays hidden until at least one suburb page is live.
+$suburbs_all = [
         ['Manukau','On site — we are here','/wof-inspection-manukau/'],
         ['Papatoetoe','~5 min via Great South Rd','/wof-inspection-papatoetoe/'],
         ['Māngere','~10 min from town centre','/wof-inspection-mangere/'],
@@ -951,8 +960,19 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         ['Takanini','~15–20 min via Great South Rd','/wof-inspection-takanini/'],
         ['Papakura','~20 min via Great South Rd','/wof-inspection-papakura/'],
         ['Howick','~20–25 min via South-Eastern Hwy','/wof-inspection-howick/'],
-      ];
-      foreach($suburbs as $s): ?>
+];
+$suburbs = array_values(array_filter($suburbs_all, function ($sb) {
+    $pg = get_page_by_path(trim($sb[2], '/'));
+    return $pg && $pg->post_status === 'publish';
+}));
+if ($suburbs) : ?>
+<!-- ══ SUBURB SPOKES ══════════════════════════════════════════════════════ -->
+<section class="wof-suburbs" aria-labelledby="wof-suburbs-head">
+  <div class="wof-w">
+    <h2 class="wof-suburbs__h2" id="wof-suburbs-head">WOF Near Me — South Auckland</h2>
+    <p class="wof-suburbs__sub">We serve drivers from across South Auckland from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>. Select your suburb for local WOF information and directions.</p>
+    <div class="wof-suburbs__grid">
+      <?php foreach($suburbs as $s): ?>
       <a href="<?php echo esc_url(home_url($s[2])); ?>" class="wof-suburb-pill">
         <span class="wof-suburb-pill__name"><?php echo esc_html($s[0]); ?></span>
         <span class="wof-suburb-pill__dist"><?php echo esc_html($s[1]); ?></span>
@@ -961,6 +981,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 
 <!-- ══ FAQ ════════════════════════════════════════════════════════════════ -->

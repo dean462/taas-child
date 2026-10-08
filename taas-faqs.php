@@ -64,27 +64,42 @@ $taas_faqs = [];
 
 $taas_faqs['wof_cost'] = [
     'q' => 'How much does a WOF cost at TAAS?',
-    'a' => 'A Warrant of Fitness at Tony Allen Auto Service costs ' . $_fq_wof . ' incl. GST — all makes, all models, no hidden charges. We are NZTA Authorised (station number ' . $_fq_ms . ') at 139 Cavendish Drive, Manukau. Walk-ins welcome mornings, bookings recommended. Call ' . $_fq_phone . ' to book. If your vehicle fails, we offer a free re-inspection within 28 days.',
+    'a' => 'A Warrant of Fitness at Tony Allen Auto Service costs ' . $_fq_wof . ' incl. GST — all makes, all models, no hidden charges. We are NZTA Authorised (station number ' . $_fq_ms . ') at 139 Cavendish Drive, Manukau. Call ' . $_fq_phone . ' to book. If anything fails, we give you a written estimate, and most repairs can be done the same visit.',
 ];
 
 $taas_faqs['wof_recheck'] = [
     'q' => 'Do you offer a free re-inspection if my car fails a WOF?',
-    'a' => 'Yes. If your vehicle fails its WOF at TAAS, we offer a free re-inspection within 28 days once the required repairs are completed — whether we do the repairs or you take it elsewhere. If we carry out the repairs, we re-inspect the same day where possible. If your vehicle was checked at another workshop, the free re-inspection is with that company.',
+    'a' => 'Yes. If your vehicle fails its WOF with us, the re-check within 28 days is at no charge. If we do the repairs, we\'ll re-check it as part of the job. If the repairs are done elsewhere, please book your re-check. Call ' . $_fq_phone . ' or book online.',
 ];
 
 $taas_faqs['wof_fail'] = [
     'q' => 'What happens if my car fails its WOF?',
-    'a' => 'We give you a printed report listing every item that failed and why. We explain each item in plain English — what it means, how urgent it is, and what the repair options are. We provide an estimate for the repairs and wait for your approval before doing any work. Free re-inspection within 28 days once the repairs are completed.',
+    'a' => 'We give you a printed report listing every item that failed and why. We explain each item in plain English — what it means, how urgent it is, and what the repair options are. We provide an estimate for the repairs and wait for your approval before doing any work. If the repairs are done elsewhere, book your re-check with us. It\'s at no charge within 28 days of the inspection.',
 ];
 
 $taas_faqs['wof_fail_detail'] = [
     'q' => 'What happens if my vehicle fails its WOF?',
-    'a' => 'We give you a written repair estimate — no obligation to proceed. The re-inspection is free within 28 days. You can have the work done here, take it somewhere else, or do it yourself — the recheck is free either way. Because we run ' . $_fq_division . ' specialist divisions under one roof, we can often handle repairs on the same visit — subject to the work required and parts availability.',
+    'a' => 'We show you what failed and why, and give you a written repair estimate. There\'s no obligation to proceed. With ' . $_fq_division . ' specialist divisions on site, most repairs can be done the same visit, subject to parts. If you get the repairs done elsewhere, re-checks are by booking. Call ' . $_fq_phone . ' or use the form, and book within 28 days of the inspection so it\'s at no charge.',
+];
+
+$taas_faqs['wof_recheck_booking'] = [
+    'q' => 'Do I need to book my WOF re-check?',
+    'a' => 'Yes. Re-checks are booked like any other job so we can fit you in without a wait. It\'s at no charge if it\'s within 28 days of the original inspection, so book early in that window. After 28 days, a new WOF inspection is required.',
+];
+
+$taas_faqs['wof_vs_service'] = [
+    'q' => 'Is a WOF the same as a service?',
+    'a' => 'No. A WOF checks your vehicle against NZTA safety standards on the day of inspection. It doesn\'t check engine health, fluids or servicing items, and a pass isn\'t a guarantee nothing will go wrong. If you want the full picture, book a <a href="' . esc_url($_fq_site . '/vehicle-servicing/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">service</a> or <a href="' . esc_url($_fq_site . '/pre-purchase-inspection/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">pre-purchase inspection</a> alongside your WOF.',
+];
+
+$taas_faqs['wof_wait'] = [
+    'q' => 'Can I wait while my WOF is done?',
+    'a' => 'WOFs are booked as drop-offs by default. If you need to wait, tell us when you book and we\'ll confirm whether we can fit it in. We\'ll call or text as soon as the inspection\'s done, and if anything needs fixing, you\'ll have the estimate in hand.',
 ];
 
 $taas_faqs['wof_appointment'] = [
     'q' => 'Do I need an appointment for a WOF in Manukau?',
-    'a' => 'Walk-ins are welcome mornings, Monday to Friday at <a href="' . esc_url($_fq_maps) . '" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a>. Afternoons fill quickly, so booking ahead is strongly recommended. Most WOF inspections are completed in 30–45 minutes while you wait. Call <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '">' . $_fq_phone . '</a> to book a time.',
+    'a' => 'Yes. WOF inspections are booked as drop-offs so we can allow time to fix anything that fails on the same visit. Book online or call <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '">' . $_fq_phone . '</a>. Dropping off early (7:30–9:00am) gives us the best chance of having it inspected, repaired and re-checked the same day.',
 ];
 
 $taas_faqs['wof_frequency_2026'] = [
@@ -184,12 +199,12 @@ $taas_faqs['suburbs'] = [
 
 $taas_faqs['booking'] = [
     'q' => 'Do I need to book or can I walk in?',
-    'a' => 'Bookings are recommended for servicing, repairs, and diagnostics so we can allocate the right technician and time. WOF walk-ins are welcome mornings. Call ' . $_fq_phone . ' or send an enquiry through our website to book.',
+    'a' => 'Please book. Bookings let us allocate the right technician and time, including WOFs, so we can fix anything that fails on the same visit. Call ' . $_fq_phone . ' or send an enquiry online.',
 ];
 
 $taas_faqs['service_duration'] = [
     'q' => 'How long will my service take?',
-    'a' => 'A WOF takes around 30 to 45 minutes. Vehicle servicing depends on the tier — an Essential service is typically completed within an hour, a Standard service takes around an hour, and a Premium service takes approximately an hour and a half. Brake and clutch repairs are usually completed same day where parts are available. Call ' . $_fq_phone . ' and we will let you know what to expect for your specific vehicle.',
+    'a' => 'A WOF inspection itself takes 30 to 45 minutes — drop it off and we\'ll call when it\'s done. Vehicle servicing depends on the tier — an Essential service is typically completed within an hour, a Standard service takes around an hour, and a Premium service takes approximately an hour and a half. Brake and clutch repairs are usually completed same day where parts are available. Call ' . $_fq_phone . ' and we will let you know what to expect for your specific vehicle.',
 ];
 
 
@@ -849,7 +864,7 @@ $taas_faqs['contact_payment'] = [
 
 $taas_faqs['contact_dropoff'] = [
     'q' => 'What should I bring when dropping my car off?',
-    'a' => 'Bring your vehicle key and let us know exactly what is happening — any warning lights, noises, or symptoms. If you have a service history or previous invoices from another workshop, those help too. For WOF inspections, just drive in — no paperwork needed.',
+    'a' => 'Bring your vehicle key and let us know exactly what is happening — any warning lights, noises, or symptoms. If you have a service history or previous invoices from another workshop, those help too. For WOF inspections, no paperwork needed. Just drop the car off at your booked time with the keys.',
 ];
 
 
