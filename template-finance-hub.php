@@ -751,7 +751,7 @@ body.page-template-template-finance-hub { overflow-x:hidden; -webkit-text-size-a
       <div>
         <span class="fh-sec-eye fh-sec-eye--yellow">Get in Touch</span>
         <h2 class="fh-sec-h2 fh-sec-h2--white" id="fh-book-head">Ready to book your repair?</h2>
-        <p style="font-size:16px;color:#aaa;line-height:1.75;font-weight:300;margin-bottom:8px;">Let us know which finance option you plan to use so we can have everything ready when you arrive. Estimate before we start — and a call if anything changes.</p>
+        <p style="font-size:16px;color:#aaa;line-height:1.75;font-weight:300;margin-bottom:8px;">Let us know which finance option you plan to use so we can have everything ready when you arrive. We'll keep you informed every step of the way.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="fh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="fh-enquiry__detail">
           <strong>Tony Allen Auto Service</strong><br>

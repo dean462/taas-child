@@ -470,3 +470,64 @@ add_action('wp_footer', function() {
     </script>
     <?php
 }, 22);
+
+
+// ── Estimate prompt + WhatsApp — site-wide helpers ──────────────────────────
+// WhatsApp buttons only render once TAAS_WHATSAPP is set in taas-constants.php.
+
+function taas_whatsapp_number() {
+    $n = defined('TAAS_WHATSAPP') ? preg_replace('/\D+/', '', TAAS_WHATSAPP) : '';
+    return $n;
+}
+
+function taas_whatsapp_url( $text = '' ) {
+    $n = taas_whatsapp_number();
+    if ( ! $n ) return '';
+    if ( $text === '' ) {
+        $text = "Hi TAAS, I'd like an estimate. My rego is: ";
+    }
+    return 'https://wa.me/' . $n . '?text=' . rawurlencode( $text );
+}
+
+// One-line prompt, plain text (used inside existing enquiry notes).
+function taas_estimate_prompt_text() {
+    $email = defined('TAAS_EMAIL') ? TAAS_EMAIL : 'enquiries@taas.co.nz';
+    return taas_whatsapp_number()
+        ? 'Want an estimate? Send photos, your rego or a fail sheet with the form, by email to ' . $email . ', or on WhatsApp.'
+        : 'Want an estimate? Send photos, your rego or a fail sheet with the form, or by email to ' . $email . '.';
+}
+
+// Full block with buttons. $dark = true for use on dark sections.
+function taas_estimate_prompt( $dark = false, $wa_text = '' ) {
+    $email = defined('TAAS_EMAIL') ? TAAS_EMAIL : 'enquiries@taas.co.nz';
+    $wa    = taas_whatsapp_url( $wa_text );
+    $fg    = $dark ? '#BBBBBB' : '#555555';
+    $head  = $dark ? '#FFFFFF' : '#1A1A1A';
+    $bg    = $dark ? 'rgba(255,255,255,.04)' : '#F7F7F5';
+    $bd    = $dark ? 'rgba(255,255,255,.1)' : '#E8E8E4';
+    ob_start(); ?>
+    <div class="taas-est" style="background:<?php echo $bg; ?>;border:1px solid <?php echo $bd; ?>;border-left:3px solid #FFC800;border-radius:6px;padding:18px 20px;margin:0 0 24px;font-family:var(--taas-font,'Inter',Arial,sans-serif);">
+      <div style="font-size:15px;font-weight:700;color:<?php echo $head; ?>;margin-bottom:6px;">Want an estimate? Send us photos.</div>
+      <p style="font-size:14px;font-weight:300;line-height:1.75;color:<?php echo $fg; ?>;margin:0 0 14px;">Photos of the problem, your rego, a WOF fail sheet or another workshop's estimate all help us price it properly. Attach them to the form<?php echo $wa ? ', email them, or send them on WhatsApp.' : ', or email them.'; ?></p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <?php if ( $wa ) : ?>
+        <a href="<?php echo esc_url( $wa ); ?>" target="_blank" rel="noopener" class="taas-est__wa" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#0B3B1E;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:10px 16px;border-radius:6px;text-decoration:none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+          WhatsApp us
+        </a>
+        <?php endif; ?>
+        <a href="mailto:<?php echo esc_attr( $email ); ?>?subject=<?php echo rawurlencode('Estimate request'); ?>" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:<?php echo $head; ?>;border:2px solid <?php echo $dark ? '#FFC800' : '#1A1A1A'; ?>;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:8px 16px;border-radius:6px;text-decoration:none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email us
+        </a>
+      </div>
+    </div>
+    <?php
+    return ob_get_clean();
+}
+
+// CF7 file upload field styling.
+add_action( 'wp_head', function () {
+    if ( ! function_exists( 'wpcf7' ) ) return;
+    echo '<style>.wpcf7 input[type="file"]{display:block!important;width:100%!important;padding:10px 13px!important;border:1px dashed #C9C9C2!important;border-radius:4px!important;background:#FAFAF8!important;font-family:\'Inter\',Arial,sans-serif!important;font-size:13px!important;color:#555!important;box-sizing:border-box!important;}.wpcf7 .taas-file-hint{display:block;font-size:12px;font-weight:300;color:#888;margin-top:4px;}</style>';
+}, 100 );

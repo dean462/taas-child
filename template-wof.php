@@ -935,6 +935,9 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
     <h2 id="wof-elsewhere-head" style="font-family:var(--taas-font);font-size:var(--taas-h2, clamp(26px,3.5vw,36px));font-weight:700;color:var(--taas-dark, #1A1A1A);margin-bottom:12px;">Failed your WOF somewhere else?</h2>
     <p style="font-size:17px;color:#555;line-height:1.75;font-weight:300;letter-spacing:-0.1px;margin-bottom:24px;max-width:700px;">Bring us the fail sheet. We'll quote the repairs, get them done, often the same day, and either you take it back for the free re-check, or we can carry out a fresh WOF here. Brakes, tyres, suspension, lights and electrics are all handled in-house.</p>
     <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="wof-btn wof-btn--dark" style="background:#1A1A1A;color:#fff!important;">Send Us Your Fail Sheet</a>
+    <?php $wa_fail = function_exists('taas_whatsapp_url') ? taas_whatsapp_url("Hi TAAS, I failed my WOF elsewhere. I'll send a photo of the fail sheet. My rego is: ") : ''; if ($wa_fail): ?>
+    <a href="<?php echo esc_url($wa_fail); ?>" target="_blank" rel="noopener" class="wof-btn" style="background:#25D366;color:#0B3B1E!important;margin-left:8px;">WhatsApp the Fail Sheet</a>
+    <?php endif; ?>
   </div>
 </section>
 

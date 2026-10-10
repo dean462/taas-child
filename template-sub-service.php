@@ -865,7 +865,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                     We understand that pricing anxiety stops people calling. So here is an honest guide. We will always give you an estimate before any work starts — what you see below is a general price guide.
                 </p>
                 <p style="color:#bbb;font-size:17px;line-height:1.85;margin-bottom:24px;">
-                    The final price for <?php echo esc_html(strtolower($service_name)); ?> depends on your specific vehicle, the parts required, and whether additional faults are found during our assessment. You'll get an estimate before we start, and a call if anything changes.
+                    The final price for <?php echo esc_html(strtolower($service_name)); ?> depends on your specific vehicle, the parts required, and whether additional faults are found during our assessment. We'll keep you informed every step of the way.
                     <?php endif; ?>
                 </p>
                 <div style="background:#1a1400;border-left:4px solid var(--taas-yellow);border-radius:0 var(--taas-radius) var(--taas-radius) 0;padding:16px 20px;font-size:16px;color:#ccc;line-height:1.75;">

@@ -92,6 +92,11 @@ define('TAAS_PPI_BASIC',      '$149');
 define('TAAS_PPI_STANDARD',   '$249');
 define('TAAS_PPI_PREMIUM',    '$299');
 
+// ── WhatsApp Business ────────────────────────────────────────────────────────
+// Number in international format, digits only (e.g. 64211234567 for 021 123 4567).
+// Leave empty to hide every WhatsApp button on the site.
+define('TAAS_WHATSAPP',       '');
+
 // ── Forms (CF7 shortcodes) ───────────────────────────────────────────────────
 define('TAAS_CF7_WOF',        '[contact-form-7 id="bdcfc93" title="WOF Booking"]');
 define('TAAS_CF7_FINANCE',    '[contact-form-7 id="cadd266" title="Finance Enquiry"]');

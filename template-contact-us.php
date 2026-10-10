@@ -503,6 +503,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <div class="cu-form-panel">
         <h2>Send an Enquiry</h2>
         <p class="cu-form-panel__sub">Fill in your details and we'll reply during business hours, as soon as we can. Urgent? Call <?php echo esc_html(defined('TAAS_PHONE_FREE') ? TAAS_PHONE_FREE : '0800 100 876'); ?>.</p>
+        <?php if (function_exists('taas_estimate_prompt')) echo taas_estimate_prompt(); ?>
         <?php echo do_shortcode($cf7); ?>
       </div>
 

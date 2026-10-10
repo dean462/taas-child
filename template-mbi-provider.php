@@ -621,7 +621,7 @@ if ($_logo_id) {
       <li><?php echo $tick; ?>Full servicing capability — keep your MBI valid with regular servicing at TAAS</li>
       <li><?php echo $tick; ?>Finance available for excess payments — <?php echo esc_html($finance_list); ?></li>
       <li><?php echo $tick; ?><?php echo esc_html($rating); ?>★ Google rating from <?php echo esc_html($reviews); ?> reviews</li>
-      <li><?php echo $tick; ?>Estimate before we start — and a call if anything changes</li>
+      <li><?php echo $tick; ?>We'll keep you informed every step of the way</li>
     </ul>
   </div>
 </section>
@@ -639,7 +639,7 @@ if ($_logo_id) {
         <p class="mp-enquiry__detail"><a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a></p>
         <p class="mp-enquiry__detail"><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener"><?php echo esc_html($address); ?></a></p>
         <p class="mp-enquiry__detail"><?php echo esc_html($hours); ?></p>
-        <p class="mp-enquiry__drumbeat">Estimate before we start — and a call if anything changes.</p>
+        <p class="mp-enquiry__drumbeat">We'll keep you informed every step of the way.</p>
         <div class="mp-enquiry__finance">
           <span class="mp-enquiry__finance-badge">Afterpay</span>
           <span class="mp-enquiry__finance-badge">Q Card</span>
