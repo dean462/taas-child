@@ -529,5 +529,5 @@ function taas_estimate_prompt( $dark = false, $wa_text = '' ) {
 // CF7 file upload field styling.
 add_action( 'wp_head', function () {
     if ( ! function_exists( 'wpcf7' ) ) return;
-    echo '<style>.wpcf7 input[type="file"]{display:block!important;width:100%!important;padding:10px 13px!important;border:1px dashed #C9C9C2!important;border-radius:4px!important;background:#FAFAF8!important;font-family:\'Inter\',Arial,sans-serif!important;font-size:13px!important;color:#555!important;box-sizing:border-box!important;}.wpcf7 .taas-file-hint{display:block;font-size:12px;font-weight:300;color:#888;margin-top:4px;}</style>';
+    echo '<style>.wpcf7 input[type="file"]{display:block!important;width:100%!important;padding:10px 13px!important;border:1px dashed #C9C9C2!important;border-radius:4px!important;background:#FAFAF8!important;font-family:\'Inter\',Arial,sans-serif!important;font-size:13px!important;color:#555!important;box-sizing:border-box!important;}.wpcf7 .taas-file-hint{display:block!important;font-size:12px!important;font-weight:300!important;color:#888!important;margin-top:6px!important;text-transform:none!important;letter-spacing:normal!important;line-height:1.6!important;}</style>';
 }, 100 );
