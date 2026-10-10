@@ -95,7 +95,7 @@ define('TAAS_PPI_PREMIUM',    '$299');
 // ── WhatsApp Business ────────────────────────────────────────────────────────
 // Number in international format, digits only (e.g. 64211234567 for 021 123 4567).
 // Leave empty to hide every WhatsApp button on the site.
-define('TAAS_WHATSAPP',       '6422015198'); // 022 015 198
+define('TAAS_WHATSAPP',       '64220125198'); // 022 012 5198
 
 // ── Forms (CF7 shortcodes) ───────────────────────────────────────────────────
 define('TAAS_CF7_WOF',        '[contact-form-7 id="bdcfc93" title="WOF Booking"]');
