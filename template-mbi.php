@@ -799,7 +799,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <div class="mbi-enquiry__inner">
       <div>
         <h2 class="mbi-enquiry__h2" id="mbi-enquiry-head">Got an MBI policy?<br>We're your repairer.</h2>
-        <p class="mbi-enquiry__sub">Call us or send an enquiry. Enquiries before 3pm answered same day, estimates within one business day.</p>
+        <p class="mbi-enquiry__sub">Call us or send an enquiry. We reply during business hours, as soon as we can.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="mbi-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <p class="mbi-enquiry__detail"><a href="tel:<?php echo esc_attr($phone_tel); ?>"><?php echo esc_html($phone_local); ?></a></p>
         <p class="mbi-enquiry__detail"><a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a></p>

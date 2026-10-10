@@ -113,7 +113,7 @@ $not_covered = ['Routine maintenance (oil, filters, belts)', 'Tyres, brake pads,
 $steps = [
     ['num' => '01', 'title' => 'Call us first', 'text' => "Call {$phone_free} before authorising any repairs. Authorisation from {$provider_name} must be obtained before work begins — without it, the claim may not be valid."],
     ['num' => '02', 'title' => 'Diagnosis', 'text' => "We inspect the vehicle and confirm the fault. Our lead diagnostician Raj verifies the issue before any parts are ordered or replaced."],
-    ['num' => '03', 'title' => 'Authorisation', 'text' => "We contact {$provider_name} directly. We provide the diagnosis, estimate, and any supporting information required. Authorisation is typically arranged within one business day."],
+    ['num' => '03', 'title' => 'Authorisation', 'text' => "We contact {$provider_name} directly. We provide the diagnosis, estimate, and any supporting information required. We keep you updated while we wait for their authorisation."],
     ['num' => '04', 'title' => 'Repair & invoice', 'text' => "Once authorised, we carry out the repair and invoice {$provider_name} for all covered amounts. Your excess and any items outside your coverage are confirmed with you before work is completed."],
 ];
 
@@ -633,7 +633,7 @@ if ($_logo_id) {
     <div class="mp-enquiry__inner">
       <div>
         <h2 class="mp-enquiry__h2" id="mp-enquiry-head">Got a <?php echo esc_html($provider_name); ?> policy?<br>We're your Manukau repairer.</h2>
-        <p class="mp-enquiry__sub">Call us or send an enquiry. Enquiries before 3pm answered same day, estimates within one business day.</p>
+        <p class="mp-enquiry__sub">Call us or send an enquiry. We reply during business hours, as soon as we can.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="mp-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <p class="mp-enquiry__detail"><a href="tel:<?php echo esc_attr($phone_tel); ?>"><?php echo esc_html($phone_local); ?></a></p>
         <p class="mp-enquiry__detail"><a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a></p>

@@ -660,7 +660,6 @@ body.page-template-template-homepage { overflow-x:hidden; }
       <p class="hp-hero__sub">
         A South Auckland family workshop since 1985, with seven divisions under one roof.
         MTA Assured and NZTA Authorised, so your car&rsquo;s in good hands.
-        Enquiries before 3pm answered same day, estimates within one business day.
       </p>
       <div class="hp-hero__ctas">
         <a href="/contact-us/" class="hp-btn hp-btn--yellow">
