@@ -450,7 +450,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
   <div class="w">
     <span class="cu-eye">Get In Touch</span>
     <h1>Contact <span>Tony Allen</span><br>Auto Service</h1>
-    <p class="cu-hero__sub">Send an enquiry, book a service, or give us a call. We'll get back to you fast.</p>
+    <p class="cu-hero__sub">Send an enquiry, book a service, or give us a call. We'll get back to you as soon as we can.</p>
     <div class="cu-trust">
       <div class="cu-trust__item">
         <svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-label="Google Reviews" style="flex-shrink:0;">
@@ -502,7 +502,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <!-- Form panel -->
       <div class="cu-form-panel">
         <h2>Send an Enquiry</h2>
-        <p class="cu-form-panel__sub">Fill in your details and we'll get back to you within a couple of hours during business hours.</p>
+        <p class="cu-form-panel__sub">Fill in your details and we'll reply during business hours, as soon as we can. Urgent? Call <?php echo esc_html(defined('TAAS_PHONE_FREE') ? TAAS_PHONE_FREE : '0800 100 876'); ?>.</p>
         <?php echo do_shortcode($cf7); ?>
       </div>
 
@@ -571,7 +571,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
             <div class="cu-step__num">1</div>
             <div class="cu-step__text">
               <strong>We receive your enquiry</strong>
-              All enquiries are reviewed during business hours — usually within a couple of hours.
+              All enquiries are reviewed during business hours, as soon as we can.
             </div>
           </div>
           <div class="cu-step">

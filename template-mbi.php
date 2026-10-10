@@ -787,7 +787,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <li>European vehicle specialists — MBI claims on <?php echo esc_html($euro_brands); ?></li>
       <li>Finance available for excess payments and uncovered work — <?php echo esc_html($finance_list); ?></li>
       <li><?php echo esc_html($rating); ?>★ Google rating from <?php echo esc_html($reviews); ?> reviews</li>
-      <li>Estimate before we start — nothing happens without your approval</li>
+      <li>Estimate before we start — and a call if anything changes</li>
     </ul>
   </div>
 </section>
@@ -805,7 +805,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <p class="mbi-enquiry__detail"><a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a></p>
         <p class="mbi-enquiry__detail"><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener"><?php echo esc_html($address); ?></a></p>
         <p class="mbi-enquiry__detail"><?php echo esc_html($hours); ?></p>
-        <p class="mbi-enquiry__drumbeat">Estimate before we start — nothing happens without your approval.</p>
+        <p class="mbi-enquiry__drumbeat">Estimate before we start — and a call if anything changes.</p>
         <div class="mbi-enquiry__finance">
           <span class="mbi-enquiry__finance-badge">Afterpay</span>
           <span class="mbi-enquiry__finance-badge">Q Card</span>

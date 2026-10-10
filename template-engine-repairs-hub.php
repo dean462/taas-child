@@ -447,7 +447,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
     <h2 class="erh-section__heading">Our approach to engine repairs</h2>
     <div class="erh-approach">
       <div>
-        <p class="erh-approach__text">Engine repairs can be stressful. The symptoms are alarming, the terminology is unfamiliar, and the costs can be significant. We understand that — which is why we break everything down in plain English and never start work without your approval.</p>
+        <p class="erh-approach__text">Engine repairs can be stressful. The symptoms are alarming, the terminology is unfamiliar, and the costs can be significant. We understand that — which is why we break everything down in plain English and keep you informed at every stage.</p>
         <p class="erh-approach__text">Every engine repair starts with a diagnostic. We use a combination of scan tools, mechanical testing, and visual inspection to identify the actual fault. We then explain what we have found, what it means, and what the repair involves — including the cost. You decide whether to proceed.</p>
         <div class="erh-callout">
           <div class="erh-callout__title">We diagnose first — always</div>
@@ -535,7 +535,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
           <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>
           <?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?>
         </div>
-        <div class="erh-enquiry__estimate">Estimate before we start — nothing happens without your approval.</div>
+        <div class="erh-enquiry__estimate">Estimate before we start — and a call if anything changes.</div>
         <div class="erh-enquiry__finance-logos">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="erh-enquiry__fin-img" height="32" loading="lazy">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-qcard.png'); ?>" alt="Q Card" class="erh-enquiry__fin-img" height="32" loading="lazy">

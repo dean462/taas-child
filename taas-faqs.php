@@ -154,12 +154,12 @@ $taas_faqs['diagnose_first'] = [
 
 $taas_faqs['estimates'] = [
     'q' => 'Do you provide estimates before starting work?',
-    'a' => 'Yes. For any repair or service beyond a standard WOF, we provide an estimate before we start and wait for your approval before proceeding. If we find anything additional during the job, we contact you with an explanation and a separate estimate. Nothing gets done without your say-so — no surprises on the invoice.',
+    'a' => 'Yes. For any repair or service beyond a standard WOF, we provide an estimate before we start and wait for your approval before proceeding. If we find anything additional during the job, we call you with an explanation and a separate estimate before going further.',
 ];
 
 $taas_faqs['extra_work'] = [
     'q' => 'What happens if you find extra work during my service?',
-    'a' => 'We always call you first. If our technicians find anything beyond the original job, we contact you with an explanation of what we have found, why it matters, and an estimate before doing any additional work. Nothing gets done without your approval. No surprises on the invoice.',
+    'a' => 'If we find something beyond the original job, we\'ll call you to explain it and give you an estimate before going further. Occasionally something has to be done to finish the job safely, like a seized or broken part. When that happens, we keep it to what\'s needed and explain it before you collect.',
 ];
 
 
@@ -834,7 +834,7 @@ $taas_faqs['contact_booking'] = [
 
 $taas_faqs['contact_response_time'] = [
     'q' => 'How quickly will you get back to me after I send an enquiry?',
-    'a' => 'We respond to all enquiries within a couple of hours during business hours. We will call or email to confirm your booking and let you know pricing before any work begins.',
+    'a' => 'We reply during business hours, as soon as we can. If it\'s urgent, call ' . $_fq_phone . '. We will call or email to confirm your booking and let you know pricing before any work begins.',
 ];
 
 $taas_faqs['contact_location'] = [
@@ -1936,7 +1936,7 @@ $taas_faqs['tow_breakdown'] = [
 
 $taas_faqs['tow_arrival'] = [
     'q' => 'What happens when my car arrives at the workshop?',
-    'a' => 'We diagnose the fault, contact you with what we find, and provide an estimate before starting any repair work. No work is carried out without your approval. If parts are needed, we advise on timeframes.',
+    'a' => 'We diagnose the fault, contact you with what we find, and provide an estimate before starting any repair work. If anything changes once we\'re into the job, we\'ll call you. If parts are needed, we advise on timeframes.',
 ];
 
 $taas_faqs['tow_afterhours'] = [
@@ -2095,7 +2095,7 @@ $taas_faqs['svc_price_vary'] = [
 
 $taas_faqs['svc_additional_work'] = [
     'q' => 'What happens if you find something wrong during my service?',
-    'a' => 'We provide a written estimate for any additional work and wait for your approval before proceeding. Nothing happens without your say-so. If the issue is safety-critical, we will explain why and recommend addressing it — but the decision is always yours.',
+    'a' => 'We call you, explain what we\'ve found, and give you a written estimate before going further. If the issue is safety-critical, we will explain why and recommend addressing it. Occasionally something has to be done to finish the job safely, like a seized or broken part. When that happens, we keep it to what\'s needed and explain it before you collect.',
 ];
 
 $taas_faqs['svc_booking'] = [

@@ -167,15 +167,14 @@ get_header();
 
       <h2>Estimates and pricing</h2>
       <p>All pricing provided by TAAS is an <strong>estimate</strong>, not a fixed quote. An estimate is our best assessment of the likely cost based on the information available at the time, including your description of the issue, a visual inspection, and our experience with similar vehicles.</p>
-      <p>We provide an estimate before we start any work. Nothing happens without your approval. If we find that the actual cost will exceed the estimate, we will contact you to explain what we have found and provide an updated estimate before proceeding.</p>
+      <p>We provide an estimate before we start any work. If the cost looks like going more than 10% (or $50, whichever is greater) over the estimate, we will contact you to explain what we have found and provide an updated estimate before going further.</p>
       <p>Estimates are valid for 14 days from the date provided. Parts pricing may change due to supplier costs, exchange rates, or availability.</p>
 
       <h2>Approval to proceed</h2>
-      <p>We require your approval before beginning any work on your vehicle. Approval can be given verbally (in person or by phone) or in writing (email or text). If we are unable to reach you and the vehicle is unsafe to drive, we will make the vehicle safe but will not carry out further repairs until we have your approval.</p>
+      <p>We will seek your approval before beginning work on your vehicle. Approval can be given verbally (in person or by phone) or in writing (email or text). If we can’t reach you, we will only do what is needed to make the vehicle safe or finish the agreed job.</p>
 
       <h2>Additional work</h2>
-      <p>During a service or repair, our technicians may identify additional issues that were not part of the original estimate. If this happens, we will contact you to explain what we have found, provide a separate estimate for the additional work, and only proceed with your approval.</p>
-      <p>We will never carry out work you have not agreed to.</p>
+      <p>During a service or repair, our technicians may identify additional issues that were not part of the original estimate. If this happens, we will contact you to explain what we have found, provide a separate estimate for the additional work, and only go further with your approval.</p>
 
       <h2>Diagnostic fees</h2>
       <p>Some faults require diagnostic investigation before we can provide an estimate for the repair. Where a diagnostic fee applies, this will be communicated to you before we begin. The diagnostic fee covers the technician&rsquo;s time and the use of diagnostic equipment. It is payable regardless of whether you choose to proceed with the repair.</p>

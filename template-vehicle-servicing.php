@@ -424,7 +424,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
       <div>
         <span class="vs-hero__eyebrow">Vehicle Servicing — Manukau</span>
         <h1>Car Service<br><span>Manukau — South Auckland</span></h1>
-        <p class="vs-hero__sub">Three service levels for all makes and models — Japanese, Korean, European, diesel, hybrid and electric. From <?php echo esc_html($ess_car); ?>. Our Premium service delivers 12 months of safe motoring. Estimate before we start, nothing happens without your approval.</p>
+        <p class="vs-hero__sub">Three service levels for all makes and models — Japanese, Korean, European, diesel, hybrid and electric. From <?php echo esc_html($ess_car); ?>. Our Premium service delivers 12 months of safe motoring. Estimate before we start, and a call if anything changesoval.</p>
         <div class="vs-hero__ctas">
           <a href="#vs-enquire" class="vs-btn vs-btn--primary">Book a Service</a>
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="vs-btn vs-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -760,7 +760,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
           <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>
           <?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?>
         </div>
-        <div class="vs-enquiry__estimate">Estimate before we start — nothing happens without your approval.</div>
+        <div class="vs-enquiry__estimate">Estimate before we start — and a call if anything changes.</div>
         <div class="vs-enquiry__finance-logos">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="vs-enquiry__fin-img" height="32" loading="lazy">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-qcard.png'); ?>" alt="Q Card" class="vs-enquiry__fin-img" height="32" loading="lazy">

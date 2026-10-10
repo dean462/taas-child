@@ -26,11 +26,11 @@ $now_mins = (int) wp_date('G') * 60 + (int) wp_date('i');
 $is_open  = $now_day <= 5 && $now_mins >= 450 && $now_mins < 1020;
 
 if ($is_open) {
-    $next_step = 'We’re in the workshop now. One of the team will get back to you shortly.';
+    $next_step = 'We’re in the workshop now. One of the team will get back to you as soon as we can.';
 } elseif ($now_day >= 6 || ($now_day === 5 && $now_mins >= 1020)) {
-    $next_step = 'We’re closed for the weekend. We’ll be in touch first thing Monday from 7:30am.';
+    $next_step = 'We’re closed for the weekend. We’ll be in touch once we’re back on Monday.';
 } else {
-    $next_step = 'We’re closed right now. We’ll be in touch first thing when we open at 7:30am.';
+    $next_step = 'We’re closed right now. We’ll be in touch once we’re open again.';
 }
 
 // Where they came from (set by the CF7 redirect in functions.php).

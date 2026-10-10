@@ -575,7 +575,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
     <h2 class="ssh-h2">How Much Do Steering &amp; Suspension Repairs Cost?</h2>
     <div class="ssh-pricing">
       <p>Steering and suspension repair costs vary depending on the vehicle, the component, and whether parts are available same-day. A tie rod replacement on a Japanese sedan is a very different job to a steering rack replacement on a European SUV.</p>
-      <p>We understand that pricing uncertainty stops people from calling. That is why we always provide an estimate before starting any work. No surprises, no unapproved charges.</p>
+      <p>We understand that pricing uncertainty stops people from calling. That is why we always provide an estimate before starting any work. And if anything changes once we're into the job, we'll call you.</p>
       <div class="ssh-pricing__cards">
         <div class="ssh-pricing__card">
           <div class="ssh-pricing__card-label">Suspension Repairs</div>
@@ -621,7 +621,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
           <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>
           <?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?>
         </div>
-        <div class="ssh-enquiry__estimate">Estimate before we start — nothing happens without your approval.</div>
+        <div class="ssh-enquiry__estimate">Estimate before we start — and a call if anything changes.</div>
         <div class="ssh-enquiry__finance-logos">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="ssh-enquiry__fin-img" height="32" loading="lazy">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-qcard.png'); ?>" alt="Q Card" class="ssh-enquiry__fin-img" height="32" loading="lazy">

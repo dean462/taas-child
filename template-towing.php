@@ -186,7 +186,7 @@ body.page-template-template-towing{overflow-x:hidden;-webkit-text-size-adjust:10
     <div class="tw-step"><div class="tw-step__title">Call Us</div><div class="tw-step__body">Call <?php echo esc_html($phone_free); ?>. Tell us where the vehicle is, what happened, and the make and model. We take it from there.</div></div>
     <div class="tw-step"><div class="tw-step__title">We Arrange the Tow</div><div class="tw-step__body">We organise a tow truck to collect your vehicle and bring it directly to our workshop at 139 Cavendish Drive, Manukau. You deal with us, not a random tow company.</div></div>
     <div class="tw-step"><div class="tw-step__title">We Diagnose the Fault</div><div class="tw-step__body">Once the vehicle is at our workshop, we diagnose the problem. We contact you with what we find and provide an estimate before starting any repair.</div></div>
-    <div class="tw-step"><div class="tw-step__title">We Fix It</div><div class="tw-step__body">No work without your approval. We repair the fault, test the vehicle, and get you back on the road. Finance available if the repair is unexpected.</div></div>
+    <div class="tw-step"><div class="tw-step__title">We Fix It</div><div class="tw-step__body">We call you with an estimate before we start. We repair the fault, test the vehicle, and get you back on the road. Finance available if the repair is unexpected.</div></div>
   </div>
 </div></section>
 
