@@ -560,7 +560,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
     <div class="erh-mbi">
       <span class="erh-section__eyebrow">MBI Approved Repairer</span>
       <h2 class="erh-section__heading">Got an MBI policy? We handle the claim.</h2>
-      <p class="erh-mbi__text">Engine repairs are one of the most common MBI claims. Tony Allen Auto Service is an approved repairer for all five major MBI providers in New Zealand. Call your provider first, then bring your vehicle to us. We liaise with the insurer, get the work authorised, and carry out the repair. You pay the excess — your insurer pays the balance.</p>
+      <p class="erh-mbi__text">Engine repairs are one of the most common MBI claims. Tony Allen Auto Service is an approved repairer for all five major MBI providers in New Zealand. Call your provider first, then bring your vehicle to us. We liaise with the insurer, get the work authorised, and carry out the repair. You pay the excess, and your insurer pays the approved amount. Anything your policy doesn&rsquo;t cover is explained once the claim is approved and all costs are worked out.</p>
       <div class="erh-mbi__badges">
         <span class="erh-mbi__badge">Autosure</span>
         <span class="erh-mbi__badge">Assurant</span>

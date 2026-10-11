@@ -114,7 +114,7 @@ $steps = [
     ['num' => '01', 'title' => 'Call us first', 'text' => "Call {$phone_free} before authorising any repairs. Authorisation from {$provider_name} must be obtained before work begins — without it, the claim may not be valid."],
     ['num' => '02', 'title' => 'Diagnosis', 'text' => "We inspect the vehicle and confirm the fault. Our lead diagnostician Raj verifies the issue before any parts are ordered or replaced."],
     ['num' => '03', 'title' => 'Authorisation', 'text' => "We contact {$provider_name} directly. We provide the diagnosis, estimate, and any supporting information required. We keep you updated while we wait for their authorisation."],
-    ['num' => '04', 'title' => 'Repair & invoice', 'text' => "Once authorised, we carry out the repair and invoice {$provider_name} for all covered amounts. Your excess and any items outside your coverage are confirmed with you before work is completed."],
+    ['num' => '04', 'title' => 'Repair & invoice', 'text' => "Once authorised, we carry out the repair and invoice {$provider_name} for all covered amounts. Some costs may not be covered under your policy's terms and conditions. We'll explain your excess and anything not covered once the claim is approved and all costs are worked out."],
 ];
 
 // ── FAQs from shared library ─────────────────────────────────────────────────
@@ -161,7 +161,7 @@ foreach ($generic_mbi_keys as $key) {
 // Fallback if library not loaded
 if (empty($faqs)) {
     $faqs = [
-        ['q' => "Is Tony Allen Auto Service an approved {$provider_name} repairer?", 'a' => "Yes. Tony Allen Auto Service is an approved repairer for {$provider_name} MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, {$provider_name} pays the balance directly to us. We are at 139 Cavendish Drive, Manukau."],
+        ['q' => "Is Tony Allen Auto Service an approved {$provider_name} repairer?", 'a' => "Yes. Tony Allen Auto Service is an approved repairer for {$provider_name} MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, and {$provider_name} pays the approved amount directly to us. Some costs may not be covered under your policy's terms and conditions. We'll explain anything not covered once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau."],
         ['q' => "What do I do if my car breaks down and I have {$provider_name}?", 'a' => "Call {$phone_free} before authorising any repairs. {$provider_name} must authorise the work before it begins. Bring your vehicle to 139 Cavendish Drive, Manukau."],
         ['q' => 'What is Mechanical Breakdown Insurance?', 'a' => 'MBI covers the cost of repairing or replacing mechanical and electrical components that fail due to sudden or unforeseen breakdown. It fills the gap left by standard car insurance.'],
         ['q' => "Does regular servicing at TAAS keep my {$provider_name} policy valid?", 'a' => "Yes. Tony Allen Auto Service is MTA Assured, which satisfies the servicing requirements of {$provider_name} and all other MBI providers we work with. Keep all service invoices."],

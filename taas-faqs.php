@@ -594,7 +594,7 @@ $taas_faqs['mbi_servicing_valid'] = [
 
 $taas_faqs['mbi_claim_help'] = [
     'q' => 'Can TAAS help me make an MBI claim?',
-    'a' => 'Yes. Once you have contacted your insurer and they have confirmed us as an authorised repairer, bring your vehicle in and we handle the rest. We liaise with the insurer, provide the fault diagnosis, and get the repair authorised before starting work. You pay the excess, your insurer pays the balance.',
+    'a' => 'Yes. Once you have contacted your insurer and they have confirmed us as an authorised repairer, bring your vehicle in and we handle the rest. We liaise with the insurer, provide the fault diagnosis, and get the repair authorised before starting work. You pay the excess, and your insurer pays the approved amount. Some costs may not be covered under your policy\'s terms and conditions. We\'ll explain anything not covered once the claim is approved and all costs are worked out.',
 ];
 
 $taas_faqs['mbi_vs_warranty'] = [
@@ -629,7 +629,7 @@ $taas_faqs['mbi_cost'] = [
 
 $taas_faqs['mbi_autosure_approved'] = [
     'q' => 'Is Tony Allen Auto Service an approved Autosure repairer?',
-    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Autosure MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, Autosure pays the balance directly to us. We are at 139 Cavendish Drive, Manukau.',
+    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Autosure MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, and Autosure pays the approved amount directly to us. Some costs may not be covered under your policy\'s terms and conditions. We\'ll explain anything not covered once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau.',
 ];
 
 $taas_faqs['mbi_autosure_breakdown'] = [
@@ -669,7 +669,7 @@ $taas_faqs['mbi_autosure_roadside'] = [
 
 $taas_faqs['mbi_assurant_approved'] = [
     'q' => 'Is Tony Allen Auto Service an approved Assurant repairer?',
-    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Assurant (formerly Protecta) MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, Assurant pays the balance directly to us. We are at 139 Cavendish Drive, Manukau.',
+    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Assurant (formerly Protecta) MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, and Assurant pays the approved amount directly to us. Some costs may not be covered under your policy\'s terms and conditions. We\'ll explain anything not covered once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau.',
 ];
 
 $taas_faqs['mbi_assurant_breakdown'] = [
@@ -709,7 +709,7 @@ $taas_faqs['mbi_assurant_protecta'] = [
 
 $taas_faqs['mbi_provident_approved'] = [
     'q' => 'Is Tony Allen Auto Service an approved Provident repairer?',
-    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Provident Insurance MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, Provident pays the balance directly to us. We are at 139 Cavendish Drive, Manukau.',
+    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Provident Insurance MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, and Provident pays the approved amount directly to us. Some costs may not be covered under your policy\'s terms and conditions. We\'ll explain anything not covered once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau.',
 ];
 
 $taas_faqs['mbi_provident_breakdown'] = [
@@ -749,7 +749,7 @@ $taas_faqs['mbi_provident_ev'] = [
 
 $taas_faqs['mbi_janssen_approved'] = [
     'q' => 'Is Tony Allen Auto Service an approved Janssen repairer?',
-    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Janssen Insurance MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, Janssen pays the balance directly to us. We are at 139 Cavendish Drive, Manukau.',
+    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Janssen Insurance MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, and Janssen pays the approved amount directly to us. Some costs may not be covered under your policy\'s terms and conditions. We\'ll explain anything not covered once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau.',
 ];
 
 $taas_faqs['mbi_janssen_breakdown'] = [
@@ -789,12 +789,12 @@ $taas_faqs['mbi_janssen_ev'] = [
 
 $taas_faqs['mbi_autolife_approved'] = [
     'q' => 'Is Tony Allen Auto Service an approved Autolife repairer?',
-    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Autolife MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, Autolife pays the balance directly to us. We are at 139 Cavendish Drive, Manukau.',
+    'a' => 'Yes. Tony Allen Auto Service is an approved repairer for Autolife MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess, and Autolife pays the approved amount directly to us. Some costs may not be covered under your policy\'s terms and conditions. We\'ll explain anything not covered once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau.',
 ];
 
 $taas_faqs['mbi_autolife_breakdown'] = [
     'q' => 'What do I do if my car breaks down and I have Autolife?',
-    'a' => 'Call Autolife on 0800 288 654 before authorising any repairs. Complete the online claim form with your service records. Then bring your vehicle to Tony Allen Auto Service at 139 Cavendish Drive, Manukau. The repairer contacts Autolife for authorisation, you pay the excess, and Autolife pays the balance directly.',
+    'a' => 'Call Autolife on 0800 288 654 before authorising any repairs. Complete the online claim form with your service records. Then bring your vehicle to Tony Allen Auto Service at 139 Cavendish Drive, Manukau. The repairer contacts Autolife for authorisation, you pay the excess, and Autolife pays the approved amount directly. Some costs may not be covered under your policy\'s terms and conditions. We\'ll explain anything not covered once the claim is approved and all costs are worked out.',
 ];
 
 $taas_faqs['mbi_autolife_claims_phone'] = [
@@ -819,7 +819,7 @@ $taas_faqs['mbi_autolife_other_providers'] = [
 
 $taas_faqs['mbi_autolife_claims_speed'] = [
     'q' => 'How fast does Autolife pay claims?',
-    'a' => 'Autolife reports that 96.5% of claim payments are made within 14 days, and 99.5% within 21 days. Once authorised, we carry out the repair and invoice Autolife directly — you only pay the excess. Policies also include a 7-day free look period on new policies if you change your mind.',
+    'a' => 'Autolife reports that 96.5% of claim payments are made within 14 days, and 99.5% within 21 days. Once authorised, we carry out the repair and invoice Autolife directly. You pay the excess, plus anything your policy doesn\'t cover, which we explain once the claim is approved. Policies also include a 7-day free look period on new policies if you change your mind.',
 ];
 
 
