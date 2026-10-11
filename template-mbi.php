@@ -144,7 +144,7 @@ $providers = [
         'tagline'  => 'Fast Claims — 96.5% Paid Within 14 Days',
         'about'    => 'Autolife is a fully owned subsidiary of Beneficial Insurance Limited, a licensed NZ insurer. Their standout claim is speed: 96.5% of claim payments are made within 14 days, and 99.5% within 21 days. Policies are available directly online — no dealer required. Vehicles must be NZ registered, post-2000, and under 200,000 km.',
         'cover'    => 'Standard cover of $4,000–$5,000 per claim (depending on odometer). Covers engine, transmission, electrical systems, steering, suspension, air conditioning, fuel system and more. Includes 24/7 roadside assistance with towing to any licensed MTA mechanic at no additional cost, and rental car allowance for up to 5 days. 7-day free look period on new policies.',
-        'claim'    => 'Call Autolife on 0800 288 654 before authorising any repairs. Complete the online claim form with service records. The repairer contacts Autolife for authorisation, you pay the excess to the garage, and Autolife pays the approved amount directly.',
+        'claim'    => 'Call Autolife on 0800 288 654 before authorising any repairs. Complete the online claim form with service records. The repairer contacts Autolife for authorisation, you pay the excess and any client contributions to the garage, and Autolife pays the approved amount directly.',
         'claims_ph'=> '0800 288 654',
         'website'  => 'https://autolife.co.nz',
         'facts'    => [
@@ -627,7 +627,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <span class="mbi-sec-eye mbi-sec-eye--yellow">What is MBI?</span>
         <h2 class="mbi-sec-h2" id="mbi-what-head">Mechanical Breakdown Insurance — What It Covers</h2>
         <p class="mbi-body">Mechanical Breakdown Insurance covers the cost of repairing or replacing mechanical and electrical components that fail due to sudden or unforeseen breakdown. It fills the gap left by your standard car insurance, which only covers accidents, theft, and fire — not mechanical failures.</p>
-        <p class="mbi-body">Think of it as an extended warranty backed by an insurance company. When your transmission fails, your engine overheats, or your air conditioning stops working, MBI covers the repair under your policy terms. You pay the excess, and we handle the claim with your provider.</p>
+        <p class="mbi-body">Think of it as an extended warranty backed by an insurance company. When your transmission fails, your engine overheats, or your air conditioning stops working, MBI covers the repair under your policy terms. You pay the excess and any client contributions, and we handle the claim with your provider.</p>
         <p class="mbi-body">All five providers we work with require your vehicle to be serviced at regular intervals and at an approved workshop to keep your policy valid. As an MTA Assured workshop, TAAS satisfies the servicing requirements of all five.</p>
       </div>
 
@@ -749,8 +749,8 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       </div>
       <div class="mbi-step">
         <div class="mbi-step__num">4</div>
-        <div class="mbi-step__title">Repairs completed, you pay the excess</div>
-        <p class="mbi-step__text">Once authorised, we carry out the repairs. When complete, you pay the excess to us, and your MBI provider pays the approved amount directly to TAAS. Some costs may not be covered under your policy&rsquo;s terms and conditions. We&rsquo;ll explain anything not covered once the claim is approved and all costs are worked out.</p>
+        <div class="mbi-step__title">Repairs completed, you pay the excess and any client contributions</div>
+        <p class="mbi-step__text">Once authorised, we carry out the repairs. When complete, you pay the excess and any client contributions to us, and your MBI provider pays the approved amount directly to TAAS. Client contributions are costs not covered under your policy&rsquo;s terms and conditions. We&rsquo;ll explain them once the claim is approved and all costs are worked out.</p>
       </div>
     </div>
   </div>
@@ -854,7 +854,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       </a>
       <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" class="mbi-related__card">
         <div class="mbi-related__card-title">Finance Options</div>
-        <p class="mbi-related__card-text">Split your excess or uncovered repairs with Afterpay, Q Card, Gem Finance, or Aotea Finance.</p>
+        <p class="mbi-related__card-text">Split your excess, client contributions or uncovered repairs with Afterpay, Q Card, Gem Finance, or Aotea Finance.</p>
       </a>
     </div>
   </div>
