@@ -130,7 +130,7 @@ $schema = [
     [
       '@type'       => 'Service',
       'name'        => 'Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Booked drop-off — if anything fails, we quote it and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
+      'description' => 'NZTA-authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Booked drop-off — if anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => get_site_url() . '/#organization'],
       'areaServed'  => 'Manukau, South Auckland, New Zealand',
       'offers'      => [
@@ -566,7 +566,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         </div>
         <h1 class="wof-hero__h1">
           WOF Inspection Manukau<br>
-          <span>Inspected, Quoted &amp; Fixed — One Visit</span>
+          <span>Inspected &amp; Fixed — One Visit</span>
         </h1>
         <div class="wof-hero__price">Booked drop-off · Mon–Fri 7:30am–5:00pm</div>
         <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA-authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. <?php echo esc_html($wof_price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and with seven specialist divisions under one roof, most repairs can be done the same visit.</p>
@@ -642,7 +642,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         <p class="wof-facts__body">Tony Allen Auto Service has been carrying out NZTA-authorised Warrant of Fitness inspections in Manukau since 1985. We are a family-owned independent workshop with a dedicated WOF inspection bay and a team of qualified technicians.</p>
         <p class="wof-facts__body">We operate seven specialist divisions under one roof. If your vehicle fails its WOF — whether it needs brakes, tyres, suspension, or electrical work — we can often carry out repairs on the same visit, depending on the work required and parts availability. No referrals. No second booking needed in many cases.</p>
         <ul class="wof-checklist">
-          <li>Drop off early and we'll aim to inspect, quote and repair the same day</li>
+          <li>Drop off early and we'll aim to inspect, estimate and repair the same day</li>
           <li>NZTA Authorised — <?php echo esc_html($ms_number); ?></li>
           <li>MTA Assured — independently assessed quality standard</li>
           <li>Dedicated WOF inspection bay</li>
@@ -933,7 +933,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
 <section class="wof-elsewhere" aria-labelledby="wof-elsewhere-head" style="background:#fff;padding:64px 0;border-top:1px solid #E8E8E4;">
   <div class="wof-w">
     <h2 id="wof-elsewhere-head" style="font-family:var(--taas-font);font-size:var(--taas-h2, clamp(26px,3.5vw,36px));font-weight:700;color:var(--taas-dark, #1A1A1A);margin-bottom:12px;">Failed your WOF somewhere else?</h2>
-    <p style="font-size:17px;color:#555;line-height:1.75;font-weight:300;letter-spacing:-0.1px;margin-bottom:24px;max-width:700px;">Bring us the fail sheet. We'll quote the repairs, get them done, often the same day, and either you take it back for the free re-check, or we can carry out a fresh WOF here. Brakes, tyres, suspension, lights and electrics are all handled in-house.</p>
+    <p style="font-size:17px;color:#555;line-height:1.75;font-weight:300;letter-spacing:-0.1px;margin-bottom:24px;max-width:700px;">Bring us the fail sheet. We'll give you an estimate for the repairs, get them done, often the same day, and either you take it back for the free re-check, or we can carry out a fresh WOF here. Brakes, tyres, suspension, lights and electrics are all handled in-house.</p>
     <a href="<?php echo esc_url(home_url('/contact-us/')); ?>" class="wof-btn wof-btn--dark" style="background:#1A1A1A;color:#fff!important;">Send Us Your Fail Sheet</a>
     <?php $wa_fail = function_exists('taas_whatsapp_url') ? taas_whatsapp_url("Hi TAAS, I failed my WOF elsewhere. I'll send a photo of the fail sheet. My rego is: ") : ''; if ($wa_fail): ?>
     <a href="<?php echo esc_url($wa_fail); ?>" target="_blank" rel="noopener" class="wof-btn" style="background:#25D366;color:#0B3B1E!important;margin-left:8px;">WhatsApp the Fail Sheet</a>

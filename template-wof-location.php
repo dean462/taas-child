@@ -155,7 +155,7 @@ $schema = [
     [
       '@type'       => 'Service',
       'name'        => 'WOF ' . $suburb_name . ' — Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Booked drop-off — if anything fails, we quote it and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
+      'description' => 'NZTA-authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Booked drop-off — if anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => $site_url . '/#organization'],
       'areaServed'  => $suburb_name . ', South Auckland, New Zealand',
       'offers'      => [
@@ -641,7 +641,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         </div>
         <h1 class="wl-hero__h1">
           WOF Inspection<br>
-          <span><?php echo esc_html($suburb_name); ?> — Inspected, Quoted &amp; Fixed</span>
+          <span><?php echo esc_html($suburb_name); ?> — Inspected &amp; Fixed</span>
         </h1>
         <div class="wl-hero__pill"><?php echo esc_html(strtoupper('Booked drop-off · ' . $hours . ($sub['distance'] ? ' · ' . $sub['distance'] : ''))); ?></div>
         <p class="wl-hero__sub">
@@ -768,7 +768,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
           <ul class="wl-choose">
             <li>NZTA authorised — every inspector trained and certified</li>
             <li><?php echo esc_html($price); ?> flat rate — all makes, all models, no hidden charges</li>
-            <li>Drop off early and we'll aim to inspect, quote and repair the same day</li>
+            <li>Drop off early and we'll aim to inspect, estimate and repair the same day</li>
             <li>Repairs carried out in Manukau — no need to book elsewhere</li>
             <li>Re-inspection within 28 days at no charge</li>
             <li>Afterpay, Q Card, Gem Finance, Aotea Finance accepted</li>

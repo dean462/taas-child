@@ -204,7 +204,7 @@ $suburbs_all = [
     <span class="mbcl-section__eyebrow">Brake Repairs Near <?php echo esc_html($suburb_name); ?></span>
     <h2 class="mbcl-section__heading">Manukau Brake &amp; Clutch — Serving <?php echo esc_html($suburb_name); ?></h2>
     <p class="mbcl-section__body">Manukau Brake &amp; Clutch operates from 139 Cavendish Drive, Manukau — <?php echo esc_html($distance_note); ?>. We are a specialist brake and clutch division with an in-house brake lathe. This means disc skimming is done on site, same day in most cases — no outsourcing, no delay, no markup from an external machining shop.</p>
-    <p class="mbcl-section__body">We inspect before we quote. Brake pad replacement always includes a disc condition check — we measure thickness and surface condition and advise whether skimming or replacement is needed. New pads on worn or uneven discs is a false economy that costs more in the long run.</p>
+    <p class="mbcl-section__body">We inspect before we give you an estimate. Brake pad replacement always includes a disc condition check — we measure thickness and surface condition and advise whether skimming or replacement is needed. New pads on worn or uneven discs is a false economy that costs more in the long run.</p>
   </div>
 </section>
 

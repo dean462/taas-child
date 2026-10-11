@@ -2110,7 +2110,7 @@ $taas_faqs['svc_finance'] = [
 
 $taas_faqs['svc_diesel'] = [
     'q' => 'Do you service diesel vehicles?',
-    'a' => 'Yes. Diesel services follow the same three-tier structure with additional diesel-specific checks including fuel filter inspection, DPF status via diagnostic scan (soot load and regeneration cycle data), turbocharger inspection, and AdBlue levels where applicable. If your DPF requires a forced regeneration, we will advise and quote before proceeding.',
+    'a' => 'Yes. Diesel services follow the same three-tier structure with additional diesel-specific checks including fuel filter inspection, DPF status via diagnostic scan (soot load and regeneration cycle data), turbocharger inspection, and AdBlue levels where applicable. If your DPF requires a forced regeneration, we will advise and give you an estimate before proceeding.',
 ];
 
 

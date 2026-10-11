@@ -47,7 +47,7 @@ $engine_master = [
         'name'   => 'Engine Oil Leak Repair',
         'badge'  => 'OL',
         'short'  => 'Rocker covers, sump gaskets, cam seals, crank seals — source identified before repair.',
-        'price'  => 'Diagnostic ' . $scan_price . ' · Repair quoted individually',
+        'price'  => 'Diagnostic ' . $scan_price . ' · Repairs estimated individually',
     ],
     'engine-noise-diagnosis-manukau' => [
         'name'   => 'Engine Noise Diagnosis',
