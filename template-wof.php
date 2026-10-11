@@ -872,7 +872,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
     <h2 class="wof-why__h2" id="wof-why-head"><?php echo esc_html($years); ?> Years at the Same Address.</h2>
     <div class="wof-why__grid">
       <div class="wof-why__card">
-        <div class="wof-why__card-head">Written estimate — always</div>
+        <div class="wof-why__card-head">Written estimate</div>
         <div class="wof-why__card-body">If your vehicle fails, you get a written repair estimate before we touch anything. No obligation to proceed. No surprises.</div>
       </div>
       <div class="wof-why__card">
