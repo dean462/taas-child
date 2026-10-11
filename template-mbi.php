@@ -472,6 +472,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
   .mbi-pcard > * { min-width:0; }
   .mbi-pcard__logo { flex-wrap:wrap; row-gap:8px; }
   .mbi-pcard__logo { flex-direction:row; padding:16px 20px; border-right:none; border-bottom:1px solid var(--taas-border, #E8E8E4); justify-content:flex-start; }
+  .mbi-pcard__name { flex:0 0 100%; width:100%; } /* name always on its own line under the logo, like Provident */
   .mbi-pcard__cta { border-left:none; border-top:1px solid var(--taas-border, #E8E8E4); flex-direction:row; flex-wrap:wrap; padding:16px 20px; }
   .mbi-steps { grid-template-columns:1fr 1fr; }
   .mbi-cover-grid { grid-template-columns:1fr; }
