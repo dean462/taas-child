@@ -569,7 +569,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
           <span>Inspected, Quoted &amp; Fixed — One Visit</span>
         </h1>
         <div class="wof-hero__price">Booked drop-off · Mon–Fri 7:30am–5:00pm</div>
-        <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA-authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. <?php echo esc_html($wof_price); ?> for all makes and models. If anything fails, you get a written estimate on the spot, and with seven specialist divisions under one roof, most repairs can be done the same visit.</p>
+        <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA-authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. <?php echo esc_html($wof_price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and with seven specialist divisions under one roof, most repairs can be done the same visit.</p>
         <div class="wof-hero__ctas">
           <a href="#wof-book" class="wof-btn wof-btn--yellow">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>

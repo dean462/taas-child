@@ -437,7 +437,7 @@ function tc_badge($initials) {
     </div>
     <div class="tc-callout" style="margin-top:28px;">
       <div class="tc-callout__title">Tyre pricing — contact for an estimate</div>
-      <p class="tc-callout__body">Tyre prices depend on size, brand and availability. Call us on <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> with your tyre size or vehicle rego and we will give you an estimate on the spot. Finance available via Afterpay, Q Card and GEM Finance.</p>
+      <p class="tc-callout__body">Tyre prices depend on size, brand and availability. Call us on <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> with your tyre size or vehicle rego and we will give you an estimate. Finance available via Afterpay, Q Card and GEM Finance.</p>
     </div>
   </div>
 </section>

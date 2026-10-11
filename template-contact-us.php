@@ -579,7 +579,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
             <div class="cu-step__num">2</div>
             <div class="cu-step__text">
               <strong>We look up your vehicle</strong>
-              Your rego lets us check your make, model, and year before we call — so we can give you accurate pricing straight away.
+              Your rego lets us check your make, model, and year before we call — so we can give you accurate pricing.
             </div>
           </div>
           <div class="cu-step">

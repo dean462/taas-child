@@ -56,7 +56,7 @@ $faqs = [
     ],
     [
         'q' => 'What is the cheapest tyre I can get in Manukau?',
-        'a' => 'Pricing varies by size — call us on ' . $phone_local . ' with your tyre size and we\'ll give you a price on the spot. We stock budget options from brands including Farroad, Radar, Nankang, and Hifly. Balancing is included in the price.',
+        'a' => 'Pricing varies by size — call us on ' . $phone_local . ' with your tyre size and we\'ll give you an estimate. We stock budget options from brands including Farroad, Radar, Nankang, and Hifly. Balancing is included in the price.',
     ],
     [
         'q' => 'What\'s the difference between budget and premium tyres?',

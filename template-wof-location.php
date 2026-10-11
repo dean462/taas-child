@@ -645,7 +645,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         </h1>
         <div class="wl-hero__pill"><?php echo esc_html(strtoupper('Booked drop-off · ' . $hours . ($sub['distance'] ? ' · ' . $sub['distance'] : ''))); ?></div>
         <p class="wl-hero__sub">
-          NZTA-authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?> — <?php echo esc_html($distance_text); ?><?php endif; ?>. <?php echo esc_html($price); ?> for all makes and models. If anything fails, you get a written estimate on the spot, and most repairs can be done the same visit.
+          NZTA-authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?> — <?php echo esc_html($distance_text); ?><?php endif; ?>. <?php echo esc_html($price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and most repairs can be done the same visit.
         </p>
         <div class="wl-hero__ctas">
           <a href="#wl-book" class="wl-btn wl-btn--yellow">

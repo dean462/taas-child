@@ -94,7 +94,7 @@ $taas_faqs['wof_vs_service'] = [
 
 $taas_faqs['wof_wait'] = [
     'q' => 'Can I wait while my WOF is done?',
-    'a' => 'WOFs are booked as drop-offs by default. If you need to wait, tell us when you book and we\'ll confirm whether we can fit it in. We\'ll call or text as soon as the inspection\'s done, and if anything needs fixing, you\'ll have the estimate in hand.',
+    'a' => 'WOFs are booked as drop-offs by default. If you need to wait, tell us when you book and we\'ll confirm whether we can fit it in. We\'ll call or text as soon as the inspection\'s done, and if anything needs fixing, we\'ll explain it and follow up with an estimate.',
 ];
 
 $taas_faqs['wof_appointment'] = [
