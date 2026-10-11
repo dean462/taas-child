@@ -285,15 +285,20 @@ function taas_mobile_sticky_cta() {
         // Smart enquiry — scroll to on-page form if one exists
         var enquireBtn = bar.querySelector('.taas-sticky__enquire');
         if (!enquireBtn) return;
-        // Find enquiry section by common ID patterns across all templates
-        var target = document.querySelector('[id*="enquir"], [id*="-book"], [id*="contact"]');
-        // Fallback: find any section containing a CF7 form
+        // Find the on-page enquiry form. Only look inside the page body at real,
+        // visible sections (a <link id="contact-form-7-css"> in <head> used to
+        // match here, so the button scrolled to nothing).
+        var target = null;
+        var cf7 = document.querySelector('body .wpcf7');
+        if (cf7) target = cf7.closest('section, [id]') || cf7;
         if (!target) {
-            var cf7 = document.querySelector('.wpcf7');
-            if (cf7) target = cf7.closest('section');
+            var cands = document.querySelectorAll('body section[id*="enquir"], body section[id*="-book"], body div[id*="enquir"]');
+            for (var i = 0; i < cands.length; i++) {
+                if (cands[i].offsetHeight > 0) { target = cands[i]; break; }
+            }
         }
-        if (target) {
-            enquireBtn.setAttribute('href', '#' + (target.id || ''));
+        if (target && target.offsetHeight > 0) {
+            if (target.id) enquireBtn.setAttribute('href', '#' + target.id);
             enquireBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
