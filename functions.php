@@ -91,7 +91,7 @@ add_action('template_redirect', function() {
 }, 99);
 
 add_action('wp_head', function() {
-    echo '<style>a.taas-autolink{color:inherit;font-weight:600;text-decoration:underline!important;text-decoration-color:#FFC800!important;text-decoration-thickness:2px!important;text-underline-offset:3px;white-space:nowrap}a.taas-autolink:hover{opacity:.65}</style>' . "\n";
+    echo '<style>a.taas-autolink{color:inherit;font-weight:600;text-decoration:underline!important;text-decoration-color:#FFC800!important;text-decoration-thickness:2px!important;text-underline-offset:3px}a.taas-autolink[href^="tel:"]{white-space:nowrap}a.taas-autolink:hover{opacity:.65}</style>' . "\n";
 }, 99);
 
 add_action( 'wp_enqueue_scripts', 'taas_child_enqueue_styles' );
