@@ -409,8 +409,11 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
   .vs-ptable__cat { font-size:13px!important; }
   .vs-ptable__sub { font-size:11px!important; line-height:1.4; overflow-wrap:anywhere; }
   .vs-symptoms__grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
-  .vs-symptom { min-width:0; }
-  .vs-symptom__text { overflow-wrap:anywhere; }
+  .vs-symptom { min-width:0; gap:10px; padding:12px; }
+  .vs-symptom__icon { width:30px; height:30px; border-radius:6px; }
+  .vs-symptom__icon svg { width:16px; height:16px; }
+  .vs-symptom__text { font-size:13px; line-height:1.35; overflow-wrap:normal; word-break:normal; hyphens:none; }
+  .vs-symptom__arrow { display:none; } /* whole card is the link; frees room so words don't split */
   .vs-steps { grid-template-columns:1fr; }
   .vs-steps-callout { font-size:14px; }
 }
