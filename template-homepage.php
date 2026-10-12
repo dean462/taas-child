@@ -457,7 +457,9 @@ body.page-template-template-homepage { overflow-x:hidden; }
 
 /* ══ WHY TAAS ════════════════════════════════════════════════════════════ */
 .hp-why { background: var(--wht); padding: 80px 0; }
-.hp-why .w { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.hp-why .w { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 80px; align-items: start; }
+.hp-why .w > * { min-width: 0; } /* stop the reviews carousel stretching the column */
+.hp-reviews { max-width: 100%; overflow: hidden; }
 .hp-checklist { list-style: none; display: flex; flex-direction: column; gap: 13px; margin-top: 28px; }
 .taas-hp .hp-checklist li.hp-check {
   display: flex; align-items: flex-start; gap: 12px;
@@ -571,7 +573,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
   .hp-brands-grid { grid-template-columns: repeat(2,1fr); }
   .hp-stats .w { grid-template-columns: repeat(2,1fr); }
   .hp-svc-grid { grid-template-columns: repeat(2,1fr); }
-  .hp-why .w { grid-template-columns: 1fr; gap: 40px; }
+  .hp-why .w { grid-template-columns: minmax(0,1fr); gap: 40px; }
   .hp-finance-grid { grid-template-columns: repeat(3,1fr); }
   .hp-enquiry { grid-template-columns: 1fr; gap: 32px; }
 }
