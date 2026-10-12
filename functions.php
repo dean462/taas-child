@@ -58,10 +58,24 @@ function taas_linkify_contacts($html) {
         },
     ];
 
-    $skip  = ['a', 'button', 'script', 'style', 'head', 'textarea', 'select', 'option', 'title', 'noscript', 'svg'];
+    // Set aside raw-text blocks whole (script, style, head, svg, etc.). Tokenising
+    // them broke on JS like "i<n" and left the rest of the page unlinked.
+    $protected = [];
+    $html = preg_replace_callback(
+        '#<(script|style|head|textarea|noscript|svg|title)\b[^>]*>.*?</\1\s*>#is',
+        function ($m) use (&$protected) {
+            $key = "\x01TAASP" . count($protected) . "\x01";
+            $protected[$key] = $m[0];
+            return $key;
+        },
+        $html
+    );
+    if ($html === null) return func_get_arg(0);
+
+    $skip  = ['a', 'button', 'select', 'option'];
     $depth = array_fill_keys($skip, 0);
     $parts = preg_split('/(<!--.*?-->|<[^>]+>)/s', $html, -1, PREG_SPLIT_DELIM_CAPTURE);
-    if ($parts === false) return $html;
+    if ($parts === false) return func_get_arg(0);
 
     foreach ($parts as $i => $part) {
         if ($part === '') continue;
@@ -82,7 +96,7 @@ function taas_linkify_contacts($html) {
         }
         $parts[$i] = $part;
     }
-    return implode('', $parts);
+    return strtr(implode('', $parts), $protected);
 }
 
 add_action('template_redirect', function() {
