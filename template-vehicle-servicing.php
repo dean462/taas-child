@@ -401,8 +401,8 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
   .vs-ptable td:not(:first-child) { font-size:14px; }
   /* Price table: fit a 375px screen instead of pushing the page sideways */
   .vs-ptable { table-layout:fixed; width:100%; }
-  .vs-ptable th { font-size:10px; letter-spacing:.02em; padding:10px 4px; }
-  .vs-ptable th:first-child { width:38%; padding-left:10px; }
+  .vs-ptable th { font-size:11px; letter-spacing:0; text-transform:none; padding:10px 3px; overflow-wrap:anywhere; hyphens:auto; line-height:1.3; }
+  .vs-ptable th:first-child { width:34%; padding-left:10px; }
   .vs-ptable td { padding:10px 4px; }
   .vs-ptable td:first-child { padding-left:10px; }
   .vs-ptable td:not(:first-child) { font-size:13px; }
