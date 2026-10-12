@@ -1035,6 +1035,11 @@ $taas_faqs['ss_wof_fail'] = [
     'a' => 'We carry out the repair and then recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We advise on what is required and confirm the cost before starting any repair. Call us on <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">' . $_fq_phone . '</a> to discuss your WOF failure.',
 ];
 
+$taas_faqs['ss_specialist'] = [
+    'q' => 'Do you repair steering racks and power steering pumps yourselves?',
+    'a' => 'We diagnose every steering fault here and handle most steering repairs ourselves, including tie rod ends, joints and replacement parts. When a steering rack or hydraulic power steering pump needs reconditioning, it goes to a trusted steering specialist with the right equipment for that work. We remove and refit it, carry out the wheel alignment, and manage the job from start to finish, so you only deal with us.',
+];
+
 $taas_faqs['ss_cost'] = [
     'q' => 'How much does a steering or suspension repair cost in Manukau?',
     'a' => 'Steering and suspension repairs start ' . $_fq_susp . ' depending on the vehicle and parts required. Wheel alignment is ' . $_fq_align . ' and is included after any geometry-affecting repair. We provide an estimate before any work begins. Call us on <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">' . $_fq_phone . '</a> for a specific estimate.',

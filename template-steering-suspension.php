@@ -52,8 +52,8 @@ function ssh_mono($initials, $size = 40) {
 
 // ── Steering services ────────────────────────────────────────────────────────
 $steering_services = [
-    ['icon' => ssh_mono('SR'), 'title' => 'Steering Rack Repair', 'desc' => 'Leaking, heavy, or knocking steering rack — repaired or replaced. We diagnose before recommending replacement.', 'url' => '/steering-rack-repair-manukau/', 'cta' => 'Steering Rack →'],
-    ['icon' => ssh_mono('PS'), 'title' => 'Power Steering Repair', 'desc' => 'Heavy steering, whining pump, or leaking fluid. Hydraulic and electric power steering systems serviced.', 'url' => '/power-steering-repair-manukau/', 'cta' => 'Power Steering →'],
+    ['icon' => ssh_mono('SR'), 'title' => 'Steering Rack Repair', 'desc' => 'Leaking, heavy, or knocking steering rack. We diagnose it, then replace it or send it to a trusted steering specialist for reconditioning.', 'url' => '/steering-rack-repair-manukau/', 'cta' => 'Steering Rack →'],
+    ['icon' => ssh_mono('PS'), 'title' => 'Power Steering Repair', 'desc' => 'Heavy steering, whining pump, or leaking fluid. Hydraulic and electric systems diagnosed here; pump reconditioning is done by a trusted specialist.', 'url' => '/power-steering-repair-manukau/', 'cta' => 'Power Steering →'],
     ['icon' => ssh_mono('TR'), 'title' => 'Tie Rod Replacement', 'desc' => 'Worn tie rod ends cause steering wander and uneven tyre wear. Replaced in pairs where required — wheel alignment included.', 'url' => '/tie-rod-replacement-manukau/', 'cta' => 'Tie Rods →'],
     ['icon' => ssh_mono('WA'), 'title' => 'Wheel Alignment', 'desc' => 'Four-wheel laser alignment ' . esc_html($align_price) . '. Before-and-after print-out. Done after any steering or suspension repair.', 'url' => '/wheel-alignment-manukau/', 'cta' => 'Wheel Alignment →'],
 ];
@@ -107,6 +107,7 @@ $faqs = [
     $taas_faqs['ss_alignment_after'],
     $taas_faqs['ss_shudder'],
     $taas_faqs['ss_wof_fail'],
+    $taas_faqs['ss_specialist'],
     $taas_faqs['ss_cost'],
     $taas_faqs['ss_european'],
     $taas_faqs['ss_drive_broken'],
@@ -475,8 +476,8 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
 <section class="ssh-section ssh-section--white">
   <div class="ssh-w">
     <span class="ssh-eyebrow ssh-eyebrow--dark">Steering Services</span>
-    <h2 class="ssh-h2">Steering Repairs &amp; Service — All In-House</h2>
-    <p class="ssh-lead">Rack and pinion, power steering, tie rod ends and steering joints. Diagnosed and repaired at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a>.</p>
+    <h2 class="ssh-h2">Steering Repairs &amp; Service</h2>
+    <p class="ssh-lead">Rack and pinion, power steering, tie rod ends and steering joints, diagnosed at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a>. Steering racks and hydraulic pumps that need reconditioning go to a trusted steering specialist. We remove and refit them, align the wheels, and manage the whole job for you.</p>
     <div class="ssh-svc-grid">
       <?php foreach ($steering_services as $svc): ?>
       <a href="<?php echo esc_url($site_url . $svc['url']); ?>" class="ssh-svc-card">

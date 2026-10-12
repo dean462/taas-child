@@ -45,7 +45,7 @@ $ss_master = [
         'name'     => 'Steering Rack Repair',
         'badge'    => 'SR',
         'cat'      => 'Steering',
-        'short'    => 'Leaking, heavy, or knocking steering rack — repaired or replaced. Diagnosed before recommending replacement.',
+        'short'    => 'Leaking, heavy, or knocking steering rack. We diagnose it, then replace it or send it to a trusted steering specialist for reconditioning.',
         'price'    => 'Steering rack repair — estimate after diagnosis. Wheel alignment ' . $align_price . ' included',
         'urgency'  => 'high',
     ],
@@ -53,7 +53,7 @@ $ss_master = [
         'name'     => 'Power Steering Repair',
         'badge'    => 'PS',
         'cat'      => 'Steering',
-        'short'    => 'Heavy steering, whining pump, or leaking fluid. Hydraulic and electric power steering systems serviced.',
+        'short'    => 'Heavy steering, whining pump, or leaking fluid. Hydraulic and electric systems diagnosed here; pump reconditioning is done by a trusted specialist.',
         'price'    => 'Power steering diagnosis and repair — estimate after inspection. Wheel alignment ' . $align_price . ' included',
         'urgency'  => 'high',
     ],
@@ -165,6 +165,9 @@ $faqs[] = ['q' => "Do you do a wheel alignment after {$service_name}?", 'a' => "
 $faqs[] = ['q' => "Do you work on European vehicles?", 'a' => "Yes. Our TAAS European division covers " . $euro_brands . ". European vehicles often require specific part specifications and torque settings — we source OE-quality parts and follow manufacturer procedures."];
 $faqs[] = ['q' => "My car failed its WOF for this — what should I do?", 'a' => "Call us on " . $phone_free . ". We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We always advise on cost before starting any work."];
 $faqs[] = ['q' => "Do you offer finance for steering and suspension repairs?", 'a' => "Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Interest-free options available. Visit our finance page or ask when you call."];
+if (in_array($page_slug, ['steering-rack-repair-manukau', 'power-steering-repair-manukau'], true) && isset($taas_faqs['ss_specialist'])) {
+    $faqs[] = $taas_faqs['ss_specialist'];
+}
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => "Where is your workshop?", 'a' => "139 Cavendish Drive, Manukau, Auckland 2104. Open " . $hours . ". Call " . $phone_free . " to book. We service all South Auckland suburbs."];
 if (count($faqs) < 10) {
