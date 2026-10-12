@@ -314,6 +314,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   .trx-types,.trx-services,.trx-problems{grid-template-columns:1fr;}
 }
 @media(max-width:640px){
+.trx-btn{white-space:normal;max-width:100%;justify-content:center;text-align:center;}
   .trx-hero{padding:48px 0 40px;}
   .trx-hero h1{font-size:clamp(26px,7vw,38px);}
   .trx-hero__sub{font-size:14px;}

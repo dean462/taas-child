@@ -144,7 +144,8 @@ body.page-template-template-tyre-centre { overflow-x:hidden; }
 .tc-section--dark .tc-section__sub { color: #aaa; }
 
 /* ── Service cards ─────────────────────────────────────────────────────────── */
-.tc-services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.tc-services { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
+.tc-service { min-width: 0; }
 .tc-service { background: var(--taas-panel, #F7F7F5); border: 1px solid var(--taas-border, #E8E8E4); border-radius: var(--taas-radius, 6px); padding: 20px 18px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s; border-top: 3px solid transparent; }
 .tc-service:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-2px); border-top-color: var(--taas-yellow, #FFC800); }
 .tc-service__icon { width: 40px; height: 40px; flex-shrink: 0; }
@@ -214,7 +215,7 @@ body.page-template-template-tyre-centre { overflow-x:hidden; }
 /* ── Responsive ────────────────────────────────────────────────────────────── */
 @media (max-width: 960px) {
   .tc-hero__inner { grid-template-columns: 1fr; }
-  .tc-services { grid-template-columns: repeat(2, 1fr); }
+  .tc-services { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .tc-edu { grid-template-columns: 1fr; }
   .tc-enquiry { grid-template-columns: 1fr; gap: 32px; }
   .tc-pricing { grid-template-columns: 1fr; }
@@ -229,7 +230,7 @@ body.page-template-template-tyre-centre { overflow-x:hidden; }
   .tc-section { padding: 48px 0; }
   .tc-section__heading { font-size: clamp(20px, 5vw, 28px); }
   .tc-section__sub { font-size: 14px; }
-  .tc-services { grid-template-columns: 1fr; }
+  .tc-services { grid-template-columns: minmax(0,1fr); }
   .tc-trust__inner { flex-direction: column; gap: 8px; align-items: flex-start; }
   .tc-trust__item { font-size: 12px; }
   .tc-faq__q { font-size: 14px; padding: 16px 32px 16px 0; }

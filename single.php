@@ -232,6 +232,8 @@ body.single{overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100
 .sp-content h4 { font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: 700; color: #333; margin: 20px 0 8px; }
 .sp-content p { font-family: 'Inter', Arial, sans-serif; font-size: 16px; color: #333; line-height: 1.8; margin-bottom: 16px; }
 .sp-content p:empty { display: none; margin: 0; padding: 0; line-height: 0; }
+.sp-content table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; }
+.sp-content img, .sp-content iframe { max-width: 100%; height: auto; }
 .sp-content ul, .sp-content ol { font-family: 'Inter', Arial, sans-serif; font-size: 16px; color: #333; line-height: 1.75; margin: 0 0 20px 0; padding-left: 0; list-style: none; }
 .sp-content ul li { margin-bottom: 8px; padding-left: 22px; position: relative; }
 .sp-content ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; background: var(--taas-yellow, #FFC800); border-radius: 50%; }
