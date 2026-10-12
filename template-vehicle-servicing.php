@@ -399,6 +399,18 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
   .vs-finance__logo-img { height:28px; }
   .vs-enquiry__fin-img { height:28px; padding:6px 10px; }
   .vs-ptable td:not(:first-child) { font-size:14px; }
+  /* Price table: fit a 375px screen instead of pushing the page sideways */
+  .vs-ptable { table-layout:fixed; width:100%; }
+  .vs-ptable th { font-size:10px; letter-spacing:.02em; padding:10px 4px; }
+  .vs-ptable th:first-child { width:38%; padding-left:10px; }
+  .vs-ptable td { padding:10px 4px; }
+  .vs-ptable td:first-child { padding-left:10px; }
+  .vs-ptable td:not(:first-child) { font-size:13px; }
+  .vs-ptable__cat { font-size:13px!important; }
+  .vs-ptable__sub { font-size:11px!important; line-height:1.4; overflow-wrap:anywhere; }
+  .vs-symptoms__grid { grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
+  .vs-symptom { min-width:0; }
+  .vs-symptom__text { overflow-wrap:anywhere; }
   .vs-steps { grid-template-columns:1fr; }
   .vs-steps-callout { font-size:14px; }
 }
@@ -424,7 +436,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
       <div>
         <span class="vs-hero__eyebrow">Vehicle Servicing — Manukau</span>
         <h1>Car Service<br><span>Manukau — South Auckland</span></h1>
-        <p class="vs-hero__sub">Three service levels for all makes and models — Japanese, Korean, European, diesel, hybrid and electric. From <?php echo esc_html($ess_car); ?>. Our Premium service delivers 12 months of safe motoring. We'll keep you informed every step of the wayoval.</p>
+        <p class="vs-hero__sub">Three service levels for all makes and models — Japanese, Korean, European, diesel, hybrid and electric. From <?php echo esc_html($ess_car); ?>. Our Premium service delivers 12 months of safe motoring. We'll keep you informed every step of the way.</p>
         <div class="vs-hero__ctas">
           <a href="#vs-enquire" class="vs-btn vs-btn--primary">Book a Service</a>
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="vs-btn vs-btn--outline"><?php echo esc_html($phone_free); ?></a>
