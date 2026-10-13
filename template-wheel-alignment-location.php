@@ -176,7 +176,11 @@ body.page-template-template-wheel-alignment-location { overflow-x:hidden; }
 }
 </style>
 
-<section class="wal-hero">
+<?php
+$wal_hero_img = defined('TAAS_HERO_ALIGNMENT') ? TAAS_HERO_ALIGNMENT : (defined('TAAS_HERO_DEFAULT') ? TAAS_HERO_DEFAULT : '');
+$wal_hero_bg  = $wal_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%,rgba(17,17,17,.92) 100%),url('" . esc_url($wal_hero_img) . "') center 60%/cover no-repeat;" : '';
+?>
+<section class="wal-hero"<?php if ($wal_hero_bg) echo ' style="' . esc_attr($wal_hero_bg) . '"'; ?>>
   <div class="wal-hero__inner">
     <span class="wal-hero__eyebrow">Wheel Alignment — <?php echo esc_html($suburb_name); ?></span>
     <h1>Wheel Alignment <?php echo esc_html($suburb_name); ?><br><span>South Auckland</span></h1>
