@@ -223,7 +223,11 @@ body.page-template-template-wheel-alignment { overflow-x:hidden; }
 }
 </style>
 
-<section class="wa-hero">
+<?php
+$wa_hero_img = defined('TAAS_HERO_ALIGNMENT') ? TAAS_HERO_ALIGNMENT : (defined('TAAS_HERO_DEFAULT') ? TAAS_HERO_DEFAULT : '');
+$wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%,rgba(17,17,17,.92) 100%),url('" . esc_url($wa_hero_img) . "') center 60%/cover no-repeat;" : '';
+?>
+<section class="wa-hero"<?php if ($wa_hero_bg) echo ' style="' . esc_attr($wa_hero_bg) . '"'; ?>>
   <div class="wa-hero__inner">
     <div>
       <span class="wa-hero__eyebrow">Tyre Centre — Manukau</span>

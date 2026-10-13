@@ -130,7 +130,8 @@ define('TAAS_HERO_COMMERCIAL',   '/wp-content/themes/taas-child/images/site/hero
 define('TAAS_HERO_AUTOELEC',     '/wp-content/themes/taas-child/images/site/hero-autoelec.webp');
 define('TAAS_HERO_SUSPENSION',   '/wp-content/themes/taas-child/images/site/hero-suspension.webp');
 define('TAAS_HERO_CAMBELT',      '/wp-content/themes/taas-child/images/site/hero-cambelt.webp');
-// TAAS_HERO_AIRCON: awaiting a real air-con photo — falls back to DEFAULT.
+define('TAAS_HERO_AIRCON',       '/wp-content/themes/taas-child/images/site/hero-aircon.webp');
+define('TAAS_HERO_ALIGNMENT',    '/wp-content/themes/taas-child/images/site/hero-alignment.webp');
 
 // ── Contact links ────────────────────────────────────────────────────────────
 // Use these in templates so phone numbers, email and address are always tappable.
