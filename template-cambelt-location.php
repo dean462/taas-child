@@ -73,7 +73,7 @@ $faqs[] = ['q' => "What happens if a cambelt snaps while driving?", 'a' => "On a
 $faqs[] = ['q' => "Do you offer finance for cambelt replacement near {$suburb_name}?", 'a' => "Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. A cambelt replacement is not something to delay because of cost — finance means you can get it done now and pay over time. Call {$phone_free} to discuss."];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => "Do you work on European vehicle cambelts?", 'a' => "Yes. Our TAAS European division covers all European makes including Audi, BMW, Volkswagen, Peugeot, and Renault. European cambelt replacements are often more labour-intensive — we follow manufacturer procedures and use OE-quality parts."];
-$faqs[] = ['q' => "How long does a cambelt replacement take?", 'a' => "Most cambelt replacements take between 4 and 8 hours depending on the vehicle. Some European engines require more access work. We advise on timing when you book and recommend planning for a full day. Walk-ins are welcome mornings — booking is recommended for cambelt work."];
+$faqs[] = ['q' => "How long does a cambelt replacement take?", 'a' => "Most cambelt replacements take between 4 and 8 hours depending on the vehicle. Some European engines require more access work. We advise on timing when you book and recommend planning for a full day."];
 $faqs[] = ['q' => "Where is your workshop?", 'a' => "139 Cavendish Drive, Manukau, Auckland 2104. Open {$hours}. Call {$phone_free} to book. We service all South Auckland suburbs including {$suburb_name}."];
 
 // ── Schema ───────────────────────────────────────────────────────────────────

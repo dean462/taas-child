@@ -598,7 +598,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
       <a href="<?php echo esc_url($site_url . '/tyre-centre/'); ?>" class="au-div-card">
         <span class="au-div-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2"/><path d="M9 3v2"/><path d="m9 12 2 2 4-4"/></svg></span>
         <div class="au-div-card__name">TAAS Tyre &amp; WOF Centre</div>
-        <p class="au-div-card__desc">NZTA Authorised WOF station — <?php echo defined('TAAS_WOF_PRICE') ? esc_html(TAAS_WOF_PRICE) : '$80'; ?> fixed. Supply and fit tyres, balancing, alignment. Walk-ins welcome mornings.</p>
+        <p class="au-div-card__desc">NZTA Authorised WOF station — <?php echo defined('TAAS_WOF_PRICE') ? esc_html(TAAS_WOF_PRICE) : '$80'; ?> fixed. Supply and fit tyres, balancing, alignment. Walk-ins welcome for tyres.</p>
         <span class="au-div-card__link">Tyre &amp; WOF Info →</span>
       </a>
 

@@ -150,7 +150,7 @@ $faqs[] = ['q' => 'Do you work on European vehicle cooling systems?', 'a' => 'Ye
 $faqs[] = ['q' => 'Do you offer finance for cooling system repairs?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. A cooling system repair should not be delayed because of cost — overheating causes exponentially more expensive damage.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book.'];
-if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Timing depends on the specific repair and vehicle. We advise on expected timeframe when you book. Walk-ins are welcome mornings — booking is recommended for larger jobs. Call " . $phone_free . "."]; }
+if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Timing depends on the specific repair and vehicle. We advise on expected timeframe when you book. Please book so we can allow the right time. Call " . $phone_free . "."]; }
 if (count($faqs) < 10) { $faqs[] = ['q' => 'How often should I flush my coolant?', 'a' => 'We recommend a coolant flush every 2 years as a minimum. Old coolant loses its corrosion inhibitors and becomes acidic, which damages aluminium components from the inside.']; }
 
 // ── Badge helper ─────────────────────────────────────────────────────────────

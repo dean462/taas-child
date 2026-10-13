@@ -171,7 +171,7 @@ if (in_array($page_slug, ['steering-rack-repair-manukau', 'power-steering-repair
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => "Where is your workshop?", 'a' => "139 Cavendish Drive, Manukau, Auckland 2104. Open " . $hours . ". Call " . $phone_free . " to book. We service all South Auckland suburbs."];
 if (count($faqs) < 10) {
-    $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Most steering and suspension repairs are completed within a day. Timing depends on the specific repair, parts availability, and vehicle access. We advise on expected timeframe when you book. Walk-ins are welcome mornings — booking is recommended for larger jobs."];
+    $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Most steering and suspension repairs are completed within a day. Timing depends on the specific repair, parts availability, and vehicle access. We advise on expected timeframe when you book. Please book so we can allow the right time."];
 }
 
 // ── Badge helper ─────────────────────────────────────────────────────────────

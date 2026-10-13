@@ -78,7 +78,7 @@ $faqs = [
     ['q' => 'Where is Manukau Brake & Clutch?',
      'a' => '139 Cavendish Drive, Manukau, Auckland 2104. ' . ($distance_note ? ucfirst($distance_note) . ' from ' . $suburb_name . '. ' : '') . 'Open ' . $hours . '. Call ' . $phone_free . ' to book.'],
     ['q' => 'How long do brake repairs take?',
-     'a' => 'A pad and rotor replacement is typically completed same-day. More complex work — calliper rebuilds, drum brake overhauls — may take longer. Walk-ins welcome mornings, booking recommended for brake work.'],
+     'a' => 'A pad and rotor replacement is typically completed same-day. More complex work — calliper rebuilds, drum brake overhauls — may take longer. Please book for brake work so we can allow the right time.'],
     ['q' => 'Do you offer disc skimming for ' . $suburb_name . ' customers?',
      'a' => 'Yes — we machine brake rotors on-site. Disc skimming removes grooves and scoring and restores a flat surface for new pads. Call ' . $phone_free . ' to book.'],
 ];

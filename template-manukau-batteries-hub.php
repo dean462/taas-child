@@ -214,7 +214,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
       <li>Free alternator &amp; starter test</li>
       <li>BMS registration — European cars</li>
       <li>Old battery recycled free</li>
-      <li>Walk-ins welcome mornings</li>
+      <li>Walk-ins welcome</li>
     </ul>
     <hr>
     <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="mbh-sidebar__phone"><?php echo esc_html($phone_free); ?></a>

@@ -101,7 +101,7 @@ $faqs = [
     ['q' => 'Where is your workshop?',
      'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book or get an estimate.'],
     ['q' => 'How long does water pump replacement take?',
-     'a' => 'A standalone water pump replacement typically takes 2–4 hours depending on the vehicle. A combined cambelt and water pump service takes 4–8 hours. We advise on expected timeframe when you book. Walk-ins are welcome mornings — booking is recommended for this type of work.'],
+     'a' => 'A standalone water pump replacement typically takes 2–4 hours depending on the vehicle. A combined cambelt and water pump service takes 4–8 hours. We advise on expected timeframe when you book.'],
 ];
 
 // ── Schema ───────────────────────────────────────────────────────────────────

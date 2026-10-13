@@ -139,7 +139,7 @@ $faqs[] = ['q'=>'What if my battery keeps going flat?','a'=>'A battery that keep
 $faqs[] = ['q'=>'What brands do you stock?','a'=>'Neuton Power is our preferred brand — proven reliable over '.$years.' years. We are also an authorised Bosch dealer through YHI Automotive NZ.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q'=>'Can I pay with Afterpay?','a'=>'Yes — we accept Afterpay, Q Card, GEM Finance, and Aotea Finance.'];
-$faqs[] = ['q'=>'Where is Manukau Batteries?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open '.$hours.'. Walk-ins welcome mornings. Call '.$phone_free.'.'];
+$faqs[] = ['q'=>'Where is Manukau Batteries?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open '.$hours.'. Walk-ins welcome. Call '.$phone_free.'.'];
 if (count($faqs) < 10) {
     $faqs[] = ['q'=>'Do you recycle old batteries?','a'=>'Yes — old batteries collected and recycled responsibly at no charge with every supply and fit.'];
 }

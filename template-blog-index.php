@@ -102,8 +102,8 @@ get_header();
 echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) . '</script>';
 $blog_faq_schema = ['@context'=>'https://schema.org','@type'=>'FAQPage','mainEntity'=>[
   ['@type'=>'Question','name'=>'What services does Tony Allen Auto Service offer?','acceptedAnswer'=>['@type'=>'Answer','text'=>'WOF inspections ('.$wof_price.' flat rate), vehicle servicing, brakes and clutch, auto electrical, European vehicles, tyres, fleet servicing and MBI repairs. '.$divisions.'. MTA Assured, NZTA Authorised '.$ms_number.'.']],
-  ['@type'=>'Question','name'=>'Where is Tony Allen Auto Service located?','acceptedAnswer'=>['@type'=>'Answer','text'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open '.$hours.'. Walk-ins welcome mornings for WOF inspections — booking recommended for afternoons.']],
-  ['@type'=>'Question','name'=>'How do I book a service?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Call '.$phone_free.' or '.$phone_local.', email '.$email.', or use the booking form at taas.co.nz/contact-us. Walk-ins welcome mornings for WOF inspections.']],
+  ['@type'=>'Question','name'=>'Where is Tony Allen Auto Service located?','acceptedAnswer'=>['@type'=>'Answer','text'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open '.$hours.'. WOFs, servicing and repairs are by booking. Walk-ins welcome for tyres and batteries.']],
+  ['@type'=>'Question','name'=>'How do I book a service?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Call '.$phone_free.' or '.$phone_local.', email '.$email.', or use the booking form at taas.co.nz/contact-us.']],
 ]];
 echo '<script type="application/ld+json">' . wp_json_encode($blog_faq_schema, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) . '</script>';
 ?>

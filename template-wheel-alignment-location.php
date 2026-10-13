@@ -63,7 +63,7 @@ $faqs = [
     ['q' => 'What is the difference between alignment and balancing?', 'a' => "Alignment adjusts the angles of the wheels — fixes pulling and uneven wear. Balancing distributes weight evenly around the wheel — fixes vibration at speed. Different problems, different solutions. We do both on-site."],
     ['q' => 'Do you do a print-out?', 'a' => 'Yes — before and after. The print-out shows camber, caster, and toe on all four corners compared to manufacturer spec. Green values are within spec, red were out of range. Your record that the work was done correctly.'],
     ['q' => 'Can I pay with finance?', 'a' => 'Yes. Afterpay, Q Card, and GEM Finance accepted.'],
-    ['q' => 'What are your hours?', 'a' => TAAS_HOURS . ". Walk-ins welcome mornings — booking recommended for afternoons. {$distance_text} from {$suburb_name}."],
+    ['q' => 'What are your hours?', 'a' => TAAS_HOURS . ". Wheel alignments are by booking. {$distance_text} from {$suburb_name}."],
 ];
 
 $schema_faqs = [];
@@ -205,7 +205,7 @@ body.page-template-template-wheel-alignment-location { overflow-x:hidden; }
     <h2 class="wal-section__heading">Wheel Alignment for <?php echo esc_html($suburb_name); ?> Drivers</h2>
     <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:16px;max-width:720px;">If you are in <?php echo esc_html($suburb_name); ?> and your car is pulling, your steering is off-centre, or your tyres are wearing unevenly — we are <?php echo esc_html($distance_text); ?> away at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>.</p>
     <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:16px;max-width:720px;">We use a 3D laser alignment system to measure all four wheels simultaneously. Camber, caster, and toe on every corner — compared against the manufacturer's values for your vehicle. You get a before-and-after print-out so you can see exactly what was adjusted.</p>
-    <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;max-width:720px;">Four-wheel alignment <?php echo esc_html($alignment_price); ?>. Includes suspension inspection, tyre pressure reset, and road test. Walk-ins welcome mornings — call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> to book.</p>
+    <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;max-width:720px;">Four-wheel alignment <?php echo esc_html($alignment_price); ?>. Includes suspension inspection, tyre pressure reset, and road test. Call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> to book.</p>
   </div>
 </section>
 

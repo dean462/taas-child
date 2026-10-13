@@ -77,7 +77,7 @@ if ($is_branded) {
     $expect_heading = 'Why ' . $suburb_name . ' Drivers Choose Tony Allen';
     $expect_p1    = 'Tony Allen Auto Service has been fitting tyres in South Auckland since ' . $established . '. When you come to us for tyres, you are dealing with a family-owned independent workshop — not a tyre retail chain. We recommend the right tyre for your vehicle and driving style, not the one with the biggest margin.';
     $expect_p2    = 'Every set of tyres is fitted, balanced and aligned on-site in a single visit. We carry Maxxis, Continental, Goodyear, Hifly, Rovelo and more — budget through to premium. Our technicians fit hundreds of sets a year and our 3D laser alignment hoist ensures your new tyres wear evenly from day one.';
-    $expect_p3    = 'We are at 139 Cavendish Drive, Manukau — ' . $distance_text . ' from ' . $suburb_name . '. Walk-ins welcome mornings, booking recommended for afternoons.';
+    $expect_p3    = 'We are at 139 Cavendish Drive, Manukau — ' . $distance_text . ' from ' . $suburb_name . '. Walk-ins welcome for tyres — no booking needed.';
     $trust_extra  = 'Family-Owned Since ' . $established;
 } else {
     $hero_eyebrow = 'Tyres — ' . $suburb_name;
@@ -87,7 +87,7 @@ if ($is_branded) {
     $expect_heading = 'Tyre Service for ' . $suburb_name . ' Drivers';
     $expect_p1    = 'If you are in ' . $suburb_name . ' and need new tyres, a puncture repaired, or your alignment checked — we are ' . $distance_text . ' away at 139 Cavendish Drive, Manukau.';
     $expect_p2    = 'We supply, fit and balance tyres in one visit — no need to book at one shop and fit at another. Budget to premium brands available, and we will recommend based on your vehicle and how you drive, not on margin. Wheel alignment is done on-site with our 3D laser alignment hoist — recommended every time new tyres are fitted.';
-    $expect_p3    = 'Walk-ins are welcome mornings. Booking is recommended for afternoons — call ' . $phone_free . ' or send us your details below.';
+    $expect_p3    = 'Walk-ins are welcome for tyres. If you would rather book a time, call ' . $phone_free . ' or send us your details below.';
     $trust_extra  = '7 Brands in Stock';
 }
 
@@ -103,7 +103,7 @@ if ($is_branded) {
         ['q' => "Does Tony Allen offer tyre finance?", 'a' => "Yes. Afterpay, Q Card and GEM Finance accepted. Apply in-store or set up on your phone before you arrive."],
         ['q' => "Can Tony Allen fit tyres I bought online?", 'a' => "Yes. Bring your tyres in and we will fit, balance and align them. Check the size and load rating match your vehicle before purchasing."],
         ['q' => "Does Tony Allen do puncture repairs?", 'a' => "Yes. Plug and patch repairs where the tyre is safely repairable. If the damage is in the sidewall or too large, we will tell you straight — we do not repair tyres that are not safe."],
-        ['q' => "What are Tony Allen's opening hours?", 'a' => "{$hours}. Walk-ins welcome mornings — booking recommended for afternoons. 139 Cavendish Drive, Manukau — {$distance_text} from {$suburb_name}."],
+        ['q' => "What are Tony Allen's opening hours?", 'a' => "{$hours}. Walk-ins welcome for tyres and batteries. WOFs, servicing and repairs are by booking. 139 Cavendish Drive, Manukau — {$distance_text} from {$suburb_name}."],
     ];
 } else {
     $faqs = [
@@ -116,7 +116,7 @@ if ($is_branded) {
         ['q' => "Do you do 4WD and SUV tyres?", 'a' => "Yes. All-terrain, highway terrain and mud terrain patterns. Maxxis Bravo, Continental CrossContact, Goodyear Wrangler and budget alternatives. Fitted and balanced on-site."],
         ['q' => "How often should I get a wheel alignment?", 'a' => "After fitting new tyres, after any suspension work, or if you notice uneven tyre wear or steering pull. At minimum, check alignment annually. Alignment {$alignment_price}."],
         ['q' => "Can I pay with Afterpay?", 'a' => "Yes. We accept Afterpay, Q Card and GEM Finance. Apply in-store or set up before you arrive."],
-        ['q' => "What are your opening hours?", 'a' => "{$hours}. Walk-ins welcome mornings — booking recommended for afternoons. 139 Cavendish Drive, Manukau — {$distance_text} from {$suburb_name}."],
+        ['q' => "What are your opening hours?", 'a' => "{$hours}. Walk-ins welcome for tyres and batteries. WOFs, servicing and repairs are by booking. 139 Cavendish Drive, Manukau — {$distance_text} from {$suburb_name}."],
     ];
 }
 

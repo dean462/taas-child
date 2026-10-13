@@ -198,7 +198,7 @@ $taas_faqs['suburbs'] = [
 ═══════════════════════════════════════════════════════════════════════════ */
 
 $taas_faqs['booking'] = [
-    'q' => 'Do I need to book or can I walk in?',
+    'q' => 'Do I need to book?',
     'a' => 'Please book. Bookings let us allocate the right technician and time, including WOFs, so we can fix anything that fails on the same visit. Call ' . $_fq_phone . ' or send an enquiry online.',
 ];
 
@@ -1749,7 +1749,7 @@ $taas_faqs['euro_location'] = [
 
 $taas_faqs['mb_location'] = [
     'q' => 'Where is Manukau Batteries located?',
-    'a' => 'Manukau Batteries is at 139 Cavendish Drive, Manukau, Auckland 2104 — part of Tony Allen Auto Service. Open ' . $_fq_hours . '. Walk-ins welcome mornings.',
+    'a' => 'Manukau Batteries is at 139 Cavendish Drive, Manukau, Auckland 2104 — part of Tony Allen Auto Service. Open ' . $_fq_hours . '. Walk-ins welcome.',
 ];
 
 $taas_faqs['mb_cost'] = [
@@ -1884,7 +1884,7 @@ $taas_faqs['comm_wof'] = [
 
 $taas_faqs['comm_wait'] = [
     'q' => 'Can I wait while my vehicle is serviced?',
-    'a' => 'Walk-ins are welcome mornings for smaller jobs. For a full service or repair, we recommend booking so we can allocate the right time slot. We understand your vehicle is your income — we aim to get you back on the road same day for routine servicing.',
+    'a' => 'For a quick job, tell us when you book and we\'ll let you know if you can wait. For a full service or repair, booking lets us allocate the right time slot. We understand your vehicle is your income — we aim to get you back on the road same day for routine servicing.',
 ];
 
 $taas_faqs['comm_same_day'] = [
@@ -2104,8 +2104,8 @@ $taas_faqs['svc_additional_work'] = [
 ];
 
 $taas_faqs['svc_booking'] = [
-    'q' => 'Do I need to book or can I just drive in?',
-    'a' => 'Booking is recommended so we can allocate the right amount of time for your vehicle and service level. Walk-ins are welcome mornings only, subject to availability. Call ' . $_fq_phone . ' to book — we can usually fit you in within a day or two.',
+    'q' => 'Do I need to book a service?',
+    'a' => 'Yes, please book so we can allocate the right amount of time for your vehicle and service level. Call ' . $_fq_phone . ' to book — we can usually fit you in within a day or two.',
 ];
 
 $taas_faqs['svc_finance'] = [
