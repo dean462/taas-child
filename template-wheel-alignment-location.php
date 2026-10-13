@@ -28,7 +28,7 @@ $cf7_general     = defined('TAAS_CF7_GENERAL')     ? TAAS_CF7_GENERAL     : '';
 $phone_free_tel  = preg_replace('/[^0-9+]/', '', TAAS_PHONE_FREE);
 $maps_url        = 'https://www.google.com/maps/place/Tony+Allen+Auto+Service,+139+Cavendish+Drive,+Manukau+2104';
 
-$suburb_name = get_post_meta($post_id, 'suburb_name', true) ?: get_the_title();
+$suburb_name = get_post_meta($post_id, 'suburb_name', true) ?: trim(preg_replace('/^(tony allen\s+)?wheel alignment\s*/i', '', get_the_title()));
 $suburb_slug = get_post_meta($post_id, 'suburb_slug', true) ?: sanitize_title($suburb_name);
 
 $suburbs = [
