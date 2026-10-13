@@ -656,8 +656,8 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         ['name'=>'Hayden',           'role'=>'Technician',                  'bio'=>'Four-year apprenticeship completed. Broad mechanical skill range across servicing, brakes, and general repairs. Also looks after our tyre shop.'],
         ['name'=>'Mana',             'role'=>'Technician',                            'bio'=>'Strong problem-solving and attention to detail. Works across a wide range of mechanical services with a focus on getting it right first time. NZTA WOF authority holder.'],
         ['name'=>'Kiritnesh',        'role'=>'Technician',                            'bio'=>'Versatile technician working across a range of services, including our tyre shop. Developing his skills and a reliable part of the workshop team day to day.'],
-        ['name'=>'Lushen Govender',  'role'=>'Technician',                            'bio'=>'Recently joined the TAAS workshop team, working across servicing and general mechanical repairs.'],
-        ['name'=>'Tom Le Blanc',     'role'=>'Technician',                            'bio'=>'Recently joined the TAAS workshop team, working across servicing and general mechanical repairs.'],
+        ['name'=>'Lushen',           'role'=>'Technician',                            'bio'=>'Experienced technician originally from South Africa, with a comprehensive background in European vehicles. A strong addition to TAAS European, as well as general servicing and repairs.'],
+        ['name'=>'Tom',              'role'=>'Technician',                            'bio'=>'Experienced technician and NZTA WOF authority holder. Equally at home on a WOF inspection or a complex mechanical repair — years of trade experience behind every job.'],
         ['name'=>'Lincoln',          'role'=>'Apprentice Technician',                 'bio'=>'Progressing through his apprenticeship across the workshop and tyre shop under qualified supervision — part of TAAS\'s commitment to developing the next generation.'],
       ];
       foreach ($team as $member): ?>
