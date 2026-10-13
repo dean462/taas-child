@@ -844,7 +844,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     </div>
 
     <div class="wl-rules__note">
-      <strong>Important for <?php echo esc_html($suburb_name); ?> drivers:</strong> Most vehicles over 14 years old — which make up a large proportion of the South Auckland fleet — continue on annual WOFs with no change. WOF fines are also increasing: from 1 November 2026, driving with a WOF expired by more than two months attracts a <strong>$350 fine</strong> (up from $200). Non-compliant tyres up to $1,000. Not sure when your WOF is due? Call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> and we'll check for you.
+      <strong>Important for <?php echo esc_html($suburb_name); ?> drivers:</strong> Most vehicles over 14 years old — which make up a large proportion of the South Auckland fleet — continue on annual WOFs with no change. WOF fines are also increasing: from 1 November 2026, driving with a WOF expired by more than two months attracts a <strong>$350 fine</strong> (up from $200). Illegal tyres and wheels go up to $350 too. Not sure when your WOF is due? Call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> and we'll check for you.
     </div>
     <p style="margin-top:14px;font-size:13px;color:#999;">Source: NZTA. Always verify current standards at <a href="https://www.nzta.govt.nz" target="_blank" rel="noopener noreferrer" style="color:#FFC800;">nzta.govt.nz</a>.</p>
   </div>

@@ -114,7 +114,7 @@ $taas_faqs['wof_checklist'] = [
 
 $taas_faqs['wof_fine_2026'] = [
     'q' => 'What is the fine for an expired WOF in 2026?',
-    'a' => 'Currently $200. From <strong>1 November 2026</strong>, driving with a WOF expired by more than two months increases to <strong>$350</strong>. Non-compliant tyres attract fines of up to $1,000. Source: NZTA.',
+    'a' => 'Currently $200. From <strong>1 November 2026</strong>, driving with a WOF expired by more than two months increases to <strong>$350</strong>. Non-compliant tyres and wheels also go up to <strong>$350</strong> (from $150). Source: NZTA.',
 ];
 
 $taas_faqs['wof_older_vehicles'] = [
