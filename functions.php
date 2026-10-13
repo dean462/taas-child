@@ -222,17 +222,30 @@ function taas_mobile_sticky_cta() {
     $phone_tel   = '0800100876';
     $phone_label = '0800 100 876';
     $enquiry_url = '/contact-us/';
+    $wa_url      = function_exists('taas_whatsapp_url') ? taas_whatsapp_url( "Hi TAAS, I have a question about my vehicle. My rego is: " ) : '';
     ?>
-    <div id="taas-sticky-cta" aria-label="Quick contact">
+    <div id="taas-sticky-cta" class="<?php echo $wa_url ? 'has-chat' : ''; ?>" aria-label="Quick contact">
         <a href="tel:<?php echo esc_attr( $phone_tel ); ?>" class="taas-sticky__call">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
             <span><?php echo esc_html( $phone_label ); ?></span>
         </a>
+        <?php if ( $wa_url ) : ?>
+        <a href="<?php echo esc_url( $wa_url ); ?>" class="taas-sticky__chat" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path transform="translate(6.2 6.2) scale(.48)" fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            <span>Chat with us</span>
+        </a>
+        <?php endif; ?>
         <a href="<?php echo esc_url( $enquiry_url ); ?>" class="taas-sticky__enquire">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             <span>Enquire</span>
         </a>
     </div>
+    <?php if ( $wa_url ) : ?>
+    <a href="<?php echo esc_url( $wa_url ); ?>" id="taas-chat-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path transform="translate(6.2 6.2) scale(.48)" fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        <span>Chat with us</span>
+    </a>
+    <?php endif; ?>
     <style>
     #taas-sticky-cta {
         display: none;
@@ -274,6 +287,29 @@ function taas_mobile_sticky_cta() {
         border-left: 1px solid rgba(255,200,0,.15);
     }
     .taas-sticky__enquire:hover { background: #222; }
+    .taas-sticky__chat {
+        display: flex; align-items: center; justify-content: center; gap: 8px;
+        padding: 14px 12px; font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 700;
+        text-decoration: none; letter-spacing: .03em; text-transform: uppercase;
+        background: #25D366; color: #fff !important;
+    }
+    .taas-sticky__chat:hover { background: #1ebe5b; }
+    #taas-sticky-cta.has-chat { grid-template-columns: 1fr 1fr 1fr; }
+    #taas-sticky-cta.has-chat a {
+        flex-direction: column; gap: 3px; padding: 9px 4px 10px;
+        font-size: 11px; letter-spacing: .02em; line-height: 1.2; text-align: center; white-space: nowrap;
+    }
+    #taas-sticky-cta.has-chat .taas-sticky__call, #taas-sticky-cta.has-chat .taas-sticky__enquire { border: 0; }
+    #taas-chat-float {
+        display: none; position: fixed; right: 22px; bottom: 22px; z-index: 9998;
+        align-items: center; gap: 10px; padding: 13px 20px 13px 16px;
+        background: #25D366; color: #fff !important; border-radius: 999px;
+        font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 700; text-decoration: none;
+        box-shadow: 0 6px 24px rgba(0,0,0,.25); transition: transform .15s, box-shadow .15s;
+    }
+    #taas-chat-float:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,.3); }
+    @media (min-width: 769px) { #taas-chat-float { display: inline-flex; } }
+    @media print { #taas-chat-float, #taas-sticky-cta { display: none !important; } }
     @media (max-width: 768px) {
         #taas-sticky-cta { display: grid; }
         /* Push page content up so bar doesn't cover footer */
@@ -427,12 +463,14 @@ add_action('wp_footer', function() {
 
         // Sticky bar clicks (non-phone — the "Enquire" side)
         document.addEventListener('click', function(e) {
-            var stickyLink = e.target.closest('#taas-sticky-cta a');
+            var stickyLink = e.target.closest('#taas-sticky-cta a, #taas-chat-float');
             if (!stickyLink) return;
-            var isPhone = stickyLink.getAttribute('href').indexOf('tel:') === 0;
+            var href = stickyLink.getAttribute('href') || '';
+            var type = href.indexOf('tel:') === 0 ? 'phone' : (href.indexOf('wa.me') > -1 ? 'whatsapp' : 'enquire');
             gtag('event', 'sticky_cta_click', {
                 page_name: pageName,
-                click_type: isPhone ? 'phone' : 'enquire'
+                click_type: type,
+                click_location: stickyLink.id === 'taas-chat-float' ? 'desktop_float' : 'mobile_bar'
             });
         });
 
