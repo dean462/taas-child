@@ -144,7 +144,7 @@ $faqs = [];
 if ($what_it_is) { $faqs[] = ['q' => "What is {$service_name}?", 'a' => $what_it_is]; }
 if ($causes_raw) { $faqs[] = ['q' => "What causes {$service_name} problems?", 'a' => implode('. ', $causes) . '.']; }
 if ($symptoms_raw) { $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Common signs include: ' . strtolower(implode('; ', $symptoms)) . '. If your vehicle is showing any of these, call us on ' . $phone_free . '.']; }
-$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We'll give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details.'];
+$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details.'];
 $faqs[] = ['q' => 'My temperature warning light came on — what should I do?', 'a' => 'Pull over immediately and turn the engine off. Do not continue driving. An overheating engine can cause head gasket failure within minutes. Let the engine cool for at least 20 minutes. Do not open the radiator cap while the engine is hot. Call us on ' . $phone_free . '.'];
 $faqs[] = ['q' => 'Do you work on European vehicle cooling systems?', 'a' => 'Yes. Our TAAS European division covers all European makes. European cooling systems often have specific coolant specifications and plastic components that require careful handling.'];
 $faqs[] = ['q' => 'Do you offer finance for cooling system repairs?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. A cooling system repair should not be delayed because of cost — overheating causes exponentially more expensive damage.'];

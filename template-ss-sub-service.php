@@ -160,7 +160,7 @@ if ($causes_raw) {
 if ($symptoms_raw) {
     $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Common signs include: ' . strtolower(implode('; ', $symptoms)) . '. If your vehicle is showing any of these, call us on ' . $phone_free . '.'];
 }
-$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We'll give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details for a specific estimate.'];
+$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details for a specific estimate.'];
 $faqs[] = ['q' => "Do you do a wheel alignment after {$service_name}?", 'a' => "Yes — we carry out a wheel alignment after every steering or suspension repair where the geometry is affected. Wheel alignment is " . $align_price . ". Skipping alignment after a steering or suspension repair causes pulling and uneven tyre wear."];
 $faqs[] = ['q' => "Do you work on European vehicles?", 'a' => "Yes. Our TAAS European division covers " . $euro_brands . ". European vehicles often require specific part specifications and torque settings — we source OE-quality parts and follow manufacturer procedures."];
 $faqs[] = ['q' => "My car failed its WOF for this — what should I do?", 'a' => "Call us on " . $phone_free . ". We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We always advise on cost before starting any work."];
