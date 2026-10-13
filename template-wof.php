@@ -673,7 +673,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
             <div class="wof-step__num">3</div>
             <div>
               <div class="wof-step__head">Pass, or a clear explanation</div>
-              <div class="wof-step__body">If it passes, we issue the WOF. If anything fails, we show you what failed and why, and give you a written estimate before we touch anything. Your choice whether to proceed.</div>
+              <div class="wof-step__body">If it passes, we issue the WOF. If anything fails, we show you what failed and why, and give you a written estimate before any repair work. Your choice whether to proceed.</div>
             </div>
           </div>
           <div class="wof-step">
@@ -873,7 +873,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
     <div class="wof-why__grid">
       <div class="wof-why__card">
         <div class="wof-why__card-head">Written estimate</div>
-        <div class="wof-why__card-body">If your vehicle fails, you get a written repair estimate before we touch anything. No obligation to proceed. No surprises.</div>
+        <div class="wof-why__card-body">If your vehicle fails, you get a written repair estimate before any repair work. No obligation to proceed.</div>
       </div>
       <div class="wof-why__card">
         <div class="wof-why__card-head">Repairs where possible on the day</div>

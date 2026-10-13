@@ -163,7 +163,7 @@ if ($causes_raw) {
 if ($symptoms_raw) {
     $faqs[] = ['q' => "How do I know I need {$service_name}?", 'a' => 'Signs to look for: ' . strtolower(implode('; ', $symptoms)) . '.'];
 }
-$faqs[] = ['q' => "How much does {$service_name} cost?", 'a' => $price_signal . '. All pricing explained upfront — no surprises.'];
+$faqs[] = ['q' => "How much does {$service_name} cost?", 'a' => $price_signal . '. Pricing explained upfront.'];
 if ($process_raw) {
     $faqs[] = ['q' => "What is your process for {$service_name}?", 'a' => implode('. ', $process) . '.'];
 }

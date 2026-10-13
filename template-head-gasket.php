@@ -396,7 +396,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="hgs-section hgs-section--white"><div class="hgs-w">
   <span class="hgs-eye hgs-eye--dark">Pricing</span>
   <h2 class="hgs-h2">How Much Does Head Gasket Repair Cost?</h2>
-  <p class="hgs-lead">We always provide an estimate after diagnosis and before starting any work — no surprises.</p>
+  <p class="hgs-lead">We give you an estimate after diagnosis and before starting work — and keep you informed if anything changes.</p>
 
   <div class="hgs-pricing">
     <div class="hgs-pricing__card">

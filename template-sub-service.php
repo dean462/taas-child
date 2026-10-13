@@ -860,7 +860,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                     Towing costs are set by the towing company — not by us. <a href="https://towingandrecovery.co.nz" target="_blank" rel="noopener" style="color:var(--taas-yellow);">Towing and Recovery</a> can advise current rates when you call. If your insurance includes roadside assistance, towing may already be covered.
                 </p>
                 <p style="color:#bbb;font-size:17px;line-height:1.85;margin-bottom:24px;">
-                    Once your vehicle is with us, we always provide an estimate before starting any repair work. You will never be charged for work you have not approved.
+                    Once your vehicle is with us, we give you an estimate before starting any repair work. If anything changes once we're into the job, we'll contact you before going further.
                     <?php else: ?>
                     We understand that pricing anxiety stops people calling. So here is an honest guide. We will always give you an estimate before any work starts — what you see below is a general price guide.
                 </p>

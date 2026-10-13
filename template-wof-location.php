@@ -758,7 +758,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
           Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a><?php echo $distance_text ? ' — ' . esc_html($distance_text) : ''; ?>. We are one of the largest independent automotive workshops in South Auckland, operating <?php echo esc_html($division_count); ?> specialist divisions under one roof. Whatever your vehicle — daily driver, ute, van, or light commercial — our technicians have the experience to get your WOF done efficiently.
         </p>
         <p class="wl-about__body">
-          <?php echo esc_html($suburb_name); ?> drivers choose us because we are straight with you. If your vehicle passes, you are out the door. If it needs work, we give you a clear written estimate before touching anything. You decide whether to proceed. No pressure, no surprises.
+          <?php echo esc_html($suburb_name); ?> drivers choose us because we are straight with you. If your vehicle passes, you are out the door. If it needs work, we give you a clear written estimate before any repair work. You decide whether to proceed. No pressure, no surprises.
         </p>
       </div>
 

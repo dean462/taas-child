@@ -74,11 +74,11 @@ $suburbs = [
 // ── Build FAQs (10) ──────────────────────────────────────────────────────────
 $faqs = [
     ['q' => "How much does shock absorber replacement cost near {$suburb_name}?",
-     'a' => "Suspension repairs start {$susp_price} depending on your vehicle. Wheel alignment is {$align_price} and included after replacement. We always provide an estimate before starting any work. Call us on {$phone_free} with your vehicle details."],
+     'a' => "Suspension repairs start {$susp_price} depending on your vehicle. Wheel alignment is {$align_price} and included after replacement. We'll give you an estimate before starting work. Call us on {$phone_free} with your vehicle details."],
     ['q' => "How far is Tony Allen Auto Service from {$suburb_name}?",
      'a' => $distance_note ?: "Our workshop is at 139 Cavendish Drive, Manukau — a short drive from {$suburb_name}. Call us on {$phone_free} for directions."],
     ['q' => "My car failed its WOF for shock absorbers near {$suburb_name} — what should I do?",
-     'a' => "Call us on {$phone_free}. We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We always provide an estimate before starting any work."],
+     'a' => "Call us on {$phone_free}. We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We'll give you an estimate before starting work."],
     ['q' => 'Do you replace shock absorbers in pairs?',
      'a' => 'Yes — we always recommend replacing shock absorbers in axle pairs (both fronts or both rears). Replacing a single shock creates an imbalance in damping that affects handling and braking. If only one shock has failed, both on that axle should still be replaced.'],
     ['q' => 'Is a wheel alignment included after shock absorber replacement?',
@@ -92,7 +92,7 @@ $faqs = [
 ];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'What else might need replacing at the same time?',
-           'a' => 'Shock absorber replacement is often combined with suspension bush replacement, wheel alignment, and a WOF check. Our technicians will flag anything that needs attention during the inspection — no surprises.'];
+           'a' => 'Shock absorber replacement is often combined with suspension bush replacement, wheel alignment, and a WOF check. Our technicians will flag anything that needs attention during the inspection and talk you through it.'];
 $faqs[] = ['q' => "Where is your workshop?",
            'a' => "139 Cavendish Drive, Manukau, Auckland 2104. Open {$hours}. Call {$phone_free} to book. We service all South Auckland suburbs including {$suburb_name}."];
 
@@ -323,7 +323,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
       <p>Shocks are always replaced in axle pairs — both fronts or both rears — because mismatched damping affects handling and braking. Wheel alignment is carried out after every replacement. If your vehicle failed its WOF for shock absorbers, we carry out the repair and recheck on the same visit where possible.</p>
     </div>
     <ul class="ssl-check-list">
-      <li>Estimate before any work begins — no surprises</li>
+      <li>Estimate before work begins — kept informed throughout</li>
       <li>Shock absorbers replaced in axle pairs</li>
       <li>Wheel alignment <?php echo esc_html($align_price); ?> — included after replacement</li>
       <li>WOF recheck same day where possible</li>

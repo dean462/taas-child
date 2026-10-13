@@ -905,7 +905,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
         <li class="hp-check"><span class="hp-check__icon">&check;</span><?php echo esc_html($division_count); ?> specialist divisions under one roof &mdash; servicing, brakes, tyres, batteries, auto electrical, European, fleet</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>We'll keep you informed every step of the way</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>We verify the fault before replacing any part</li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span>We explain what we find and what it costs &mdash; no jargon, no surprises</li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span>We explain what we find and what it costs &mdash; no jargon, kept informed</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>Finance available &mdash; <?php echo esc_html($finance_list); ?></li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>MBI approved repairer &mdash; <?php echo esc_html($mbi_list); ?></li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>MTA Assured &mdash; Motor Trade Association member</li>

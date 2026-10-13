@@ -240,7 +240,7 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
       <p>We also understand that your vehicle is your income. A car owner can catch a bus for a day. A tradie, courier, or delivery driver cannot. Same-day turnaround on routine servicing is the standard here, not the exception.</p>
       <div class="cv-edu__callout">
         <h3>Downtime Costs You Money</h3>
-        <p>We aim for same-day turnaround on scheduled servicing and general repairs. For complex work, we advise on timeframes before starting so you can plan around it. No surprises, no vehicles sitting on the hoist waiting for parts we should have ordered in advance.</p>
+        <p>We aim for same-day turnaround on scheduled servicing and general repairs. For complex work, we advise on timeframes before starting so you can plan around it, and order parts in early wherever we can.</p>
       </div>
     </div>
     <div class="cv-edu__panel">

@@ -283,7 +283,7 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
       ['title'=>'Call Dean','body'=>'Call '.$phone_free.' and speak to Dean directly. Fleet size, vehicle types, billing arrangements. No forms, no delays.'],
       ['title'=>'Account Set Up','body'=>'Billing arrangements confirmed — invoicing your company direct or through your fleet management company. Dean works through the details.'],
       ['title'=>'Book Vehicles','body'=>'Book by phone or have drivers call us directly. Key drop box for after-hours drop-off. Servicing and general repairs completed same day where possible.'],
-      ['title'=>'Direct Invoice','body'=>'Invoice sent directly to your fleet account. We call you if anything changes in scope before proceeding. No surprises.'],
+      ['title'=>'Direct Invoice','body'=>'Invoice sent directly to your fleet account. We call you if anything changes in scope before proceeding.'],
     ] as $step) : ?>
     <div class="fl-step"><div class="fl-step__title"><?php echo esc_html($step['title']); ?></div><div class="fl-step__body"><?php echo esc_html($step['body']); ?></div></div>
     <?php endforeach; ?>

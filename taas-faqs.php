@@ -944,7 +944,7 @@ $taas_faqs['engine_what_repairs'] = [
 
 $taas_faqs['engine_cost'] = [
     'q' => 'How much does an engine repair cost in Manukau?',
-    'a' => 'It depends on the fault. A diagnostic assessment starts at ' . $_fq_scan . ' for a scan, with a full mechanical diagnosis ' . $_fq_diag . '. We give you a written estimate before starting any repair work — no surprises, no pressure. Common repairs like oil leak fixes or engine mount replacement start from a few hundred dollars. Head gaskets and timing work are larger jobs — we estimate these individually.',
+    'a' => 'It depends on the fault. A diagnostic assessment starts at ' . $_fq_scan . ' for a scan, with a full mechanical diagnosis ' . $_fq_diag . '. We give you a written estimate before starting any repair work — no pressure. Common repairs like oil leak fixes or engine mount replacement start from a few hundred dollars. Head gaskets and timing work are larger jobs — we estimate these individually.',
 ];
 
 $taas_faqs['engine_symptoms'] = [
@@ -1169,7 +1169,7 @@ $taas_faqs['cs_radiator_repair'] = [
 
 $taas_faqs['cs_cost'] = [
     'q' => 'How much does a cooling system repair cost in Manukau?',
-    'a' => 'It depends on the fault. A coolant flush is a straightforward service. A thermostat replacement is relatively inexpensive. A head gasket replacement is a significant job. We always provide a written estimate before starting any work — call us on ' . $_fq_phone . ' and describe the symptoms for an initial assessment.',
+    'a' => 'It depends on the fault. A coolant flush is a straightforward service. A thermostat replacement is relatively inexpensive. A head gasket replacement is a significant job. We give you a written estimate before starting work — call us on ' . $_fq_phone . ' and describe the symptoms for an initial assessment.',
 ];
 
 $taas_faqs['cs_european'] = [

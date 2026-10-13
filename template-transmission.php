@@ -420,7 +420,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="trx-section trx-section--white"><div class="trx-w">
   <span class="trx-eye trx-eye--dark">Pricing</span>
   <h2 class="trx-h2">How Much Does Transmission Repair Cost?</h2>
-  <p class="trx-lead">We always provide an estimate after diagnosis and before starting any work — no surprises.</p>
+  <p class="trx-lead">We give you an estimate after diagnosis and before starting work — and keep you informed if anything changes.</p>
   <div class="trx-pricing">
     <div class="trx-pricing__row"><span class="trx-pricing__label">Diagnostic assessment</span><span class="trx-pricing__value"><?php echo esc_html($mech_diag); ?></span></div>
     <div class="trx-pricing__row"><span class="trx-pricing__label">Transmission fluid service</span><span class="trx-pricing__value">Contact for pricing</span></div>

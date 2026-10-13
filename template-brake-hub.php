@@ -187,7 +187,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="brk-section brk-section--white"><div class="brk-w">
   <span class="brk-eye brk-eye--dark">Pricing</span>
   <h2 class="brk-h2">How Much Do Brake Repairs Cost?</h2>
-  <p class="brk-lead">We always provide an estimate before starting any work — no surprises.</p>
+  <p class="brk-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
   <div class="brk-pricing">
     <div class="brk-pricing__title">Pad &amp; rotor replacement <?php echo esc_html($brake_price); ?></div>
     <div class="brk-pricing__body">Includes new pads and rotor machining or replacement. Price varies by vehicle make and model. Rear brakes, calliper work, and drum brakes priced separately after inspection. Call <?php echo esc_html($phone_free); ?> with your vehicle details for an estimate.</div>

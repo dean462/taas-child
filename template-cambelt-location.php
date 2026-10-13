@@ -182,7 +182,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   </div>
   <ul class="cbl-check-list">
     <li>Full kit — belt, water pump, idlers, and tensioner replaced together</li>
-    <li>Estimate before any work begins — no surprises</li>
+    <li>Estimate before work begins — kept informed throughout</li>
     <li>Manufacturer intervals followed, or sooner if history is unknown</li>
     <li>All makes and models — Japanese, Korean, European</li>
     <li>Finance available — Afterpay, Q Card, GEM, Aotea</li>

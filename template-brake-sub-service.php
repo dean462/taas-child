@@ -97,7 +97,7 @@ $faqs = [];
 if ($what_it_is)    { $faqs[] = ['q' => "What is {$service_name}?", 'a' => $what_it_is]; }
 if ($causes_raw)    { $faqs[] = ['q' => "What causes {$service_name} issues?", 'a' => implode('. ', $causes) . '.']; }
 if ($symptoms_raw)  { $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Signs include: ' . strtolower(implode('; ', $symptoms)) . '. Call ' . $phone_free . '.']; }
-$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We always provide an estimate before starting. Call ' . $phone_free . '.'];
+$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We'll give you an estimate before starting work. Call ' . $phone_free . '.'];
 $faqs[] = ['q' => 'Why don\'t you just replace brake pads?', 'a' => 'New pads on a worn rotor will not bed in correctly. They wear unevenly, squeal, and the groove pattern transfers into the new pads. We always pair new pads with rotor machining or replacement.'];
 $faqs[] = ['q' => 'Can you fix WOF brake failures?', 'a' => 'Yes — we repair the fault and re-inspect on-site. NZTA Authorised. Same-day where possible. Call ' . $phone_free . '.'];
 $faqs[] = ['q' => 'Do you offer finance for brake repairs?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, Aotea Finance. Brake repairs are safety-critical and should not be delayed.'];
@@ -265,7 +265,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="bss-section bss-section--white"><div class="bss-w">
   <span class="bss-eye bss-eye--dark">Pricing</span>
   <h2 class="bss-h2">How Much Does <?php echo esc_html($service_name); ?> Cost?</h2>
-  <p class="bss-lead">We always provide an estimate before starting any work.</p>
+  <p class="bss-lead">We'll give you an estimate before starting work.</p>
   <div class="bss-pricing">
     <div class="bss-pricing__signal"><?php echo esc_html($price_signal); ?></div>
     <div class="bss-pricing__body">Price varies by vehicle. Call <?php echo esc_html($phone_free); ?> with your vehicle details for an estimate.</div>

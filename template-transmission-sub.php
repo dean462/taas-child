@@ -125,7 +125,7 @@ $faqs = [];
 if ($what_it_is) { $faqs[] = ['q' => "What is {$service_name}?", 'a' => $what_it_is]; }
 if ($causes_raw) { $faqs[] = ['q' => "What causes {$service_name} problems?", 'a' => implode('. ', $causes) . '.']; }
 if ($symptoms_raw) { $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Common signs include: ' . strtolower(implode('; ', $symptoms)) . '. If your vehicle is showing any of these, call us on ' . $phone_free . '.']; }
-$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We always provide an estimate before starting any work. Call us on ' . $phone_free . ' with your vehicle details.'];
+$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We'll give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details.'];
 $faqs[] = ['q' => 'My transmission is slipping — is it safe to drive?', 'a' => 'No. A slipping transmission is actively destroying itself. The clutch packs overheat, the fluid breaks down, and debris circulates through the valve body and solenoids. What might be a minor repair today becomes a full rebuild next week. Stop driving and call us on ' . $phone_free . '.'];
 $faqs[] = ['q' => 'Do you carry out full transmission rebuilds?', 'a' => 'Full rebuilds are carried out by a trusted transmission specialist. We diagnose the fault, remove the transmission, and manage the rebuild process on your behalf. This is the honest approach — a rebuild requires specialist tooling that a general workshop should not pretend to have.'];
 $faqs[] = ['q' => 'Do you work on European vehicle transmissions?', 'a' => 'Yes. Our TAAS European division covers all European makes. ZF automatics, Aisin units, and VW/Audi DSG gearboxes have specific fluid requirements and service procedures that we follow to manufacturer specification.'];
@@ -293,7 +293,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="tss-section tss-section--white"><div class="tss-w">
   <span class="tss-eye tss-eye--dark">Pricing</span>
   <h2 class="tss-h2">How Much Does <?php echo esc_html($service_name); ?> Cost?</h2>
-  <p class="tss-lead">We always provide an estimate before starting any work — no surprises.</p>
+  <p class="tss-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
   <div class="tss-pricing">
     <div class="tss-pricing__signal"><?php echo esc_html($price_signal); ?></div>
     <div class="tss-pricing__body">Price varies by vehicle make, model, and transmission type. Call <?php echo esc_html($phone_free); ?> with your vehicle details for an estimate.</div>

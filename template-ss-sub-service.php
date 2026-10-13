@@ -160,7 +160,7 @@ if ($causes_raw) {
 if ($symptoms_raw) {
     $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Common signs include: ' . strtolower(implode('; ', $symptoms)) . '. If your vehicle is showing any of these, call us on ' . $phone_free . '.'];
 }
-$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We always provide an estimate before starting any work. Call us on ' . $phone_free . ' with your vehicle details for a specific estimate.'];
+$faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We'll give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details for a specific estimate.'];
 $faqs[] = ['q' => "Do you do a wheel alignment after {$service_name}?", 'a' => "Yes — we carry out a wheel alignment after every steering or suspension repair where the geometry is affected. Wheel alignment is " . $align_price . ". Skipping alignment after a steering or suspension repair causes pulling and uneven tyre wear."];
 $faqs[] = ['q' => "Do you work on European vehicles?", 'a' => "Yes. Our TAAS European division covers " . $euro_brands . ". European vehicles often require specific part specifications and torque settings — we source OE-quality parts and follow manufacturer procedures."];
 $faqs[] = ['q' => "My car failed its WOF for this — what should I do?", 'a' => "Call us on " . $phone_free . ". We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We always advise on cost before starting any work."];
@@ -558,7 +558,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
   <div class="sss-w">
     <span class="sss-eyebrow sss-eyebrow--dark">Pricing</span>
     <h2 class="sss-h2">How Much Does <?php echo esc_html($service_name); ?> Cost?</h2>
-    <p class="sss-lead">We understand pricing anxiety stops people calling. We always provide an estimate before starting any work — no surprises.</p>
+    <p class="sss-lead">We understand pricing anxiety stops people calling. We give you an estimate before starting work — and keep you informed if anything changes.</p>
     <div class="sss-pricing">
       <div class="sss-pricing__signal"><?php echo esc_html($price_signal); ?></div>
       <div class="sss-pricing__body">Price varies by vehicle make, model, and parts required. Call <?php echo esc_html($phone_free); ?> with your vehicle details for a same-day estimate.</div>

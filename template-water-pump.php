@@ -85,7 +85,7 @@ $faqs = [
     ['q' => 'Should I replace the water pump with the cambelt?',
      'a' => 'Yes — on any engine where the cambelt drives the water pump (which is most of them). The cambelt has to come off to reach the pump, so the labour is already done. If you replace the cambelt and leave the old pump, and the pump fails six months later, you pay the full labour cost again to access the same area. We always recommend a complete cambelt kit: belt, tensioner, idler pulleys, water pump, and thermostat.'],
     ['q' => 'How much does water pump replacement cost in Manukau?',
-     'a' => 'As part of a cambelt service, the water pump is included in the kit — cambelt replacement starts ' . $cambelt_price . '. Standalone water pump replacement on a timing chain engine varies by vehicle — call us on ' . $phone_free . ' with your make and model for an estimate. We always provide an estimate before starting any work.'],
+     'a' => 'As part of a cambelt service, the water pump is included in the kit — cambelt replacement starts ' . $cambelt_price . '. Standalone water pump replacement on a timing chain engine varies by vehicle — call us on ' . $phone_free . ' with your make and model for an estimate. We'll give you an estimate before starting work.'],
     ['q' => 'How do I know if my water pump is failing?',
      'a' => 'The most common sign is a coolant leak from the front of the engine, often from a small hole at the base of the pump called the weep hole. Other signs include a whining or grinding noise that changes with engine speed, the temperature gauge climbing, or unexplained coolant loss. If your temperature warning light comes on, pull over immediately and call us on ' . $phone_free . '.'],
     ['q' => 'Can I drive with a failing water pump?',
@@ -336,7 +336,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="wps-section wps-section--white"><div class="wps-w">
   <span class="wps-eye wps-eye--dark">Pricing</span>
   <h2 class="wps-h2">How Much Does Water Pump Replacement Cost?</h2>
-  <p class="wps-lead">We always provide an estimate before starting any work — no surprises.</p>
+  <p class="wps-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
 
   <div class="wps-pricing">
     <div class="wps-pricing__card">

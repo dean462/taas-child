@@ -171,7 +171,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="clu-section clu-section--white"><div class="clu-w">
   <span class="clu-eye clu-eye--dark">Pricing</span>
   <h2 class="clu-h2">How Much Does Clutch Replacement Cost?</h2>
-  <p class="clu-lead">We always provide an estimate before starting any work — no surprises.</p>
+  <p class="clu-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
   <div class="clu-pricing">
     <div class="clu-pricing__title">Clutch replacement <?php echo esc_html($clutch_price); ?></div>
     <div class="clu-pricing__body">Includes clutch disc, pressure plate, and release bearing as a complete kit. Flywheel replacement additional if required — we inspect and advise. Dual-mass flywheel replacement adds to the cost on European and some Asian vehicles. Call <?php echo esc_html($phone_free); ?> with your make and model.</div>

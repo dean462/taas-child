@@ -450,7 +450,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
         <p class="erh-approach__text">Engine repairs can be stressful. The symptoms are alarming, the terminology is unfamiliar, and the costs can be significant. We understand that — which is why we break everything down in plain English and keep you informed at every stage.</p>
         <p class="erh-approach__text">Every engine repair starts with a diagnostic. We use a combination of scan tools, mechanical testing, and visual inspection to identify the actual fault. We then explain what we have found, what it means, and what the repair involves — including the cost. You decide whether to proceed.</p>
         <div class="erh-callout">
-          <div class="erh-callout__title">We diagnose first — always</div>
+          <div class="erh-callout__title">We diagnose first</div>
           <p class="erh-callout__body">No guesswork. No replacing parts on a hunch. We confirm the fault before recommending the repair. Diagnostic assessment <?php echo esc_html($scan_price); ?> (scan) or <?php echo esc_html($mech_diag); ?> (full mechanical).</p>
         </div>
       </div>
