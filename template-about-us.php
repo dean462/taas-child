@@ -523,11 +523,11 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
       </div>
 
       <div class="au-story__img-wrap">
-        <img src="<?php echo esc_url(home_url('/wp-content/uploads/2026/05/taas-img_2372.jpg')); ?>"
-             alt="Tony Allen Auto Service — 139 Cavendish Drive, Manukau"
-             width="1400" height="1050"
+        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/images/site/about-team.webp'); ?>"
+             alt="The Tony Allen Auto Service team outside the workshop at 139 Cavendish Drive, Manukau"
+             width="1400" height="933"
              loading="lazy"
-             style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;border-radius:6px;">
+             style="width:100%;height:100%;object-fit:cover;object-position:center 60%;display:block;border-radius:6px;">
         <div class="au-story__img-accent"></div>
       </div>
     </div>
