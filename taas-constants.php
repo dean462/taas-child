@@ -114,7 +114,23 @@ define('TAAS_CLARITY_ID',  'x59kh44zun');
 define('TAAS_HERO_DEFAULT', '/wp-content/uploads/2026/06/hero-services.webp');
 define('TAAS_HERO_FINANCE', '/wp-content/uploads/2026/06/hero-finance.webp');
 define('TAAS_HERO_MBI',     '/wp-content/uploads/2026/06/hero-mbi.webp');
-define('TAAS_HERO_CONTACT', '/wp-content/uploads/2026/06/hero-contact.webp');
+// Real TAAS photos (Oct 2026), stored in the theme: images/site/. Plates blurred.
+define('TAAS_HERO_CONTACT',      '/wp-content/themes/taas-child/images/site/hero-contact.webp');
+define('TAAS_HERO_SERVICING',    '/wp-content/themes/taas-child/images/site/hero-servicing.webp');
+define('TAAS_HERO_BRAKE',        '/wp-content/themes/taas-child/images/site/hero-brake.webp');
+define('TAAS_HERO_MBC',          '/wp-content/themes/taas-child/images/site/hero-brake.webp');
+define('TAAS_HERO_COOLING',      '/wp-content/themes/taas-child/images/site/hero-cooling.webp');
+define('TAAS_HERO_ENGINE',       '/wp-content/themes/taas-child/images/site/hero-engine.webp');
+define('TAAS_HERO_TRANSMISSION', '/wp-content/themes/taas-child/images/site/hero-transmission.webp');
+define('TAAS_HERO_EUROPEAN',     '/wp-content/themes/taas-child/images/site/hero-european.webp');
+define('TAAS_HERO_EV',           '/wp-content/themes/taas-child/images/site/hero-ev.webp');
+define('TAAS_HERO_BATTERIES',    '/wp-content/themes/taas-child/images/site/hero-batteries.webp');
+define('TAAS_HERO_FLEET',        '/wp-content/themes/taas-child/images/site/hero-fleet.webp');
+define('TAAS_HERO_COMMERCIAL',   '/wp-content/themes/taas-child/images/site/hero-fleet.webp');
+define('TAAS_HERO_AUTOELEC',     '/wp-content/themes/taas-child/images/site/hero-autoelec.webp');
+define('TAAS_HERO_SUSPENSION',   '/wp-content/themes/taas-child/images/site/hero-suspension.webp');
+define('TAAS_HERO_CAMBELT',      '/wp-content/themes/taas-child/images/site/hero-cambelt.webp');
+// TAAS_HERO_AIRCON: awaiting a real air-con photo — falls back to DEFAULT.
 
 // ── Contact links ────────────────────────────────────────────────────────────
 // Use these in templates so phone numbers, email and address are always tappable.

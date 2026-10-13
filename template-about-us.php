@@ -154,7 +154,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
 }
 .taas-about .au-hero__bg {
   position:absolute; inset:0; z-index:0;
-  background:url('<?php echo esc_url(get_site_url()); ?>/wp-content/uploads/2026/06/hero-about.webp') center 55% / cover no-repeat;
+  background:url('<?php echo esc_url(get_site_url()); ?>/wp-content/themes/taas-child/images/site/hero-about.webp') center 55% / cover no-repeat;
 }
 .taas-about .au-hero__bg::after {
   content:''; position:absolute; inset:0;
