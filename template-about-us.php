@@ -458,7 +458,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
           Workshop.
         </h1>
         <p class="au-hero__intro">
-          Family-owned since October <?php echo esc_html($established); ?>. MTA Assured. NZTA Authorised. Twelve staff across seven specialist divisions — all under one roof at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a>. A family business that's been keeping South Auckland moving for over <?php echo esc_html($years); ?> years.
+          Family-owned since October <?php echo esc_html($established); ?>. MTA Assured. NZTA Authorised. Seven specialist divisions — all under one roof at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a>. A family business that's been keeping South Auckland moving for over <?php echo esc_html($years); ?> years.
         </p>
         <div class="au-hero__ctas">
           <a href="<?php echo esc_url($site_url . '/contact-us/'); ?>" class="au-btn au-btn--yellow">Book a Service</a>
@@ -472,8 +472,8 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
           <div class="au-stat__label">Years trading in South Auckland</div>
         </div>
         <div class="au-stat">
-          <div class="au-stat__num">12</div>
-          <div class="au-stat__label">Workshop staff across 7 divisions</div>
+          <div class="au-stat__num"><?php echo esc_html(defined('TAAS_TEAM_COUNT') ? TAAS_TEAM_COUNT : '13'); ?></div>
+          <div class="au-stat__label">Team members across <?php echo esc_html(defined('TAAS_DIVISION_COUNT') ? TAAS_DIVISION_COUNT : '7'); ?> divisions</div>
         </div>
         <div class="au-stat">
           <div class="au-stat__num">10k+</div>
@@ -516,7 +516,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         <span class="au-eye au-eye--muted">Our Story</span>
         <h2 class="au-story__h2" id="au-story-head"><?php echo esc_html($years); ?> years in.<br>Still building.</h2>
         <div class="au-story__body">
-          <p>Tony Allen Auto Service has been at 139 Cavendish Drive since October <?php echo esc_html($established); ?>. Mike and Dean Allen run the business together with seven specialist divisions operating under one roof — servicing and repairs, brakes and clutch, tyres, auto electrical and air conditioning, European vehicles, fleet, and batteries. Twelve staff. A customer database that's passed <?php echo esc_html($customers); ?> contacts. And a workshop that's investing in capability, equipment &amp; culture.</p>
+          <p>Tony Allen Auto Service has been at 139 Cavendish Drive since October <?php echo esc_html($established); ?>. Mike and Dean Allen run the business together with seven specialist divisions operating under one roof — servicing and repairs, brakes and clutch, tyres, auto electrical and air conditioning, European vehicles, fleet, and batteries. A customer database that's passed <?php echo esc_html($customers); ?> contacts. And a workshop that's investing in capability, equipment &amp; culture.</p>
           <p>Two technicians are completing EV and hybrid vehicle qualification. Our diagnostic equipment covers European, Japanese, and Korean platforms at factory level. We're an approved repairer for five MBI (mechanical breakdown insurance) providers, a direct supplier to SG Fleet and three other fleet management companies, and we accept four consumer finance options so cost doesn't have to be a barrier to safe, reliable transport.</p>
           <p>South Auckland runs on vehicles — logistics, trades, families getting to work and school. We take that seriously. The workshop the Allen Family built is the foundation. What Mike, Dean, and the team are building on it is a full-service automotive operation designed for the next decade &amp; beyond.</p>
         </div>

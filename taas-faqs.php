@@ -844,7 +844,7 @@ $taas_faqs['contact_location'] = [
 
 $taas_faqs['contact_loan_cars'] = [
     'q' => 'Do you offer loan cars while my vehicle is being repaired?',
-    'a' => 'We do not offer loan cars — with over 12 staff and the volume of vehicles we service, it is simply not something we can manage at our scale. What we do instead is work as fast as possible to get your vehicle diagnosed, repaired, and back on the road. Getting you mobile again quickly is the priority.',
+    'a' => 'We do not offer loan cars — with the volume of vehicles we service, it is simply not something we can manage at our scale. What we do instead is work as fast as possible to get your vehicle diagnosed, repaired, and back on the road. Getting you mobile again quickly is the priority.',
 ];
 
 $taas_faqs['contact_estimate'] = [
@@ -2049,7 +2049,7 @@ $taas_faqs['about_accreditations'] = [
 
 $taas_faqs['about_divisions'] = [
     'q' => 'What divisions does TAAS have?',
-    'a' => 'Tony Allen Auto Service, Manukau Brake & Clutch, TAAS Tyre & WOF Centre, TAAS Auto Electrical & Air Conditioning, TAAS European, TAAS Fleet, Manukau Batteries — ' . $_fq_division . ' specialist divisions under one roof at 139 Cavendish Drive, Manukau. Approximately 12 staff.',
+    'a' => 'Tony Allen Auto Service, Manukau Brake & Clutch, TAAS Tyre & WOF Centre, TAAS Auto Electrical & Air Conditioning, TAAS European, TAAS Fleet, Manukau Batteries — ' . $_fq_division . ' specialist divisions under one roof at 139 Cavendish Drive, Manukau, with a team of ' . (defined('TAAS_TEAM_COUNT') ? TAAS_TEAM_COUNT : '13') . '.',
 ];
 
 $taas_faqs['about_european'] = [
