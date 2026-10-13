@@ -677,8 +677,15 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
           <img src="<?php echo esc_url($photo); ?>" alt="<?php echo esc_attr(wp_strip_all_tags($member['name'] . ', ' . html_entity_decode($member['role']))); ?> at Tony Allen Auto Service" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <?php else: ?>
-        <div style="width:100%;aspect-ratio:3/4;background:#1A1A1A;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
-          <span style="font-size:11px;color:#444;font-weight:600;letter-spacing:.1em;text-transform:uppercase;">Photo<br>Coming Soon</span>
+        <?php
+          $initials = '';
+          foreach (preg_split('/\s+/', trim(wp_strip_all_tags($member['name']))) as $part) {
+              if ($part !== '') $initials .= mb_strtoupper(mb_substr($part, 0, 1));
+          }
+          $initials = mb_substr($initials, 0, 2);
+        ?>
+        <div aria-hidden="true" style="width:100%;aspect-ratio:3/4;background:linear-gradient(160deg,#1A1A1A 0%,#111 100%);display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+          <span style="width:84px;height:84px;border-radius:50%;background:#FFC800;color:#1A1A1A;font-size:30px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;justify-content:center;"><?php echo esc_html($initials); ?></span>
         </div>
         <?php endif; ?>
         <div class="au-team-card__name"><?php echo $member['name']; ?></div>
