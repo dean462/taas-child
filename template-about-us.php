@@ -672,6 +672,12 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
               $att   = get_posts(['post_type'=>'attachment','name'=>'staff-' . $first,'posts_per_page'=>1,'fields'=>'ids']);
               if ($att) $photo = wp_get_attachment_image_url($att[0], 'medium_large');
           }
+          if (!$photo) {
+              // Theme fallback: images/staff/staff-<first-name>.webp (pushed via GitHub)
+              $first = sanitize_title(strtok($member['name'], ' '));
+              $rel   = '/images/staff/staff-' . $first . '.webp';
+              if (file_exists(get_stylesheet_directory() . $rel)) $photo = get_stylesheet_directory_uri() . $rel;
+          }
         ?>
         <?php if ($photo): ?>
         <div style="width:100%;aspect-ratio:3/4;background:#1A1A1A;margin-bottom:18px;overflow:hidden;">
