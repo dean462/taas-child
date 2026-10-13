@@ -1109,7 +1109,7 @@ $taas_faqs['cb_high_km'] = [
 
 $taas_faqs['cb_cost'] = [
     'q' => 'How much does a cambelt replacement cost in Manukau?',
-    'a' => 'Cambelt replacement cost depends on the vehicle make and model — access difficulty and the number of components in the kit vary significantly. As a guide, most cambelt replacements done on time fall in the range of $800 to $1,500, compared with $5,000 or more for the engine rebuild that follows a snapped belt. We always provide a written estimate before starting any work. Call us on ' . $_fq_phone . ' with your vehicle details for an estimate.',
+    'a' => 'Cambelt replacement cost depends on the vehicle make and model — access difficulty and the number of components in the kit vary significantly. As a guide, most cambelt replacements done on time fall in the range of $800 to $1,500, compared with $5,000 or more for the engine rebuild that follows a snapped belt. We give you a written estimate before starting work. Call us on ' . $_fq_phone . ' with your vehicle details for an estimate.',
 ];
 
 $taas_faqs['cb_european'] = [
