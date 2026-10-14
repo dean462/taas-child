@@ -61,7 +61,7 @@ $faqs = [
     ],
     [
         'q' => 'Can I use Q Card for fleet or commercial vehicle repairs?',
-        'a' => 'Q Card is a consumer credit product. For commercial fleet servicing and account-based invoicing, speak with our team about TAAS Fleet arrangements. Call \' . $phone_free . \' or email \' . $email . \'.',
+        'a' => 'Q Card is a consumer credit product. For commercial fleet servicing and account-based invoicing, speak with our team about TAAS Fleet arrangements. Call ' . $phone_free . ' or email ' . $email . '.',
     ],
     [
         'q' => 'Where is Tony Allen Auto Service?',

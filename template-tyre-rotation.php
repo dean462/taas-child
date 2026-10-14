@@ -36,7 +36,7 @@ $patterns = [
 $faqs = [
     [
         'q' => 'How often should I rotate my tyres?',
-        'a' => 'Every 8,000–10,000km is a common recommendation, or every second oil change. The exact interval depends on your vehicle, driving style, and tyre type. Front-wheel drive vehicles wear front tyres significantly faster — more frequent rotation is beneficial. Check your vehicle owner\'s manual for the manufacturer\'s recommendation.',
+        'a' => 'Every 8,000–10,000km is a common recommendation, or at each service. The exact interval depends on your vehicle, driving style, and tyre type. Front-wheel drive vehicles wear front tyres significantly faster — more frequent rotation is beneficial. Check your vehicle owner\'s manual for the manufacturer\'s recommendation.',
     ],
     [
         'q' => 'What does tyre rotation actually do?',
@@ -44,7 +44,7 @@ $faqs = [
     ],
     [
         'q' => 'Can I rotate directional tyres?',
-        'a' => 'Directional tyres — those with an asymmetric tread pattern designed to rotate in one direction — can only be rotated front-to-back on the same side. They cannot be crossed over to the opposite side without dismounting and re-mounting the tyre on the rim. We can do this if needed — call us on ' . $phone_local . '.',
+        'a' => 'Directional tyres — those with a V-shaped tread pattern designed to roll in one direction — can only be rotated front-to-back on the same side. They cannot be crossed over to the opposite side without dismounting and re-mounting the tyre on the rim. We can do this if needed — call us on ' . $phone_local . '.',
     ],
     [
         'q' => 'Do you rebalance tyres after rotation?',
@@ -52,7 +52,7 @@ $faqs = [
     ],
     [
         'q' => 'Can I rotate tyres if the front and rear are different sizes?',
-        'a' => 'If your vehicle has a staggered fitment — different sizes front and rear, common on performance and European vehicles — straight rotation is not possible. A side-to-side swap may be possible if the tyres are non-directional, but this requires dismounting and remounting. Call us on ' . $phone_local . ' with your vehicle details.',
+        'a' => 'If your vehicle has a staggered fitment — different sizes front and rear, common on performance and European vehicles — straight rotation is not possible. A side-to-side swap may be possible if the tyres are non-directional. Directional tyres would need to be dismounted and remounted to swap sides. Call us on ' . $phone_local . ' with your vehicle details.',
     ],
 ];
 

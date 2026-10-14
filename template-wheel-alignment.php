@@ -57,7 +57,7 @@ $why_points = [
 ];
 
 $faqs = [
-    ['q' => 'How much does a wheel alignment cost in Manukau?', 'a' => 'Four-wheel alignment ' . $alignment_price . '. That covers the full 3D laser alignment check, suspension inspection, tyre pressure reset, and a before-and-after print-out. We always give you the total price before we start.'],
+    ['q' => 'How much does a wheel alignment cost in Manukau?', 'a' => 'Four-wheel alignment ' . $alignment_price . '. That covers the full 3D laser alignment check, suspension inspection, tyre pressure reset, and a before-and-after print-out. We give you an estimate before we start.'],
     ['q' => 'What causes a wheel to go out of alignment?', 'a' => "Potholes, kerb strikes, and general road wear over time. Suspension work — replacing a control arm, ball joint, or strut — can also shift alignment angles and should always be followed by a check. Even normal driving gradually shifts alignment, which is why the 12-month or 20,000 km interval exists."],
     ['q' => 'How often should I get a wheel alignment?', 'a' => "Every 12 months or 20,000 km — whichever comes first. Also immediately after any significant pothole, kerb strike, or suspension work. South Auckland roads can knock alignment out faster than the annual schedule suggests."],
     ['q' => 'Can bad wheel alignment damage my car?', 'a' => 'Yes. Misalignment causes uneven tyre wear, increases fuel consumption, and puts ongoing stress on suspension components including ball joints, tie rods, and wheel bearings. Alignment is one of the cheapest preventative maintenance items — compared to the damage it prevents.'],

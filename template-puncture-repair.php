@@ -105,7 +105,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you rebalance the tyre after a puncture repair?',
-        'a' => 'Yes. A patch adds weight to the inside of the tyre, which affects balance. We rebalance every tyre after a puncture repair as standard. Most workshops don\'t — it\'s one of the reasons you might feel vibration after a repair done elsewhere.',
+        'a' => 'Yes. A patch adds weight to the inside of the tyre, which affects balance. We rebalance every tyre after a puncture repair as standard. Skipping this step is a common reason for vibration after a puncture repair.',
     ],
     [
         'q' => 'Can you repair a run-flat tyre?',

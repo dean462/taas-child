@@ -35,7 +35,7 @@ $brands = [
 
 $faqs = [
     ['q'=>'What tyre brands do you carry?','a'=>'Maxxis, Continental, Goodyear, Hifly, Rovelo, Vitora and Wanli. Budget to premium — over 1,400 tyres in stock.'],
-    ['q'=>'Which brand do you recommend?','a'=>'It depends on how you drive and what matters to you. Maxxis and Continental are our most popular for quality and value. Hifly and Rovelo are the best budget options. We recommend based on your vehicle and driving — not margin.'],
+    ['q'=>'Which brand do you recommend?','a'=>'It depends on how you drive and what matters to you. Maxxis and Continental are our most popular for quality and value. Hifly and Rovelo are good budget options. We recommend based on your vehicle and driving — not margin.'],
     ['q'=>'Do you carry 4WD tyre brands?','a'=>'Yes. Maxxis is our core 4WD brand — AT811, AT771, MT772, MT764 in all-terrain, highway terrain and mud terrain patterns. Goodyear Wrangler, Continental CrossContact, and budget alternatives from Hifly and Rovelo also available.'],
     ['q'=>'Is Continental better than Maxxis?','a'=>'Continental is a premium brand with advanced compound technology — excellent wet grip, low noise, and long life. Maxxis offers outstanding value in the mid-premium segment, especially for 4WDs and SUVs. Both are quality brands — the right choice depends on your priorities and budget.'],
     ['q'=>'Are budget tyres safe?','a'=>'Yes. All tyres we stock meet international safety standards. Budget tyres use simpler compounds and tread designs — they do the job for lower-mileage and city driving. They may not perform as well in extreme wet conditions or last as long as premium alternatives, but they are safe for normal driving.'],

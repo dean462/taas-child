@@ -57,7 +57,7 @@ $why_points = [
 ];
 
 $faqs = [
-    ['q' => 'How much does wheel balancing cost?', 'a' => 'Wheel balancing ' . $balance_price . '. We balance all four wheels as standard. Pricing may vary for oversized 4WD or commercial tyres — we always confirm before starting.'],
+    ['q' => 'How much does wheel balancing cost?', 'a' => 'Wheel balancing ' . $balance_price . '. We balance all four wheels as standard. Pricing may vary for oversized 4WD or commercial tyres — we will confirm the price before starting.'],
     ['q' => 'What is the difference between balancing and alignment?', 'a' => 'Balancing corrects weight distribution of each wheel and tyre — stops vibration. Alignment adjusts the angles of all four wheels — corrects pulling and uneven wear. Separate jobs that fix different problems. A car can be perfectly aligned but still vibrate from an imbalanced wheel.'],
     ['q' => 'How do I know if my wheels are out of balance?', 'a' => 'Steering wheel vibration that appears at certain speeds — typically 80–100 km/h. Front wheel imbalance is felt in the steering. Rear wheel imbalance is felt in the seat. The only accurate way to confirm is putting the wheel on a balancer.'],
     ['q' => 'How often should I get wheels balanced?', 'a' => 'Every time new tyres are fitted (always included), then every 10,000–15,000 km or immediately if vibration starts. A pothole or kerb strike can knock balance out.'],

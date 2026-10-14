@@ -60,11 +60,11 @@ $why_points = [
 $faqs = [
     [
         'q' => 'Where can I get a wheel alignment in South Auckland?',
-        'a' => 'Tony Allen Auto Service at 139 Cavendish Drive, Manukau is South Auckland\'s dedicated wheel alignment workshop. We serve the full South Auckland corridor — Papatoetoe, Mangere, Otara, Manurewa, Takanini, Papakura, Wiri, Botany, Howick, and surrounding suburbs. Call us on ' . $phone_local . ' to book.',
+        'a' => 'Tony Allen Auto Service at 139 Cavendish Drive, Manukau has a dedicated wheel alignment hoist. We serve the full South Auckland corridor — Papatoetoe, Mangere, Otara, Manurewa, Takanini, Papakura, Wiri, Botany, Howick, and surrounding suburbs. Call us on ' . $phone_local . ' to book.',
     ],
     [
         'q' => 'How much does wheel alignment cost in South Auckland?',
-        'a' => 'At Tony Allen Auto Service, wheel alignment is ' . $alignment_price . '. This includes a four-wheel 3D laser alignment with a before-and-after print-out. All vehicle types — cars, SUVs, 4WDs, vans, and utes. No hidden fees.',
+        'a' => 'At Tony Allen Auto Service, wheel alignment is ' . $alignment_price . '. This includes a four-wheel 3D laser alignment with a before-and-after print-out. All vehicle types — cars, SUVs, 4WDs, vans, and utes.',
     ],
     [
         'q' => 'How often should I get a wheel alignment in South Auckland?',
