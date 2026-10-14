@@ -535,7 +535,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
           <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>
           <?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?>
         </div>
-        <div class="erh-enquiry__estimate">We'll keep you informed every step of the way.</div>
+        <div class="erh-enquiry__estimate">We'll keep you informed as the job goes.</div>
         <div class="erh-enquiry__finance-logos">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="erh-enquiry__fin-img" height="32" loading="lazy">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-qcard.png'); ?>" alt="Q Card" class="erh-enquiry__fin-img" height="32" loading="lazy">

@@ -708,7 +708,7 @@ get_header();
         <span>Aotea Finance Available.</span></h1>
 
         <p class="taas-hero__sub">
-            Tony Allen Auto Service works with Aotea Finance, a New Zealand-owned car repair finance option. Fixed repayments, fast approval, no surprises. Available for all makes and models.
+            Tony Allen Auto Service works with Aotea Finance, a New Zealand-owned car repair finance option. Fixed repayments and fast approval. Available for all makes and models.
         </p>
 
         <div class="taas-hero__ctas">
@@ -855,7 +855,7 @@ get_header();
                 <h3 style="color:var(--taas-white);font-family:'Inter',Arial,sans-serif;font-size:18px;font-weight:700;margin-bottom:8px;">Fees &amp; repayment terms</h3>
                 <ul class="taas-checklist">
                     <li>Interest applies. This is a personal loan, not interest-free credit</li>
-                    <li>Fixed repayments over your agreed term, so no surprises</li>
+                    <li>Fixed repayments over your agreed term</li>
                     <li>No variable rates. You know exactly what you'll pay each week</li>
                     <li>Early repayment options available (check your loan terms)</li>
                     <li>Establishment fee may apply, confirmed at approval</li>

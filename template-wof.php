@@ -130,7 +130,7 @@ $schema = [
     [
       '@type'       => 'Service',
       'name'        => 'Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Booked drop-off. If anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
+      'description' => 'NZTA Authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Booked drop-off. If anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => get_site_url() . '/#organization'],
       'areaServed'  => 'Manukau, South Auckland, New Zealand',
       'offers'      => [
@@ -569,7 +569,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
           <span>Inspected &amp; Fixed in One Visit</span>
         </h1>
         <div class="wof-hero__price">Booked drop-off · Mon–Fri 7:30am–5:00pm</div>
-        <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA-authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. <?php echo esc_html($wof_price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and with seven specialist divisions under one roof, most repairs can be done the same visit.</p>
+        <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA Authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. <?php echo esc_html($wof_price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and with seven specialist divisions under one roof, most repairs can be done the same visit.</p>
         <div class="wof-hero__ctas">
           <a href="#wof-book" class="wof-btn wof-btn--yellow">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
@@ -639,7 +639,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
     <div class="wof-facts__grid">
       <div>
         <h2 class="wof-facts__h2" id="wof-facts-head">South Auckland's <span>WOF Specialists</span><br>Since <?php echo esc_html($established); ?></h2>
-        <p class="wof-facts__body">Tony Allen Auto Service has been carrying out NZTA-authorised Warrant of Fitness inspections in Manukau since 1985. We are a family-owned independent workshop with a dedicated WOF inspection bay and a team of qualified technicians.</p>
+        <p class="wof-facts__body">Tony Allen Auto Service has been carrying out NZTA Authorised Warrant of Fitness inspections in Manukau since 1985. We are a family-owned independent workshop with a dedicated WOF inspection bay and a team of qualified technicians.</p>
         <p class="wof-facts__body">We operate seven specialist divisions under one roof. If your vehicle fails its WOF on brakes, tyres, suspension or electrical work, we can often carry out repairs on the same visit, depending on the work required and parts availability. No referrals. No second booking needed in many cases.</p>
         <ul class="wof-checklist">
           <li>Drop off early and we'll aim to inspect, estimate and repair the same day</li>

@@ -596,7 +596,7 @@ body.page-template-template-finance-provider { overflow-x:hidden; -webkit-text-s
     <span class="fp-sec-eye fp-sec-eye--yellow"><?php echo esc_html($suburb_name); ?></span>
     <h2 class="fp-sec-h2" id="fp-location-head"><?php echo esc_html($provider_name); ?> Mechanic Near <?php echo esc_html($suburb_name); ?></h2>
     <p class="fp-body">Tony Allen Auto Service is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;">139 Cavendish Drive, Manukau</a><?php echo $distance_text ? ', ' . esc_html($distance_text) : ''; ?>. We have been serving <?php echo esc_html($suburb_name); ?> and surrounding South Auckland suburbs since <?php echo esc_html($established); ?>. MTA Assured, NZTA Authorised, and accepting <?php echo esc_html($provider_name); ?> across every service.</p>
-    <p class="fp-body">If your vehicle needs a WOF, a routine service, or a larger repair like a cambelt or clutch replacement, you can use <?php echo esc_html($provider_name); ?> to spread the cost. We provide a clear written estimate before any work begins. No pressure, no surprises.</p>
+    <p class="fp-body">If your vehicle needs a WOF, a routine service, or a larger repair like a cambelt or clutch replacement, you can use <?php echo esc_html($provider_name); ?> to spread the cost. We give you an estimate before starting work and keep you informed if anything changes.</p>
 
     <?php if (!empty($area_served)): ?>
     <div style="margin-top:28px;">

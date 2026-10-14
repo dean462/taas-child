@@ -155,7 +155,7 @@ $schema = [
     [
       '@type'       => 'Service',
       'name'        => 'WOF ' . $suburb_name . ': Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Booked drop-off. If anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
+      'description' => 'NZTA Authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Booked drop-off. If anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => $site_url . '/#organization'],
       'areaServed'  => $suburb_name . ', South Auckland, New Zealand',
       'offers'      => [
@@ -645,7 +645,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         </h1>
         <div class="wl-hero__pill"><?php echo esc_html(strtoupper('Booked drop-off · ' . $hours . ($sub['distance'] ? ' · ' . $sub['distance'] : ''))); ?></div>
         <p class="wl-hero__sub">
-          NZTA-authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?>, <?php echo esc_html($distance_text); ?><?php endif; ?>. <?php echo esc_html($price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and most repairs can be done the same visit.
+          NZTA Authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?>, <?php echo esc_html($distance_text); ?><?php endif; ?>. <?php echo esc_html($price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and most repairs can be done the same visit.
         </p>
         <div class="wl-hero__ctas">
           <a href="#wl-book" class="wl-btn wl-btn--yellow">
@@ -758,7 +758,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
           Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a><?php echo $distance_text ? ', ' . esc_html($distance_text) : ''; ?>. We are one of the largest independent automotive workshops in South Auckland, operating <?php echo esc_html($division_count); ?> specialist divisions under one roof. Whatever your vehicle (daily driver, ute, van or light commercial), our technicians have the experience to get your WOF done efficiently.
         </p>
         <p class="wl-about__body">
-          <?php echo esc_html($suburb_name); ?> drivers choose us because we are straight with you. If your vehicle passes, you are out the door. If it needs work, we give you a clear written estimate before any repair work. You decide whether to proceed. No pressure, no surprises.
+          <?php echo esc_html($suburb_name); ?> drivers choose us because we are straight with you. If your vehicle passes, you are out the door. If it needs work, we give you a clear written estimate before any repair work. You decide whether to go ahead.
         </p>
       </div>
 
@@ -793,7 +793,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       What We Check in Your <span>WOF Inspection</span>
     </h2>
     <p class="wl-checks__sub">
-      Our NZTA-authorised inspectors work through all mandatory checkpoints. Every time, no shortcuts.
+      Our NZTA Authorised inspectors work through all mandatory checkpoints. Every time, no shortcuts.
     </p>
     <div class="wl-checks__grid">
       <div class="wl-check-item">Tyres &amp; tread depth</div>

@@ -903,7 +903,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
       <ul class="hp-checklist">
         <li class="hp-check"><span class="hp-check__icon">&check;</span>Independent, family-owned &amp; operated</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span><?php echo esc_html($division_count); ?> specialist divisions under one roof: servicing, brakes, tyres, batteries, auto electrical, European, fleet</li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span>We'll keep you informed every step of the way</li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span>We'll keep you informed as the job goes</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>We verify the fault before replacing any part</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>We explain what we find and what it costs. No jargon, and you are kept informed</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>Finance available: <?php echo esc_html($finance_list); ?></li>
@@ -955,7 +955,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
       </a>
       <a href="<?php echo esc_url($site_url . '/aotea-finance-car-repairs/'); ?>" class="hp-fin-card" style="text-decoration:none;">
         <div class="hp-fin-card__name">Aotea Finance</div>
-        <div class="hp-fin-card__desc">NZ-owned finance for car repairs. Fast approval, fixed repayments, no surprises.</div>
+        <div class="hp-fin-card__desc">NZ-owned finance for car repairs. Fast approval and fixed repayments.</div>
         <div class="hp-fin-card__link">Learn more &rarr;</div>
       </a>
       <a href="<?php echo esc_url($site_url . '/gem-finance-car-repairs/'); ?>" class="hp-fin-card" style="text-decoration:none;">
@@ -990,7 +990,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
           <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>
           <?php echo esc_html($hours); ?> &middot; <?php echo esc_html($phone_local); ?>
         </div>
-        <div class="hp-enquiry__estimate">We'll keep you informed every step of the way.</div>
+        <div class="hp-enquiry__estimate">We'll keep you informed as the job goes.</div>
         <div class="hp-enquiry__finance-logos">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="hp-enquiry__fin-img" height="32" loading="lazy">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-qcard.png'); ?>" alt="Q Card" class="hp-enquiry__fin-img" height="32" loading="lazy">

@@ -77,7 +77,7 @@ $service_images = [
 $services = [
 
     // ── MOST POPULAR ─────────────────────────────────────────────────────────
-    ['title'=>'Warrant of Fitness',       'sub'=>'NZTA-authorised inspections, $80 flat rate',               'url'=>'/wof/',                                            'group'=>'popular',    'featured'=>true],
+    ['title'=>'Warrant of Fitness',       'sub'=>'NZTA Authorised inspections, $80 flat rate',               'url'=>'/wof/',                                            'group'=>'popular',    'featured'=>true],
     ['title'=>'Vehicle Servicing',        'sub'=>'Full & interim services, all makes and models',             'url'=>'/vehicle-servicing/',                              'group'=>'popular',    'featured'=>true],
     ['title'=>'Tyres & Wheels',           'sub'=>'Supply, fit and balance. Leading brands stocked',           'url'=>'/tyre-centre/',                                 'group'=>'popular',    'featured'=>true],
     ['title'=>'Brakes',                   'sub'=>'Pads, rotors, calipers: full brake system repairs',              'url'=>'/manukau-brake-clutch/',                                'group'=>'popular',    'featured'=>true],

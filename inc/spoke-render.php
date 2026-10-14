@@ -113,7 +113,7 @@ body.<?php echo esc_attr($S['body_template_class']); ?>,body.<?php echo esc_attr
     <a href="tel:<?php echo esc_attr($S['phone_free_tel']); ?>" class="spoke-enquiry__phone"><?php echo esc_html($S['phone_free']); ?></a>
     <div class="spoke-enquiry__detail"><strong><?php echo $S['enquiry_brand']; ?></strong><br><a href="<?php echo esc_url($S['maps_url']); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a> · <?php echo esc_html($S['distance_text']); ?><br><?php echo esc_html($S['hours']); ?> · <?php echo esc_html($S['phone_local']); ?></div>
     <div class="spoke-enquiry__badges"><?php foreach ($S['finance'] as $f): ?><span class="spoke-enquiry__badge"><?php echo esc_html($f['name']); ?></span><?php endforeach; ?></div>
-    <div class="spoke-enquiry__note"><strong>We'll keep you informed every step of the way.</strong> <?php echo function_exists('taas_estimate_prompt_text') ? esc_html(taas_estimate_prompt_text()) : ''; ?> <a href="<?php echo esc_url($S['site_url'] . '/finance-options/'); ?>">Finance options →</a></div>
+    <div class="spoke-enquiry__note"><strong>We'll keep you informed as the job goes.</strong> <?php echo function_exists('taas_estimate_prompt_text') ? esc_html(taas_estimate_prompt_text()) : ''; ?> <a href="<?php echo esc_url($S['site_url'] . '/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="spoke-enquiry__form">
     <div class="spoke-enquiry__form-title">Send Us Your Details</div>

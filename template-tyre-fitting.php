@@ -347,7 +347,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                     ['Wheel Alignment', $alignment_price, '/wheel-alignment-manukau/'],
                     ['Tyre Rotation','Rotate to even out wear pattern','/tyre-fitting-manukau/'],
                     ['Puncture Repair','Assessed, repaired if safe','/tyre-centre/puncture-repair-manukau/'],
-                    ['WOF Inspection','NZTA-authorised from $80','/wof/'],
+                    ['WOF Inspection','NZTA Authorised from $80','/wof/'],
                 ] as $s): ?>
                 <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid #2a2a2a;">
                     <div>

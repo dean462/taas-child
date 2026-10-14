@@ -629,7 +629,7 @@ body{-webkit-text-size-adjust:100%;text-size-adjust:100%;font-weight:300;overflo
         <h1><?php echo esc_html($service_name); ?></h1>
 
         <p class="taas-hero__intro">
-            Tony Allen Auto Service has been South Auckland's local workshop since <?php echo esc_html($established); ?>. <?php echo esc_html($specialist_name); ?> and the team carry out <?php echo esc_html(strtolower($service_name)); ?> for all makes and models at 139 Cavendish Drive, Manukau. Estimate before we start. No surprises.
+            Tony Allen Auto Service has been South Auckland's local workshop since <?php echo esc_html($established); ?>. <?php echo esc_html($specialist_name); ?> and the team carry out <?php echo esc_html(strtolower($service_name)); ?> for all makes and models at 139 Cavendish Drive, Manukau. Estimate before we start.
         </p>
 
         <div class="taas-hero__ctas">
