@@ -208,7 +208,7 @@ get_header();
 
       <h2>Vehicle collection</h2>
       <p>Once your vehicle is ready, we will notify you by phone, text, or email. Vehicles should be collected during our business hours: <?php echo esc_html($hours); ?>.</p>
-      <p>If your vehicle is not collected within 5 working days of notification, a storage fee of $15 per day (incl. GST) may apply. TAAS accepts no liability for vehicles left on our premises beyond 10 working days after notification of completion.</p>
+      <p>If your vehicle is not collected within 5 working days of notification, a storage fee of $45 per day (plus GST) may apply. TAAS accepts no liability for vehicles left on our premises beyond 10 working days after notification of completion.</p>
 
       <h2>Sublet services</h2>
       <p>Certain specialist work may be sublet to third-party providers. This includes but is not limited to towing services and full transmission rebuilds. Where work is sublet, we will inform you and the third-party provider&rsquo;s own terms and warranty will apply to their portion of the work. TAAS coordinates the process so you deal with us, not the subcontractor.</p>

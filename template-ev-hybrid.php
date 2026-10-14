@@ -215,7 +215,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div class="evh-dealer">
     <div class="evh-dealer__body">
       <p>The dealer servicing model is built on the assumption that you have no alternative. For vehicles under factory warranty, check your terms. Most manufacturers allow servicing at any qualified workshop provided the correct schedule, parts, and fluids are used.</p>
-      <p>For out-of-warranty EVs and hybrids, the decision is straightforward. We carry the same diagnostic tools the dealer uses. We read the same fault codes, the same live data, and the same battery cell information. The difference is cost. Dealer labour rates in Auckland are typically over $200 per hour. Ours are well under that, for the same diagnostic depth and repair quality. On a job that takes four or five hours, the saving is significant.</p>
+      <p>For out-of-warranty EVs and hybrids, you don't have to go back to the dealer. We read the fault codes, live data and battery cell information on the EV and hybrid models we service, and we give you an estimate before starting work.</p>
       <p>We are not anti-dealer. There are warranty repairs and recall work that must go through the dealer network. But for routine servicing, brake fluid changes, tyre replacements, suspension work, diagnostic scanning and most repairs, an independent workshop with the right capability is the sensible choice.</p>
     </div>
     <div class="evh-dealer__card">
