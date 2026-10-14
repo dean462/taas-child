@@ -79,7 +79,7 @@ $providers = [
         'slug'     => 'assurant-warranty-repairs-manukau',
         'logo'     => get_site_url() . '/wp-content/uploads/2026/06/mbi-logo-assurant-1.png',
         'since'    => 'Formerly Protecta',
-        'badge'    => 'Formerly Protecta',
+        'badge'    => '35+ Years in NZ',
         'featured' => false,
         'tagline'  => '35+ Years — Formerly Protecta Insurance',
         'about'    => 'Assurant (formerly Protecta Insurance) completed its rebrand in December 2024 following Assurant Inc\'s acquisition of Protecta in 2022. The same NZ team, same policies, same service — now under the global Assurant brand. Policies are issued by Protecta Insurance NZ Ltd as agent for Virginia Surety Company Inc (A+ financial strength rating from A.M. Best).',
@@ -98,7 +98,7 @@ $providers = [
         'name'     => 'Provident Insurance',
         'slug'     => 'provident-warranty-repairs-manukau',
         'logo'     => get_site_url() . '/wp-content/uploads/2026/06/mbi-logo-provident-1.png',
-        'since'    => '100% NZ Owned',
+        'since'    => '30+ years',
         'badge'    => '100% NZ Owned',
         'featured' => false,
         'tagline'  => '100% New Zealand Owned — 30+ Years',
@@ -119,7 +119,7 @@ $providers = [
         'slug'     => 'janssen-warranty-repairs-manukau',
         'logo'     => get_site_url() . '/wp-content/uploads/2026/06/mbi-logo-janssen-1.png',
         'since'    => '25+ years',
-        'badge'    => 'EV & Hybrid Specialist',
+        'badge'    => 'One Excess Per Claim',
         'featured' => false,
         'tagline'  => '25+ Years — Single Excess Per Claim',
         'about'    => 'Janssen Insurance has been providing MBI in New Zealand for over 25 years. All products are underwritten by Quest Insurance, a licensed insurer regulated by the RBNZ. A key differentiator: only one excess applies per claim event, even if multiple components require repair simultaneously.',
@@ -138,8 +138,8 @@ $providers = [
         'name'     => 'Autolife',
         'slug'     => 'autolife-warranty-repairs-manukau',
         'logo'     => get_site_url() . '/wp-content/uploads/2026/06/mbi-logo-autolife-1.png',
-        'since'    => 'Subsidiary of Beneficial Insurance',
-        'badge'    => '96.5% Claims Paid in 14 Days',
+        'since'    => 'Part of Beneficial Insurance',
+        'badge'    => 'Fast Claims',
         'featured' => false,
         'tagline'  => 'Fast Claims — 96.5% Paid Within 14 Days',
         'about'    => 'Autolife is a fully owned subsidiary of Beneficial Insurance Limited, a licensed NZ insurer. Their standout claim is speed: 96.5% of claim payments are made within 14 days, and 99.5% within 21 days. Policies are available directly online — no dealer required. Vehicles must be NZ registered, post-2000, and under 200,000 km.',
@@ -263,7 +263,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 .mbi-hero__h1 em { color:var(--taas-yellow, #FFC800); font-style:normal; }
 .mbi-hero__sub { font-size:16px; font-weight:300; color:#999; line-height:1.75; max-width:520px; margin-bottom:32px; }
 .mbi-hero__ctas { display:flex; gap:14px; flex-wrap:wrap; }
-.mbi-hero__providers { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+.mbi-hero__providers { display:none; flex-wrap:wrap; gap:8px; margin-top:24px; } /* desktop shows the side card instead */
 .mbi-hero__pill { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); color:#aaa; font-size:12px; font-weight:600; padding:5px 14px; transition:background .15s, color .15s, border-color .15s; }
 .mbi-hero__pill:hover { background:rgba(255,200,0,.12); border-color:var(--taas-yellow, #FFC800); color:var(--taas-yellow, #FFC800); }
 
@@ -356,7 +356,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 }
 .mbi-pcard__logo-img { max-width:160px; max-height:56px; width:auto; height:auto; object-fit:contain; display:block; }
 .mbi-pcard__name { font-family:var(--taas-font, 'Inter', Arial, sans-serif); font-size:20px; font-weight:900; color:#0D0D0D; text-transform:uppercase; }
-.mbi-pcard__badge { display:inline-block; font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:var(--taas-yellow, #FFC800); color:var(--taas-dark, #1A1A1A); padding:2px 8px; }
+.mbi-pcard__badge { display:inline-block; white-space:nowrap; font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:var(--taas-yellow, #FFC800); color:var(--taas-dark, #1A1A1A); padding:2px 8px; }
 .mbi-pcard__since { font-size:11px; color:#999; }
 .mbi-pcard__body { padding:24px 28px; }
 .mbi-pcard__tagline { font-family:var(--taas-font, 'Inter', Arial, sans-serif); font-size:18px; font-weight:900; color:#0D0D0D; text-transform:uppercase; margin-bottom:10px; }
@@ -466,6 +466,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 
 /* ══ RESPONSIVE ══════════════════════════════════════════════════════════════ */
 @media (max-width:1024px) {
+  .mbi-hero__providers { display:flex; }
   .mbi-hero__inner, .mbi-what__inner, .mbi-enquiry__inner { grid-template-columns:1fr; gap:40px; }
   .mbi-hero__card { display:none; }
   .mbi-pcard { grid-template-columns:minmax(0,1fr); }
