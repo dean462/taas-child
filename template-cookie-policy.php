@@ -214,7 +214,7 @@ get_header();
           </tr>
           <tr>
             <td><strong>Google Analytics (GA4)</strong></td>
-            <td>Helps us understand how visitors use our website &mdash; which pages are visited, how long people stay, and what devices they use. This data is anonymous and aggregated. No personally identifiable information is collected.</td>
+            <td>Helps us understand how visitors use our website: which pages are visited, how long people stay, and what devices they use. This data is anonymous and aggregated. No personally identifiable information is collected.</td>
             <td>Analytics</td>
           </tr>
           <tr>
@@ -233,10 +233,10 @@ get_header();
       <h2>What we do not use</h2>
       <p>We want to be clear about what is not on our site:</p>
       <ul>
-        <li><strong>No advertising cookies</strong> &mdash; we do not run ads on our website and do not use cookies to serve or track advertising</li>
-        <li><strong>No retargeting</strong> &mdash; we do not track you across other websites or show you TAAS ads elsewhere based on your visit</li>
-        <li><strong>No data selling</strong> &mdash; we do not sell, rent, or trade any visitor data to third parties</li>
-        <li><strong>No social media trackers</strong> &mdash; we do not embed Facebook, Instagram, or other social media tracking pixels</li>
+        <li><strong>No advertising cookies</strong>: we do not run ads on our website and do not use cookies to serve or track advertising</li>
+        <li><strong>No retargeting</strong>: we do not track you across other websites or show you TAAS ads elsewhere based on your visit</li>
+        <li><strong>No data selling</strong>: we do not sell, rent, or trade any visitor data to third parties</li>
+        <li><strong>No social media trackers</strong>: we do not embed Facebook, Instagram, or other social media tracking pixels</li>
       </ul>
 
       <h2>Google Analytics in detail</h2>

@@ -181,7 +181,7 @@ get_header();
       <p>We use your personal information to:</p>
       <ul>
         <li>Respond to your enquiry or booking request</li>
-        <li>Contact you about your vehicle &mdash; service updates, completed work, or follow-up</li>
+        <li>Contact you about your vehicle (service updates, completed work, or follow-up)</li>
         <li>Process payments and invoices</li>
         <li>Maintain service history records for your vehicle</li>
         <li>Meet our legal obligations (e.g. WOF records required by NZTA)</li>
@@ -191,20 +191,20 @@ get_header();
       <h2>How we store your information</h2>
       <p>Your information is stored in the following systems:</p>
       <ul>
-        <li><strong>Workshop management system</strong> &mdash; service history, invoices, and vehicle records are stored in our workshop management software (Mechanic Desk)</li>
-        <li><strong>Website database</strong> &mdash; form submissions are stored in our WordPress database hosted on Cloudways (DigitalOcean, Sydney data centre)</li>
-        <li><strong>Email delivery</strong> &mdash; form submissions are delivered via Brevo, a transactional email service. Brevo processes your name, email, phone number, and message content to deliver the enquiry to our team</li>
-        <li><strong>Accounting</strong> &mdash; invoicing and payment records are processed through Xero</li>
+        <li><strong>Workshop management system</strong>: service history, invoices, and vehicle records are stored in our workshop management software (Mechanic Desk)</li>
+        <li><strong>Website database</strong>: form submissions are stored in our WordPress database hosted on Cloudways (DigitalOcean, Sydney data centre)</li>
+        <li><strong>Email delivery</strong>: form submissions are delivered via Brevo, a transactional email service. Brevo processes your name, email, phone number, and message content to deliver the enquiry to our team</li>
+        <li><strong>Accounting</strong>: invoicing and payment records are processed through Xero</li>
       </ul>
       <p>All systems are password-protected and access is limited to authorised TAAS staff.</p>
 
       <h2>Third-party services</h2>
       <p>Our website uses the following third-party services that may collect data:</p>
       <ul>
-        <li><strong>Google Analytics (GA4)</strong> &mdash; collects anonymous website usage data (pages visited, time on site, device type, general location). No personally identifiable information is collected by GA4. Data is processed by Google</li>
-        <li><strong>Cloudflare</strong> &mdash; provides website security and performance. Cloudflare may set performance cookies and processes IP addresses for security purposes</li>
-        <li><strong>Trustindex</strong> &mdash; displays Google reviews on our website. Reviews are public content sourced from Google Business Profile</li>
-        <li><strong>Brevo</strong> &mdash; delivers form submission emails from our website to our team. Brevo&rsquo;s privacy policy is available at <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener noreferrer">brevo.com/legal/privacypolicy</a></li>
+        <li><strong>Google Analytics (GA4)</strong>: collects anonymous website usage data (pages visited, time on site, device type, general location). No personally identifiable information is collected by GA4. Data is processed by Google</li>
+        <li><strong>Cloudflare</strong>: provides website security and performance. Cloudflare may set performance cookies and processes IP addresses for security purposes</li>
+        <li><strong>Trustindex</strong>: displays Google reviews on our website. Reviews are public content sourced from Google Business Profile</li>
+        <li><strong>Brevo</strong>: delivers form submission emails from our website to our team. Brevo&rsquo;s privacy policy is available at <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener noreferrer">brevo.com/legal/privacypolicy</a></li>
       </ul>
       <p>We do not sell, rent, or trade your personal information to any third party.</p>
 
@@ -214,18 +214,18 @@ get_header();
       <h2>Cookies</h2>
       <p>Our website uses cookies for the following purposes:</p>
       <ul>
-        <li><strong>Essential cookies</strong> &mdash; required for the website to function (session management, form submissions)</li>
-        <li><strong>Analytics cookies</strong> &mdash; Google Analytics uses cookies to understand how visitors use our website. This data is anonymous and aggregated</li>
-        <li><strong>Performance cookies</strong> &mdash; Cloudflare may set cookies to optimise website delivery and security</li>
+        <li><strong>Essential cookies</strong>: required for the website to function (session management, form submissions)</li>
+        <li><strong>Analytics cookies</strong>: Google Analytics uses cookies to understand how visitors use our website. This data is anonymous and aggregated</li>
+        <li><strong>Performance cookies</strong>: Cloudflare may set cookies to optimise website delivery and security</li>
       </ul>
       <p>We do not use advertising or tracking cookies. New Zealand does not currently require cookie consent banners, but we believe in transparency about what our site uses.</p>
 
       <h2>Your rights under the Privacy Act 2020</h2>
       <p>Under the New Zealand Privacy Act 2020, you have the right to:</p>
       <ul>
-        <li><strong>Access</strong> your personal information &mdash; you can request a copy of any personal data we hold about you</li>
-        <li><strong>Correct</strong> your information &mdash; if any details we hold are inaccurate, you can ask us to update them</li>
-        <li><strong>Request deletion</strong> &mdash; you can ask us to delete your personal information, subject to any legal obligations we have to retain certain records (e.g. tax records, WOF inspection records)</li>
+        <li><strong>Access</strong> your personal information: you can request a copy of any personal data we hold about you</li>
+        <li><strong>Correct</strong> your information: if any details we hold are inaccurate, you can ask us to update them</li>
+        <li><strong>Request deletion</strong>: you can ask us to delete your personal information, subject to any legal obligations we have to retain certain records (e.g. tax records, WOF inspection records)</li>
       </ul>
       <p>To exercise any of these rights, contact us at <a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a> or call <a href="tel:0800100876"><?php echo esc_html($phone_free); ?></a>. We will respond within 20 working days as required by the Privacy Act.</p>
 

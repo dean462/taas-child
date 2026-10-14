@@ -675,7 +675,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 <section class="cu-cta" aria-label="Call to action">
   <div class="w">
     <h2>Prefer to <span>Call?</span></h2>
-    <p>Talk to the workshop directly &mdash; Mon&ndash;Fri, 7:30am&ndash;5:00pm.</p>
+    <p>Talk to the workshop directly, Mon&ndash;Fri, 7:30am&ndash;5:00pm.</p>
     <div class="cu-cta__btns">
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="cu-btn cu-btn--yellow">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
