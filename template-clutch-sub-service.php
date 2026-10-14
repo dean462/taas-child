@@ -65,11 +65,11 @@ if($symptoms_raw){$faqs[]=['q'=>"How do I know if I need {$service_name}?",'a'=>
 $faqs[]=['q'=>"How much does {$service_name} cost in Manukau?",'a'=>$price_signal.'. We give you an estimate before starting work. Call '.$phone_free.'.'];
 $faqs[]=['q'=>'Why replace the clutch as a complete kit?','a'=>'The gearbox has to come out to access the clutch — the labour is the same whether you replace one component or all three. Replacing only the disc against a worn pressure plate means the new disc wears faster and you pay full labour again sooner. We always replace as a kit.'];
 $faqs[]=['q'=>'What is a dual-mass flywheel?','a'=>'A dual-mass flywheel uses two plates connected by springs to absorb drivetrain vibration. Common on European and modern vehicles. They cannot be repaired — replacement only when they fail. Call '.$phone_free.'.'];
-$faqs[]=['q'=>'Do you offer finance for brake repairs?','a'=>'Yes — Afterpay, Q Card, GEM Finance, Aotea Finance. Clutch repairs should not be delayed — a slipping clutch damages the flywheel the longer you drive.'];
+$faqs[]=['q'=>'Do you offer finance for clutch repairs?','a'=>'Yes — Afterpay, Q Card, GEM Finance, Aotea Finance. Clutch repairs should not be delayed — a slipping clutch damages the flywheel the longer you drive.'];
 foreach($custom_faqs as $cf){$faqs[]=$cf;}
 $faqs[]=['q'=>'Where is your workshop?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open '.$hours.'. Call '.$phone_free.'.'];
-if(count($faqs)<10){$faqs[]=['q'=>"How long does {$service_name} take?",'a'=>'Timing depends on the vehicle and repair scope. Pad and rotor replacement is typically same-day. We advise on timeframe when you book. Call '.$phone_free.'.'];}
-if(count($faqs)<10){$faqs[]=['q'=>'Do you work on European vehicle brakes?','a'=>'Yes. Our TAAS European division covers all European makes — electronic handbrakes, pad wear sensors, ceramic compounds, and specific rotor specifications.'];}
+if(count($faqs)<10){$faqs[]=['q'=>"How long does {$service_name} take?",'a'=>'Timing depends on the vehicle and repair scope. Most clutch replacements take a full day, and longer if parts need ordering. We advise on timeframe when you book. Call '.$phone_free.'.'];}
+if(count($faqs)<10){$faqs[]=['q'=>'Do you work on European vehicle clutches?','a'=>'Yes. Our TAAS European division covers all European makes, including dual-mass flywheels and hydraulic clutch systems.'];}
 
 function cls_badge($i,$s=40){$f=strlen($i)>2?11:14;return '<svg width="'.$s.'" height="'.$s.'" viewBox="0 0 '.$s.' '.$s.'" xmlns="http://www.w3.org/2000/svg"><circle cx="'.($s/2).'" cy="'.($s/2).'" r="'.($s/2).'" fill="#1A1A1A"/><text x="'.($s/2).'" y="'.($s/2+1).'" text-anchor="middle" dominant-baseline="central" fill="#FFC800" font-family="Inter,Arial,sans-serif" font-size="'.$f.'" font-weight="800">'.$i.'</text></svg>';}
 

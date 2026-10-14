@@ -96,7 +96,7 @@ $faqs = [];
 $faqs[] = ['q'=>"What is {$service_name}?",'a'=>$what_it_is ?: "Contact Tony Allen Auto Service on {$phone_free} for information about {$service_name}."];
 if ($causes_raw) { $faqs[] = ['q'=>"What causes problems with {$service_name}?",'a'=>implode('. ', $causes).'.'];}
 if ($symptoms_raw) { $faqs[] = ['q'=>"How do I know if I need {$service_name}?",'a'=>'Common signs include: '.strtolower(implode('; ', $symptoms)).'.'];}
-$faqs[] = ['q'=>"How much does {$service_name} cost in Manukau?",'a'=>$price_signal.'. All fees explained upfront — we provide an estimate before proceeding with any work. Call '.$phone_free.' for a current estimate on your vehicle.'];
+$faqs[] = ['q'=>"How much does {$service_name} cost in Manukau?",'a'=>$price_signal.'. We give you an estimate before starting work and keep you informed if anything changes. Call '.$phone_free.' for a current estimate on your vehicle.'];
 $faqs[] = ['q'=>"Do you diagnose before recommending repairs?",'a'=>"Yes — always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure."];
 $faqs[] = ['q'=>"Can you do this on European vehicles?",'a'=>"Yes. We service air conditioning on all makes including {$euro_brands}. European vehicles often have specific refrigerant requirements and dual-zone climate systems — we have the equipment and knowledge to handle these."];
 $faqs[] = ['q'=>"How long does {$service_name} take?",'a'=>"A standard regas takes 45 to 60 minutes. Diagnosis and repairs take longer depending on the fault — we give you a timeframe when we provide your estimate."];

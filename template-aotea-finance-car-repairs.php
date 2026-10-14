@@ -57,11 +57,11 @@ $faqs = [
     ],
     [
         'q' => 'Do I need to arrange Aotea Finance before coming to TAAS?',
-        'a' => 'Yes. Apply and get approved with Aotea Finance before booking your vehicle in. Once approved, contact us on \' . $phone_free . \' and we\'ll coordinate the rest.',
+        'a' => 'Yes. Apply and get approved with Aotea Finance before booking your vehicle in. Once approved, contact us on ' . $phone_free . ' and we will coordinate the rest.',
     ],
     [
         'q' => 'Can I use Aotea Finance for fleet or commercial vehicle repairs?',
-        'a' => 'Aotea Finance is a consumer finance product. For commercial fleet servicing and account-based invoicing, speak with our team about TAAS Fleet arrangements. Call \' . $phone_free . \' or email \' . $email . \'.',
+        'a' => 'Aotea Finance is a consumer finance product. For commercial fleet servicing and account-based invoicing, speak with our team about TAAS Fleet arrangements. Call ' . $phone_free . ' or email ' . $email . '.',
     ],
     [
         'q' => 'Where is Tony Allen Auto Service?',

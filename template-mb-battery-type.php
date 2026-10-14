@@ -136,7 +136,7 @@ if ($type_key === 'car' || $type_key === 'agm') {
     $faqs[] = ['q'=>'Do European cars need battery registration?','a'=>'Yes. BMW, Mercedes-Benz, Audi, Volkswagen, Volvo, and most European vehicles have a BMS that must be updated when a new battery is fitted. BMS registration is included at Manukau Batteries.'];
 }
 $faqs[] = ['q'=>'What if my battery keeps going flat?','a'=>'A battery that keeps going flat is often an alternator fault, not a battery problem. We test both before recommending any replacement.'];
-$faqs[] = ['q'=>'What brands do you stock?','a'=>'Neuton Power is our preferred brand — proven reliable over '.$years.' years. We are also an authorised Bosch dealer through YHI Automotive NZ.'];
+$faqs[] = ['q'=>'What brands do you stock?','a'=>'Neuton Power is our preferred brand. We are also an authorised Bosch dealer through YHI Automotive NZ.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q'=>'Can I pay with Afterpay?','a'=>'Yes — we accept Afterpay, Q Card, GEM Finance, and Aotea Finance.'];
 $faqs[] = ['q'=>'Where is Manukau Batteries?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open '.$hours.'. Walk-ins welcome. Call '.$phone_free.'.'];

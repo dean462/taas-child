@@ -74,7 +74,7 @@ $taas_faqs['wof_recheck'] = [
 
 $taas_faqs['wof_fail'] = [
     'q' => 'What happens if my car fails its WOF?',
-    'a' => 'We give you a printed report listing every item that failed and why. We explain each item in plain English — what it means, how urgent it is, and what the repair options are. We provide an estimate for the repairs and wait for your approval before doing any work. If the repairs are done elsewhere, book your re-check with us. It\'s at no charge within 28 days of the inspection.',
+    'a' => 'We give you a printed report listing every item that failed and why. We explain each item in plain English — what it means, how urgent it is, and what the repair options are. We give you an estimate for the repairs before starting work. If the repairs are done elsewhere, book your re-check with us. It\'s at no charge within 28 days of the inspection.',
 ];
 
 $taas_faqs['wof_fail_detail'] = [
@@ -104,12 +104,12 @@ $taas_faqs['wof_appointment'] = [
 
 $taas_faqs['wof_frequency_2026'] = [
     'q' => 'How often do I need a WOF — including the 2026 rule changes?',
-    'a' => 'From <strong>1 November 2026</strong>, WOF frequency changes for many vehicles. Vehicles aged 4–14 years registered from November 2019 move to two-yearly inspections. Vehicles over 14 years old remain on annual WOFs — no change. Pre-2000 vehicles move from 6-monthly to annual. New vehicles get their first WOF at 4 years instead of 3. A large proportion of the South Auckland fleet is over 14 years old and is unaffected. Not sure? Call us on <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '">' . $_fq_phone . '</a>.',
+    'a' => 'From <strong>1 November 2026</strong>, WOF frequency changes for many vehicles. Cars 4–14 years old move to a WOF every two years: from 1 November 2026 for cars registered on or after 1 November 2019, and from 1 November 2027 for cars registered 1 November 2013 to 31 October 2019. Cars 14–26 years old stay on annual WOFs. Pre-2000 vehicles move from six-monthly to annual. New cars get their second WOF at 4 years instead of 3. A current WOF keeps its expiry date. The new frequency applies from your next inspection. A large proportion of the South Auckland fleet is over 14 years old and is unaffected. Not sure? Call us on <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '">' . $_fq_phone . '</a>.',
 ];
 
 $taas_faqs['wof_checklist'] = [
     'q' => 'What do they check in a New Zealand WOF?',
-    'a' => 'A NZ WOF covers 12 mandatory safety areas: tyres and tread depth, brakes and brake lines, steering and suspension, lights and indicators, windscreen and wipers, seatbelts, body and structural condition, exhaust, fuel system, doors and glazing, speedometer, and from 2026 — ADAS safety system warning lights.',
+    'a' => 'A NZ WOF covers 12 mandatory safety areas: tyres and tread depth, brakes and brake lines, steering and suspension, lights and indicators, windscreen and wipers, seatbelts, body and structural condition, exhaust, fuel system, doors and glazing, speedometer, and from 1 November 2026 — ADAS driver assistance warning lights.',
 ];
 
 $taas_faqs['wof_fine_2026'] = [
@@ -124,11 +124,11 @@ $taas_faqs['wof_older_vehicles'] = [
 
 $taas_faqs['wof_reminders'] = [
     'q' => 'Do you send WOF reminder notifications?',
-    'a' => 'Yes — free automated WOF reminder service. We email you when your WOF is coming up, or text if we don\'t have an email on file. Ask us to add you at your next visit or call <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '">' . $_fq_phone . '</a>. You\'ll never miss a WOF expiry again.',
+    'a' => 'Yes — free automated WOF reminder service. We email you when your WOF is coming up, or text if we don\'t have an email on file. Ask us to add you at your next visit or call <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '">' . $_fq_phone . '</a>.',
 ];
 
 $taas_faqs['wof_accreditation'] = [
-    'q' => 'Are you an NZTA-authorised WOF inspection station?',
+    'q' => 'Are you NZTA Authorised for WOF inspections?',
     'a' => 'Yes. Tony Allen Auto Service is NZTA Authorised (' . $_fq_ms . ') and MTA Assured — independently assessed. We use regularly calibrated, fully certified testing equipment. ' . $_fq_years . ' years at the same address in Manukau.',
 ];
 
@@ -154,7 +154,7 @@ $taas_faqs['diagnose_first'] = [
 
 $taas_faqs['estimates'] = [
     'q' => 'Do you provide estimates before starting work?',
-    'a' => 'Yes. For any repair or service beyond a standard WOF, we provide an estimate before we start and wait for your approval before proceeding. If we find anything additional during the job, we call you with an explanation and a separate estimate before going further.',
+    'a' => 'Yes. For any repair or service beyond a standard WOF, we give you an estimate before starting work and keep you informed if anything changes. If we find anything additional during the job, we will contact you with an explanation and an estimate before going further.',
 ];
 
 $taas_faqs['extra_work'] = [
@@ -219,7 +219,7 @@ $taas_faqs['years_trading'] = [
 
 $taas_faqs['services_overview'] = [
     'q' => 'What services does Tony Allen Auto Service offer?',
-    'a' => 'Seven specialist divisions under one roof: full <a href="' . esc_url($_fq_site . '/vehicle-servicing/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">vehicle servicing</a> and repairs, <a href="' . esc_url($_fq_site . '/wof/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">WOF inspections</a> (NZTA Authorised), <a href="' . esc_url($_fq_site . '/manukau-brake-clutch/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">brakes and clutch</a> (Manukau Brake & Clutch), <a href="' . esc_url($_fq_site . '/auto-electrical/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">auto electrical and diagnostics</a>, <a href="' . esc_url($_fq_site . '/steering-and-suspension/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">steering and suspension</a>, <a href="' . esc_url($_fq_site . '/air-conditioning/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">air conditioning</a>, and <a href="' . esc_url($_fq_site . '/tyre-centre/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">tyres and wheels</a>. Plus specialist <a href="' . esc_url($_fq_site . '/european/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">European vehicle servicing</a>, <a href="' . esc_url($_fq_site . '/fleet-servicing/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">fleet servicing</a> for businesses, and <a href="' . esc_url($_fq_site . '/manukau-batteries/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">Manukau Batteries</a>. All at 139 Cavendish Drive, Manukau — seven divisions, one workshop, everything under one roof.',
+    'a' => 'Seven specialist divisions under one roof: full <a href="' . esc_url($_fq_site . '/vehicle-servicing/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">vehicle servicing</a> and repairs including <a href="' . esc_url($_fq_site . '/steering-and-suspension/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">steering and suspension</a>, <a href="' . esc_url($_fq_site . '/manukau-brake-clutch/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">brakes and clutch</a> (Manukau Brake & Clutch), <a href="' . esc_url($_fq_site . '/wof/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">WOF inspections</a> (NZTA Authorised) and <a href="' . esc_url($_fq_site . '/tyre-centre/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">tyres and wheels</a> (TAAS Tyre & WOF Centre), <a href="' . esc_url($_fq_site . '/auto-electrical/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">auto electrical and diagnostics</a> and <a href="' . esc_url($_fq_site . '/air-conditioning/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">air conditioning</a> (TAAS Auto Electrical & Air Conditioning), <a href="' . esc_url($_fq_site . '/european/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">European vehicle servicing</a> (TAAS European), <a href="' . esc_url($_fq_site . '/fleet-servicing/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">fleet servicing</a> for businesses (TAAS Fleet), and <a href="' . esc_url($_fq_site . '/manukau-batteries/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">Manukau Batteries</a>. All at 139 Cavendish Drive, Manukau — seven divisions, one workshop.',
 ];
 
 
@@ -304,7 +304,7 @@ $taas_faqs['service_cost'] = [
 
 $taas_faqs['service_included'] = [
     'q' => 'What is included in a full car service?',
-    'a' => 'Our Premium service includes engine oil and filter, all fluid levels checked and topped up, cooling system pressure test, full brake inspection with wheels removed and discs measured, OBD diagnostic scan, air and cabin filter inspection, cambelt condition recorded, battery health test, full suspension and steering assessment, tyre rotation if required, and a thorough road test. If any additional work is needed, we provide a written estimate and wait for your approval.',
+    'a' => 'Our Premium service includes engine oil and filter, all fluid levels checked and topped up, cooling system pressure test, full brake inspection with wheels removed and discs measured, OBD diagnostic scan, air and cabin filter inspection, cambelt condition recorded, battery health test, full suspension and steering assessment, tyre rotation if required, and a thorough road test. If any additional work is needed, we will contact you with an estimate before going further.',
 ];
 
 $taas_faqs['service_frequency'] = [
@@ -364,7 +364,7 @@ $taas_faqs['finance_payment_plans'] = [
 
 $taas_faqs['finance_which_option'] = [
     'q' => 'Which payment option is best for me?',
-    'a' => 'It depends on your repair cost and situation. For smaller repairs and everyday servicing, Afterpay are the quickest to set up. For repairs over $250, Gem Finance gives you six months interest-free. Q Card offers at least three months with nothing to pay. If you have had credit difficulties, Aotea Finance considers all circumstances.',
+    'a' => 'It depends on your repair cost and situation. For smaller repairs and everyday servicing, Afterpay is the quickest to set up. For repairs over $250, Gem Finance gives you six months interest-free. Q Card offers at least three months with nothing to pay. If you have had credit difficulties, Aotea Finance considers all circumstances.',
 ];
 
 $taas_faqs['finance_combine'] = [
@@ -379,7 +379,7 @@ $taas_faqs['finance_arrange_before'] = [
 
 $taas_faqs['finance_minimum'] = [
     'q' => 'Is there a minimum repair cost to use these options?',
-    'a' => 'Afterpay, and Q Card have no stated minimum, though individual spend limits apply. Gem Finance requires a minimum transaction of $250. Aotea Finance terms vary — contact them directly for current thresholds.',
+    'a' => 'Afterpay and Q Card have no stated minimum, though individual spend limits apply. Gem Finance requires a minimum transaction of $250. Aotea Finance terms vary — contact them directly for current thresholds.',
 ];
 
 $taas_faqs['finance_wof_repairs'] = [
@@ -589,7 +589,7 @@ $taas_faqs['mbi_breakdown_steps'] = [
 
 $taas_faqs['mbi_servicing_valid'] = [
     'q' => 'Does my vehicle need to be serviced to keep MBI valid?',
-    'a' => 'Yes. All five providers require your vehicle to be serviced at regular intervals at a qualified workshop. Keep all service invoices. Most providers require servicing at a registered MTA workshop — Tony Allen Auto Service is MTA Assured, which satisfies the workshop requirements of all four providers. Failure to provide service records is one of the most common reasons MBI claims are declined.',
+    'a' => 'Yes. All five providers require your vehicle to be serviced at regular intervals at a qualified workshop. Keep all service invoices. Most providers require servicing at a registered MTA workshop — Tony Allen Auto Service is MTA Assured, which satisfies the workshop requirements of all five providers. Failure to provide service records is one of the most common reasons MBI claims are declined.',
 ];
 
 $taas_faqs['mbi_claim_help'] = [
@@ -834,7 +834,7 @@ $taas_faqs['contact_booking'] = [
 
 $taas_faqs['contact_response_time'] = [
     'q' => 'How quickly will you get back to me after I send an enquiry?',
-    'a' => 'We reply during business hours, as soon as we can. If it\'s urgent, call ' . $_fq_phone . '. We will call or email to confirm your booking and let you know pricing before any work begins.',
+    'a' => 'We reply during business hours, as soon as we can. If it\'s urgent, call ' . $_fq_phone . '. We will call or email to confirm your booking and give you an estimate before starting work.',
 ];
 
 $taas_faqs['contact_location'] = [
@@ -859,7 +859,7 @@ $taas_faqs['contact_parking'] = [
 
 $taas_faqs['contact_payment'] = [
     'q' => 'What payment and finance options do you accept?',
-    'a' => 'We accept Visa, Mastercard, EFTPOS, and cash. For larger repairs, we offer ' . $_fq_finance . ' — so you can spread the cost across interest-free instalments. <a href="' . esc_url($_fq_site . '/finance-options/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">View all finance options</a>.',
+    'a' => 'We accept Visa, Mastercard, EFTPOS, and cash. For larger repairs, we offer ' . $_fq_finance . ' — so you can spread the cost. <a href="' . esc_url($_fq_site . '/finance-options/') . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">View all finance options</a>.',
 ];
 
 $taas_faqs['contact_dropoff'] = [
@@ -944,7 +944,7 @@ $taas_faqs['engine_what_repairs'] = [
 
 $taas_faqs['engine_cost'] = [
     'q' => 'How much does an engine repair cost in Manukau?',
-    'a' => 'It depends on the fault. A diagnostic assessment starts at ' . $_fq_scan . ' for a scan, with a full mechanical diagnosis ' . $_fq_diag . '. We give you a written estimate before starting any repair work — no pressure. Common repairs like oil leak fixes or engine mount replacement start from a few hundred dollars. Head gaskets and timing work are larger jobs — we estimate these individually.',
+    'a' => 'It depends on the fault. A diagnostic scan is ' . $_fq_scan . ', with a full mechanical diagnosis ' . $_fq_diag . '. We give you a written estimate before starting any repair work — no pressure. Common repairs like oil leak fixes or engine mount replacement start from a few hundred dollars. Head gaskets and timing work are larger jobs — we estimate these individually.',
 ];
 
 $taas_faqs['engine_symptoms'] = [
@@ -1159,7 +1159,7 @@ $taas_faqs['cs_flush_vs_radiator'] = [
 
 $taas_faqs['cs_head_gasket_signs'] = [
     'q' => 'How do I know if my head gasket has blown?',
-    'a' => 'Common signs include white smoke from the exhaust, a sweet smell from the exhaust, milky or frothy oil on the dipstick, unexplained coolant loss without a visible external leak, and the engine overheating repeatedly. A blown head gasket is always the consequence of overheating — the root cause must be fixed at the same time.',
+    'a' => 'Common signs include white smoke from the exhaust, a sweet smell from the exhaust, milky or frothy oil on the dipstick, unexplained coolant loss without a visible external leak, and the engine overheating repeatedly. A blown head gasket is usually the result of overheating — the root cause must be fixed at the same time.',
 ];
 
 $taas_faqs['cs_radiator_repair'] = [
@@ -1264,7 +1264,7 @@ $taas_faqs['ev_dealer'] = [
 
 $taas_faqs['ev_hv_battery'] = [
     'q' => 'Can you work on the high-voltage battery system?',
-    'a' => 'Yes. Two of our technicians are trained in high-voltage systems and are completing formal EV qualification programmes. We carry out HV battery health assessments, read individual cell data, diagnose HV system faults, and carry out in-car repairs on HV components. Where a full HV battery pack requires replacement, we advise on the options and manage the process.',
+    'a' => 'Yes. We have technicians trained in high-voltage systems who are completing formal EV qualification programmes. We carry out HV battery health assessments, read individual cell data, diagnose HV system faults, and carry out in-car repairs on HV components. Where a full HV battery pack requires replacement, we advise on the options and manage the process.',
 ];
 
 $taas_faqs['ev_brake_fluid'] = [
@@ -1374,7 +1374,7 @@ $taas_faqs['mbc_mbi'] = [
 
 $taas_faqs['mbc_duration'] = [
     'q' => 'How long do brake repairs take?',
-    'a' => 'A pad and rotor replacement is typically completed same-day. Calliper rebuilds and more complex work may take longer. We advise on expected timeframe when you book. Booking is recommended for brake work. Call ' . $_fq_phone . '.',
+    'a' => 'A pad and rotor replacement is typically completed same-day. Calliper rebuilds and more complex work may take longer. We advise on expected timeframe when you book. Brake work is by booking. Call ' . $_fq_phone . '.',
 ];
 
 $taas_faqs['mbc_location'] = [
@@ -1434,7 +1434,7 @@ $taas_faqs['brake_finance'] = [
 
 $taas_faqs['brake_duration'] = [
     'q' => 'How long do brake repairs take?',
-    'a' => 'A pad and rotor replacement is typically completed same-day. More complex work — calliper rebuilds, drum brake overhauls — may take longer. We advise on expected timeframe when you book. Booking is recommended for brake work.',
+    'a' => 'A pad and rotor replacement is typically completed same-day. More complex work — calliper rebuilds, drum brake overhauls — may take longer. We advise on expected timeframe when you book. Brake work is by booking.',
 ];
 
 $taas_faqs['brake_disc_vs_drum'] = [
@@ -1634,7 +1634,7 @@ $taas_faqs['ae_location'] = [
 
 $taas_faqs['ac_regas_cost'] = [
     'q' => 'How much does a car air conditioning regas cost in Manukau?',
-    'a' => 'A standard regas and dye test starts ' . $_fq_aircon . ' at Tony Allen Auto Service. We test the system first and always tell you what we find before starting any work. If additional repairs are needed, we provide an estimate before proceeding. Call ' . $_fq_phone . ' for a current estimate on your specific vehicle.',
+    'a' => 'A standard regas and dye test starts ' . $_fq_aircon . ' at Tony Allen Auto Service. We test the system first and tell you what we find. If additional repairs are needed, we give you an estimate before going further. Call ' . $_fq_phone . ' for a current estimate on your specific vehicle.',
 ];
 
 $taas_faqs['ac_signs'] = [
@@ -1729,7 +1729,7 @@ $taas_faqs['euro_porsche_mini'] = [
 
 $taas_faqs['euro_service_cost'] = [
     'q' => 'What does a European car service cost at TAAS?',
-    'a' => 'A standard logbook service starts ' . $_fq_service . '. European vehicles may require specific oil grades (such as VW 504/507 or BMW LL-04) which can affect the price. We advise the cost for your specific vehicle before booking. WOF is a fixed ' . $_fq_wof . '. Diagnostic scan starts ' . $_fq_scan . '.',
+    'a' => 'A European service starts from ' . (defined('TAAS_SVC_ESS_EUROS') ? TAAS_SVC_ESS_EUROS : '$259') . '. European vehicles may require specific oil grades (such as VW 504/507 or BMW LL-04) which can affect the price. We advise the cost for your specific vehicle before booking. WOF is a fixed ' . $_fq_wof . '. Diagnostic scan starts ' . $_fq_scan . '.',
 ];
 
 $taas_faqs['euro_finance'] = [
@@ -1829,7 +1829,7 @@ $taas_faqs['fleet_turnaround'] = [
 
 $taas_faqs['fleet_afterhours'] = [
     'q' => 'Is after-hours vehicle drop-off available?',
-    'a' => 'Yes. Key drop box available for after-hours drop-off at 139 Cavendish Drive, Manukau. Drivers can drop the vehicle before or after business hours. Leave the key with a note of the registration, company name, and work required. We contact you the following business morning.',
+    'a' => 'Yes. Key drop box available for after-hours drop-off at 139 Cavendish Drive, Manukau. Drivers can drop the vehicle before or after business hours. Leave the key with a note of the registration, company name, and work required. We will contact you as soon as we can once we are open.',
 ];
 
 $taas_faqs['fleet_wof'] = [
@@ -1844,7 +1844,7 @@ $taas_faqs['fleet_european'] = [
 
 $taas_faqs['fleet_ev'] = [
     'q' => 'Do you handle hybrid and EV fleet vehicles?',
-    'a' => 'Yes. We have high-voltage qualified technicians and service hybrid and EV fleet vehicles including Toyota, Nissan, BMW, and Volvo PHEV. Regenerative brake service, battery health checks, and standard servicing all available.',
+    'a' => 'Yes. We have technicians trained in high-voltage systems and service hybrid and EV fleet vehicles including Toyota, Nissan, BMW, and Volvo PHEV. Regenerative brake service, battery health checks, and standard servicing all available.',
 ];
 
 $taas_faqs['fleet_location'] = [
@@ -1926,7 +1926,7 @@ $taas_faqs['tow_own_truck'] = [
 
 $taas_faqs['tow_cost'] = [
     'q' => 'How much does it cost to tow my car to your workshop?',
-    'a' => 'Towing cost depends on the distance and the vehicle type. We will confirm the cost before the tow is dispatched so there are no surprises. The towing fee is separate from the repair — we provide an estimate for the repair once the vehicle is at our workshop and we have diagnosed the fault.',
+    'a' => 'Towing cost depends on the distance and the vehicle type. We will confirm the cost before the tow is dispatched. The towing fee is separate from the repair — we provide an estimate for the repair once the vehicle is at our workshop and we have diagnosed the fault.',
 ];
 
 $taas_faqs['tow_where'] = [
@@ -1946,7 +1946,7 @@ $taas_faqs['tow_arrival'] = [
 
 $taas_faqs['tow_afterhours'] = [
     'q' => 'Is towing available after hours?',
-    'a' => 'Our workshop is open ' . $_fq_hours . '. If your vehicle breaks down after hours, call ' . $_fq_phone . ' and leave a message with your details. We will arrange the tow and contact you the next business morning. You can also use our key drop box at 139 Cavendish Drive if the vehicle arrives outside business hours.',
+    'a' => 'Our workshop is open ' . $_fq_hours . '. If your vehicle breaks down after hours, call ' . $_fq_phone . ' and leave a message with your details. We will get back to you as soon as we can once we are open. If you need a tow straight away, call your roadside assistance provider. You can also use our key drop box at 139 Cavendish Drive if the vehicle arrives outside business hours.',
 ];
 
 $taas_faqs['tow_4wd'] = [

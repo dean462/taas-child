@@ -261,7 +261,7 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
     <?php foreach ([
       ['q'=>'Direct billing?','a'=>'Yes — to your company or fleet management company.'],
       ['q'=>'Vehicle types?','a'=>'Cars, vans, SUVs, utes, light trucks to 6.5 tonne.'],
-      ['q'=>'Turnaround?','a'=>'Servicing and general repairs — same day.'],
+      ['q'=>'Turnaround?','a'=>'Most servicing and general repairs — same day where possible.'],
       ['q'=>'After-hours drop-off?','a'=>'Yes. Key drop box available outside hours.'],
       ['q'=>'Pickup and delivery?','a'=>'Available — call Dean to discuss.'],
       ['q'=>'WOF on-site?','a'=>'Yes. NZTA Authorised.'],

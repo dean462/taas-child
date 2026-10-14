@@ -46,7 +46,7 @@ $has_acf       = function_exists('get_field');
 $suburb_name   = ($has_acf ? get_field('suburb_name') : null) ?: get_post_meta($post_id, 'suburb_name', true) ?: 'South Auckland';
 $suburb_slug   = ($has_acf ? get_field('suburb_slug') : null) ?: get_post_meta($post_id, 'suburb_slug', true) ?: sanitize_title($suburb_name);
 $battery_type  = ($has_acf ? get_field('battery_type') : null) ?: get_post_meta($post_id, 'battery_type', true) ?: 'Car';
-$price_from    = ($has_acf ? get_field('price_from') : null) ?: get_post_meta($post_id, 'price_from', true) ?: '150';
+$price_from    = ($has_acf ? get_field('price_from') : null) ?: get_post_meta($post_id, 'price_from', true) ?: ((defined('TAAS_BATTERY_PRICE') && preg_match('/\$(\d+)/', TAAS_BATTERY_PRICE, $mbl_pm)) ? $mbl_pm[1] : '180');
 
 $battery_type_lower = strtolower($battery_type);
 $type_prefix   = ($battery_type === '4WD') ? '4wd' : $battery_type_lower;

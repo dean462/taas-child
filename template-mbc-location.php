@@ -27,7 +27,7 @@ $sub           = taas_suburb_data($suburb_slug, $suburb_name);
 
 $faqs = [
     ['q' => 'Do you do brake repairs near ' . $suburb_name . '?',
-     'a' => 'Yes. Manukau Brake & Clutch at 139 Cavendish Drive, Manukau is ' . $distance_note . '. We carry out brake pads, disc replacement, disc skimming, drum brakes, calipers, ABS repair and clutch work — all in-house.'],
+     'a' => 'Yes. Manukau Brake & Clutch at 139 Cavendish Drive, Manukau is ' . $distance_note . '. We carry out brake pads, disc replacement, disc skimming, drum brakes, calipers, ABS repair and clutch work.'],
     ['q' => 'How much do brake pads cost near ' . $suburb_name . '?',
      'a' => 'Brake pad replacement prices vary by vehicle make and model. Call us on ' . TAAS_PHONE_LOCAL . ' with your registration number for a price before you come in from ' . $suburb_name . '. We inspect disc condition at the same time — no charge for the assessment.'],
     ['q' => 'Do you do disc skimming near ' . $suburb_name . '?',

@@ -98,13 +98,13 @@ function acl_badge($initials, $size = 36) {
 // ── FAQs ─────────────────────────────────────────────────────────────────────
 $faqs = [
     ['q'=>'How much does a car air conditioning regas cost near '.$suburb_name.'?',
-     'a'=>'A standard regas and dye test starts '.$aircon_price.' at Tony Allen Auto Service — '.$distance_text.'. We test the system first and always tell you what we find before starting any work. Call '.$phone_free.' for a current estimate.'],
+     'a'=>'A standard regas and dye test starts '.$aircon_price.' at Tony Allen Auto Service — '.$distance_text.'. We test the system first and tell you what we find before starting work. Call '.$phone_free.' for a current estimate.'],
     ['q'=>'How far is Tony Allen Auto Service from '.$suburb_name.'?',
      'a'=>'Tony Allen Auto Service is '.$distance_text.'. Our address is 139 Cavendish Drive, Manukau, Auckland 2104. We serve '.$area_served.'. Open '.$hours.'.'],
     ['q'=>'Do you diagnose before recommending AC repairs?',
-     'a'=>'Yes — always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure. Estimate provided before proceeding.'],
+     'a'=>'Yes — always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure. We give you an estimate before starting work and keep you informed if anything changes.'],
     ['q'=>'What air conditioning services do you offer near '.$suburb_name.'?',
-     'a'=>'We offer regas and dye test, system diagnosis and repair, leak and blockage detection, compressor repair, climate control repair, cabin filter replacement, custom hose manufacture, odour treatment, and windscreen demisting diagnosis. All work done in-house at our Manukau workshop.'],
+     'a'=>'We offer regas and dye test, system diagnosis and repair, leak and blockage detection, compressor repair, climate control repair, cabin filter replacement, custom hose manufacture, odour treatment, and windscreen demisting diagnosis at our Manukau workshop.'],
     ['q'=>'Can you work on European vehicle AC systems?',
      'a'=>'Yes. We service air conditioning on all makes including '.$euro_brands.'. European vehicles often have specific refrigerant requirements and dual-zone climate systems — we have the equipment and knowledge to handle these.'],
     ['q'=>'My car AC smells musty — can you fix it?',
