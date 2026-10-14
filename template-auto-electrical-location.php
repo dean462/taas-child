@@ -98,25 +98,25 @@ function ael_badge($initials, $size = 36) {
 // ── FAQs ─────────────────────────────────────────────────────────────────────
 $faqs = [
     ['q'=>'How much does an auto electrical diagnostic cost near '.$suburb_name.'?',
-     'a'=>'A diagnostic scan starts '.$scan_price.' at Tony Allen Auto Service — '.$distance_text.'. A full diagnostic starts '.$autoelec_diag.' and includes live data analysis, component testing, and wiring checks. We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.'],
+     'a'=>'A diagnostic scan starts '.$scan_price.' at Tony Allen Auto Service, '.$distance_text.'. A full diagnostic starts '.$autoelec_diag.' and includes live data analysis, component testing, and wiring checks. We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.'],
     ['q'=>'Do you diagnose faults before replacing parts?',
-     'a'=>'Yes — always. Raj, our Lead Diagnostics & Auto Electrical Technician, verifies the fault before recommending any parts. A scan tool code tells you where to look, not what to replace. We test, confirm, then recommend. This approach avoids unnecessary replacements and gets the car fixed properly on the first visit.'],
+     'a'=>'Yes, always. Raj, our Lead Diagnostics & Auto Electrical Technician, verifies the fault before recommending any parts. A scan tool code tells you where to look, not what to replace. We test, confirm, then recommend. This approach avoids unnecessary replacements and gets the car fixed properly on the first visit.'],
     ['q'=>'How far is Tony Allen Auto Service from '.$suburb_name.'?',
      'a'=>'Tony Allen Auto Service is '.$distance_text.'. Our address is 139 Cavendish Drive, Manukau, Auckland 2104. We serve '.$area_served.'. Open '.$hours.'.'],
     ['q'=>'What auto electrical services do you offer near '.$suburb_name.'?',
-     'a'=>'We offer ECU diagnostics, dashboard warning light diagnosis, battery supply and fit, alternator and starter motor repair, ABS and SRS fault diagnosis, central locking, electric window repair, immobiliser and key programming, wiring fault tracing, EGR and emission faults, TPMS reset, and lighting. All work led by Raj — Lead Diagnostics & Auto Electrical Technician.'],
+     'a'=>'We offer ECU diagnostics, dashboard warning light diagnosis, battery supply and fit, alternator and starter motor repair, ABS and SRS fault diagnosis, central locking, electric window repair, immobiliser and key programming, wiring fault tracing, EGR and emission faults, TPMS reset, and lighting. All work is led by Raj, our Lead Diagnostics & Auto Electrical Technician.'],
     ['q'=>'Can you work on European vehicles from '.$suburb_name.'?',
-     'a'=>'Yes. We carry factory-specification diagnostic equipment for '.$euro_brands.' through our TAAS European division. European ECUs require brand-specific scan tools — generic OBD readers miss a significant portion of fault data.'],
-    ['q'=>'My check engine light is on — should I drive to your workshop from '.$suburb_name.'?',
-     'a'=>'A solid check engine light usually means a stored fault code — it is generally safe to drive '.$distance_text.' to our workshop. Get it scanned promptly. A flashing check engine light means a serious active fault — stop driving and call us on '.$phone_free.'.'],
+     'a'=>'Yes. We carry factory-specification diagnostic equipment for '.$euro_brands.' through our TAAS European division. European ECUs require brand-specific scan tools. Generic OBD readers miss a significant portion of fault data.'],
+    ['q'=>'My check engine light is on. Should I drive to your workshop from '.$suburb_name.'?',
+     'a'=>'A solid check engine light usually means a stored fault code, and it is generally safe to drive '.$distance_text.' to our workshop. Get it scanned promptly. A flashing check engine light means a serious active fault. Stop driving and call us on '.$phone_free.'.'],
     ['q'=>'Do I need to book for an auto electrical diagnostic?',
      'a'=>'Please book so we can guarantee a time slot. Call '.$phone_free.' or use the enquiry form on this page to book a diagnostic.'],
     ['q'=>'Do you offer fleet auto electrical services for businesses near '.$suburb_name.'?',
      'a'=>'Yes. We carry out auto electrical repairs for fleet operators and light commercial operators across South Auckland. Direct invoicing to fleet management companies available. Call '.$phone_free.' to discuss your fleet requirements.'],
     ['q'=>'How long does a diagnostic scan take?',
-     'a'=>'A standard scan takes 30 to 60 minutes. Full diagnostics involving wiring tracing or intermittent faults may take longer — we give you a timeframe and estimate before proceeding.'],
+     'a'=>'A standard scan takes 30 to 60 minutes. Full diagnostics involving wiring tracing or intermittent faults may take longer. We give you a timeframe and estimate before proceeding.'],
     ['q'=>'Where exactly is your auto electrical workshop?',
-     'a'=>'Tony Allen Auto Service is at 139 Cavendish Drive, Manukau, Auckland 2104 — '.$distance_text.'. Open '.$hours.'. Call '.$phone_free.' to book.'],
+     'a'=>'Tony Allen Auto Service is at 139 Cavendish Drive, Manukau, Auckland 2104, '.$distance_text.'. Open '.$hours.'. Call '.$phone_free.' to book.'],
 ];
 if ($custom_faq_q1 && $custom_faq_a1) { $faqs[] = ['q'=>$custom_faq_q1,'a'=>$custom_faq_a1]; }
 if ($custom_faq_q2 && $custom_faq_a2) { $faqs[] = ['q'=>$custom_faq_q2,'a'=>$custom_faq_a2]; }
@@ -219,9 +219,9 @@ body.page-template-template-auto-electrical-location{overflow-x:hidden;-webkit-t
 <!-- 1. HERO -->
 <section class="ael-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
   <div class="ael-hero__inner">
-    <span class="ael-hero__eyebrow">Auto Electrician — <?php echo esc_html($suburb_name); ?></span>
+    <span class="ael-hero__eyebrow">Auto Electrician, <?php echo esc_html($suburb_name); ?></span>
     <h1>Auto Electrician<br><span><?php echo esc_html($suburb_name); ?></span></h1>
-    <p class="ael-hero__sub">Auto electrical diagnosis and repair for <?php echo esc_html($suburb_name); ?> — <?php echo esc_html($distance_text); ?>. Led by Raj, our Lead Diagnostics & Auto Electrical Technician. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+    <p class="ael-hero__sub">Auto electrical diagnosis and repair for <?php echo esc_html($suburb_name); ?>, <?php echo esc_html($distance_text); ?>. Led by Raj, our Lead Diagnostics & Auto Electrical Technician. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
     <div class="ael-hero__price">Diagnostic scan <?php echo esc_html($scan_price); ?> · Full diagnostic <?php echo esc_html($autoelec_diag); ?></div>
     <div class="ael-hero__ctas">
       <a href="#enquire" class="taas-btn taas-btn--primary">Book a Diagnostic</a>
@@ -244,9 +244,9 @@ body.page-template-template-auto-electrical-location{overflow-x:hidden;-webkit-t
   <div class="ael-sec__inner">
     <span class="ael-sec__eyebrow">Auto Electrician for <?php echo esc_html($suburb_name); ?></span>
     <h2 class="ael-sec__h2">Auto Electrical Services Near <?php echo esc_html($suburb_name); ?></h2>
-    <p class="ael-sec__body">Tony Allen Auto Service provides full auto electrical diagnosis and repair from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a> — <?php echo esc_html($distance_text); ?>. All auto electrical work is led by Raj, our Lead Diagnostics & Auto Electrical Technician, who verifies the fault before recommending any parts.</p>
+    <p class="ael-sec__body">Tony Allen Auto Service provides full auto electrical diagnosis and repair from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>, <?php echo esc_html($distance_text); ?>. All auto electrical work is led by Raj, our Lead Diagnostics & Auto Electrical Technician, who verifies the fault before recommending any parts.</p>
     <p class="ael-sec__body">We serve <?php echo esc_html($area_served); ?> with full ECU diagnostics, battery supply and fit, alternator and starter motor repair, ABS and SRS fault diagnosis, wiring fault tracing, and more. Family-owned since <?php echo esc_html($established); ?>, MTA Assured, and NZTA Authorised.</p>
-    <p class="ael-sec__body">Whether it's a dashboard warning light, a car that won't start, or an intermittent electrical fault — we diagnose the cause, not the symptom. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> to book a diagnostic.</p>
+    <p class="ael-sec__body">Dashboard warning light, a car that won't start or an intermittent electrical fault: we diagnose the cause, not the symptom. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> to book a diagnostic.</p>
   </div>
 </section>
 
@@ -289,13 +289,13 @@ body.page-template-template-auto-electrical-location{overflow-x:hidden;-webkit-t
     <h2 class="ael-sec__h2">Auto Electrical Pricing for <?php echo esc_html($suburb_name); ?> Customers</h2>
     <div class="ael-price-box">
       <div class="ael-price-box__title">Diagnostic scan <?php echo esc_html($scan_price); ?> · Full diagnostic <?php echo esc_html($autoelec_diag); ?></div>
-      <p class="ael-price-box__body">We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job. Repair costs depend on the fault and parts required — we provide an estimate before proceeding. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
+      <p class="ael-price-box__body">We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job. Repair costs depend on the fault and parts required. We provide an estimate before proceeding. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
     </div>
   </div>
 </section>
 
 <!-- 6. ENQUIRY — immediately after pricing -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="ael-sec ael-sec--dark" id="enquire">
   <div class="ael-sec__inner">
     <div class="ael-enquiry">
@@ -331,7 +331,7 @@ body.page-template-template-auto-electrical-location{overflow-x:hidden;-webkit-t
 <section class="ael-sec ael-sec--white">
   <div class="ael-sec__inner">
     <span class="ael-sec__eyebrow">FAQ</span>
-    <h2 class="ael-sec__h2">Auto Electrical — <?php echo esc_html($suburb_name); ?> Questions</h2>
+    <h2 class="ael-sec__h2">Auto Electrical <?php echo esc_html($suburb_name); ?> Questions</h2>
     <div class="ael-faq">
       <?php foreach ($faqs as $i => $faq) : ?>
       <div class="ael-faq__item<?php echo $i===0?' ael-faq__item--open':''; ?>">

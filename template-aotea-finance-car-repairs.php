@@ -37,7 +37,7 @@ $years_trading = date('Y') - intval($established);
 $faqs = [
     [
         'q' => 'Can I use Aotea Finance for any repair at Tony Allen Auto Service?',
-        'a' => 'Yes. Aotea Finance can be used for the full range of repairs and servicing at Tony Allen Auto Service — WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, and more. Your approved finance amount applies.',
+        'a' => 'Yes. Aotea Finance can be used for the full range of repairs and servicing at Tony Allen Auto Service: WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension and more. Your approved finance amount applies.',
     ],
     [
         'q' => 'How do I apply for Aotea Finance?',
@@ -45,7 +45,7 @@ $faqs = [
     ],
     [
         'q' => 'Is Aotea Finance interest-free?',
-        'a' => 'No. Aotea Finance is a personal loan product — interest applies to the loan amount. The advantage is fixed repayments over a set term, so you always know exactly what you\'ll pay. There are no variable rates or hidden fees.',
+        'a' => 'No. Aotea Finance is a personal loan product, so interest applies to the loan amount. The advantage is fixed repayments over a set term, so you always know exactly what you\'ll pay. There are no variable rates or hidden fees.',
     ],
     [
         'q' => 'How quickly is Aotea Finance approved?',
@@ -53,7 +53,7 @@ $faqs = [
     ],
     [
         'q' => 'What if I\'ve been declined for finance elsewhere?',
-        'a' => 'Aotea Finance considers all financial situations — including those who have been declined by other lenders. They are a NZ-owned lender focused on helping New Zealanders get back on the road. It\'s worth applying.',
+        'a' => 'Aotea Finance considers all financial situations, including people who have been declined by other lenders. They are a NZ-owned lender focused on helping New Zealanders get back on the road. It\'s worth applying.',
     ],
     [
         'q' => 'Do I need to arrange Aotea Finance before coming to TAAS?',
@@ -702,13 +702,13 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <section class="taas-hero" aria-label="Page hero">
     <div>
-        <span class="taas-hero__eyebrow">Aotea Finance at TAAS — Est. <?php echo esc_html($established); ?></span>
+        <span class="taas-hero__eyebrow">Aotea Finance at TAAS · Est. <?php echo esc_html($established); ?></span>
 
         <h1>Car Repairs &amp; Servicing.<br>
         <span>Aotea Finance Available.</span></h1>
 
         <p class="taas-hero__sub">
-            Tony Allen Auto Service works with Aotea Finance — a New Zealand-owned car repair finance option. Fixed repayments, fast approval, no surprises. Available for all makes and models.
+            Tony Allen Auto Service works with Aotea Finance, a New Zealand-owned car repair finance option. Fixed repayments, fast approval, no surprises. Available for all makes and models.
         </p>
 
         <div class="taas-hero__ctas">
@@ -778,30 +778,30 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">How It Works</span>
         <h2 class="taas-section__title" id="how-heading">Apply Online. <span>Get Your Car Sorted.</span></h2>
-        <p class="taas-section__sub">Aotea Finance lets you spread the cost of car repairs over time with fixed repayments. Apply online before your visit — approval is fast and the process is straightforward.</p>
+        <p class="taas-section__sub">Aotea Finance lets you spread the cost of car repairs over time with fixed repayments. Apply online before your visit. Approval is fast and the process is straightforward.</p>
 
         <div class="taas-steps">
             <div class="taas-step">
                 <div class="taas-step__num">01</div>
                 <div class="taas-step__title">Book Your Vehicle In</div>
-                <p class="taas-step__text">Call us on <?php echo esc_html($phone_free); ?> or book online. Let us know you'd like to pay with Afterpay.</p>
+                <p class="taas-step__text">Call us on <?php echo esc_html($phone_free); ?> or book online. Let us know you'd like to pay with Aotea Finance.</p>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">02</div>
                 <div class="taas-step__title">We Complete the Work</div>
-                <p class="taas-step__text">Our technicians carry out the repair or service. We call before starting any additional work.</p>
+                <p class="taas-step__text">Our technicians carry out the repair or service. If anything changes once we're into the job, we'll contact you before going further.</p>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">03</div>
-                <div class="taas-step__title">Pay Your First Instalment</div>
-                <p class="taas-step__text">At checkout you pay 25% of the total. Afterpay pays us the full amount immediately.</p>
-                <span class="taas-step__badge">25% due today</span>
+                <div class="taas-step__title">Finance Approved</div>
+                <p class="taas-step__text">Once Aotea Finance approves your application, they pay us and you collect your vehicle.</p>
+                <span class="taas-step__badge">Subject to approval</span>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">04</div>
-                <div class="taas-step__title">Three More Payments</div>
-                <p class="taas-step__text">The remaining three equal instalments are automatically deducted every two weeks — always interest-free.</p>
-                <span class="taas-step__badge">Every 2 weeks</span>
+                <div class="taas-step__title">Fixed Repayments</div>
+                <p class="taas-step__text">Repay Aotea Finance in fixed instalments over your agreed term. Interest applies; see Aotea Finance for terms.</p>
+                <span class="taas-step__badge">Fixed repayments</span>
             </div>
         </div>
     </div>
@@ -847,19 +847,19 @@ get_header();
 
                 <div class="taas-info-box" style="margin-top:24px;">
                     <strong>All Circumstances Considered</strong><br>
-                    Aotea Finance considers all financial situations. If you've been declined elsewhere, it's worth applying — they're a NZ-owned lender focused on helping New Zealanders.
+                    Aotea Finance considers all financial situations. If you've been declined elsewhere, it's worth applying. They're a NZ-owned lender focused on helping New Zealanders.
                 </div>
             </div>
 
             <div>
                 <h3 style="color:var(--taas-white);font-family:'Inter',Arial,sans-serif;font-size:18px;font-weight:700;margin-bottom:8px;">Fees &amp; repayment terms</h3>
                 <ul class="taas-checklist">
-                    <li>Interest applies — this is a personal loan, not interest-free credit</li>
-                    <li>Fixed repayments over your agreed term — no surprises</li>
-                    <li>No variable rates — you know exactly what you'll pay each week</li>
-                    <li>Early repayment options available — check your loan terms</li>
-                    <li>Establishment fee may apply — confirmed at approval</li>
-                    <li>No hidden fees — all costs disclosed upfront</li>
+                    <li>Interest applies. This is a personal loan, not interest-free credit</li>
+                    <li>Fixed repayments over your agreed term, so no surprises</li>
+                    <li>No variable rates. You know exactly what you'll pay each week</li>
+                    <li>Early repayment options available (check your loan terms)</li>
+                    <li>Establishment fee may apply, confirmed at approval</li>
+                    <li>No hidden fees. All costs disclosed upfront</li>
                 </ul>
 
                 <div class="taas-info-box" style="margin-top:24px;">
@@ -901,7 +901,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>Afterpay</td>
-                        <td><span class="taas-tick">✓ Always — 4 payments</span></td>
+                        <td><span class="taas-tick">✓ Always, 4 payments</span></td>
                         <td>4 × fortnightly</td>
                         <td>Varies</td>
                         <td>Afterpay app</td>
@@ -934,7 +934,7 @@ get_header();
 <section class="taas-section" aria-labelledby="faq-heading">
     <div class="taas-container">
         <span class="taas-label">Common Questions</span>
-        <h2 class="taas-section__title" id="faq-heading">Aotea Finance at TAAS — <span>Frequently Asked</span></h2>
+        <h2 class="taas-section__title" id="faq-heading">Aotea Finance at TAAS: <span>Frequently Asked</span></h2>
 
         <ul class="taas-faq" role="list" style="margin-top:32px;">
             <?php foreach ($faqs as $i => $faq): ?>
@@ -1032,7 +1032,7 @@ get_header();
 
                     if ( $f_name && $f_phone && $f_msg ) {
                         $to      = $email; // enquiries@taas.co.nz
-                        $subject = 'Afterpay Finance Enquiry — ' . $f_name;
+                        $subject = 'Aotea Finance Enquiry: ' . $f_name;
                         $body    = "Name: {$f_name}\nPhone: {$f_phone}\nEmail: {$f_email}\nVehicle: {$f_vehicle}\n\nMessage:\n{$f_msg}\n\n(Sent via Aotea Finance page)";
                         $headers = ['Content-Type: text/plain; charset=UTF-8'];
                         if ( $f_email ) {
@@ -1055,7 +1055,7 @@ get_header();
                     <div style="background:var(--taas-black);border:1px solid #2a2a2a;border-top:4px solid var(--taas-yellow);border-radius:var(--taas-radius);padding:36px;text-align:center;">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--taas-yellow)" stroke-width="2" style="margin-bottom:16px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         <h3 style="color:var(--taas-white);font-size:20px;margin-bottom:10px;">Message Sent</h3>
-                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks — we'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
+                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks, we'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
                     </div>
                 <?php else: ?>
                 <!-- Native fallback form — used when TAAS_CF7_FINANCE is not set -->
@@ -1102,7 +1102,7 @@ get_header();
                         <p style="margin-bottom:20px;">
                             <label for="taas_msg" style="display:block;color:#999;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">What do you need done? *</label>
                             <textarea id="taas_msg" name="taas_msg" required rows="4"
-                                      placeholder="e.g. Engine repair needed — approved with Aotea Finance"
+                                      placeholder="e.g. Engine repair needed, approved with Aotea Finance"
                                       style="width:100%;background:#1c1c1c;color:#fff;border:1px solid #383838;border-radius:5px;padding:14px 18px;font-size:15px;box-sizing:border-box;resize:vertical;min-height:110px;"><?php echo esc_textarea($_POST['taas_msg'] ?? ''); ?></textarea>
                         </p>
                         <button type="submit" class="taas-btn taas-btn--primary" style="width:100%;justify-content:center;">
@@ -1123,7 +1123,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">Google Reviews</span>
         <h2 class="taas-section__title" id="reviews-heading">
-            Trusted by South Auckland Drivers — <span><?php echo esc_html($years_trading); ?> Years</span>
+            Trusted by South Auckland Drivers for <span><?php echo esc_html($years_trading); ?> Years</span>
         </h2>
 
         <div class="taas-reviews-header">
@@ -1139,7 +1139,7 @@ get_header();
         <?php else: ?>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;">
             <div style="background:var(--taas-black);border:1px solid #252525;border-top:4px solid var(--taas-yellow);border-radius:var(--taas-radius);padding:28px;">
-                <p style="color:#fff;font-size:18px;font-weight:700;margin-bottom:10px;">Used Afterpay with us recently?</p>
+                <p style="color:#fff;font-size:18px;font-weight:700;margin-bottom:10px;">Used Aotea Finance with us recently?</p>
                 <p style="color:#bbb;font-size:16px;line-height:1.7;margin-bottom:20px;">Your feedback helps South Auckland drivers find a trustworthy workshop. Takes less than a minute.</p>
                 <a href="https://www.google.com/maps/place/Tony+Allen+Auto+Service/@-36.993,174.879,15z" target="_blank" rel="noopener noreferrer"
                    style="display:inline-flex;align-items:center;gap:10px;background:var(--taas-yellow);color:#111;font-weight:700;font-size:16px;padding:13px 24px;border-radius:var(--taas-radius);text-decoration:none;">
@@ -1213,7 +1213,7 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <div class="taas-disclaimer">
     <div class="taas-container">
-        Aotea Finance is a NZ-owned personal finance provider. Interest applies to all loans. Fixed repayments over your agreed term. Approval subject to assessment. Establishment fee may apply. Tony Allen Auto Service Ltd is an independent merchant — for loan enquiries contact Aotea Finance directly at aoteafinance.co.nz.
+        Aotea Finance is a NZ-owned personal finance provider. Interest applies to all loans. Fixed repayments over your agreed term. Approval subject to assessment. Establishment fee may apply. Tony Allen Auto Service Ltd is an independent merchant. For loan enquiries contact Aotea Finance directly at aoteafinance.co.nz.
         See <a href="https://aoteafinance.co.nz/contact/" target="_blank" rel="noopener noreferrer">aoteafinance.co.nz</a> for full details.
     </div>
 </div>

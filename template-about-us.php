@@ -458,7 +458,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
           Workshop.
         </h1>
         <p class="au-hero__intro">
-          Family-owned since October <?php echo esc_html($established); ?>. MTA Assured. NZTA Authorised. Seven specialist divisions — all under one roof at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a>. A family business that's been keeping South Auckland moving for over <?php echo esc_html($years); ?> years.
+          Family-owned since October <?php echo esc_html($established); ?>. MTA Assured. NZTA Authorised. Seven specialist divisions, all under one roof at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a>. A family business that's been keeping South Auckland moving for over <?php echo esc_html($years); ?> years.
         </p>
         <div class="au-hero__ctas">
           <a href="<?php echo esc_url($site_url . '/contact-us/'); ?>" class="au-btn au-btn--yellow">Book a Service</a>
@@ -516,9 +516,9 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         <span class="au-eye au-eye--muted">Our Story</span>
         <h2 class="au-story__h2" id="au-story-head"><?php echo esc_html($years); ?> years in.<br>Still building.</h2>
         <div class="au-story__body">
-          <p>Tony Allen Auto Service has been at 139 Cavendish Drive since October <?php echo esc_html($established); ?>. Mike and Dean Allen run the business together with seven specialist divisions operating under one roof — servicing and repairs, brakes and clutch, tyres, auto electrical and air conditioning, European vehicles, fleet, and batteries. A customer database that's passed <?php echo esc_html($customers); ?> contacts. And a workshop that's investing in capability, equipment &amp; culture.</p>
+          <p>Tony Allen Auto Service has been at 139 Cavendish Drive since October <?php echo esc_html($established); ?>. Mike and Dean Allen run the business together with seven specialist divisions operating under one roof: servicing and repairs, brakes and clutch, tyres, auto electrical and air conditioning, European vehicles, fleet, and batteries. A customer database that's passed <?php echo esc_html($customers); ?> contacts. And a workshop that's investing in capability, equipment &amp; culture.</p>
           <p>Two technicians are fully trained in EV and hybrid high-voltage systems, with two more in training. Our diagnostic equipment covers European, Japanese, and Korean platforms at factory level. We're an approved repairer for five MBI (mechanical breakdown insurance) providers, a direct supplier to SG Fleet and three other fleet management companies, and we accept four consumer finance options so cost doesn't have to be a barrier to safe, reliable transport.</p>
-          <p>South Auckland runs on vehicles — logistics, trades, families getting to work and school. We take that seriously. The workshop the Allen Family built is the foundation. What Mike, Dean, and the team are building on it is a full-service automotive operation designed for the next decade &amp; beyond.</p>
+          <p>South Auckland runs on vehicles: logistics, trades, families getting to work and school. We take that seriously. The workshop the Allen Family built is the foundation. What Mike, Dean, and the team are building on it is a full-service automotive operation designed for the next decade &amp; beyond.</p>
         </div>
       </div>
 
@@ -541,7 +541,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
     <div class="au-section-head">
       <span class="au-eye au-eye--light">Why Choose Independent</span>
       <h2 class="au-section-h2" id="au-indep-head">What you get when you choose an independent workshop.</h2>
-      <p class="au-section-intro">Franchised chains operate on targets. Dealers operate on margins. An independent workshop operates on reputation — because reputation is all it has.</p>
+      <p class="au-section-intro">Franchised chains operate on targets. Dealers operate on margins. An independent workshop operates on reputation, because reputation is all it has.</p>
     </div>
     <div class="au-reason-grid">
       <div class="au-reason-card">
@@ -557,7 +557,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
       <div class="au-reason-card">
         <div class="au-reason-card__num">03</div>
         <div class="au-reason-card__title">Independent Doesn't Mean Unsophisticated</div>
-        <p class="au-reason-card__body">TAAS runs factory-level diagnostic equipment, services European vehicles that many independent workshops turn away, and holds approved repairer status with five MBI insurance providers. The difference from a franchise is ownership and accountability — not capability.</p>
+        <p class="au-reason-card__body">TAAS runs factory-level diagnostic equipment, services European vehicles that many independent workshops turn away, and holds approved repairer status with five MBI insurance providers. The difference from a franchise is ownership and accountability, not capability.</p>
       </div>
     </div>
   </div>
@@ -570,7 +570,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
     <div class="au-section-head">
       <span class="au-eye au-eye--dark">What We Do</span>
       <h2 class="au-section-h2 au-section-h2--white" id="au-div-head">Seven specialist divisions.<br>One address.</h2>
-      <p class="au-section-intro" style="color:#888;"><?php echo esc_html($divisions); ?> — all under one roof. Each division is staffed by people who focus on that one thing, every day.</p>
+      <p class="au-section-intro" style="color:#888;"><?php echo esc_html($divisions); ?>, all under one roof. Each division is staffed by people who focus on that one thing, every day.</p>
     </div>
     <div class="au-div-grid">
 
@@ -598,7 +598,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
       <a href="<?php echo esc_url($site_url . '/tyre-centre/'); ?>" class="au-div-card">
         <span class="au-div-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2"/><path d="M9 3v2"/><path d="m9 12 2 2 4-4"/></svg></span>
         <div class="au-div-card__name">TAAS Tyre &amp; WOF Centre</div>
-        <p class="au-div-card__desc">NZTA Authorised WOF station — <?php echo defined('TAAS_WOF_PRICE') ? esc_html(TAAS_WOF_PRICE) : '$80'; ?> fixed. Supply and fit tyres, balancing, alignment. Walk-ins welcome for tyres.</p>
+        <p class="au-div-card__desc">NZTA Authorised WOF station. <?php echo defined('TAAS_WOF_PRICE') ? esc_html(TAAS_WOF_PRICE) : '$80'; ?> fixed. Supply and fit tyres, balancing, alignment. Walk-ins welcome for tyres.</p>
         <span class="au-div-card__link">Tyre &amp; WOF Info →</span>
       </a>
 
@@ -626,7 +626,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
       <a href="<?php echo esc_url($site_url . '/services/'); ?>" class="au-div-card">
         <span class="au-div-card__icon" style="font-size:32px;color:#FFC800;font-family:'Inter',Arial,sans-serif;font-weight:900;">+</span>
         <div class="au-div-card__name">All Services</div>
-        <p class="au-div-card__desc">Air conditioning, cooling systems, cambelts, suspension, transmission, EV and hybrid, towing — full service list.</p>
+        <p class="au-div-card__desc">Air conditioning, cooling systems, cambelts, suspension, transmission, EV and hybrid, towing. Full service list.</p>
         <span class="au-div-card__link">View All →</span>
       </a>
 
@@ -648,18 +648,18 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
       <?php
       $team = [
         ['name'=>'Mike Allen',       'role'=>'Owner / Director',                              'bio'=>'Co-founded Tony Allen Auto Service in October 1985. Built the business from one workshop bay to South Auckland\'s largest independent workshop over four decades.'],
-        ['name'=>'Dean Allen',       'role'=>'Owner / General Manager',               'bio'=>'Joined TAAS in 2004 as an apprentice. Qualified technician, WOF inspector, Advanced Technician — Service Manager 2014, General Manager 2022.'],
+        ['name'=>'Dean Allen',       'role'=>'Owner / General Manager',               'bio'=>'Joined TAAS in 2004 as an apprentice. Qualified technician, WOF inspector, Advanced Technician. Service Manager 2014, General Manager 2022.'],
         ['name'=>'Selena',           'role'=>'Office Administration',                 'bio'=>'Part of the TAAS family behind the scenes for over 10 years. Selena looks after the administration side of the office, keeping the paperwork, systems and back office running smoothly so the team can focus on the cars.'],
         ['name'=>'Corey',            'role'=>'Service Manager',                       'bio'=>'Runs the service operation end-to-end. Customer-focused, detail-oriented, and the person making sure your vehicle moves through the workshop on time.'],
-        ['name'=>'Aneez',            'role'=>'Customer Service',                      'bio'=>'First point of contact for customers. Handles bookings, updates, and follow-ups — keeping communication clear from drop-off to collection.'],
+        ['name'=>'Aneez',            'role'=>'Customer Service',                      'bio'=>'First point of contact for customers. Handles bookings, updates, and follow-ups, keeping communication clear from drop-off to collection.'],
         ['name'=>'Tanzeel',          'role'=>'Workshop Foreman',                      'bio'=>'Keeps the workshop floor running efficiently. Coordinates workflow and holds the standard on job card completion and quality of work. NZTA WOF authority holder.'],
-        ['name'=>'Raj',              'role'=>'Lead Diagnostics &amp; Auto Electrical','bio'=>'TAAS diagnostics and auto electrical specialist. Fault diagnosis, electrical systems, alternators, wiring — fault confirmed before any parts are replaced. NZTA WOF authority holder.'],
+        ['name'=>'Raj',              'role'=>'Lead Diagnostics &amp; Auto Electrical','bio'=>'TAAS diagnostics and auto electrical specialist. Fault diagnosis, electrical systems, alternators, wiring. Fault confirmed before any parts are replaced. NZTA WOF authority holder.'],
         ['name'=>'Hayden',           'role'=>'Technician',                  'bio'=>'Four-year apprenticeship completed. Broad mechanical skill range across servicing, brakes, and general repairs. Also looks after our tyre shop.'],
-        ['name'=>'Mana',             'role'=>'Technician',                            'bio'=>'Strong problem-solving and attention to detail. Works across a wide range of mechanical services with a focus on getting it right first time. NZTA WOF authority holder.'],
+        ['name'=>'Mana',             'role'=>'Technician',                            'bio'=>'Strong problem-solving and attention to detail. Works across all kinds of mechanical services with a focus on getting it right first time. NZTA WOF authority holder.'],
         ['name'=>'Kiritnesh',        'role'=>'Technician',                            'bio'=>'Versatile technician working across a range of services, including our tyre shop. Developing his skills and a reliable part of the workshop team day to day.'],
-        ['name'=>'Lushen',           'role'=>'Technician',                            'bio'=>'Experienced technician originally from South Africa, with a comprehensive background in European vehicles. A strong addition to TAAS European, as well as general servicing and repairs.'],
+        ['name'=>'Lushen',           'role'=>'Technician',                            'bio'=>'Experienced technician originally from South Africa, with a strong background in European vehicles. A strong addition to TAAS European, as well as general servicing and repairs.'],
         ['name'=>'Tom',              'role'=>'Technician',                            'bio'=>'Seasoned technician with many years on the tools and NZTA WOF authority. Takes on the more involved mechanical jobs and brings a calm, experienced head to the workshop.'],
-        ['name'=>'Lincoln',          'role'=>'Apprentice Technician',                 'bio'=>'Progressing through his apprenticeship across the workshop and tyre shop under qualified supervision — part of TAAS\'s commitment to developing the next generation.'],
+        ['name'=>'Lincoln',          'role'=>'Apprentice Technician',                 'bio'=>'Progressing through his apprenticeship across the workshop and tyre shop under qualified supervision, as part of TAAS\'s work to train the next generation.'],
       ];
       foreach ($team as $member): ?>
       <div class="au-team-card">
@@ -714,9 +714,9 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         <span class="au-fleet__label">B2B Fleet Services</span>
         <h2 class="au-fleet__h2" id="au-fleet-head">Your workshop partner in South Auckland</h2>
         <div class="au-fleet__body">
-          <p>TAAS Fleet exists for one reason — businesses need a workshop they can rely on. Whether you run two utes or two hundred vehicles, we offer the same thing: consistent service, transparent pricing, and vehicles back on the road fast. If downtime costs you money, this is the workshop you want on your supplier list.</p>
-          <p>We work directly with businesses across South Auckland — trades companies, transport operators, logistics providers, and any business running light commercial vehicles. One point of contact, documented processes, and a workshop that understands commercial urgency.</p>
-          <p>If your vehicles are owned by a lease or fleet management company, we invoice them directly — matching their required format, reference codes, and authorisation process. We're already set up with several of New Zealand's largest fleet management companies.</p>
+          <p>TAAS Fleet exists for one reason: businesses need a workshop they can rely on. Two utes or two hundred vehicles, you get the same thing: consistent service, transparent pricing, and vehicles back on the road fast. If downtime costs you money, this is the workshop you want on your supplier list.</p>
+          <p>We work directly with businesses across South Auckland: trades companies, transport operators, logistics providers, and any business running light commercial vehicles. One point of contact, documented processes, and a workshop that understands commercial urgency.</p>
+          <p>If your vehicles are owned by a lease or fleet management company, we invoice them directly, matching their required format, reference codes, and authorisation process. We're already set up with several of New Zealand's largest fleet management companies.</p>
         </div>
         <div class="au-partners">
           <span class="au-partners__label">Lease &amp; fleet company relationships</span>
@@ -736,11 +736,11 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         </div>
         <div class="au-benefit">
           <div class="au-benefit__title">Lease Company Invoicing</div>
-          <p class="au-benefit__desc">If your vehicles are lease company owned, we invoice the fleet management company directly — matching their required format, reference codes, and authorisation process. No admin burden back on your team.</p>
+          <p class="au-benefit__desc">If your vehicles are lease company owned, we invoice the fleet management company directly, matching their required format, reference codes, and authorisation process. No admin burden back on your team.</p>
         </div>
         <div class="au-benefit">
           <div class="au-benefit__title">Scheduled Maintenance Windows</div>
-          <p class="au-benefit__desc">Fleet vehicles are booked into dedicated maintenance windows to keep them moving. A vehicle off the road is a cost — and we schedule accordingly.</p>
+          <p class="au-benefit__desc">Fleet vehicles are booked into dedicated maintenance windows to keep them moving. A vehicle off the road is a cost, and we schedule accordingly.</p>
         </div>
         <div class="au-benefit">
           <div class="au-benefit__title">Tyre &amp; Wheel Supply</div>
@@ -748,7 +748,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         </div>
         <div class="au-benefit">
           <div class="au-benefit__title">MBI Approved Repairer</div>
-          <p class="au-benefit__desc">Approved for Autosure, Assurant, Provident, Janssen and Autolife. MBI claims handled correctly and efficiently — first time, every time.</p>
+          <p class="au-benefit__desc">Approved for Autosure, Assurant, Provident, Janssen and Autolife. MBI claims handled correctly and efficiently, first time.</p>
         </div>
       </div>
     </div>
@@ -786,7 +786,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
 
 
 <!-- ══ CTA BAND ════════════════════════════════════════════════════════════════ -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:1140px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="au-cta" aria-label="Book a service">
   <div class="au-w">
     <div class="au-cta__inner">
@@ -807,13 +807,13 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
       <div>
         <div class="au-awards__label">Industry recognition</div>
         <div class="au-awards__list">
-          <span class="au-award-pill">🏆 MTA Best General Repairer — South Auckland 2010</span>
+          <span class="au-award-pill">🏆 MTA Best General Repairer, South Auckland 2010</span>
           <span class="au-award-pill">MTA Awards Finalist 2012</span>
           <span class="au-award-pill">MTA Awards Finalist 2014</span>
           <span class="au-award-pill">2 Degrees Business Awards Nominee 2026</span>
         </div>
       </div>
-      <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured — Motor Trade Association" style="height:70px;width:auto;" loading="lazy">
+      <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured, Motor Trade Association" style="height:70px;width:auto;" loading="lazy">
     </div>
   </div>
 </section>

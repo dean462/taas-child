@@ -31,13 +31,13 @@ $faqs = [
     ['q' => 'How much do brake pads cost near ' . $suburb_name . '?',
      'a' => 'Brake pad replacement prices vary by vehicle make and model. Call us on ' . TAAS_PHONE_LOCAL . ' with your registration number for an estimate before you come in from ' . $suburb_name . '.'],
     ['q' => 'Do you do disc skimming near ' . $suburb_name . '?',
-     'a' => 'Yes. We carry out disc skimming in-house on our own brake lathe — no outsourcing. This means same-day turnaround in most cases. Discs are measured before we recommend skimming or replacement.'],
+     'a' => 'Yes. We carry out disc skimming in-house on our own brake lathe, with no outsourcing. This means same-day turnaround in most cases. Discs are measured before we recommend skimming or replacement.'],
     ['q' => 'How do I know if my brakes need replacing?',
      'a' => 'Common signs include squealing or grinding noise, a pulsating or spongy brake pedal, the vehicle pulling to one side under braking, longer stopping distances, or a brake warning light on the dash. Any of these warrant an inspection.'],
     ['q' => 'Do you repair ABS brakes near ' . $suburb_name . '?',
      'a' => 'Yes. We diagnose and repair ABS faults including wheel speed sensors, ABS pump and modulator. We use factory-spec diagnostic equipment to read fault codes before recommending any work.'],
     ['q' => 'Where are you relative to ' . $suburb_name . '?',
-     'a' => 'We are at 139 Cavendish Drive, Manukau — ' . $distance_note . '. Open Monday to Friday 7:30am–5:00pm.'],
+     'a' => 'We are at 139 Cavendish Drive, Manukau, ' . $distance_note . '. Open Monday to Friday 7:30am–5:00pm.'],
 ];
 
 array_unshift($faqs, taas_suburb_coverage_faq($suburb_slug, $suburb_name, 'brake or clutch work', TAAS_PHONE_LOCAL));
@@ -49,7 +49,7 @@ $schema_faqs = array_map(fn($f) => [
 
 $schema = [
     ['@context'=>'https://schema.org','@type'=>['AutoRepair','LocalBusiness'],
-     'name' => 'Manukau Brake & Clutch — Brake Repairs ' . $suburb_name,
+     'name' => 'Manukau Brake & Clutch: Brake Repairs ' . $suburb_name,
      'url'  => $page_url,
      'telephone' => [TAAS_PHONE_LOCAL, TAAS_PHONE_FREE], 'email' => TAAS_EMAIL,
      'address' => ['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive',
@@ -164,7 +164,7 @@ $suburbs_all = [
     <div>
       <span class="mbcl-hero__eyebrow">Manukau Brake &amp; Clutch</span>
       <h1>Brake Repairs<br><span><?php echo esc_html($suburb_name); ?></span></h1>
-      <p class="mbcl-hero__sub">Manukau Brake &amp; Clutch at 139 Cavendish Drive — <?php echo esc_html($distance_note); ?>. Brake pads, discs, disc skimming, drum brakes, calipers, ABS repair and clutch work. All makes and models.</p>
+      <p class="mbcl-hero__sub">Manukau Brake &amp; Clutch at 139 Cavendish Drive, <?php echo esc_html($distance_note); ?>. Brake pads, discs, disc skimming, drum brakes, calipers, ABS repair and clutch work. All makes and models.</p>
       <div class="mbcl-hero__ctas">
         <a href="#enquire" class="taas-btn taas-btn--primary">Book a Brake Check</a>
         <a href="tel:0800100876" class="taas-btn taas-btn--outline">0800 100 876</a>
@@ -173,9 +173,9 @@ $suburbs_all = [
     <div class="mbcl-sidebar">
       <div class="mbcl-sidebar__title">Brake Services</div>
       <ul class="mbcl-sidebar__list">
-        <li>Brake pads — all makes</li>
+        <li>Brake pads, all makes</li>
         <li>Brake disc replacement</li>
-        <li>Disc skimming — in-house lathe</li>
+        <li>Disc skimming on our in-house lathe</li>
         <li>Drum brakes &amp; shoes</li>
         <li>Caliper repair</li>
         <li>ABS brake repair</li>
@@ -202,8 +202,8 @@ $suburbs_all = [
 <section class="mbcl-section mbcl-section--white">
   <div class="mbcl-section__inner">
     <span class="mbcl-section__eyebrow">Brake Repairs Near <?php echo esc_html($suburb_name); ?></span>
-    <h2 class="mbcl-section__heading">Manukau Brake &amp; Clutch — Serving <?php echo esc_html($suburb_name); ?></h2>
-    <p class="mbcl-section__body">Manukau Brake &amp; Clutch operates from 139 Cavendish Drive, Manukau — <?php echo esc_html($distance_note); ?>. We are a specialist brake and clutch division with an in-house brake lathe. This means disc skimming is done on site, same day in most cases — no outsourcing, no delay, no markup from an external machining shop.</p>
+    <h2 class="mbcl-section__heading">Manukau Brake &amp; Clutch Serving <?php echo esc_html($suburb_name); ?></h2>
+    <p class="mbcl-section__body">Manukau Brake &amp; Clutch operates from 139 Cavendish Drive, Manukau, <?php echo esc_html($distance_note); ?>. We are a specialist brake and clutch division with an in-house brake lathe. This means disc skimming is done on site, same day in most cases. No outsourcing, no delay and no markup from an external machining shop.</p>
     <p class="mbcl-section__body">We inspect before we give you an estimate. New pads on worn or uneven discs is a false economy that costs more in the long run.</p>
   </div>
 </section>
@@ -228,11 +228,11 @@ $suburbs_all = [
 <section class="mbcl-section mbcl-section--white">
   <div class="mbcl-section__inner">
     <span class="mbcl-section__eyebrow">South Auckland</span>
-    <h2 class="mbcl-section__heading">Brake Repairs — Other Areas</h2>
+    <h2 class="mbcl-section__heading">Brake Repairs in Other Areas</h2>
     <ul class="mbcl-pills">
       <?php foreach ($suburbs_all as $s):
         if ($s['slug'] === $suburb_slug): ?>
-      <li><span aria-current="page" style="display:inline-block;padding:8px 14px;border-radius:4px;background:var(--taas-yellow);color:var(--taas-dark);font-weight:700;">Brakes <?php echo esc_html($s['label']); ?> — you're here</span></li>
+      <li><span aria-current="page" style="display:inline-block;padding:8px 14px;border-radius:4px;background:var(--taas-yellow);color:var(--taas-dark);font-weight:700;">Brakes <?php echo esc_html($s['label']); ?> (you're here)</span></li>
       <?php else: ?>
       <li><a href="<?php echo esc_url($site_url . '/brakes-' . $s['slug'] . '/'); ?>">
         Brakes <?php echo esc_html($s['label']); ?>
@@ -245,7 +245,7 @@ $suburbs_all = [
 <section class="mbcl-section mbcl-section--grey">
   <div class="mbcl-section__inner">
     <span class="mbcl-section__eyebrow">FAQ</span>
-    <h2 class="mbcl-section__heading">Questions — Brake Repairs Near <?php echo esc_html($suburb_name); ?></h2>
+    <h2 class="mbcl-section__heading">Questions: Brake Repairs Near <?php echo esc_html($suburb_name); ?></h2>
     <div class="mbcl-faq__list">
       <?php foreach ($faqs as $f): ?>
       <div class="mbcl-faq__item">

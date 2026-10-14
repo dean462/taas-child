@@ -184,7 +184,7 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
 <!-- 1. HERO -->
 <section class="fl-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="fl-hero__inner">
   <div>
-    <span class="fl-hero__eyebrow">Fleet Servicing — South Auckland</span>
+    <span class="fl-hero__eyebrow">South Auckland Fleet Servicing</span>
     <h1>Fleet Vehicle<br><span>Servicing &amp; Repairs</span></h1>
     <p class="fl-hero__sub">Approved supplier to New Zealand's leading fleet management companies. Direct billing available. South Auckland's most capable independent workshop. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
     <div class="fl-hero__tags">
@@ -193,7 +193,7 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
       <?php endforeach; ?>
     </div>
     <div class="fl-hero__ctas">
-      <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--primary">Call <?php echo esc_html($phone_free); ?> — Ask for Dean</a>
+      <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--primary">Call <?php echo esc_html($phone_free); ?> and ask for Dean</a>
       <a href="mailto:dean@taas.co.nz?subject=Fleet Account Enquiry" class="taas-btn taas-btn--outline">Email Dean</a>
     </div>
   </div>
@@ -211,7 +211,7 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
 </div></section>
 
 <!-- 2. TRUST STRIP -->
-<div class="fl-phonestrip"><div class="fl-phonestrip__inner"><span class="fl-phonestrip__label">Fleet enquiries — ask for Dean</span><a href="tel:<?php echo esc_attr($phone_tel); ?>" class="fl-phonestrip__num"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><?php echo esc_html($phone_free); ?></a></div></div>
+<div class="fl-phonestrip"><div class="fl-phonestrip__inner"><span class="fl-phonestrip__label">Fleet enquiries: ask for Dean</span><a href="tel:<?php echo esc_attr($phone_tel); ?>" class="fl-phonestrip__num"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><?php echo esc_html($phone_free); ?></a></div></div>
 <div class="fl-trust"><div class="fl-trust__inner">
   <div class="fl-trust__item">MTA Assured</div>
   <div class="fl-trust__item">NZTA Authorised</div>
@@ -226,26 +226,26 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
     <div>
       <span class="fl-sec__eyebrow">Approved Supplier</span>
       <h2 class="fl-sec__h2">We Work With NZ's Leading Fleet Companies</h2>
-      <p style="font-size:16px;color:var(--taas-mid,#666666);line-height:1.75;margin-bottom:28px;">Tony Allen Auto Service invoices companies direct — no driver reimbursements, no upfront payment. We work directly with businesses, as well as with the major fleet management companies listed below.</p>
+      <p style="font-size:16px;color:var(--taas-mid,#666666);line-height:1.75;margin-bottom:28px;">Tony Allen Auto Service invoices companies direct. No driver reimbursements, no upfront payment. We work directly with businesses, as well as with the major fleet management companies listed below.</p>
       <div class="fl-suppliers">
         <?php foreach ([
-          ['name'=>'SG Fleet NZ','note'=>'Approved supplier — invoiced direct'],
-          ['name'=>'ORIX NZ','note'=>'Approved supplier — invoiced direct'],
-          ['name'=>'Custom Fleet','note'=>'Approved supplier — invoiced direct'],
-          ['name'=>'Fleet Partners','note'=>'Approved supplier — invoiced direct'],
+          ['name'=>'SG Fleet NZ','note'=>'Approved supplier, invoiced direct'],
+          ['name'=>'ORIX NZ','note'=>'Approved supplier, invoiced direct'],
+          ['name'=>'Custom Fleet','note'=>'Approved supplier, invoiced direct'],
+          ['name'=>'Fleet Partners','note'=>'Approved supplier, invoiced direct'],
         ] as $s) : ?>
         <div class="fl-supplier"><div class="fl-supplier__name"><?php echo esc_html($s['name']); ?></div><div class="fl-supplier__note"><?php echo esc_html($s['note']); ?></div></div>
         <?php endforeach; ?>
       </div>
-      <p style="margin-top:16px;font-size:14px;color:var(--taas-mid,#666666);">Fleet management company not listed? We work with others too. We also invoice businesses direct — no intermediary required. Call Dean to discuss.</p>
+      <p style="margin-top:16px;font-size:14px;color:var(--taas-mid,#666666);">Fleet management company not listed? We work with others too. We also invoice businesses direct. No intermediary required. Call Dean to discuss.</p>
     </div>
     <div class="fl-billing">
-      <div class="fl-billing__title">Direct Billing — How It Works</div>
+      <div class="fl-billing__title">How Direct Billing Works</div>
       <ul class="fl-billing__list">
-        <li>Drivers do not pay upfront — invoiced direct to your company or fleet management company</li>
+        <li>Drivers do not pay upfront. We invoice your company or fleet management company direct</li>
         <li>Invoices reference your job number or purchase order</li>
         <li>Scope changes communicated before any additional work</li>
-        <li>No surprise invoices — you always know what is being done</li>
+        <li>No surprise invoices. You always know what is being done</li>
         <li>Service history reporting available per vehicle on request</li>
       </ul>
       <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--primary" style="width:100%;justify-content:center;">Call Dean to Set Up an Account</a>
@@ -259,13 +259,13 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
   <h2 class="fl-sec__h2">What Fleet Managers Ask First</h2>
   <div class="fl-qa">
     <?php foreach ([
-      ['q'=>'Direct billing?','a'=>'Yes — to your company or fleet management company.'],
+      ['q'=>'Direct billing?','a'=>'Yes, to your company or fleet management company.'],
       ['q'=>'Vehicle types?','a'=>'Cars, vans, SUVs, utes, light trucks to 6.5 tonne.'],
-      ['q'=>'Turnaround?','a'=>'Most servicing and general repairs — same day where possible.'],
+      ['q'=>'Turnaround?','a'=>'Same day where possible for most servicing and general repairs.'],
       ['q'=>'After-hours drop-off?','a'=>'Yes. Key drop box available outside hours.'],
-      ['q'=>'Pickup and delivery?','a'=>'Available — call Dean to discuss.'],
+      ['q'=>'Pickup and delivery?','a'=>'Available. Call Dean to discuss.'],
       ['q'=>'WOF on-site?','a'=>'Yes. NZTA Authorised.'],
-      ['q'=>'European fleet vehicles?','a'=>'Yes. Factory-spec diagnostics — all European makes.'],
+      ['q'=>'European fleet vehicles?','a'=>'Yes. Factory-spec diagnostics for all European makes.'],
       ['q'=>'How do we start?','a'=>'Call Dean on '.$phone_free.'. One conversation.'],
     ] as $qa) : ?>
     <div class="fl-qa__item"><div class="fl-qa__q"><?php echo esc_html($qa['q']); ?></div><div class="fl-qa__a"><?php echo wp_kses_post($qa['a']); ?></div></div>
@@ -281,7 +281,7 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
   <div class="fl-steps">
     <?php foreach ([
       ['title'=>'Call Dean','body'=>'Call '.$phone_free.' and speak to Dean directly. Fleet size, vehicle types, billing arrangements. No forms, no delays.'],
-      ['title'=>'Account Set Up','body'=>'Billing arrangements confirmed — invoicing your company direct or through your fleet management company. Dean works through the details.'],
+      ['title'=>'Account Set Up','body'=>'Billing arrangements confirmed, invoicing your company direct or through your fleet management company. Dean works through the details.'],
       ['title'=>'Book Vehicles','body'=>'Book by phone or have drivers call us directly. Key drop box for after-hours drop-off. Servicing and general repairs completed same day where possible.'],
       ['title'=>'Direct Invoice','body'=>'Invoice sent directly to your fleet account. We call you if anything changes in scope before proceeding.'],
     ] as $step) : ?>
@@ -293,15 +293,15 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
 <!-- 6. CAPABILITY -->
 <section class="fl-sec fl-sec--grey"><div class="fl-sec__inner">
   <span class="fl-sec__eyebrow">Capability</span>
-  <h2 class="fl-sec__h2">What We Service — Seven Specialist Divisions</h2>
-  <p class="fl-sec__sub">All services carried out in-house at 139 Cavendish Drive, Manukau. One workshop — one invoice — one point of contact.</p>
+  <h2 class="fl-sec__h2">What We Service: Seven Specialist Divisions</h2>
+  <p class="fl-sec__sub">All services carried out in-house at 139 Cavendish Drive, Manukau. One workshop, one invoice, one point of contact.</p>
   <div class="fl-svc-grid">
     <div><h3>Vehicle Types</h3><ul class="fl-svc-list">
-      <?php foreach (['Passenger vehicles — cars, hatchbacks, sedans','SUVs and 4WDs','Vans and people movers','Utes — single and double cab','Light trucks — up to 6.5 tonne','European fleet vehicles','Hybrid and EV fleet vehicles'] as $v) : ?>
+      <?php foreach (['Passenger vehicles: cars, hatchbacks, sedans','SUVs and 4WDs','Vans and people movers','Utes, single and double cab','Light trucks up to 6.5 tonne','European fleet vehicles','Hybrid and EV fleet vehicles'] as $v) : ?>
       <li><?php echo esc_html($v); ?></li>
       <?php endforeach; ?></ul></div>
     <div><h3>Services</h3><ul class="fl-svc-list">
-      <?php foreach (['Warrant of Fitness — NZTA Authorised on-site','Scheduled servicing — all manufacturers','WOF failure repairs and recheck','Tyres, wheel alignment, and balancing','Brakes and clutch','Steering and suspension','Auto electrical and diagnostics','Cambelt and water pump','Cooling system repairs','Engine repairs','Air conditioning — regas, repair, diagnosis','Battery supply and fit'] as $s) : ?>
+      <?php foreach (['Warrant of Fitness, NZTA Authorised on-site','Scheduled servicing for all manufacturers','WOF failure repairs and recheck','Tyres, wheel alignment, and balancing','Brakes and clutch','Steering and suspension','Auto electrical and diagnostics','Cambelt and water pump','Cooling system repairs','Engine repairs','Air conditioning regas, repair and diagnosis','Battery supply and fit'] as $s) : ?>
       <li><?php echo esc_html($s); ?></li>
       <?php endforeach; ?></ul></div>
   </div>
@@ -310,31 +310,31 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
 <!-- 7. WHY SOUTH AUCKLAND -->
 <section class="fl-sec fl-sec--dark"><div class="fl-sec__inner">
   <span class="fl-sec__eyebrow">Why TAAS</span>
-  <h2 class="fl-sec__h2">South Auckland's Fleet Workshop — <?php echo esc_html($established); ?> to Today</h2>
+  <h2 class="fl-sec__h2">South Auckland's Fleet Workshop Since <?php echo esc_html($established); ?></h2>
   <p class="fl-sec__sub">Independent, established, and in the right location. 139 Cavendish Drive puts us at the centre of South Auckland's industrial and logistics hub.</p>
   <div class="fl-why">
     <div><ul class="fl-why__list">
       <?php foreach ([
-        'Wiri, Māngere, Ōtāhuhu, Manukau — South Auckland\'s fleet heartland, minutes from our workshop',
-        'Seven specialist divisions in one building — one supplier for everything',
-        'Family-owned since '.$established.' — same ownership, same address',
-        'MTA Assured and NZTA Authorised — independently verified standards',
-        'Dean Allen handles fleet accounts directly — no account managers, no layers',
-        'Active SG Fleet NZ supplier — already in their system',
+        'Wiri, Māngere, Ōtāhuhu and Manukau: South Auckland\'s fleet heartland, minutes from our workshop',
+        'Seven specialist divisions in one building, so one supplier for everything',
+        'Family-owned since '.$established.', with the same ownership at the same address',
+        'MTA Assured and NZTA Authorised: independently verified standards',
+        'Dean Allen handles fleet accounts directly. No account managers, no layers',
+        'Active SG Fleet NZ supplier, already in their system',
       ] as $pt) : ?>
       <li><?php echo esc_html($pt); ?></li>
       <?php endforeach; ?></ul></div>
     <div class="fl-why__card">
-      <div class="fl-why__card-title">Key Prospects in Our Area</div>
-      <p style="font-size:14px;color:#888;line-height:1.75;margin-bottom:20px;">These businesses operate significant fleets in our direct service area.</p>
+      <div class="fl-why__card-title">Fleets We Look After</div>
+      <p style="font-size:14px;color:#888;line-height:1.75;margin-bottom:20px;">Local business fleets across Wiri, Māngere, Manukau and South Auckland.</p>
       <?php foreach ([
-        'Wiri — Foodstuffs NI distribution','Wiri — Lineage Logistics',
-        'Māngere — Bluebird / PepsiCo','Māngere — Frucor Suntory',
-        'Manukau — Counties Manukau Health','South Auckland — SG Fleet active accounts',
+        'Cars and hatchbacks','Utes and vans',
+        'SUVs and 4WDs','Light trucks to 6.5 tonne',
+        'European fleet vehicles','Hybrid and EV fleet vehicles',
       ] as $p) : ?>
       <div class="fl-prospect"><?php echo esc_html($p); ?></div>
       <?php endforeach; ?>
-      <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--primary" style="width:100%;justify-content:center;margin-top:24px;">Call <?php echo esc_html($phone_free); ?> — Ask for Dean</a>
+      <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--primary" style="width:100%;justify-content:center;margin-top:24px;">Call <?php echo esc_html($phone_free); ?> and ask for Dean</a>
     </div>
   </div>
 </div></section>
@@ -351,8 +351,8 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
         <li style="color:var(--taas-body,#333333);">Direct billing to SG Fleet, ORIX, Custom Fleet, Fleet Partners</li>
         <li style="color:var(--taas-body,#333333);">Servicing and general repairs completed same day</li>
         <li style="color:var(--taas-body,#333333);">Key drop box for after-hours vehicle drop-off</li>
-        <li style="color:var(--taas-body,#333333);">All makes — light vehicles to 6.5 tonne</li>
-        <li style="color:var(--taas-body,#333333);">WOF on-site — NZTA Authorised</li>
+        <li style="color:var(--taas-body,#333333);">All makes, light vehicles to 6.5 tonne</li>
+        <li style="color:var(--taas-body,#333333);">On-site WOF, NZTA Authorised</li>
       </ul>
     </div>
     <div style="background:var(--taas-white,#FFFFFF);border-radius:var(--taas-radius,6px);padding:32px;border:1px solid var(--taas-border,#E8E8E4);">
@@ -371,7 +371,7 @@ body.page-template-template-fleet{overflow-x:hidden;-webkit-text-size-adjust:100
 <!-- 10. FAQ -->
 <section class="fl-sec fl-sec--grey"><div class="fl-sec__inner">
   <span class="fl-sec__eyebrow">FAQ</span>
-  <h2 class="fl-sec__h2">Fleet Servicing — Common Questions</h2>
+  <h2 class="fl-sec__h2">Fleet Servicing: Common Questions</h2>
   <div class="fl-faq">
     <?php foreach ($faqs as $i => $faq) : ?>
     <div class="fl-faq__item<?php echo $i===0?' fl-faq__item--open':''; ?>">

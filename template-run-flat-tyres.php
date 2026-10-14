@@ -27,19 +27,19 @@ $years_trading = date('Y') - intval($established);
 $faqs = [
     [
         'q' => 'What is a run-flat tyre?',
-        'a' => 'A run-flat tyre has reinforced sidewalls that allow it to continue supporting the vehicle\'s weight after a puncture — typically for up to 80km at reduced speed (usually 80km/h max). This means you can drive to a workshop without stopping to change a tyre by the roadside. Run-flat tyres are standard fitment on many BMW, MINI, and some Mercedes-Benz models.',
+        'a' => 'A run-flat tyre has reinforced sidewalls that allow it to continue supporting the vehicle\'s weight after a puncture, typically for up to 80km at reduced speed (usually 80km/h max). This means you can drive to a workshop without stopping to change a tyre by the roadside. Run-flat tyres are standard fitment on many BMW, MINI, and some Mercedes-Benz models.',
     ],
     [
         'q' => 'Can you repair a run-flat tyre after a puncture?',
-        'a' => 'In most cases, no. Run-flat tyres that have been driven on while flat — even for a short distance — typically cannot be safely repaired. The sidewall reinforcement can be permanently damaged without any visible external sign. Most manufacturers recommend replacing a run-flat tyre that has been driven on while flat. Bring it in and we\'ll assess it honestly.',
+        'a' => 'In most cases, no. Run-flat tyres that have been driven on while flat, even for a short distance, typically cannot be safely repaired. The sidewall reinforcement can be permanently damaged without any visible external sign. Most manufacturers recommend replacing a run-flat tyre that has been driven on while flat. Bring it in and we\'ll assess it honestly.',
     ],
     [
         'q' => 'Can I replace my run-flat tyres with regular tyres?',
-        'a' => 'Technically yes, but there are important considerations. Many vehicles fitted with run-flat tyres as standard don\'t carry a spare wheel — switching to regular tyres means you need to add a spare or run-flat kit. Some vehicles also have TPMS systems calibrated for run-flat behaviour. Call us on ' . $phone_local . ' with your vehicle details and we\'ll advise on your options.',
+        'a' => 'Technically yes, but there are important considerations. Many vehicles fitted with run-flat tyres as standard don\'t carry a spare wheel, so switching to regular tyres means you need to add a spare or run-flat kit. Some vehicles also have TPMS systems calibrated for run-flat behaviour. Call us on ' . $phone_local . ' with your vehicle details and we\'ll advise on your options.',
     ],
     [
         'q' => 'Do you stock run-flat tyres in Manukau?',
-        'a' => 'Yes — we stock run-flat tyres in the most common sizes. Call us on ' . $phone_local . ' with your tyre size and vehicle and we\'ll confirm availability and pricing. Run-flat sizing can be less common in some sizes — it\'s worth calling ahead.',
+        'a' => 'Yes, we stock run-flat tyres in the most common sizes. Call us on ' . $phone_local . ' with your tyre size and vehicle and we\'ll confirm availability and pricing. Run-flat sizing can be less common in some sizes, so it\'s worth calling ahead.',
     ],
     [
         'q' => 'How do I know if I have run-flat tyres?',
@@ -47,7 +47,7 @@ $faqs = [
     ],
     [
         'q' => 'Are run-flat tyres more expensive than regular tyres?',
-        'a' => 'Yes — run-flat tyres typically cost 20–40% more than an equivalent regular tyre due to the reinforced sidewall construction. The trade-off is the convenience of continuing to drive after a puncture without stopping. Call us on ' . $phone_local . ' for pricing on your specific size.',
+        'a' => 'Yes. Run-flat tyres typically cost 20–40% more than an equivalent regular tyre due to the reinforced sidewall construction. The trade-off is the convenience of continuing to drive after a puncture without stopping. Call us on ' . $phone_local . ' for pricing on your specific size.',
     ],
 ];
 
@@ -169,9 +169,9 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span>Run-Flat Tyres Manukau</span>
             </nav>
             <div>
-                <span class="rft-ey rft-ey--yellow">Tyre Centre — Manukau</span>
+                <span class="rft-ey rft-ey--yellow">Tyre Centre, Manukau</span>
                 <h1 class="rft-h1">Run-Flat Tyres<br><em>Manukau</em></h1>
-                <p class="rft-hero__sub">Supply and fit run-flat tyres at 139 Cavendish Drive. BMW, MINI, Mercedes-Benz, and all RFT-compatible vehicles. Call ahead with your size — availability varies.</p>
+                <p class="rft-hero__sub">Supply and fit run-flat tyres at 139 Cavendish Drive. BMW, MINI, Mercedes-Benz, and all RFT-compatible vehicles. Call ahead with your size, as availability varies.</p>
                 <div class="rft-hero__btns">
                     <a href="#rft-booking" class="rft-btn rft-btn--primary">Enquire About Run-Flats</a>
                     <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/','',$phone_local)); ?>" class="rft-btn rft-btn--outline"><?php echo esc_html($phone_local); ?></a>
@@ -222,25 +222,25 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span class="rft-ey rft-ey--dark">What Are Run-Flat Tyres?</span>
                 <h2 class="rft-h2" id="rft-what-h2">Drive Up to 80km After a Puncture</h2>
                 <div class="rft-what__body">
-                    <p>Run-flat tyres have reinforced sidewalls that support the vehicle's weight even after a complete loss of tyre pressure. Instead of immediately going flat, they allow you to continue driving — typically up to 80km at a maximum of 80km/h — giving you time to reach a workshop safely.</p>
+                    <p>Run-flat tyres have reinforced sidewalls that support the vehicle's weight even after a complete loss of tyre pressure. Instead of immediately going flat, they allow you to continue driving (typically up to 80km at a maximum of 80km/h), giving you time to reach a workshop safely.</p>
                     <p>They are standard fitment on many BMW and MINI models, some Mercedes-Benz vehicles, and other European makes. Vehicles fitted with run-flat tyres as standard often don't carry a spare wheel.</p>
-                    <p>The main trade-off is cost — run-flat tyres are typically 20–40% more expensive than equivalent regular tyres. They also generally cannot be repaired after being driven on while flat.</p>
+                    <p>The main trade-off is cost. Run-flat tyres are typically 20–40% more expensive than equivalent regular tyres. They also generally cannot be repaired after being driven on while flat.</p>
                 </div>
                 <div class="rft-alert">
                     <h4>⚠️ Run-flat tyres driven on while flat usually need replacing</h4>
-                    <p>Even a short distance driven on a flat run-flat can permanently damage the internal sidewall reinforcement — without any visible external sign. We assess every run-flat honestly before recommending replacement.</p>
+                    <p>Even a short distance driven on a flat run-flat can permanently damage the internal sidewall reinforcement, without any visible external sign. We assess every run-flat honestly before recommending replacement.</p>
                 </div>
             </div>
             <div class="rft-info-card">
                 <h3>How to Identify Run-Flat Tyres</h3>
-                <p style="font-size:14px;color:#888;line-height:1.6;margin-bottom:16px;">Look for these markings on the sidewall — different brands use different codes:</p>
+                <p style="font-size:14px;color:#888;line-height:1.6;margin-bottom:16px;">Look for these markings on the sidewall. Different brands use different codes:</p>
                 <ul class="rft-info-list">
-                    <li><strong style="color:#fff;">RFT</strong> — Bridgestone / Generic</li>
-                    <li><strong style="color:#fff;">ROF</strong> — Michelin Run On Flat</li>
-                    <li><strong style="color:#fff;">SSR</strong> — Continental Self Supporting Runflat</li>
-                    <li><strong style="color:#fff;">ZP / ZPS</strong> — Michelin Zero Pressure</li>
-                    <li><strong style="color:#fff;">EMT</strong> — Goodyear Extended Mobility</li>
-                    <li><strong style="color:#fff;">RSC</strong> — Bridgestone Run-Flat System Component</li>
+                    <li><strong style="color:#fff;">RFT</strong>: Bridgestone, Goodyear and generic</li>
+                    <li><strong style="color:#fff;">ROF</strong>: Bridgestone and Dunlop Run On Flat</li>
+                    <li><strong style="color:#fff;">SSR</strong>: Continental Self Supporting Runflat</li>
+                    <li><strong style="color:#fff;">ZP / ZPS</strong>: Michelin Zero Pressure</li>
+                    <li><strong style="color:#fff;">EMT</strong>: Goodyear Extended Mobility</li>
+                    <li><strong style="color:#fff;">RSC</strong>: BMW Run-Flat System Component marking</li>
                 </ul>
                 <div style="margin-top:20px;padding-top:20px;border-top:1px solid #2a2a2a;">
                     <p style="font-size:13px;color:#666;margin-bottom:12px;">Not sure? Bring the vehicle in and we'll check.</p>
@@ -260,7 +260,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 ['BMW','Most BMW models since 2003 are standard fitment with run-flat tyres, particularly 3 Series, 5 Series, and X models.','Common sizes: 225/45R17, 245/45R18, 255/40R19'],
                 ['MINI','Most MINI models use run-flat tyres as standard. No spare wheel included.','Common sizes: 195/55R16, 205/45R17, 225/40R18'],
                 ['Mercedes-Benz','Selected Mercedes-Benz models use run-flat tyres, particularly C-Class and E-Class.','Common sizes: 225/45R17, 245/40R18, 255/35R19'],
-                ['Audi','Some Audi models — particularly later A4 and A6 variants — use extended mobility tyres.','Common sizes: 225/50R17, 245/40R18'],
+                ['Audi','Some Audi models, particularly later A4 and A6 variants, use extended mobility tyres.','Common sizes: 225/50R17, 245/40R18'],
                 ['Other European','Various Porsche, Volvo, and other European models have run-flat fitment on selected variants.','Check your vehicle handbook'],
                 ['Your Vehicle','Not sure if your vehicle has run-flat tyres? Call us with your registration and we can advise.','Call 09 278 9556'],
             ] as $v): ?>
@@ -280,7 +280,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div>
                 <span class="rft-ey rft-ey--dark">Enquire</span>
                 <h2 class="rft-h2" id="rft-booking-h2">Enquire About Run-Flat Tyres</h2>
-                <p class="rft-lead">Call ahead with your tyre size and vehicle — run-flat availability varies by size. We'll confirm stock and pricing before you come in.</p>
+                <p class="rft-lead">Call ahead with your tyre size and vehicle, as run-flat availability varies by size. We'll confirm stock and pricing before you come in.</p>
                 <ul class="rft-booking__checks">
                     <li><?php echo esc_html($hours); ?></li>
                     <li>139 Cavendish Drive, Manukau</li>

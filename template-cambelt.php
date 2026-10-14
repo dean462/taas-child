@@ -55,31 +55,31 @@ $finance = [
 
 // ── Services ─────────────────────────────────────────────────────────────────
 $services = [
-    ['icon' => cbh_mono('CB'), 'title' => 'Cambelt Replacement', 'desc' => 'Full cambelt kit replacement — belt, idlers, tensioner, and water pump replaced together. Manufacturer intervals or earlier if history is unknown.', 'url' => '/cambelt-replacement-manukau/', 'cta' => 'Cambelt Replacement →'],
-    ['icon' => cbh_mono('WP'), 'title' => 'Water Pump Replacement', 'desc' => 'Water pump replaced during cambelt service — labour is already done. Standalone water pump replacement also available for chain-driven engines.', 'url' => '/water-pump-replacement-manukau/', 'cta' => 'Water Pump →'],
-    ['icon' => cbh_mono('TC'), 'title' => 'Timing Chain Service', 'desc' => 'Timing chain inspection and service — chain stretch assessment, guide and tensioner condition check, and full replacement where required.', 'url' => '/timing-chain-service-manukau/', 'cta' => 'Timing Chain →'],
+    ['icon' => cbh_mono('CB'), 'title' => 'Cambelt Replacement', 'desc' => 'Full cambelt kit replacement: belt, idlers, tensioner and water pump replaced together. Manufacturer intervals or earlier if history is unknown.', 'url' => '/cambelt-replacement-manukau/', 'cta' => 'Cambelt Replacement →'],
+    ['icon' => cbh_mono('WP'), 'title' => 'Water Pump Replacement', 'desc' => 'Water pump replaced during a cambelt service, while the labour is already done. Standalone water pump replacement also available for chain-driven engines.', 'url' => '/water-pump-replacement-manukau/', 'cta' => 'Water Pump →'],
+    ['icon' => cbh_mono('TC'), 'title' => 'Timing Chain Service', 'desc' => 'Timing chain inspection and service. We assess chain stretch, check the guides and tensioner, and replace the chain where required.', 'url' => '/timing-chain-service-manukau/', 'cta' => 'Timing Chain →'],
     ['icon' => cbh_mono('IT'), 'title' => 'Idlers & Tensioners', 'desc' => 'Idler pulleys and tensioners replaced as part of every cambelt kit. Worn idlers cause belt misalignment and premature failure even on a new belt.', 'url' => '#cbh-enquire', 'cta' => 'Enquire →'],
     ['icon' => cbh_mono('VS'), 'title' => 'Vehicle History Check', 'desc' => 'Unsure when your cambelt was last done? We can check service history and advise. If history is unknown, we recommend replacement regardless of km.', 'url' => '#cbh-enquire', 'cta' => 'Enquire →'],
-    ['icon' => cbh_mono('IA'), 'title' => 'Interval Advice', 'desc' => 'Every make and model has a different cambelt interval — from 60,000 km up to 200,000 km. We advise the correct interval for your specific vehicle.', 'url' => '#cbh-enquire', 'cta' => 'Enquire →'],
+    ['icon' => cbh_mono('IA'), 'title' => 'Interval Advice', 'desc' => 'Every make and model has a different cambelt interval, from 60,000 km up to 200,000 km. We advise the correct interval for your specific vehicle.', 'url' => '#cbh-enquire', 'cta' => 'Enquire →'],
 ];
 
 // ── Interval guide ───────────────────────────────────────────────────────────
 $intervals = [
-    ['brand' => 'Japanese Vehicles', 'km' => '60,000–100,000 km', 'note' => 'Toyota, Honda, Nissan, Subaru, Mitsubishi — intervals vary by engine. Many Honda and Subaru engines at 90,000–100,000 km. Always check your specific model.'],
-    ['brand' => 'European Vehicles', 'km' => '60,000–120,000 km', 'note' => 'Volkswagen, Audi, BMW diesel, Peugeot, Renault — often shorter intervals and more labour-intensive to access. Age limit also applies.'],
-    ['brand' => 'Newer Models', 'km' => 'Up to 200,000 km', 'note' => 'Some newer engines specify extended intervals. We apply caution on any cambelt over 150,000 km regardless of the stated interval — rubber ages even without use.'],
+    ['brand' => 'Japanese Vehicles', 'km' => '60,000–100,000 km', 'note' => 'Toyota, Honda, Nissan, Subaru, Mitsubishi. Intervals vary by engine. Many Honda and Subaru engines at 90,000–100,000 km. Always check your specific model.'],
+    ['brand' => 'European Vehicles', 'km' => '60,000–120,000 km', 'note' => 'Volkswagen, Audi, BMW diesel, Peugeot, Renault. Often shorter intervals and more labour-intensive to access. Age limit also applies.'],
+    ['brand' => 'Newer Models', 'km' => 'Up to 200,000 km', 'note' => 'Some newer engines specify extended intervals. We apply caution on any cambelt over 150,000 km regardless of the stated interval. Rubber ages even without use.'],
 ];
 
 // ── Why points ───────────────────────────────────────────────────────────────
 $why_points = [
-    'Full kit approach — belt, water pump, idlers, and tensioner replaced together',
-    'Estimate before we start — no surprise invoices',
+    'Full kit approach: belt, water pump, idlers and tensioner replaced together',
+    'Estimate before we start, so no surprise invoices',
     'Manufacturer intervals followed, or sooner if history is unknown',
     'Caution applied on any belt over 150,000 km regardless of stated interval',
-    'All makes and models — Japanese, Korean, European',
-    $customers . ' customers serviced — South Auckland\'s largest independent workshop',
-    'MTA Assured workshop — established in Manukau since ' . $established,
-    'NZTA Authorised — ' . $ms_number,
+    'All makes and models: Japanese, Korean, European',
+    $customers . ' customers serviced at South Auckland\'s largest independent workshop',
+    'MTA Assured workshop, established in Manukau since ' . $established,
+    'NZTA Authorised, ' . $ms_number,
 ];
 
 // ── Suburbs (17) ─────────────────────────────────────────────────────────────
@@ -123,7 +123,7 @@ $schema = [
             ['@type' => 'ListItem', 'position' => 2, 'name' => 'Services', 'item' => $site_url . '/services/'],
             ['@type' => 'ListItem', 'position' => 3, 'name' => 'Cambelts & Water Pumps', 'item' => $page_url],
         ]],
-        ['@type' => ['AutoRepair', 'LocalBusiness'], '@id' => $site_url . '/#organization', 'name' => 'Tony Allen Auto Service', 'url' => $site_url, 'description' => 'Cambelt and water pump replacement in Manukau, South Auckland. Full kit — belt, water pump, idlers, tensioner. All makes and models. NZTA Authorised. MTA Assured. Established ' . $established . '.', 'telephone' => [$phone_free, $phone_local], 'email' => $email, 'foundingDate' => '1985-10', 'address' => ['@type' => 'PostalAddress', 'streetAddress' => '139 Cavendish Drive', 'addressLocality' => 'Manukau', 'addressRegion' => 'Auckland', 'postalCode' => '2104', 'addressCountry' => 'NZ'], 'geo' => ['@type' => 'GeoCoordinates', 'latitude' => -36.9936, 'longitude' => 174.8671], 'openingHoursSpecification' => [['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday','Tuesday','Wednesday','Thursday','Friday'], 'opens' => '07:30', 'closes' => '17:00']], 'aggregateRating' => ['@type' => 'AggregateRating', 'ratingValue' => $rating, 'reviewCount' => preg_replace('/\D+/', '', $reviews), 'bestRating' => '5'], 'paymentAccepted' => 'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, GEM Finance, Aotea Finance', 'priceRange' => '$$', 'areaServed' => 'South Auckland', 'sameAs' => ['https://www.facebook.com/tonyallenautoservice/', 'https://www.instagram.com/tonyallenautoservice/', 'https://www.linkedin.com/company/7059060'], 'memberOf' => ['@type' => 'Organization', 'name' => 'Motor Trade Association (MTA)']],
+        ['@type' => ['AutoRepair', 'LocalBusiness'], '@id' => $site_url . '/#organization', 'name' => 'Tony Allen Auto Service', 'url' => $site_url, 'description' => 'Cambelt and water pump replacement in Manukau, South Auckland. Full kit: belt, water pump, idlers, tensioner. All makes and models. NZTA Authorised. MTA Assured. Established ' . $established . '.', 'telephone' => [$phone_free, $phone_local], 'email' => $email, 'foundingDate' => '1985-10', 'address' => ['@type' => 'PostalAddress', 'streetAddress' => '139 Cavendish Drive', 'addressLocality' => 'Manukau', 'addressRegion' => 'Auckland', 'postalCode' => '2104', 'addressCountry' => 'NZ'], 'geo' => ['@type' => 'GeoCoordinates', 'latitude' => -36.9936, 'longitude' => 174.8671], 'openingHoursSpecification' => [['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => ['Monday','Tuesday','Wednesday','Thursday','Friday'], 'opens' => '07:30', 'closes' => '17:00']], 'aggregateRating' => ['@type' => 'AggregateRating', 'ratingValue' => $rating, 'reviewCount' => preg_replace('/\D+/', '', $reviews), 'bestRating' => '5'], 'paymentAccepted' => 'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, GEM Finance, Aotea Finance', 'priceRange' => '$$', 'areaServed' => 'South Auckland', 'sameAs' => ['https://www.facebook.com/tonyallenautoservice/', 'https://www.instagram.com/tonyallenautoservice/', 'https://www.linkedin.com/company/7059060'], 'memberOf' => ['@type' => 'Organization', 'name' => 'Motor Trade Association (MTA)']],
         ['@type' => 'SpeakableSpecification', 'cssSelector' => ['.cbh-hero__sub', '.cbh-faq__item:first-of-type .cbh-faq__a']],
         ['@type' => 'FAQPage', 'mainEntity' => $schema_faqs],
     ],
@@ -339,20 +339,20 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div class="cbh-w">
     <div class="cbh-hero__inner">
       <div>
-        <span class="cbh-eye cbh-eye--yellow">Cambelts &amp; Water Pumps — Manukau</span>
+        <span class="cbh-eye cbh-eye--yellow">Cambelts &amp; Water Pumps, Manukau</span>
         <h1>Cambelt &amp; Water<br><span>Pump Replacement</span></h1>
-        <p class="cbh-hero__sub">Full cambelt kit — belt, water pump, idlers, and tensioners replaced together. Estimate before we start. All makes and models. <?php echo esc_html($years); ?> years of workshop experience in South Auckland.</p>
-        <div class="cbh-hero__signal">Full kit — belt, pump, idlers &amp; tensioner · Estimate before we start · All makes &amp; models</div>
+        <p class="cbh-hero__sub">Full cambelt kit: belt, water pump, idlers and tensioners replaced together. Estimate before we start. All makes and models. <?php echo esc_html($years); ?> years of workshop experience in South Auckland.</p>
+        <div class="cbh-hero__signal">Full kit: belt, pump, idlers &amp; tensioner · Estimate before we start · All makes &amp; models</div>
         <div class="cbh-hero__ctas">
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="cbh-btn cbh-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
           <a href="#cbh-enquire" class="cbh-btn cbh-btn--outline">Book Online</a>
         </div>
-        <div class="cbh-hero__urgency"><strong>⚠ Do not delay a cambelt replacement.</strong> A snapped cambelt on an interference engine causes immediate, catastrophic engine damage — bent valves, damaged pistons, potential engine write-off. The replacement cost is a fraction of an engine rebuild.</div>
+        <div class="cbh-hero__urgency"><strong>⚠ Do not delay a cambelt replacement.</strong> A snapped cambelt on an interference engine causes immediate, catastrophic engine damage: bent valves, damaged pistons, possibly a written-off engine. The replacement cost is a fraction of an engine rebuild.</div>
       </div>
       <div class="cbh-sidebar">
         <div class="cbh-sidebar__title">What We Replace</div>
         <ul class="cbh-sidebar__list">
-          <li>Cambelt (timing belt)</li><li>Water pump — same labour</li><li>Idler pulleys</li><li>Belt tensioner</li><li>Cam &amp; crank seals where applicable</li><li>Timing chain tensioners</li><li>All makes &amp; models</li>
+          <li>Cambelt (timing belt)</li><li>Water pump (same labour)</li><li>Idler pulleys</li><li>Belt tensioner</li><li>Cam &amp; crank seals where applicable</li><li>Timing chain tensioners</li><li>All makes &amp; models</li>
         </ul>
         <hr>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="cbh-sidebar__phone"><?php echo esc_html($phone_free); ?></a>
@@ -372,7 +372,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="cbh-section cbh-section--grey"><div class="cbh-w">
   <span class="cbh-eye cbh-eye--dark">Replacement Intervals</span>
   <h2 class="cbh-h2">When Does Your Cambelt Need Replacing?</h2>
-  <p class="cbh-lead">Intervals vary widely by make and model — from 60,000 km on some older Japanese engines to 200,000 km on some newer vehicles. Age matters as much as kilometres.</p>
+  <p class="cbh-lead">Intervals vary widely by make and model, from 60,000 km on some older Japanese engines to 200,000 km on some newer vehicles. Age matters as much as kilometres.</p>
   <div class="cbh-int-grid"><?php foreach ($intervals as $iv): ?>
     <div class="cbh-int-card"><div class="cbh-int-card__brand"><?php echo esc_html($iv['brand']); ?></div><div class="cbh-int-card__km"><?php echo esc_html($iv['km']); ?></div><p class="cbh-int-card__note"><?php echo esc_html($iv['note']); ?></p></div>
   <?php endforeach; ?></div>
@@ -382,7 +382,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── SERVICES ── White ──────────────────────────────────────────────────── -->
 <section class="cbh-section cbh-section--white"><div class="cbh-w">
   <span class="cbh-eye cbh-eye--dark">Our Services</span>
-  <h2 class="cbh-h2">Cambelt &amp; Water Pump Services — All In-House</h2>
+  <h2 class="cbh-h2">Cambelt &amp; Water Pump Services, All In-House</h2>
   <p class="cbh-lead">Everything done at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a>. No outsourcing. Estimate before we start.</p>
   <div class="cbh-svc-grid"><?php foreach ($services as $svc): ?>
     <a href="<?php echo (strpos($svc['url'], '#') === 0) ? esc_attr($svc['url']) : esc_url($site_url . $svc['url']); ?>" class="cbh-svc-card"><?php echo $svc['icon']; ?><div class="cbh-svc-card__title"><?php echo esc_html($svc['title']); ?></div><div class="cbh-svc-card__desc"><?php echo esc_html($svc['desc']); ?></div><span class="cbh-svc-card__link"><?php echo $svc['cta']; ?></span></a>
@@ -391,7 +391,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <!-- ── FINANCE STRIP ────────────────────────────────────────────────────────── -->
 <div class="cbh-finance"><div class="cbh-finance__inner">
-  <div class="cbh-finance__text"><strong>Finance available</strong> — spread the cost of your cambelt over time, interest-free options available.</div>
+  <div class="cbh-finance__text"><strong>Finance available.</strong> Spread the cost of your cambelt over time, interest-free options available.</div>
   <div class="cbh-finance__logos"><?php foreach ($finance as $f): ?><span class="cbh-fin"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
   <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" class="cbh-finance__link">View finance options →</a>
 </div></div>
@@ -399,19 +399,19 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── WHAT IS A CAMBELT ── White ──────────────────────────────────────────── -->
 <section class="cbh-section cbh-section--white"><div class="cbh-w">
   <span class="cbh-eye cbh-eye--dark">Understanding Your Cambelt</span>
-  <h2 class="cbh-h2">What Is a Cambelt — and Why Does It Matter?</h2>
+  <h2 class="cbh-h2">What Is a Cambelt, and Why Does It Matter?</h2>
   <div class="cbh-edu">
-    <p>A cambelt — also called a timing belt — is a reinforced rubber belt that connects the crankshaft to the camshaft inside your engine. It controls the precise timing of your engine's valves, ensuring they open and close at exactly the right moment relative to the pistons. Without it, the engine does not run.</p>
+    <p>A cambelt (also called a timing belt) is a reinforced rubber belt that connects the crankshaft to the camshaft inside your engine. It controls the precise timing of your engine's valves, so they open and close at exactly the right moment relative to the pistons. Without it, the engine does not run.</p>
 
-    <h3>Interference Engines — Why a Snapped Belt Is Catastrophic</h3>
-    <p>The majority of modern vehicles use what is called an interference engine. In an interference engine, the pistons and valves occupy the same space inside the cylinder — just never at the same time. The cambelt ensures this timing is maintained. When a cambelt snaps on an interference engine, the pistons and valves collide. The result is bent valves, damaged pistons, and in severe cases a destroyed cylinder head or engine block. An engine rebuild or full replacement is often the outcome — typically $5,000 or more, compared to a cambelt replacement typically in the range of $800–$1,500 when done on time.</p>
-    <div class="cbh-edu__alert"><p><strong>The key point:</strong> A cambelt does not give warning signs before it fails. It does not stretch, squeal, or slip. It works — until it snaps. This is why cambelt replacement is time-and-kilometre-based preventative maintenance, not a repair you wait for symptoms to trigger.</p></div>
+    <h3>Interference Engines: Why a Snapped Belt Is Catastrophic</h3>
+    <p>The majority of modern vehicles use what is called an interference engine. In an interference engine, the pistons and valves occupy the same space inside the cylinder, just never at the same time. The cambelt keeps that timing. When a cambelt snaps on an interference engine, the pistons and valves collide. The result is bent valves, damaged pistons, and in severe cases a destroyed cylinder head or engine block. An engine rebuild or full replacement is often the outcome, typically $5,000 or more, compared to a cambelt replacement typically in the range of $800–$1,500 when done on time.</p>
+    <div class="cbh-edu__alert"><p><strong>The key point:</strong> A cambelt does not give warning signs before it fails. It does not stretch, squeal, or slip. It works until it snaps. This is why cambelt replacement is time-and-kilometre-based preventative maintenance, not a repair you wait for symptoms to trigger.</p></div>
 
     <h3>Why the Water Pump Is Replaced at the Same Time</h3>
-    <p>On most vehicles, the water pump is driven by the cambelt — which means it is fully accessible only when the cambelt is removed. Fitting a new water pump during a cambelt replacement adds relatively little to the cost because the labour to access it is already done. If the water pump fails six months after a cambelt replacement, you pay the full labour cost again to access it. We include the water pump as standard in every cambelt kit replacement — belt, water pump, idler pulleys, and tensioner.</p>
+    <p>On most vehicles, the water pump is driven by the cambelt, which means it is fully accessible only when the cambelt is removed. Fitting a new water pump during a cambelt replacement adds relatively little to the cost because the labour to access it is already done. If the water pump fails six months after a cambelt replacement, you pay the full labour cost again to access it. We include the water pump as standard in every cambelt kit replacement: belt, water pump, idler pulleys and tensioner.</p>
 
-    <h3>Cambelt vs Timing Chain — What Does Your Vehicle Have?</h3>
-    <p>A timing chain is a metal chain that does the same job as a cambelt. Timing chains are designed to last the life of the engine — but only if oil changes are maintained. In practice, chains stretch and tensioners wear, particularly on engines with poor oil change history. Timing chains are not maintenance-free. If your engine has a timing chain rather than a belt, we inspect for chain stretch, tensioner wear, and guide condition — and carry out replacement where required. Not sure which your vehicle has? Call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> with your make and model and we will advise.</p>
+    <h3>Cambelt vs Timing Chain: What Does Your Vehicle Have?</h3>
+    <p>A timing chain is a metal chain that does the same job as a cambelt. Timing chains are designed to last the life of the engine, but only if oil changes are maintained. In practice, chains stretch and tensioners wear, particularly on engines with poor oil change history. Timing chains are not maintenance-free. If your engine has a timing chain rather than a belt, we inspect for chain stretch, tensioner wear and guide condition, and replace it where required. Not sure which your vehicle has? Call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> with your make and model and we will advise.</p>
   </div>
 </div></section>
 
@@ -420,12 +420,12 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div>
     <span class="cbh-eye cbh-eye--dark">Why Choose TAAS</span>
     <h2 class="cbh-h2">South Auckland's Cambelt Workshop Since <?php echo esc_html($established); ?></h2>
-    <p class="cbh-lead" style="margin-bottom:24px;">We replace cambelts properly — full kit, correct interval, with the water pump and associated components done at the same time. Not just the belt.</p>
+    <p class="cbh-lead" style="margin-bottom:24px;">We replace cambelts properly: full kit, correct interval, with the water pump and associated components done at the same time. Not just the belt.</p>
     <ul class="cbh-why__points"><?php foreach ($why_points as $pt): ?><li class="cbh-why__point"><?php echo esc_html($pt); ?></li><?php endforeach; ?></ul>
   </div>
   <div class="cbh-why__card">
     <h3>Often Done at the Same Visit</h3>
-    <p>If your vehicle is in for a cambelt, it makes sense to carry out other time-based service items at the same time — cam seals, coolant flush, spark plugs. One visit, less total labour cost.</p>
+    <p>If your vehicle is in for a cambelt, it makes sense to carry out other time-based service items at the same time, like cam seals, a coolant flush and spark plugs. One visit, less total labour cost.</p>
     <div class="cbh-why__links"><?php foreach ([['label'=>'Vehicle Servicing','url'=>'/vehicle-servicing/'],['label'=>'Cooling System Service','url'=>'/cooling-system/'],['label'=>'Warrant of Fitness','url'=>'/wof/'],['label'=>'Finance Options','url'=>'/finance-options/']] as $ex): ?><a href="<?php echo esc_url($site_url . $ex['url']); ?>"><span>→</span><?php echo esc_html($ex['label']); ?></a><?php endforeach; ?></div>
     <a href="#cbh-enquire" class="cbh-btn cbh-btn--dark">Book a Cambelt Service</a>
   </div>
@@ -436,12 +436,12 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div>
     <span class="cbh-eye cbh-eye--yellow">Book or Enquire</span>
     <h2 class="cbh-h2 cbh-h2--white">Enquire About Cambelt &amp; <span style="color:var(--taas-yellow);">Water Pump Service</span></h2>
-    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your make, model and year — or your kilometres if you know them — and we'll advise on the correct interval and give you an estimate before any work begins.</p>
-    <ul class="cbh-enquiry__list"><?php foreach (['Full kit — belt, water pump, idlers, and tensioner','Written estimate before any work begins','All makes and models — Japanese, Korean, European','Finance available — pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
+    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your make, model and year (or your kilometres if you know them) and we'll advise on the correct interval and give you an estimate before any work begins.</p>
+    <ul class="cbh-enquiry__list"><?php foreach (['Full kit: belt, water pump, idlers and tensioner','Written estimate before any work begins','All makes and models: Japanese, Korean, European','Finance available, pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="cbh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="cbh-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     <div class="cbh-enquiry__badges"><?php foreach ($finance as $f): ?><span class="cbh-enquiry__badge"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
-    <div class="cbh-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price for your specific vehicle before any work begins — no surprise invoices. <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Finance options →</a></div>
+    <div class="cbh-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price for your specific vehicle before any work begins. No surprise invoices. <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="cbh-enquiry__form">
     <div class="cbh-enquiry__form-title">Send Us Your Details</div>

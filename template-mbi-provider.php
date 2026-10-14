@@ -111,7 +111,7 @@ $not_covered = ['Routine maintenance (oil, filters, belts)', 'Tyres, brake pads,
 
 // ── Process steps ────────────────────────────────────────────────────────────
 $steps = [
-    ['num' => '01', 'title' => 'Call us first', 'text' => "Call {$phone_free} before authorising any repairs. Authorisation from {$provider_name} must be obtained before work begins — without it, the claim may not be valid."],
+    ['num' => '01', 'title' => 'Call us first', 'text' => "Call {$phone_free} before authorising any repairs. Authorisation from {$provider_name} must be obtained before work begins. Without it, the claim may not be valid."],
     ['num' => '02', 'title' => 'Diagnosis', 'text' => "We inspect the vehicle and confirm the fault. Our lead diagnostician Raj verifies the issue before any parts are ordered or replaced."],
     ['num' => '03', 'title' => 'Authorisation', 'text' => "We contact {$provider_name} directly. We provide the diagnosis, estimate, and any supporting information required. We keep you updated while we wait for their authorisation."],
     ['num' => '04', 'title' => 'Repair & invoice', 'text' => "Once authorised, we carry out the repair and invoice {$provider_name} for all covered amounts. Client contributions are costs not covered under your policy's terms and conditions. We'll explain your excess and any client contributions once the claim is approved and all costs are worked out."],
@@ -161,12 +161,12 @@ foreach ($generic_mbi_keys as $key) {
 // Fallback if library not loaded
 if (empty($faqs)) {
     $faqs = [
-        ['q' => "Is Tony Allen Auto Service an approved {$provider_name} repairer?", 'a' => "Yes. Tony Allen Auto Service is an approved repairer for {$provider_name} MBI policies. We handle the claim process from diagnosis through to invoice — you pay the excess and any client contributions, and {$provider_name} pays the approved amount directly to us. Client contributions are costs not covered under your policy's terms and conditions. We'll explain them once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau."],
+        ['q' => "Is Tony Allen Auto Service an approved {$provider_name} repairer?", 'a' => "Yes. Tony Allen Auto Service is an approved repairer for {$provider_name} MBI policies. We handle the claim process from diagnosis through to invoice. You pay the excess and any client contributions, and {$provider_name} pays the approved amount directly to us. Client contributions are costs not covered under your policy's terms and conditions. We'll explain them once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau."],
         ['q' => "What do I do if my car breaks down and I have {$provider_name}?", 'a' => "Call {$phone_free} before authorising any repairs. {$provider_name} must authorise the work before it begins. Bring your vehicle to 139 Cavendish Drive, Manukau."],
         ['q' => 'What is Mechanical Breakdown Insurance?', 'a' => 'MBI covers the cost of repairing or replacing mechanical and electrical components that fail due to sudden or unforeseen breakdown. It fills the gap left by standard car insurance.'],
         ['q' => "Does regular servicing at TAAS keep my {$provider_name} policy valid?", 'a' => "Yes. Tony Allen Auto Service is MTA Assured, which satisfies the servicing requirements of {$provider_name} and all other MBI providers we work with. Keep all service invoices."],
         ['q' => 'What is not covered by MBI?', 'a' => 'Common exclusions include routine maintenance, wear and tear, pre-existing faults, accident damage, modifications from factory specification, and failures from neglect or improper maintenance.'],
-        ['q' => 'Is MBI the same as a warranty?', 'a' => 'MBI is technically an insurance product, not a warranty — regulated differently with rights under the Insurance Law Reform Act and Consumer Guarantees Act.'],
+        ['q' => 'Is MBI the same as a warranty?', 'a' => 'MBI is technically an insurance product, not a warranty. It is regulated differently, with rights under the Insurance Law Reform Act and Consumer Guarantees Act.'],
         ['q' => "What other MBI providers does TAAS work with?", 'a' => "Alongside {$provider_name}, we are an approved repairer for Autosure, Assurant, Provident, Janssen Insurance, and Autolife."],
     ];
 }
@@ -187,7 +187,7 @@ $schema = [
             '@type'       => 'BreadcrumbList',
             'itemListElement' => [
                 ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $site_url],
-                ['@type' => 'ListItem', 'position' => 2, 'name' => 'MBI — Approved Repairer', 'item' => $site_url . '/mechanical-breakdown-insurance/'],
+                ['@type' => 'ListItem', 'position' => 2, 'name' => 'MBI Approved Repairer', 'item' => $site_url . '/mechanical-breakdown-insurance/'],
                 ['@type' => 'ListItem', 'position' => 3, 'name' => $provider_name, 'item' => $page_url],
             ],
         ],
@@ -502,7 +502,7 @@ if ($_logo_id) {
         </div>
         <div class="mp-card-row">
           <div class="mp-card-tick">2</div>
-          <div class="mp-card-text"><strong>We diagnose</strong>Fault confirmed — no guesswork</div>
+          <div class="mp-card-text"><strong>We diagnose</strong>Fault confirmed, no guesswork</div>
         </div>
         <div class="mp-card-row">
           <div class="mp-card-tick">3</div>
@@ -510,7 +510,7 @@ if ($_logo_id) {
         </div>
         <div class="mp-card-row">
           <div class="mp-card-tick">4</div>
-          <div class="mp-card-text"><strong>We invoice your provider</strong>Covered amounts billed direct — we confirm any balance with you first</div>
+          <div class="mp-card-text"><strong>We invoice your provider</strong>Covered amounts billed direct. We confirm any balance with you first</div>
         </div>
       </div>
     </div>
@@ -591,7 +591,7 @@ if ($_logo_id) {
 <div class="mp-finance" role="region" aria-label="Finance options">
   <div class="mp-w">
     <div class="mp-finance__inner">
-      <span class="mp-finance__text">Excess or uncovered repairs? <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Split the cost</a> —</span>
+      <span class="mp-finance__text">Excess or uncovered repairs? <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Split the cost</a>:</span>
       <div class="mp-finance__badges">
         <span class="mp-finance__badge">Afterpay</span>
         <span class="mp-finance__badge">Q Card</span>
@@ -613,15 +613,15 @@ if ($_logo_id) {
     ?>
     <ul class="mp-checklist">
       <li><?php echo $tick; ?>Approved repairer for <?php echo esc_html($provider_name); ?> and 4 other MBI providers</li>
-      <li><?php echo $tick; ?>MTA Assured — satisfies the servicing requirements of all MBI providers</li>
-      <li><?php echo $tick; ?>Trading since <?php echo esc_html($established); ?> — <?php echo esc_html($years); ?> years of experience with MBI claims</li>
-      <li><?php echo $tick; ?><?php echo esc_html($division_count); ?> specialist divisions under one roof — most repairs handled in-house</li>
-      <li><?php echo $tick; ?>European vehicle specialists — MBI claims on <?php echo esc_html($euro_brands); ?></li>
-      <li><?php echo $tick; ?>Raj leads diagnostics — fault confirmed before any parts are replaced</li>
-      <li><?php echo $tick; ?>Full servicing capability — keep your MBI valid with regular servicing at TAAS</li>
-      <li><?php echo $tick; ?>Finance available for excess payments — <?php echo esc_html($finance_list); ?></li>
+      <li><?php echo $tick; ?>MTA Assured, which satisfies the servicing requirements of all MBI providers</li>
+      <li><?php echo $tick; ?>Trading since <?php echo esc_html($established); ?>, with <?php echo esc_html($years); ?> years of experience with MBI claims</li>
+      <li><?php echo $tick; ?><?php echo esc_html($division_count); ?> specialist divisions under one roof, so most repairs are handled in-house</li>
+      <li><?php echo $tick; ?>European vehicle specialists for MBI claims on <?php echo esc_html($euro_brands); ?></li>
+      <li><?php echo $tick; ?>Raj leads diagnostics. Fault confirmed before any parts are replaced</li>
+      <li><?php echo $tick; ?>Full servicing capability. Keep your MBI valid with regular servicing at TAAS</li>
+      <li><?php echo $tick; ?>Finance available for excess payments: <?php echo esc_html($finance_list); ?></li>
       <li><?php echo $tick; ?><?php echo esc_html($rating); ?>★ Google rating from <?php echo esc_html($reviews); ?> reviews</li>
-      <li><?php echo $tick; ?>We'll keep you informed every step of the way</li>
+      <li><?php echo $tick; ?>We keep you posted as the claim goes through</li>
     </ul>
   </div>
 </section>
@@ -639,7 +639,7 @@ if ($_logo_id) {
         <p class="mp-enquiry__detail"><a href="mailto:<?php echo esc_attr($email); ?>"><?php echo esc_html($email); ?></a></p>
         <p class="mp-enquiry__detail"><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener"><?php echo esc_html($address); ?></a></p>
         <p class="mp-enquiry__detail"><?php echo esc_html($hours); ?></p>
-        <p class="mp-enquiry__drumbeat">We'll keep you informed every step of the way.</p>
+        <p class="mp-enquiry__drumbeat">We'll keep you posted as the job goes.</p>
         <div class="mp-enquiry__finance">
           <span class="mp-enquiry__finance-badge">Afterpay</span>
           <span class="mp-enquiry__finance-badge">Q Card</span>
@@ -651,7 +651,7 @@ if ($_logo_id) {
         <?php if ($cf7_general): ?>
           <?php echo do_shortcode($cf7_general); ?>
         <?php else: ?>
-          <p style="color:#888;font-size:14px;font-weight:300;line-height:1.75;">Contact form loading — please call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow, #FFC800);"><?php echo esc_html($phone_free); ?></a></p>
+          <p style="color:#888;font-size:14px;font-weight:300;line-height:1.75;">Contact form loading. Please call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow, #FFC800);"><?php echo esc_html($phone_free); ?></a></p>
         <?php endif; ?>
       </div>
     </div>
@@ -686,7 +686,7 @@ if ($_logo_id) {
       <a href="<?php echo esc_url($provider_website); ?>" target="_blank" rel="noopener" class="mp-btn mp-btn--outline"><?php echo esc_html($provider_name); ?> Website ↗</a>
       <?php endif; ?>
     </div>
-    <p style="font-size:13px;font-weight:300;color:#999;margin-top:16px;line-height:1.75;">Then bring your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow, #FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a> — we handle the rest.</p>
+    <p style="font-size:13px;font-weight:300;color:#999;margin-top:16px;line-height:1.75;">Then bring your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow, #FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a> and we handle the rest.</p>
   </div>
 </section>
 <?php endif; ?>
@@ -703,7 +703,7 @@ if ($_logo_id) {
       ?>
       <a href="<?php echo esc_url($site_url . '/' . $prov['slug'] . '/'); ?>" class="mp-related__card">
         <div class="mp-related__card-title"><?php echo esc_html($prov['name']); ?></div>
-        <p class="mp-related__card-text">Approved <?php echo esc_html($prov['name']); ?> repairer — full claim management at 139 Cavendish Drive, Manukau.</p>
+        <p class="mp-related__card-text">Approved <?php echo esc_html($prov['name']); ?> repairer, with full claim management at 139 Cavendish Drive, Manukau.</p>
       </a>
       <?php endforeach; ?>
       <a href="<?php echo esc_url($site_url . '/mechanical-breakdown-insurance/'); ?>" class="mp-related__card">

@@ -18,7 +18,7 @@ $mta_badge = $site_url . '/wp-content/uploads/2026/05/MTA-Logo-Full-Badge-blue.p
         <div class="taas-footer__logo">Tony <span>Allen</span> Auto Service</div>
         <p class="taas-footer__tagline">South Auckland's largest independent automotive workshop. Seven specialist divisions under one roof. Family-owned since 1985.</p>
         <div class="taas-footer__mta">
-          <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured — Motor Trade Association member" width="160" height="auto" loading="lazy">
+          <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured, Motor Trade Association member" width="160" height="auto" loading="lazy">
         </div>
         <div class="taas-footer__social">
           <a href="https://www.facebook.com/tonyallenautoservice/" class="taas-footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Tony Allen Auto Service on Facebook">
@@ -55,7 +55,7 @@ $mta_badge = $site_url . '/wp-content/uploads/2026/05/MTA-Logo-Full-Badge-blue.p
         <ul class="taas-footer__links">
           <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About TAAS</a></li>
           <li><a href="<?php echo esc_url(home_url('/finance-options/')); ?>">Finance Options</a></li>
-          <li><a href="<?php echo esc_url(home_url('/mechanical-breakdown-insurance/')); ?>">MBI — Warranty Repairs</a></li>
+          <li><a href="<?php echo esc_url(home_url('/mechanical-breakdown-insurance/')); ?>">MBI Warranty Repairs</a></li>
           <li><a href="<?php echo esc_url(home_url('/manukau-batteries/')); ?>">Manukau Batteries</a></li>
           <li><a href="<?php echo esc_url(home_url('/manukau-brake-clutch/')); ?>">Manukau Brake &amp; Clutch</a></li>
           <li><a href="<?php echo esc_url(home_url('/blog/')); ?>">Blog &amp; Car Advice</a></li>

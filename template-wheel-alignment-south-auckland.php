@@ -49,34 +49,34 @@ $suburbs = [
 ];
 
 $why_points = [
-    '3D laser four-wheel alignment — camber, caster, and toe measured on every corner',
-    'Before-and-after print-out included — you can see exactly what was corrected',
+    '3D laser four-wheel alignment, with camber, caster and toe measured on every corner',
+    'Before-and-after print-out included, so you can see exactly what was corrected',
     'Cars, SUVs, 4WDs, vans and utes',
-    $alignment_price . ' — transparent pricing, no hidden fees',
-    'Available on the same visit as tyre fitting — save a return trip',
-    'MTA Assured workshop, trading since ' . $established . ' — ' . $years_trading . ' years in South Auckland',
+    $alignment_price . ', clear pricing with no hidden fees',
+    'Available on the same visit as tyre fitting, saving a return trip',
+    'MTA Assured workshop, trading since ' . $established . ', ' . $years_trading . ' years in South Auckland',
 ];
 
 $faqs = [
     [
         'q' => 'Where can I get a wheel alignment in South Auckland?',
-        'a' => 'Tony Allen Auto Service at 139 Cavendish Drive, Manukau has a dedicated wheel alignment hoist. We serve the full South Auckland corridor — Papatoetoe, Mangere, Otara, Manurewa, Takanini, Papakura, Wiri, Botany, Howick, and surrounding suburbs. Call us on ' . $phone_local . ' to book.',
+        'a' => 'Tony Allen Auto Service at 139 Cavendish Drive, Manukau has a dedicated wheel alignment hoist. We serve the full South Auckland corridor: Papatoetoe, Mangere, Otara, Manurewa, Takanini, Papakura, Wiri, Botany, Howick, and surrounding suburbs. Call us on ' . $phone_local . ' to book.',
     ],
     [
         'q' => 'How much does wheel alignment cost in South Auckland?',
-        'a' => 'At Tony Allen Auto Service, wheel alignment is ' . $alignment_price . '. This includes a four-wheel 3D laser alignment with a before-and-after print-out. All vehicle types — cars, SUVs, 4WDs, vans, and utes.',
+        'a' => 'At Tony Allen Auto Service, wheel alignment is ' . $alignment_price . '. This includes a four-wheel 3D laser alignment with a before-and-after print-out. All vehicle types: cars, SUVs, 4WDs, vans and utes.',
     ],
     [
         'q' => 'How often should I get a wheel alignment in South Auckland?',
-        'a' => 'We recommend checking your alignment every 12 months or after any of the following: hitting a kerb or pothole at speed, fitting new tyres, any suspension work, or if you notice uneven tyre wear or the car pulling to one side. South Auckland roads — particularly in older industrial areas — can knock alignment out more quickly than motorway driving.',
+        'a' => 'We recommend checking your alignment every 12 months or after any of the following: hitting a kerb or pothole at speed, fitting new tyres, any suspension work, or if you notice uneven tyre wear or the car pulling to one side. South Auckland roads, particularly in older industrial areas, can knock alignment out more quickly than motorway driving.',
     ],
     [
         'q' => 'Can I get alignment and new tyres on the same visit?',
-        'a' => 'Yes — we recommend it. New tyres will wear unevenly if alignment is out, sometimes visibly within the first few thousand kilometres. Combining both on one visit is the most efficient way to do it. Let us know when booking and we\'ll schedule time for both.',
+        'a' => 'Yes, we recommend it. New tyres will wear unevenly if alignment is out, sometimes visibly within the first few thousand kilometres. Combining both on one visit is the most efficient way to do it. Let us know when booking and we\'ll schedule time for both.',
     ],
     [
         'q' => 'Do you do wheel alignment for 4WDs and utes in South Auckland?',
-        'a' => 'Yes — our 3D laser alignment system handles cars, 4WDs, dual-cab utes, SUVs and vans. Call us on ' . $phone_local . ' to confirm your vehicle type and book.',
+        'a' => 'Yes. Our 3D laser alignment system handles cars, 4WDs, dual-cab utes, SUVs and vans. Call us on ' . $phone_local . ' to confirm your vehicle type and book.',
     ],
     [
         'q' => 'How long does a wheel alignment take?',
@@ -212,11 +212,11 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span>Wheel Alignment South Auckland</span>
             </nav>
             <div>
-                <span class="wasa-ey wasa-ey--yellow">Wheel Alignment — South Auckland</span>
+                <span class="wasa-ey wasa-ey--yellow">Wheel Alignment, South Auckland</span>
                 <h1 class="wasa-h1">Wheel Alignment<br><em>South Auckland</em></h1>
                 <p class="wasa-hero__sub">
                     3D laser four-wheel alignment at 139 Cavendish Drive, Manukau.
-                    Serving the full South Auckland corridor. <?php echo esc_html($alignment_price); ?> — before-and-after print-out included.
+                    Serving the full South Auckland corridor. <?php echo esc_html($alignment_price); ?>, with a before-and-after print-out included.
                 </p>
                 <div class="wasa-hero__btns">
                     <a href="#wasa-booking" class="wasa-btn wasa-btn--primary">Book Wheel Alignment</a>
@@ -257,7 +257,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <?php foreach ([
                 ['<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><circle cx="12" cy="12" r="4"/></svg>','3D Laser 4-Wheel Alignment'],
                 ['🖨️','Before & After Print-Out'],
-                ['<img src="' . get_site_url() . '/wp-content/uploads/2026/05/MTA-Logo-Full-Badge-blue.png" alt="MTA Assured" style="height:28px;width:auto;display:block;">','MTA Assured — Since '.$established],
+                ['<img src="' . get_site_url() . '/wp-content/uploads/2026/05/MTA-Logo-Full-Badge-blue.png" alt="MTA Assured" style="height:28px;width:auto;display:block;">','MTA Assured Since '.$established],
                 ['<img src="https://www.gstatic.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" alt="Google" style="height:22px;width:22px;display:block;">',$google_rating.' Stars · '.$google_reviews.' Reviews'],
             ] as $t): ?>
             <div class="wasa-trust__item" role="listitem">
@@ -290,12 +290,12 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div class="wasa-price-card">
                 <h3>Alignment Pricing</h3>
                 <div class="wasa-price-card__price">$100<span style="font-size:20px;color:#888;"> incl. GST</span></div>
-                <div class="wasa-price-card__sub">Four-wheel laser alignment — all vehicle types</div>
+                <div class="wasa-price-card__sub">Four-wheel laser alignment, all vehicle types</div>
                 <ul class="wasa-price-card__includes">
-                    <li>3D laser measurement — all 4 wheels</li>
+                    <li>3D laser measurement on all 4 wheels</li>
                     <li>Camber, caster and toe corrected</li>
                     <li>Before-and-after print-out</li>
-                    <li>All vehicle types — cars to utes</li>
+                    <li>All vehicle types, cars to utes</li>
                     <li>Available same visit as tyre fitting</li>
                 </ul>
                 <a href="#wasa-booking" class="wasa-btn wasa-btn--primary" style="width:100%;justify-content:center;">Book Now</a>
@@ -312,7 +312,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
     <div class="wasa-w">
         <span class="wasa-ey wasa-ey--dark">All South Auckland Suburbs</span>
         <h2 class="wasa-h2" id="wasa-suburbs-h2">Wheel Alignment Near You</h2>
-        <p class="wasa-lead">Based at 139 Cavendish Drive, Manukau — serving every suburb in the South Auckland corridor.</p>
+        <p class="wasa-lead">Based at 139 Cavendish Drive, Manukau, serving every suburb in the South Auckland corridor.</p>
         <div class="wasa-suburbs__grid">
             <?php foreach ($suburbs as $s): ?>
             <a href="<?php echo esc_url($site_url.$s['url']); ?>" class="wasa-suburb-card">
@@ -342,7 +342,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
         <div class="wasa-booking__inner">
             <div>
                 <span class="wasa-ey wasa-ey--dark">Book Online</span>
-                <h2 class="wasa-h2" id="wasa-booking-h2">Book a Wheel Alignment — South Auckland</h2>
+                <h2 class="wasa-h2" id="wasa-booking-h2">Book a Wheel Alignment in South Auckland</h2>
                 <p class="wasa-lead">Send us your details and we'll confirm your booking. Or call <?php echo esc_html($phone_local); ?> directly.</p>
                 <ul class="wasa-booking__checks">
                     <li><?php echo esc_html($hours); ?></li>

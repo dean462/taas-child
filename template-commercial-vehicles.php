@@ -56,15 +56,15 @@ function cv_badge($initials, $size = 48) {
 // Models — URLs point to /commercial-vehicles/ until model pages are built
 $models = [
     ['badge'=>'RGR','name'=>'Ford Ranger','desc'=>'NZ\'s best-selling vehicle. Servicing, brakes, cambelt, suspension, diesel diagnostics. We see Rangers every day.','slug'=>'commercial-vehicles'],
-    ['badge'=>'HLX','name'=>'Toyota Hilux','desc'=>'Bulletproof reputation — but still needs servicing. Timing chain, brakes, suspension, DPF. All Hilux models.','slug'=>'commercial-vehicles'],
-    ['badge'=>'NAV','name'=>'Nissan Navara','desc'=>'Timing chain, turbo, DPF, suspension. Known issues on D40 and NP300 models — we know what to look for.','slug'=>'commercial-vehicles'],
+    ['badge'=>'HLX','name'=>'Toyota Hilux','desc'=>'Bulletproof reputation, but it still needs servicing. Timing chain, brakes, suspension, DPF. All Hilux models.','slug'=>'commercial-vehicles'],
+    ['badge'=>'NAV','name'=>'Nissan Navara','desc'=>'Timing chain, turbo, DPF, suspension. Known issues on D40 and NP300 models, and we know what to look for.','slug'=>'commercial-vehicles'],
     ['badge'=>'TRT','name'=>'Mitsubishi Triton','desc'=>'Servicing, brakes, suspension, DPF. Solid workhorse that responds well to regular maintenance.','slug'=>'commercial-vehicles'],
-    ['badge'=>'DMX','name'=>'Isuzu D-MAX','desc'=>'Diesel servicing, brakes, suspension. D-MAX and MU-X — same platform, same service requirements.','slug'=>'commercial-vehicles'],
+    ['badge'=>'DMX','name'=>'Isuzu D-MAX','desc'=>'Diesel servicing, brakes, suspension. D-MAX and MU-X: same platform, same service requirements.','slug'=>'commercial-vehicles'],
     ['badge'=>'HAC','name'=>'Toyota HiAce','desc'=>'NZ\'s most popular van. Servicing, brakes, timing chain, sliding door repairs, dual battery systems.','slug'=>'commercial-vehicles'],
     ['badge'=>'TRN','name'=>'Ford Transit','desc'=>'Transit, Transit Custom, Transit Connect. Servicing, brakes, turbo, DPF, dual mass flywheel.','slug'=>'commercial-vehicles'],
     ['badge'=>'SPR','name'=>'Mercedes Sprinter','desc'=>'European specialist servicing. Factory-spec diagnostics. DPF, turbo, brakes, AdBlue system.','slug'=>'commercial-vehicles'],
     ['badge'=>'VWT','name'=>'VW Transporter','desc'=>'T5, T6, Caddy. VAG diagnostics. DSG service, cambelt, brakes. European specialist rates.','slug'=>'commercial-vehicles'],
-    ['badge'=>'iLD','name'=>'Hyundai iLoad','desc'=>'Servicing, brakes, timing chain, turbo. Reliable workhorse — regular servicing keeps it that way.','slug'=>'commercial-vehicles'],
+    ['badge'=>'iLD','name'=>'Hyundai iLoad','desc'=>'Servicing, brakes, timing chain, turbo. Reliable workhorse. Regular servicing keeps it that way.','slug'=>'commercial-vehicles'],
 ];
 
 $faqs = [
@@ -193,9 +193,9 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
 <!-- 1. HERO -->
 <section class="cv-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="cv-hero__inner">
   <div>
-    <span class="cv-hero__eyebrow">Commercial Vehicles — Manukau</span>
+    <span class="cv-hero__eyebrow">Commercial Vehicles, Manukau</span>
     <h1>Commercial Vehicle<br><span>Servicing &amp; Repairs</span></h1>
-    <p class="cv-hero__sub">Utes, vans, and light trucks — serviced by a workshop that understands commercial vehicle demands. Ranger, Hilux, HiAce, Transit, Navara and more. Your vehicle is your income — we get that. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+    <p class="cv-hero__sub">Utes, vans and light trucks, serviced by a workshop that understands commercial vehicle demands. Ranger, Hilux, HiAce, Transit, Navara and more. Your vehicle is your income. We get that. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
     <div class="cv-hero__ctas">
       <a href="#enquire" class="taas-btn taas-btn--primary">Book a Service</a>
       <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -204,14 +204,14 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
   <div class="cv-sidebar">
     <div class="cv-sidebar__title">What We Service</div>
     <ul class="cv-sidebar__list">
-      <li>Utes — Ranger, Hilux, Navara, Triton, D-MAX</li>
-      <li>Vans — HiAce, Transit, Sprinter, Transporter</li>
-      <li>Light trucks — up to 6.5 tonne</li>
+      <li>Utes: Ranger, Hilux, Navara, Triton, D-MAX</li>
+      <li>Vans: HiAce, Transit, Sprinter, Transporter</li>
+      <li>Light trucks up to 6.5 tonne</li>
       <li>Diesel diagnostics &amp; DPF</li>
-      <li>WOF on-site — NZTA Authorised</li>
+      <li>On-site WOF, NZTA Authorised</li>
       <li>Brakes, cambelt, suspension</li>
       <li>Same-day servicing where possible</li>
-      <li>Finance — Afterpay, Q Card</li>
+      <li>Finance: Afterpay, Q Card</li>
     </ul>
     <hr>
     <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="cv-sidebar__phone"><?php echo esc_html($phone_free); ?></a>
@@ -235,8 +235,8 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
   <h2 class="cv-sec__h2">Why Commercial Vehicles Need a Workshop That Gets It</h2>
   <div class="cv-edu">
     <div class="cv-edu__text">
-      <p>A commercial vehicle works harder than a family car. It carries more weight, covers more kilometres, runs hotter, and wears brakes faster. A Ranger towing a trailer every day has completely different service requirements to the same Ranger doing school runs. The oil, the intervals, the brake wear, the suspension load — everything changes when the vehicle is working for a living.</p>
-      <p>Modern diesel utes and vans add another layer. DPF (diesel particulate filter) regeneration, EGR valve issues, turbo wear, AdBlue systems on newer models — these are all diesel-specific systems that need a workshop with the right diagnostic equipment and the knowledge to interpret what it finds. A generic service misses these entirely.</p>
+      <p>A commercial vehicle works harder than a family car. It carries more weight, covers more kilometres, runs hotter, and wears brakes faster. A Ranger towing a trailer every day has completely different service requirements to the same Ranger doing school runs. The oil, the intervals, the brake wear, the suspension load. Everything changes when the vehicle is working for a living.</p>
+      <p>Modern diesel utes and vans add another layer. DPF (diesel particulate filter) regeneration, EGR valve issues, turbo wear, AdBlue systems on newer models: these are all diesel-specific systems that need a workshop with the right diagnostic equipment and the knowledge to interpret what it finds. A generic service misses these entirely.</p>
       <p>We also understand that your vehicle is your income. A car owner can catch a bus for a day. A tradie, courier, or delivery driver cannot. Same-day turnaround on routine servicing is the standard here, not the exception.</p>
       <div class="cv-edu__callout">
         <h3>Downtime Costs You Money</h3>
@@ -247,14 +247,14 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
       <div class="cv-edu__panel-title">Commercial Vehicle Capability</div>
       <ul class="cv-edu__list">
         <li>Utes, vans, light trucks to 6.5 tonne</li>
-        <li>Diesel diagnostics — DPF, EGR, turbo, injectors</li>
-        <li>Logbook servicing — all manufacturers</li>
-        <li>WOF on-site — NZTA Authorised</li>
+        <li>Diesel diagnostics: DPF, EGR, turbo, injectors</li>
+        <li>Logbook servicing for all manufacturers</li>
+        <li>On-site WOF, NZTA Authorised</li>
         <li>Brakes, cambelt, suspension, cooling system</li>
         <li>Auto electrical and wiring</li>
-        <li>European commercials — Sprinter, Transporter, Transit</li>
+        <li>European commercials: Sprinter, Transporter, Transit</li>
         <li>Same-day turnaround on routine servicing</li>
-        <li>Finance — Afterpay, Q Card, GEM, Aotea</li>
+        <li>Finance: Afterpay, Q Card, GEM, Aotea</li>
         <li>Fleet accounts available for 3+ vehicles</li>
       </ul>
     </div>
@@ -287,7 +287,7 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
     <?php
     $svcs = [
       ['badge'=>'SVC','name'=>'Logbook Servicing','url'=>'/vehicle-servicing/'],
-      ['badge'=>'WOF','name'=>'WOF — '.$wof_price,'url'=>'/wof/'],
+      ['badge'=>'WOF','name'=>'WOF '.$wof_price,'url'=>'/wof/'],
       ['badge'=>'DS','name'=>'Diesel Diagnostics','url'=>'/diagnostic-scanning/'],
       ['badge'=>'MBC','name'=>'Brakes &amp; Clutch','url'=>'/manukau-brake-clutch/'],
       ['badge'=>'CB','name'=>'Cambelt &amp; Water Pump','url'=>'/cambelts-and-water-pumps/'],
@@ -310,7 +310,7 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
 </div></section>
 
 <!-- 6. ENQUIRY -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="cv-sec cv-sec--dark" id="enquire"><div class="cv-sec__inner">
   <div class="cv-enquiry">
     <div>
@@ -345,7 +345,7 @@ body.page-template-template-commercial-vehicles{overflow-x:hidden;-webkit-text-s
 <!-- 9. FAQ -->
 <section class="cv-sec cv-sec--grey"><div class="cv-sec__inner">
   <span class="cv-sec__eyebrow">FAQ</span>
-  <h2 class="cv-sec__h2">Commercial Vehicle Servicing — Common Questions</h2>
+  <h2 class="cv-sec__h2">Commercial Vehicle Servicing: Common Questions</h2>
   <div class="cv-faq">
     <?php foreach ($faqs as $i => $faq) : ?>
     <div class="cv-faq__item<?php echo $i===0?' cv-faq__item--open':''; ?>">

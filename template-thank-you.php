@@ -99,7 +99,7 @@ get_header();
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
       </div>
       <span class="ty-eye">Enquiry received</span>
-      <h1 class="ty-h1">Thanks — we’ve got your enquiry</h1>
+      <h1 class="ty-h1">Thanks, we’ve got your enquiry</h1>
       <p class="ty-sub"><?php echo esc_html($next_step); ?></p>
     </div>
   </section>
@@ -116,7 +116,7 @@ get_header();
         <div class="ty-card">
           <div class="ty-num">2</div>
           <h3>We get back to you</h3>
-          <p>By phone or email, whichever you asked for — with a time, a price guide, or the questions we need answered.</p>
+          <p>By phone or email, whichever you asked for, with a time, a price guide, or the questions we need answered.</p>
         </div>
         <div class="ty-card">
           <div class="ty-num">3</div>
@@ -130,7 +130,7 @@ get_header();
   <section class="ty-cta">
     <div class="w">
       <h2>Need us sooner?</h2>
-      <p>If it’s urgent, give us a call — it’s the fastest way to reach the team.</p>
+      <p>If it’s urgent, give us a call. It’s the fastest way to reach the team.</p>
       <div class="ty-cta__btns">
         <a class="taas-btn taas-btn--primary" href="<?php echo esc_attr($tel_free); ?>">Call <?php echo esc_html($phone_free); ?></a>
         <a class="taas-btn taas-btn--outline" href="<?php echo esc_url($back_url); ?>">Back to where you were</a>

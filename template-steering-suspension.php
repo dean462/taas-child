@@ -54,27 +54,27 @@ function ssh_mono($initials, $size = 40) {
 $steering_services = [
     ['icon' => ssh_mono('SR'), 'title' => 'Steering Rack Repair', 'desc' => 'Leaking, heavy, or knocking steering rack. We diagnose it, then replace it or send it to a trusted steering specialist for reconditioning.', 'url' => '/steering-rack-repair-manukau/', 'cta' => 'Steering Rack →'],
     ['icon' => ssh_mono('PS'), 'title' => 'Power Steering Repair', 'desc' => 'Heavy steering, whining pump, or leaking fluid. Hydraulic and electric systems diagnosed here; pump reconditioning is done by a trusted specialist.', 'url' => '/power-steering-repair-manukau/', 'cta' => 'Power Steering →'],
-    ['icon' => ssh_mono('TR'), 'title' => 'Tie Rod Replacement', 'desc' => 'Worn tie rod ends cause steering wander and uneven tyre wear. Replaced in pairs where required — wheel alignment included.', 'url' => '/tie-rod-replacement-manukau/', 'cta' => 'Tie Rods →'],
+    ['icon' => ssh_mono('TR'), 'title' => 'Tie Rod Replacement', 'desc' => 'Worn tie rod ends cause steering wander and uneven tyre wear. Replaced in pairs where required, with wheel alignment included.', 'url' => '/tie-rod-replacement-manukau/', 'cta' => 'Tie Rods →'],
     ['icon' => ssh_mono('WA'), 'title' => 'Wheel Alignment', 'desc' => 'Four-wheel laser alignment ' . esc_html($align_price) . '. Before-and-after print-out. Done after any steering or suspension repair.', 'url' => '/wheel-alignment-manukau/', 'cta' => 'Wheel Alignment →'],
 ];
 
 $suspension_services = [
     ['icon' => ssh_mono('SA'), 'title' => 'Shock Absorber Replacement', 'desc' => 'Worn shocks cause bouncing, poor braking, and WOF failure. Replaced in axle pairs. All makes including heavy SUVs and utes.', 'url' => '/shock-absorber-replacement-manukau/', 'cta' => 'Shock Absorbers →'],
     ['icon' => ssh_mono('BJ'), 'title' => 'Ball Joint Replacement', 'desc' => 'A failed ball joint is a loss-of-control event. Any clunking, vibration, or uneven wear gets checked before it becomes a WOF failure.', 'url' => '/ball-joint-replacement-manukau/', 'cta' => 'Ball Joints →'],
-    ['icon' => ssh_mono('SB'), 'title' => 'Suspension Bush Replacement', 'desc' => 'Worn bushes cause noise, vibration, and poor handling. Rubber or polyurethane — pressed and fitted in-house.', 'url' => '/suspension-bush-replacement-manukau/', 'cta' => 'Suspension Bushes →'],
-    ['icon' => ssh_mono('CA'), 'title' => 'Control Arm Replacement', 'desc' => 'Bent or worn control arms affect steering geometry and cause tyre wear. Replaced with correct-spec parts — alignment carried out after.', 'url' => '/control-arm-replacement-manukau/', 'cta' => 'Control Arms →'],
+    ['icon' => ssh_mono('SB'), 'title' => 'Suspension Bush Replacement', 'desc' => 'Worn bushes cause noise, vibration, and poor handling. Rubber or polyurethane, pressed and fitted in-house.', 'url' => '/suspension-bush-replacement-manukau/', 'cta' => 'Suspension Bushes →'],
+    ['icon' => ssh_mono('CA'), 'title' => 'Control Arm Replacement', 'desc' => 'Bent or worn control arms affect steering geometry and cause tyre wear. Replaced with correct-spec parts, with an alignment carried out after.', 'url' => '/control-arm-replacement-manukau/', 'cta' => 'Control Arms →'],
 ];
 
 // ── Warning signs ────────────────────────────────────────────────────────────
 $signs = [
-    'Vehicle pulling left or right — steering wheel off-centre on a straight road',
+    'Vehicle pulling left or right, or steering wheel off-centre on a straight road',
     'Clunking or knocking noise over bumps or when turning',
     'Steering wheel vibrating or shuddering at certain speeds',
-    'Excessive body roll through corners — vehicle feels unstable',
-    'Bouncing or wallowing — vehicle does not settle after a bump',
-    'Uneven or rapid tyre wear — one edge worn before the other',
+    'Excessive body roll through corners, vehicle feels unstable',
+    'Bouncing or wallowing: vehicle does not settle after a bump',
+    'Uneven or rapid tyre wear, one edge worn before the other',
     'Steering feels heavy, vague, or requires more effort than usual',
-    'Vehicle sitting low on one corner — collapsed spring or shock',
+    'Vehicle sitting low on one corner (collapsed spring or shock)',
     'Car failed WOF for steering or suspension',
 ];
 
@@ -408,8 +408,8 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
   <div class="ssh-w">
     <div class="ssh-hero__inner">
       <div>
-        <span class="ssh-hero__eyebrow">Steering &amp; Suspension — Manukau</span>
-        <h1>Steering &amp; Suspension<br><span>Repairs — Manukau</span></h1>
+        <span class="ssh-hero__eyebrow">Steering &amp; Suspension, Manukau</span>
+        <h1>Steering &amp; Suspension<br><span>Repairs in Manukau</span></h1>
         <p class="ssh-hero__sub">Shock absorbers, ball joints, steering racks, tie rods, bushes, and control arms. In-house WOF suspension test lane. Wheel alignment after every repair. All makes and models. Suspension repairs <?php echo esc_html($susp_price); ?>.</p>
         <div class="ssh-hero__signal">Estimate before we start · WOF test lane on-site · Wheel alignment included</div>
         <div class="ssh-hero__ctas">
@@ -420,18 +420,18 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
           <a href="#ssh-enquire" class="ssh-btn ssh-btn--outline">Book Online</a>
         </div>
         <div class="ssh-hero__urgency">
-          <strong>⚠ Do not ignore steering or suspension faults.</strong> A worn ball joint or failed tie rod end can cause loss of vehicle control without warning. If your vehicle is pulling, clunking, or handling differently — get it checked before your next trip.
+          <strong>⚠ Do not ignore steering or suspension faults.</strong> A worn ball joint or failed tie rod end can cause loss of vehicle control without warning. If your vehicle is pulling, clunking, or handling differently, get it checked before your next trip.
         </div>
       </div>
       <div class="ssh-sidebar">
         <div class="ssh-sidebar__title">We Service</div>
         <ul class="ssh-sidebar__list">
           <li>Steering rack repair &amp; replacement</li>
-          <li>Power steering — hydraulic &amp; electric</li>
+          <li>Power steering, hydraulic &amp; electric</li>
           <li>Tie rod ends</li>
-          <li>Shock absorbers — all makes</li>
+          <li>Shock absorbers, all makes</li>
           <li>Ball joints</li>
-          <li>Suspension bushes — rubber &amp; poly</li>
+          <li>Suspension bushes, rubber &amp; poly</li>
           <li>Control arms</li>
           <li>Coil springs</li>
           <li>Wheel alignment after every repair</li>
@@ -495,7 +495,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
 <section class="ssh-section ssh-section--grey">
   <div class="ssh-w">
     <span class="ssh-eyebrow ssh-eyebrow--dark">Suspension Services</span>
-    <h2 class="ssh-h2">Suspension Repairs — Shocks, Ball Joints &amp; More</h2>
+    <h2 class="ssh-h2">Suspension Repairs: Shocks, Ball Joints &amp; More</h2>
     <p class="ssh-lead">Shock absorbers, ball joints, suspension bushes, and control arms. Wheel alignment carried out after every suspension repair.</p>
     <div class="ssh-svc-grid">
       <?php foreach ($suspension_services as $svc): ?>
@@ -508,7 +508,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
       <?php endforeach; ?>
     </div>
     <div class="ssh-wof-banner">
-      <p><strong>WOF suspension failure?</strong> We carry out the repair and recheck the failed items on the same visit where possible. No need to rebook — call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="font-weight:700;color:var(--taas-black,#111111);"><?php echo esc_html($phone_free); ?></a>.</p>
+      <p><strong>WOF suspension failure?</strong> We carry out the repair and recheck the failed items on the same visit where possible. No need to rebook. Call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="font-weight:700;color:var(--taas-black,#111111);"><?php echo esc_html($phone_free); ?></a>.</p>
       <a href="<?php echo esc_url($site_url . '/wof/'); ?>" class="ssh-btn ssh-btn--primary" style="flex-shrink:0;">WOF Information →</a>
     </div>
   </div>
@@ -521,7 +521,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
       <div>
         <span class="ssh-eyebrow ssh-eyebrow--yellow">Warning Signs</span>
         <h2 class="ssh-h2 ssh-h2--white">Signs Your Steering or Suspension Needs Attention</h2>
-        <p class="ssh-lead" style="color:#888;">Any of these is worth getting checked — leaving steering or suspension faults causes tyre wear, WOF failure, and in serious cases loss of vehicle control.</p>
+        <p class="ssh-lead" style="color:#888;">Any of these is worth getting checked. Leaving steering or suspension faults causes tyre wear, WOF failure, and in serious cases loss of vehicle control.</p>
         <ul class="ssh-signs-list">
           <?php foreach ($signs as $sign): ?>
           <li class="ssh-signs-item"><?php echo esc_html($sign); ?></li>
@@ -531,7 +531,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
       <div class="ssh-signs__card">
         <h3>Not Sure What You Are Hearing?</h3>
         <p>Describe the noise, when it happens, and whether it is worse turning left or right, going over bumps, or at speed. We can usually narrow down the likely cause over the phone before you book.</p>
-        <p>If the noise appeared suddenly or the vehicle is handling very differently — do not wait. Call us directly.</p>
+        <p>If the noise appeared suddenly or the vehicle is handling very differently, do not wait. Call us directly.</p>
         <div style="display:flex;flex-direction:column;gap:12px;">
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ssh-btn ssh-btn--primary"><?php echo esc_html($phone_free); ?></a>
           <a href="#ssh-enquire" class="ssh-btn ssh-btn--outline">Book Online</a>
@@ -546,24 +546,24 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
 <section class="ssh-section ssh-section--white">
   <div class="ssh-w">
     <span class="ssh-eyebrow ssh-eyebrow--dark">Understanding Your Vehicle</span>
-    <h2 class="ssh-h2">How Your Steering &amp; Suspension Works — and Why It Matters</h2>
+    <h2 class="ssh-h2">How Your Steering &amp; Suspension Works, and Why It Matters</h2>
     <div class="ssh-edu">
-      <p>Steering and suspension are two separate systems that work together to keep your vehicle safe, stable, and controllable. When one degrades, the other suffers — and the driver pays the price in tyre wear, poor handling, and ultimately a WOF failure or loss of control.</p>
+      <p>Steering and suspension are two separate systems that work together to keep your vehicle safe, stable, and controllable. When one degrades, the other suffers, and the driver pays the price in tyre wear, poor handling, and ultimately a WOF failure or loss of control.</p>
 
-      <h3>Steering — How You Control Direction</h3>
-      <p>Your steering system converts the movement of the steering wheel into the precise turning of the front wheels. The steering rack sits across the front of the vehicle and connects to each wheel via tie rod ends. Power steering — either hydraulic or electric — assists the driver so the wheel turns easily at low speed and remains stable at highway speed. When any part of this system wears — a leaking steering rack, worn tie rod ends, a failing power steering pump — the vehicle becomes harder to control, pulls to one side, or develops play in the steering wheel.</p>
+      <h3>Steering: How You Control Direction</h3>
+      <p>Your steering system converts the movement of the steering wheel into the precise turning of the front wheels. The steering rack sits across the front of the vehicle and connects to each wheel via tie rod ends. Power steering (hydraulic or electric) assists the driver so the wheel turns easily at low speed and remains stable at highway speed. When any part of this system wears (a leaking steering rack, worn tie rod ends, a failing power steering pump), the vehicle becomes harder to control, pulls to one side, or develops play in the steering wheel.</p>
 
-      <h3>Suspension — What Keeps You on the Road</h3>
-      <p>The suspension system absorbs road surface imperfections so the cabin remains comfortable, keeps the tyres in firm contact with the road so the vehicle brakes and corners effectively, and controls body roll so the vehicle remains stable through turns. Shock absorbers, coil springs, ball joints, suspension bushes, and control arms all work together. When shock absorbers wear, the vehicle bounces and the tyres lose contact with the road — braking distance increases significantly.</p>
+      <h3>Suspension: What Keeps You on the Road</h3>
+      <p>The suspension system absorbs road surface imperfections so the cabin remains comfortable, keeps the tyres in firm contact with the road so the vehicle brakes and corners effectively, and controls body roll so the vehicle remains stable through turns. Shock absorbers, coil springs, ball joints, suspension bushes, and control arms all work together. When shock absorbers wear, the vehicle bounces and the tyres lose contact with the road. Braking distance increases significantly.</p>
 
-      <h3>Why This Is Safety-Critical — Not Just Comfort</h3>
+      <h3>Why This Is Safety-Critical, Not Just Comfort</h3>
       <div class="ssh-edu__alert">
-        <p><strong>Worn suspension increases braking distance.</strong> Most drivers do not realise this. When shock absorbers are worn, the tyres lose contact with the road surface during braking — the vehicle takes longer to stop. In wet conditions, the effect is even more pronounced.</p>
-        <p><strong>A failed ball joint means immediate loss of steering control.</strong> A ball joint connects the control arm to the wheel hub. If it separates — and severely worn ball joints can separate without warning — the wheel collapses and the vehicle becomes unsteerable. This is why ball joint condition is checked at every WOF.</p>
+        <p><strong>Worn suspension increases braking distance.</strong> Most drivers do not realise this. When shock absorbers are worn, the tyres lose contact with the road surface during braking, so the vehicle takes longer to stop. In wet conditions, the effect is even more pronounced.</p>
+        <p><strong>A failed ball joint means immediate loss of steering control.</strong> A ball joint connects the control arm to the wheel hub. If it separates (and severely worn ball joints can separate without warning), the wheel collapses and the vehicle becomes unsteerable. This is why ball joint condition is checked at every WOF.</p>
       </div>
 
       <h3>The WOF Connection</h3>
-      <p>Steering and suspension components are among the most common WOF failure items. Our workshop has an in-house suspension test lane — the same equipment used during WOF inspections — so we can identify problems before your WOF and carry out the repair and recheck on the same visit where possible.</p>
+      <p>Steering and suspension components are among the most common WOF failure items. Our workshop has an in-house suspension test lane (the same equipment used during WOF inspections), so we can identify problems before your WOF and carry out the repair and recheck on the same visit where possible.</p>
       <p>If your vehicle has failed a WOF for steering or suspension, or you want to avoid a failure, call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;"><?php echo esc_html($phone_free); ?></a>. We provide an estimate before any work begins.</p>
     </div>
   </div>
@@ -596,7 +596,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
 <!-- ══ FINANCE STRIP ════════════════════════════════════════════════════ -->
 <div class="ssh-finance"><div class="ssh-w">
   <div class="ssh-finance__inner">
-    <div class="ssh-finance__heading">Safety Shouldn't Wait — Finance Available</div>
+    <div class="ssh-finance__heading">Safety Shouldn't Wait. Finance Available.</div>
     <p class="ssh-finance__sub">Steering and suspension repairs are safety-critical. Spread the cost with interest-free options.</p>
     <div class="ssh-finance__logos">
       <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="ssh-finance__logo-img" height="36" loading="lazy">
@@ -615,14 +615,14 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
       <div>
         <span class="ssh-eyebrow ssh-eyebrow--yellow">Book or Enquire</span>
         <h2 class="ssh-h2 ssh-h2--white">Book a Steering &amp; Suspension Check</h2>
-        <p style="font-size:15px;font-weight:300;color:#aaa;line-height:1.75;letter-spacing:-0.1px;margin-bottom:8px;">Tell us what your vehicle is doing — pulling, clunking, bouncing, vibrating. We will advise on the next step.</p>
+        <p style="font-size:15px;font-weight:300;color:#aaa;line-height:1.75;letter-spacing:-0.1px;margin-bottom:8px;">Tell us what your vehicle is doing: pulling, clunking, bouncing, vibrating. We will advise on the next step.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ssh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="ssh-enquiry__detail">
           <strong>Tony Allen Auto Service</strong><br>
           <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>
           <?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?>
         </div>
-        <div class="ssh-enquiry__estimate">We'll keep you informed every step of the way.</div>
+        <div class="ssh-enquiry__estimate">We give you an estimate before starting work and keep you informed if anything changes.</div>
         <div class="ssh-enquiry__finance-logos">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="ssh-enquiry__fin-img" height="32" loading="lazy">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-qcard.png'); ?>" alt="Q Card" class="ssh-enquiry__fin-img" height="32" loading="lazy">
@@ -653,7 +653,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
 <!-- ══ SUBURBS ═══════════════════════════════════════════════════════════ -->
 <section class="ssh-section ssh-section--grey">
   <div class="ssh-w">
-    <h2 class="ssh-h2">Steering &amp; Suspension Repairs — South Auckland Areas</h2>
+    <h2 class="ssh-h2">Steering &amp; Suspension Repairs Across South Auckland</h2>
     <p style="font-size:14px;font-weight:300;color:var(--taas-mid,#666666);margin-bottom:16px;line-height:1.75;">Serving all South Auckland suburbs from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a>.</p>
     <div class="ssh-suburb-pills">
       <?php foreach ($suburbs as $s): ?>

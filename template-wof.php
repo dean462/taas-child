@@ -130,14 +130,14 @@ $schema = [
     [
       '@type'       => 'Service',
       'name'        => 'Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Booked drop-off — if anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
+      'description' => 'NZTA-authorised Warrant of Fitness inspections at '.$wof_price.' incl. GST. Booked drop-off. If anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => get_site_url() . '/#organization'],
       'areaServed'  => 'Manukau, South Auckland, New Zealand',
       'offers'      => [
         '@type'         => 'Offer',
         'price'         => '80',
         'priceCurrency' => 'NZD',
-        'description'   => 'WOF inspection — all makes and models, incl. GST',
+        'description'   => 'WOF inspection for all makes and models, incl. GST',
       ],
     ],
     [
@@ -562,11 +562,11 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
       <div>
         <div class="wof-hero__eye">
           <div class="wof-hero__line"></div>
-          <span class="wof-hero__eye-txt">NZTA Authorised — Manukau</span>
+          <span class="wof-hero__eye-txt">NZTA Authorised, Manukau</span>
         </div>
         <h1 class="wof-hero__h1">
           WOF Inspection Manukau<br>
-          <span>Inspected &amp; Fixed — One Visit</span>
+          <span>Inspected &amp; Fixed in One Visit</span>
         </h1>
         <div class="wof-hero__price">Booked drop-off · Mon–Fri 7:30am–5:00pm</div>
         <p class="wof-hero__sub">Warrant of Fitness (WOF) inspections in Manukau, NZTA-authorised, at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive</a>. <?php echo esc_html($wof_price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and with seven specialist divisions under one roof, most repairs can be done the same visit.</p>
@@ -627,7 +627,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         <a href="tel:<?php echo preg_replace('/\s+/','',$phone_free); ?>" class="wof-pstrip__num"><?php echo esc_html($phone_free); ?></a>
         <span class="wof-pstrip__hours">Mon–Fri 7:30am–5:00pm</span>
       </div>
-      <span class="wof-pstrip__walkin">Booked drop-off WOFs — drop off early for same-day repairs</span>
+      <span class="wof-pstrip__walkin">Booked drop-off WOFs. Drop off early for same-day repairs</span>
     </div>
   </div>
 </div>
@@ -640,15 +640,15 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
       <div>
         <h2 class="wof-facts__h2" id="wof-facts-head">South Auckland's <span>WOF Specialists</span><br>Since <?php echo esc_html($established); ?></h2>
         <p class="wof-facts__body">Tony Allen Auto Service has been carrying out NZTA-authorised Warrant of Fitness inspections in Manukau since 1985. We are a family-owned independent workshop with a dedicated WOF inspection bay and a team of qualified technicians.</p>
-        <p class="wof-facts__body">We operate seven specialist divisions under one roof. If your vehicle fails its WOF — whether it needs brakes, tyres, suspension, or electrical work — we can often carry out repairs on the same visit, depending on the work required and parts availability. No referrals. No second booking needed in many cases.</p>
+        <p class="wof-facts__body">We operate seven specialist divisions under one roof. If your vehicle fails its WOF on brakes, tyres, suspension or electrical work, we can often carry out repairs on the same visit, depending on the work required and parts availability. No referrals. No second booking needed in many cases.</p>
         <ul class="wof-checklist">
           <li>Drop off early and we'll aim to inspect, estimate and repair the same day</li>
-          <li>NZTA Authorised — <?php echo esc_html($ms_number); ?></li>
-          <li>MTA Assured — independently assessed quality standard</li>
+          <li>NZTA Authorised, <?php echo esc_html($ms_number); ?></li>
+          <li>MTA Assured, an independently assessed quality standard</li>
           <li>Dedicated WOF inspection bay</li>
           <li>Written repair estimate before any work begins</li>
-          <li>Repairs often carried out on the same visit — subject to work required and parts</li>
-          <li><?php echo esc_html($wof_price); ?> flat rate — all makes, all models, incl. GST</li>
+          <li>Repairs often carried out on the same visit, subject to work required and parts</li>
+          <li><?php echo esc_html($wof_price); ?> flat rate for all makes and models, incl. GST</li>
           <li>Re-inspection within 28 days at no charge</li>
         </ul>
       </div>
@@ -718,7 +718,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
 <!-- ══ 2026 RULE CHANGES ══════════════════════════════════════════════════ -->
 <section class="wof-rules" aria-labelledby="wof-rules-head">
   <div class="wof-w">
-    <div class="wof-rules__eye">Updated — 2026 Rule Changes</div>
+    <div class="wof-rules__eye">Updated: 2026 Rule Changes</div>
     <h2 class="wof-rules__h2" id="wof-rules-head">New WOF Frequency Rules<br>from 1 November 2026</h2>
     <p class="wof-rules__sub">The New Zealand Government has confirmed changes to WOF inspection frequency. Here's a plain-English summary for South Auckland drivers.</p>
     <div class="wof-table-wrap">
@@ -732,7 +732,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         </thead>
         <tbody>
           <tr>
-            <td>New vehicle — first WOF</td>
+            <td>New vehicle, first WOF</td>
             <td>WOF at 3 years</td>
             <td><span class="tag-new">WOF at 4 years</span></td>
           </tr>
@@ -749,7 +749,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
           <tr>
             <td>Over 14 years old</td>
             <td>Annual WOF</td>
-            <td><span class="tag-nc">Annual — no change</span></td>
+            <td><span class="tag-nc">Annual, no change</span></td>
           </tr>
           <tr>
             <td>Pre-2000 vehicles</td>
@@ -765,7 +765,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
       </table>
     </div>
     <div class="wof-rules__note">
-      <strong>Important for South Auckland:</strong> A large proportion of the South Auckland vehicle fleet is over 14 years old — these vehicles remain on annual WOFs with no change. Not sure which category your vehicle falls into? Call us on <a href="tel:<?php echo preg_replace('/\s+/','',$phone_free); ?>" style="color:#1A1A1A;font-weight:700;"><?php echo esc_html($phone_free); ?></a> and we'll check for you. WOF fines also increase from 1 November 2026 — driving with a WOF expired by more than two months will be <strong>$350</strong> (up from $200).
+      <strong>Important for South Auckland:</strong> A large proportion of the South Auckland vehicle fleet is over 14 years old, and these vehicles remain on annual WOFs with no change. Not sure which category your vehicle falls into? Call us on <a href="tel:<?php echo preg_replace('/\s+/','',$phone_free); ?>" style="color:#1A1A1A;font-weight:700;"><?php echo esc_html($phone_free); ?></a> and we'll check for you. WOF fines also increase from 1 November 2026. Driving with a WOF expired by more than two months will be <strong>$350</strong> (up from $200).
     </div>
   </div>
 </section>
@@ -823,7 +823,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
           </div>
           <div>
             <div class="wof-book__info-lbl">Free reminder service</div>
-            <div class="wof-book__info-val">We'll email or text when your WOF is due — ask us to add you</div>
+            <div class="wof-book__info-val">We'll email or text when your WOF is due. Ask us to add you</div>
           </div>
         </div>
       </div>
@@ -851,7 +851,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
         ['09','Fuel System','No fuel leaks, cap sealing correctly'],
         ['10','Doors & Glazing','All doors open, close and latch. Glazing condition.'],
         ['11','Speedometer','Functioning and accurately calibrated'],
-        ['12','ADAS (from 2026)','Safety system warning lights — new requirement from November 2026'],
+        ['12','ADAS (from 2026)','Safety system warning lights, a new requirement from November 2026'],
       ];
       foreach($checks as $c): ?>
       <div class="wof-check-card">
@@ -877,7 +877,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
       </div>
       <div class="wof-why__card">
         <div class="wof-why__card-head">Repairs where possible on the day</div>
-        <div class="wof-why__card-body">Seven specialist divisions under one roof — brakes, tyres, suspension, electrics. Where the work and parts allow, we aim to have repairs done on the same visit. We'll always tell you upfront what's possible.</div>
+        <div class="wof-why__card-body">Seven specialist divisions under one roof: brakes, tyres, suspension, electrics. Where the work and parts allow, we aim to have repairs done on the same visit. We'll always tell you upfront what's possible.</div>
       </div>
       <div class="wof-why__card">
         <div class="wof-why__card-head">What a WOF is (and isn't)</div>
@@ -885,7 +885,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
       </div>
       <div class="wof-why__card">
         <div class="wof-why__card-head">Calibrated equipment</div>
-        <div class="wof-why__card-body">We use regularly calibrated, fully certified testing equipment — the same standard required by NZTA. The inspection is the inspection.</div>
+        <div class="wof-why__card-body">We use regularly calibrated, fully certified testing equipment, to the standard NZTA requires. The inspection is the inspection.</div>
       </div>
       <div class="wof-why__card">
         <div class="wof-why__card-head">Free reminder service</div>
@@ -893,7 +893,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
       </div>
       <div class="wof-why__card">
         <div class="wof-why__card-head"><?php echo esc_html($reviews); ?> reviews · <?php echo esc_html($rating); ?>★</div>
-        <div class="wof-why__card-body">Real customers, real reviews on Google. MTA Assured — independently assessed. MTA Best General Repairer South Auckland 2010.</div>
+        <div class="wof-why__card-body">Real customers, real reviews on Google. MTA Assured and independently assessed. MTA Best General Repairer South Auckland 2010.</div>
       </div>
     </div>
   </div>
@@ -918,7 +918,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
 <!-- ══ FINANCE ════════════════════════════════════════════════════════════ -->
 <section class="wof-finance" aria-label="Finance options">
   <div class="wof-w">
-    <div class="wof-finance__label">Spread the cost — finance available for repairs after your WOF</div>
+    <div class="wof-finance__label">Spread the cost with finance for repairs after your WOF</div>
     <div class="wof-finance__logos">
       <a href="<?php echo esc_url(home_url('/afterpay-car-repairs/')); ?>" class="wof-finance__logo">Afterpay</a>
       <a href="<?php echo esc_url(home_url('/qcard-car-repairs/')); ?>" class="wof-finance__logo">Q Card</a>
@@ -946,7 +946,7 @@ a.wof-finance__logo:hover { border-color:#FFC800; color:#1A1A1A; }
 // Suburb links: only suburbs whose wof-inspection page is published are shown.
 // The whole block stays hidden until at least one suburb page is live.
 $suburbs_all = [
-        ['Manukau','On site — we are here','/wof-inspection-manukau/'],
+        ['Manukau','On site. We are here','/wof-inspection-manukau/'],
         ['Papatoetoe','~5 min via Great South Rd','/wof-inspection-papatoetoe/'],
         ['Māngere','~10 min from town centre','/wof-inspection-mangere/'],
         ['Māngere Bridge','~10–12 min via Massey Rd','/wof-inspection-mangere-bridge/'],
@@ -972,7 +972,7 @@ if ($suburbs) : ?>
 <!-- ══ SUBURB SPOKES ══════════════════════════════════════════════════════ -->
 <section class="wof-suburbs" aria-labelledby="wof-suburbs-head">
   <div class="wof-w">
-    <h2 class="wof-suburbs__h2" id="wof-suburbs-head">WOF Near Me — South Auckland</h2>
+    <h2 class="wof-suburbs__h2" id="wof-suburbs-head">WOF Near Me in South Auckland</h2>
     <p class="wof-suburbs__sub">We serve drivers from across South Auckland from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>. Select your suburb for local WOF information and directions.</p>
     <div class="wof-suburbs__grid">
       <?php foreach($suburbs as $s): ?>
@@ -1013,14 +1013,14 @@ if ($suburbs) : ?>
       <div>
         <div class="wof-awards__label">Industry recognition</div>
         <div class="wof-awards__list">
-          <span class="wof-award-pill">🏆 MTA Best General Repairer — South Auckland 2010</span>
+          <span class="wof-award-pill">🏆 MTA Best General Repairer, South Auckland 2010</span>
           <span class="wof-award-pill">MTA Awards Finalist 2012</span>
           <span class="wof-award-pill">MTA Awards Finalist 2014</span>
           <span class="wof-award-pill">2 Degrees Business Awards Nominee 2026</span>
         </div>
       </div>
       <div>
-        <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured — Motor Trade Association member" style="height:70px;width:auto;" loading="lazy">
+        <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured, Motor Trade Association member" style="height:70px;width:auto;" loading="lazy">
       </div>
     </div>
   </div>

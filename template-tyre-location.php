@@ -70,23 +70,23 @@ $is_branded     = ($page_set === 'branded');
 
 // ── Branded vs Cluster content ──────────────────────────────────────────────
 if ($is_branded) {
-    $hero_eyebrow = 'Tony Allen Tyres — ' . $suburb_name;
+    $hero_eyebrow = 'Tony Allen Tyres ' . $suburb_name;
     $hero_h1      = 'Tony Allen Tyres ' . $suburb_name;
     $hero_h1_span = 'Your Local Tyre Shop';
-    $hero_sub     = 'Tony Allen Auto Service — family-owned since ' . $established . '. Trusted by ' . $customers . ' customers across South Auckland for tyre supply, fitting, balancing and alignment. ' . ucfirst($distance_text) . ' from ' . $suburb_name . '.';
+    $hero_sub     = 'Tony Allen Auto Service, family-owned since ' . $established . '. Trusted by ' . $customers . ' customers across South Auckland for tyre supply, fitting, balancing and alignment. ' . ucfirst($distance_text) . ' from ' . $suburb_name . '.';
     $expect_heading = 'Why ' . $suburb_name . ' Drivers Choose Tony Allen';
-    $expect_p1    = 'Tony Allen Auto Service has been fitting tyres in South Auckland since ' . $established . '. When you come to us for tyres, you are dealing with a family-owned independent workshop — not a tyre retail chain. We recommend the right tyre for your vehicle and driving style, not the one with the biggest margin.';
-    $expect_p2    = 'Every set of tyres is fitted, balanced and aligned on-site in a single visit. We carry Maxxis, Continental, Goodyear, Hifly, Rovelo and more — budget through to premium. Our technicians fit hundreds of sets a year and our 3D laser alignment hoist ensures your new tyres wear evenly from day one.';
-    $expect_p3    = 'We are at 139 Cavendish Drive, Manukau — ' . $distance_text . ' from ' . $suburb_name . '. Walk-ins welcome for tyres — no booking needed.';
+    $expect_p1    = 'Tony Allen Auto Service has been fitting tyres in South Auckland since ' . $established . '. When you come to us for tyres, you are dealing with a family-owned independent workshop, not a tyre retail chain. We recommend the right tyre for your vehicle and driving style, not the one with the biggest margin.';
+    $expect_p2    = 'Every set of tyres is fitted, balanced and aligned on-site in a single visit. We carry Maxxis, Continental, Goodyear, Hifly, Rovelo and more, from budget through to premium. Our technicians fit hundreds of sets a year and our 3D laser alignment hoist helps your new tyres wear evenly from day one.';
+    $expect_p3    = 'We are at 139 Cavendish Drive, Manukau, ' . $distance_text . ' from ' . $suburb_name . '. Walk-ins welcome for tyres. No booking needed.';
     $trust_extra  = 'Family-Owned Since ' . $established;
 } else {
-    $hero_eyebrow = 'Tyres — ' . $suburb_name;
+    $hero_eyebrow = 'Tyres near ' . $suburb_name;
     $hero_h1      = 'Tyres ' . $suburb_name;
     $hero_h1_span = 'South Auckland';
     $hero_sub     = 'Tyre supply, fitting, wheel alignment and balancing for ' . $suburb_name . ' and surrounding areas. Budget to premium brands for cars, SUVs, 4WDs and light commercial. ' . $years . ' years of workshop experience, serving ' . $customers . ' customers.';
     $expect_heading = 'Tyre Service for ' . $suburb_name . ' Drivers';
-    $expect_p1    = 'If you are in ' . $suburb_name . ' and need new tyres, a puncture repaired, or your alignment checked — we are ' . $distance_text . ' away at 139 Cavendish Drive, Manukau.';
-    $expect_p2    = 'We supply, fit and balance tyres in one visit — no need to book at one shop and fit at another. Budget to premium brands available, and we will recommend based on your vehicle and how you drive, not on margin. Wheel alignment is done on-site with our 3D laser alignment hoist — recommended every time new tyres are fitted.';
+    $expect_p1    = 'If you are in ' . $suburb_name . ' and need new tyres, a puncture repaired, or your alignment checked, we are ' . $distance_text . ' away at 139 Cavendish Drive, Manukau.';
+    $expect_p2    = 'We supply, fit and balance tyres in one visit. No need to book at one shop and fit at another. Budget to premium brands available, and we will recommend based on your vehicle and how you drive, not on margin. Wheel alignment is done on-site with our 3D laser alignment hoist. We recommend it every time new tyres are fitted.';
     $expect_p3    = 'Walk-ins are welcome for tyres. If you would rather book a time, call ' . $phone_free . ' or send us your details below.';
     $trust_extra  = '7 Brands in Stock';
 }
@@ -94,29 +94,29 @@ if ($is_branded) {
 // ── FAQs (different per page set) ───────────────────────────────────────────
 if ($is_branded) {
     $faqs = [
-        ['q' => "Why choose Tony Allen for tyres near {$suburb_name}?", 'a' => "Tony Allen Auto Service is a family-owned workshop trading since {$established} — not a tyre retail chain. We supply, fit, balance and align in one visit. We recommend tyres based on your vehicle and driving, not margin. Over {$customers} customers trust us across South Auckland."],
+        ['q' => "Why choose Tony Allen for tyres near {$suburb_name}?", 'a' => "Tony Allen Auto Service is a family-owned workshop trading since {$established}, not a tyre retail chain. We supply, fit, balance and align in one visit. We recommend tyres based on your vehicle and driving, not margin. Over {$customers} customers trust us across South Auckland."],
         ['q' => "Is Tony Allen Auto Service a good tyre shop?", 'a' => "We are rated {$rating} stars from {$reviews} Google reviews. MTA Assured, NZTA Authorised, and we have been fitting tyres in South Auckland for over {$years} years. We carry Maxxis, Continental, Goodyear, Hifly and more."],
         ['q' => "How far is Tony Allen from {$suburb_name}?", 'a' => "We are {$distance_text} from {$suburb_name} {$current_suburb['route']}. 139 Cavendish Drive, Manukau, Auckland 2104. Open {$hours}."],
-        ['q' => "Does Tony Allen do wheel alignment?", 'a' => "Yes. 3D laser wheel alignment on our dedicated alignment hoist — {$alignment_price}. Recommended with every new set of tyres. We check and adjust front and rear geometry."],
+        ['q' => "Does Tony Allen do wheel alignment?", 'a' => "Yes. 3D laser wheel alignment on our dedicated alignment hoist for {$alignment_price}. Recommended with every new set of tyres. We check and adjust front and rear geometry."],
         ['q' => "What tyre brands does Tony Allen carry?", 'a' => "Maxxis, Continental, Goodyear, Hifly, Rovelo, Vitora and Wanli. Budget to premium. We recommend based on how you drive, not margin."],
         ['q' => "Can I get 4WD tyres at Tony Allen?", 'a' => "Yes. All-terrain, highway terrain and mud terrain. Maxxis AT811, MT772, AT771 are our most popular. Continental CrossContact, Goodyear Wrangler and budget alternatives also available."],
         ['q' => "Does Tony Allen offer tyre finance?", 'a' => "Yes. Afterpay, Q Card and GEM Finance accepted. Apply in-store or set up on your phone before you arrive."],
         ['q' => "Can Tony Allen fit tyres I bought online?", 'a' => "Yes. Bring your tyres in and we will fit, balance and align them. Check the size and load rating match your vehicle before purchasing."],
-        ['q' => "Does Tony Allen do puncture repairs?", 'a' => "Yes. Plug and patch repairs where the tyre is safely repairable. If the damage is in the sidewall or too large, we will tell you straight — we do not repair tyres that are not safe."],
-        ['q' => "What are Tony Allen's opening hours?", 'a' => "{$hours}. Walk-ins welcome for tyres and batteries. WOFs, servicing and repairs are by booking. 139 Cavendish Drive, Manukau — {$distance_text} from {$suburb_name}."],
+        ['q' => "Does Tony Allen do puncture repairs?", 'a' => "Yes. Plug and patch repairs where the tyre is safely repairable. If the damage is in the sidewall or too large, we will tell you straight. We do not repair tyres that are not safe."],
+        ['q' => "What are Tony Allen's opening hours?", 'a' => "{$hours}. Walk-ins welcome for tyres and batteries. WOFs, servicing and repairs are by booking. 139 Cavendish Drive, Manukau, {$distance_text} from {$suburb_name}."],
     ];
 } else {
     $faqs = [
-        ['q' => "Where can I get tyres fitted near {$suburb_name}?", 'a' => "Tony Allen Auto Service at 139 Cavendish Drive, Manukau — {$distance_text} {$current_suburb['route']} from {$suburb_name}. We supply, fit and balance tyres for cars, SUVs, 4WDs and light commercial vehicles. Call {$phone_free} for an estimate."],
+        ['q' => "Where can I get tyres fitted near {$suburb_name}?", 'a' => "Tony Allen Auto Service at 139 Cavendish Drive, Manukau, {$distance_text} {$current_suburb['route']} from {$suburb_name}. We supply, fit and balance tyres for cars, SUVs, 4WDs and light commercial vehicles. Call {$phone_free} for an estimate."],
         ['q' => "How much do tyres cost near {$suburb_name}?", 'a' => "Tyre prices depend on size, brand and availability. We carry budget to premium brands including Maxxis, Continental, Goodyear, Hifly and more. Wheel alignment {$alignment_price}. Balancing {$balance_price}. Call with your tyre size or rego for an estimate."],
-        ['q' => "Do you do wheel alignment near {$suburb_name}?", 'a' => "Yes. 3D laser wheel alignment on our dedicated alignment hoist — {$alignment_price}. Front and rear geometry checked and adjusted. We are {$distance_text} from {$suburb_name} {$current_suburb['route']}."],
-        ['q' => "Can you repair a puncture near {$suburb_name}?", 'a' => "Yes. Plug and patch repairs where the tyre is safely repairable. If the puncture is in the sidewall or too close to a previous repair, we will tell you honestly — some punctures require a new tyre."],
-        ['q' => "What tyre brands do you carry?", 'a' => "Maxxis, Continental, Goodyear, Hifly, Rovelo, Vitora, Wanli and more. Budget to premium — we recommend based on your vehicle and driving style, not margin."],
+        ['q' => "Do you do wheel alignment near {$suburb_name}?", 'a' => "Yes. 3D laser wheel alignment on our dedicated alignment hoist for {$alignment_price}. Front and rear geometry checked and adjusted. We are {$distance_text} from {$suburb_name} {$current_suburb['route']}."],
+        ['q' => "Can you repair a puncture near {$suburb_name}?", 'a' => "Yes. Plug and patch repairs where the tyre is safely repairable. If the puncture is in the sidewall or too close to a previous repair, we will tell you honestly. Some punctures require a new tyre."],
+        ['q' => "What tyre brands do you carry?", 'a' => "Maxxis, Continental, Goodyear, Hifly, Rovelo, Vitora, Wanli and more. Budget to premium. We recommend based on your vehicle and driving style, not margin."],
         ['q' => "Do you fit tyres I have bought elsewhere?", 'a' => "Yes. Bring your tyres in and we will fit, balance and align. Make sure the size and load rating match your vehicle before purchasing."],
         ['q' => "Do you do 4WD and SUV tyres?", 'a' => "Yes. All-terrain, highway terrain and mud terrain patterns. Maxxis Bravo, Continental CrossContact, Goodyear Wrangler and budget alternatives. Fitted and balanced on-site."],
         ['q' => "How often should I get a wheel alignment?", 'a' => "After fitting new tyres, after any suspension work, or if you notice uneven tyre wear or steering pull. At minimum, check alignment annually. Alignment {$alignment_price}."],
         ['q' => "Can I pay with Afterpay?", 'a' => "Yes. We accept Afterpay, Q Card and GEM Finance. Apply in-store or set up before you arrive."],
-        ['q' => "What are your opening hours?", 'a' => "{$hours}. Walk-ins welcome for tyres and batteries. WOFs, servicing and repairs are by booking. 139 Cavendish Drive, Manukau — {$distance_text} from {$suburb_name}."],
+        ['q' => "What are your opening hours?", 'a' => "{$hours}. Walk-ins welcome for tyres and batteries. WOFs, servicing and repairs are by booking. 139 Cavendish Drive, Manukau, {$distance_text} from {$suburb_name}."],
     ];
 }
 
@@ -295,21 +295,21 @@ body.page-template-template-tyre-location { overflow-x:hidden; }
   <div class="tsl-section__inner">
     <span class="tsl-section__eyebrow">Services</span>
     <h2 class="tsl-section__heading">Tyre Services Available</h2>
-    <p class="tsl-section__sub">All services at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive</a> — <?php echo esc_html($distance_text); ?> from <?php echo esc_html($suburb_name); ?>.</p>
+    <p class="tsl-section__sub">All services at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive</a>, <?php echo esc_html($distance_text); ?> from <?php echo esc_html($suburb_name); ?>.</p>
     <div class="tsl-services">
       <a href="<?php echo esc_url($site_url . '/tyre-fitting-manukau/'); ?>" class="tsl-service">
         <div class="tsl-service__title">Tyre Fitting</div>
-        <p class="tsl-service__desc">New tyres supplied, fitted and balanced. All sizes — cars, SUVs, 4WDs, light commercial.</p>
+        <p class="tsl-service__desc">New tyres supplied, fitted and balanced. All sizes: cars, SUVs, 4WDs, light commercial.</p>
         <span class="tsl-service__link">Tyre Fitting →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/wheel-alignment-manukau/'); ?>" class="tsl-service">
         <div class="tsl-service__title">Wheel Alignment</div>
-        <p class="tsl-service__desc">3D laser alignment — <?php echo esc_html($alignment_price); ?>. Prevents uneven wear.</p>
+        <p class="tsl-service__desc">3D laser alignment, <?php echo esc_html($alignment_price); ?>. Prevents uneven wear.</p>
         <span class="tsl-service__link">Wheel Alignment →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/wheel-balancing-manukau/'); ?>" class="tsl-service">
         <div class="tsl-service__title">Wheel Balancing</div>
-        <p class="tsl-service__desc">ER85 balancer — <?php echo esc_html($balance_price); ?>. Included with new tyre fitting.</p>
+        <p class="tsl-service__desc">ER85 balancer, <?php echo esc_html($balance_price); ?>. Included with new tyre fitting.</p>
         <span class="tsl-service__link">Wheel Balancing →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/tyre-rotation-manukau/'); ?>" class="tsl-service">
@@ -324,17 +324,17 @@ body.page-template-template-tyre-location { overflow-x:hidden; }
       </a>
       <a href="<?php echo esc_url($site_url . '/tpms-reset-manukau/'); ?>" class="tsl-service">
         <div class="tsl-service__title">TPMS Reset</div>
-        <p class="tsl-service__desc">Tyre pressure warning light — reset and sensor diagnosis. <?php echo esc_html($tpms_price); ?>.</p>
+        <p class="tsl-service__desc">Tyre pressure warning light reset and sensor diagnosis. <?php echo esc_html($tpms_price); ?>.</p>
         <span class="tsl-service__link">TPMS Reset →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>" class="tsl-service" style="border-top-color:var(--taas-yellow,#FFC800);">
         <div class="tsl-service__title">Search Our Tyre Stock</div>
-        <p class="tsl-service__desc">Enter your tyre size to see what we have available — budget to premium.</p>
+        <p class="tsl-service__desc">Enter your tyre size to see what we have available, budget to premium.</p>
         <span class="tsl-service__link">Tyre Finder →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/tyre-centre/'); ?>" class="tsl-service">
         <div class="tsl-service__title">All Tyre Services</div>
-        <p class="tsl-service__desc">See the full range — brands, finder, 4WD, budget and run-flat tyres.</p>
+        <p class="tsl-service__desc">See the full range: brands, finder, 4WD, budget and run-flat tyres.</p>
         <span class="tsl-service__link">Tyre Centre Hub →</span>
       </a>
     </div>
@@ -375,7 +375,7 @@ body.page-template-template-tyre-location { overflow-x:hidden; }
       <div>
         <span class="tsl-section__eyebrow">Book or Enquire</span>
         <h2 class="tsl-section__heading">Get a Tyre Estimate</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your tyre size or vehicle rego — we will come back with an estimate.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your tyre size or vehicle rego and we will come back with an estimate.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="tsl-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="tsl-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>Mon–Fri 7:30am–5:00pm · <?php echo esc_html($phone_local); ?><br><?php echo esc_html($distance_text); ?> from <?php echo esc_html($suburb_name); ?></div>
       </div>
@@ -390,7 +390,7 @@ body.page-template-template-tyre-location { overflow-x:hidden; }
 <section class="tsl-section tsl-section--grey">
   <div class="tsl-section__inner">
     <span class="tsl-section__eyebrow">South Auckland</span>
-    <h2 class="tsl-section__heading"><?php echo $is_branded ? 'Tony Allen Tyres — All Locations' : 'Tyre Shop Near You'; ?></h2>
+    <h2 class="tsl-section__heading"><?php echo $is_branded ? 'Tony Allen Tyres: All Locations' : 'Tyre Shop Near You'; ?></h2>
     <p class="tsl-section__sub">Serving all of South Auckland from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>.</p>
     <ul class="tsl-pills">
       <?php foreach ($suburbs as $slug => $data) :
@@ -415,7 +415,7 @@ body.page-template-template-tyre-location { overflow-x:hidden; }
   <div class="tsl-section__inner">
     <div class="tsl-faq">
       <span class="tsl-section__eyebrow">FAQ</span>
-      <h2 class="tsl-section__heading"><?php echo $is_branded ? 'Tony Allen Tyres ' . esc_html($suburb_name) . ' — Questions' : 'Tyres ' . esc_html($suburb_name) . ' — Common Questions'; ?></h2>
+      <h2 class="tsl-section__heading"><?php echo $is_branded ? 'Tony Allen Tyres ' . esc_html($suburb_name) . ' Questions' : 'Tyres ' . esc_html($suburb_name) . ': Common Questions'; ?></h2>
       <div class="tsl-faq__list">
         <?php foreach ($faqs as $faq) : ?>
         <div class="tsl-faq__item">

@@ -43,23 +43,23 @@ $prem_car = defined('TAAS_SVC_PREM_CAR') ? TAAS_SVC_PREM_CAR : '$429';
 
 // ── Vehicle category pricing grid ──
 $pricing_grid = [
-    ['cat' => 'Car',                'sub' => 'Up to 5L — Corolla, Mazda 3, Swift, i30',
+    ['cat' => 'Car',                'sub' => 'Up to 5L: Corolla, Mazda 3, Swift, i30',
      'ess' => defined('TAAS_SVC_ESS_CAR')    ? TAAS_SVC_ESS_CAR    : '$229',
      'std' => defined('TAAS_SVC_STD_CAR')    ? TAAS_SVC_STD_CAR    : '$329',
      'prem'=> defined('TAAS_SVC_PREM_CAR')   ? TAAS_SVC_PREM_CAR   : '$429'],
-    ['cat' => 'SUV / V6',           'sub' => '5–7L — RAV4, CX-5, Highlander, Outlander',
+    ['cat' => 'SUV / V6',           'sub' => '5–7L: RAV4, CX-5, Highlander, Outlander',
      'ess' => defined('TAAS_SVC_ESS_SUV')    ? TAAS_SVC_ESS_SUV    : '$269',
      'std' => defined('TAAS_SVC_STD_SUV')    ? TAAS_SVC_STD_SUV    : '$369',
      'prem'=> defined('TAAS_SVC_PREM_SUV')   ? TAAS_SVC_PREM_SUV   : '$469'],
-    ['cat' => 'Ute / V8',           'sub' => '7L+ — Hilux, Ranger, Navara, Mustang',
+    ['cat' => 'Ute / V8',           'sub' => '7L+: Hilux, Ranger, Navara, Mustang',
      'ess' => defined('TAAS_SVC_ESS_UTE')    ? TAAS_SVC_ESS_UTE    : '$319',
      'std' => defined('TAAS_SVC_STD_UTE')    ? TAAS_SVC_STD_UTE    : '$419',
      'prem'=> defined('TAAS_SVC_PREM_UTE')   ? TAAS_SVC_PREM_UTE   : '$519'],
-    ['cat' => 'European Standard',   'sub' => 'Spec oil 4-cyl — Golf, A3, Octavia, 320i',
+    ['cat' => 'European Standard',   'sub' => 'Spec oil 4-cyl: Golf, A3, Octavia, 320i',
      'ess' => defined('TAAS_SVC_ESS_EUROS')  ? TAAS_SVC_ESS_EUROS  : '$259',
      'std' => defined('TAAS_SVC_STD_EUROS')  ? TAAS_SVC_STD_EUROS  : '$359',
      'prem'=> defined('TAAS_SVC_PREM_EUROS') ? TAAS_SVC_PREM_EUROS : '$459'],
-    ['cat' => 'European Performance','sub' => '6L+ spec — AMG, M-Power, RS, Porsche',
+    ['cat' => 'European Performance','sub' => '6L+ spec: AMG, M-Power, RS, Porsche',
      'ess' => defined('TAAS_SVC_ESS_EUROP')  ? TAAS_SVC_ESS_EUROP  : '$349',
      'std' => defined('TAAS_SVC_STD_EUROP')  ? TAAS_SVC_STD_EUROP  : '$449',
      'prem'=> defined('TAAS_SVC_PREM_EUROP') ? TAAS_SVC_PREM_EUROP : '$549'],
@@ -97,7 +97,7 @@ $schema = [
             '@id'         => $site_url . '/#organization',
             'name'        => 'Tony Allen Auto Service',
             'url'         => $site_url,
-            'description' => 'Car servicing in Manukau, South Auckland. Essential, Standard and Premium services for all makes and models — Japanese, European, diesel, hybrid and EV. MTA Assured, ' . $years_trading . ' years trading.',
+            'description' => 'Car servicing in Manukau, South Auckland. Essential, Standard and Premium services for all makes and models: Japanese, European, diesel, hybrid and EV. MTA Assured, ' . $years_trading . ' years trading.',
             'telephone'   => [TAAS_PHONE_LOCAL, TAAS_PHONE_FREE],
             'email'       => TAAS_EMAIL,
             'address'     => ['@type' => 'PostalAddress', 'streetAddress' => '139 Cavendish Drive',
@@ -437,9 +437,9 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
   <div class="vs-w">
     <div class="vs-hero__inner">
       <div>
-        <span class="vs-hero__eyebrow">Vehicle Servicing — Manukau</span>
-        <h1>Car Service<br><span>Manukau — South Auckland</span></h1>
-        <p class="vs-hero__sub">Three service levels for all makes and models — Japanese, Korean, European, diesel, hybrid and electric. From <?php echo esc_html($ess_car); ?>. Our Premium service delivers 12 months of safe motoring. We'll keep you informed every step of the way.</p>
+        <span class="vs-hero__eyebrow">Vehicle Servicing, Manukau</span>
+        <h1>Car Service<br><span>Manukau, South Auckland</span></h1>
+        <p class="vs-hero__sub">Three service levels for all makes and models: Japanese, Korean, European, diesel, hybrid and electric. From <?php echo esc_html($ess_car); ?>. Our Premium service delivers 12 months of safe motoring. We'll keep you posted while we work on it.</p>
         <div class="vs-hero__ctas">
           <a href="#vs-enquire" class="vs-btn vs-btn--primary">Book a Service</a>
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="vs-btn vs-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -490,7 +490,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
 <!-- ══ NOT SURE WHAT YOU NEED? ═══════════════════════════════════════════ -->
 <div class="vs-symptoms"><div class="vs-w">
   <h2 class="vs-symptoms__heading">Not Sure What You Need?</h2>
-  <p class="vs-symptoms__sub">Pick the one that sounds like you — we'll point you in the right direction.</p>
+  <p class="vs-symptoms__sub">Pick the one that sounds like you and we'll point you in the right direction.</p>
   <div class="vs-symptoms__grid">
     <a href="#vs-enquire" class="vs-symptom"><div class="vs-symptom__icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><span class="vs-symptom__text">Due for a service</span><span class="vs-symptom__arrow">→</span></a>
     <a href="<?php echo esc_url($site_url . '/diagnostic-scanning/'); ?>" class="vs-symptom"><div class="vs-symptom__icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg></div><span class="vs-symptom__text">Dashboard warning light</span><span class="vs-symptom__arrow">→</span></a>
@@ -508,7 +508,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
   <div class="vs-w">
     <span class="vs-section__eyebrow">Choose Your Service</span>
     <h2 class="vs-section__heading">Three Service Levels</h2>
-    <p class="vs-section__sub">The right service depends on your vehicle, its mileage, and when it was last serviced. Not sure? Call <?php echo esc_html($phone_free); ?> — we'll check your service history and recommend what's actually due.</p>
+    <p class="vs-section__sub">The right service depends on your vehicle, its mileage, and when it was last serviced. Not sure? Call <?php echo esc_html($phone_free); ?> and we'll check your service history and recommend what's actually due.</p>
     <div class="vs-tiers">
 
       <!-- ESSENTIAL -->
@@ -561,7 +561,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
           <p><strong>Electrical:</strong> Interior lights, dashboard warnings, battery health test (12V)</p>
           <p><strong>Interior:</strong> AC function and temperature, all power windows, central locking, heated seats and electric mirrors where fitted</p>
           <p><strong>Fluids:</strong> Clutch fluid check (manual), power steering fluid check</p>
-          <p><strong>Road Test:</strong> Full road test — engine under load, transmission, brakes, steering</p>
+          <p><strong>Road Test:</strong> Full road test covering engine under load, transmission, brakes, steering</p>
           <p><strong>Report:</strong> Detailed written report with condition ratings, verbal debrief</p>
         </div>
         <a href="#vs-enquire" class="vs-tier__cta vs-tier__cta--outline">Book Standard</a>
@@ -571,10 +571,10 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
       <div class="vs-tier vs-tier--featured">
         <div class="vs-tier__name">Premium Service</div>
         <div class="vs-tier__price">from <?php echo esc_html($prem_car); ?> <span>incl. GST</span></div>
-        <p class="vs-tier__tag">12 months of safe motoring — the full inspection.</p>
+        <p class="vs-tier__tag">12 months of safe motoring. The full inspection.</p>
         <ul class="vs-tier__list">
           <li>Everything in Standard</li>
-          <li>Wheels removed — disc and pad measurement</li>
+          <li>Wheels removed for disc and pad measurement</li>
           <li>OBD diagnostic scan with fault code report</li>
           <li>Air, cabin and fuel filters inspected</li>
           <li>Brake fluid condition tested</li>
@@ -587,12 +587,12 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
           <p><strong>Engine:</strong> Everything in Standard plus transmission/gearbox fluid level and condition</p>
           <p><strong>Brakes:</strong> Wheels removed, disc and pad thickness measured and recorded, brake fluid condition test</p>
           <p><strong>Steering &amp; Suspension:</strong> Everything in Standard plus steering rack boot inspection, bush condition, wheel bearings</p>
-          <p><strong>Filters:</strong> Air filter, cabin/pollen filter, fuel filter (where accessible) — inspected and reported</p>
-          <p><strong>Electrical:</strong> OBD diagnostic scan — read and clear fault codes, full report</p>
+          <p><strong>Filters:</strong> Air filter, cabin/pollen filter, fuel filter (where accessible), inspected and reported</p>
+          <p><strong>Electrical:</strong> OBD diagnostic scan to read and clear fault codes, with a full report</p>
           <p><strong>Tyres:</strong> Everything in Standard plus tyre rotation if required</p>
-          <p><strong>Underbody:</strong> Full hoist inspection — chassis rails, subframe, sill panels, fuel and brake lines, exhaust</p>
+          <p><strong>Underbody:</strong> Full hoist inspection of chassis rails, subframe, sill panels, fuel and brake lines, exhaust</p>
           <p><strong>Road Test:</strong> Thorough road test covering engine, transmission, brakes, steering, suspension</p>
-          <p><strong>Report:</strong> Comprehensive written report with condition ratings per system, deferred work recommendations</p>
+          <p><strong>Report:</strong> Full written report with condition ratings per system, deferred work recommendations</p>
         </div>
         <a href="#vs-enquire" class="vs-tier__cta vs-tier__cta--primary">Book Premium</a>
       </div>
@@ -600,7 +600,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
     </div>
     <div class="vs-callout">
       <div class="vs-callout__title">Why Does the Price Vary by Vehicle?</div>
-      <p class="vs-callout__body">The main variables are engine oil specification and capacity. A Toyota Corolla takes around 4 litres of standard synthetic. A Hilux diesel takes 7–8 litres. A BMW or Mercedes requires manufacturer-specification oil at a higher cost per litre. We have five vehicle categories with clear pricing for each — see the table below.</p>
+      <p class="vs-callout__body">The main variables are engine oil specification and capacity. A Toyota Corolla takes around 4 litres of standard synthetic. A Hilux diesel takes 7–8 litres. A BMW or Mercedes requires manufacturer-specification oil at a higher cost per litre. We have five vehicle categories with clear pricing for each. See the table below.</p>
     </div>
   </div>
 </section>
@@ -637,7 +637,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
 <!-- ══ FINANCE STRIP ════════════════════════════════════════════════════ -->
 <div class="vs-finance"><div class="vs-w">
   <div class="vs-finance__inner">
-    <div class="vs-finance__heading">Split the Cost — Interest-Free Options Available</div>
+    <div class="vs-finance__heading">Split the Cost With Interest-Free Options</div>
     <p class="vs-finance__sub">Need it done now but the timing's tight? Spread the cost with no interest on most options.</p>
     <div class="vs-finance__logos">
       <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="vs-finance__logo-img" height="36" loading="lazy">
@@ -654,7 +654,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
   <div class="vs-w">
     <span class="vs-section__eyebrow">What Actually Happens</span>
     <h2 class="vs-section__heading">Anatomy of a TAAS Service</h2>
-    <p class="vs-section__sub">Every Premium service follows this 14-step workflow. Standard covers most of these. Essential covers the fundamentals. This is not a checklist we aspirate to — it is what our technicians do, every vehicle, every time.</p>
+    <p class="vs-section__sub">Every Premium service follows this 14-step workflow. Standard covers most of these. Essential covers the fundamentals. This is not a checklist we aspire to. It is what our technicians do, every vehicle, every time.</p>
     <div class="vs-steps">
       <div class="vs-step"><div class="vs-step__text">Road Test<span class="vs-step__note">Before we touch anything</span></div></div>
       <div class="vs-step"><div class="vs-step__text">Lights<span class="vs-step__note">All exterior and interior</span></div></div>
@@ -672,7 +672,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
       <div class="vs-step"><div class="vs-step__text">Second Road Test<span class="vs-step__note">Confirm everything is right</span></div></div>
     </div>
     <div class="vs-steps-callout">
-      <strong>A budget service covers 4 of those 14 steps</strong> — oil, fluids, sticker, and maybe tyres. The other ten are where problems get caught before they become breakdowns. That is the difference between an oil change and a service.
+      <strong>A budget service covers 4 of those 14 steps</strong>: oil, fluids, sticker and maybe tyres. The other ten are where problems get caught before they become breakdowns. That is the difference between an oil change and a service.
     </div>
   </div>
 </section>
@@ -684,9 +684,9 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
     <h2 class="vs-section__heading">Why Regular Servicing Matters</h2>
     <div class="vs-why">
       <div class="vs-why__text">
-        <p>Regular servicing is not about replacing things that are not broken. It is about catching problems when they are small and cheap to fix — before they become large and expensive. A failing water pump spotted at a service costs a fraction of what it costs after it has overheated and damaged the head gasket.</p>
-        <p>Servicing also protects your resale value. A vehicle with a complete, stamped service history is worth measurably more than one without — and it sells faster. Buyers trust a vehicle that has been looked after.</p>
-        <p>If your vehicle is under warranty, regular servicing at the correct intervals — with the correct fluids and parts — is essential. You do not need to use the dealer. Under New Zealand consumer law, any qualified workshop can service your vehicle without affecting your warranty.</p>
+        <p>Regular servicing is not about replacing things that are not broken. It is about catching problems when they are small and cheap to fix, before they become large and expensive. A failing water pump spotted at a service costs a fraction of what it costs after it has overheated and damaged the head gasket.</p>
+        <p>Servicing also protects your resale value. A vehicle with a complete, stamped service history is worth measurably more than one without, and it sells faster. Buyers trust a vehicle that has been looked after.</p>
+        <p>If your vehicle is under warranty, regular servicing at the correct intervals, with the correct fluids and parts, is essential. You do not need to use the dealer. Under New Zealand consumer law, any qualified workshop can service your vehicle without affecting your warranty.</p>
       </div>
       <div class="vs-why__panel">
         <div class="vs-why__panel-title">What Regular Servicing Prevents</div>
@@ -709,15 +709,15 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
   <div class="vs-w">
     <span class="vs-section__eyebrow">Specialist Servicing</span>
     <h2 class="vs-section__heading">Diesel, Hybrid, EV &amp; European</h2>
-    <p class="vs-section__sub">We service all vehicle types — not just standard petrol cars. Each type has its own additional checks built into the service.</p>
+    <p class="vs-section__sub">We service all vehicle types, not just standard petrol cars. Each type has its own additional checks built into the service.</p>
     <div class="vs-specs">
       <div class="vs-spec">
         <div class="vs-spec__title">Diesel Vehicles</div>
-        <p class="vs-spec__body">Same three-tier structure with additional diesel-specific checks — fuel filter, DPF status via diagnostic scan including soot load and regeneration cycle data, turbocharger inspection, and AdBlue levels where applicable.</p>
+        <p class="vs-spec__body">Same three-tier structure with additional diesel-specific checks: fuel filter, DPF status via diagnostic scan including soot load and regeneration cycle data, turbocharger inspection, and AdBlue levels where applicable.</p>
       </div>
       <div class="vs-spec">
         <div class="vs-spec__title">Hybrid Vehicles</div>
-        <p class="vs-spec__body">Standard petrol service schedule plus hybrid-specific checks — 12V auxiliary battery test, HV battery health and cooling system condition, hybrid-specific filters, and fault code verification.</p>
+        <p class="vs-spec__body">Standard petrol service schedule plus hybrid-specific checks: 12V auxiliary battery test, HV battery health and cooling system condition, hybrid-specific filters, and fault code verification.</p>
         <a href="<?php echo esc_url($site_url . '/electric-hybrid-vehicle-servicing/'); ?>" class="vs-spec__link">EV &amp; Hybrid Servicing →</a>
       </div>
       <div class="vs-spec">
@@ -727,7 +727,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
       </div>
       <div class="vs-spec">
         <div class="vs-spec__title">European Vehicles</div>
-        <p class="vs-spec__body"><?php echo esc_html($euro_brands); ?> — serviced with correct oil grades, filters, reset procedures and brand-specific diagnostic tools through our TAAS European division.</p>
+        <p class="vs-spec__body"><?php echo esc_html($euro_brands); ?>, serviced with correct oil grades, filters, reset procedures and brand-specific diagnostic tools through our TAAS European division.</p>
         <a href="<?php echo esc_url($site_url . '/european/'); ?>" class="vs-spec__link">TAAS European →</a>
       </div>
     </div>
@@ -741,19 +741,19 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
     <h2 class="vs-section__heading">Do I Need to Go Back to the Dealer?</h2>
     <div class="vs-dealer">
       <div class="vs-dealer__text">
-        <p><strong>No.</strong> Under New Zealand consumer law, you can have your vehicle serviced at any qualified workshop without affecting your manufacturer warranty — provided the correct parts, fluids and service intervals are followed.</p>
+        <p><strong>No.</strong> Under New Zealand consumer law, you can have your vehicle serviced at any qualified workshop without affecting your manufacturer warranty, provided the correct parts, fluids and service intervals are followed.</p>
         <p>Tony Allen Auto Service is MTA Assured and services all vehicles to manufacturer specification. We use the correct oil grades, genuine-equivalent filters, and follow manufacturer service schedules. We stamp your service book.</p>
-        <p>Many of our <?php echo esc_html($customers); ?> customers switched from dealer servicing and saved hundreds of dollars annually — with no impact on their warranty. The difference is overhead, not quality.</p>
+        <p>Many of our <?php echo esc_html($customers); ?> customers switched from dealer servicing and saved hundreds of dollars a year, with no impact on their warranty. The difference is overhead, not quality.</p>
       </div>
       <div class="vs-dealer__card">
         <div class="vs-dealer__card-title">Why Customers Switch From the Dealer</div>
         <ul class="vs-dealer__card-list">
-          <li>Same quality service — lower overhead, lower price</li>
-          <li>MTA Assured workshop — nationally recognised standard</li>
+          <li>Same quality service, lower overhead, lower price</li>
+          <li>MTA Assured workshop, a nationally recognised standard</li>
           <li>Correct oil grades and manufacturer-equivalent parts</li>
           <li>Service book stamped at every visit</li>
-          <li>No upselling — estimate before any additional work</li>
-          <li>Family-owned since <?php echo esc_html($established); ?> — not a corporate chain</li>
+          <li>No upselling. Estimate before any additional work</li>
+          <li>Family-owned since <?php echo esc_html($established); ?>, not a corporate chain</li>
           <li><?php echo esc_html($rating); ?>★ across <?php echo esc_html($reviews); ?> Google reviews</li>
         </ul>
       </div>
@@ -775,7 +775,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
           <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>
           <?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?>
         </div>
-        <div class="vs-enquiry__estimate">We'll keep you informed every step of the way.</div>
+        <div class="vs-enquiry__estimate">We give you an estimate before starting work and keep you informed if anything changes.</div>
         <div class="vs-enquiry__finance-logos">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-afterpay.png'); ?>" alt="Afterpay" class="vs-enquiry__fin-img" height="32" loading="lazy">
           <img src="<?php echo esc_url($site_url . '/wp-content/uploads/2026/06/finance-logo-qcard.png'); ?>" alt="Q Card" class="vs-enquiry__fin-img" height="32" loading="lazy">
@@ -833,7 +833,7 @@ body.page-template-template-vehicle-servicing { overflow-x:hidden; -webkit-text-
 <section class="vs-section vs-section--white">
   <div class="vs-w">
     <span class="vs-section__eyebrow">FAQ</span>
-    <h2 class="vs-section__heading">Common Questions — Vehicle Servicing</h2>
+    <h2 class="vs-section__heading">Vehicle Servicing: Common Questions</h2>
     <div class="vs-faq__list">
       <?php foreach ($faqs as $i => $faq): ?>
       <div class="vs-faq__item<?php echo $i === 0 ? ' vs-faq__item--open' : ''; ?>">

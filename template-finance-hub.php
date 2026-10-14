@@ -50,9 +50,9 @@ $providers = [
         'logo_alt' => 'Afterpay logo',
         'badge'    => 'Most Popular',
         'featured' => true,
-        'tagline'  => 'Pay in 4 — Always Interest-Free',
+        'tagline'  => 'Pay in 4, Always Interest-Free',
         'descs'    => [
-            'Afterpay splits your repair or service bill into four equal fortnightly payments. You pay the first 25% when you collect your vehicle — Afterpay pays us in full. The remaining three instalments are automatically deducted from your linked card every two weeks. No interest. No annual fees. No catch when you pay on time.',
+            'Afterpay splits your repair or service bill into four equal fortnightly payments. You pay the first 25% when you collect your vehicle, and Afterpay pays us in full. The remaining three instalments are automatically deducted from your linked card every two weeks. No interest. No annual fees. No catch when you pay on time.',
             'Set up the Afterpay app and add the digital Afterpay Card to your phone\'s wallet (Apple Pay, Google Pay, or Samsung Pay) before arriving. A credit check applies at sign-up as required under NZ law. Spend limits apply and vary by customer.',
         ],
         'facts'    => [
@@ -77,7 +77,7 @@ $providers = [
         'logo_alt' => 'Q Card logo',
         'badge'    => 'Credit Card',
         'featured' => false,
-        'tagline'  => '3 Months — No Payments, No Interest',
+        'tagline'  => '3 Months: No Payments, No Interest',
         'descs'    => [
             'Q Card gives cardholders a minimum of three months with no payments and no interest when used in-store. It\'s a Mastercard accepted at thousands of New Zealand businesses, including Tony Allen Auto Service. Apply online before your visit.',
         ],
@@ -104,7 +104,7 @@ $providers = [
         'featured' => false,
         'tagline'  => '6 Months Interest-Free on $250+',
         'descs'    => [
-            'Gem Finance (by Latitude Financial Services) offers six months interest-free on qualifying purchases over $250. If you\'re facing a larger repair bill — a cambelt, engine repair, or suspension overhaul — Gem gives you breathing room to spread the cost without paying interest during the promotional period.',
+            'Gem Finance (by Latitude Financial Services) offers six months interest-free on qualifying purchases over $250. If you\'re facing a larger repair bill (a cambelt, engine repair or suspension overhaul), Gem gives you breathing room to spread the cost without paying interest during the promotional period.',
         ],
         'facts'    => [
             ['val' => '6 mo',  'lbl' => 'Interest-Free'],
@@ -127,9 +127,9 @@ $providers = [
         'logo_alt' => 'Aotea Finance logo',
         'badge'    => 'Personal Lending',
         'featured' => false,
-        'tagline'  => 'Flexible Lending — Everyone Considered',
+        'tagline'  => 'Flexible Lending, Everyone Considered',
         'descs'    => [
-            'Aotea Finance takes a different approach to personal lending. They treat every application as an individual and have the flexibility to assist people in a wide range of circumstances, including those who may not qualify through mainstream lenders. Apply online for a no-obligation pre-approval before you bring your vehicle in.',
+            'Aotea Finance takes a different approach to personal lending. They treat every application as an individual and have the flexibility to assist people in all sorts of circumstances, including those who may not qualify through mainstream lenders. Apply online for a no-obligation pre-approval before you bring your vehicle in.',
         ],
         'facts'    => [
             ['val' => 'All',    'lbl' => 'Circumstances Considered'],
@@ -157,7 +157,7 @@ $faqs = [
     ['q'=>'Do I need to arrange finance before I bring my vehicle in?',
      'a'=>'For Afterpay, you need an active account and the in-store card set up on your phone before you arrive. For Q Card and Gem Finance, applying in advance means your account is ready at collection. We recommend not leaving it to the day of collection.'],
     ['q'=>'Is there a minimum repair cost to use these options?',
-     'a'=>'Afterpay and Q Card have no stated minimum, though individual spend limits apply. Gem Finance requires a minimum transaction of $250. Aotea Finance terms vary — contact them directly for current thresholds.'],
+     'a'=>'Afterpay and Q Card have no stated minimum, though individual spend limits apply. Gem Finance requires a minimum transaction of $250. Aotea Finance terms vary. Contact them directly for current thresholds.'],
     ['q'=>'Do you offer interest-free finance for WOF failures?',
      'a'=>'Yes. If your vehicle fails its WOF and needs repairs, all four finance options are available for the repair work. Most WOF repairs qualify. If parts need to be ordered, our team will advise on timing.'],
     ['q'=>'Is TAAS a finance provider?',
@@ -167,9 +167,9 @@ $faqs = [
     ['q'=>'Can I use Afterpay to pay for car repairs in Manukau?',
      'a'=>'Yes. Tony Allen Auto Service at 139 Cavendish Drive, Manukau accepts Afterpay in-store for servicing, repairs, WOF failure work, tyres, and parts. You pay 25% when you collect your vehicle and the remaining three instalments are deducted automatically every two weeks. Set up the Afterpay app and add the digital card to your phone wallet before you arrive.'],
     ['q'=>'What happens if I miss a payment on Afterpay?',
-     'a'=>'Late fees apply. Afterpay charges a late fee capped at 25% of the order value or $68, whichever is less. Afterpay may pause your account until the missed payment is cleared. Tony Allen Auto Service is not involved in payment collection — that sits entirely between you and the provider.'],
+     'a'=>'Late fees apply. Afterpay charges a late fee capped at 25% of the order value or $68, whichever is less. Afterpay may pause your account until the missed payment is cleared. Tony Allen Auto Service is not involved in payment collection. That sits entirely between you and the provider.'],
     ['q'=>'How do I set up Afterpay on my phone before I arrive?',
-     'a'=>'Download the Afterpay app from the App Store or Google Play. Create an account and complete the identity verification — a credit check applies under NZ law. Once approved, add the Afterpay Card to your phone wallet via Apple Pay, Google Pay, or Samsung Pay. When you collect your vehicle from Tony Allen Auto Service, tap your phone at the EFTPOS terminal to pay.'],
+     'a'=>'Download the Afterpay app from the App Store or Google Play. Create an account and complete the identity verification. A credit check applies under NZ law. Once approved, add the Afterpay Card to your phone wallet via Apple Pay, Google Pay, or Samsung Pay. When you collect your vehicle from Tony Allen Auto Service, tap your phone at the EFTPOS terminal to pay.'],
     ['q'=>'Do you accept EFTPOS and credit cards as well as finance?',
      'a'=>'Yes. We accept cash, EFTPOS, Visa, and Mastercard alongside all four finance options. Finance is there if you need it, but there is no requirement to use it. Most customers pay by EFTPOS or card on the day.'],
 ];
@@ -194,7 +194,7 @@ foreach ($faqs as $faq) {
 $schema = [
     '@context' => 'https://schema.org',
     '@graph'   => [
-        ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'telephone'=>[$phone_local,$phone_free],'email'=>$email,'foundingDate'=>'1985-10','description'=>'NZTA Authorised — '.$ms_number.'. MTA Assured. South Auckland\'s largest independent workshop. Accepts Afterpay, Q Card, Gem Finance, Aotea Finance.','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D/','',$reviews),'bestRating'=>'5'],'sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, Gem Finance, Aotea Finance','speakable'=>['@type'=>'SpeakableSpecification','cssSelector'=>['.fh-hero__h1','.fh-hero__sub','.fh-sec-h2']]],
+        ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'telephone'=>[$phone_local,$phone_free],'email'=>$email,'foundingDate'=>'1985-10','description'=>'NZTA Authorised, '.$ms_number.'. MTA Assured. South Auckland\'s largest independent workshop. Accepts Afterpay, Q Card, Gem Finance, Aotea Finance.','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D/','',$reviews),'bestRating'=>'5'],'sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, Gem Finance, Aotea Finance','speakable'=>['@type'=>'SpeakableSpecification','cssSelector'=>['.fh-hero__h1','.fh-hero__sub','.fh-sec-h2']]],
         ['@type'=>'FAQPage','mainEntity'=>$schema_faqs],
         ['@type'=>'BreadcrumbList','itemListElement'=>[['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],['@type'=>'ListItem','position'=>2,'name'=>'Finance Options','item'=>$page_url]]],
     ],
@@ -535,7 +535,7 @@ body.page-template-template-finance-hub { overflow-x:hidden; -webkit-text-size-a
           Pay for your repairs<br>
           <em>on your terms.</em>
         </h1>
-        <p class="fh-hero__sub">Four ways to spread the cost of any repair — from buy now pay later and interest-free cards to personal loans for all credit circumstances. No pressure, no hidden fees. Flexible options from a workshop you can trust.</p>
+        <p class="fh-hero__sub">Four ways to spread the cost of any repair, from buy now pay later and interest-free cards to personal loans for all credit circumstances. No pressure, no hidden fees. Flexible options from a workshop you can trust.</p>
         <div class="fh-hero__pills">
           <?php foreach ($providers as $p): ?>
           <a href="<?php echo esc_url(home_url('/' . $p['slug'] . '/')); ?>" class="fh-hero__pill"><?php echo esc_html($p['name']); ?></a>
@@ -598,7 +598,7 @@ body.page-template-template-finance-hub { overflow-x:hidden; -webkit-text-size-a
   <div class="fh-w">
     <span class="fh-sec-eye">Payment Options</span>
     <h2 class="fh-sec-h2" id="fh-providers-head">Choose how you want to pay</h2>
-    <p class="fh-sec-intro">All four options are available across our full range of services. Each has different terms — pick the one that suits your repair cost and budget.</p>
+    <p class="fh-sec-intro">All four options are available across our full range of services. Each has different terms. Pick the one that suits your repair cost and budget.</p>
 
     <div class="fh-providers">
       <?php foreach ($providers as $p):
@@ -697,7 +697,7 @@ body.page-template-template-finance-hub { overflow-x:hidden; -webkit-text-size-a
     <p class="fh-sec-intro">A quick reference to help you choose. Always read the provider's full terms before applying.</p>
     <div class="fh-table-wrap fh-compare-desktop">
       <table class="fh-table">
-        <caption>Finance options at Tony Allen Auto Service, Manukau. Correct at <?php echo date('Y'); ?>. Subject to change — always verify with each provider.</caption>
+        <caption>Finance options at Tony Allen Auto Service, Manukau. Correct at <?php echo date('Y'); ?>. Subject to change. Always verify with each provider.</caption>
         <thead>
           <tr>
             <?php foreach ($compare[0] as $h): ?>
@@ -738,7 +738,7 @@ body.page-template-template-finance-hub { overflow-x:hidden; -webkit-text-size-a
         <?php endforeach; ?>
       </div>
       <?php endfor; ?>
-      <p style="font-size:11px;color:#999;margin-top:12px;">Correct at <?php echo date('Y'); ?>. Subject to change — always verify with each provider.</p>
+      <p style="font-size:11px;color:#999;margin-top:12px;">Correct at <?php echo date('Y'); ?>. Subject to change. Always verify with each provider.</p>
     </div>
   </div>
 </section>
@@ -751,7 +751,7 @@ body.page-template-template-finance-hub { overflow-x:hidden; -webkit-text-size-a
       <div>
         <span class="fh-sec-eye fh-sec-eye--yellow">Get in Touch</span>
         <h2 class="fh-sec-h2 fh-sec-h2--white" id="fh-book-head">Ready to book your repair?</h2>
-        <p style="font-size:16px;color:#aaa;line-height:1.75;font-weight:300;margin-bottom:8px;">Let us know which finance option you plan to use so we can have everything ready when you arrive. We'll keep you informed every step of the way.</p>
+        <p style="font-size:16px;color:#aaa;line-height:1.75;font-weight:300;margin-bottom:8px;">Let us know which finance option you plan to use so we can have everything ready when you arrive. We'll keep you posted while we work on it.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="fh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="fh-enquiry__detail">
           <strong>Tony Allen Auto Service</strong><br>

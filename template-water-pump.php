@@ -45,21 +45,21 @@ $mbi_providers = [
 
 // ── Warning signs ────────────────────────────────────────────────────────────
 $symptoms = [
-    'Coolant leak from the front of the engine — often from the weep hole at the base of the pump',
+    'Coolant leak from the front of the engine, often from the weep hole at the base of the pump',
     'Whining or grinding noise from the front of the engine that changes with RPM',
     'Temperature gauge climbing toward the red zone',
     'Steam or sweet-smelling vapour from under the bonnet',
     'Coolant residue or staining around the pump housing',
     'Low coolant level with no obvious external leak',
-    'Overheating — especially at idle or in traffic',
+    'Overheating, especially at idle or in traffic',
 ];
 
 // ── Process steps ────────────────────────────────────────────────────────────
 $process = [
     ['title' => 'Inspect & Diagnose',   'text' => 'Visual inspection and pressure test to confirm the water pump as the source of the leak or noise. We verify the fault before recommending replacement.'],
-    ['title' => 'Estimate',             'text' => 'You receive an estimate before we start — parts and labour. If the cambelt is due at the same time, we provide a combined estimate so you can make an informed decision.'],
+    ['title' => 'Estimate',             'text' => 'You receive an estimate for parts and labour before we start. If the cambelt is due at the same time, we provide a combined estimate so you can make an informed decision.'],
     ['title' => 'Remove & Replace',     'text' => 'If the pump is cambelt-driven, the belt and tensioners come off first. Old pump removed, new pump fitted with fresh gaskets and seals. Cambelt kit replaced at the same time where applicable.'],
-    ['title' => 'Coolant & Bleed',      'text' => 'Cooling system refilled with fresh coolant at the correct concentration. Air bled from the system — trapped air pockets cause hot spots and gauge fluctuation.'],
+    ['title' => 'Coolant & Bleed',      'text' => 'Cooling system refilled with fresh coolant at the correct concentration. Air bled from the system, because trapped air pockets cause hot spots and gauge fluctuation.'],
     ['title' => 'Pressure Test',        'text' => 'Full pressure test to confirm no leaks. Thermostat operation verified. System holds pressure to specification.'],
     ['title' => 'Road Test & Confirm',  'text' => 'Vehicle road tested to operating temperature. Temperature gauge stable. Heater working. No leaks. Confirmed correct operation before handover.'],
 ];
@@ -81,23 +81,23 @@ $related = [
 // ── FAQs (10+) ───────────────────────────────────────────────────────────────
 $faqs = [
     ['q' => 'What does a water pump do and why does it fail?',
-     'a' => 'The water pump circulates coolant through your engine, radiator, and heater core. It runs constantly while the engine is on. The internal seal and bearing wear over time — typically between 80,000 and 150,000 km depending on the vehicle. When the seal fails, coolant leaks from the weep hole at the base of the pump. When the bearing fails, you hear a whining or grinding noise.'],
+     'a' => 'The water pump circulates coolant through your engine, radiator, and heater core. It runs constantly while the engine is on. The internal seal and bearing wear over time, typically between 80,000 and 150,000 km depending on the vehicle. When the seal fails, coolant leaks from the weep hole at the base of the pump. When the bearing fails, you hear a whining or grinding noise.'],
     ['q' => 'Should I replace the water pump with the cambelt?',
-     'a' => 'Yes — on any engine where the cambelt drives the water pump (which is most of them). The cambelt has to come off to reach the pump, so the labour is already done. If you replace the cambelt and leave the old pump, and the pump fails six months later, you pay the full labour cost again to access the same area. We always recommend a complete cambelt kit: belt, tensioner, idler pulleys, water pump, and thermostat.'],
+     'a' => 'Yes, on any engine where the cambelt drives the water pump (which is most of them). The cambelt has to come off to reach the pump, so the labour is already done. If you replace the cambelt and leave the old pump, and the pump fails six months later, you pay the full labour cost again to access the same area. We always recommend a complete cambelt kit: belt, tensioner, idler pulleys, water pump, and thermostat.'],
     ['q' => 'How much does water pump replacement cost in Manukau?',
-     'a' => 'As part of a cambelt service, the water pump is included in the kit — cambelt replacement starts ' . $cambelt_price . '. Standalone water pump replacement on a timing chain engine varies by vehicle — call us on ' . $phone_free . ' with your make and model for an estimate. We give you an estimate before starting work.'],
+     'a' => 'As part of a cambelt service, the water pump is included in the kit. Cambelt replacement starts ' . $cambelt_price . '. Standalone water pump replacement on a timing chain engine varies by vehicle. Call us on ' . $phone_free . ' with your make and model for an estimate. We give you an estimate before starting work.'],
     ['q' => 'How do I know if my water pump is failing?',
      'a' => 'The most common sign is a coolant leak from the front of the engine, often from a small hole at the base of the pump called the weep hole. Other signs include a whining or grinding noise that changes with engine speed, the temperature gauge climbing, or unexplained coolant loss. If your temperature warning light comes on, pull over immediately and call us on ' . $phone_free . '.'],
     ['q' => 'Can I drive with a failing water pump?',
-     'a' => 'Not safely. A failing water pump means coolant is not circulating properly. The engine will overheat — and overheating causes head gasket failure, warped cylinder heads, and potentially a written-off engine. If you notice any symptoms, get it inspected as soon as possible. If the temperature warning light comes on, pull over and do not drive further.'],
+     'a' => 'Not safely. A failing water pump means coolant is not circulating properly. The engine will overheat, and overheating causes head gasket failure, warped cylinder heads, and potentially a written-off engine. If you notice any symptoms, get it inspected as soon as possible. If the temperature warning light comes on, pull over and do not drive further.'],
     ['q' => 'Is water pump failure covered by mechanical breakdown insurance?',
-     'a' => 'In most cases, yes. Water pump failure is a mechanical component failure and is commonly covered under MBI policies. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. We handle the claim process directly — you do not need to arrange anything yourself.'],
+     'a' => 'In most cases, yes. Water pump failure is a mechanical component failure and is commonly covered under MBI policies. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. We handle the claim process directly. You do not need to arrange anything yourself.'],
     ['q' => 'What is the difference between a cambelt-driven and serpentine belt-driven water pump?',
      'a' => 'On many cambelt engines, the water pump is driven by the cambelt (timing belt) and sits inside the timing cover. On timing chain engines and some V6/V8 configurations, the water pump is external and driven by the serpentine belt. The external type is usually a simpler and less expensive replacement because the timing components do not need to be disturbed.'],
     ['q' => 'Do you work on European vehicle water pumps?',
-     'a' => 'Yes. Our TAAS European division covers all European makes including Audi, BMW, Volkswagen, Mercedes-Benz, and others. European cooling systems often use plastic impeller water pumps that are more prone to failure than metal ones — we always fit quality replacement parts.'],
+     'a' => 'Yes. Our TAAS European division covers all European makes including Audi, BMW, Volkswagen, Mercedes-Benz, and others. European cooling systems often use plastic impeller water pumps that are more prone to failure than metal ones. We always fit quality replacement parts.'],
     ['q' => 'Do you offer finance for water pump replacement?',
-     'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. A water pump repair should not be delayed because of cost — the damage from overheating is exponentially more expensive than the pump replacement itself.'],
+     'a' => 'Yes. Afterpay, Q Card, GEM Finance and Aotea Finance are accepted. A water pump repair should not be delayed because of cost. The damage from overheating is exponentially more expensive than the pump replacement itself.'],
     ['q' => 'Where is your workshop?',
      'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book or get an estimate.'],
     ['q' => 'How long does water pump replacement take?',
@@ -246,10 +246,10 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="wps-hero"><div class="wps-w"><div class="wps-hero__inner">
   <div>
     <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/cooling-system/'); ?>" style="color:#555;text-decoration:none;">Cooling System</a><span style="margin:0 6px;">›</span><span style="color:#888;">Water Pump Replacement</span></nav>
-    <span class="wps-eye wps-eye--yellow">Cooling System — Manukau</span>
-    <h1>Water Pump Replacement<br><span>Manukau — South Auckland</span></h1>
-    <p class="wps-hero__sub">A failed water pump stops coolant circulating through your engine. Overheating follows within minutes. Tony Allen Auto Service replaces water pumps on all makes — standalone or as part of a cambelt service. <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
-    <div class="wps-hero__price">Cambelt + water pump kit <?php echo esc_html($cambelt_price); ?> · Standalone — estimate after inspection</div>
+    <span class="wps-eye wps-eye--yellow">Cooling System, Manukau</span>
+    <h1>Water Pump Replacement<br><span>Manukau, South Auckland</span></h1>
+    <p class="wps-hero__sub">A failed water pump stops coolant circulating through your engine. Overheating follows within minutes. Tony Allen Auto Service replaces water pumps on all makes, standalone or as part of a cambelt service. <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
+    <div class="wps-hero__price">Cambelt + water pump kit <?php echo esc_html($cambelt_price); ?> · Standalone: estimate after inspection</div>
     <div class="wps-hero__ctas">
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wps-btn wps-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
       <a href="#wps-enquire" class="wps-btn wps-btn--outline">Book Online</a>
@@ -276,14 +276,14 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <span class="wps-eye wps-eye--dark">Understanding Water Pumps</span>
   <h2 class="wps-h2">What Does a Water Pump Do?</h2>
   <div class="wps-content">
-    <p>The water pump is the heart of your cooling system. It circulates coolant continuously through the engine block, cylinder head, radiator, and heater core while the engine is running. Without it, coolant sits still — and an engine with no coolant circulation overheats within minutes.</p>
-    <p>Inside the pump is a spinning impeller driven by either the cambelt (timing belt) or the serpentine belt, depending on your engine. A mechanical seal keeps coolant inside the housing while the shaft spins at engine speed. Both the seal and the bearing wear over time — typically somewhere between 80,000 and 150,000 km — and when either fails, the pump needs replacing.</p>
+    <p>The water pump is the heart of your cooling system. It circulates coolant continuously through the engine block, cylinder head, radiator, and heater core while the engine is running. Without it, coolant sits still, and an engine with no coolant circulation overheats within minutes.</p>
+    <p>Inside the pump is a spinning impeller driven by either the cambelt (timing belt) or the serpentine belt, depending on your engine. A mechanical seal keeps coolant inside the housing while the shaft spins at engine speed. Both the seal and the bearing wear over time (typically somewhere between 80,000 and 150,000 km), and when either fails, the pump needs replacing.</p>
   </div>
 
   <div class="wps-understand">
     <div class="wps-understand__card">
       <h3>Cambelt-Driven Water Pump</h3>
-      <p>On most four-cylinder engines, the water pump sits inside the timing cover and is driven by the cambelt. This means the cambelt has to come off to reach the pump. The labour is the same whether you replace just the belt or the belt and pump together — which is why every reputable workshop recommends doing both at the same time. Replacing the cambelt and leaving the old pump is a false economy. If the pump fails six months later, you pay the full labour cost again to access the same area.</p>
+      <p>On most four-cylinder engines, the water pump sits inside the timing cover and is driven by the cambelt. This means the cambelt has to come off to reach the pump. The labour is the same whether you replace just the belt or the belt and pump together. That is why every reputable workshop recommends doing both at the same time. Replacing the cambelt and leaving the old pump is a false economy. If the pump fails six months later, you pay the full labour cost again to access the same area.</p>
     </div>
     <div class="wps-understand__card">
       <h3>Serpentine Belt-Driven Water Pump</h3>
@@ -303,7 +303,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="wps-section wps-section--dark"><div class="wps-w">
   <span class="wps-eye wps-eye--yellow">Warning Signs</span>
   <h2 class="wps-h2 wps-h2--white">How Do You Know Your Water Pump Is Failing?</h2>
-  <p class="wps-lead">A water pump rarely fails without warning. These are the signs our technicians see most often — if your vehicle is showing any of them, get it checked before the engine overheats.</p>
+  <p class="wps-lead">A water pump rarely fails without warning. These are the signs our technicians see most often. If your vehicle is showing any of them, get it checked before the engine overheats.</p>
   <ul class="wps-symptoms">
     <?php foreach ($symptoms as $s): ?><li><?php echo esc_html($s); ?></li><?php endforeach; ?>
   </ul>
@@ -336,13 +336,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="wps-section wps-section--white"><div class="wps-w">
   <span class="wps-eye wps-eye--dark">Pricing</span>
   <h2 class="wps-h2">How Much Does Water Pump Replacement Cost?</h2>
-  <p class="wps-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
+  <p class="wps-lead">We give you an estimate before starting work and keep you informed if anything changes.</p>
 
   <div class="wps-pricing">
     <div class="wps-pricing__card">
       <div class="wps-pricing__card-title">With Cambelt Service</div>
       <div class="wps-pricing__card-price"><?php echo esc_html($cambelt_price); ?></div>
-      <div class="wps-pricing__card-body">Water pump included in the full cambelt kit — belt, tensioner, idler pulleys, water pump, and thermostat. One job, one labour cost. Price varies by vehicle make and model.</div>
+      <div class="wps-pricing__card-body">Water pump included in the full cambelt kit: belt, tensioner, idler pulleys, water pump, and thermostat. One job, one labour cost. Price varies by vehicle make and model.</div>
     </div>
     <div class="wps-pricing__card">
       <div class="wps-pricing__card-title">Standalone Replacement</div>
@@ -351,11 +351,11 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
     </div>
   </div>
 
-  <div class="wps-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, Aotea Finance. A water pump repair should not wait — overheating causes damage that costs far more than the pump itself. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>
+  <div class="wps-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, Aotea Finance. A water pump repair should not wait. Overheating causes damage that costs far more than the pump itself. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>
 
   <div class="wps-mbi">
     <div class="wps-mbi__title">Covered by Mechanical Breakdown Insurance?</div>
-    <div class="wps-mbi__body">Water pump failure is a mechanical component failure and is commonly covered under MBI policies. Tony Allen Auto Service is an approved repairer — we handle the claim process directly. You do not need to arrange anything yourself.</div>
+    <div class="wps-mbi__body">Water pump failure is a mechanical component failure and is commonly covered under MBI policies. Tony Allen Auto Service is an approved repairer and we handle the claim process directly. You do not need to arrange anything yourself.</div>
     <div class="wps-mbi__providers">
       <?php foreach ($mbi_providers as $p): ?><a href="<?php echo esc_url($site_url.$p['url']); ?>" class="wps-mbi__pill"><?php echo esc_html($p['name']); ?></a><?php endforeach; ?>
       <a href="<?php echo esc_url($site_url.'/mechanical-breakdown-insurance/'); ?>" class="wps-mbi__pill" style="background:var(--taas-dark,#1A1A1A);color:var(--taas-yellow,#FFC800);border-color:var(--taas-dark,#1A1A1A);">All MBI Providers →</a>
@@ -369,7 +369,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="wps-enquire" class="wps-section wps-section--dark"><div class="wps-w"><div class="wps-enquiry">
   <div>
     <span class="wps-eye wps-eye--yellow">Book Today</span>
-    <h2 class="wps-h2 wps-h2--white">Water Pump Replacement — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <h2 class="wps-h2 wps-h2--white">Water Pump Replacement: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.7;"><strong style="color:var(--taas-white);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -404,7 +404,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ══════════════════════════════════════════════════════════════════════════ -->
 <section class="wps-section wps-section--grey"><div class="wps-w">
   <span class="wps-eye wps-eye--dark">Common Questions</span>
-  <h2 class="wps-h2">Water Pump Replacement — FAQ</h2>
+  <h2 class="wps-h2">Water Pump Replacement FAQ</h2>
   <div class="wps-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="wps-faq__item<?php echo $i===0?' wps-faq__item--open':''; ?>"><button class="wps-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="wps-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="wps-a-<?php echo $i; ?>" class="wps-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

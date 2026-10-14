@@ -24,24 +24,24 @@ $phone_free_tel = preg_replace('/[^0-9+]/', '', TAAS_PHONE_FREE);
 $maps_url = 'https://www.google.com/maps/place/Tony+Allen+Auto+Service,+139+Cavendish+Drive,+Manukau+2104';
 
 $brands = [
-    ['name'=>'Maxxis',      'slug'=>'maxxis',      'origin'=>'Taiwan',     'tier'=>'Mid-Premium', 'count'=>'344', 'desc'=>'All-terrain, highway terrain, mud terrain, passenger and commercial. The backbone of our 4WD range — AT811, MT772, AT771.'],
-    ['name'=>'Continental', 'slug'=>'continental', 'origin'=>'Germany',    'tier'=>'Premium',     'count'=>'241', 'desc'=>'UltraContact, SportContact, EcoContact, VanContact. Premium compound technology — wet grip, low noise, long life.'],
-    ['name'=>'Goodyear',    'slug'=>'goodyear',    'origin'=>'USA',        'tier'=>'Premium',     'count'=>'308', 'desc'=>'Eagle F1, Optilife, Wrangler, Assurance. Performance, SUV and commercial — broad range across all vehicle types.'],
-    ['name'=>'Rovelo',      'slug'=>'rovelo',      'origin'=>'China',      'tier'=>'Budget',      'count'=>'197', 'desc'=>'Ridgetrak AT/RT, Sport A1, RHP-780. Quality budget option — strong value for everyday driving and light off-road.'],
+    ['name'=>'Maxxis',      'slug'=>'maxxis',      'origin'=>'Taiwan',     'tier'=>'Mid-Premium', 'count'=>'344', 'desc'=>'All-terrain, highway terrain, mud terrain, passenger and commercial. The backbone of our 4WD range: AT811, MT772, AT771.'],
+    ['name'=>'Continental', 'slug'=>'continental', 'origin'=>'Germany',    'tier'=>'Premium',     'count'=>'241', 'desc'=>'UltraContact, SportContact, EcoContact, VanContact. Premium compounds for wet grip, low noise and long life.'],
+    ['name'=>'Goodyear',    'slug'=>'goodyear',    'origin'=>'USA',        'tier'=>'Premium',     'count'=>'308', 'desc'=>'Eagle F1, Optilife, Wrangler, Assurance. Performance, SUV and commercial tyres across all vehicle types.'],
+    ['name'=>'Rovelo',      'slug'=>'rovelo',      'origin'=>'China',      'tier'=>'Budget',      'count'=>'197', 'desc'=>'Ridgetrak AT/RT, Sport A1, RHP-780. Quality budget option with strong value for everyday driving and light off-road.'],
     ['name'=>'Hifly',       'slug'=>'hifly',       'origin'=>'China',      'tier'=>'Budget',      'count'=>'182', 'desc'=>'HF201, AT601, SUPER2000. Budget passenger, commercial and all-terrain. Good value for city commuting.'],
     ['name'=>'Vitora',      'slug'=>'vitora',      'origin'=>'China',      'tier'=>'Budget',      'count'=>'99',  'desc'=>'Citylife, Sportlife, Worklife, Countrylife. Budget range covering passenger, performance, commercial and off-road.'],
-    ['name'=>'Wanli',       'slug'=>'wanli',       'origin'=>'China',      'tier'=>'Budget',      'count'=>'59',  'desc'=>'Budget passenger tyres — available in select sizes.'],
+    ['name'=>'Wanli',       'slug'=>'wanli',       'origin'=>'China',      'tier'=>'Budget',      'count'=>'59',  'desc'=>'Budget passenger tyres, available in select sizes.'],
 ];
 
 $faqs = [
     ['q'=>'What tyre brands do you carry?','a'=>'Maxxis, Continental, Goodyear, Hifly, Rovelo, Vitora and Wanli. Budget to premium.'],
-    ['q'=>'Which brand do you recommend?','a'=>'It depends on how you drive and what matters to you. Maxxis and Continental are our most popular for quality and value. Hifly and Rovelo are good budget options. We recommend based on your vehicle and driving — not margin.'],
-    ['q'=>'Do you carry 4WD tyre brands?','a'=>'Yes. Maxxis is our core 4WD brand — AT811, AT771, MT772, MT764 in all-terrain, highway terrain and mud terrain patterns. Goodyear Wrangler, Continental CrossContact, and budget alternatives from Hifly and Rovelo also available.'],
-    ['q'=>'Is Continental better than Maxxis?','a'=>'Continental is a premium brand with advanced compound technology — excellent wet grip, low noise, and long life. Maxxis offers outstanding value in the mid-premium segment, especially for 4WDs and SUVs. Both are quality brands — the right choice depends on your priorities and budget.'],
-    ['q'=>'Are budget tyres safe?','a'=>'Yes. All tyres we stock meet international safety standards. Budget tyres use simpler compounds and tread designs — they do the job for lower-mileage and city driving. They may not perform as well in extreme wet conditions or last as long as premium alternatives, but they are safe for normal driving.'],
+    ['q'=>'Which brand do you recommend?','a'=>'It depends on how you drive and what matters to you. Maxxis and Continental are our most popular for quality and value. Hifly and Rovelo are good budget options. We recommend based on your vehicle and driving, not margin.'],
+    ['q'=>'Do you carry 4WD tyre brands?','a'=>'Yes. Maxxis is our core 4WD brand: AT811, AT771, MT772, MT764 in all-terrain, highway terrain and mud terrain patterns. Goodyear Wrangler, Continental CrossContact, and budget alternatives from Hifly and Rovelo also available.'],
+    ['q'=>'Is Continental better than Maxxis?','a'=>'Continental is a premium brand with advanced compound technology, giving excellent wet grip, low noise and long life. Maxxis offers outstanding value in the mid-premium segment, especially for 4WDs and SUVs. Both are quality brands. The right choice depends on your priorities and budget.'],
+    ['q'=>'Are budget tyres safe?','a'=>'Yes. All tyres we stock meet international safety standards. Budget tyres use simpler compounds and tread designs. They do the job for lower-mileage and city driving. They may not perform as well in extreme wet conditions or last as long as premium alternatives, but they are safe for normal driving.'],
     ['q'=>'Can I get a specific brand you do not stock?','a'=>'We can source most brands through our supplier network. Call ' . TAAS_PHONE_FREE . ' with the size and brand you need and we will check availability and pricing.'],
-    ['q'=>'Do you price-match tyre retailers?','a'=>'We are not a tyre retailer — we are a workshop that supplies, fits, balances and aligns. Our pricing includes professional fitting, not just the rubber. Contact us for an estimate on your size.'],
-    ['q'=>'How do I find tyres in my size?','a'=>'Use our tyre finder — enter your width, profile and rim size to see all available options across brands. Or call ' . TAAS_PHONE_FREE . ' with your tyre size or vehicle rego.'],
+    ['q'=>'Do you price-match tyre retailers?','a'=>'We are not a tyre retailer. We are a workshop that supplies, fits, balances and aligns. Our pricing includes professional fitting, not just the rubber. Contact us for an estimate on your size.'],
+    ['q'=>'How do I find tyres in my size?','a'=>'Use our tyre finder. Enter your width, profile and rim size to see all available options across brands. Or call ' . TAAS_PHONE_FREE . ' with your tyre size or vehicle rego.'],
     ['q'=>'Do you fit tyres I have bought elsewhere?','a'=>'Yes. Bring your tyres in and we will fit, balance and align.'],
     ['q'=>'Where is your tyre shop?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open ' . TAAS_HOURS . '. Call ' . TAAS_PHONE_FREE . '.'],
 ];
@@ -143,9 +143,9 @@ body.page-template-template-tyre-brands-hub{overflow-x:hidden;}
 
 <section class="tbh-hero">
   <div class="tbh-hero__inner">
-    <span class="tbh-hero__eyebrow">Tyre Centre — Manukau</span>
+    <span class="tbh-hero__eyebrow">Tyre Centre, Manukau</span>
     <h1>Tyre Brands<br><span>We Carry</span></h1>
-    <p class="tbh-hero__sub">Budget to premium. 7 brands. Fitted, balanced and aligned on-site at 139 Cavendish Drive, Manukau. We recommend based on your vehicle and driving style — not margin.</p>
+    <p class="tbh-hero__sub">Budget to premium. 7 brands. Fitted, balanced and aligned on-site at 139 Cavendish Drive, Manukau. We recommend based on your vehicle and driving style, not margin.</p>
     <div class="tbh-hero__ctas">
       <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>" class="taas-btn taas-btn--primary">Search by Size</a>
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
@@ -166,8 +166,8 @@ body.page-template-template-tyre-brands-hub{overflow-x:hidden;}
 <section class="tbh-section tbh-section--white">
   <div class="tbh-section__inner">
     <span class="tbh-section__eyebrow">Our Brands</span>
-    <h2 class="tbh-section__heading">Tyre Brands — Budget to Premium</h2>
-    <p class="tbh-section__sub">Every brand fitted to the same standard. We carry stock across all sizes and patterns — if we do not have your exact size in stock, we source it within 1–2 working days.</p>
+    <h2 class="tbh-section__heading">Tyre Brands: Budget to Premium</h2>
+    <p class="tbh-section__sub">Every brand fitted to the same standard. We carry stock across all sizes and patterns. If we do not have your exact size in stock, we source it within 1–2 working days.</p>
     <div class="tbh-brands">
       <?php foreach ($brands as $b) :
         $tier_class = strpos(strtolower($b['tier']), 'premium') !== false ? 'premium' : (strpos(strtolower($b['tier']), 'mid') !== false ? 'mid' : 'budget');
@@ -197,7 +197,7 @@ body.page-template-template-tyre-brands-hub{overflow-x:hidden;}
       <div>
         <span class="tbh-section__eyebrow">Book or Enquire</span>
         <h2 class="tbh-section__heading">Get a Tyre Estimate</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your tyre size or vehicle rego — we will come back with options across budget and premium brands.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your tyre size or vehicle rego and we will come back with options across budget and premium brands.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="tbh-enquiry__phone"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
         <div class="tbh-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>Mon–Fri 7:30am–5:00pm · <?php echo esc_html(TAAS_PHONE_LOCAL); ?></div>
       </div>
@@ -218,7 +218,7 @@ body.page-template-template-tyre-brands-hub{overflow-x:hidden;}
   <div class="tbh-section__inner">
     <div class="tbh-faq">
       <span class="tbh-section__eyebrow">FAQ</span>
-      <h2 class="tbh-section__heading">Tyre Brands — Common Questions</h2>
+      <h2 class="tbh-section__heading">Tyre Brands: Common Questions</h2>
       <div class="tbh-faq__list">
         <?php foreach ($faqs as $faq) : ?>
         <div class="tbh-faq__item">

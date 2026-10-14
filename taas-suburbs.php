@@ -85,7 +85,7 @@ function taas_suburbs_library() {
             'name'         => 'Wiri',
             'distance'     => '~5 min via Cavendish Drive',
             'area'         => 'Wiri, Manukau, Manurewa, Papatoetoe, Ōtara, and Takanini',
-            'intro'        => "Wiri is the industrial and logistics heart of South Auckland — home to the inland port and a maze of warehousing around Wiri Station Road and Roscommon Road — and it's right on our doorstep. We service a lot of Wiri fleet and trade vehicles.",
+            'intro'        => "Wiri is the industrial and logistics heart of South Auckland. It's home to the inland port and a maze of warehousing around Wiri Station Road and Roscommon Road, and it's right on our doorstep. We service a lot of Wiri fleet and trade vehicles.",
             'getting_here' => "Wiri is only minutes from our Manukau workshop via Wiri Station Road or Great South Road.",
             'nearby'       => ['Manukau', 'Manurewa', 'Clendon', 'Puhinui'],
         ],
@@ -101,7 +101,7 @@ function taas_suburbs_library() {
             'name'         => 'Flat Bush',
             'distance'     => '~15 min via Ormiston Rd',
             'area'         => 'Flat Bush, Ormiston, Clover Park, Ōtara, Manukau, Howick, and Dannemora',
-            'intro'        => "Flat Bush is one of Auckland's fastest-growing areas — a newer residential district east of Manukau around the Ormiston Town Centre, Chapel Road and Murphys Road. Lots of newer vehicles and growing families in this part of town.",
+            'intro'        => "Flat Bush is one of Auckland's fastest-growing areas, a newer residential district east of Manukau around the Ormiston Town Centre, Chapel Road and Murphys Road. Lots of newer vehicles and growing families in this part of town.",
             'getting_here' => "From Flat Bush, Te Irirangi Drive runs straight down to Manukau and our Cavendish Drive workshop.",
             'nearby'       => ['Ormiston', 'Botany', 'Ōtara', 'Clover Park'],
         ],
@@ -149,7 +149,7 @@ function taas_suburbs_library() {
             'name'         => 'Clover Park',
             'distance'     => '~10 min via Ti Rakau Drive',
             'area'         => 'Clover Park, Ōtara, Flat Bush, Manukau, Howick, and Hunters Corner',
-            'intro'        => "Clover Park is a compact residential suburb tucked between Ōtara and Manukau, just off Te Irirangi Drive — about as local to us as it gets.",
+            'intro'        => "Clover Park is a compact residential suburb tucked between Ōtara and Manukau, just off Te Irirangi Drive. About as local to us as it gets.",
             'getting_here' => "Clover Park is only a few minutes from our workshop via Te Irirangi Drive into Manukau.",
             'nearby'       => ['Ōtara', 'Flat Bush', 'Manukau', 'Wiri'],
         ],
@@ -194,7 +194,7 @@ function taas_suburb_data($slug, $display_name = '') {
         'distance'     => 'a short drive from ' . $name,
         'area'         => $name . ', Manukau, and surrounding South Auckland suburbs',
         'intro'        => "{$name} is one of the South Auckland communities we serve from our Manukau workshop. As one of the largest independent workshops in the area, we look after drivers from right across the region.",
-        'getting_here' => "We're at 139 Cavendish Drive, Manukau — easy to reach from {$name} via Great South Road or the Southern Motorway.",
+        'getting_here' => "We're at 139 Cavendish Drive, Manukau, easy to reach from {$name} via Great South Road or the Southern Motorway.",
         'nearby'       => ['Manukau', 'Wiri', 'Papatoetoe'],
         '_fallback'    => true,
     ];
@@ -219,7 +219,7 @@ function taas_suburb_local_faq($slug, $suburb_name, $service_label = 'service', 
 
     $q = "How do I get to your workshop from {$name}?";
     $a = rtrim($sub['getting_here'], '.') . '.' . $dist
-       . " You'll find us at 139 Cavendish Drive, Manukau — open Monday to Friday, 7:30am–5:00pm. Call {$phone} ahead if you'd like to check availability for {$service_label}.";
+       . " You'll find us at 139 Cavendish Drive, Manukau, open Monday to Friday, 7:30am–5:00pm. Call {$phone} ahead if you'd like to check availability for {$service_label}.";
 
     return ['q' => $q, 'a' => $a];
 }
@@ -240,7 +240,7 @@ function taas_suburb_coverage_faq($slug, $suburb_name, $service_label = 'service
     $name = $sub['name'] ?: $suburb_name;
     $q = "Do you cover {$name}?";
     $a = rtrim($sub['intro'], '.') . '. ' . rtrim($sub['getting_here'], '.') . '.'
-       . " We're open Monday to Friday, 7:30am–5:00pm — call {$phone} for {$service_label}.";
+       . " We're open Monday to Friday, 7:30am–5:00pm. Call {$phone} for {$service_label}.";
     return ['q' => $q, 'a' => $a];
 }
 
