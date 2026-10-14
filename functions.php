@@ -390,9 +390,40 @@ function taas_cf7_form_styles() {
 // ═══════════════════════════════════════════════════════════════════════════
 
 
+// ── 0. Tracking gate ────────────────────────────────────────────────────────
+// Live site only (taas.co.nz), and never for logged-in staff, so test visits
+// don't pollute the data. On staging, add ?ga_test=1 to a URL to load GA4 in
+// debug mode for checking (shows in GA4 DebugView).
+function taas_tracking_enabled() {
+    if (is_admin() || is_user_logged_in()) return isset($_GET['ga_test']);
+    $host = isset($_SERVER['HTTP_HOST']) ? strtolower($_SERVER['HTTP_HOST']) : '';
+    if (in_array($host, ['taas.co.nz', 'www.taas.co.nz'], true)) return true;
+    return isset($_GET['ga_test']);
+}
+function taas_tracking_debug() {
+    $host = isset($_SERVER['HTTP_HOST']) ? strtolower($_SERVER['HTTP_HOST']) : '';
+    return !in_array($host, ['taas.co.nz', 'www.taas.co.nz'], true) || is_user_logged_in();
+}
+
+// ── 0b. Google Analytics 4 base tag ─────────────────────────────────────────
+add_action('wp_head', function() {
+    if (!defined('TAAS_GA4_ID') || !taas_tracking_enabled()) return;
+    $id = esc_js(TAAS_GA4_ID);
+    ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $id; ?>"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '<?php echo $id; ?>'<?php echo taas_tracking_debug() ? ", {debug_mode: true}" : ''; ?>);
+    </script>
+    <?php
+}, 0);
+
+
 // ── 1. Microsoft Clarity ────────────────────────────────────────────────────
 add_action('wp_head', function() {
-    if (is_admin() || !defined('TAAS_CLARITY_ID')) return;
+    if (!defined('TAAS_CLARITY_ID') || !taas_tracking_enabled()) return;
     ?>
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -421,6 +452,16 @@ add_action('wp_footer', function() {
     if (is_admin() || !defined('TAAS_GA4_ID')) return;
     ?>
     <script>
+    document.addEventListener('click', function(e) {
+        var mail = e.target.closest('a[href^="mailto:"]');
+        if (mail && typeof gtag === 'function') {
+            gtag('event', 'email_click', { page_name: document.title.split('|')[0].trim() });
+        }
+        var wa = e.target.closest('a[href*="wa.me"]');
+        if (wa && !wa.closest('#taas-sticky-cta') && wa.id !== 'taas-chat-float' && typeof gtag === 'function') {
+            gtag('event', 'whatsapp_click', { page_name: document.title.split('|')[0].trim(), click_location: 'in_page' });
+        }
+    });
     document.addEventListener('click', function(e) {
         var link = e.target.closest('a[href^="tel:"]');
         if (!link || typeof gtag !== 'function') return;
