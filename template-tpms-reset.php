@@ -47,7 +47,7 @@ $faqs = [
     ],
     [
         'q' => 'Why is my TPMS light on after fitting new tyres?',
-        'a' => 'TPMS sensors need to be reset after new tyres are fitted or rotated. The system needs to re-learn the position of each sensor (or the wheel speed pattern in indirect systems). If we fitted your tyres, bring the vehicle back and we\'ll reset the TPMS. No charge if we did the tyre fitting.',
+        'a' => 'TPMS sensors need to be reset after new tyres are fitted or rotated. The system needs to re-learn the position of each sensor (or the wheel speed pattern in indirect systems). The TPMS reset is part of our tyre replacement, so it is included when we fit your tyres. As a standalone job it is charged ' . (defined('TAAS_TPMS_PRICE') ? TAAS_TPMS_PRICE : 'from $75') . '.',
     ],
     [
         'q' => 'How do you reset a TPMS?',

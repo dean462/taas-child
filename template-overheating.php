@@ -60,8 +60,8 @@ $causes = [
 $cascade = [
     ['stage' => 'Thermostat fails',                         'cost' => 'Typically from $200',       'colour' => '#FFC800'],
     ['stage' => 'Engine overheats — coolant boils',         'cost' => '',                           'colour' => '#e67e22'],
-    ['stage' => 'Head gasket fails',                        'cost' => 'Typically from $1,500',     'colour' => '#e74c3c'],
-    ['stage' => 'Cylinder head warps — needs machining',    'cost' => 'Can cost $2,000–$3,500+',  'colour' => '#c0392b'],
+    ['stage' => 'Head gasket fails',                        'cost' => 'Typically ' . (defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000') . '',     'colour' => '#e74c3c'],
+    ['stage' => 'Cylinder head warps — needs machining',    'cost' => 'Add ' . (defined('TAAS_CS_HEADMACHINE') ? TAAS_CS_HEADMACHINE : '$400–$600') . ' for machining',  'colour' => '#c0392b'],
     ['stage' => 'Engine block damage — replacement needed', 'cost' => 'Can cost $5,000+',          'colour' => '#922b21'],
 ];
 
@@ -382,7 +382,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
     <div class="ohe-pricing__row"><span class="ohe-pricing__label">Radiator hose</span><span class="ohe-pricing__value">Typically from $200</span></div>
     <div class="ohe-pricing__row"><span class="ohe-pricing__label">Water pump</span><span class="ohe-pricing__value">Varies by vehicle</span></div>
     <div class="ohe-pricing__row"><span class="ohe-pricing__label">Radiator replacement</span><span class="ohe-pricing__value">Estimate after inspection</span></div>
-    <div class="ohe-pricing__row"><span class="ohe-pricing__label">Head gasket repair</span><span class="ohe-pricing__value">Typically from $1,500</span></div>
+    <div class="ohe-pricing__row"><span class="ohe-pricing__label">Head gasket repair</span><span class="ohe-pricing__value">Typically <?php echo esc_html(defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000'); ?></span></div>
   </div>
   <div class="ohe-pricing__note">Every repair starts with diagnosis. We confirm the cause before recommending a path forward — and we tell you straight if the repair cost exceeds the vehicle value. Call <?php echo esc_html($phone_free); ?> with your vehicle details.</div>
   <div class="ohe-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, Aotea Finance. Do not delay an overheating repair because of cost — the damage escalates every day. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>

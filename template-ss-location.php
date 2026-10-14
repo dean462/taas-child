@@ -74,15 +74,15 @@ $suburbs = [
 // ── Build FAQs (10) ──────────────────────────────────────────────────────────
 $faqs = [
     ['q' => "How much does shock absorber replacement cost near {$suburb_name}?",
-     'a' => "Suspension repairs start {$susp_price} depending on your vehicle. Wheel alignment is {$align_price} and included after replacement. We'll give you an estimate before starting work. Call us on {$phone_free} with your vehicle details."],
+     'a' => "Suspension repairs start {$susp_price} depending on your vehicle. If a wheel alignment is needed afterwards, it is {$align_price} and shows as its own line on your invoice. We'll give you an estimate before starting work. Call us on {$phone_free} with your vehicle details."],
     ['q' => "How far is Tony Allen Auto Service from {$suburb_name}?",
      'a' => $distance_note ?: "Our workshop is at 139 Cavendish Drive, Manukau — a short drive from {$suburb_name}. Call us on {$phone_free} for directions."],
     ['q' => "My car failed its WOF for shock absorbers near {$suburb_name} — what should I do?",
      'a' => "Call us on {$phone_free}. We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We'll give you an estimate before starting work."],
     ['q' => 'Do you replace shock absorbers in pairs?',
      'a' => 'Yes — we always recommend replacing shock absorbers in axle pairs (both fronts or both rears). Replacing a single shock creates an imbalance in damping that affects handling and braking. If only one shock has failed, both on that axle should still be replaced.'],
-    ['q' => 'Is a wheel alignment included after shock absorber replacement?',
-     'a' => "Yes. We carry out a wheel alignment after every shock absorber replacement. Alignment is {$align_price}. Skipping alignment after suspension work causes pulling and uneven tyre wear."],
+    ['q' => 'Do I need a wheel alignment after shock absorber replacement?',
+     'a' => "Usually, yes, especially for front struts. We check and carry out an alignment where the geometry has been affected. Alignment is {$align_price} and is charged as its own line. Skipping alignment after suspension work causes pulling and uneven tyre wear."],
     ['q' => 'How do I know if my shock absorbers need replacing?',
      'a' => 'The clearest signs are excessive bouncing on uneven roads, the vehicle squatting heavily under braking, body roll through corners, uneven tyre wear, or the vehicle sitting noticeably lower on one corner. Worn shocks also cause WOF failure.'],
     ['q' => "Do you offer finance for shock absorber replacement near {$suburb_name}?",
@@ -325,7 +325,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
     <ul class="ssl-check-list">
       <li>Estimate before work begins — kept informed throughout</li>
       <li>Shock absorbers replaced in axle pairs</li>
-      <li>Wheel alignment <?php echo esc_html($align_price); ?> — included after replacement</li>
+      <li>Wheel alignment <?php echo esc_html($align_price); ?> after replacement where needed</li>
       <li>WOF recheck same day where possible</li>
       <li>All makes and models — Japanese, Korean, European, SUVs, utes, 4WDs</li>
       <li>Finance available — Afterpay, Q Card, GEM, Aotea</li>
@@ -382,7 +382,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
   <div class="ssl-w">
     <span class="ssl-eyebrow ssl-eyebrow--yellow">Pricing</span>
     <h2 class="ssl-h2 ssl-h2--white">Shock Absorber Replacement — Price Guide</h2>
-    <p class="ssl-lead">Suspension repairs <?php echo esc_html($susp_price); ?>. Wheel alignment <?php echo esc_html($align_price); ?> — included after replacement. Price varies by vehicle. Call for a specific estimate.</p>
+    <p class="ssl-lead">Suspension repairs <?php echo esc_html($susp_price); ?>. Wheel alignment <?php echo esc_html($align_price); ?> where needed after replacement. Price varies by vehicle. Call for a specific estimate.</p>
     <div style="background:#161616;border:1px solid #2a2a2a;border-radius:var(--taas-radius);padding:24px;max-width:480px;margin-bottom:24px;">
       <p style="font-size:14px;color:#ccc;line-height:1.6;margin-bottom:12px;"><strong style="color:var(--taas-yellow);">Finance available:</strong> Afterpay, Q Card, GEM Finance, and Aotea Finance. Interest-free options.</p>
       <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" style="font-size:14px;font-weight:700;color:var(--taas-yellow2);text-decoration:none;">View finance options →</a>

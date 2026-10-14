@@ -34,7 +34,7 @@ $brands = [
 ];
 
 $faqs = [
-    ['q'=>'What tyre brands do you carry?','a'=>'Maxxis, Continental, Goodyear, Hifly, Rovelo, Vitora and Wanli. Budget to premium — over 1,400 tyres in stock.'],
+    ['q'=>'What tyre brands do you carry?','a'=>'Maxxis, Continental, Goodyear, Hifly, Rovelo, Vitora and Wanli. Budget to premium.'],
     ['q'=>'Which brand do you recommend?','a'=>'It depends on how you drive and what matters to you. Maxxis and Continental are our most popular for quality and value. Hifly and Rovelo are good budget options. We recommend based on your vehicle and driving — not margin.'],
     ['q'=>'Do you carry 4WD tyre brands?','a'=>'Yes. Maxxis is our core 4WD brand — AT811, AT771, MT772, MT764 in all-terrain, highway terrain and mud terrain patterns. Goodyear Wrangler, Continental CrossContact, and budget alternatives from Hifly and Rovelo also available.'],
     ['q'=>'Is Continental better than Maxxis?','a'=>'Continental is a premium brand with advanced compound technology — excellent wet grip, low noise, and long life. Maxxis offers outstanding value in the mid-premium segment, especially for 4WDs and SUVs. Both are quality brands — the right choice depends on your priorities and budget.'],
@@ -145,7 +145,7 @@ body.page-template-template-tyre-brands-hub{overflow-x:hidden;}
   <div class="tbh-hero__inner">
     <span class="tbh-hero__eyebrow">Tyre Centre — Manukau</span>
     <h1>Tyre Brands<br><span>We Carry</span></h1>
-    <p class="tbh-hero__sub">Budget to premium. 7 brands, over 1,400 tyres in stock. Fitted, balanced and aligned on-site at 139 Cavendish Drive, Manukau. We recommend based on your vehicle and driving style — not margin.</p>
+    <p class="tbh-hero__sub">Budget to premium. 7 brands. Fitted, balanced and aligned on-site at 139 Cavendish Drive, Manukau. We recommend based on your vehicle and driving style — not margin.</p>
     <div class="tbh-hero__ctas">
       <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>" class="taas-btn taas-btn--primary">Search by Size</a>
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>

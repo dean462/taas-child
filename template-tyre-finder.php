@@ -114,7 +114,7 @@ body.page-template-template-tyre-finder{overflow-x:hidden;}
   <div class="tf-hero__inner">
     <span class="tf-hero__eyebrow">Tyre Centre — Manukau</span>
     <h1>Tyre Finder<br><span>Search Our Stock</span></h1>
-    <p class="tf-hero__sub">Enter your tyre width, profile and rim diameter. Budget to premium brands — over 1,400 tyres available.</p>
+    <p class="tf-hero__sub">Enter your tyre width, profile and rim diameter. Budget to premium brands.</p>
   </div>
 </section>
 

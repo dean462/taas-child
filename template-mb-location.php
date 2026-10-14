@@ -103,7 +103,7 @@ if ($faq_q1 && $faq_a1) { $faqs[] = ['q'=>$faq_q1,'a'=>$faq_a1]; }
 if ($faq_q2 && $faq_a2) { $faqs[] = ['q'=>$faq_q2,'a'=>$faq_a2]; }
 $faqs[] = ['q'=>'How much does a '.$battery_type_lower.' battery cost fitted near '.$suburb_name.'?','a'=>$price_note.'. The exact price depends on your vehicle specification. Call '.$phone_free.' with your registration number and we will confirm before you come in.'];
 $faqs[] = ['q'=>'Can I get a battery fitted same day near '.$suburb_name.'?','a'=>'In most cases yes. We carry a full range at 139 Cavendish Drive, Manukau — '.$distance_text.'. Call ahead on '.$phone_local.' to confirm stock.'];
-$faqs[] = ['q'=>'Do you offer free battery testing near '.$suburb_name.'?','a'=>'Yes — free load test, voltage check, and cranking amp assessment. No appointment needed. We also test alternator and starter motor at no charge.'];
+$faqs[] = ['q'=>'Do you offer free battery testing near '.$suburb_name.'?','a'=>'Yes — free load test, voltage check, and cranking amp assessment. No appointment needed. When we fit a new battery, we also test your alternator to make sure it is charging properly and the new battery will not be let down.'];
 if ($battery_type === 'Car' || $battery_type === 'AGM') {
     $faqs[] = ['q'=>'Do European cars need battery registration?','a'=>'Yes. BMW, Mercedes-Benz, Audi, Volkswagen, Volvo, and most European vehicles have a BMS that must be updated when a new battery is fitted. BMS registration included at Manukau Batteries.'];
 }

@@ -484,7 +484,7 @@ $taas_faqs['qcard_spend_limit'] = [
 
 $taas_faqs['qcard_interest_free'] = [
     'q' => 'How long is the Q Card interest-free period?',
-    'a' => 'Q Card offers a minimum of 3 months no payments and no interest on in-store purchases. Longer terms may be available — ask our service desk when you come in.',
+    'a' => 'Interest-free terms depend on the current Q Card offer. Check the Q Card terms and conditions at qcard.co.nz, or ask our service desk.',
 ];
 
 $taas_faqs['qcard_repayments'] = [
@@ -879,7 +879,7 @@ $taas_faqs['ppi_vs_wof'] = [
 
 $taas_faqs['ppi_cost'] = [
     'q' => 'How much does a pre-purchase inspection cost in Manukau?',
-    'a' => 'We offer three tiers: Basic at ' . (defined('TAAS_PPI_BASIC') ? TAAS_PPI_BASIC : '$149') . ', Standard at ' . (defined('TAAS_PPI_STANDARD') ? TAAS_PPI_STANDARD : '$229') . ', and Premium at ' . (defined('TAAS_PPI_PREMIUM') ? TAAS_PPI_PREMIUM : '$329') . '. The right tier depends on the vehicle value and complexity. For most used vehicle purchases, the Standard tier covers everything you need. Premium is recommended for European vehicles, hybrids, EVs, and higher-value purchases. Call us on ' . $_fq_phone . ' and we can recommend the best option for your situation.',
+    'a' => 'We offer three tiers: Basic at ' . (defined('TAAS_PPI_BASIC') ? TAAS_PPI_BASIC : '$149') . ', Standard at ' . (defined('TAAS_PPI_STANDARD') ? TAAS_PPI_STANDARD : '$249') . ', and Premium at ' . (defined('TAAS_PPI_PREMIUM') ? TAAS_PPI_PREMIUM : '$299') . '. For hybrids and EVs we also offer a traction battery health test. The right tier depends on the vehicle value and complexity. For most used vehicle purchases, the Standard tier covers everything you need. Premium is recommended for European vehicles, hybrids, EVs, and higher-value purchases. Call us on ' . $_fq_phone . ' and we can recommend the best option for your situation.',
 ];
 
 $taas_faqs['ppi_can_bring'] = [
@@ -929,7 +929,7 @@ $taas_faqs['ppi_compression'] = [
 
 $taas_faqs['ppi_cheap_car'] = [
     'q' => 'Should I get a pre-purchase inspection on a cheap car?',
-    'a' => 'Especially on a cheap car. Budget vehicles are more likely to have deferred maintenance, hidden faults, and expensive repairs around the corner. A ' . (defined('TAAS_PPI_BASIC') ? TAAS_PPI_BASIC : '$149') . ' Basic inspection can save you thousands by identifying a vehicle that will cost more to fix than it is worth. It is the best ' . (defined('TAAS_PPI_BASIC') ? TAAS_PPI_BASIC : '$149') . ' you will spend.',
+    'a' => 'Especially on a cheap car. Budget vehicles are more likely to have deferred maintenance, hidden faults, and expensive repairs around the corner. A ' . (defined('TAAS_PPI_BASIC') ? TAAS_PPI_BASIC : '$149') . ' Basic inspection can save you thousands by identifying a vehicle that will cost more to fix than it is worth.',
 ];
 
 
@@ -1042,7 +1042,7 @@ $taas_faqs['ss_specialist'] = [
 
 $taas_faqs['ss_cost'] = [
     'q' => 'How much does a steering or suspension repair cost in Manukau?',
-    'a' => 'Steering and suspension repairs start ' . $_fq_susp . ' depending on the vehicle and parts required. Wheel alignment is ' . $_fq_align . ' and is included after any geometry-affecting repair. We provide an estimate before any work begins. Call us on <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">' . $_fq_phone . '</a> for a specific estimate.',
+    'a' => 'Steering and suspension repairs start ' . $_fq_susp . ' depending on the vehicle and parts required. If the repair affects the steering geometry, we carry out a wheel alignment (' . $_fq_align . '), which shows as its own line on your invoice. We give you an estimate before starting work. Call us on <a href="tel:' . preg_replace('/\s+/', '', $_fq_phone) . '" style="color:var(--taas-yellow,#FFC800);font-weight:600;">' . $_fq_phone . '</a> for a specific estimate.',
 ];
 
 $taas_faqs['ss_european'] = [
@@ -1084,7 +1084,7 @@ $taas_faqs['cb_when_replace'] = [
 
 $taas_faqs['cb_water_pump'] = [
     'q' => 'Do I need to replace the water pump at the same time as the cambelt?',
-    'a' => 'Yes, in almost all cases. The water pump is driven by the cambelt on most vehicles, which means it is fully accessible during a cambelt replacement — the labour is already done. Fitting a new water pump at the same time adds relatively little to the cost. If the water pump fails later, you pay full labour again to access it. We include the water pump as standard in every cambelt kit replacement.',
+    'a' => 'Yes, if your water pump is driven by the cambelt, which it is on many engines. That means it is fully accessible during a cambelt replacement — the labour is already done. Fitting a new water pump at the same time adds relatively little to the cost. If the water pump fails later, you pay full labour again to access it. Where the water pump is driven by the cambelt, we replace it with the belt. It shows as its own line on your invoice and is included in our cambelt price ' . $_fq_cambelt . '.',
 ];
 
 $taas_faqs['cb_vs_chain'] = [
@@ -1714,7 +1714,7 @@ $taas_faqs['euro_pricing'] = [
 
 $taas_faqs['euro_cambelt'] = [
     'q' => 'Do you do cambelt replacements on European cars?',
-    'a' => 'Yes. Cambelt replacement is critical on most European engines — many are interference engines where belt failure causes immediate internal engine damage. Intervals vary by make and model. We replace the full kit: belt, tensioner, idlers and water pump. Cambelt replacement starts ' . $_fq_cambelt . '.',
+    'a' => 'Yes. Cambelt replacement is critical on most European engines — many are interference engines where belt failure causes immediate internal engine damage. Intervals vary by make and model. We replace the full kit: belt, tensioner, idlers and, where it is belt-driven, the water pump. Cambelt replacement starts ' . $_fq_cambelt . ', including the water pump.',
 ];
 
 $taas_faqs['euro_vag'] = [
@@ -1764,7 +1764,7 @@ $taas_faqs['mb_types'] = [
 
 $taas_faqs['mb_free_test'] = [
     'q' => 'Do you offer free battery testing?',
-    'a' => 'Yes — free load test, voltage check, and cranking amp assessment on any vehicle. No appointment needed. We also test your alternator and starter motor at no charge.',
+    'a' => 'Yes — free load test, voltage check, and cranking amp assessment on any vehicle. No appointment needed. When we fit a new battery, we also test your alternator to make sure it is charging properly and the new battery will not be let down.',
 ];
 
 $taas_faqs['mb_same_day'] = [
@@ -1894,7 +1894,7 @@ $taas_faqs['comm_same_day'] = [
 
 $taas_faqs['comm_cambelt'] = [
     'q' => 'Do you handle cambelt replacement on commercial vehicles?',
-    'a' => 'Yes. Many commercial diesel engines are interference engines where belt failure causes catastrophic damage. We replace the full kit — belt, tensioner, idlers, and water pump. Cambelt replacement starts ' . $_fq_cambelt . '. If you do not know when yours was last done, treat it as due.',
+    'a' => 'Yes. Many commercial diesel engines are interference engines where belt failure causes catastrophic damage. We replace the full kit — belt, tensioner, idlers and, where it is belt-driven, the water pump. Cambelt replacement starts ' . $_fq_cambelt . ', including the water pump. If you do not know when yours was last done, treat it as due.',
 ];
 
 $taas_faqs['comm_finance'] = [

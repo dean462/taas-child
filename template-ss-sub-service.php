@@ -46,7 +46,7 @@ $ss_master = [
         'badge'    => 'SR',
         'cat'      => 'Steering',
         'short'    => 'Leaking, heavy, or knocking steering rack. We diagnose it, then replace it or send it to a trusted steering specialist for reconditioning.',
-        'price'    => 'Steering rack repair — estimate after diagnosis. Wheel alignment ' . $align_price . ' included',
+        'price'    => 'Steering rack repair — estimate after diagnosis. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'high',
     ],
     'power-steering-repair-manukau' => [
@@ -54,15 +54,15 @@ $ss_master = [
         'badge'    => 'PS',
         'cat'      => 'Steering',
         'short'    => 'Heavy steering, whining pump, or leaking fluid. Hydraulic and electric systems diagnosed here; pump reconditioning is done by a trusted specialist.',
-        'price'    => 'Power steering diagnosis and repair — estimate after inspection. Wheel alignment ' . $align_price . ' included',
+        'price'    => 'Power steering diagnosis and repair — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'high',
     ],
     'tie-rod-replacement-manukau' => [
         'name'     => 'Tie Rod Replacement',
         'badge'    => 'TR',
         'cat'      => 'Steering',
-        'short'    => 'Worn tie rod ends cause steering wander and uneven tyre wear. Replaced in pairs — wheel alignment included.',
-        'price'    => 'Tie rod replacement — estimate after inspection. Wheel alignment ' . $align_price . ' included',
+        'short'    => 'Worn tie rod ends cause steering wander and uneven tyre wear. Replaced in pairs, followed by a wheel alignment.',
+        'price'    => 'Tie rod replacement — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'medium',
     ],
     'shock-absorber-replacement-manukau' => [
@@ -70,7 +70,7 @@ $ss_master = [
         'badge'    => 'SA',
         'cat'      => 'Suspension',
         'short'    => 'Worn shocks cause bouncing, poor braking, and WOF failure. Replaced in axle pairs. All makes including SUVs and utes.',
-        'price'    => 'Suspension repairs ' . $susp_price . '. Wheel alignment ' . $align_price . ' included',
+        'price'    => 'Suspension repairs ' . $susp_price . '. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'medium',
     ],
     'ball-joint-replacement-manukau' => [
@@ -78,7 +78,7 @@ $ss_master = [
         'badge'    => 'BJ',
         'cat'      => 'Suspension',
         'short'    => 'A failed ball joint is a loss-of-control event. Any clunking or uneven wear gets checked before it becomes a WOF failure.',
-        'price'    => 'Ball joint replacement — estimate after inspection. Wheel alignment ' . $align_price . ' included',
+        'price'    => 'Ball joint replacement — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'high',
     ],
     'suspension-bush-replacement-manukau' => [
@@ -94,7 +94,7 @@ $ss_master = [
         'badge'    => 'CA',
         'cat'      => 'Suspension',
         'short'    => 'Bent or worn control arms affect steering geometry and cause tyre wear. Replaced with correct-spec parts — alignment after.',
-        'price'    => 'Control arm replacement — estimate after inspection. Wheel alignment ' . $align_price . ' included',
+        'price'    => 'Control arm replacement — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'medium',
     ],
 ];
@@ -438,7 +438,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
         <ul class="sss-sidebar__list">
           <li><?php echo esc_html($service_name); ?></li>
           <li>Estimate before we start</li>
-          <li>Wheel alignment included</li>
+          <li>Wheel alignment after geometry repairs</li>
           <li>WOF recheck same day</li>
           <li>All makes &amp; models</li>
           <li>Finance available</li>

@@ -301,7 +301,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
       <div class="mbh-pricing__badge"><?php echo mbh_badge('TST', 48); ?></div>
       <div class="mbh-pricing__title">Battery &amp; Alternator Test</div>
       <div class="mbh-pricing__price">Free</div>
-      <p class="mbh-pricing__desc">Load test, voltage check, cranking amp assessment. Alternator and starter motor tested at no charge. No appointment needed.</p>
+      <p class="mbh-pricing__desc">Load test, voltage check, cranking amp assessment. Alternator tested when we fit a new battery. No appointment needed.</p>
     </div>
     <div class="mbh-pricing__card">
       <div class="mbh-pricing__badge"><?php echo mbh_badge('BMS', 48); ?></div>

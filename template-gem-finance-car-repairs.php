@@ -1177,7 +1177,7 @@ get_header();
             </div>
             <div class="taas-option-card">
                 <div class="taas-option-card__name">QCard</div>
-                <div class="taas-option-card__desc">Minimum 3 months no payments, no interest on in-store purchases.</div>
+                <div class="taas-option-card__desc">Interest-free terms under the current Q Card offer.</div>
             </div>
             <div class="taas-option-card">
                 <div class="taas-option-card__name">Aotea Finance</div>

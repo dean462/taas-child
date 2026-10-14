@@ -49,7 +49,7 @@ $faqs = [
     ],
     [
         'q' => 'How long is the interest-free period?',
-        'a' => 'Q Card offers a minimum of 3 months no payments and no interest on in-store purchases. Longer terms may be available — ask our service desk when you come in.',
+        'a' => 'Interest-free terms depend on the current Q Card offer. Check the Q Card terms and conditions at qcard.co.nz, or ask our service desk.',
     ],
     [
         'q' => 'Do I need to make repayments during the interest-free period?',
@@ -708,7 +708,7 @@ get_header();
         <span>Pay with Q Card.</span></h1>
 
         <p class="taas-hero__sub">
-            Tony Allen Auto Service accepts Q Card across all repairs and services. Shop now, pay over time — with minimum 3 months no payments and no interest on qualifying purchases.
+            Tony Allen Auto Service accepts Q Card across all repairs and services. Pay over time, with interest-free terms available under the current Q Card offer.
         </p>
 
         <div class="taas-hero__ctas">
@@ -778,7 +778,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">How It Works</span>
         <h2 class="taas-section__title" id="how-heading">Shop Now. <span>Pay Later with Q Card.</span></h2>
-        <p class="taas-section__sub">Q Card gives you minimum 3 months no payments and no interest on in-store purchases at Tony Allen Auto Service. Apply in-store or online before your visit.</p>
+        <p class="taas-section__sub">Q Card lets you pay over time at Tony Allen Auto Service, with interest-free terms under the current Q Card offer. Apply in-store or online before your visit.</p>
 
         <div class="taas-steps">
             <div class="taas-step">
@@ -854,8 +854,8 @@ get_header();
             <div>
                 <h3 style="color:var(--taas-white);font-family:'Inter',Arial,sans-serif;font-size:18px;font-weight:700;margin-bottom:8px;">Fees &amp; interest-free terms</h3>
                 <ul class="taas-checklist">
-                    <li>Minimum 3 months no payments and no interest on in-store purchases</li>
-                    <li>Longer interest-free terms may be available — ask in-store</li>
+                    <li>Interest-free terms under the current Q Card offer</li>
+                    <li>See qcard.co.nz for current terms and conditions</li>
                     <li>Standard interest rate applies after the interest-free period ends</li>
                     <li>Minimum monthly repayment required during interest-free period</li>
                     <li>Annual account fee applies — see qcard.co.nz for current fee</li>
@@ -894,7 +894,7 @@ get_header();
                 <tbody>
                     <tr style="border-left:3px solid var(--taas-yellow);">
                         <td><strong style="color:#fff;">Q Card</strong></td>
-                        <td><span class="taas-tick">✓ Min. 3 months</span></td>
+                        <td><span class="taas-tick">✓ Per Q Card offer</span></td>
                         <td>Flexible</td>
                         <td>Subject to approval</td>
                         <td>In-store or online</td>
@@ -1198,7 +1198,7 @@ get_header();
 <div class="taas-footer-cta">
     <div class="taas-container">
         <h2>Ready to Book Your Repair?</h2>
-        <p>Use Q Card at Tony Allen Auto Service — minimum 3 months no payments, no interest on qualifying purchases.</p>
+        <p>Use Q Card at Tony Allen Auto Service — interest-free terms under the current Q Card offer.</p>
         <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
             <a href="#book" class="taas-btn taas-btn--primary">Book Now</a>
             <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>" class="taas-btn taas-btn--outline">
@@ -1213,7 +1213,7 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <div class="taas-disclaimer">
     <div class="taas-container">
-        Q Card is provided by Q Mastercard. Minimum 3 months no payments and no interest applies to in-store purchases. Standard interest rate applies after the promotional period ends. Minimum monthly repayments required. Annual fee applies. Terms and conditions apply — see qcard.co.nz for full details. Tony Allen Auto Service Ltd is an independent merchant.
+        Q Card is provided by Q Mastercard. Interest-free terms vary with the current Q Card offer. Standard interest rate applies after the promotional period ends. Minimum monthly repayments required. Annual fee applies. Terms and conditions apply — see qcard.co.nz for full details. Tony Allen Auto Service Ltd is an independent merchant.
         See <a href="https://www.qcard.co.nz/" target="_blank" rel="noopener noreferrer">qcard.co.nz</a> for full details.
     </div>
 </div>
