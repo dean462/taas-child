@@ -51,7 +51,7 @@ $suburbs = [
 $why_points = [
     '3D laser four-wheel alignment — camber, caster, and toe measured on every corner',
     'Before-and-after print-out included — you can see exactly what was corrected',
-    'All vehicle types — cars, SUVs, 4WDs, vans, utes, light trucks',
+    'Cars, SUVs, 4WDs, vans and utes',
     $alignment_price . ' — transparent pricing, no hidden fees',
     'Available on the same visit as tyre fitting — save a return trip',
     'MTA Assured workshop, trading since ' . $established . ' — ' . $years_trading . ' years in South Auckland',
@@ -76,7 +76,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you do wheel alignment for 4WDs and utes in South Auckland?',
-        'a' => 'Yes — our 3D laser alignment system handles all vehicle types including 4WDs, dual-cab utes, SUVs, vans, and light trucks. Call us on ' . $phone_local . ' to confirm your vehicle type and book.',
+        'a' => 'Yes — our 3D laser alignment system handles cars, 4WDs, dual-cab utes, SUVs and vans. Call us on ' . $phone_local . ' to confirm your vehicle type and book.',
     ],
     [
         'q' => 'How long does a wheel alignment take?',

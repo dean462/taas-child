@@ -29,7 +29,7 @@ $faqs = [
     ['q' => 'Do you do brake repairs near ' . $suburb_name . '?',
      'a' => 'Yes. Manukau Brake & Clutch at 139 Cavendish Drive, Manukau is ' . $distance_note . '. We carry out brake pads, disc replacement, disc skimming, drum brakes, calipers, ABS repair and clutch work.'],
     ['q' => 'How much do brake pads cost near ' . $suburb_name . '?',
-     'a' => 'Brake pad replacement prices vary by vehicle make and model. Call us on ' . TAAS_PHONE_LOCAL . ' with your registration number for a price before you come in from ' . $suburb_name . '. We inspect disc condition at the same time — no charge for the assessment.'],
+     'a' => 'Brake pad replacement prices vary by vehicle make and model. Call us on ' . TAAS_PHONE_LOCAL . ' with your registration number for an estimate before you come in from ' . $suburb_name . '.'],
     ['q' => 'Do you do disc skimming near ' . $suburb_name . '?',
      'a' => 'Yes. We carry out disc skimming in-house on our own brake lathe — no outsourcing. This means same-day turnaround in most cases. Discs are measured before we recommend skimming or replacement.'],
     ['q' => 'How do I know if my brakes need replacing?',
@@ -204,7 +204,7 @@ $suburbs_all = [
     <span class="mbcl-section__eyebrow">Brake Repairs Near <?php echo esc_html($suburb_name); ?></span>
     <h2 class="mbcl-section__heading">Manukau Brake &amp; Clutch — Serving <?php echo esc_html($suburb_name); ?></h2>
     <p class="mbcl-section__body">Manukau Brake &amp; Clutch operates from 139 Cavendish Drive, Manukau — <?php echo esc_html($distance_note); ?>. We are a specialist brake and clutch division with an in-house brake lathe. This means disc skimming is done on site, same day in most cases — no outsourcing, no delay, no markup from an external machining shop.</p>
-    <p class="mbcl-section__body">We inspect before we give you an estimate. Brake pad replacement always includes a disc condition check — we measure thickness and surface condition and advise whether skimming or replacement is needed. New pads on worn or uneven discs is a false economy that costs more in the long run.</p>
+    <p class="mbcl-section__body">We inspect before we give you an estimate. New pads on worn or uneven discs is a false economy that costs more in the long run.</p>
   </div>
 </section>
 

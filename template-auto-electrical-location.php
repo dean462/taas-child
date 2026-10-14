@@ -98,7 +98,7 @@ function ael_badge($initials, $size = 36) {
 // ── FAQs ─────────────────────────────────────────────────────────────────────
 $faqs = [
     ['q'=>'How much does an auto electrical diagnostic cost near '.$suburb_name.'?',
-     'a'=>'A diagnostic scan starts '.$scan_price.' at Tony Allen Auto Service — '.$distance_text.'. A full diagnostic starts '.$autoelec_diag.' and includes live data analysis, component testing, and wiring checks. All fees explained upfront. If you proceed with the repair, the diagnostic fee applies to the final invoice.'],
+     'a'=>'A diagnostic scan starts '.$scan_price.' at Tony Allen Auto Service — '.$distance_text.'. A full diagnostic starts '.$autoelec_diag.' and includes live data analysis, component testing, and wiring checks. We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.'],
     ['q'=>'Do you diagnose faults before replacing parts?',
      'a'=>'Yes — always. Raj, our Lead Diagnostics & Auto Electrical Technician, verifies the fault before recommending any parts. A scan tool code tells you where to look, not what to replace. We test, confirm, then recommend. This approach avoids unnecessary replacements and gets the car fixed properly on the first visit.'],
     ['q'=>'How far is Tony Allen Auto Service from '.$suburb_name.'?',
@@ -289,7 +289,7 @@ body.page-template-template-auto-electrical-location{overflow-x:hidden;-webkit-t
     <h2 class="ael-sec__h2">Auto Electrical Pricing for <?php echo esc_html($suburb_name); ?> Customers</h2>
     <div class="ael-price-box">
       <div class="ael-price-box__title">Diagnostic scan <?php echo esc_html($scan_price); ?> · Full diagnostic <?php echo esc_html($autoelec_diag); ?></div>
-      <p class="ael-price-box__body">All fees explained upfront before any work begins. If you proceed with the repair, the diagnostic fee is applied to the final invoice. Repair costs depend on the fault and parts required — we provide an estimate before proceeding. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
+      <p class="ael-price-box__body">We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job. Repair costs depend on the fault and parts required — we provide an estimate before proceeding. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
     </div>
   </div>
 </section>

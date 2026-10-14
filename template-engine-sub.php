@@ -507,7 +507,7 @@ body.page-template-template-engine-sub { overflow-x:hidden; }
     </div>
     <div class="ers-callout">
       <div class="ers-callout__title">Diagnostic scan <?php echo esc_html($scan_price); ?> · Full mechanical diagnosis <?php echo esc_html($mech_diag); ?></div>
-      <p class="ers-callout__body">All fees explained upfront. If you proceed with the repair, the diagnostic fee applies to the final invoice.</p>
+      <p class="ers-callout__body">We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.</p>
     </div>
   </div>
 </section>

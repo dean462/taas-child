@@ -153,7 +153,7 @@ if (!$price_text || $price_text === "Diagnostic scan {$scan_price}") {
 } elseif (!$has_scan && !$has_full) {
     $price_text .= ". Diagnostic scan {$scan_price} · full diagnostic {$autoelec_diag}";
 }
-$faqs[] = ['q'=>"How much does {$service_name} cost in Manukau?",'a'=>$price_text . '. All fees explained upfront — if you proceed, the diagnostic fee applies to the final invoice.'];
+$faqs[] = ['q'=>"How much does {$service_name} cost in Manukau?",'a'=>$price_text . '. We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.'];
 $faqs[] = ['q'=>"Do you diagnose before replacing parts?",'a'=>"Yes — always. Raj verifies the fault before recommending any parts. Scan tool codes tell you where to look, not what to replace. We test, confirm, then recommend."];
 $faqs[] = ['q'=>"Can you do this on European vehicles?",'a'=>"Yes. We carry factory-spec diagnostic equipment for {$euro_brands} through our TAAS European division."];
 $faqs[] = ['q'=>"Is it safe to drive with this fault?",'a'=>$urgency_msg ?: "It depends on the severity. Call us on {$phone_free} and describe the symptoms — we can advise whether it is safe to drive in or needs towing."];
@@ -417,7 +417,7 @@ body.page-template-template-auto-electrical-sub { overflow-x:hidden;-webkit-text
     <h2 class="aes-sec__h2"><?php echo esc_html($service_name); ?> — Pricing Guide</h2>
     <div class="aes-price-box">
       <div class="aes-price-box__title"><?php echo esc_html($service_name); ?></div>
-      <p class="aes-price-box__body"><?php echo wp_kses_post($price_signal); ?>. All fees explained upfront before any work begins. If you proceed with the repair, the diagnostic fee is applied to the final invoice. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2, #e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
+      <p class="aes-price-box__body"><?php echo wp_kses_post($price_signal); ?>. We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2, #e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
     </div>
   </div>
 </section>

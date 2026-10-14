@@ -254,7 +254,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
     <div class="tcs-step"><div class="tcs-step__num"><?php echo $i+1; ?></div><div class="tcs-step__text"><?php echo esc_html($step); ?></div></div>
   <?php endforeach; ?></div>
   <div style="margin-top:28px;border-left:4px solid var(--taas-yellow);background:#fffbea;padding:16px 20px;border-radius:0 var(--taas-radius) var(--taas-radius) 0;max-width:780px;">
-    <p style="font-size:14px;color:var(--taas-body);line-height:1.6;margin:0;"><strong>Diagnostic scan <?php echo esc_html($scan_price); ?> · Full mechanical diagnosis <?php echo esc_html($mech_diag); ?>.</strong> The diagnostic fee applies to the final invoice if you proceed with the repair.</p>
+    <p style="font-size:14px;color:var(--taas-body);line-height:1.6;margin:0;"><strong>Diagnostic scan <?php echo esc_html($scan_price); ?> · Full mechanical diagnosis <?php echo esc_html($mech_diag); ?>.</strong> The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.</p>
   </div>
 </div></section>
 

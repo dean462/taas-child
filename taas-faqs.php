@@ -349,7 +349,7 @@ $taas_faqs['accreditations'] = [
 
 $taas_faqs['workmanship_guarantee'] = [
     'q' => 'Do you guarantee your work?',
-    'a' => 'Yes. All repairs carried out by Tony Allen Auto Service are backed by our workmanship guarantee. If anything is not right after a service or repair, call us on ' . $_fq_phone . ' and we will make it right.',
+    'a' => 'Yes. All repairs carried out by Tony Allen Auto Service are backed by our workmanship guarantee of 12 months or 20,000 km, whichever comes first. It covers our labour and workmanship; see our terms for details. If anything is not right after a service or repair, call us on ' . $_fq_phone . ' and we will make it right.',
 ];
 
 
@@ -509,7 +509,7 @@ $taas_faqs['gem_any_repair'] = [
 
 $taas_faqs['gem_account_setup'] = [
     'q' => 'Do I need a Gem Visa card before I come in?',
-    'a' => 'Yes. You need an active Gem Visa card with available credit. If you don\'t have one yet, apply at latitudefinancial.co.nz. Once approved, you can use it straight away.',
+    'a' => 'Yes. You need an active Gem Visa card with available credit. If you don\'t have one yet, apply at gemfinance.co.nz. Once approved, you can use it straight away.',
 ];
 
 $taas_faqs['gem_spend_limit'] = [
@@ -609,7 +609,7 @@ $taas_faqs['mbi_exclusions'] = [
 
 $taas_faqs['mbi_service_at_taas'] = [
     'q' => 'Can I use TAAS as my regular service provider to keep my MBI valid?',
-    'a' => 'Yes. Tony Allen Auto Service is MTA Assured, which satisfies the servicing requirements of all five MBI providers we work with. Regular servicing at TAAS keeps your MBI policy valid and your vehicle in the best condition to avoid claims in the first place. We are at 139 Cavendish Drive, Manukau — call ' . $_fq_phone . ' to book.',
+    'a' => 'Yes. MBI policies require servicing at a qualified workshop, and Tony Allen Auto Service is MTA Assured, which meets that requirement for all five providers we work with. Regular servicing at TAAS keeps your MBI policy valid and your vehicle in the best condition to avoid claims in the first place. We are at 139 Cavendish Drive, Manukau — call ' . $_fq_phone . ' to book.',
 ];
 
 $taas_faqs['mbi_european'] = [
@@ -779,7 +779,7 @@ $taas_faqs['mbi_janssen_other_providers'] = [
 
 $taas_faqs['mbi_janssen_ev'] = [
     'q' => 'Does Janssen cover electric and hybrid vehicles?',
-    'a' => 'Yes. Janssen offers Elite Eco Cover specifically designed for hybrid and EV vehicles, covering traction battery and EV-specific components. Tony Allen Auto Service has technicians in EV qualification training with high-voltage access — we handle Janssen EV and hybrid claims.',
+    'a' => 'Yes. Janssen offers Elite Eco Cover specifically designed for hybrid and EV vehicles, covering traction battery and EV-specific components. Tony Allen Auto Service has two technicians fully trained in high-voltage systems, with two more in training. We handle Janssen EV and hybrid claims.',
 ];
 
 
@@ -1144,7 +1144,7 @@ $taas_faqs['cs_temp_warning'] = [
 
 $taas_faqs['cs_flush_interval'] = [
     'q' => 'How often should I flush the coolant in my car?',
-    'a' => 'We recommend a coolant flush every 2 years as a minimum, regardless of mileage. Most manufacturers specify an interval between 2 and 5 years. Old coolant loses its corrosion inhibitors and becomes acidic, which accelerates damage to aluminium components — radiators, water pumps, and heater cores. Fresh coolant at the correct concentration also provides better overheating protection.',
+    'a' => 'Change your coolant at the interval your manufacturer specifies. Modern long-life coolants last longer than older types, often around 5 years. Old coolant loses its corrosion inhibitors and becomes acidic, which accelerates damage to aluminium components — radiators, water pumps, and heater cores. Fresh coolant at the correct concentration also provides better overheating protection.',
 ];
 
 $taas_faqs['cs_overheat_causes'] = [
@@ -1264,7 +1264,7 @@ $taas_faqs['ev_dealer'] = [
 
 $taas_faqs['ev_hv_battery'] = [
     'q' => 'Can you work on the high-voltage battery system?',
-    'a' => 'Yes. We have technicians trained in high-voltage systems who are completing formal EV qualification programmes. We carry out HV battery health assessments, read individual cell data, diagnose HV system faults, and carry out in-car repairs on HV components. Where a full HV battery pack requires replacement, we advise on the options and manage the process.',
+    'a' => 'Yes. Two of our technicians are fully trained in high-voltage systems, and two more are in training. We carry out HV battery health assessments, read individual cell data, diagnose HV system faults, and carry out in-car repairs on HV components. Where a full HV battery pack requires replacement, we advise on the options and manage the process.',
 ];
 
 $taas_faqs['ev_brake_fluid'] = [
@@ -1324,7 +1324,7 @@ $taas_faqs['ev_location'] = [
 
 $taas_faqs['mbc_brake_cost'] = [
     'q' => 'How much do brake repairs cost in Manukau?',
-    'a' => 'Brake pad and rotor replacement starts ' . $_fq_brake . '. This includes new pads and rotor machining or replacement — we never fit pads only. Final price depends on your vehicle make and model. Call ' . $_fq_phone . ' for an estimate.',
+    'a' => 'Brake pad and rotor replacement starts ' . $_fq_brake . '. This includes new pads and rotor machining or replacement — we only occasionally fit pads on their own. Final price depends on your vehicle make and model. Call ' . $_fq_phone . ' for an estimate.',
 ];
 
 $taas_faqs['mbc_clutch_cost'] = [
@@ -1389,7 +1389,7 @@ $taas_faqs['mbc_location'] = [
 
 $taas_faqs['brake_cost'] = [
     'q' => 'How much do brake repairs cost in Manukau?',
-    'a' => 'Brake pad and rotor replacement starts ' . $_fq_brake . '. This includes new pads and rotor machining or replacement — we never fit pads only. Final price depends on your vehicle. Call ' . $_fq_phone . ' for an estimate.',
+    'a' => 'Brake pad and rotor replacement starts ' . $_fq_brake . '. This includes new pads and rotor machining or replacement — we only occasionally fit pads on their own. Final price depends on your vehicle. Call ' . $_fq_phone . ' for an estimate.',
 ];
 
 $taas_faqs['brake_pads_only'] = [
@@ -1579,7 +1579,7 @@ $taas_faqs['ae_services'] = [
 
 $taas_faqs['ae_diagnostic_cost'] = [
     'q' => 'How much does an auto electrical diagnostic cost at Tony Allen Auto Service?',
-    'a' => 'A diagnostic scan starts ' . $_fq_scan . ' — this reads all fault codes across every module in the vehicle, not just the engine. A full diagnostic starts ' . $_fq_ae_diag . ' and includes live data analysis, component-level testing, and wiring checks where required. All fees are explained upfront before any work begins. If you proceed with the repair, the diagnostic fee is applied to the final invoice. Call ' . $_fq_phone . ' to book.',
+    'a' => 'A diagnostic scan starts ' . $_fq_scan . ' — this reads all fault codes across every module in the vehicle, not just the engine. A full diagnostic starts ' . $_fq_ae_diag . ' and includes live data analysis, component-level testing, and wiring checks where required. All fees are explained upfront before any work begins. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job. Call ' . $_fq_phone . ' to book.',
 ];
 
 $taas_faqs['ae_diagnose_first'] = [
@@ -1709,7 +1709,7 @@ $taas_faqs['euro_diagnostics'] = [
 
 $taas_faqs['euro_pricing'] = [
     'q' => 'How does TAAS pricing compare to a European dealer?',
-    'a' => 'Independent workshop rates are typically 30 to 50 percent lower than franchise dealer labour rates. We do not have showroom overheads, service department revenue targets, or depreciation-funded facilities to recover through your invoice. You pay for the work, not the showroom.',
+    'a' => 'Independent workshop labour rates are usually well below franchise dealer rates. We do not have showroom overheads, service department revenue targets, or depreciation-funded facilities to recover through your invoice. You pay for the work, not the showroom.',
 ];
 
 $taas_faqs['euro_cambelt'] = [
@@ -1844,7 +1844,7 @@ $taas_faqs['fleet_european'] = [
 
 $taas_faqs['fleet_ev'] = [
     'q' => 'Do you handle hybrid and EV fleet vehicles?',
-    'a' => 'Yes. We have technicians trained in high-voltage systems and service hybrid and EV fleet vehicles including Toyota, Nissan, BMW, and Volvo PHEV. Regenerative brake service, battery health checks, and standard servicing all available.',
+    'a' => 'Yes. We have two technicians fully trained in high-voltage systems (two more in training) and service hybrid and EV fleet vehicles including Toyota, Nissan, BMW, and Volvo PHEV. Regenerative brake service, battery health checks, and standard servicing all available.',
 ];
 
 $taas_faqs['fleet_location'] = [
@@ -2105,7 +2105,7 @@ $taas_faqs['svc_additional_work'] = [
 
 $taas_faqs['svc_booking'] = [
     'q' => 'Do I need to book a service?',
-    'a' => 'Yes, please book so we can allocate the right amount of time for your vehicle and service level. Call ' . $_fq_phone . ' to book — we can usually fit you in within a day or two.',
+    'a' => 'Yes, please book so we can allocate the right amount of time for your vehicle and service level. Call ' . $_fq_phone . ' to book — we usually book one to two days ahead.',
 ];
 
 $taas_faqs['svc_finance'] = [

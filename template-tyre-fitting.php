@@ -44,7 +44,6 @@ $vehicle_types = [
     ['icon'=>'🚙','label'=>'SUVs & Crossovers'],
     ['icon'=>'🚐','label'=>'Vans & MPVs'],
     ['icon'=>'🛻','label'=>'Utes & Pickups'],
-    ['icon'=>'🚚','label'=>'Light Trucks'],
     ['icon'=>'🏕️','label'=>'Campervans'],
     ['icon'=>'🚌','label'=>'Mini Buses'],
     ['icon'=>'🔧','label'=>'Fleet Vehicles'],
@@ -305,7 +304,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
     <div class="tf-w">
         <span class="tf-ey tf-ey--dark">All Vehicle Types</span>
         <h2 class="tf-h2" id="tf-vehicles-h2">We Fit Tyres on Every Vehicle Type</h2>
-        <p class="tf-lead">Cars, SUVs, vans, utes, light trucks — if it has tyres, we fit them.</p>
+        <p class="tf-lead">Cars, SUVs, vans and utes.</p>
         <div class="tf-vehicles__grid">
             <?php foreach ($vehicle_types as $v): ?>
             <div class="tf-vehicle-item">

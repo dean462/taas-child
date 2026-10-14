@@ -195,7 +195,7 @@ get_header();
       <p>Finance arrangements must be confirmed before work is completed. Finance availability is subject to the provider&rsquo;s approval process and may not be available for all services or amounts.</p>
 
       <h2>Workmanship warranty</h2>
-      <p>We stand behind our work. If a repair carried out by TAAS develops a fault that is directly attributable to our workmanship, we will rectify it at no additional charge, provided the issue is reported within a reasonable timeframe and the vehicle has not been modified or repaired elsewhere in a way that affects our original work.</p>
+      <p>We stand behind our work. If a repair carried out by TAAS develops a fault that is directly attributable to our workmanship, we will rectify it at no additional charge, provided the issue is reported within 12 months or 20,000 km of the repair (whichever comes first) and the vehicle has not been modified or repaired elsewhere in a way that affects our original work.</p>
       <p>This warranty covers our labour and workmanship only. It does not cover wear and tear, customer-supplied parts, pre-existing conditions, or damage caused by continued use after a fault was identified.</p>
 
       <h2>Parts warranty</h2>

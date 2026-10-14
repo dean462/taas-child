@@ -502,7 +502,7 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
   <div class="aeh-sec__inner">
     <span class="aeh-sec__eyebrow">Pricing Guide</span>
     <h2 class="aeh-sec__h2">Auto Electrical Pricing — Manukau</h2>
-    <p class="aeh-sec__sub">All fees explained upfront before any work begins. If you proceed with the repair, the diagnostic fee is applied to the final invoice.</p>
+    <p class="aeh-sec__sub">We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.</p>
     <div class="aeh-pricing">
       <div class="aeh-pricing__card">
         <div class="aeh-pricing__badge"><?php echo aeh_badge('DS', 48); ?></div>

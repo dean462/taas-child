@@ -72,7 +72,7 @@ $faqs = [
     ],
     [
         'q' => 'Do you fit budget tyres on all vehicle types?',
-        'a' => 'Yes — cars, SUVs, vans, utes, and light trucks. Budget tyre availability varies by size — larger and less common sizes may only be available in mid-range or premium. Call us on ' . $phone_local . ' with your size and we\'ll confirm what\'s in stock.',
+        'a' => 'Yes — cars, SUVs, vans and utes. Budget tyre availability varies by size — larger and less common sizes may only be available in mid-range or premium. Call us on ' . $phone_local . ' with your size and we\'ll confirm what\'s in stock.',
     ],
 ];
 

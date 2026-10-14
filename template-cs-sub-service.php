@@ -49,8 +49,8 @@ $cs_master = [
     'coolant-flush-manukau' => [
         'name'    => 'Coolant Flush & Refill',
         'badge'   => 'CF',
-        'short'   => 'Remove old, contaminated coolant and replace with fresh fluid at the correct concentration. Recommended every 2 years.',
-        'price'   => 'Coolant flush — contact for pricing. Recommended every 2 years',
+        'short'   => 'Remove old, contaminated coolant and replace with fresh fluid at the correct concentration. Recommended at your manufacturer\'s interval.',
+        'price'   => 'Coolant flush — contact for pricing. Recommended at your manufacturer\'s interval',
         'urgency' => 'low',
     ],
     'thermostat-replacement-manukau' => [
@@ -151,7 +151,7 @@ $faqs[] = ['q' => 'Do you offer finance for cooling system repairs?', 'a' => 'Ye
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book.'];
 if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Timing depends on the specific repair and vehicle. We advise on expected timeframe when you book. Please book so we can allow the right time. Call " . $phone_free . "."]; }
-if (count($faqs) < 10) { $faqs[] = ['q' => 'How often should I flush my coolant?', 'a' => 'We recommend a coolant flush every 2 years as a minimum. Old coolant loses its corrosion inhibitors and becomes acidic, which damages aluminium components from the inside.']; }
+if (count($faqs) < 10) { $faqs[] = ['q' => 'How often should I flush my coolant?', 'a' => 'Change your coolant at the interval your manufacturer specifies. Modern long-life coolants last longer than older types, often around 5 years, but old coolant loses its corrosion inhibitors and becomes acidic, which damages aluminium components from the inside.']; }
 
 // ── Badge helper ─────────────────────────────────────────────────────────────
 function csub_badge($initials, $size = 40) {

@@ -314,7 +314,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
             <li>VAG, BMW, Mercedes, Land Rover protocols</li>
             <li>Correct oil specifications per make and model</li>
             <li>OEM-equivalent parts — correctly specified</li>
-            <li>Independent labour rates — 30–50% below dealer</li>
+            <li>Independent labour rates — usually well below dealer</li>
             <li>No service department sales targets</li>
             <li>Talk directly to the technician doing the work</li>
             <li>Finance available — Afterpay, Q Card</li>
@@ -364,7 +364,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
         ['badge'=>'TX','title'=>'Transmission Service','desc'=>'DSG, mechatronic, CVT, automatic. Fluid changes and diagnostics. Full rebuilds sublet to a specialist.','url'=>'/transmission-service-and-repair/','cta'=>'Transmission →'],
         ['badge'=>'AE','title'=>'Auto Electrical','desc'=>'European electrical systems are complex. Factory-spec diagnostics, wiring fault tracing, alternator, starter, lighting.','url'=>'/auto-electrical/','cta'=>'Auto Electrical →'],
         ['badge'=>'AC','title'=>'Air Conditioning','desc'=>'Regas, diagnosis, cabin filter, compressor repair. European AC systems fully supported. R134a and R1234yf.','url'=>'/air-conditioning/','cta'=>'Air Con →'],
-        ['badge'=>'EV','title'=>'EV &amp; Hybrid','desc'=>'Volvo PHEV, BMW i-series, VW ID range. High-voltage qualified technicians. Hybrid battery checks.','url'=>'/electric-hybrid-vehicle-servicing/','cta'=>'EV &amp; Hybrid →'],
+        ['badge'=>'EV','title'=>'EV &amp; Hybrid','desc'=>'Volvo PHEV, BMW i-series, VW ID range. High-voltage trained technicians. Hybrid battery checks.','url'=>'/electric-hybrid-vehicle-servicing/','cta'=>'EV &amp; Hybrid →'],
         ['badge'=>'PPI','title'=>'Pre-Purchase Inspection','desc'=>'Buying a used European vehicle? A PPI exposes hidden faults before you commit. Book before you buy.','url'=>'/pre-purchase-inspection-manukau/','cta'=>'PPI →'],
       ];
       foreach ($svcs as $svc) :
@@ -400,7 +400,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
       <div class="eu-compare__col eu-compare__col--taas">
         <div class="eu-compare__col-title">TAAS European</div>
         <ul class="eu-compare__list">
-          <li>Independent labour rates — typically 30–50% lower</li>
+          <li>Independent labour rates — usually well below dealer</li>
           <li>No sales targets — we advise what is actually needed</li>
           <li>OEM-equivalent parts, correctly specified for your vehicle</li>
           <li>Faster turnaround — South Auckland, Monday to Friday</li>

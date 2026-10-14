@@ -41,7 +41,7 @@ $faqs = [
     ],
     [
         'q' => 'Do I need a GEM Visa card before I come in?',
-        'a' => 'Yes. You need an active GEM Visa card with available credit. If you don\'t have one yet, apply at latitudefinancial.co.nz. Once approved, you can use it straight away.',
+        'a' => 'Yes. You need an active GEM Visa card with available credit. If you don\'t have one yet, apply at gemfinance.co.nz. Once approved, you can use it straight away.',
     ],
     [
         'q' => 'How much can I spend with GEM Visa?',
@@ -846,7 +846,7 @@ get_header();
 
                 <div class="taas-info-box" style="margin-top:24px;">
                     <strong>No Card Yet?</strong><br>
-                    Apply for a GEM Visa at latitudefinancial.co.nz. Once approved, you can use it immediately at Tony Allen Auto Service.
+                    Apply for a GEM Visa at gemfinance.co.nz. Once approved, you can use it immediately at Tony Allen Auto Service.
                 </div>
             </div>
 
@@ -858,7 +858,7 @@ get_header();
                     <li>Minimum monthly repayment required during interest-free period</li>
                     <li>Monthly account fee may apply — check your card terms</li>
                     <li>No early repayment fees</li>
-                    <li>Annual fee may apply — see latitudefinancial.co.nz for current terms</li>
+                    <li>Annual fee may apply — see gemfinance.co.nz for current terms</li>
                 </ul>
 
                 <div class="taas-info-box" style="margin-top:24px;">
@@ -1213,7 +1213,7 @@ get_header();
 <div class="taas-disclaimer">
     <div class="taas-container">
         GEM Visa is issued by Latitude Financial Services Limited. Interest-free offer is available on qualifying purchases of $250 or more. Standard interest rate and monthly account fee apply. Minimum monthly repayments required. Terms and conditions apply — see latitudefinancial.co.nz for full details. Tony Allen Auto Service Ltd is an independent merchant.
-        See <a href="https://www.latitudefinancial.co.nz/" target="_blank" rel="noopener noreferrer">latitudefinancial.co.nz</a> for full details.
+        See <a href="https://www.gemfinance.co.nz/" target="_blank" rel="noopener noreferrer">gemfinance.co.nz</a> for full details.
     </div>
 </div>
 

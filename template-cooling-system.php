@@ -63,7 +63,7 @@ $finance = [
 // ── Services (10) ────────────────────────────────────────────────────────────
 $services = [
     ['icon'=>csh_mono('RR'),'title'=>'Radiator Repair & Replacement','desc'=>'Stone damage, corrosion, or internal blockage — we repair or replace radiators on all makes. Full pressure test before and after.','url'=>'/radiator-repair-manukau/','cta'=>'Radiator Repair →'],
-    ['icon'=>csh_mono('CF'),'title'=>'Coolant Flush','desc'=>'Remove old, contaminated coolant and replace with fresh fluid at the correct concentration. Recommended every 2 years or per manufacturer spec.','url'=>'/coolant-flush-manukau/','cta'=>'Coolant Flush →'],
+    ['icon'=>csh_mono('CF'),'title'=>'Coolant Flush','desc'=>'Remove old, contaminated coolant and replace with fresh fluid at the correct concentration. Recommended per manufacturer spec.','url'=>'/coolant-flush-manukau/','cta'=>'Coolant Flush →'],
     ['icon'=>csh_mono('WP'),'title'=>'Water Pump Replacement','desc'=>'A failed water pump stops coolant circulation and causes overheating. Usually replaced at the same time as the cambelt — same labour cost.','url'=>'/water-pump-replacement-manukau/','cta'=>'Water Pump →'],
     ['icon'=>csh_mono('TS'),'title'=>'Thermostat Replacement','desc'=>'A stuck-open or stuck-closed thermostat causes overheating or poor fuel economy. Inexpensive to replace — expensive to ignore.','url'=>'/thermostat-replacement-manukau/','cta'=>'Thermostat →'],
     ['icon'=>csh_mono('WL'),'title'=>'Coolant Leak Repair','desc'=>'Coolant leaks from hoses, the radiator, water pump, or head gasket. We locate the source and repair it before the engine overheats.','url'=>'/coolant-leak-repair-manukau/','cta'=>'Leak Repair →'],

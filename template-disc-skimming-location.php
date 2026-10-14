@@ -167,7 +167,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <h2 class="dsl-h2">On-Site Disc Skimming for <?php echo esc_html($suburb_name); ?> Drivers</h2>
   <div class="dsl-content">
     <p>Tony Allen Auto Service at 139 Cavendish Drive, Manukau provides on-site brake disc skimming for <?php echo esc_html($suburb_name); ?> and surrounding areas. <?php echo ($distance_note ? 'We are ' . esc_html($distance_note) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?>Rotors are machined on a precision lathe in our workshop — no need to send them away.</p>
-    <p>We never fit pads only. New pads on a grooved rotor will not bed in correctly — they wear unevenly, squeal, and the old groove pattern transfers into the new pads. Every brake job includes rotor machining or replacement alongside new pads. If the rotor is below minimum thickness or cracked, we replace it instead of skimming.</p>
+    <p>We only occasionally fit pads on their own. New pads on a grooved rotor will not bed in correctly — they wear unevenly, squeal, and the old groove pattern transfers into the new pads. Every brake job includes rotor machining or replacement alongside new pads. If the rotor is below minimum thickness or cracked, we replace it instead of skimming.</p>
     <p>For detailed information on our disc skimming process, visit our <a href="<?php echo esc_url($site_url.'/disc-skimming/'); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;">disc skimming hub page</a>.</p>
   </div>
 </div></section>

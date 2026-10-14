@@ -145,7 +145,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <h2 class="mbc-h2">Brakes and Clutch Are Safety-Critical</h2>
   <div class="mbc-content">
     <p>Your brakes are the most important safety system on your vehicle. A steering failure is dangerous. An engine failure is inconvenient. A brake failure is life-threatening. Brakes are also one of the most common WOF failure items in New Zealand — and the difference between a workshop that does brake work properly and one that takes shortcuts is the difference between a repair that lasts and one that puts you back in the same position six months later.</p>
-    <p>We never fit pads only. New brake pads on a worn, grooved, or scored rotor will not bed in correctly. They wear unevenly, they squeal, and the grooves from the old pads transfer straight into the new ones. Every brake job at Manukau Brake &amp; Clutch includes rotor machining or replacement alongside new pads — because that is the only way to do it properly.</p>
+    <p>We only occasionally fit pads on their own. New brake pads on a worn, grooved, or scored rotor will not bed in correctly. They wear unevenly, they squeal, and the grooves from the old pads transfer straight into the new ones. Every brake job at Manukau Brake &amp; Clutch includes rotor machining or replacement alongside new pads — because that is the only way to do it properly.</p>
     <p>Clutch work is the same principle. We replace the clutch as a kit — disc, pressure plate, and release bearing together — and inspect the flywheel before reassembly. A new clutch disc on a worn flywheel will judder, slip early, and cost you twice.</p>
   </div>
   <div class="mbc-safety">
