@@ -59,16 +59,16 @@ $finance = [
 $services = [
     ['badge' => 'AT', 'title' => 'Automatic Transmission Service', 'desc' => 'Fluid and filter service, solenoid replacement, torque converter diagnosis, and in-car repairs on conventional automatic transmissions.', 'url' => '/automatic-transmission-service-manukau/', 'cta' => 'Automatic Service →'],
     ['badge' => 'MG', 'title' => 'Manual Gearbox Repair',         'desc' => 'Clutch replacement, synchro diagnosis, gear selection faults, gearbox oil service, and bearing replacement on manual transmissions.', 'url' => '/manual-gearbox-repair-manukau/',           'cta' => 'Manual Gearbox →'],
-    ['badge' => 'CV', 'title' => 'CVT Transmission Service',      'desc' => 'CVT fluid service every 40,000 km — non-negotiable. Belt and pulley inspection, judder diagnosis, and valve body repair.', 'url' => '/cvt-transmission-service-manukau/',        'cta' => 'CVT Service →'],
-    ['badge' => 'TF', 'title' => 'Transmission Fluid Change',     'desc' => 'Drain-and-fill or machine exchange. Correct fluid specification for your transmission type — auto, CVT, DSG, or manual.', 'url' => '/transmission-fluid-change-manukau/',       'cta' => 'Fluid Change →'],
+    ['badge' => 'CV', 'title' => 'CVT Transmission Service',      'desc' => 'CVT fluid service every 40,000 km. Non-negotiable. Belt and pulley inspection, judder diagnosis, and valve body repair.', 'url' => '/cvt-transmission-service-manukau/',        'cta' => 'CVT Service →'],
+    ['badge' => 'TF', 'title' => 'Transmission Fluid Change',     'desc' => 'Drain-and-fill or machine exchange. Correct fluid specification for your transmission type: auto, CVT, DSG or manual.', 'url' => '/transmission-fluid-change-manukau/',       'cta' => 'Fluid Change →'],
 ];
 
 // ── Transmission types ───────────────────────────────────────────────────────
 $types = [
-    ['title' => 'Conventional Automatic',      'text' => 'Uses a torque converter and planetary gear sets. The most common type in New Zealand. Requires periodic fluid and filter service. Solenoids control gear selection — when they fail, shifting becomes harsh or delayed.'],
+    ['title' => 'Conventional Automatic',      'text' => 'Uses a torque converter and planetary gear sets. The most common type in New Zealand. Requires periodic fluid and filter service. Solenoids control gear selection. When they fail, shifting becomes harsh or delayed.'],
     ['title' => 'Manual Gearbox',              'text' => 'Driver selects gears via a clutch pedal and gear lever. Synchromesh rings allow smooth gear changes. Gearbox oil needs replacing, and clutch components wear over time. Simpler than automatics but still requires skilled diagnosis when faults occur.'],
-    ['title' => 'CVT — Continuously Variable', 'text' => 'Uses a belt or chain on variable pulleys instead of fixed gears. Common on Japanese vehicles — Nissan, Subaru, Honda, Toyota. Extremely sensitive to fluid condition. CVT fluid must be changed every 40,000 km — this is not optional. Neglected CVTs fail catastrophically.'],
-    ['title' => 'DSG / Dual-Clutch',           'text' => 'Two clutch packs controlled by a mechatronic unit — one for odd gears, one for even. Found on Volkswagen, Audi, Skoda, and some other European vehicles. Requires DSG fluid service at manufacturer intervals. Mechatronic unit faults cause jerking, hesitation, and warning lights.'],
+    ['title' => 'CVT (Continuously Variable)', 'text' => 'Uses a belt or chain on variable pulleys instead of fixed gears. Common on Japanese vehicles: Nissan, Subaru, Honda, Toyota. Extremely sensitive to fluid condition. CVT fluid must be changed every 40,000 km. This is not optional. Neglected CVTs fail catastrophically.'],
+    ['title' => 'DSG / Dual-Clutch',           'text' => 'Two clutch packs controlled by a mechatronic unit, one for odd gears and one for even. Found on Volkswagen, Audi, Skoda, and some other European vehicles. Requires DSG fluid service at manufacturer intervals. Mechatronic unit faults cause jerking, hesitation, and warning lights.'],
 ];
 
 // ── Common problems ──────────────────────────────────────────────────────────
@@ -76,9 +76,9 @@ $problems = [
     ['title' => 'Slipping',                 'text' => 'Engine revs climb but the vehicle does not accelerate. Caused by worn clutch packs in automatics, low fluid level, or a failing torque converter. In manual gearboxes, a worn clutch disc causes the same symptom. Driving with a slipping transmission accelerates internal damage.'],
     ['title' => 'Harsh or Delayed Shifting', 'text' => 'The transmission bangs into gear or pauses before engaging. Usually caused by a faulty shift solenoid, degraded fluid that has lost its friction properties, or a valve body fault. On DSG transmissions, mechatronic unit failure causes similar symptoms.'],
     ['title' => 'Shudder on Take-Off',      'text' => 'The vehicle vibrates or judders when pulling away from a stop. In automatics, this is often a torque converter lockup clutch fault. In CVTs, it indicates belt slip or valve body issues. In manuals, a worn or contaminated clutch causes judder.'],
-    ['title' => 'Fluid Leak',               'text' => 'Transmission fluid under the vehicle — typically red or dark brown. Leaks from pan gaskets, output shaft seals, cooler lines, or the torque converter seal. Any fluid loss reduces lubrication and cooling inside the transmission. Even a slow leak needs attention.'],
+    ['title' => 'Fluid Leak',               'text' => 'Transmission fluid under the vehicle, usually red or dark brown. Leaks from pan gaskets, output shaft seals, cooler lines, or the torque converter seal. Any fluid loss reduces lubrication and cooling inside the transmission. Even a slow leak needs attention.'],
     ['title' => 'Overheating',               'text' => 'Transmission fluid breaks down rapidly above 120°C. Caused by low fluid, towing without a transmission cooler, stop-start traffic with degraded fluid, or a blocked cooler. Overheated transmissions lose hydraulic pressure and shift erratically before failing.'],
-    ['title' => 'Warning Light',             'text' => 'Transmission warning light or check engine light with transmission fault codes. Modern transmissions are electronically controlled — the ECU monitors solenoids, speed sensors, fluid temperature, and clutch engagement. A warning light means the ECU has detected something outside normal parameters.'],
+    ['title' => 'Warning Light',             'text' => 'Transmission warning light or check engine light with transmission fault codes. Modern transmissions are electronically controlled. The ECU monitors solenoids, speed sensors, fluid temperature, and clutch engagement. A warning light means the ECU has detected something outside normal parameters.'],
 ];
 
 // ── Process ──────────────────────────────────────────────────────────────────
@@ -88,7 +88,7 @@ $process = [
     ['title' => 'Fluid Inspection',     'text' => 'Check fluid level, colour, smell, and consistency. Burnt or contaminated fluid tells us how much damage has already occurred.'],
     ['title' => 'Visual Inspection',    'text' => 'Look for external leaks, damaged cooler lines, and loose connections. Check mounts and linkage.'],
     ['title' => 'Diagnosis & Estimate', 'text' => 'Confirm the fault. Advise whether the repair is an in-car job or requires specialist rebuild. Provide a clear estimate before any work starts.'],
-    ['title' => 'Repair & Road Test',   'text' => 'Carry out the repair — in-house for in-car work, specialist for full rebuilds. Road test after repair to confirm the fault is resolved.'],
+    ['title' => 'Repair & Road Test',   'text' => 'Carry out the repair: in-house for in-car work, specialist for full rebuilds. Road test after repair to confirm the fault is resolved.'],
 ];
 
 // ── Related services ─────────────────────────────────────────────────────────
@@ -347,10 +347,10 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div class="trx-w">
     <div class="trx-hero__inner">
       <div>
-        <span class="trx-eye trx-eye--yellow">Transmission — Manukau</span>
+        <span class="trx-eye trx-eye--yellow">Transmission · Manukau</span>
         <h1>Transmission Service<br>&amp; Repair <span>Manukau</span></h1>
         <p class="trx-hero__sub">Automatic, manual, CVT, and DSG transmission service and repair. In-car repairs done in-house. Full rebuilds through a trusted specialist. We diagnose accurately, advise honestly, and carry out the work to a high standard. <?php echo esc_html($years); ?> years of workshop experience.</p>
-        <div class="trx-hero__price">Diagnosis <?php echo esc_html($mech_diag); ?> · Repair — estimate after diagnosis</div>
+        <div class="trx-hero__price">Diagnosis <?php echo esc_html($mech_diag); ?> · Repair: estimate after diagnosis</div>
         <div class="trx-hero__ctas">
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="trx-btn trx-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
           <a href="#trx-enquire" class="trx-btn trx-btn--outline">Book Online</a>
@@ -378,13 +378,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <span class="trx-eye trx-eye--dark">Understanding Transmissions</span>
   <h2 class="trx-h2">What Does a Transmission Do and Why Does It Matter?</h2>
   <div class="trx-content">
-    <p>The transmission transfers engine power to the wheels. It is one of the most complex and expensive components in any vehicle — second only to the engine itself. Every time you accelerate, slow down, or change speed, the transmission is selecting the right gear ratio to match engine power to road conditions.</p>
-    <p>Transmission fluid is the most overlooked maintenance item on most vehicles. It is not just a lubricant — it is the hydraulic medium that controls gear selection, the coolant that prevents overheating, and the friction modifier that allows clutch packs to engage smoothly. When the fluid degrades, everything inside the transmission starts to fail. Most transmission problems we see could have been prevented with a fluid service done at the right time.</p>
+    <p>The transmission transfers engine power to the wheels. It is one of the most complex and expensive components in any vehicle, second only to the engine itself. Every time you accelerate, slow down, or change speed, the transmission is selecting the right gear ratio to match engine power to road conditions.</p>
+    <p>Transmission fluid is the most overlooked maintenance item on most vehicles. It is more than a lubricant. It is the hydraulic medium that controls gear selection, the coolant that prevents overheating, and the friction modifier that allows clutch packs to engage smoothly. When the fluid degrades, everything inside the transmission starts to fail. Most transmission problems we see could have been prevented with a fluid service done at the right time.</p>
   </div>
   <div class="trx-types"><?php foreach ($types as $t): ?><div class="trx-type"><h3><?php echo esc_html($t['title']); ?></h3><p><?php echo esc_html($t['text']); ?></p></div><?php endforeach; ?></div>
   <div class="trx-callout">
     <div class="trx-callout__title">In-House vs Specialist Rebuild</div>
-    <div class="trx-callout__body">We carry out all in-car transmission repairs in-house — solenoid replacement, sensor diagnostics, fluid services, mechatronic unit work, torque converter replacement, and clutch jobs. Where a full internal rebuild is required, we arrange this through a trusted transmission specialist and manage the entire process on your behalf. This is the honest approach — a rebuild requires specialist tooling and knowledge that a general workshop should not pretend to have. You deal with us throughout.</div>
+    <div class="trx-callout__body">We carry out all in-car transmission repairs in-house: solenoid replacement, sensor diagnostics, fluid services, mechatronic unit work, torque converter replacement, and clutch jobs. Where a full internal rebuild is required, we arrange this through a trusted transmission specialist and manage the entire process on your behalf. This is the honest approach. A rebuild requires specialist tooling and knowledge that a general workshop should not pretend to have. You deal with us throughout.</div>
   </div>
 </div></section>
 
@@ -401,9 +401,9 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="trx-section trx-section--dark"><div class="trx-w">
   <span class="trx-eye trx-eye--yellow">Common Problems</span>
   <h2 class="trx-h2 trx-h2--white">Transmission Problems We See Every Week</h2>
-  <p class="trx-lead">These are the faults South Auckland drivers describe when they call us. Every one of them gets worse with time — and more expensive.</p>
+  <p class="trx-lead">These are the faults South Auckland drivers describe when they call us. Every one of them gets worse with time, and more expensive.</p>
   <div class="trx-problems"><?php foreach ($problems as $p): ?><div class="trx-problem"><h3><?php echo esc_html($p['title']); ?></h3><p><?php echo esc_html($p['text']); ?></p></div><?php endforeach; ?></div>
-  <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="trx-btn trx-btn--primary" style="margin-top:32px;">Describe Your Symptoms — Call <?php echo esc_html($phone_free); ?></a>
+  <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="trx-btn trx-btn--primary" style="margin-top:32px;">Describe Your Symptoms: Call <?php echo esc_html($phone_free); ?></a>
 </div></section>
 
 <!-- ── PROCESS ── Grey ─────────────────────────────────────────────────────── -->
@@ -420,7 +420,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="trx-section trx-section--white"><div class="trx-w">
   <span class="trx-eye trx-eye--dark">Pricing</span>
   <h2 class="trx-h2">How Much Does Transmission Repair Cost?</h2>
-  <p class="trx-lead">We give you an estimate after diagnosis and before starting work — and keep you informed if anything changes.</p>
+  <p class="trx-lead">We give you an estimate after diagnosis and before starting work and keep you informed if anything changes.</p>
   <div class="trx-pricing">
     <div class="trx-pricing__row"><span class="trx-pricing__label">Diagnostic assessment</span><span class="trx-pricing__value"><?php echo esc_html($mech_diag); ?></span></div>
     <div class="trx-pricing__row"><span class="trx-pricing__label">Transmission fluid service</span><span class="trx-pricing__value">Contact for pricing</span></div>
@@ -432,7 +432,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <!-- ── FINANCE STRIP ────────────────────────────────────────────────────────── -->
 <div class="trx-finance"><div class="trx-finance__inner">
-  <div class="trx-finance__text"><strong>Finance available</strong> — don't delay a transmission repair because of cost.</div>
+  <div class="trx-finance__text"><strong>Finance available.</strong> Don't delay a transmission repair because of cost.</div>
   <div class="trx-finance__logos"><?php foreach ($finance as $f): ?><span class="trx-fin"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
   <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" class="trx-finance__link">View finance options →</a>
 </div></div>
@@ -441,13 +441,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="trx-enquire" class="trx-section trx-section--dark"><div class="trx-w"><div class="trx-enquiry">
   <div>
     <span class="trx-eye trx-eye--yellow">Book or Enquire</span>
-    <h2 class="trx-h2 trx-h2--white">Transmission Service — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
-    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your vehicle make, model, and what symptoms you are noticing — slipping, harsh shifting, shudder, warning light, fluid leak. We will advise on next steps.</p>
-    <ul class="trx-enquiry__list"><?php foreach (['Diagnose the fault before recommending any work','Written estimate before any repair begins','In-car repairs done in-house — rebuilds via specialist','Finance available — pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
+    <h2 class="trx-h2 trx-h2--white">Transmission Service: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your vehicle make, model, and what symptoms you are noticing: slipping, harsh shifting, shudder, warning light, fluid leak. We will advise on next steps.</p>
+    <ul class="trx-enquiry__list"><?php foreach (['Diagnose the fault before recommending any work','Written estimate before any repair begins','In-car repairs done in-house, rebuilds via specialist','Finance available to pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="trx-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="trx-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     <div class="trx-enquiry__badges"><?php foreach ($finance as $f): ?><span class="trx-enquiry__badge"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
-    <div class="trx-enquiry__note"><strong>Estimate before we start.</strong> We confirm the cost before any work begins — no surprise invoices. <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Finance options →</a></div>
+    <div class="trx-enquiry__note"><strong>Estimate before we start.</strong> We confirm the cost before any work begins. No surprise invoices. <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="trx-enquiry__form">
     <div class="trx-enquiry__form-title">Send Us Your Details</div>
@@ -474,7 +474,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── FAQ ── White ─────────────────────────────────────────────────────────── -->
 <section class="trx-section trx-section--white"><div class="trx-w">
   <span class="trx-eye trx-eye--dark">Common Questions</span>
-  <h2 class="trx-h2">Transmission Service &amp; Repair — FAQ</h2>
+  <h2 class="trx-h2">Transmission Service &amp; Repair FAQ</h2>
   <div class="trx-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="trx-faq__item<?php echo $i === 0 ? ' trx-faq__item--open' : ''; ?>"><button class="trx-faq__q" aria-expanded="<?php echo $i === 0 ? 'true' : 'false'; ?>" aria-controls="trx-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="trx-a-<?php echo $i; ?>" class="trx-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>
@@ -483,10 +483,10 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── CLOSING CTA ── Grey ─────────────────────────────────────────────────── -->
 <section class="trx-section trx-section--grey"><div class="trx-w">
   <span class="trx-eye trx-eye--dark">South Auckland</span>
-  <h2 class="trx-h2">Transmission Service &amp; Repair — Manukau</h2>
+  <h2 class="trx-h2">Transmission Service &amp; Repair in Manukau</h2>
   <p class="trx-lead" style="margin-bottom:0;">Serving Papatoetoe, Māngere, Ōtāhuhu, Wiri, Ōtara, Flat Bush, Manurewa, Takanini, Papakura, Botany and all of South Auckland from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a>.</p>
   <div class="trx-close">
-    <div class="trx-close__text">Transmission problems get worse — and more expensive — every day you wait.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>
+    <div class="trx-close__text">Transmission problems get worse, and more expensive, every day you wait.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>
     <div class="trx-close__ctas"><a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="trx-btn trx-btn--primary"><?php echo esc_html($phone_free); ?></a><a href="#trx-enquire" class="trx-btn trx-btn--dark">Book Online</a></div>
   </div>
 </div></section>

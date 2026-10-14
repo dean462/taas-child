@@ -70,15 +70,15 @@ $sizes = [
 $faqs = [
     [
         'q' => 'What is the difference between AT and MT tyres?',
-        'a' => 'All-terrain (AT) tyres have a moderate tread pattern that works well on-road and off-road. They handle gravel, mud, and light off-road well while still being quiet and comfortable on sealed roads. Mud terrain (MT) tyres have a much more aggressive tread designed specifically for serious off-road conditions — deep mud, rocks, and rough terrain. MT tyres are louder on sealed roads and wear faster in regular driving. Most 4WD owners who occasionally go off-road choose AT tyres. Those who go off-road regularly or do serious work choose MT.',
+        'a' => 'All-terrain (AT) tyres have a moderate tread pattern that works well on-road and off-road. They handle gravel, mud, and light off-road well while still being quiet and comfortable on sealed roads. Mud terrain (MT) tyres have a much more aggressive tread designed specifically for serious off-road conditions: deep mud, rocks and rough terrain. MT tyres are louder on sealed roads and wear faster in regular driving. Most 4WD owners who occasionally go off-road choose AT tyres. Those who go off-road regularly or do serious work choose MT.',
     ],
     [
         'q' => 'Do you stock 4WD tyres in Manukau?',
-        'a' => 'Yes — we stock a range of 4WD tyre sizes and types at 139 Cavendish Drive, Manukau. Call us on ' . $phone_local . ' with your tyre size and we\'ll confirm what\'s in stock and give you options across different types and price points.',
+        'a' => 'Yes. We stock a range of 4WD tyre sizes and types at 139 Cavendish Drive, Manukau. Call us on ' . $phone_local . ' with your tyre size and we\'ll confirm what\'s in stock and give you options across different types and price points.',
     ],
     [
         'q' => 'Is wheel balancing included when you fit 4WD tyres?',
-        'a' => 'Yes — balancing is included with every tyre we fit, including 4WD and SUV sizes. We use our ER85 touchscreen balancer which handles large rim and tyre combinations. No extra charge.',
+        'a' => 'Yes. Balancing is included with every tyre we fit, including 4WD and SUV sizes. We use our ER85 touchscreen balancer which handles large rim and tyre combinations. No extra charge.',
     ],
     [
         'q' => 'Should I get a wheel alignment after fitting new 4WD tyres?',
@@ -86,11 +86,11 @@ $faqs = [
     ],
     [
         'q' => 'Can you fit plus-sized tyres on my 4WD?',
-        'a' => 'In many cases yes — but there are things to consider. Larger tyres can affect speedometer accuracy, fuel economy, clearance, and load ratings. Call us on ' . $phone_local . ' with your vehicle details and the size you\'re considering and we\'ll advise whether it\'s appropriate for your setup.',
+        'a' => 'In many cases yes, but there are things to consider. Larger tyres can affect speedometer accuracy, fuel economy, clearance, and load ratings. Call us on ' . $phone_local . ' with your vehicle details and the size you\'re considering and we\'ll advise whether it\'s appropriate for your setup.',
     ],
     [
         'q' => 'Do you fit tyres on dual-cab utes?',
-        'a' => 'Yes — we fit tyres on dual-cab utes, single-cabs, SUVs, and 4WD wagons. For utes used for towing or work, we\'ll make sure the tyre has an appropriate load rating for your application.',
+        'a' => 'Yes. We fit tyres on dual-cab utes, single-cabs, SUVs, and 4WD wagons. For utes used for towing or work, we\'ll make sure the tyre has an appropriate load rating for your application.',
     ],
 ];
 
@@ -232,11 +232,11 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span>4WD Tyres Manukau</span>
             </nav>
             <div>
-                <span class="fw-ey fw-ey--yellow">Tyre Centre — Manukau</span>
+                <span class="fw-ey fw-ey--yellow">Tyre Centre · Manukau</span>
                 <h1 class="fw-h1">4WD &amp; SUV Tyres<br><em>Manukau</em></h1>
                 <p class="fw-hero__sub">
                     All-terrain, mud terrain, and highway tyres for 4WDs, SUVs, and utes.
-                    Fitted and balanced at 139 Cavendish Drive. Call us with your size — we'll confirm stock and pricing.
+                    Fitted and balanced at 139 Cavendish Drive. Call us with your size and we'll confirm stock and pricing.
                 </p>
                 <div class="fw-hero__btns">
                     <a href="#fw-booking" class="fw-btn fw-btn--primary">Enquire About 4WD Tyres</a>
@@ -252,9 +252,9 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div class="fw-hero__card">
                 <h3>4WD Tyre Range</h3>
                 <ul>
-                    <li>All-terrain (AT) — mixed use</li>
-                    <li>Mud terrain (MT) — serious off-road</li>
-                    <li>Highway terrain (HT) — on-road comfort</li>
+                    <li>All-terrain (AT): mixed use</li>
+                    <li>Mud terrain (MT): serious off-road</li>
+                    <li>Highway terrain (HT): on-road comfort</li>
                     <li>SUV & crossover range</li>
                     <li>Dual-cab ute sizes</li>
                     <li>Balancing always included</li>
@@ -275,7 +275,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
     <div class="fw-w">
         <div class="fw-trust__inner">
             <?php foreach ([
-                ['🚙','AT · MT · HT — All Types'],
+                ['🚙','AT · MT · HT: All Types'],
                 ['🔄','Balancing Included'],
                 ['🏆','MTA Assured Workshop'],
                 ['⭐',$google_rating.' Stars · '.$google_reviews.' Reviews'],
@@ -293,7 +293,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
 <section class="fw-types" aria-labelledby="fw-types-h2">
     <div class="fw-w">
         <span class="fw-ey fw-ey--dark">Which Type?</span>
-        <h2 class="fw-h2" id="fw-types-h2">AT vs MT vs HT — Which Tyre Do You Need?</h2>
+        <h2 class="fw-h2" id="fw-types-h2">AT vs MT vs HT: Which Tyre Do You Need?</h2>
         <p class="fw-lead">The right tyre depends on how and where you drive. Here's the breakdown.</p>
         <div class="fw-types__grid">
             <?php foreach ($tyre_types as $t): ?>
@@ -310,7 +310,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             </div>
             <?php endforeach; ?>
         </div>
-        <p style="margin-top:20px;font-size:14px;color:#666;">Not sure which type suits your vehicle and use? Call us on <?php echo esc_html($phone_local); ?> — we'll give you a straight recommendation.</p>
+        <p style="margin-top:20px;font-size:14px;color:#666;">Not sure which type suits your vehicle and use? Call us on <?php echo esc_html($phone_local); ?> and we'll give you a straight recommendation.</p>
     </div>
 </section>
 
@@ -321,19 +321,19 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div>
                 <span class="fw-ey fw-ey--dark">Common Sizes</span>
                 <h2 class="fw-h2" id="fw-sizes-h2">4WD & SUV Tyre Sizes We Stock</h2>
-                <p class="fw-lead" style="margin-bottom:0;">Common sizes available — call to confirm your specific size and type.</p>
+                <p class="fw-lead" style="margin-bottom:0;">Common sizes available. Call to confirm your specific size and type.</p>
                 <div class="fw-sizes__grid">
                     <?php foreach ($sizes as $sz): ?>
                     <span class="fw-size-pill"><?php echo esc_html($sz); ?></span>
                     <?php endforeach; ?>
                     <span class="fw-size-pill" style="background:#111;color:#FFC800;border-color:#111;">+ More</span>
                 </div>
-                <p style="margin-top:16px;font-size:13px;color:#888;">Your tyre size is printed on the sidewall of your current tyres — e.g. <strong>265/70R16</strong>. Bring your vehicle in if you're not sure.</p>
+                <p style="margin-top:16px;font-size:13px;color:#888;">Your tyre size is printed on the sidewall of your current tyres, e.g. <strong>265/70R16</strong>. Bring your vehicle in if you're not sure.</p>
             </div>
             <div class="fw-sizes__note">
                 <h3>Changing Tyre Size?</h3>
-                <p>Going bigger — or switching from HT to AT/MT — can affect speedometer accuracy, fuel economy, and load ratings. Before committing to a size change, call us and we'll advise on what works for your vehicle and setup.</p>
-                <p>For utes used for towing or carrying loads, we'll make sure the load rating suits your application — this matters more than most owners realise.</p>
+                <p>Going bigger, or switching from HT to AT/MT, can affect speedometer accuracy, fuel economy, and load ratings. Before committing to a size change, call us and we'll advise on what works for your vehicle and setup.</p>
+                <p>For utes used for towing or carrying loads, we'll make sure the load rating suits your application. This matters more than most owners realise.</p>
                 <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/','',$phone_local)); ?>" class="fw-btn fw-btn--primary" style="width:100%;justify-content:center;margin-top:8px;">
                     Call <?php echo esc_html($phone_local); ?>
                 </a>
@@ -378,7 +378,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div>
                 <span class="fw-ey fw-ey--dark">Enquire</span>
                 <h2 class="fw-h2" id="fw-booking-h2">Enquire About 4WD &amp; SUV Tyres</h2>
-                <p class="fw-lead">Tell us your tyre size, vehicle, and what you use it for — we'll recommend the right tyre type and confirm stock and pricing.</p>
+                <p class="fw-lead">Tell us your tyre size, vehicle, and what you use it for, and we'll recommend the right tyre type and confirm stock and pricing.</p>
                 <ul class="fw-booking__checks">
                     <li><?php echo esc_html($hours); ?></li>
                     <li>139 Cavendish Drive, Manukau</li>

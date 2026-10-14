@@ -98,25 +98,25 @@ function acl_badge($initials, $size = 36) {
 // ── FAQs ─────────────────────────────────────────────────────────────────────
 $faqs = [
     ['q'=>'How much does a car air conditioning regas cost near '.$suburb_name.'?',
-     'a'=>'A standard regas and dye test starts '.$aircon_price.' at Tony Allen Auto Service — '.$distance_text.'. We test the system first and tell you what we find before starting work. Call '.$phone_free.' for a current estimate.'],
+     'a'=>'A standard regas and dye test starts '.$aircon_price.' at Tony Allen Auto Service, '.$distance_text.'. We test the system first and tell you what we find before starting work. Call '.$phone_free.' for a current estimate.'],
     ['q'=>'How far is Tony Allen Auto Service from '.$suburb_name.'?',
      'a'=>'Tony Allen Auto Service is '.$distance_text.'. Our address is 139 Cavendish Drive, Manukau, Auckland 2104. We serve '.$area_served.'. Open '.$hours.'.'],
     ['q'=>'Do you diagnose before recommending AC repairs?',
-     'a'=>'Yes — always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure. We give you an estimate before starting work and keep you informed if anything changes.'],
+     'a'=>'Yes, always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure. We give you an estimate before starting work and keep you informed if anything changes.'],
     ['q'=>'What air conditioning services do you offer near '.$suburb_name.'?',
      'a'=>'We offer regas and dye test, system diagnosis and repair, leak and blockage detection, compressor repair, climate control repair, cabin filter replacement, custom hose manufacture, odour treatment, and windscreen demisting diagnosis at our Manukau workshop.'],
     ['q'=>'Can you work on European vehicle AC systems?',
-     'a'=>'Yes. We service air conditioning on all makes including '.$euro_brands.'. European vehicles often have specific refrigerant requirements and dual-zone climate systems — we have the equipment and knowledge to handle these.'],
-    ['q'=>'My car AC smells musty — can you fix it?',
+     'a'=>'Yes. We service air conditioning on all makes including '.$euro_brands.'. European vehicles often have specific refrigerant requirements and dual-zone climate systems. We have the equipment and knowledge to handle these.'],
+    ['q'=>'My car AC smells musty. Can you fix it?',
      'a'=>'Yes. A musty smell usually comes from bacterial growth on the evaporator inside the dashboard. We carry out an antibacterial treatment and cabin filter replacement. This is a common issue, especially after winter when the AC has not been used for months.'],
     ['q'=>'Do I need to book for an AC service?',
      'a'=>'Please book so we can guarantee a time slot. If your AC has stopped working suddenly, call '.$phone_free.' and we will do our best to fit you in. Diagnosis often available same day.'],
     ['q'=>'Can I pay for AC repairs with Afterpay near '.$suburb_name.'?',
-     'a'=>'Yes — Tony Allen Auto Service accepts Afterpay, Q Card, GEM Finance, and Aotea Finance. You can spread the cost of your repair over time.'],
+     'a'=>'Yes. Tony Allen Auto Service accepts Afterpay, Q Card, GEM Finance and Aotea Finance. You can spread the cost of your repair over time.'],
     ['q'=>'How long does an AC regas take?',
-     'a'=>'A standard regas takes around 45 to 60 minutes. If diagnosis is needed first, allow 1 to 1.5 hours. Repairs take longer depending on the fault — we advise you of the timeframe when we provide your estimate.'],
+     'a'=>'A standard regas takes around 45 to 60 minutes. If diagnosis is needed first, allow 1 to 1.5 hours. Repairs take longer depending on the fault. We tell you the timeframe when we provide your estimate.'],
     ['q'=>'Where is your air conditioning workshop?',
-     'a'=>'Tony Allen Auto Service is at 139 Cavendish Drive, Manukau, Auckland 2104 — '.$distance_text.'. Open '.$hours.'. Call '.$phone_free.' to book.'],
+     'a'=>'Tony Allen Auto Service is at 139 Cavendish Drive, Manukau, Auckland 2104, '.$distance_text.'. Open '.$hours.'. Call '.$phone_free.' to book.'],
 ];
 if ($custom_faq_q1 && $custom_faq_a1) { $faqs[] = ['q'=>$custom_faq_q1,'a'=>$custom_faq_a1]; }
 if ($custom_faq_q2 && $custom_faq_a2) { $faqs[] = ['q'=>$custom_faq_q2,'a'=>$custom_faq_a2]; }
@@ -212,9 +212,9 @@ body.page-template-template-aircon-location{overflow-x:hidden;-webkit-text-size-
 <!-- 1. HERO -->
 <section class="acl-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
   <div class="acl-hero__inner">
-    <span class="acl-hero__eyebrow">Air Conditioning — <?php echo esc_html($suburb_name); ?></span>
+    <span class="acl-hero__eyebrow">Air Conditioning · <?php echo esc_html($suburb_name); ?></span>
     <h1>Air Conditioning<br><span><?php echo esc_html($suburb_name); ?></span></h1>
-    <p class="acl-hero__sub">Regas, diagnosis and repairs for <?php echo esc_html($suburb_name); ?> customers — <?php echo esc_html($distance_text); ?>. All makes and models. Estimate before we start. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+    <p class="acl-hero__sub">Regas, diagnosis and repairs for <?php echo esc_html($suburb_name); ?> customers, <?php echo esc_html($distance_text); ?>. All makes and models. Estimate before we start. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
     <div class="acl-hero__price">Standard regas &amp; dye test <?php echo esc_html($aircon_price); ?></div>
     <div class="acl-hero__ctas">
       <a href="#enquire" class="taas-btn taas-btn--primary">Enquire About AC Service</a>
@@ -237,8 +237,8 @@ body.page-template-template-aircon-location{overflow-x:hidden;-webkit-text-size-
   <div class="acl-sec__inner">
     <span class="acl-sec__eyebrow">Air Conditioning for <?php echo esc_html($suburb_name); ?></span>
     <h2 class="acl-sec__h2">Air Conditioning Services Near <?php echo esc_html($suburb_name); ?></h2>
-    <p class="acl-sec__body">Tony Allen Auto Service provides full air conditioning service and repair from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a> — <?php echo esc_html($distance_text); ?>. We diagnose before we recommend — find the fault first, fix it right.</p>
-    <p class="acl-sec__body">We serve <?php echo esc_html($area_served); ?> with regas and dye testing, system diagnosis, leak detection, compressor repair, climate control repair, cabin filter replacement, custom hose manufacture, and odour treatment. R134a and R1234yf refrigerant — covering older and newer vehicles.</p>
+    <p class="acl-sec__body">Tony Allen Auto Service provides full air conditioning service and repair from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>, <?php echo esc_html($distance_text); ?>. We diagnose before we recommend. Find the fault first, fix it right.</p>
+    <p class="acl-sec__body">We serve <?php echo esc_html($area_served); ?> with regas and dye testing, system diagnosis, leak detection, compressor repair, climate control repair, cabin filter replacement, custom hose manufacture, and odour treatment. R134a and R1234yf refrigerant, covering older and newer vehicles.</p>
     <p class="acl-sec__body">Family-owned since <?php echo esc_html($established); ?>, MTA Assured. Estimate provided before any work begins. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> to book.</p>
   </div>
 </section>
@@ -285,7 +285,7 @@ body.page-template-template-aircon-location{overflow-x:hidden;-webkit-text-size-
 </section>
 
 <!-- 6. ENQUIRY -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="acl-sec acl-sec--dark" id="enquire">
   <div class="acl-sec__inner">
     <div class="acl-enquiry">
@@ -321,7 +321,7 @@ body.page-template-template-aircon-location{overflow-x:hidden;-webkit-text-size-
 <section class="acl-sec acl-sec--white">
   <div class="acl-sec__inner">
     <span class="acl-sec__eyebrow">FAQ</span>
-    <h2 class="acl-sec__h2">Air Conditioning — <?php echo esc_html($suburb_name); ?> Questions</h2>
+    <h2 class="acl-sec__h2">Air Conditioning <?php echo esc_html($suburb_name); ?>: Questions</h2>
     <div class="acl-faq">
       <?php foreach ($faqs as $i => $faq) : ?>
       <div class="acl-faq__item<?php echo $i===0?' acl-faq__item--open':''; ?>">

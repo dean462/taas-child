@@ -46,7 +46,7 @@ $ss_master = [
         'badge'    => 'SR',
         'cat'      => 'Steering',
         'short'    => 'Leaking, heavy, or knocking steering rack. We diagnose it, then replace it or send it to a trusted steering specialist for reconditioning.',
-        'price'    => 'Steering rack repair — estimate after diagnosis. Wheel alignment ' . $align_price . ' where needed',
+        'price'    => 'Steering rack repair: estimate after diagnosis. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'high',
     ],
     'power-steering-repair-manukau' => [
@@ -54,7 +54,7 @@ $ss_master = [
         'badge'    => 'PS',
         'cat'      => 'Steering',
         'short'    => 'Heavy steering, whining pump, or leaking fluid. Hydraulic and electric systems diagnosed here; pump reconditioning is done by a trusted specialist.',
-        'price'    => 'Power steering diagnosis and repair — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
+        'price'    => 'Power steering diagnosis and repair: estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'high',
     ],
     'tie-rod-replacement-manukau' => [
@@ -62,7 +62,7 @@ $ss_master = [
         'badge'    => 'TR',
         'cat'      => 'Steering',
         'short'    => 'Worn tie rod ends cause steering wander and uneven tyre wear. Replaced in pairs, followed by a wheel alignment.',
-        'price'    => 'Tie rod replacement — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
+        'price'    => 'Tie rod replacement: estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'medium',
     ],
     'shock-absorber-replacement-manukau' => [
@@ -78,23 +78,23 @@ $ss_master = [
         'badge'    => 'BJ',
         'cat'      => 'Suspension',
         'short'    => 'A failed ball joint is a loss-of-control event. Any clunking or uneven wear gets checked before it becomes a WOF failure.',
-        'price'    => 'Ball joint replacement — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
+        'price'    => 'Ball joint replacement: estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'high',
     ],
     'suspension-bush-replacement-manukau' => [
         'name'     => 'Suspension Bush Replacement',
         'badge'    => 'SB',
         'cat'      => 'Suspension',
-        'short'    => 'Worn bushes cause noise, vibration, and poor handling. Rubber or polyurethane — pressed and fitted in-house.',
-        'price'    => 'Suspension bush replacement — estimate after inspection. Wheel alignment ' . $align_price . ' where geometry is affected',
+        'short'    => 'Worn bushes cause noise, vibration, and poor handling. Rubber or polyurethane, pressed and fitted in-house.',
+        'price'    => 'Suspension bush replacement: estimate after inspection. Wheel alignment ' . $align_price . ' where geometry is affected',
         'urgency'  => 'medium',
     ],
     'control-arm-replacement-manukau' => [
         'name'     => 'Control Arm Replacement',
         'badge'    => 'CA',
         'cat'      => 'Suspension',
-        'short'    => 'Bent or worn control arms affect steering geometry and cause tyre wear. Replaced with correct-spec parts — alignment after.',
-        'price'    => 'Control arm replacement — estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
+        'short'    => 'Bent or worn control arms affect steering geometry and cause tyre wear. Replaced with correct-spec parts, with an alignment after.',
+        'price'    => 'Control arm replacement: estimate after inspection. Wheel alignment ' . $align_price . ' where needed',
         'urgency'  => 'medium',
     ],
 ];
@@ -132,7 +132,7 @@ for ($i = 1; $i <= 5; $i++) {
 
 // ── Urgency colours ──────────────────────────────────────────────────────────
 $uc_map = [
-    'high'   => ['bg' => 'rgba(192,57,43,.12)', 'border' => 'var(--taas-alert, #C0392B)', 'text' => '#f5a0a0', 'label' => 'Urgent — Do Not Ignore'],
+    'high'   => ['bg' => 'rgba(192,57,43,.12)', 'border' => 'var(--taas-alert, #C0392B)', 'text' => '#f5a0a0', 'label' => 'Urgent: Do Not Ignore'],
     'medium' => ['bg' => 'rgba(255,200,0,.08)', 'border' => 'var(--taas-yellow, #FFC800)', 'text' => 'var(--taas-yellow, #FFC800)', 'label' => 'Book Soon'],
     'low'    => ['bg' => 'rgba(255,255,255,.06)', 'border' => '#555', 'text' => '#aaa', 'label' => 'When Convenient'],
 ];
@@ -161,10 +161,10 @@ if ($symptoms_raw) {
     $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Common signs include: ' . strtolower(implode('; ', $symptoms)) . '. If your vehicle is showing any of these, call us on ' . $phone_free . '.'];
 }
 $faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details for a specific estimate.'];
-$faqs[] = ['q' => "Do you do a wheel alignment after {$service_name}?", 'a' => "Yes — we carry out a wheel alignment after every steering or suspension repair where the geometry is affected. Wheel alignment is " . $align_price . ". Skipping alignment after a steering or suspension repair causes pulling and uneven tyre wear."];
-$faqs[] = ['q' => "Do you work on European vehicles?", 'a' => "Yes. Our TAAS European division covers " . $euro_brands . ". European vehicles often require specific part specifications and torque settings — we source OE-quality parts and follow manufacturer procedures."];
-$faqs[] = ['q' => "My car failed its WOF for this — what should I do?", 'a' => "Call us on " . $phone_free . ". We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We give you an estimate before starting work."];
-$faqs[] = ['q' => "Do you offer finance for steering and suspension repairs?", 'a' => "Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Interest-free options available. Visit our finance page or ask when you call."];
+$faqs[] = ['q' => "Do you do a wheel alignment after {$service_name}?", 'a' => "Yes. We carry out a wheel alignment after every steering or suspension repair where the geometry is affected. Wheel alignment is " . $align_price . ". Skipping alignment after a steering or suspension repair causes pulling and uneven tyre wear."];
+$faqs[] = ['q' => "Do you work on European vehicles?", 'a' => "Yes. Our TAAS European division covers " . $euro_brands . ". European vehicles often require specific part specifications and torque settings. We source OE-quality parts and follow manufacturer procedures."];
+$faqs[] = ['q' => "My car failed its WOF for this. What should I do?", 'a' => "Call us on " . $phone_free . ". We carry out the repair and recheck the failed items on the same visit where possible. You do not need to rebook for the WOF check. We give you an estimate before starting work."];
+$faqs[] = ['q' => "Do you offer finance for steering and suspension repairs?", 'a' => "Yes. Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Interest-free options available. Visit our finance page or ask when you call."];
 if (in_array($page_slug, ['steering-rack-repair-manukau', 'power-steering-repair-manukau'], true) && isset($taas_faqs['ss_specialist'])) {
     $faqs[] = $taas_faqs['ss_specialist'];
 }
@@ -414,8 +414,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
   <div class="sss-w">
     <div class="sss-hero__inner">
       <div>
-        <span class="sss-hero__eyebrow"><?php echo esc_html($category); ?> — Manukau</span>
-        <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
+        <span class="sss-hero__eyebrow"><?php echo esc_html($category); ?> · Manukau</span>
+        <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
         <p class="sss-hero__sub"><?php echo esc_html($current['short']); ?> <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
         <?php if ($price_signal): ?>
         <div class="sss-hero__price"><?php echo esc_html($price_signal); ?></div>
@@ -524,7 +524,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
           <li><?php echo esc_html($s); ?></li>
           <?php endforeach; ?>
         </ul>
-        <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="sss-btn sss-btn--primary" style="margin-top:24px;">Call <?php echo esc_html($phone_free); ?> — Describe Your Symptoms</a>
+        <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="sss-btn sss-btn--primary" style="margin-top:24px;">Call <?php echo esc_html($phone_free); ?> to Describe Your Symptoms</a>
       </div>
       <?php endif; ?>
     </div>
@@ -539,7 +539,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
   <div class="sss-w">
     <span class="sss-eyebrow sss-eyebrow--dark">Our Process</span>
     <h2 class="sss-h2">How We Handle <?php echo esc_html($service_name); ?> at TAAS</h2>
-    <p class="sss-lead">We do not guess. Every job follows a structured process — accurate diagnosis, honest estimate, quality repair.</p>
+    <p class="sss-lead">We do not guess. Every job follows a structured process: accurate diagnosis, honest estimate, quality repair.</p>
     <div class="sss-steps">
       <?php foreach ($process as $i => $step): ?>
       <div class="sss-step">
@@ -558,13 +558,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
   <div class="sss-w">
     <span class="sss-eyebrow sss-eyebrow--dark">Pricing</span>
     <h2 class="sss-h2">How Much Does <?php echo esc_html($service_name); ?> Cost?</h2>
-    <p class="sss-lead">We understand pricing anxiety stops people calling. We give you an estimate before starting work — and keep you informed if anything changes.</p>
+    <p class="sss-lead">We understand pricing anxiety stops people calling. We give you an estimate before starting work and keep you informed if anything changes.</p>
     <div class="sss-pricing">
       <div class="sss-pricing__signal"><?php echo esc_html($price_signal); ?></div>
       <div class="sss-pricing__body">Price varies by vehicle make, model, and parts required. Call <?php echo esc_html($phone_free); ?> with your vehicle details for a same-day estimate.</div>
       <div class="sss-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, and Aotea Finance. <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>
     </div>
-    <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="sss-btn sss-btn--primary" style="margin-top:24px;">Get an Estimate — Call <?php echo esc_html($phone_free); ?></a>
+    <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="sss-btn sss-btn--primary" style="margin-top:24px;">Get an Estimate: Call <?php echo esc_html($phone_free); ?></a>
   </div>
 </section>
 
@@ -573,7 +573,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
 <div class="sss-finance" role="region" aria-label="Finance options">
   <div class="sss-w">
     <div class="sss-finance__inner">
-      <span class="sss-finance__text">Spread the cost of steering &amp; suspension repairs — <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">finance available</a></span>
+      <span class="sss-finance__text">Spread the cost of steering &amp; suspension repairs with <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">finance</a></span>
       <div class="sss-finance__badges">
         <span class="sss-finance__badge">Afterpay</span>
         <span class="sss-finance__badge">Q Card</span>
@@ -590,7 +590,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
     <div class="sss-enquiry">
       <div>
         <span class="sss-eyebrow sss-eyebrow--yellow">Book Today</span>
-        <h2 class="sss-h2 sss-h2--white"><?php echo esc_html($service_name); ?> — <span style="color:var(--taas-yellow, #FFC800);">Enquire Now</span></h2>
+        <h2 class="sss-h2 sss-h2--white"><?php echo esc_html($service_name); ?>: <span style="color:var(--taas-yellow, #FFC800);">Enquire Now</span></h2>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="sss-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="sss-enquiry__detail">
           <strong><?php echo esc_html($phone_local); ?></strong><br>
@@ -641,7 +641,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
 <section class="sss-section sss-section--grey">
   <div class="sss-w">
     <span class="sss-eyebrow sss-eyebrow--dark">Common Questions</span>
-    <h2 class="sss-h2"><?php echo esc_html($service_name); ?> — FAQ</h2>
+    <h2 class="sss-h2"><?php echo esc_html($service_name); ?> FAQs</h2>
     <div class="sss-faq__list">
       <?php foreach ($faqs as $i => $faq): ?>
       <div class="sss-faq__item<?php echo $i === 0 ? ' sss-faq__item--open' : ''; ?>">

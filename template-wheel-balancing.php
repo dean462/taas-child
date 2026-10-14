@@ -30,7 +30,7 @@ $phone_free_tel = preg_replace('/[^0-9+]/', '', TAAS_PHONE_FREE);
 $maps_url       = 'https://www.google.com/maps/place/Tony+Allen+Auto+Service,+139+Cavendish+Drive,+Manukau+2104';
 
 $symptoms = [
-    'Steering wheel vibrating — especially at 80–100 km/h',
+    'Steering wheel vibrating, especially at 80–100 km/h',
     'Vibration felt through the seat or floor at highway speeds',
     'Humming or droning noise that changes with speed',
     'Tyres wearing unevenly in patches or cups',
@@ -40,32 +40,32 @@ $symptoms = [
 ];
 
 $process_steps = [
-    ['title' => 'Wheel-Off Removal', 'desc' => 'Each wheel and tyre assembly is removed individually. Balancing can only be done accurately off the car — on-car balancers mask some imbalance types.'],
-    ['title' => 'Run-Out Measurement', 'desc' => 'The wheel is mounted on our ER85 touchscreen balancer. In a single spin it detects static imbalance, dynamic imbalance, and lateral/radial run-out — the three distinct causes of vibration. Accuracy to 0.1mm.'],
-    ['title' => 'Weight Placement', 'desc' => 'The machine specifies the exact amount and position of weight required. Clip-on weights for steel wheels, stick-on weights for alloys — the right method for the wheel type.'],
+    ['title' => 'Wheel-Off Removal', 'desc' => 'Each wheel and tyre assembly is removed individually. Balancing can only be done accurately off the car. On-car balancers mask some imbalance types.'],
+    ['title' => 'Run-Out Measurement', 'desc' => 'The wheel is mounted on our ER85 touchscreen balancer. In a single spin it detects static imbalance, dynamic imbalance, and lateral/radial run-out: the three distinct causes of vibration. Accuracy to 0.1mm.'],
+    ['title' => 'Weight Placement', 'desc' => 'The machine specifies the exact amount and position of weight required. Clip-on weights for steel wheels, stick-on weights for alloys. The right method for the wheel type.'],
     ['title' => 'Verification Spin', 'desc' => "After weights are placed, the wheel is spun again to confirm balance is within tolerance. We don't skip this step."],
-    ['title' => 'Refit & Torque', 'desc' => 'Wheels refitted to manufacturer torque spec. Not hand-tight, not over-torqued — correct spec, confirmed with a torque wrench.'],
-    ['title' => 'Road Test', 'desc' => 'We road test after balancing to confirm vibration is gone. If anything persists, we investigate further — it could indicate a tyre fault, wheel damage, or a worn hub bearing.'],
+    ['title' => 'Refit & Torque', 'desc' => 'Wheels refitted to manufacturer torque spec. Not hand-tight, not over-torqued. Correct spec, confirmed with a torque wrench.'],
+    ['title' => 'Road Test', 'desc' => 'We road test after balancing to confirm vibration is gone. If anything persists, we investigate further. It could indicate a tyre fault, wheel damage, or a worn hub bearing.'],
 ];
 
 $why_points = [
     'Vibration is uncomfortable and gets worse, not better, over time',
-    'Unbalanced wheels cause cupping and patchy tyre wear — shortening tyre life',
+    'Unbalanced wheels cause cupping and patchy tyre wear, which shortens tyre life',
     'Steering components and wheel bearings wear faster under constant vibration',
     'Highway driving becomes unsafe when vibration affects steering control',
-    'Balancing is one of the lowest-cost jobs — relative to what it prevents',
+    'Balancing is one of the lowest-cost jobs relative to what it prevents',
 ];
 
 $faqs = [
-    ['q' => 'How much does wheel balancing cost?', 'a' => 'Wheel balancing ' . $balance_price . '. We balance all four wheels as standard. Pricing may vary for oversized 4WD or commercial tyres — we will confirm the price before starting.'],
-    ['q' => 'What is the difference between balancing and alignment?', 'a' => 'Balancing corrects weight distribution of each wheel and tyre — stops vibration. Alignment adjusts the angles of all four wheels — corrects pulling and uneven wear. Separate jobs that fix different problems. A car can be perfectly aligned but still vibrate from an imbalanced wheel.'],
-    ['q' => 'How do I know if my wheels are out of balance?', 'a' => 'Steering wheel vibration that appears at certain speeds — typically 80–100 km/h. Front wheel imbalance is felt in the steering. Rear wheel imbalance is felt in the seat. The only accurate way to confirm is putting the wheel on a balancer.'],
+    ['q' => 'How much does wheel balancing cost?', 'a' => 'Wheel balancing ' . $balance_price . '. We balance all four wheels as standard. Pricing may vary for oversized 4WD or commercial tyres. We will confirm the price before starting.'],
+    ['q' => 'What is the difference between balancing and alignment?', 'a' => 'Balancing corrects weight distribution of each wheel and tyre to stop vibration. Alignment adjusts the angles of all four wheels to correct pulling and uneven wear. Separate jobs that fix different problems. A car can be perfectly aligned but still vibrate from an imbalanced wheel.'],
+    ['q' => 'How do I know if my wheels are out of balance?', 'a' => 'Steering wheel vibration that appears at certain speeds, typically 80–100 km/h. Front wheel imbalance is felt in the steering. Rear wheel imbalance is felt in the seat. The only accurate way to confirm is putting the wheel on a balancer.'],
     ['q' => 'How often should I get wheels balanced?', 'a' => 'Every time new tyres are fitted (always included), then every 10,000–15,000 km or immediately if vibration starts. A pothole or kerb strike can knock balance out.'],
-    ['q' => 'What is run-out and why does it matter?', 'a' => "Run-out is when a tyre or wheel is not perfectly round — it wobbles as it spins. Standard balancers miss this. Our ER85 detects both weight imbalance and run-out in a single spin. Without run-out detection, you can chase a vibration problem that never fully resolves."],
-    ['q' => 'Can a new tyre be out of balance?', 'a' => 'Yes. New tyres always need balancing when fitted. A new tyre that has not been balanced will cause vibration. If you had tyres fitted elsewhere and started vibrating, bring it in — straightforward to check and fix.'],
-    ['q' => 'My car still vibrates after balancing — what else could it be?', 'a' => 'Tyre run-out (tyre is out of round), wheel damage (bent rim), worn wheel bearings, or worn suspension. Our ER85 detects run-out during balancing, so we usually catch tyre and wheel issues at the same time.'],
-    ['q' => 'Is balancing included when you fit new tyres?', 'a' => 'Yes — always. We never fit tyres without balancing them.'],
-    ['q' => 'Do you balance alloy wheels?', 'a' => 'Yes. Stick-on weights for alloys — placed behind the spokes so they are not visible. Clip-on weights for steel wheels. The right method for the wheel type.'],
+    ['q' => 'What is run-out and why does it matter?', 'a' => "Run-out is when a tyre or wheel is not perfectly round, so it wobbles as it spins. Standard balancers miss this. Our ER85 detects both weight imbalance and run-out in a single spin. Without run-out detection, you can chase a vibration problem that never fully resolves."],
+    ['q' => 'Can a new tyre be out of balance?', 'a' => 'Yes. New tyres always need balancing when fitted. A new tyre that has not been balanced will cause vibration. If you had tyres fitted elsewhere and started vibrating, bring it in. It is straightforward to check and fix.'],
+    ['q' => 'My car still vibrates after balancing. What else could it be?', 'a' => 'Tyre run-out (tyre is out of round), wheel damage (bent rim), worn wheel bearings, or worn suspension. Our ER85 detects run-out during balancing, so we usually catch tyre and wheel issues at the same time.'],
+    ['q' => 'Is balancing included when you fit new tyres?', 'a' => 'Yes, always. We never fit tyres without balancing them.'],
+    ['q' => 'Do you balance alloy wheels?', 'a' => 'Yes. Stick-on weights for alloys, placed behind the spokes so they are not visible. Clip-on weights for steel wheels. The right method for the wheel type.'],
     ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . TAAS_HOURS . '. Call ' . TAAS_PHONE_FREE . ' to book.'],
 ];
 
@@ -82,7 +82,7 @@ $schema = ['@context' => 'https://schema.org', '@graph' => [
     ['@type' => ['AutoRepair', 'LocalBusiness'],
      'name' => 'Tony Allen Auto Service — Wheel Balancing',
      'url' => $page_url,
-     'description' => 'Wheel balancing in Manukau, South Auckland. ER85 touchscreen balancer — static, dynamic and run-out measured in a single spin. ' . $balance_price . '. Included with new tyre fitting.',
+     'description' => 'Wheel balancing in Manukau, South Auckland. ER85 touchscreen balancer: static, dynamic and run-out measured in a single spin. ' . $balance_price . '. Included with new tyre fitting.',
      'telephone' => [TAAS_PHONE_LOCAL, TAAS_PHONE_FREE],
      'email' => TAAS_EMAIL,
      'address' => ['@type' => 'PostalAddress', 'streetAddress' => '139 Cavendish Drive', 'addressLocality' => 'Manukau', 'addressRegion' => 'Auckland', 'postalCode' => '2104', 'addressCountry' => 'NZ'],
@@ -207,10 +207,10 @@ body.page-template-template-wheel-balancing { overflow-x:hidden; }
 <section class="wb-hero">
   <div class="wb-hero__inner">
     <div>
-      <span class="wb-hero__eyebrow">Tyre Centre — Manukau</span>
-      <h1>Wheel Balancing<br><span>Manukau — South Auckland</span></h1>
+      <span class="wb-hero__eyebrow">Tyre Centre · Manukau</span>
+      <h1>Wheel Balancing<br><span>Manukau, South Auckland</span></h1>
       <p class="wb-hero__price">Wheel balancing <?php echo esc_html($balance_price); ?></p>
-      <p class="wb-hero__sub">Steering vibrating at speed? ER85 touchscreen balancer — static, dynamic and run-out measured in a single spin. Included with new tyre fitting. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+      <p class="wb-hero__sub">Steering vibrating at speed? ER85 touchscreen balancer: static, dynamic and run-out measured in a single spin. Included with new tyre fitting. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
       <div class="wb-hero__ctas">
         <a href="#enquire" class="taas-btn taas-btn--primary">Book Balancing</a>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
@@ -250,7 +250,7 @@ body.page-template-template-wheel-balancing { overflow-x:hidden; }
   <div class="wb-section__inner">
     <span class="wb-section__eyebrow">Warning Signs</span>
     <h2 class="wb-section__heading">Is Your Wheel Balance Off?</h2>
-    <p class="wb-section__sub">If you recognise any of these, book a balance check. Vibration does not fix itself — it gets worse and causes secondary damage.</p>
+    <p class="wb-section__sub">If you recognise any of these, book a balance check. Vibration does not fix itself. It gets worse and causes secondary damage.</p>
     <div class="wb-symptoms">
       <?php foreach ($symptoms as $sym) : ?>
       <div class="wb-symptom"><?php echo esc_html($sym); ?></div>
@@ -263,7 +263,7 @@ body.page-template-template-wheel-balancing { overflow-x:hidden; }
   <div class="wb-section__inner">
     <span class="wb-section__eyebrow">Our Process</span>
     <h2 class="wb-section__heading">How We Balance Wheels</h2>
-    <p class="wb-section__sub">Six steps — wheel-off, measured, corrected, verified, torqued, road tested.</p>
+    <p class="wb-section__sub">Six steps: wheel-off, measured, corrected, verified, torqued, road tested.</p>
     <div class="wb-process">
       <?php foreach ($process_steps as $step) : ?>
       <div class="wb-step">
@@ -285,8 +285,8 @@ body.page-template-template-wheel-balancing { overflow-x:hidden; }
       <?php endforeach; ?>
     </ul>
     <div style="background:var(--taas-panel,#F7F7F5);border:1px solid var(--taas-border,#E8E8E4);border-radius:var(--taas-radius,6px);padding:24px;max-width:720px;">
-      <div style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;font-weight:700;color:var(--taas-black,#111);margin-bottom:8px;">Our Equipment — ER85 Touchscreen Balancer</div>
-      <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;color:var(--taas-mid,#666);line-height:1.6;">Detects static imbalance, dynamic imbalance, and lateral/radial run-out in a single spin. Accuracy to 0.1mm. Most balancers only detect weight imbalance — the ER85 catches the problems others miss.</p>
+      <div style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;font-weight:700;color:var(--taas-black,#111);margin-bottom:8px;">Our Equipment: ER85 Touchscreen Balancer</div>
+      <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;color:var(--taas-mid,#666);line-height:1.6;">Detects static imbalance, dynamic imbalance, and lateral/radial run-out in a single spin. Accuracy to 0.1mm. Most balancers only detect weight imbalance. The ER85 catches the problems others miss.</p>
     </div>
   </div>
 </section>
@@ -297,7 +297,7 @@ body.page-template-template-wheel-balancing { overflow-x:hidden; }
     <h2 class="wb-section__heading">Wheel Balancing Pricing</h2>
     <div class="wb-callout">
       <div class="wb-callout__title">Wheel balancing <?php echo esc_html($balance_price); ?></div>
-      <p class="wb-callout__body">All four wheels balanced as standard. Included with every new tyre fitting. Oversized 4WD or commercial tyres may vary — we confirm the estimate before starting. Wheel alignment also recommended: <?php echo esc_html($alignment_price); ?>.</p>
+      <p class="wb-callout__body">All four wheels balanced as standard. Included with every new tyre fitting. Oversized 4WD or commercial tyres may vary. We confirm the estimate before starting. Wheel alignment also recommended: <?php echo esc_html($alignment_price); ?>.</p>
     </div>
   </div>
 </section>
@@ -329,7 +329,7 @@ body.page-template-template-wheel-balancing { overflow-x:hidden; }
   <div class="wb-section__inner">
     <div class="wb-faq">
       <span class="wb-section__eyebrow">FAQ</span>
-      <h2 class="wb-section__heading">Wheel Balancing — Common Questions</h2>
+      <h2 class="wb-section__heading">Wheel Balancing: Common Questions</h2>
       <div class="wb-faq__list">
         <?php foreach ($faqs as $faq) : ?>
         <div class="wb-faq__item">

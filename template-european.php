@@ -65,8 +65,8 @@ $makes = [
     ['badge'=>'MERC','name'=>'Mercedes-Benz','desc'=>'C-Class, E-Class, GLC, Sprinter vans. Servicing, repairs and diagnostics at independent rates.','slug'=>'european'],
     ['badge'=>'LR','name'=>'Land Rover','desc'=>'Discovery, Freelander, Defender, Range Rover Evoque, Sport, Velar. Air suspension, servicing and brakes.','slug'=>'european'],
     ['badge'=>'POR','name'=>'Porsche','desc'=>'Cayenne, Macan, Boxster, Cayman. Servicing, brakes, diagnostics. Independent alternative to dealer.','slug'=>'european'],
-    ['badge'=>'MINI','name'=>'MINI','desc'=>'Cooper, Countryman, Clubman. BMW platform — same diagnostic and parts supply capability.','slug'=>'european'],
-    ['badge'=>'SKDA','name'=>'Škoda','desc'=>'Octavia, Superb, Kodiaq. VAG platform — same diagnostic and parts capability as Audi and VW.','slug'=>'european'],
+    ['badge'=>'MINI','name'=>'MINI','desc'=>'Cooper, Countryman, Clubman. BMW platform, so the same diagnostic and parts supply capability.','slug'=>'european'],
+    ['badge'=>'SKDA','name'=>'Škoda','desc'=>'Octavia, Superb, Kodiaq. VAG platform, so the same diagnostic and parts capability as Audi and VW.','slug'=>'european'],
     ['badge'=>'VOLV','name'=>'Volvo','desc'=>'XC60, XC90, V60, S60. Logbook servicing, brakes, cambelt, suspension. PHEV variants also serviced.','slug'=>'european'],
     ['badge'=>'PEU','name'=>'Peugeot','desc'=>'208, 308, 3008, 508. Logbook servicing, diagnostics, suspension and brake repairs.','slug'=>'european'],
     ['badge'=>'REN','name'=>'Renault','desc'=>'Megane, Koleos, Kadjar. Full servicing and diagnostic capability. Parts sourced fast.','slug'=>'european'],
@@ -251,8 +251,8 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
   <div class="eu-hero__inner">
     <div>
       <span class="eu-hero__eyebrow">TAAS European</span>
-      <h1>European Car Servicing<br>&amp; Repairs — <span>Manukau</span></h1>
-      <p class="eu-hero__sub">Audi, Volkswagen, BMW, Mercedes-Benz, Land Rover, Porsche, MINI, Škoda and more — serviced with factory-spec diagnostics at independent rates. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+      <h1>European Car Servicing<br>&amp; Repairs in <span>Manukau</span></h1>
+      <p class="eu-hero__sub">Audi, Volkswagen, BMW, Mercedes-Benz, Land Rover, Porsche, MINI, Škoda and more, serviced with factory-spec diagnostics at independent rates. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
       <div class="eu-hero__ctas">
         <a href="#enquire" class="taas-btn taas-btn--primary">Book a Service</a>
         <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -281,7 +281,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
 </section>
 
 <!-- 2. TRUST STRIP -->
-<div class="eu-phonestrip"><div class="eu-phonestrip__inner"><span class="eu-phonestrip__label">European specialist — call now</span><a href="tel:<?php echo esc_attr($phone_tel); ?>" class="eu-phonestrip__num"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><?php echo esc_html($phone_free); ?></a></div></div>
+<div class="eu-phonestrip"><div class="eu-phonestrip__inner"><span class="eu-phonestrip__label">European specialist: call now</span><a href="tel:<?php echo esc_attr($phone_tel); ?>" class="eu-phonestrip__num"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><?php echo esc_html($phone_free); ?></a></div></div>
 <div class="eu-trust"><div class="eu-trust__inner">
   <div class="eu-trust__item">MTA Assured</div>
   <div class="eu-trust__item">Factory-Spec Diagnostics</div>
@@ -297,28 +297,28 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
     <h2 class="eu-sec__h2">Why European Vehicles Need Specialist Knowledge</h2>
     <div class="eu-edu">
       <div class="eu-edu__text">
-        <p>European vehicles are engineered differently from Japanese and Korean cars. Tighter tolerances, specific oil grades, unique fastener types, electronic systems that require brand-specific diagnostic tools, and service intervals that vary significantly by make, model, and engine variant. A Golf and a Corolla might look similar from the outside — under the bonnet, the engineering philosophy is fundamentally different.</p>
-        <p>The biggest practical difference is diagnostic access. VAG group vehicles (Volkswagen, Audi, Škoda) use proprietary communication protocols that generic OBD readers cannot fully access. BMW, Mercedes-Benz, and Land Rover have their own system architectures. A workshop without the correct tools can read basic engine codes but misses the majority of module data — body control, comfort systems, transmission adaptation, parking sensors, and more.</p>
-        <p>The second difference is parts specification. European engines often require specific oil viscosities (VW 504/507, BMW LL-04, Mercedes 229.51) that differ from universal grades. Using the wrong oil does not cause immediate damage, but over time it affects timing chain wear, DPF regeneration cycles, and long-term engine health. We use the correct specification for your vehicle — every time.</p>
+        <p>European vehicles are engineered differently from Japanese and Korean cars. Tighter tolerances, specific oil grades, unique fastener types, electronic systems that require brand-specific diagnostic tools, and service intervals that vary significantly by make, model, and engine variant. A Golf and a Corolla might look similar from the outside, but under the bonnet the engineering philosophy is fundamentally different.</p>
+        <p>The biggest practical difference is diagnostic access. VAG group vehicles (Volkswagen, Audi, Škoda) use proprietary communication protocols that generic OBD readers cannot fully access. BMW, Mercedes-Benz, and Land Rover have their own system architectures. A workshop without the correct tools can read basic engine codes but misses most of the module data: body control, comfort systems, transmission adaptation, parking sensors, and more.</p>
+        <p>The second difference is parts specification. European engines often require specific oil viscosities (VW 504/507, BMW LL-04, Mercedes 229.51) that differ from universal grades. Using the wrong oil does not cause immediate damage, but over time it affects timing chain wear, DPF regeneration cycles, and long-term engine health. We use the correct specification for your vehicle, every time.</p>
         <div class="eu-edu__callout">
           <h3>Your Warranty Is Protected</h3>
-          <p>Under the Consumer Guarantees Act, you are entitled to have your vehicle serviced at any qualified workshop without voiding your manufacturer warranty — provided the service is carried out to manufacturer specification.</p>
-          <p>We use the correct grade oils, OEM-equivalent parts, and document everything. Your service history is maintained to the same standard as a franchise dealer — at independent rates.</p>
+          <p>Under the Consumer Guarantees Act, you are entitled to have your vehicle serviced at any qualified workshop without voiding your manufacturer warranty, provided the service is carried out to manufacturer specification.</p>
+          <p>We use the correct grade oils, OEM-equivalent parts, and document everything. Your service history is maintained to the same standard as a franchise dealer, at independent rates.</p>
         </div>
       </div>
       <div>
         <div class="eu-edu__panel">
           <div class="eu-edu__panel-title">What Sets TAAS European Apart</div>
           <ul class="eu-edu__list">
-            <li>Factory-spec diagnostic tools — not generic OBD readers</li>
+            <li>Factory-spec diagnostic tools, not generic OBD readers</li>
             <li>VAG, BMW, Mercedes, Land Rover protocols</li>
             <li>Correct oil specifications per make and model</li>
-            <li>OEM-equivalent parts — correctly specified</li>
-            <li>Independent labour rates — usually well below dealer</li>
+            <li>OEM-equivalent parts, correctly specified</li>
+            <li>Independent labour rates, usually well below dealer</li>
             <li>No service department sales targets</li>
             <li>Talk directly to the technician doing the work</li>
-            <li>Finance available — Afterpay, Q Card</li>
-            <li>MTA Assured — industry accredited since <?php echo esc_html($established); ?></li>
+            <li>Finance available: Afterpay, Q Card</li>
+            <li>MTA Assured, industry accredited since <?php echo esc_html($established); ?></li>
           </ul>
         </div>
       </div>
@@ -331,7 +331,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
   <div class="eu-sec__inner">
     <span class="eu-sec__eyebrow">European Makes</span>
     <h2 class="eu-sec__h2">European Makes We Specialise In</h2>
-    <p class="eu-sec__sub">Factory-spec diagnostic tooling for every make listed. Each has its own service requirements, known failure patterns, and parts specifications — we know them.</p>
+    <p class="eu-sec__sub">Factory-spec diagnostic tooling for every make listed. Each has its own service requirements, known failure patterns, and parts specifications. We know them.</p>
     <div class="eu-makes">
       <?php foreach ($makes as $mk) : ?>
       <a href="<?php echo esc_url($site_url . '/' . $mk['slug'] . '/'); ?>" class="eu-make">
@@ -355,7 +355,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
       <?php
       $svcs = [
         ['badge'=>'SVC','title'=>'Logbook Servicing','desc'=>'Manufacturer-spec oil, filter and fluid service. Documented and stamped. Does not void your factory warranty.','url'=>'/vehicle-servicing/','cta'=>'Servicing →'],
-        ['badge'=>'DS','title'=>'Diagnostic Scanning','desc'=>'Factory-spec European diagnostics. Full fault code access across all ECUs — not a generic OBD reader.','url'=>'/diagnostic-scanning/','cta'=>'Diagnostics →'],
+        ['badge'=>'DS','title'=>'Diagnostic Scanning','desc'=>'Factory-spec European diagnostics. Full fault code access across all ECUs, not a generic OBD reader.','url'=>'/diagnostic-scanning/','cta'=>'Diagnostics →'],
         ['badge'=>'WOF','title'=>'WOF Inspections','desc'=>'NZTA Authorised. Fixed '.esc_html($wof_price).'. Free 28-day recheck if repaired by TAAS.','url'=>'/wof/','cta'=>'WOF Info →'],
         ['badge'=>'MBC','title'=>'Brakes &amp; Clutch','desc'=>'Brake pads, discs, callipers, fluid. In-house disc machining. Clutch replacement for manual European vehicles.','url'=>'/manukau-brake-clutch/','cta'=>'Brakes →'],
         ['badge'=>'CB','title'=>'Cambelt &amp; Water Pump','desc'=>'Critical on most European engines. Interference engines mean belt failure equals engine damage. Full kit replacement.','url'=>'/cambelts-and-water-pumps/','cta'=>'Cambelt →'],
@@ -385,25 +385,25 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
   <div class="eu-sec__inner">
     <span class="eu-sec__eyebrow">The Case for Independent</span>
     <h2 class="eu-sec__h2">Dealer vs Independent Workshop</h2>
-    <p class="eu-sec__sub">European dealers do good work. So do we — at significantly lower rates, without the overheads that inflate every invoice.</p>
+    <p class="eu-sec__sub">European dealers do good work. So do we, at much lower rates, without the overheads that inflate every invoice.</p>
     <div class="eu-compare">
       <div class="eu-compare__col eu-compare__col--dealer">
         <div class="eu-compare__col-title">Franchise Dealer</div>
         <ul class="eu-compare__list">
-          <li>High hourly labour rates — showroom overhead recovered per job</li>
+          <li>High hourly labour rates to recover showroom overheads</li>
           <li>Service advisors with monthly revenue targets</li>
-          <li>Manufacturer-mandated parts pricing — no flexibility</li>
-          <li>Booking delays — often 1–2 weeks out</li>
+          <li>Manufacturer-set parts pricing with no flexibility</li>
+          <li>Booking delays, often 1–2 weeks out</li>
           <li>You deal with a service adviser, not a technician</li>
         </ul>
       </div>
       <div class="eu-compare__col eu-compare__col--taas">
         <div class="eu-compare__col-title">TAAS European</div>
         <ul class="eu-compare__list">
-          <li>Independent labour rates — usually well below dealer</li>
-          <li>No sales targets — we advise what is actually needed</li>
+          <li>Independent labour rates, usually well below dealer</li>
+          <li>No sales targets. We advise what is actually needed</li>
           <li>OEM-equivalent parts, correctly specified for your vehicle</li>
-          <li>Faster turnaround — South Auckland, Monday to Friday</li>
+          <li>Faster turnaround in South Auckland, Monday to Friday</li>
           <li>Talk directly to the people doing the work</li>
         </ul>
       </div>
@@ -415,18 +415,18 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
 <section class="eu-sec eu-sec--white">
   <div class="eu-sec__inner">
     <span class="eu-sec__eyebrow">Important</span>
-    <h2 class="eu-sec__h2">Cambelt Warning — European Engines</h2>
-    <p class="eu-sec__sub">This is the one service European owners most commonly delay — and it carries the highest consequence if missed.</p>
+    <h2 class="eu-sec__h2">Cambelt Warning: European Engines</h2>
+    <p class="eu-sec__sub">This is the one service European owners most commonly delay, and it carries the highest consequence if missed.</p>
     <div class="eu-cambelt">
       <div class="eu-cambelt__title">Most European engines are interference engines</div>
-      <p class="eu-cambelt__body">On an interference engine, if the cambelt fails, the pistons and valves occupy the same space. The result is immediate internal engine damage — bent valves, damaged pistons, or a destroyed engine block. Repair costs can exceed $10,000. Replacement intervals vary widely — from 60,000 km to 200,000 km depending on make and model. VAG group, BMW, Peugeot and Renault engines are predominantly interference designs. If you do not know when your belt was last replaced, treat it as due. Cambelt replacement starts <?php echo esc_html($cambelt_price); ?>.</p>
+      <p class="eu-cambelt__body">On an interference engine, if the cambelt fails, the pistons and valves occupy the same space. The result is immediate internal engine damage: bent valves, damaged pistons, or a destroyed engine block. Repair costs can exceed $10,000. Replacement intervals vary widely, from 60,000 km to 200,000 km depending on make and model. VAG group, BMW, Peugeot and Renault engines are predominantly interference designs. If you do not know when your belt was last replaced, treat it as due. Cambelt replacement starts <?php echo esc_html($cambelt_price); ?>.</p>
       <a href="<?php echo esc_url($site_url . '/cambelts-and-water-pumps/'); ?>" class="eu-cambelt__link">Cambelt replacement information →</a>
     </div>
   </div>
 </section>
 
 <!-- 8. ENQUIRY -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="eu-sec eu-sec--dark" id="enquire">
   <div class="eu-sec__inner">
     <div class="eu-enquiry">
@@ -455,7 +455,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
 <section class="eu-sec eu-sec--grey">
   <div class="eu-sec__inner">
     <span class="eu-sec__eyebrow">South Auckland</span>
-    <h2 class="eu-sec__h2">European Car Specialist — South Auckland</h2>
+    <h2 class="eu-sec__h2">European Car Specialist in South Auckland</h2>
     <p class="eu-sec__sub">Serving all of South Auckland from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>.</p>
     <ul class="eu-pills">
       <?php
@@ -473,7 +473,7 @@ body.page-template-template-european{overflow-x:hidden;-webkit-text-size-adjust:
 <section class="eu-sec eu-sec--white">
   <div class="eu-sec__inner">
     <span class="eu-sec__eyebrow">FAQ</span>
-    <h2 class="eu-sec__h2">Common Questions — TAAS European</h2>
+    <h2 class="eu-sec__h2">Common Questions: TAAS European</h2>
     <div class="eu-faq">
       <?php foreach ($faqs as $i => $faq) : ?>
       <div class="eu-faq__item<?php echo $i===0?' eu-faq__item--open':''; ?>">

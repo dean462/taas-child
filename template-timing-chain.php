@@ -39,21 +39,21 @@ $problem_engines = [
     ['make' => 'Volkswagen / Audi', 'engines' => 'TSI 1.4, TSI 1.8, TSI 2.0', 'note' => 'Early TSI engines (2008–2013) are known for timing chain tensioner failure and chain stretch. Rattling on cold start is the first sign. Later revisions improved the design but the original engines remain problematic.'],
     ['make' => 'Nissan', 'engines' => 'HR16DE, QR25DE, MR20DD', 'note' => 'The HR16DE in Tiida, Note, and Juke models is known for chain stretch and guide wear. The QR25 in X-Trail and Altima also develops chain noise with age. Oil change history is the biggest factor.'],
     ['make' => 'Ford', 'engines' => 'EcoBoost 1.0L, EcoBoost 2.0L', 'note' => 'The 1.0L three-cylinder EcoBoost has a known timing belt (not chain) but the 2.0L EcoBoost uses a chain that can stretch. Low oil levels and extended service intervals accelerate wear.'],
-    ['make' => 'BMW', 'engines' => 'N47 diesel, N20 petrol', 'note' => 'The N47 diesel is notorious for timing chain failure — the chain is at the rear of the engine, making replacement extremely labour-intensive. The N20 petrol also develops chain stretch. Both require specialist diagnosis.'],
+    ['make' => 'BMW', 'engines' => 'N47 diesel, N20 petrol', 'note' => 'The N47 diesel is notorious for timing chain failure. The chain is at the rear of the engine, making replacement extremely labour-intensive. The N20 petrol also develops chain stretch. Both require specialist diagnosis.'],
     ['make' => 'Hyundai / Kia', 'engines' => 'Theta II 2.0/2.4', 'note' => 'Theta II engines in Tucson, Sportage, Sonata, and Optima are known for timing chain and bearing issues, often linked to oil starvation from manufacturing debris. Proactive inspection is recommended.'],
 ];
 
 // ── FAQs (10) ────────────────────────────────────────────────────────────────
 $faqs = [
-    ['q' => 'How much does a timing chain replacement cost in Manukau?', 'a' => 'Timing chain replacement is one of the more expensive engine repairs because of the labour involved in accessing the chain — particularly on European vehicles where the chain can be at the rear of the engine. Costs vary widely by make, model, and the extent of the work required. We give you an estimate after diagnosis, before starting work. Call us on ' . $phone_free . ' with your vehicle details.'],
+    ['q' => 'How much does a timing chain replacement cost in Manukau?', 'a' => 'Timing chain replacement is one of the more expensive engine repairs because of the labour involved in accessing the chain, particularly on European vehicles where the chain can be at the rear of the engine. Costs vary widely by make, model, and the extent of the work required. We give you an estimate after diagnosis, before starting work. Call us on ' . $phone_free . ' with your vehicle details.'],
     ['q' => 'How do I know if my car has a timing belt or a timing chain?', 'a' => 'Most engines have one or the other, though a few use both. Generally, if your service manual specifies a timing belt replacement interval (e.g. 100,000 km), you have a belt. If it does not, you likely have a chain. However, the only certain way is to check for your specific engine. Call us on ' . $phone_free . ' with your make, model, year, and engine size and we will confirm which your vehicle has.'],
-    ['q' => 'My engine rattles on cold start — is that the timing chain?', 'a' => 'A rattle on cold start that fades after a few seconds is the most common symptom of a worn timing chain tensioner. The tensioner relies on oil pressure to maintain chain tension — when the engine is cold and oil pressure has not yet built up, the chain has slack and rattles against the guides. This will get progressively worse and should be inspected before the chain jumps a tooth or snaps.'],
-    ['q' => 'Can a stretched timing chain be fixed without full replacement?', 'a' => 'In some cases, replacing just the tensioner and guides can resolve the noise and restore correct tension. However, if the chain itself has stretched beyond specification, it must be replaced — a new tensioner cannot compensate for a stretched chain. We measure chain stretch during diagnosis and advise whether a tensioner-only repair or full chain replacement is required.'],
-    ['q' => 'Will regular oil changes prevent timing chain problems?', 'a' => 'Regular oil changes with the correct specification oil are the single most effective way to prevent timing chain problems. The chain, tensioner, and guides all run in engine oil — clean oil maintains hydraulic pressure in the tensioner and reduces wear on the chain and guides. The vehicles we see most often for chain failures almost always have poor oil change history.'],
-    ['q' => 'Is it safe to drive with a timing chain noise?', 'a' => 'A mild rattle on cold start that clears within seconds is not immediately dangerous — but it will get worse. A persistent rattle, rough running, or engine management light means the chain has stretched significantly and could jump a tooth or snap. On an interference engine, a snapped chain causes the same catastrophic damage as a snapped cambelt — pistons hit valves. Do not ignore timing chain noise. Call us on ' . $phone_free . '.'],
-    ['q' => 'What is the difference between a timing chain and a timing belt?', 'a' => 'A timing belt is made of reinforced rubber with a fixed replacement interval — typically 60,000 to 150,000 km. A timing chain is made of metal and is designed to last the life of the engine — but only if oil changes are maintained. Chains do not have a fixed replacement interval, but they are not maintenance-free. We service both at our <a href="' . $site_url . '/cambelts-and-water-pumps/">cambelts and water pumps</a> workshop.'],
-    ['q' => 'Do you work on European vehicle timing chains?', 'a' => 'Yes. Our <a href="' . $site_url . '/european/">TAAS European division</a> covers ' . $euro_brands . '. European timing chain work is often more complex — the BMW N47 chain is at the rear of the engine, VW TSI chains require significant dismantling. We have the tools and experience for these jobs.'],
-    ['q' => 'Do you offer finance for timing chain replacement?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Timing chain work can be expensive, particularly on European vehicles — finance means you can get it done now rather than risk further damage. Visit our <a href="' . $site_url . '/finance-options/">finance page</a> or ask when you call.'],
+    ['q' => 'My engine rattles on cold start. Is that the timing chain?', 'a' => 'A rattle on cold start that fades after a few seconds is the most common symptom of a worn timing chain tensioner. The tensioner relies on oil pressure to maintain chain tension. When the engine is cold and oil pressure has not yet built up, the chain has slack and rattles against the guides. This will get progressively worse and should be inspected before the chain jumps a tooth or snaps.'],
+    ['q' => 'Can a stretched timing chain be fixed without full replacement?', 'a' => 'In some cases, replacing just the tensioner and guides can resolve the noise and restore correct tension. However, if the chain itself has stretched beyond specification, it must be replaced. A new tensioner cannot compensate for a stretched chain. We measure chain stretch during diagnosis and advise whether a tensioner-only repair or full chain replacement is required.'],
+    ['q' => 'Will regular oil changes prevent timing chain problems?', 'a' => 'Regular oil changes with the correct specification oil are the single most effective way to prevent timing chain problems. The chain, tensioner, and guides all run in engine oil. Clean oil maintains hydraulic pressure in the tensioner and reduces wear on the chain and guides. The vehicles we see most often for chain failures almost always have poor oil change history.'],
+    ['q' => 'Is it safe to drive with a timing chain noise?', 'a' => 'A mild rattle on cold start that clears within seconds is not immediately dangerous, but it will get worse. A persistent rattle, rough running, or engine management light means the chain has stretched significantly and could jump a tooth or snap. On an interference engine, a snapped chain causes the same catastrophic damage as a snapped cambelt: pistons hit valves. Do not ignore timing chain noise. Call us on ' . $phone_free . '.'],
+    ['q' => 'What is the difference between a timing chain and a timing belt?', 'a' => 'A timing belt is made of reinforced rubber with a fixed replacement interval, typically 60,000 to 150,000 km. A timing chain is made of metal and is designed to last the life of the engine, but only if oil changes are maintained. Chains do not have a fixed replacement interval, but they are not maintenance-free. We service both at our <a href="' . $site_url . '/cambelts-and-water-pumps/">cambelts and water pumps</a> workshop.'],
+    ['q' => 'Do you work on European vehicle timing chains?', 'a' => 'Yes. Our <a href="' . $site_url . '/european/">TAAS European division</a> covers ' . $euro_brands . '. European timing chain work is often more complex. The BMW N47 chain is at the rear of the engine, VW TSI chains require significant dismantling. We have the tools and experience for these jobs.'],
+    ['q' => 'Do you offer finance for timing chain replacement?', 'a' => 'Yes. Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Timing chain work can be expensive, particularly on European vehicles. Finance means you can get it done now rather than risk further damage. Visit our <a href="' . $site_url . '/finance-options/">finance page</a> or ask when you call.'],
     ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book a diagnostic. We service all South Auckland suburbs.'],
 ];
 
@@ -161,7 +161,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="tcs-hero"><div class="tcs-w"><div class="tcs-hero__inner">
   <div>
     <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/services/'); ?>" style="color:#555;text-decoration:none;">Services</a><span style="margin:0 6px;">›</span><span style="color:#888;">Timing Chain Service</span></nav>
-    <span class="tcs-eye tcs-eye--yellow">Timing Chain Service — Manukau</span>
+    <span class="tcs-eye tcs-eye--yellow">Timing Chain Service · Manukau</span>
     <h1>Timing Chain<br><span>Service &amp; Replacement</span></h1>
     <p class="tcs-hero__sub">Chain stretch assessment, tensioner replacement, and full timing chain kits. Diagnosed properly before parts are recommended. All makes and models including European. <?php echo esc_html($years); ?> years of workshop experience.</p>
     <div class="tcs-hero__signal">Estimate after diagnosis · Chain stretch measured · All makes including European</div>
@@ -169,7 +169,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="tcs-btn tcs-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
       <a href="#tcs-enquire" class="tcs-btn tcs-btn--outline">Book a Diagnostic</a>
     </div>
-    <div class="tcs-hero__urgency"><strong>⚠ Do not ignore timing chain noise.</strong> A stretched or failing timing chain can cause engine damage as serious as a snapped cambelt. If you hear a rattling noise on cold start, have a rough idle, or your engine management light is on — get it inspected.</div>
+    <div class="tcs-hero__urgency"><strong>⚠ Do not ignore timing chain noise.</strong> A stretched or failing timing chain can cause engine damage as serious as a snapped cambelt. If you hear a rattling noise on cold start, have a rough idle, or your engine management light is on, get it inspected.</div>
   </div>
   <div class="tcs-sidebar">
     <div class="tcs-sidebar__title">What We Check</div>
@@ -187,20 +187,20 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── WHAT IS A TIMING CHAIN ── White ─────────────────────────────────────── -->
 <section class="tcs-section tcs-section--white"><div class="tcs-w">
   <span class="tcs-eye tcs-eye--dark">Understanding Timing Chains</span>
-  <h2 class="tcs-h2">What Is a Timing Chain — and Why Does It Fail?</h2>
+  <h2 class="tcs-h2">What Is a Timing Chain, and Why Does It Fail?</h2>
   <div style="max-width:780px;font-size:16px;color:var(--taas-mid);line-height:1.75;">
-    <p style="margin-bottom:20px;">A timing chain does the same job as a cambelt — it connects the crankshaft to the camshaft and ensures the engine's valves open and close at exactly the right time relative to the pistons. The difference is material: a cambelt is reinforced rubber with a fixed replacement interval; a timing chain is metal and is designed to last the life of the engine.</p>
+    <p style="margin-bottom:20px;">A timing chain does the same job as a cambelt. It connects the crankshaft to the camshaft and makes sure the engine's valves open and close at exactly the right time relative to the pistons. The difference is material: a cambelt is reinforced rubber with a fixed replacement interval; a timing chain is metal and is designed to last the life of the engine.</p>
     <p style="margin-bottom:20px;">In practice, "designed to last" and "actually lasts" are two different things. Timing chains stretch. Tensioners lose pressure. Guides crack and wear. And the single biggest cause of all three is the same thing: poor oil change history.</p>
 
     <h3 style="font-size:18px;font-weight:700;color:var(--taas-black);margin:32px 0 12px;">The Oil Change Connection</h3>
-    <p style="margin-bottom:20px;">A timing chain runs in engine oil. The hydraulic tensioner that keeps the chain taut relies on oil pressure to function. The plastic or metal guides that prevent the chain from slapping against the engine block are lubricated by oil. When oil changes are skipped or extended, sludge builds up — the tensioner loses hydraulic pressure, the chain wears faster against dirty guides, and stretch accelerates. The vehicles we see most often for timing chain failure almost always have one thing in common: irregular oil change history.</p>
+    <p style="margin-bottom:20px;">A timing chain runs in engine oil. The hydraulic tensioner that keeps the chain taut relies on oil pressure to function. The plastic or metal guides that prevent the chain from slapping against the engine block are lubricated by oil. When oil changes are skipped or extended, sludge builds up. The tensioner loses hydraulic pressure, the chain wears faster against dirty guides, and stretch accelerates. The vehicles we see most often for timing chain failure almost always have one thing in common: irregular oil change history.</p>
 
     <div style="background:rgba(255,200,0,.06);border-left:4px solid var(--taas-yellow);border-radius:0 var(--taas-radius) var(--taas-radius) 0;padding:16px 20px;margin-bottom:28px;">
-      <p style="font-size:14px;color:var(--taas-body);line-height:1.65;margin:0;"><strong style="color:var(--taas-dark);">The key point:</strong> Regular oil changes with the correct specification oil are the single most effective way to prevent timing chain problems. If you have kept up with your oil changes, your chain is likely fine. If you have not — or you do not know the vehicle's service history — a timing chain inspection is worthwhile.</p>
+      <p style="font-size:14px;color:var(--taas-body);line-height:1.65;margin:0;"><strong style="color:var(--taas-dark);">The key point:</strong> Regular oil changes with the correct specification oil are the single most effective way to prevent timing chain problems. If you have kept up with your oil changes, your chain is likely fine. If you have not, or you do not know the vehicle's service history, a timing chain inspection is worthwhile.</p>
     </div>
 
     <h3 style="font-size:18px;font-weight:700;color:var(--taas-black);margin:32px 0 12px;">How Chain Stretch Progresses</h3>
-    <p style="margin-bottom:20px;">Chain stretch does not happen suddenly. It starts with a slight rattle on cold start — the tensioner has lost enough pressure overnight that the chain has slack for a few seconds until oil pressure builds. This stage is fixable with a tensioner replacement. If ignored, the chain stretches further — the rattle lasts longer, the engine management light comes on (camshaft position codes), and performance drops. Eventually the chain can jump a tooth — causing immediate timing damage — or snap entirely, with the same catastrophic result as a snapped cambelt on an interference engine.</p>
+    <p style="margin-bottom:20px;">Chain stretch does not happen suddenly. It starts with a slight rattle on cold start. The tensioner has lost enough pressure overnight that the chain has slack for a few seconds until oil pressure builds. This stage is fixable with a tensioner replacement. If ignored, the chain stretches further. The rattle lasts longer, the engine management light comes on (camshaft position codes), and performance drops. Eventually the chain can jump a tooth (causing immediate timing damage) or snap entirely, with the same catastrophic result as a snapped cambelt on an interference engine.</p>
     <p style="margin-bottom:0;">The window between "mild rattle on cold start" and "chain jumped a tooth" can be months or it can be weeks. Do not wait to find out which. Call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow2);font-weight:600;"><?php echo esc_html($phone_free); ?></a> if you are hearing timing chain noise.</p>
   </div>
 </div></section>
@@ -209,7 +209,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="tcs-section tcs-section--grey"><div class="tcs-w">
   <span class="tcs-eye tcs-eye--dark">Known Problem Engines</span>
   <h2 class="tcs-h2">Vehicles Known for Timing Chain Problems</h2>
-  <p class="tcs-lead">Some engines are significantly more prone to timing chain issues than others. If you own one of these vehicles, proactive inspection is worthwhile — especially if the oil change history is unknown.</p>
+  <p class="tcs-lead">Some engines are significantly more prone to timing chain issues than others. If you own one of these vehicles, proactive inspection is worthwhile, especially if the oil change history is unknown.</p>
   <div class="tcs-engine-grid"><?php foreach ($problem_engines as $pe): ?>
     <div class="tcs-engine-card">
       <div class="tcs-engine-card__make"><?php echo esc_html($pe['make']); ?></div>
@@ -226,29 +226,29 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <h2 class="tcs-h2 tcs-h2--white">Signs Your Timing Chain Needs Attention</h2>
   <p style="font-size:15px;color:#888;line-height:1.6;margin-bottom:24px;">If your vehicle is showing any of these symptoms, get it inspected before the chain jumps or snaps.</p>
   <ul class="tcs-signs">
-    <li>Rattling noise from the engine on cold start — the most common early symptom of a worn tensioner or stretched chain</li>
-    <li>Rattle that persists longer each time — chain stretch is progressing</li>
-    <li>Engine management light — timing chain stretch triggers camshaft position sensor codes</li>
+    <li>Rattling noise from the engine on cold start: the most common early symptom of a worn tensioner or stretched chain</li>
+    <li>Rattle that persists longer each time: chain stretch is progressing</li>
+    <li>Engine management light: timing chain stretch triggers camshaft position sensor codes</li>
     <li>Rough idle that improves as the engine warms up</li>
     <li>Reduced performance or fuel economy</li>
     <li>In severe cases: engine misfiring, chain jumping a tooth, or complete chain failure causing catastrophic engine damage</li>
   </ul>
-  <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="tcs-btn tcs-btn--primary" style="margin-top:24px;">Call <?php echo esc_html($phone_free); ?> — Describe Your Symptoms</a>
+  <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="tcs-btn tcs-btn--primary" style="margin-top:24px;">Call <?php echo esc_html($phone_free); ?> to Describe Your Symptoms</a>
 </div></section>
 
 <!-- ── PROCESS ── White ────────────────────────────────────────────────────── -->
 <section class="tcs-section tcs-section--white"><div class="tcs-w">
   <span class="tcs-eye tcs-eye--dark">Our Process</span>
   <h2 class="tcs-h2">How We Diagnose and Repair Timing Chains</h2>
-  <p class="tcs-lead">We do not guess. Every timing chain job follows a structured diagnostic process — so you get an accurate assessment and a repair that lasts.</p>
+  <p class="tcs-lead">We do not guess. Every timing chain job follows a structured diagnostic process, so you get an accurate assessment and a repair that lasts.</p>
   <div class="tcs-steps"><?php foreach ([
-    'Electronic fault code scan — read engine management codes related to timing and camshaft position',
-    'Oil condition inspection — old or degraded oil is a primary cause of chain wear',
-    'Physical inspection — check chain slack, tensioner condition, and guide condition where accessible',
-    'Assess severity — determine whether tensioner replacement or full chain replacement is required',
-    'Estimate provided — full cost confirmed before any work begins',
-    'Oil change carried out first where required — clean oil before the engine runs post-repair',
-    'Timing chain and tensioner replacement — full kit where required, including guides and rails',
+    'Electronic fault code scan: read engine management codes related to timing and camshaft position',
+    'Oil condition inspection: old or degraded oil is a primary cause of chain wear',
+    'Physical inspection: check chain slack, tensioner condition, and guide condition where accessible',
+    'Assess severity: determine whether tensioner replacement or full chain replacement is required',
+    'Estimate provided: full cost confirmed before any work begins',
+    'Oil change carried out first where required, so the engine runs on clean oil after the repair',
+    'Timing chain and tensioner replacement: full kit where required, including guides and rails',
     'Engine management codes cleared, timing verified, and vehicle road tested',
   ] as $i => $step): ?>
     <div class="tcs-step"><div class="tcs-step__num"><?php echo $i+1; ?></div><div class="tcs-step__text"><?php echo esc_html($step); ?></div></div>
@@ -300,7 +300,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── FAQ ── White ─────────────────────────────────────────────────────────── -->
 <section class="tcs-section tcs-section--white"><div class="tcs-w">
   <span class="tcs-eye tcs-eye--dark">Common Questions</span>
-  <h2 class="tcs-h2">Timing Chain Service — FAQ</h2>
+  <h2 class="tcs-h2">Timing Chain Service FAQs</h2>
   <div class="tcs-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="tcs-faq__item<?php echo $i===0?' tcs-faq__item--open':''; ?>"><button class="tcs-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="tcs-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="tcs-a-<?php echo $i; ?>" class="tcs-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

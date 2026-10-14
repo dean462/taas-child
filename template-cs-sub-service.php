@@ -42,50 +42,50 @@ $cs_master = [
     'radiator-repair-manukau' => [
         'name'    => 'Radiator Repair & Replacement',
         'badge'   => 'RR',
-        'short'   => 'Stone damage, corrosion, or internal blockage — we repair or replace radiators on all makes. Full pressure test before and after.',
-        'price'   => 'Estimate after inspection — repair or replacement depends on condition',
+        'short'   => 'Stone damage, corrosion, or internal blockage. We repair or replace radiators on all makes. Full pressure test before and after.',
+        'price'   => 'Estimate after inspection. Repair or replacement depends on condition',
         'urgency' => 'medium',
     ],
     'coolant-flush-manukau' => [
         'name'    => 'Coolant Flush & Refill',
         'badge'   => 'CF',
         'short'   => 'Remove old, contaminated coolant and replace with fresh fluid at the correct concentration. Recommended at your manufacturer\'s interval.',
-        'price'   => 'Coolant flush — contact for pricing. Recommended at your manufacturer\'s interval',
+        'price'   => 'Coolant flush: contact us for pricing. Recommended at your manufacturer\'s interval',
         'urgency' => 'low',
     ],
     'thermostat-replacement-manukau' => [
         'name'    => 'Thermostat Replacement',
         'badge'   => 'TS',
-        'short'   => 'A stuck-open or stuck-closed thermostat causes overheating or poor fuel economy. Inexpensive to replace — expensive to ignore.',
-        'price'   => 'Thermostat replacement — estimate after diagnosis. Cost varies by vehicle',
+        'short'   => 'A stuck-open or stuck-closed thermostat causes overheating or poor fuel economy. Cheap to replace, expensive to ignore.',
+        'price'   => 'Thermostat replacement: estimate after diagnosis. Cost varies by vehicle',
         'urgency' => 'medium',
     ],
     'coolant-leak-repair-manukau' => [
         'name'    => 'Coolant Leak Repair',
         'badge'   => 'WL',
         'short'   => 'Coolant leaks from hoses, the radiator, water pump, or head gasket. We locate the source and repair it before the engine overheats.',
-        'price'   => 'Estimate after leak source is identified — varies by location and severity',
+        'price'   => 'Estimate once the leak source is found. Varies by location and severity',
         'urgency' => 'high',
     ],
     'radiator-hoses-manukau' => [
         'name'    => 'Radiator Hose Replacement',
         'badge'   => 'WH',
         'short'   => 'Radiator hoses split and crack with age and heat cycling. A burst hose causes immediate coolant loss and overheating.',
-        'price'   => 'Hose replacement — estimate provided. Upper and lower hoses available',
+        'price'   => 'Hose replacement: estimate provided. Upper and lower hoses available',
         'urgency' => 'medium',
     ],
     'heater-core-repair-manukau' => [
         'name'    => 'Heater Core Repair',
         'badge'   => 'HC',
-        'short'   => 'A leaking heater core causes wet carpets, fogged windows, and a sweet coolant smell inside the cabin. A significant job — done properly the first time.',
-        'price'   => 'Heater core replacement — estimate after inspection. Labour-intensive on most vehicles',
+        'short'   => 'A leaking heater core causes wet carpets, fogged windows, and a sweet coolant smell inside the cabin. A big job, done properly the first time.',
+        'price'   => 'Heater core replacement: estimate after inspection. Labour-intensive on most vehicles',
         'urgency' => 'medium',
     ],
     'coolant-temperature-sensor-manukau' => [
         'name'    => 'Coolant Temperature Sensor',
         'badge'   => 'CS',
         'short'   => 'A faulty coolant temp sensor causes incorrect gauge readings, poor fuel economy, and engine management faults.',
-        'price'   => 'Sensor replacement — estimate after diagnosis',
+        'price'   => 'Sensor replacement: estimate after diagnosis',
         'urgency' => 'low',
     ],
 ];
@@ -121,7 +121,7 @@ for ($i = 1; $i <= 5; $i++) {
 
 // ── Urgency colours ──────────────────────────────────────────────────────────
 $uc_map = [
-    'high'   => ['bg' => 'rgba(192,57,43,.12)', 'border' => 'var(--taas-alert, #C0392B)', 'text' => '#f5a0a0', 'label' => 'Urgent — Do Not Ignore'],
+    'high'   => ['bg' => 'rgba(192,57,43,.12)', 'border' => 'var(--taas-alert, #C0392B)', 'text' => '#f5a0a0', 'label' => 'Urgent: Do Not Ignore'],
     'medium' => ['bg' => 'rgba(255,200,0,.08)', 'border' => 'var(--taas-yellow, #FFC800)', 'text' => 'var(--taas-yellow, #FFC800)', 'label' => 'Book Soon'],
     'low'    => ['bg' => 'rgba(255,255,255,.06)', 'border' => '#555', 'text' => '#aaa', 'label' => 'Preventative Maintenance'],
 ];
@@ -145,9 +145,9 @@ if ($what_it_is) { $faqs[] = ['q' => "What is {$service_name}?", 'a' => $what_it
 if ($causes_raw) { $faqs[] = ['q' => "What causes {$service_name} problems?", 'a' => implode('. ', $causes) . '.']; }
 if ($symptoms_raw) { $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Common signs include: ' . strtolower(implode('; ', $symptoms)) . '. If your vehicle is showing any of these, call us on ' . $phone_free . '.']; }
 $faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details.'];
-$faqs[] = ['q' => 'My temperature warning light came on — what should I do?', 'a' => 'Pull over immediately and turn the engine off. Do not continue driving. An overheating engine can cause head gasket failure within minutes. Let the engine cool for at least 20 minutes. Do not open the radiator cap while the engine is hot. Call us on ' . $phone_free . '.'];
+$faqs[] = ['q' => 'My temperature warning light came on. What should I do?', 'a' => 'Pull over immediately and turn the engine off. Do not continue driving. An overheating engine can cause head gasket failure within minutes. Let the engine cool for at least 20 minutes. Do not open the radiator cap while the engine is hot. Call us on ' . $phone_free . '.'];
 $faqs[] = ['q' => 'Do you work on European vehicle cooling systems?', 'a' => 'Yes. Our TAAS European division covers all European makes. European cooling systems often have specific coolant specifications and plastic components that require careful handling.'];
-$faqs[] = ['q' => 'Do you offer finance for cooling system repairs?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. A cooling system repair should not be delayed because of cost — overheating causes exponentially more expensive damage.'];
+$faqs[] = ['q' => 'Do you offer finance for cooling system repairs?', 'a' => 'Yes. Afterpay, Q Card, GEM Finance and Aotea Finance accepted. A cooling system repair should not be delayed because of cost, because overheating causes far more expensive damage.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book.'];
 if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Timing depends on the specific repair and vehicle. We advise on expected timeframe when you book. Please book so we can allow the right time. Call " . $phone_free . "."]; }
@@ -260,8 +260,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="csub-hero"><div class="csub-w"><div class="csub-hero__inner">
   <div>
     <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/cooling-system/'); ?>" style="color:#555;text-decoration:none;">Cooling System</a><span style="margin:0 6px;">›</span><span style="color:#888;"><?php echo esc_html($service_name); ?></span></nav>
-    <span class="csub-eye csub-eye--yellow">Cooling System — Manukau</span>
-    <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
+    <span class="csub-eye csub-eye--yellow">Cooling System · Manukau</span>
+    <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
     <p class="csub-hero__sub"><?php echo esc_html($current['short']); ?> <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
     <?php if ($price_signal): ?><div class="csub-hero__price"><?php echo esc_html($price_signal); ?></div><?php endif; ?>
     <div class="csub-hero__ctas">
@@ -301,7 +301,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="csub-section csub-section--grey"><div class="csub-w">
   <span class="csub-eye csub-eye--dark">Our Process</span>
   <h2 class="csub-h2">How We Handle <?php echo esc_html($service_name); ?></h2>
-  <p class="csub-lead">We diagnose first — every time. No guesswork, no replacing parts on a hunch.</p>
+  <p class="csub-lead">We diagnose first, every time. No guesswork, no replacing parts on a hunch.</p>
   <div class="csub-steps"><?php foreach ($process as $i => $step): ?><div class="csub-step"><div class="csub-step__num"><?php echo $i+1; ?></div><div class="csub-step__text"><?php echo esc_html($step); ?></div></div><?php endforeach; ?></div>
 </div></section>
 <?php endif; ?>
@@ -309,7 +309,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="csub-section csub-section--white"><div class="csub-w">
   <span class="csub-eye csub-eye--dark">Pricing</span>
   <h2 class="csub-h2">How Much Does <?php echo esc_html($service_name); ?> Cost?</h2>
-  <p class="csub-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
+  <p class="csub-lead">We give you an estimate before starting work and keep you informed if anything changes.</p>
   <div class="csub-pricing">
     <div class="csub-pricing__signal"><?php echo esc_html($price_signal); ?></div>
     <div class="csub-pricing__body">Price varies by vehicle make, model, and parts required. Call <?php echo esc_html($phone_free); ?> with your vehicle details for a same-day estimate.</div>
@@ -320,7 +320,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="csub-enquire" class="csub-section csub-section--dark"><div class="csub-w"><div class="csub-enquiry">
   <div>
     <span class="csub-eye csub-eye--yellow">Book Today</span>
-    <h2 class="csub-h2 csub-h2--white"><?php echo esc_html($service_name); ?> — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <h2 class="csub-h2 csub-h2--white"><?php echo esc_html($service_name); ?>: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.7;"><strong style="color:var(--taas-white);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -346,7 +346,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="csub-section csub-section--grey"><div class="csub-w">
   <span class="csub-eye csub-eye--dark">Common Questions</span>
-  <h2 class="csub-h2"><?php echo esc_html($service_name); ?> — FAQ</h2>
+  <h2 class="csub-h2"><?php echo esc_html($service_name); ?> FAQ</h2>
   <div class="csub-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="csub-faq__item<?php echo $i===0?' csub-faq__item--open':''; ?>"><button class="csub-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="csub-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="csub-a-<?php echo $i; ?>" class="csub-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

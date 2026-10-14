@@ -42,23 +42,23 @@ $years_trading = date('Y') - intval($established);
 // ── Content ───────────────────────────────────────────────────────────────────
 $trust_signals = [
     ['icon' => '🩹', 'label' => 'Plug & Patch Repairs'],
-    ['icon' => '✅', 'label' => 'Honest Assessment — No Upsell'],
+    ['icon' => '✅', 'label' => 'Honest Assessment, No Upsell'],
     ['icon' => '🏆', 'label' => 'MTA Assured Workshop'],
     ['icon' => '⭐', 'label' => $google_rating . ' Stars · ' . $google_reviews . ' Reviews'],
 ];
 
 $repairable = [
-    'Nail or screw in the tread area — the most common puncture',
+    'Nail or screw in the tread area (the most common puncture)',
     'Small object penetration in the central tread',
     'Slow leak where the tyre is still holding pressure',
     'Tread puncture under 6mm in diameter',
 ];
 
 $not_repairable = [
-    'Sidewall damage — cannot be safely repaired, must be replaced',
-    'Shoulder area damage — borderline, assessed case by case',
-    'Tyre run flat — internal structure may be damaged even if it looks fine',
-    'Large punctures over 6mm — too large for a safe repair',
+    'Sidewall damage: cannot be safely repaired, must be replaced',
+    'Shoulder area damage: borderline, assessed case by case',
+    'Tyre run flat: internal structure may be damaged even if it looks fine',
+    'Large punctures over 6mm: too large for a safe repair',
     'Multiple punctures in close proximity',
     'Tyre with significant wear or existing damage',
 ];
@@ -67,41 +67,41 @@ $process = [
     [
         'step'  => '1',
         'title' => 'Remove & Inspect',
-        'desc'  => 'The wheel comes off the vehicle so we can inspect the tyre properly inside and out. What looks like a simple nail can hide internal damage — we check before committing to a repair.',
+        'desc'  => 'The wheel comes off the vehicle so we can inspect the tyre properly inside and out. What looks like a simple nail can hide internal damage. We check before committing to a repair.',
     ],
     [
         'step'  => '2',
         'title' => 'Assess Repairability',
-        'desc'  => 'We check the location, size, and angle of the puncture against industry repair standards. If it\'s not safely repairable, we tell you — no pressure to buy a new tyre from us if you\'d rather shop around.',
+        'desc'  => 'We check the location, size, and angle of the puncture against industry repair standards. If it\'s not safely repairable, we tell you. No pressure to buy a new tyre from us if you\'d rather shop around.',
     ],
     [
         'step'  => '3',
         'title' => 'Plug & Patch',
-        'desc'  => 'If repairable, we carry out a proper plug and patch repair — not just a roadside plug. The plug seals the hole from inside; the patch reinforces the repair. This is the industry-recommended method.',
+        'desc'  => 'If repairable, we carry out a proper plug and patch repair, not just a roadside plug. The plug seals the hole from inside; the patch reinforces the repair. This is the industry-recommended method.',
     ],
     [
         'step'  => '4',
         'title' => 'Refit, Inflate & Balance',
-        'desc'  => 'Tyre refitted and inflated to manufacturer spec. We rebalance after repair — a patch adds weight and an unbalanced tyre vibrates. Most tyre shops skip this step.',
+        'desc'  => 'Tyre refitted and inflated to manufacturer spec. We rebalance after repair because a patch adds weight and an unbalanced tyre vibrates. Most tyre shops skip this step.',
     ],
 ];
 
 $faqs = [
     [
         'q' => 'Can you repair my puncture today?',
-        'a' => 'In most cases yes — puncture repairs are usually a same-day or wait-while-you-wait job. Call us on ' . $phone_local . ' before coming in and we\'ll confirm availability. Monday–Friday 7:30am–5:00pm.',
+        'a' => 'In most cases, yes. Puncture repairs are usually a same-day or wait-while-you-wait job. Call us on ' . $phone_local . ' before coming in and we\'ll confirm availability. Monday–Friday 7:30am–5:00pm.',
     ],
     [
         'q' => 'How do I know if my tyre can be repaired or needs replacing?',
-        'a' => 'The key factors are location and size. A nail or screw in the central tread area is usually repairable. Sidewall damage is not — the sidewall flexes constantly under load and a repair won\'t hold safely. Bring the vehicle in and we\'ll assess it honestly. If it needs replacing, we\'ll tell you and give you pricing — no obligation.',
+        'a' => 'The key factors are location and size. A nail or screw in the central tread area is usually repairable. Sidewall damage is not. The sidewall flexes constantly under load and a repair won\'t hold safely. Bring the vehicle in and we\'ll assess it honestly. If it needs replacing, we\'ll tell you and give you pricing, with no obligation.',
     ],
     [
         'q' => 'What is the difference between a plug repair and a plug and patch repair?',
-        'a' => 'A roadside plug (the string type inserted from outside) is a temporary fix — it seals the hole but doesn\'t reinforce the tyre from inside. A proper plug and patch repair involves removing the tyre from the rim, cleaning the puncture from the inside, and applying both an internal plug and a patch over it. This is the permanent, industry-standard repair. It\'s what we do.',
+        'a' => 'A roadside plug (the string type inserted from outside) is a temporary fix. It seals the hole but doesn\'t reinforce the tyre from inside. A proper plug and patch repair involves removing the tyre from the rim, cleaning the puncture from the inside, and applying both an internal plug and a patch over it. This is the permanent, industry-standard repair. It\'s what we do.',
     ],
     [
         'q' => 'My tyre went flat on the motorway. Can it still be repaired?',
-        'a' => 'Possibly — it depends on what happened when it went flat. If you stopped quickly and drove only a short distance on a flat, the internal structure may be intact. If the tyre was driven on while flat for any distance, the sidewall usually delaminates internally and the tyre needs replacing even if it looks fine from outside. Bring it in and we\'ll check.',
+        'a' => 'Possibly. It depends on what happened when it went flat. If you stopped quickly and drove only a short distance on a flat, the internal structure may be intact. If the tyre was driven on while flat for any distance, the sidewall usually delaminates internally and the tyre needs replacing even if it looks fine from outside. Bring it in and we\'ll check.',
     ],
     [
         'q' => 'Do you rebalance the tyre after a puncture repair?',
@@ -109,7 +109,7 @@ $faqs = [
     ],
     [
         'q' => 'Can you repair a run-flat tyre?',
-        'a' => 'Run-flat tyres are designed to be driven on while flat, but that doesn\'t mean the tyre is undamaged after doing so. Most run-flat tyre manufacturers recommend replacement after the tyre has been run flat, even for a short distance, because internal damage isn\'t always visible. We assess run-flat punctures case by case — if it\'s a simple nail in the tread and the tyre shows no sign of run-flat damage, repair may be possible.',
+        'a' => 'Run-flat tyres are designed to be driven on while flat, but that doesn\'t mean the tyre is undamaged after doing so. Most run-flat tyre manufacturers recommend replacement after the tyre has been run flat, even for a short distance, because internal damage isn\'t always visible. We assess run-flat punctures case by case. If it\'s a simple nail in the tread and the tyre shows no sign of run-flat damage, repair may be possible.',
     ],
 ];
 
@@ -345,14 +345,14 @@ body,p,li,td,span,div,a,label,input,textarea,select,button { font-family: 'Inter
             </nav>
 
             <div>
-                <span class="pr-eyebrow pr-eyebrow--yellow">Tyre Centre — Manukau</span>
+                <span class="pr-eyebrow pr-eyebrow--yellow">Tyre Centre · Manukau</span>
                 <h1 class="pr-h1">
                     Puncture Repair<br>
                     <em>Manukau</em>
                 </h1>
                 <p class="pr-hero__sub">
-                    Nail in the tread? Slow leak you can't find? We assess every puncture honestly —
-                    proper plug and patch repair if it's fixable, straight talk if it's not.
+                    Nail in the tread? Slow leak you can't find? We assess every puncture honestly.
+                    Proper plug and patch repair if it's fixable, straight talk if it's not.
                     Rebalanced after every repair as standard.
                 </p>
                 <?php if ($puncture_price): ?>
@@ -415,7 +415,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button { font-family: 'Inter
     <div class="taas-pr__w">
         <span class="pr-eyebrow pr-eyebrow--dark">Repairability</span>
         <h2 class="pr-h2" id="pr-assess-h2">Can Your Puncture Be Repaired?</h2>
-        <p class="pr-lead">Not every puncture is repairable — and we won't tell you it is if it isn't. Here's what determines whether a repair is safe.</p>
+        <p class="pr-lead">Not every puncture is repairable, and we won't tell you it is if it isn't. Here's what determines whether a repair is safe.</p>
         <div class="pr-assess__grid">
             <div class="pr-assess__block">
                 <div class="pr-assess__header pr-assess__header--yes">✓ Usually Repairable</div>
@@ -446,11 +446,11 @@ body,p,li,td,span,div,a,label,input,textarea,select,button { font-family: 'Inter
     <div class="taas-pr__w">
         <span class="pr-eyebrow pr-eyebrow--dark">Our Process</span>
         <h2 class="pr-h2" id="pr-process-h2">How We Repair a Puncture</h2>
-        <p class="pr-lead">A proper repair — not a roadside plug. The industry-standard method, done right.</p>
+        <p class="pr-lead">A proper repair, not a roadside plug. The industry-standard method, done right.</p>
         <div class="pr-process__block">
             <div class="pr-process__header">
-                <h3>Plug &amp; Patch Repair — The Right Way</h3>
-                <p>The tyre comes off the rim for a proper internal inspection and repair — not a string plug pushed in from outside. This is the permanent, safe method.</p>
+                <h3>Plug &amp; Patch Repair: The Right Way</h3>
+                <p>The tyre comes off the rim for a proper internal inspection and repair, not a string plug pushed in from outside. This is the permanent, safe method.</p>
             </div>
             <div class="pr-steps">
                 <?php foreach ($process as $step): ?>
@@ -476,7 +476,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button { font-family: 'Inter
                 <span class="pr-eyebrow pr-eyebrow--dark">Most Shops Skip This</span>
                 <h2 class="pr-h2">We Rebalance After Every Repair</h2>
                 <p class="pr-lead" style="margin-bottom:20px;">
-                    A puncture patch adds weight inside the tyre. If the tyre isn't rebalanced after repair, you'll feel vibration — especially at highway speed.
+                    A puncture patch adds weight inside the tyre. If the tyre isn't rebalanced after repair, you'll feel vibration, especially at motorway speed.
                 </p>
                 <p style="font-size:15px;color:#333;line-height:1.6;">
                     Most workshops repair the puncture, refit the tyre, and send you on your way. We put every repaired tyre back on the balancer before it goes back on the vehicle. It takes a few extra minutes. You shouldn't have to come back because of vibration from a repair we did.
@@ -563,14 +563,14 @@ body,p,li,td,span,div,a,label,input,textarea,select,button { font-family: 'Inter
 <!-- ── SUBURBS ───────────────────────────────────────────────────────────── -->
 <section class="pr-suburbs" aria-label="Areas served">
     <div class="taas-pr__w">
-        <h2>Puncture Repairs Near You — South Auckland</h2>
+        <h2>Puncture Repairs Near You in South Auckland</h2>
         <div class="pr-suburb-pills">
             <?php foreach ($suburbs as $suburb): ?>
             <span class="pr-suburb-pill"><?php echo esc_html($suburb); ?></span>
             <?php endforeach; ?>
             <span class="pr-suburb-pill" style="background:#111;color:#FFC800;border-color:#111;">+ More</span>
         </div>
-        <p style="margin-top:20px;font-size:14px;color:#666;">Based at 139 Cavendish Drive, Manukau — easy access from the southern motorway.</p>
+        <p style="margin-top:20px;font-size:14px;color:#666;">Based at 139 Cavendish Drive, Manukau. Easy access from the Southern Motorway.</p>
     </div>
 </section>
 

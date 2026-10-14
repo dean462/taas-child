@@ -40,7 +40,7 @@ $emergency_steps = [
     ['icon' => '⚠', 'title' => 'Pull Over Safely',           'text' => 'Get off the road as soon as it is safe. Turn on your hazard lights.'],
     ['icon' => '⏹', 'title' => 'Turn the Engine Off',        'text' => 'Do not idle the engine. Idling an overheating engine causes more damage, not less.'],
     ['icon' => '🚫', 'title' => 'Do Not Open the Radiator Cap', 'text' => 'The cooling system is pressurised. Opening the cap releases superheated steam that causes serious burns.'],
-    ['icon' => '⏱', 'title' => 'Wait at Least 20 Minutes',   'text' => 'Let the engine cool completely before checking anything. Do not add cold water to a hot engine — thermal shock can crack the block.'],
+    ['icon' => '⏱', 'title' => 'Wait at Least 20 Minutes',   'text' => 'Let the engine cool completely before checking anything. Do not add cold water to a hot engine. Thermal shock can crack the block.'],
     ['icon' => '📞', 'title' => 'Call Us or Arrange a Tow',   'text' => 'Call ' . $phone_free . '. If the vehicle cannot be driven safely, we can arrange a tow to our workshop.'],
 ];
 
@@ -52,24 +52,24 @@ $causes = [
     ['title' => 'Failed Water Pump',     'text' => 'Coolant stops circulating. The engine overheats within minutes. Usually caused by bearing or seal failure.',                      'url' => '/water-pump-replacement-manukau/'],
     ['title' => 'Blown Head Gasket',     'text' => 'Combustion gases enter the cooling system, displacing coolant and pressurising the system. The most expensive possibility.',     'url' => '/head-gasket-repair-manukau/'],
     ['title' => 'Cooling Fan Failure',   'text' => 'Electric fan not running at low speed or idle. Common in stop-start traffic where airflow through the radiator is minimal.',     'url' => ''],
-    ['title' => 'Low Coolant',           'text' => 'Simple neglect — coolant level dropped below minimum over time. Often a slow leak that has not been noticed or addressed.',      'url' => ''],
+    ['title' => 'Low Coolant',           'text' => 'Simple neglect. The coolant level dropped below minimum over time. Often a slow leak that has not been noticed or addressed.',      'url' => ''],
     ['title' => 'Broken Drive Belt',     'text' => 'If the serpentine belt drives the water pump and the belt snaps, coolant circulation stops immediately.',                         'url' => ''],
 ];
 
 // ── The escalation cascade ───────────────────────────────────────────────────
 $cascade = [
     ['stage' => 'Thermostat fails',                         'cost' => 'Typically from $200',       'colour' => '#FFC800'],
-    ['stage' => 'Engine overheats — coolant boils',         'cost' => '',                           'colour' => '#e67e22'],
+    ['stage' => 'Engine overheats, coolant boils',         'cost' => '',                           'colour' => '#e67e22'],
     ['stage' => 'Head gasket fails',                        'cost' => 'Typically ' . (defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000') . '',     'colour' => '#e74c3c'],
-    ['stage' => 'Cylinder head warps — needs machining',    'cost' => 'Add ' . (defined('TAAS_CS_HEADMACHINE') ? TAAS_CS_HEADMACHINE : '$400–$600') . ' for machining',  'colour' => '#c0392b'],
-    ['stage' => 'Engine block damage — replacement needed', 'cost' => 'Can cost $5,000+',          'colour' => '#922b21'],
+    ['stage' => 'Cylinder head warps and needs machining',    'cost' => 'Add ' . (defined('TAAS_CS_HEADMACHINE') ? TAAS_CS_HEADMACHINE : '$400–$600') . ' for machining',  'colour' => '#c0392b'],
+    ['stage' => 'Engine block damage, replacement needed', 'cost' => 'Can cost $5,000+',          'colour' => '#922b21'],
 ];
 
 // ── Process ──────────────────────────────────────────────────────────────────
 $process = [
-    ['title' => 'Vehicle Arrives',         'text' => 'Driven in or towed — we assess the situation immediately. If the engine is still hot, we allow it to cool before any work begins.'],
+    ['title' => 'Vehicle Arrives',         'text' => 'Driven in or towed, we assess the situation straight away. If the engine is still hot, we allow it to cool before any work begins.'],
     ['title' => 'Visual Inspection',       'text' => 'Check coolant level, condition, and any visible leaks. Check drive belt condition. Inspect radiator, hoses, and fan operation.'],
-    ['title' => 'Pressure Test',           'text' => 'Cooling system pressurised and monitored. Identifies the source of any leak — internal or external.'],
+    ['title' => 'Pressure Test',           'text' => 'Cooling system pressurised and monitored. Identifies the source of any leak, internal or external.'],
     ['title' => 'Thermostat & Pump Check', 'text' => 'Thermostat operation tested. Water pump inspected for bearing play, weep hole leak, and impeller condition.'],
     ['title' => 'Head Gasket Assessment',  'text' => 'If head gasket failure is suspected: compression test and chemical block test. We confirm the diagnosis before recommending a path forward.'],
     ['title' => 'Estimate & Decision',     'text' => 'You receive a clear estimate before we start any repair. If the damage exceeds the vehicle value, we tell you straight.'],
@@ -91,28 +91,28 @@ $related = [
 
 // ── FAQs (11) ────────────────────────────────────────────────────────────────
 $faqs = [
-    ['q' => 'My engine is overheating right now — what should I do?',
-     'a' => 'Pull over safely and turn the engine off immediately. Turn on your hazard lights. Do not open the radiator cap — the system is pressurised and the steam will burn you. Wait at least 20 minutes for the engine to cool. Then call us on ' . $phone_free . '. If the vehicle cannot be driven safely, we can <a href="' . $site_url . '/towing/">arrange a tow</a> to our workshop.'],
+    ['q' => 'My engine is overheating right now. What should I do?',
+     'a' => 'Pull over safely and turn the engine off immediately. Turn on your hazard lights. Do not open the radiator cap. The system is pressurised and the steam will burn you. Wait at least 20 minutes for the engine to cool. Then call us on ' . $phone_free . '. If the vehicle cannot be driven safely, we can <a href="' . $site_url . '/towing/">arrange a tow</a> to our workshop.'],
     ['q' => 'Can I add water to my radiator if it is overheating?',
-     'a' => 'Wait until the engine has cooled completely — at least 20 minutes with the engine off. Never add cold water to a hot engine. Thermal shock from cold water hitting a hot engine block or cylinder head can crack cast iron or aluminium components. Once cool, you can carefully top up with water as an emergency measure to get to a workshop, but the cooling system needs proper diagnosis — topping up does not fix the underlying cause.'],
+     'a' => 'Wait until the engine has cooled completely, at least 20 minutes with the engine off. Never add cold water to a hot engine. Thermal shock from cold water hitting a hot engine block or cylinder head can crack cast iron or aluminium components. Once cool, you can carefully top up with water as an emergency measure to get to a workshop, but the cooling system needs proper diagnosis. Topping up does not fix the underlying cause.'],
     ['q' => 'How far can I drive with the temperature warning light on?',
-     'a' => 'As little as possible — ideally not at all. Every metre driven with an overheating engine causes additional damage. The longer you drive, the more the repair will cost. If the gauge is in the red or the warning light is on, pull over immediately and call us on ' . $phone_free . '. If you cannot stop immediately, turn off the air conditioning, turn the heater to full heat (this draws heat from the engine), and pull over at the first safe opportunity.'],
+     'a' => 'As little as possible. Ideally not at all. Every metre driven with an overheating engine causes additional damage. The longer you drive, the more the repair will cost. If the gauge is in the red or the warning light is on, pull over immediately and call us on ' . $phone_free . '. If you cannot stop immediately, turn off the air conditioning, turn the heater to full heat (this draws heat from the engine), and pull over at the first safe opportunity.'],
     ['q' => 'Is it safe to drive after my engine cools down?',
-     'a' => 'Not necessarily. The engine cooling down does not mean the problem is fixed. If the cause is a failed thermostat, low coolant, or a minor leak, you may be able to drive a short distance to a workshop — slowly, watching the gauge, with the heater running. If the cause is a blown head gasket or a burst hose, the engine will overheat again within minutes. When in doubt, arrange a tow. Call ' . $phone_free . ' and we can advise.'],
+     'a' => 'Not necessarily. The engine cooling down does not mean the problem is fixed. If the cause is a failed thermostat, low coolant, or a minor leak, you may be able to drive a short distance to a workshop: slowly, watching the gauge, with the heater running. If the cause is a blown head gasket or a burst hose, the engine will overheat again within minutes. When in doubt, arrange a tow. Call ' . $phone_free . ' and we can advise.'],
     ['q' => 'What is the most common cause of engine overheating?',
-     'a' => 'Coolant leaks are the most common cause — a split hose, leaking radiator, failed water pump seal, or slow gasket leak that has gone unnoticed. The second most common is a failed thermostat stuck in the closed position. Both are relatively inexpensive to repair when caught early. The expensive scenarios — head gasket failure, cylinder head damage — are almost always the result of a cheaper problem being ignored or the vehicle being driven after overheating.'],
+     'a' => 'Coolant leaks are the most common cause: a split hose, leaking radiator, failed water pump seal, or slow gasket leak that has gone unnoticed. The second most common is a failed thermostat stuck in the closed position. Both are relatively inexpensive to repair when caught early. The expensive scenarios (head gasket failure, cylinder head damage) are almost always the result of a cheaper problem being ignored or the vehicle being driven after overheating.'],
     ['q' => 'How much does it cost to fix an overheating engine?',
-     'a' => 'It depends entirely on the cause. A thermostat replacement can cost from around $200. A radiator hose is similar. A water pump replacement varies by vehicle. A head gasket repair starts ' . (defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000') . ' and can cost more on complex engines. We diagnose the cause first — mechanical diagnosis ' . $mech_diag . ' — and give you an estimate before starting work. Call ' . $phone_free . '.'],
+     'a' => 'It depends entirely on the cause. A thermostat replacement can cost from around $200. A radiator hose is similar. A water pump replacement varies by vehicle. A head gasket repair starts ' . (defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000') . ' and can cost more on complex engines. We diagnose the cause first (mechanical diagnosis ' . $mech_diag . ') and give you an estimate before starting work. Call ' . $phone_free . '.'],
     ['q' => 'Can you arrange a tow if my car has overheated?',
-     'a' => 'Yes. We arrange towing to our workshop via our towing partner. Call us on ' . $phone_free . ' and we will organise it. Do not attempt to drive an overheating vehicle — the cost of a tow is a fraction of the additional engine damage caused by driving. See our <a href="' . $site_url . '/towing/">towing page</a> for details.'],
+     'a' => 'Yes. We arrange towing to our workshop via our towing partner. Call us on ' . $phone_free . ' and we will organise it. Do not attempt to drive an overheating vehicle. The cost of a tow is a fraction of the additional engine damage caused by driving. See our <a href="' . $site_url . '/towing/">towing page</a> for details.'],
     ['q' => 'Will my mechanical breakdown insurance cover overheating damage?',
-     'a' => 'The component that failed (thermostat, water pump, head gasket) is usually covered under MBI. However, consequential damage from continued driving after symptoms appeared may not be covered by all policies — which is another reason to stop driving immediately when the warning light comes on. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. We handle MBI claims directly.'],
+     'a' => 'The component that failed (thermostat, water pump, head gasket) is usually covered under MBI. However, consequential damage from continued driving after symptoms appeared may not be covered by all policies, which is another reason to stop driving immediately when the warning light comes on. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. We handle MBI claims directly.'],
     ['q' => 'What happens if I keep driving with an overheating engine?',
      'a' => 'The damage escalates rapidly. A stuck thermostat (from around $200 to repair) causes the engine to overheat. Sustained overheating causes the head gasket to fail (' . (defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000') . '). Continued driving with a blown head gasket warps the cylinder head, which then needs machining on top of the gasket job. If the head or block cracks, engine replacement is the only option (can cost $5,000 or more). What started as a minor repair becomes a write-off.'],
     ['q' => 'Do you offer finance for overheating engine repairs?',
-     'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. An overheating repair should never be delayed because of cost — the damage from continued overheating is exponentially more expensive than the original repair.'],
+     'a' => 'Yes. Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. An overheating repair should never be delayed because of cost. The damage from continued overheating is far more expensive than the original repair.'],
     ['q' => 'Where is your workshop?',
-     'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' — we can advise over the phone and arrange a tow if needed.'],
+     'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . '. We can advise over the phone and arrange a tow if needed.'],
 ];
 
 // ── Schema ───────────────────────────────────────────────────────────────────
@@ -124,7 +124,7 @@ $schema = ['@context'=>'https://schema.org','@graph'=>[
         ['@type'=>'ListItem','position'=>2,'name'=>'Cooling System','item'=>$site_url.'/cooling-system/'],
         ['@type'=>'ListItem','position'=>3,'name'=>'Overheating Engine','item'=>$page_url],
     ]],
-    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Engine overheating emergency service in Manukau, South Auckland. Diagnosis, repair, and towing arranged. Do not drive an overheating engine — call us. MTA Assured. NZTA Authorised. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'priceRange'=>'$$','areaServed'=>'South Auckland','sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'MTA New Zealand'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, Gem Finance, Aotea Finance'],
+    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Engine overheating emergency service in Manukau, South Auckland. Diagnosis, repair, and towing arranged. Do not drive an overheating engine. Call us. MTA Assured. NZTA Authorised. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'priceRange'=>'$$','areaServed'=>'South Auckland','sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'MTA New Zealand'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, Gem Finance, Aotea Finance'],
     ['@type'=>'FAQPage','mainEntity'=>$schema_faqs],
     ['@type'=>'SpeakableSpecification','cssSelector'=>['.ohe-hero__sub','.ohe-faq__a:first-of-type']],
 ]];
@@ -273,11 +273,11 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div class="ohe-w">
     <div class="ohe-hero__top">
       <nav aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/cooling-system/'); ?>">Cooling System</a><span style="margin:0 6px;">›</span><span style="color:#888;">Overheating Engine</span></nav>
-      <span class="ohe-eye ohe-eye--emergency">Emergency — Pull Over Now</span>
+      <span class="ohe-eye ohe-eye--emergency">Emergency: Pull Over Now</span>
       <h1>Is Your Engine<br><span>Overheating?</span></h1>
-      <p class="ohe-hero__sub">Stop driving. Turn the engine off. Do not open the radiator cap. Call us — we diagnose the cause and arrange a tow if needed.</p>
+      <p class="ohe-hero__sub">Stop driving. Turn the engine off. Do not open the radiator cap. Call us. We diagnose the cause and arrange a tow if needed.</p>
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ohe-hero__phone"><?php echo esc_html($phone_free); ?></a>
-      <div class="ohe-hero__phone-label">Tap to call — <?php echo esc_html($hours); ?></div>
+      <div class="ohe-hero__phone-label">Tap to call · <?php echo esc_html($hours); ?></div>
       <div class="ohe-hero__ctas">
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ohe-btn ohe-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call Now</a>
         <a href="<?php echo esc_url($site_url.'/towing/'); ?>" class="ohe-btn ohe-btn--alert"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Arrange a Tow</a>
@@ -289,7 +289,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <!-- Emergency Steps — Inside Hero -->
   <div class="ohe-emergency"><div class="ohe-w">
     <div class="ohe-emergency__title">What to Do Right Now</div>
-    <div class="ohe-emergency__subtitle">Follow these steps in order — do not skip any.</div>
+    <div class="ohe-emergency__subtitle">Follow these steps in order. Do not skip any.</div>
     <div class="ohe-emergency__grid">
       <?php foreach ($emergency_steps as $i => $s): ?>
       <div class="ohe-emergency__step">
@@ -321,7 +321,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="ohe-section ohe-section--white"><div class="ohe-w">
   <span class="ohe-eye ohe-eye--dark">Causes</span>
   <h2 class="ohe-h2">What Causes an Engine to Overheat?</h2>
-  <div class="ohe-content"><p>An engine overheats when the cooling system cannot remove heat fast enough. The cause is almost always one of these eight — and the first five are the most common. Every one of them is repairable when caught early. The expensive outcomes happen when people keep driving.</p></div>
+  <div class="ohe-content"><p>An engine overheats when the cooling system cannot remove heat fast enough. The cause is almost always one of these eight, and the first five are the most common. Every one of them is repairable when caught early. The expensive outcomes happen when people keep driving.</p></div>
   <div class="ohe-causes">
     <?php foreach ($causes as $c): ?>
     <div class="ohe-cause"><h3><?php echo esc_html($c['title']); ?></h3><p><?php echo esc_html($c['text']); ?></p><?php if ($c['url']): ?><a href="<?php echo esc_url($site_url.$c['url']); ?>">Learn more →</a><?php endif; ?></div>
@@ -354,7 +354,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="ohe-section ohe-section--grey"><div class="ohe-w">
   <span class="ohe-eye ohe-eye--dark">At the Workshop</span>
   <h2 class="ohe-h2">What Happens When Your Vehicle Arrives</h2>
-  <p class="ohe-lead">Driven in or towed — we follow the same diagnostic process. Fault confirmed before parts are replaced.</p>
+  <p class="ohe-lead">Driven in or towed, we follow the same diagnostic process. Fault confirmed before parts are replaced.</p>
   <div class="ohe-steps">
     <?php foreach ($process as $i => $step): ?>
     <div class="ohe-step">
@@ -384,8 +384,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
     <div class="ohe-pricing__row"><span class="ohe-pricing__label">Radiator replacement</span><span class="ohe-pricing__value">Estimate after inspection</span></div>
     <div class="ohe-pricing__row"><span class="ohe-pricing__label">Head gasket repair</span><span class="ohe-pricing__value">Typically <?php echo esc_html(defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000'); ?></span></div>
   </div>
-  <div class="ohe-pricing__note">Every repair starts with diagnosis. We confirm the cause before recommending a path forward — and we tell you straight if the repair cost exceeds the vehicle value. Call <?php echo esc_html($phone_free); ?> with your vehicle details.</div>
-  <div class="ohe-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, Aotea Finance. Do not delay an overheating repair because of cost — the damage escalates every day. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>
+  <div class="ohe-pricing__note">Every repair starts with diagnosis. We confirm the cause before recommending a path forward, and we tell you straight if the repair cost exceeds the vehicle value. Call <?php echo esc_html($phone_free); ?> with your vehicle details.</div>
+  <div class="ohe-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, Aotea Finance. Do not delay an overheating repair because of cost. The damage gets worse every day. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>
 </div></section>
 
 <!-- ══════════════════════════════════════════════════════════════════════════ -->
@@ -394,7 +394,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="ohe-enquire" class="ohe-section ohe-section--dark"><div class="ohe-w"><div class="ohe-enquiry">
   <div>
     <span class="ohe-eye ohe-eye--yellow">Get Help</span>
-    <h2 class="ohe-h2 ohe-h2--white">Engine Overheating? — <span style="color:var(--taas-yellow);">Call Us Now</span></h2>
+    <h2 class="ohe-h2 ohe-h2--white">Engine Overheating? <span style="color:var(--taas-yellow);">Call Us Now</span></h2>
     <p style="font-size:15px;color:#aaa;margin:0 0 16px;line-height:1.6;">Calling is faster than the form for an overheating emergency. We can advise over the phone and arrange a tow immediately.</p>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.7;margin-bottom:16px;"><strong style="color:var(--taas-white);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
@@ -425,7 +425,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- FAQ -->
 <section class="ohe-section ohe-section--grey"><div class="ohe-w">
   <span class="ohe-eye ohe-eye--dark">Common Questions</span>
-  <h2 class="ohe-h2">Overheating Engine — FAQ</h2>
+  <h2 class="ohe-h2">Overheating Engine FAQ</h2>
   <div class="ohe-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="ohe-faq__item<?php echo $i===0?' ohe-faq__item--open':''; ?>"><button class="ohe-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="ohe-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="ohe-a-<?php echo $i; ?>" class="ohe-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

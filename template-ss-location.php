@@ -76,19 +76,19 @@ $faqs = [
     ['q' => "How much does shock absorber replacement cost near {$suburb_name}?",
      'a' => "Suspension repairs start {$susp_price} depending on your vehicle. If a wheel alignment is needed afterwards, it is {$align_price} and shows as its own line on your invoice. We'll give you an estimate before starting work. Call us on {$phone_free} with your vehicle details."],
     ['q' => "How far is Tony Allen Auto Service from {$suburb_name}?",
-     'a' => $distance_note ?: "Our workshop is at 139 Cavendish Drive, Manukau — a short drive from {$suburb_name}. Call us on {$phone_free} for directions."],
-    ['q' => "My car failed its WOF for shock absorbers near {$suburb_name} — what should I do?",
-     'a' => "Call us on {$phone_free}. We carry out the repair and recheck the failed items on the same visit where possible — you do not need to rebook for the WOF check. We'll give you an estimate before starting work."],
+     'a' => $distance_note ?: "Our workshop is at 139 Cavendish Drive, Manukau, a short drive from {$suburb_name}. Call us on {$phone_free} for directions."],
+    ['q' => "My car failed its WOF for shock absorbers near {$suburb_name}. What should I do?",
+     'a' => "Call us on {$phone_free}. We carry out the repair and recheck the failed items on the same visit where possible. You do not need to rebook for the WOF check. We'll give you an estimate before starting work."],
     ['q' => 'Do you replace shock absorbers in pairs?',
-     'a' => 'Yes — we always recommend replacing shock absorbers in axle pairs (both fronts or both rears). Replacing a single shock creates an imbalance in damping that affects handling and braking. If only one shock has failed, both on that axle should still be replaced.'],
+     'a' => 'Yes. We always recommend replacing shock absorbers in axle pairs (both fronts or both rears). Replacing a single shock creates an imbalance in damping that affects handling and braking. If only one shock has failed, both on that axle should still be replaced.'],
     ['q' => 'Do I need a wheel alignment after shock absorber replacement?',
      'a' => "Usually, yes, especially for front struts. We check and carry out an alignment where the geometry has been affected. Alignment is {$align_price} and is charged as its own line. Skipping alignment after suspension work causes pulling and uneven tyre wear."],
     ['q' => 'How do I know if my shock absorbers need replacing?',
      'a' => 'The clearest signs are excessive bouncing on uneven roads, the vehicle squatting heavily under braking, body roll through corners, uneven tyre wear, or the vehicle sitting noticeably lower on one corner. Worn shocks also cause WOF failure.'],
     ['q' => "Do you offer finance for shock absorber replacement near {$suburb_name}?",
-     'a' => "Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Interest-free options available. Visit our finance page or ask when you call on {$phone_free}."],
+     'a' => "Yes. Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Interest-free options available. Visit our finance page or ask when you call on {$phone_free}."],
     ['q' => 'Can I drive with worn shock absorbers?',
-     'a' => 'A worn shock absorber significantly increases braking distance and reduces stability — particularly in wet conditions or emergency manoeuvres. Worn shocks are a WOF fail item. If the vehicle is bouncing excessively or failed its WOF, get it checked promptly.'],
+     'a' => 'A worn shock absorber significantly increases braking distance and reduces stability, particularly in wet conditions or emergency manoeuvres. Worn shocks are a WOF fail item. If the vehicle is bouncing excessively or failed its WOF, get it checked promptly.'],
 ];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'What else might need replacing at the same time?',
@@ -275,7 +275,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
 <!-- ── HERO ────────────────────────────────────────────────────────────────── -->
 <section class="ssl-hero">
   <div class="ssl-w">
-    <span class="ssl-hero__eyebrow">Shock Absorber Replacement — <?php echo esc_html($suburb_name); ?></span>
+    <span class="ssl-hero__eyebrow">Shock Absorber Replacement · <?php echo esc_html($suburb_name); ?></span>
     <h1>Shock Absorber Replacement<br><span>Near <?php echo esc_html($suburb_name); ?></span></h1>
     <p class="ssl-hero__sub">Worn shocks replaced in axle pairs. Wheel alignment included. WOF recheck same day where possible. <?php if ($distance_note) echo esc_html($distance_note); ?> Suspension repairs <?php echo esc_html($susp_price); ?>.</p>
     <div class="ssl-hero__ctas">
@@ -319,16 +319,16 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
     <span class="ssl-eyebrow ssl-eyebrow--dark">What to Expect</span>
     <h2 class="ssl-h2">Shock Absorber Replacement for <?php echo esc_html($suburb_name); ?> Drivers</h2>
     <div class="ssl-content" style="margin-bottom:32px;">
-      <p>Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a><?php if ($distance_note) echo ' — ' . esc_html($distance_note); ?>. We replace shock absorbers for customers from <?php echo esc_html($suburb_name); ?> and across South Auckland.</p>
-      <p>Shocks are always replaced in axle pairs — both fronts or both rears — because mismatched damping affects handling and braking. Wheel alignment is carried out after every replacement. If your vehicle failed its WOF for shock absorbers, we carry out the repair and recheck on the same visit where possible.</p>
+      <p>Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a><?php if ($distance_note) echo ', ' . esc_html($distance_note); ?>. We replace shock absorbers for customers from <?php echo esc_html($suburb_name); ?> and across South Auckland.</p>
+      <p>Shocks are always replaced in axle pairs (both fronts or both rears) because mismatched damping affects handling and braking. Wheel alignment is carried out after every replacement. If your vehicle failed its WOF for shock absorbers, we carry out the repair and recheck on the same visit where possible.</p>
     </div>
     <ul class="ssl-check-list">
-      <li>Estimate before work begins — kept informed throughout</li>
+      <li>Estimate before work begins, and we keep you informed throughout</li>
       <li>Shock absorbers replaced in axle pairs</li>
       <li>Wheel alignment <?php echo esc_html($align_price); ?> after replacement where needed</li>
       <li>WOF recheck same day where possible</li>
-      <li>All makes and models — Japanese, Korean, European, SUVs, utes, 4WDs</li>
-      <li>Finance available — Afterpay, Q Card, GEM, Aotea</li>
+      <li>All makes and models: Japanese, Korean, European, SUVs, utes, 4WDs</li>
+      <li>Finance available: Afterpay, Q Card, GEM, Aotea</li>
     </ul>
     <p style="margin-top:24px;font-size:14px;color:var(--taas-mid);line-height:1.6;">For detailed technical information about shock absorber replacement, see our <a href="<?php echo esc_url($site_url . '/shock-absorber-replacement-manukau/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">main shock absorber page</a>.</p>
   </div>
@@ -348,7 +348,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
       <li>WOF failure for shock absorbers</li>
       <li>Vehicle sitting low on one corner</li>
     </ul>
-    <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ssl-btn ssl-btn--primary" style="margin-top:24px;">Call <?php echo esc_html($phone_free); ?> — Describe Your Symptoms</a>
+    <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ssl-btn ssl-btn--primary" style="margin-top:24px;">Call <?php echo esc_html($phone_free); ?> to Describe Your Symptoms</a>
   </div>
 </section>
 
@@ -360,9 +360,9 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
     <h2 class="ssl-h2">How We Replace Shock Absorbers</h2>
     <div class="ssl-steps">
       <?php foreach ([
-        'Inspection of all four shock absorbers — visual and bounce test',
+        'Inspection of all four shock absorbers: visual and bounce test',
         'Estimate provided before work begins',
-        'Shocks replaced in axle pairs — front or rear as required',
+        'Shocks replaced in axle pairs, front or rear as required',
         'Wheel alignment carried out after replacement',
         'WOF recheck on the same visit where applicable',
         'Road test to confirm ride and handling',
@@ -381,13 +381,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
 <section class="ssl-section ssl-section--dark">
   <div class="ssl-w">
     <span class="ssl-eyebrow ssl-eyebrow--yellow">Pricing</span>
-    <h2 class="ssl-h2 ssl-h2--white">Shock Absorber Replacement — Price Guide</h2>
+    <h2 class="ssl-h2 ssl-h2--white">Shock Absorber Replacement Price Guide</h2>
     <p class="ssl-lead">Suspension repairs <?php echo esc_html($susp_price); ?>. Wheel alignment <?php echo esc_html($align_price); ?> where needed after replacement. Price varies by vehicle. Call for a specific estimate.</p>
     <div style="background:#161616;border:1px solid #2a2a2a;border-radius:var(--taas-radius);padding:24px;max-width:480px;margin-bottom:24px;">
       <p style="font-size:14px;color:#ccc;line-height:1.6;margin-bottom:12px;"><strong style="color:var(--taas-yellow);">Finance available:</strong> Afterpay, Q Card, GEM Finance, and Aotea Finance. Interest-free options.</p>
       <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" style="font-size:14px;font-weight:700;color:var(--taas-yellow2);text-decoration:none;">View finance options →</a>
     </div>
-    <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ssl-btn ssl-btn--primary">Get an Estimate — Call <?php echo esc_html($phone_free); ?></a>
+    <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="ssl-btn ssl-btn--primary">Get an Estimate: Call <?php echo esc_html($phone_free); ?></a>
   </div>
 </section>
 
@@ -421,7 +421,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
 <!-- ── SUBURBS ── Grey ─────────────────────────────────────────────────────── -->
 <section class="ssl-section ssl-section--grey">
   <div class="ssl-w">
-    <h2 class="ssl-h2">Shock Absorber Replacement — South Auckland Areas</h2>
+    <h2 class="ssl-h2">Shock Absorber Replacement: South Auckland Areas</h2>
     <p style="font-size:14px;color:var(--taas-mid);margin-bottom:16px;">Serving all South Auckland suburbs from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a>.</p>
     <div class="ssl-suburb-pills">
       <?php foreach ($suburbs as $s):
@@ -437,7 +437,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button { f
 <section class="ssl-section ssl-section--white">
   <div class="ssl-w">
     <span class="ssl-eyebrow ssl-eyebrow--dark">Common Questions</span>
-    <h2 class="ssl-h2">Shock Absorber Replacement Near <?php echo esc_html($suburb_name); ?> — FAQ</h2>
+    <h2 class="ssl-h2">Shock Absorber Replacement Near <?php echo esc_html($suburb_name); ?>: FAQs</h2>
     <div class="ssl-faq__list">
       <?php foreach ($faqs as $i => $faq): ?>
       <div class="ssl-faq__item<?php echo $i === 0 ? ' ssl-faq__item--open' : ''; ?>">

@@ -48,41 +48,41 @@ $review_count  = preg_replace('/\D+/', '', $reviews);
 $type_master = [
     'car-battery-manukau' => [
         'name'=>'Car Battery','badge'=>'CAR','type_key'=>'car',
-        'tagline'=>'Standard, EFB, AGM and stop-start batteries for all cars and passenger vehicles. Neuton Power, Bosch and more — matched to your vehicle specification.',
+        'tagline'=>'Standard, EFB, AGM and stop-start batteries for all cars and passenger vehicles. Neuton Power, Bosch and more, matched to your vehicle specification.',
         'chips'=>['Standard','EFB','AGM','Stop-Start','All Makes'],
         'price_text'=>'Car batteries '.$battery_price,
         'has_locations'=>true,
-        'about'=>'A car battery does more than start the engine. It stabilises voltage, powers accessories when the engine is off, and in stop-start vehicles cycles hundreds of times a day. The correct battery — right chemistry, right CCA, right group size — is essential for reliable starting and electrical system health.',
+        'about'=>'A car battery does more than start the engine. It stabilises voltage, powers accessories when the engine is off, and in stop-start vehicles cycles hundreds of times a day. The correct battery (right chemistry, right CCA, right group size) is essential for reliable starting and electrical system health.',
     ],
     '4wd-battery-manukau' => [
         'name'=>'4WD &amp; SUV Battery','badge'=>'4WD','type_key'=>'4wd',
-        'tagline'=>'High-CCA batteries for 4WDs, utes and SUVs. Hilux, Ranger, Navara, D-MAX, Triton, Pajero — stock held for most popular models.',
+        'tagline'=>'High-CCA batteries for 4WDs, utes and SUVs. Hilux, Ranger, Navara, D-MAX, Triton, Pajero. Stock held for most popular models.',
         'chips'=>['4WD','SUV','Ute','High CCA','Diesel','All Makes'],
-        'price_text'=>'4WD and SUV batteries — contact for pricing on your vehicle',
+        'price_text'=>'4WD and SUV batteries: contact us for pricing on your vehicle',
         'has_locations'=>true,
-        'about'=>'4WD and SUV batteries need higher cold cranking amps than standard car batteries — especially diesel vehicles with glow plug systems. The wrong battery leads to slow cranking in cold mornings and shortened battery life. We match the correct CCA rating and group size for your specific vehicle.',
+        'about'=>'4WD and SUV batteries need higher cold cranking amps than standard car batteries, especially diesel vehicles with glow plug systems. The wrong battery leads to slow cranking in cold mornings and shortened battery life. We match the correct CCA rating and group size for your specific vehicle.',
     ],
     'agm-battery-manukau' => [
         'name'=>'AGM / Stop-Start Battery','badge'=>'AGM','type_key'=>'agm',
         'tagline'=>'Stop-start vehicle specialists. Correct AGM spec matched and fitted every time. BMS registration included for European vehicles.',
         'chips'=>['AGM','EFB','Stop-Start','European BMS','All Makes'],
-        'price_text'=>'AGM batteries — contact for pricing. BMS registration included for European vehicles',
+        'price_text'=>'AGM batteries: contact us for pricing. BMS registration included for European vehicles',
         'has_locations'=>true,
-        'about'=>'AGM (Absorbent Glass Mat) batteries are designed for vehicles with stop-start systems. They handle deep cycling — repeated discharging and recharging — far better than standard lead-acid batteries. Fitting a standard battery in a stop-start vehicle will shorten its life dramatically. European vehicles also require BMS registration after replacement — included at Manukau Batteries.',
+        'about'=>'AGM (Absorbent Glass Mat) batteries are designed for vehicles with stop-start systems. They handle deep cycling (repeated discharging and recharging) far better than standard lead-acid batteries. Fitting a standard battery in a stop-start vehicle will shorten its life dramatically. European vehicles also require BMS registration after replacement, which is included at Manukau Batteries.',
     ],
     'marine-battery-manukau' => [
         'name'=>'Marine Battery','badge'=>'MAR','type_key'=>'marine',
         'tagline'=>'Starting batteries, deep cycle and dual-purpose marine batteries for boats and jet skis. Built for on-water vibration and high electrical demand.',
         'chips'=>['Starting','Deep Cycle','Dual Purpose','Marine AGM','Jet Ski'],
-        'price_text'=>'Marine batteries — contact for pricing on your application',
+        'price_text'=>'Marine batteries: contact us for pricing on your application',
         'has_locations'=>true,
-        'about'=>'Marine batteries face different demands than automotive batteries — constant vibration, high accessory loads (fish finders, lights, pumps), and often extended periods without charging. We stock starting batteries for engine cranking, deep cycle batteries for accessory power, and dual-purpose batteries that handle both. Matched to your boat or jet ski application.',
+        'about'=>'Marine batteries face different demands than car batteries: constant vibration, high accessory loads (fish finders, lights, pumps), and often extended periods without charging. We stock starting batteries for engine cranking, deep cycle batteries for accessory power, and dual-purpose batteries that handle both. Matched to your boat or jet ski application.',
     ],
     'motorcycle-battery-manukau' => [
         'name'=>'Motorcycle Battery','badge'=>'MCY','type_key'=>'motorcycle',
         'tagline'=>'Conventional, AGM and gel motorcycle batteries. Most common models in stock. Bring the bike in or call with your make and model details.',
         'chips'=>['Conventional','AGM','Gel','Scooter','All Makes'],
-        'price_text'=>'Motorcycle batteries — contact for pricing on your model',
+        'price_text'=>'Motorcycle batteries: contact us for pricing on your model',
         'has_locations'=>false, // No suburb location pages for motorcycle
         'about'=>'Motorcycle batteries are smaller and more vehicle-specific than car batteries. The wrong physical size will not fit, and the wrong chemistry can damage the charging system. We stock conventional, AGM, and gel motorcycle batteries for most common models. Bring the bike in or call with your make and model.',
     ],
@@ -131,17 +131,17 @@ $suburbs = [
 $faqs = [];
 $faqs[] = ['q'=>'How much does a '.$type_name.' cost fitted in Manukau?','a'=>$price_text.'. The exact price depends on your vehicle specification. Call '.$phone_free.' with your registration number and we will confirm before you come in.'];
 $faqs[] = ['q'=>'Can I get a '.$type_name.' fitted same day?','a'=>'In most cases yes. We carry a full range at 139 Cavendish Drive, Manukau. Call ahead on '.$phone_local.' to confirm stock for your vehicle.'];
-$faqs[] = ['q'=>'Do you offer free battery testing?','a'=>'Yes — free load test, voltage check, and cranking amp assessment on any vehicle. No appointment needed. When we fit a new battery, we also test your alternator to make sure it is charging properly and the new battery will not be let down.'];
+$faqs[] = ['q'=>'Do you offer free battery testing?','a'=>'Yes. Free load test, voltage check and cranking amp assessment on any vehicle. No appointment needed. When we fit a new battery, we also test your alternator to make sure it is charging properly and the new battery will not be let down.'];
 if ($type_key === 'car' || $type_key === 'agm') {
     $faqs[] = ['q'=>'Do European cars need battery registration?','a'=>'Yes. BMW, Mercedes-Benz, Audi, Volkswagen, Volvo, and most European vehicles have a BMS that must be updated when a new battery is fitted. BMS registration is included at Manukau Batteries.'];
 }
 $faqs[] = ['q'=>'What if my battery keeps going flat?','a'=>'A battery that keeps going flat is often an alternator fault, not a battery problem. We test both before recommending any replacement.'];
 $faqs[] = ['q'=>'What brands do you stock?','a'=>'Neuton Power is our preferred brand. We are also an authorised Bosch dealer through YHI Automotive NZ.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
-$faqs[] = ['q'=>'Can I pay with Afterpay?','a'=>'Yes — we accept Afterpay, Q Card, GEM Finance, and Aotea Finance.'];
+$faqs[] = ['q'=>'Can I pay with Afterpay?','a'=>'Yes. We accept Afterpay, Q Card, GEM Finance, and Aotea Finance.'];
 $faqs[] = ['q'=>'Where is Manukau Batteries?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104. Open '.$hours.'. Walk-ins welcome. Call '.$phone_free.'.'];
 if (count($faqs) < 10) {
-    $faqs[] = ['q'=>'Do you recycle old batteries?','a'=>'Yes — old batteries collected and recycled responsibly at no charge with every supply and fit.'];
+    $faqs[] = ['q'=>'Do you recycle old batteries?','a'=>'Yes. Old batteries are collected and recycled responsibly at no charge with every supply and fit.'];
 }
 
 // Schema
@@ -232,7 +232,7 @@ body.page-template-template-mb-battery-type{overflow-x:hidden;-webkit-text-size-
 <section class="mbt-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="mbt-hero__inner">
   <div class="mbt-hero__badge"><?php echo mbt_badge($badge, 56); ?></div>
   <span class="mbt-hero__eyebrow">Manukau Batteries</span>
-  <h1><?php echo $type_name; ?><br><span>Manukau — Supply &amp; Fit</span></h1>
+  <h1><?php echo $type_name; ?><br><span>Manukau Supply &amp; Fit</span></h1>
   <p class="mbt-hero__sub"><?php echo esc_html($current['tagline']); ?> Authorised Neuton Power and Bosch dealer. Free battery testing.</p>
   <div class="mbt-hero__chips"><?php foreach ($current['chips'] as $c) { echo '<span class="mbt-hero__chip">'.esc_html($c).'</span>'; } ?></div>
   <div class="mbt-hero__price"><?php echo esc_html($price_text); ?></div>
@@ -253,26 +253,26 @@ body.page-template-template-mb-battery-type{overflow-x:hidden;-webkit-text-size-
 <?php if ($about_text) : ?>
 <section class="mbt-sec mbt-sec--white"><div class="mbt-sec__inner">
   <span class="mbt-sec__eyebrow">About</span>
-  <h2 class="mbt-sec__h2"><?php echo $type_name; ?> — What You Need to Know</h2>
+  <h2 class="mbt-sec__h2"><?php echo $type_name; ?>: What You Need to Know</h2>
   <div class="mbt-sec__body"><?php echo wp_kses_post($about_text); ?></div>
 </div></section>
 <?php endif; ?>
 
 <section class="mbt-sec mbt-sec--grey"><div class="mbt-sec__inner">
   <span class="mbt-sec__eyebrow">Pricing</span>
-  <h2 class="mbt-sec__h2"><?php echo $type_name; ?> — Pricing</h2>
+  <h2 class="mbt-sec__h2"><?php echo $type_name; ?> Pricing</h2>
   <div class="mbt-price-box">
     <div class="mbt-price-box__title"><?php echo $type_name; ?> Supply &amp; Fit</div>
     <p class="mbt-price-box__body"><?php echo wp_kses_post($price_text); ?>. Includes supply, fitting, and old battery disposal. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> with your registration number for an exact price.</p>
   </div>
 </div></section>
 
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="mbt-sec mbt-sec--dark" id="enquire"><div class="mbt-sec__inner">
   <div class="mbt-enquiry">
     <div>
       <span class="mbt-sec__eyebrow">Get an Estimate</span>
-      <h2 class="mbt-sec__h2"><?php echo $type_name; ?> — Enquire</h2>
+      <h2 class="mbt-sec__h2"><?php echo $type_name; ?>: Enquire Now</h2>
       <p style="font-size:16px;color:#aaa;line-height:1.75;margin-bottom:8px;">Tell us your vehicle make, model and year. We will confirm stock and pricing.</p>
       <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="mbt-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
       <div class="mbt-enquiry__detail"><strong>Manukau Batteries</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;"><?php echo esc_html($address); ?></a><br><?php echo esc_html($hours); ?></div>
@@ -284,7 +284,7 @@ body.page-template-template-mb-battery-type{overflow-x:hidden;-webkit-text-size-
 <?php if ($has_locations) : ?>
 <section class="mbt-sec mbt-sec--grey"><div class="mbt-sec__inner">
   <span class="mbt-sec__eyebrow">Near You</span>
-  <h2 class="mbt-sec__h2"><?php echo $type_name; ?> — South Auckland</h2>
+  <h2 class="mbt-sec__h2"><?php echo $type_name; ?> in South Auckland</h2>
   <ul class="mbt-pills">
     <?php foreach ($suburbs as $s) : ?>
     <li><a href="<?php echo esc_url($site_url.'/'.$type_key.'-battery-'.$s['slug'].'/'); ?>"><?php echo $type_name; ?> <?php echo esc_html($s['label']); ?></a></li>
@@ -319,7 +319,7 @@ body.page-template-template-mb-battery-type{overflow-x:hidden;-webkit-text-size-
 
 <section class="mbt-sec mbt-sec--white"><div class="mbt-sec__inner">
   <span class="mbt-sec__eyebrow">FAQ</span>
-  <h2 class="mbt-sec__h2"><?php echo $type_name; ?> — Common Questions</h2>
+  <h2 class="mbt-sec__h2"><?php echo $type_name; ?>: Common Questions</h2>
   <div class="mbt-faq">
     <?php foreach ($faqs as $i => $faq) : ?>
     <div class="mbt-faq__item<?php echo $i===0?' mbt-faq__item--open':''; ?>">

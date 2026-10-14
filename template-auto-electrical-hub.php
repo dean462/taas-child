@@ -84,7 +84,7 @@ $schema = [
             'name'        => 'Tony Allen Auto Service',
             'alternateName'=> 'TAAS Auto Electrical',
             'url'         => $site_url,
-            'description' => 'Auto electrical diagnosis and repair in Manukau, South Auckland. ECU diagnostics, battery, alternator, starter motor, ABS, SRS, wiring, central locking and more. Led by Raj — Lead Diagnostics & Auto Electrical Technician. Fault confirmed before parts replaced.',
+            'description' => 'Auto electrical diagnosis and repair in Manukau, South Auckland. ECU diagnostics, battery, alternator, starter motor, ABS, SRS, wiring, central locking and more. Led by Raj, Lead Diagnostics & Auto Electrical Technician. Fault confirmed before parts replaced.',
             'telephone'   => [$phone_free, $phone_local],
             'email'       => $email,
             'foundingDate'=> '1985-10',
@@ -292,9 +292,9 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
 <section class="aeh-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
   <div class="aeh-hero__inner">
     <div>
-      <span class="aeh-hero__eyebrow">Auto Electrical — Manukau</span>
-      <h1>Auto Electrician<br><span>Manukau — South Auckland</span></h1>
-      <p class="aeh-hero__sub">ECU diagnostics, battery, alternator, ABS, SRS, wiring and more — led by Raj, our Lead Diagnostics & Auto Electrical Technician. Fault confirmed before any parts are replaced. Serving <?php echo esc_html($customers); ?> customers across South Auckland since <?php echo esc_html($established); ?>.</p>
+      <span class="aeh-hero__eyebrow">Auto Electrical · Manukau</span>
+      <h1>Auto Electrician<br><span>Manukau, South Auckland</span></h1>
+      <p class="aeh-hero__sub">ECU diagnostics, battery, alternator, ABS, SRS, wiring and more. Led by Raj, our Lead Diagnostics & Auto Electrical Technician. Fault confirmed before any parts are replaced. Serving <?php echo esc_html($customers); ?> customers across South Auckland since <?php echo esc_html($established); ?>.</p>
       <div class="aeh-hero__ctas">
         <a href="#enquire" class="taas-btn taas-btn--primary">Book a Diagnostic</a>
         <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -347,26 +347,26 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
     <h2 class="aeh-sec__h2">Why Auto Electrical Is Different from Mechanical Repair</h2>
     <div class="aeh-edu">
       <div class="aeh-edu__text">
-        <p>Modern vehicles are built around electronics. What used to be a simple alternator-battery-starter circuit is now a network of 30 to 80 interconnected control units — engine management, transmission, ABS, SRS, body control, instrument cluster, comfort modules and more — all communicating across shared data networks.</p>
+        <p>Modern vehicles are built around electronics. What used to be a simple alternator-battery-starter circuit is now a network of 30 to 80 interconnected control units: engine management, transmission, ABS, SRS, body control, instrument cluster, comfort modules and more, all communicating across shared data networks.</p>
         <p>When something goes wrong in this network, symptoms can appear far from the actual fault. A wiring issue in the boot can disable the dashboard. A faulty earth connection on one module can cause intermittent faults across three others. A failing battery management sensor can trigger warning lights that look like engine problems.</p>
-        <p>This is why auto electrical diagnosis is fundamentally different from mechanical repair. With a mechanical fault — a worn brake pad, a leaking radiator — the symptom usually points directly to the problem. With an electrical fault, the symptom often has nothing to do with the root cause. Replacing parts based on a diagnostic code alone is like treating the thermometer instead of the fever.</p>
+        <p>This is why auto electrical diagnosis is fundamentally different from mechanical repair. With a mechanical fault (a worn brake pad, a leaking radiator) the symptom usually points directly to the problem. With an electrical fault, the symptom often has nothing to do with the root cause. Replacing parts based on a diagnostic code alone is like treating the thermometer instead of the fever.</p>
         <div class="aeh-edu__callout">
           <h3>The Scan vs the Diagnosis</h3>
-          <p>A scan reads the fault codes stored in the vehicle's control units — it tells you what the car is reporting. A diagnosis is the investigation that follows: testing the actual components, reading live sensor data, checking wiring, measuring voltage drops, and confirming which part has actually failed.</p>
-          <p>The scan gives us the starting point. The diagnosis gives us the answer. That distinction is why we price them separately — and why we get cars fixed first time.</p>
+          <p>A scan reads the fault codes stored in the vehicle's control units. It tells you what the car is reporting. A diagnosis is the investigation that follows: testing the actual components, reading live sensor data, checking wiring, measuring voltage drops, and confirming which part has actually failed.</p>
+          <p>The scan gives us the starting point. The diagnosis gives us the answer. That distinction is why we price them separately, and why we get cars fixed first time.</p>
         </div>
       </div>
       <div class="aeh-edu__panel">
-        <div class="aeh-edu__panel-title">Raj — Lead Diagnostics & Auto Electrical</div>
+        <div class="aeh-edu__panel-title">Raj: Lead Diagnostics & Auto Electrical</div>
         <ul class="aeh-edu__list">
-          <li>Lead diagnostics technician — all makes and models</li>
+          <li>Lead diagnostics technician for all makes and models</li>
           <li>Factory-spec scan tools including European</li>
           <li>Fault verified before parts recommended</li>
           <li>Live data and component-level testing</li>
           <li>Wiring fault tracing and repair</li>
           <li>CAN bus and network fault diagnosis</li>
-          <li>Fleet electrical work — account facilities</li>
-          <li>European vehicles — <?php echo esc_html($euro_brands); ?></li>
+          <li>Fleet electrical work with account facilities</li>
+          <li>European vehicles: <?php echo esc_html($euro_brands); ?></li>
         </ul>
       </div>
     </div>
@@ -379,22 +379,22 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
 <section class="aeh-sec aeh-sec--grey">
   <div class="aeh-sec__inner">
     <span class="aeh-sec__eyebrow">Services</span>
-    <h2 class="aeh-sec__h2">Auto Electrical Services — Manukau</h2>
+    <h2 class="aeh-sec__h2">Auto Electrical Services in Manukau</h2>
     <p class="aeh-sec__sub">All work carried out in-house at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow, #FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive</a>. No farming out, no guessing.</p>
     <div class="aeh-services">
       <a href="<?php echo esc_url($site_url . '/diagnostic-scanning/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('DS'); ?></div><div class="aeh-service__title">Diagnostic Scanning</div>
-        <p class="aeh-service__desc">ECU fault codes, live data, all modules. Factory-spec equipment — not a generic code reader.</p>
+        <p class="aeh-service__desc">ECU fault codes, live data, all modules. Factory-spec equipment, not a generic code reader.</p>
         <span class="aeh-service__link">Diagnostic Scanning →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/dashboard-warning-lights-manukau/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('DW'); ?></div><div class="aeh-service__title">Dashboard Warning Lights</div>
-        <p class="aeh-service__desc">Engine light, ABS, SRS, TPMS, oil — every warning light explained and diagnosed correctly.</p>
+        <p class="aeh-service__desc">Engine light, ABS, SRS, TPMS, oil. Every warning light explained and diagnosed correctly.</p>
         <span class="aeh-service__link">Warning Lights →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/car-wont-start-manukau/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('CS'); ?></div><div class="aeh-service__title">Car Won't Start</div>
-        <p class="aeh-service__desc">Dead flat, clicks but won't crank, cranks but won't fire — we diagnose the cause, not the symptom.</p>
+        <p class="aeh-service__desc">Dead flat, clicks but won't crank, cranks but won't fire. We diagnose the cause, not the symptom.</p>
         <span class="aeh-service__link">Car Won't Start →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/auto-electrical-battery/'); ?>" class="aeh-service">
@@ -414,7 +414,7 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
       </a>
       <a href="<?php echo esc_url($site_url . '/abs-fault-diagnosis-manukau/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('ABS'); ?></div><div class="aeh-service__title">ABS Fault Diagnosis</div>
-        <p class="aeh-service__desc">ABS warning light, wheel speed sensors, ABS module. Diagnosis here — mechanical repair at MBC.</p>
+        <p class="aeh-service__desc">ABS warning light, wheel speed sensors, ABS module. Diagnosis here, mechanical repair at MBC.</p>
         <span class="aeh-service__link">ABS Diagnosis →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/srs-airbag-repair-manukau/'); ?>" class="aeh-service">
@@ -424,7 +424,7 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
       </a>
       <a href="<?php echo esc_url($site_url . '/traction-stability-control-manukau/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('TCS'); ?></div><div class="aeh-service__title">Traction & Stability</div>
-        <p class="aeh-service__desc">ESC, TCS, VSC warning lights. Often shares sensors with ABS — diagnosed together.</p>
+        <p class="aeh-service__desc">ESC, TCS, VSC warning lights. Often shares sensors with ABS, so we diagnose them together.</p>
         <span class="aeh-service__link">Traction Control →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/egr-repair-manukau/'); ?>" class="aeh-service">
@@ -434,17 +434,17 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
       </a>
       <a href="<?php echo esc_url($site_url . '/auto-electrical-central-locking/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('CL'); ?></div><div class="aeh-service__title">Central Locking</div>
-        <p class="aeh-service__desc">Actuator failure, wiring fault, key fob programming. One door or all — diagnosed correctly.</p>
+        <p class="aeh-service__desc">Actuator failure, wiring fault, key fob programming. One door or all, diagnosed correctly.</p>
         <span class="aeh-service__link">Central Locking →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/electric-window-repair-manukau/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('EW'); ?></div><div class="aeh-service__title">Electric Windows</div>
-        <p class="aeh-service__desc">Motor, regulator, or switch fault. One window or all — fault identified before parts ordered.</p>
+        <p class="aeh-service__desc">Motor, regulator, or switch fault. One window or all, fault identified before parts ordered.</p>
         <span class="aeh-service__link">Window Repair →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/auto-electrical-immobiliser/'); ?>" class="aeh-service">
         <div class="aeh-service__icon"><?php echo aeh_badge('IK'); ?></div><div class="aeh-service__title">Immobiliser & Keys</div>
-        <p class="aeh-service__desc">Car won't start — immobiliser triggered. Key programming, transponder faults, bypass.</p>
+        <p class="aeh-service__desc">Car won't start: immobiliser triggered. Key programming, transponder faults, bypass.</p>
         <span class="aeh-service__link">Immobiliser →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/auto-electrical-lighting/'); ?>" class="aeh-service">
@@ -473,23 +473,23 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
   <div class="aeh-sec__inner">
     <span class="aeh-sec__eyebrow">What We See</span>
     <h2 class="aeh-sec__h2">Common Auto Electrical Problems in South Auckland</h2>
-    <p class="aeh-sec__sub">These are the most common auto electrical faults we diagnose and repair at TAAS. Most are straightforward once the fault is confirmed — the key is getting the diagnosis right first.</p>
+    <p class="aeh-sec__sub">These are the most common auto electrical faults we diagnose and repair at TAAS. Most are straightforward once the fault is confirmed. The key is getting the diagnosis right first.</p>
     <div class="aeh-problems">
       <div>
         <h3>Dashboard warning lights that won't clear</h3>
-        <p>The most common reason we see vehicles is a warning light that stays on — engine, ABS, SRS, TPMS, or oil. Some are stored codes from an old fault, some are active and need immediate attention. We scan all modules, not just the engine, and read the live data to tell the difference. A generic OBD reader gives you a code. We give you a diagnosis.</p>
+        <p>The most common reason we see vehicles is a warning light that stays on: engine, ABS, SRS, TPMS, or oil. Some are stored codes from an old fault, some are active and need immediate attention. We scan all modules, not just the engine, and read the live data to tell the difference. A generic OBD reader gives you a code. We give you a diagnosis.</p>
       </div>
       <div>
-        <h3>Car won't start — but the battery is fine</h3>
+        <h3>Car won't start, but the battery is fine</h3>
         <p>A flat battery is the obvious cause, but when the battery tests good and the car still won't start, you're into immobiliser faults, starter motor relay issues, fuel pump relay failures, or ECU communication problems. We test each system in order rather than replacing parts on a hunch. That approach saves you money and gets the car fixed first time.</p>
       </div>
       <div>
         <h3>Alternator not charging properly</h3>
-        <p>A failing alternator often shows up as a flat battery, dimming headlights, or a battery warning light. We load test the alternator before recommending replacement — sometimes it's a wiring issue or a failing voltage regulator, not the alternator itself. European vehicles need BMS registration after a new battery or alternator is fitted.</p>
+        <p>A failing alternator often shows up as a flat battery, dimming headlights, or a battery warning light. We load test the alternator before recommending replacement. Sometimes it's a wiring issue or a failing voltage regulator, not the alternator itself. European vehicles need BMS registration after a new battery or alternator is fitted.</p>
       </div>
       <div>
         <h3>Intermittent electrical faults</h3>
-        <p>Faults that come and go are the hardest to diagnose — but they're what Raj specialises in. Chafed wiring, corroded connectors, aftermarket accessories wired incorrectly, and rodent damage are all common causes. We trace the circuit, test under load, and find the root cause rather than applying a temporary fix that comes back in a month.</p>
+        <p>Faults that come and go are the hardest to diagnose, but they're what Raj specialises in. Chafed wiring, corroded connectors, aftermarket accessories wired incorrectly, and rodent damage are all common causes. We trace the circuit, test under load, and find the root cause rather than applying a temporary fix that comes back in a month.</p>
       </div>
     </div>
   </div>
@@ -501,20 +501,20 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
 <section class="aeh-sec aeh-sec--grey">
   <div class="aeh-sec__inner">
     <span class="aeh-sec__eyebrow">Pricing Guide</span>
-    <h2 class="aeh-sec__h2">Auto Electrical Pricing — Manukau</h2>
+    <h2 class="aeh-sec__h2">Auto Electrical Pricing in Manukau</h2>
     <p class="aeh-sec__sub">We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.</p>
     <div class="aeh-pricing">
       <div class="aeh-pricing__card">
         <div class="aeh-pricing__badge"><?php echo aeh_badge('DS', 48); ?></div>
         <div class="aeh-pricing__title">Diagnostic Scan</div>
         <div class="aeh-pricing__price"><?php echo esc_html($scan_price); ?></div>
-        <p class="aeh-pricing__desc">Read all fault codes across every module. Factory-spec equipment — not a generic code reader. Starting point for every auto electrical job.</p>
+        <p class="aeh-pricing__desc">Read all fault codes across every module. Factory-spec equipment, not a generic code reader. Starting point for every auto electrical job.</p>
       </div>
       <div class="aeh-pricing__card aeh-pricing__card--highlight">
         <div class="aeh-pricing__badge"><?php echo aeh_badge('FD', 48); ?></div>
         <div class="aeh-pricing__title">Full Diagnostic</div>
         <div class="aeh-pricing__price"><?php echo esc_html($autoelec_diag); ?></div>
-        <p class="aeh-pricing__desc">Live data analysis, component-level testing, wiring checks. The work that actually confirms the fault — not just reads the code.</p>
+        <p class="aeh-pricing__desc">Live data analysis, component-level testing, wiring checks. The work that actually confirms the fault, not just reads the code.</p>
       </div>
       <div class="aeh-pricing__card">
         <div class="aeh-pricing__badge"><?php echo aeh_badge('CB', 48); ?></div>
@@ -523,14 +523,14 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
         <p class="aeh-pricing__desc">Load tested, fitted, terminals cleaned. BMS registration for European vehicles included. Charging system checked before replacement.</p>
       </div>
     </div>
-    <p class="aeh-pricing__note">Individual system tests (alternator, starter motor, ABS, SRS, lighting, wiring) start <?php echo esc_html($alt_test); ?>. Repair costs depend on the fault and parts required — we provide an estimate before proceeding. All pricing includes GST.</p>
+    <p class="aeh-pricing__note">Individual system tests (alternator, starter motor, ABS, SRS, lighting, wiring) start <?php echo esc_html($alt_test); ?>. Repair costs depend on the fault and parts required. We provide an estimate before proceeding. All pricing includes GST.</p>
   </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════
      7. ENQUIRY — immediately after pricing
      ═══════════════════════════════════════════════════════════════════════════ -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong>: interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="aeh-sec aeh-sec--dark" id="enquire">
   <div class="aeh-sec__inner">
     <div class="aeh-enquiry">
@@ -622,7 +622,7 @@ body.page-template-template-auto-electrical-hub { overflow-x:hidden;-webkit-text
 <section class="aeh-sec aeh-sec--white">
   <div class="aeh-sec__inner">
     <span class="aeh-sec__eyebrow">FAQ</span>
-    <h2 class="aeh-sec__h2">Common Questions — Auto Electrical</h2>
+    <h2 class="aeh-sec__h2">Common Questions: Auto Electrical</h2>
     <div class="aeh-faq">
       <?php foreach ($faqs as $i => $faq) : ?>
       <div class="aeh-faq__item">

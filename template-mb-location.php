@@ -79,8 +79,8 @@ $distance_text = (strpos($distance, 'from') !== false) ? $distance : $distance .
 // ── Type config ──────────────────────────────────────────────────────────────
 $type_configs = [
     'Car'=>['tagline'=>'Standard, EFB, AGM and stop-start batteries for all cars. Matched to your vehicle spec.','price_note'=>'Car batteries from $'.$price_from.' fitted','chips'=>['Standard','EFB','AGM','Stop-Start']],
-    '4WD'=>['tagline'=>'High-CCA batteries for 4WDs, utes and SUVs. Hilux, Ranger, Navara, D-MAX — stock held.','price_note'=>'4WD batteries from $'.$price_from.' fitted','chips'=>['4WD','SUV','Ute','Diesel']],
-    'AGM'=>['tagline'=>'Stop-start vehicle specialists. Correct AGM spec matched. BMS registration included for European vehicles.','price_note'=>'AGM batteries from $'.$price_from.' fitted — BMS reg included','chips'=>['AGM','EFB','Stop-Start','BMS Reg']],
+    '4WD'=>['tagline'=>'High-CCA batteries for 4WDs, utes and SUVs. Hilux, Ranger, Navara, D-MAX. Stock held.','price_note'=>'4WD batteries from $'.$price_from.' fitted','chips'=>['4WD','SUV','Ute','Diesel']],
+    'AGM'=>['tagline'=>'Stop-start vehicle specialists. Correct AGM spec matched. BMS registration included for European vehicles.','price_note'=>'AGM batteries from $'.$price_from.' fitted, BMS reg included','chips'=>['AGM','EFB','Stop-Start','BMS Reg']],
     'Marine'=>['tagline'=>'Starting, deep cycle and dual-purpose marine batteries for boats and jet skis.','price_note'=>'Marine batteries from $'.$price_from,'chips'=>['Starting','Deep Cycle','Dual Purpose']],
 ];
 $config     = isset($type_configs[$battery_type]) ? $type_configs[$battery_type] : $type_configs['Car'];
@@ -102,17 +102,17 @@ $faqs = [];
 if ($faq_q1 && $faq_a1) { $faqs[] = ['q'=>$faq_q1,'a'=>$faq_a1]; }
 if ($faq_q2 && $faq_a2) { $faqs[] = ['q'=>$faq_q2,'a'=>$faq_a2]; }
 $faqs[] = ['q'=>'How much does a '.$battery_type_lower.' battery cost fitted near '.$suburb_name.'?','a'=>$price_note.'. The exact price depends on your vehicle specification. Call '.$phone_free.' with your registration number and we will confirm before you come in.'];
-$faqs[] = ['q'=>'Can I get a battery fitted same day near '.$suburb_name.'?','a'=>'In most cases yes. We carry a full range at 139 Cavendish Drive, Manukau — '.$distance_text.'. Call ahead on '.$phone_local.' to confirm stock.'];
-$faqs[] = ['q'=>'Do you offer free battery testing near '.$suburb_name.'?','a'=>'Yes — free load test, voltage check, and cranking amp assessment. No appointment needed. When we fit a new battery, we also test your alternator to make sure it is charging properly and the new battery will not be let down.'];
+$faqs[] = ['q'=>'Can I get a battery fitted same day near '.$suburb_name.'?','a'=>'In most cases yes. We carry a full range at 139 Cavendish Drive, Manukau, '.$distance_text.'. Call ahead on '.$phone_local.' to confirm stock.'];
+$faqs[] = ['q'=>'Do you offer free battery testing near '.$suburb_name.'?','a'=>'Yes. Free load test, voltage check and cranking amp assessment. No appointment needed. When we fit a new battery, we also test your alternator to make sure it is charging properly and the new battery will not be let down.'];
 if ($battery_type === 'Car' || $battery_type === 'AGM') {
     $faqs[] = ['q'=>'Do European cars need battery registration?','a'=>'Yes. BMW, Mercedes-Benz, Audi, Volkswagen, Volvo, and most European vehicles have a BMS that must be updated when a new battery is fitted. BMS registration included at Manukau Batteries.'];
 }
 $faqs[] = ['q'=>'What if my battery keeps going flat?','a'=>'Often an alternator fault, not a battery problem. We test both before recommending replacement.'];
-$faqs[] = ['q'=>'How far is Manukau Batteries from '.$suburb_name.'?','a'=>'We are at 139 Cavendish Drive, Manukau — '.$distance_text.'. Open '.$hours.'. We serve '.$area_served.'.'];
-$faqs[] = ['q'=>'What battery brands do you stock?','a'=>'Neuton Power (our preferred brand — full range stocked), Bosch through YHI Automotive NZ, SuperCharge, R&J Batteries, and HCB.'];
-$faqs[] = ['q'=>'Can I pay with Afterpay?','a'=>'Yes — we accept Afterpay, Q Card, GEM Finance, and Aotea Finance.'];
-$faqs[] = ['q'=>'Do you recycle old batteries?','a'=>'Yes — old batteries collected and recycled at no charge with every supply and fit.'];
-$faqs[] = ['q'=>'Where exactly is Manukau Batteries?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104 — '.$distance_text.'. Open '.$hours.'. Call '.$phone_free.'.'];
+$faqs[] = ['q'=>'How far is Manukau Batteries from '.$suburb_name.'?','a'=>'We are at 139 Cavendish Drive, Manukau, '.$distance_text.'. Open '.$hours.'. We serve '.$area_served.'.'];
+$faqs[] = ['q'=>'What battery brands do you stock?','a'=>'Neuton Power (our preferred brand, full range stocked), Bosch through YHI Automotive NZ, SuperCharge, R&J Batteries, and HCB.'];
+$faqs[] = ['q'=>'Can I pay with Afterpay?','a'=>'Yes. We accept Afterpay, Q Card, GEM Finance, and Aotea Finance.'];
+$faqs[] = ['q'=>'Do you recycle old batteries?','a'=>'Yes. Old batteries are collected and recycled at no charge with every supply and fit.'];
+$faqs[] = ['q'=>'Where exactly is Manukau Batteries?','a'=>'139 Cavendish Drive, Manukau, Auckland 2104, '.$distance_text.'. Open '.$hours.'. Call '.$phone_free.'.'];
 
 // Schema — no fn() arrow functions
 $schema_faqs = [];
@@ -124,7 +124,7 @@ $schema = ['@context'=>'https://schema.org','@graph'=>[
         ['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],
         ['@type'=>'ListItem','position'=>2,'name'=>'Manukau Batteries','item'=>$site_url.'/manukau-batteries/'],
         ['@type'=>'ListItem','position'=>3,'name'=>$h1,'item'=>$page_url]]],
-    ['@type'=>['AutoPartsStore','LocalBusiness'],'@id'=>$site_url.'/#manukau-batteries','name'=>'Manukau Batteries — Tony Allen Auto Service','url'=>$site_url.'/manukau-batteries/',
+    ['@type'=>['AutoPartsStore','LocalBusiness'],'@id'=>$site_url.'/#manukau-batteries','name'=>'Manukau Batteries (Tony Allen Auto Service)','url'=>$site_url.'/manukau-batteries/',
      'telephone'=>[$phone_free,$phone_local],'email'=>defined('TAAS_EMAIL')?TAAS_EMAIL:'enquiries@taas.co.nz','foundingDate'=>'1985-10',
      'address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],
      'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],
@@ -197,9 +197,9 @@ body.page-template-template-mb-location{overflow-x:hidden;-webkit-text-size-adju
 </style>
 
 <section class="mbl-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="mbl-hero__inner">
-  <span class="mbl-hero__eyebrow"><?php echo esc_html($battery_type); ?> Battery — <?php echo esc_html($suburb_name); ?></span>
+  <span class="mbl-hero__eyebrow"><?php echo esc_html($battery_type); ?> Battery · <?php echo esc_html($suburb_name); ?></span>
   <h1><?php echo esc_html($h1); ?><br><span>Supply &amp; Fit</span></h1>
-  <p class="mbl-hero__sub"><?php echo esc_html($config['tagline']); ?> Authorised Neuton Power and Bosch dealer — <?php echo esc_html($distance_text); ?>. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+  <p class="mbl-hero__sub"><?php echo esc_html($config['tagline']); ?> Authorised Neuton Power and Bosch dealer, <?php echo esc_html($distance_text); ?>. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
   <div class="mbl-hero__price"><?php echo esc_html($price_note); ?></div>
   <div class="mbl-hero__ctas">
     <a href="#enquire" class="taas-btn taas-btn--primary">Get an Estimate</a>
@@ -218,8 +218,8 @@ body.page-template-template-mb-location{overflow-x:hidden;-webkit-text-size-adju
 <section class="mbl-sec mbl-sec--white"><div class="mbl-sec__inner">
   <span class="mbl-sec__eyebrow"><?php echo esc_html($battery_type); ?> Battery for <?php echo esc_html($suburb_name); ?></span>
   <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery Near <?php echo esc_html($suburb_name); ?></h2>
-  <p class="mbl-sec__body">Manukau Batteries provides <?php echo esc_html($battery_type_lower); ?> battery supply and fit from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a> — <?php echo esc_html($distance_text); ?>. We test before we recommend, match the correct specification for your vehicle, and fit on the spot in most cases.</p>
-  <p class="mbl-sec__body">We serve <?php echo esc_html($area_served); ?> with authorised Neuton Power and Bosch batteries through YHI Automotive NZ. Free battery, alternator, and starter motor testing — no appointment needed. Walk-ins welcome. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> with your registration number for pricing.</p>
+  <p class="mbl-sec__body">Manukau Batteries provides <?php echo esc_html($battery_type_lower); ?> battery supply and fit from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>, <?php echo esc_html($distance_text); ?>. We test before we recommend, match the correct specification for your vehicle, and fit on the spot in most cases.</p>
+  <p class="mbl-sec__body">We serve <?php echo esc_html($area_served); ?> with authorised Neuton Power and Bosch batteries through YHI Automotive NZ. Free battery, alternator, and starter motor testing. No appointment needed. Walk-ins welcome. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> with your registration number for pricing.</p>
 </div></section>
 
 <section class="mbl-sec mbl-sec--grey"><div class="mbl-sec__inner">
@@ -231,12 +231,12 @@ body.page-template-template-mb-location{overflow-x:hidden;-webkit-text-size-adju
   </div>
 </div></section>
 
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="mbl-sec mbl-sec--dark" id="enquire"><div class="mbl-sec__inner">
   <div class="mbl-enquiry">
     <div>
       <span class="mbl-sec__eyebrow">Get an Estimate</span>
-      <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery — Enquire</h2>
+      <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery: Enquire</h2>
       <p style="font-size:16px;color:#aaa;line-height:1.75;margin-bottom:8px;">Tell us your vehicle make, model and year. We will confirm stock and pricing.</p>
       <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="mbl-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
       <div class="mbl-enquiry__detail"><strong>Manukau Batteries</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;"><?php echo esc_html($address); ?></a><br><?php echo esc_html($hours); ?></div>
@@ -247,7 +247,7 @@ body.page-template-template-mb-location{overflow-x:hidden;-webkit-text-size-adju
 
 <section class="mbl-sec mbl-sec--grey"><div class="mbl-sec__inner">
   <span class="mbl-sec__eyebrow">Near You</span>
-  <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery — South Auckland</h2>
+  <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery in South Auckland</h2>
   <ul class="mbl-pills">
     <?php foreach ($suburbs_master as $slug => $data) :
       $is_current = ($slug === $suburb_slug);
@@ -260,7 +260,7 @@ body.page-template-template-mb-location{overflow-x:hidden;-webkit-text-size-adju
 
 <section class="mbl-sec mbl-sec--white"><div class="mbl-sec__inner">
   <span class="mbl-sec__eyebrow">FAQ</span>
-  <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery — <?php echo esc_html($suburb_name); ?> Questions</h2>
+  <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery: <?php echo esc_html($suburb_name); ?> Questions</h2>
   <div class="mbl-faq">
     <?php foreach ($faqs as $i => $faq) : ?>
     <div class="mbl-faq__item<?php echo $i===0?' mbl-faq__item--open':''; ?>">

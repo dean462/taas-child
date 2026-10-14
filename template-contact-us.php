@@ -579,7 +579,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
             <div class="cu-step__num">2</div>
             <div class="cu-step__text">
               <strong>We look up your vehicle</strong>
-              Your rego lets us check your make, model, and year before we call — so we can give you accurate pricing.
+              Your rego lets us check your make, model, and year before we call, so we can give you accurate pricing.
             </div>
           </div>
           <div class="cu-step">
@@ -626,7 +626,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <div class="cu-why-item">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
         <h3>Seven Specialist Divisions</h3>
-        <p><?php echo esc_html($divisions); ?> — all under one roof in Manukau.</p>
+        <p><?php echo esc_html($divisions); ?>, all under one roof in Manukau.</p>
       </div>
       <div class="cu-why-item">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="m9 12 2 2 4-4"/></svg>

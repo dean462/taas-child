@@ -37,42 +37,42 @@ $budget_brands = [
 ];
 
 $mid_brands = [
-    ['name' => 'Maxxis',   'note' => 'Taiwanese — strong mid-range across all types'],
+    ['name' => 'Maxxis',   'note' => 'Taiwanese. Strong mid-range across all types'],
     ['name' => 'Nitto',    'note' => 'Japanese heritage, good SUV and 4WD range'],
-    ['name' => 'Hankook',  'note' => 'Korean — OEM supplier to major manufacturers'],
+    ['name' => 'Hankook',  'note' => 'Korean. OEM supplier to major manufacturers'],
 ];
 
 $premium_brands = [
-    ['name' => 'Toyo',       'note' => 'Japanese — performance and all-terrain range'],
-    ['name' => 'Pirelli',    'note' => 'Italian — OEM on European and performance vehicles'],
-    ['name' => 'Goodyear',   'note' => 'American — strong wet weather performance'],
-    ['name' => 'Continental','note' => 'German — OEM on BMW, Mercedes, Audi'],
+    ['name' => 'Toyo',       'note' => 'Japanese. Performance and all-terrain range'],
+    ['name' => 'Pirelli',    'note' => 'Italian. OEM on European and performance vehicles'],
+    ['name' => 'Goodyear',   'note' => 'American. Strong wet weather performance'],
+    ['name' => 'Continental','note' => 'German. OEM on BMW, Mercedes, Audi'],
 ];
 
 $faqs = [
     [
         'q' => 'Are budget tyres safe in New Zealand?',
-        'a' => 'Yes — if they meet NZ road standards, which all tyres we stock do. Budget tyres are perfectly adequate for everyday city and commuter driving. The main differences between budget and premium are wet grip performance at high speed, tread life, and road noise. For a second car doing short urban trips at moderate speeds, budget tyres are a sensible and safe choice. We recommend them honestly when they suit the vehicle and how it\'s used.',
+        'a' => 'Yes, if they meet NZ road standards, which all tyres we stock do. Budget tyres are perfectly adequate for everyday city and commuter driving. The main differences between budget and premium are wet grip performance at high speed, tread life, and road noise. For a second car doing short urban trips at moderate speeds, budget tyres are a sensible and safe choice. We recommend them honestly when they suit the vehicle and how it\'s used.',
     ],
     [
         'q' => 'What is the cheapest tyre I can get in Manukau?',
-        'a' => 'Pricing varies by size — call us on ' . $phone_local . ' with your tyre size and we\'ll give you an estimate. We stock budget options from brands including Farroad, Radar, Nankang, and Hifly. Balancing is included in the price.',
+        'a' => 'Pricing varies by size. Call us on ' . $phone_local . ' with your tyre size and we\'ll give you an estimate. We stock budget options from brands including Farroad, Radar, Nankang, and Hifly. Balancing is included in the price.',
     ],
     [
         'q' => 'What\'s the difference between budget and premium tyres?',
-        'a' => 'The main differences are wet braking distance, tread life, and road noise. Tests consistently show premium tyres stop shorter in the wet — in some cases several car lengths. For high-speed motorway driving or a vehicle used heavily in wet conditions, that difference matters. For urban city driving at lower speeds, budget tyres perform adequately. We\'ll give you an honest recommendation based on your vehicle and how you use it.',
+        'a' => 'The main differences are wet braking distance, tread life, and road noise. Tests consistently show premium tyres stop shorter in the wet, in some cases by several car lengths. For high-speed motorway driving or a vehicle used heavily in wet conditions, that difference matters. For urban city driving at lower speeds, budget tyres perform adequately. We\'ll give you an honest recommendation based on your vehicle and how you use it.',
     ],
     [
         'q' => 'Is wheel balancing included when you fit budget tyres?',
-        'a' => 'Yes — balancing is included with every tyre fit regardless of brand or price point. We balance all four wheels on our ER85 touchscreen balancer as standard.',
+        'a' => 'Yes. Balancing is included with every tyre fit regardless of brand or price point. We balance all four wheels on our ER85 touchscreen balancer as standard.',
     ],
     [
         'q' => 'Should I get a wheel alignment with new budget tyres?',
-        'a' => 'Yes — alignment matters more with budget tyres, not less. Budget tyres already have shorter tread life than premium options. Running them on a misaligned vehicle accelerates wear even faster, meaning you\'ll need to replace them sooner. Alignment is ' . $alignment_price . ' and is available on the same visit.',
+        'a' => 'Yes. Alignment matters more with budget tyres, not less. Budget tyres already have shorter tread life than premium options. Running them on a misaligned vehicle accelerates wear even faster, meaning you\'ll need to replace them sooner. Alignment is ' . $alignment_price . ' and is available on the same visit.',
     ],
     [
         'q' => 'Do you fit budget tyres on all vehicle types?',
-        'a' => 'Yes — cars, SUVs, vans and utes. Budget tyre availability varies by size — larger and less common sizes may only be available in mid-range or premium. Call us on ' . $phone_local . ' with your size and we\'ll confirm what\'s in stock.',
+        'a' => 'Yes: cars, SUVs, vans and utes. Budget tyre availability varies by size. Larger and less common sizes may only be available in mid-range or premium. Call us on ' . $phone_local . ' with your size and we\'ll confirm what\'s in stock.',
     ],
 ];
 
@@ -219,11 +219,11 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span>Budget Tyres Manukau</span>
             </nav>
             <div>
-                <span class="bt-ey bt-ey--yellow">Tyre Centre — Manukau</span>
+                <span class="bt-ey bt-ey--yellow">Tyre Centre · Manukau</span>
                 <h1 class="bt-h1">Budget Tyres<br><em>Manukau</em></h1>
                 <p class="bt-hero__sub">
                     Safe, affordable tyres from brands including Farroad, Radar, Nankang, and Hifly.
-                    Balancing included. Fitted at 139 Cavendish Drive — call us with your tyre size for availability and pricing.
+                    Balancing included. Fitted at 139 Cavendish Drive. Call us with your tyre size for availability and pricing.
                 </p>
                 <div class="bt-hero__btns">
                     <a href="#bt-booking" class="bt-btn bt-btn--primary">Get a Price</a>
@@ -233,12 +233,12 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div class="bt-hero__card">
                 <h3>Budget Tyres Include</h3>
                 <ul>
-                    <li>Wheel balancing — no extra charge</li>
+                    <li>Wheel balancing at no extra charge</li>
                     <li>All common passenger sizes</li>
                     <li>Farroad, Radar, Nankang, Hifly</li>
                     <li>Fit while you wait or drop and collect</li>
                     <li>Alignment available same visit</li>
-                    <li>Honest advice — no upsell pressure</li>
+                    <li>Honest advice, no upsell pressure</li>
                 </ul>
                 <div class="bt-hero__phone">
                     <span style="font-size:12px;color:#555;display:block;margin-bottom:4px;">Call for pricing</span>
@@ -277,9 +277,9 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span class="bt-ey bt-ey--dark">Straight Talk</span>
                 <h2 class="bt-h2" id="bt-honest-h2">What Budget Tyres Actually Mean</h2>
                 <div class="bt-honest__body">
-                    <p>Budget tyres are made by smaller manufacturers — often in China, Taiwan, or the UAE — at lower production costs. They meet New Zealand road safety standards and are perfectly adequate for everyday city and commuter driving.</p>
-                    <p>The main differences versus premium tyres are wet braking distance, tread life, and road noise. Independent tests show premium tyres stop shorter in wet conditions — sometimes by several car lengths at motorway speeds. For urban driving at lower speeds, that gap is less significant.</p>
-                    <p>We recommend budget tyres honestly when they suit the vehicle and how it's used. We recommend upgrading when they don't — for example, on vehicles that regularly travel motorway speeds in wet conditions, or where tread life matters more than upfront cost.</p>
+                    <p>Budget tyres are made by smaller manufacturers, often in China, Taiwan or the UAE, at lower production costs. They meet New Zealand road safety standards and are perfectly adequate for everyday city and commuter driving.</p>
+                    <p>The main differences versus premium tyres are wet braking distance, tread life, and road noise. Independent tests show premium tyres stop shorter in wet conditions, sometimes by several car lengths at motorway speeds. For urban driving at lower speeds, that gap is less significant.</p>
+                    <p>We recommend budget tyres honestly when they suit the vehicle and how it's used. We recommend upgrading when they don't. For example, on vehicles that regularly travel motorway speeds in wet conditions, or where tread life matters more than upfront cost.</p>
                 </div>
             </div>
             <div class="bt-callout">
@@ -309,7 +309,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
 <section class="bt-brands" aria-labelledby="bt-brands-h2">
     <div class="bt-w">
         <span class="bt-ey bt-ey--dark">What We Stock</span>
-        <h2 class="bt-h2" id="bt-brands-h2">Budget, Mid-Range &amp; Premium — All Available</h2>
+        <h2 class="bt-h2" id="bt-brands-h2">Budget, Mid-Range &amp; Premium: All Available</h2>
         <p class="bt-lead">We stock across all three tiers. Call with your tyre size and we'll tell you what's available at each price point.</p>
         <div class="bt-brands__tiers">
             <div class="bt-tier">
@@ -364,7 +364,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
         <div class="bt-upsell__inner">
             <div>
                 <h3>Get Alignment Done at the Same Time</h3>
-                <p>Budget tyres have shorter tread life than premium. Running them on a misaligned vehicle shortens that life further — sometimes significantly. We recommend checking alignment whenever new tyres are fitted. <?php echo esc_html($alignment_price); ?>. Same visit, no extra trip.</p>
+                <p>Budget tyres have shorter tread life than premium. Running them on a misaligned vehicle shortens that life further, sometimes by a lot. We recommend checking alignment whenever new tyres are fitted. <?php echo esc_html($alignment_price); ?>. Same visit, no extra trip.</p>
             </div>
             <div style="display:flex;flex-direction:column;gap:10px;min-width:220px;">
                 <a href="<?php echo esc_url($site_url . '/wheel-alignment-manukau/'); ?>" class="bt-btn bt-btn--primary">Wheel Alignment →</a>
@@ -394,12 +394,12 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div>
                 <span class="bt-ey bt-ey--dark">Get a Price</span>
                 <h2 class="bt-h2" id="bt-booking-h2">Enquire About Budget Tyres</h2>
-                <p class="bt-lead">Tell us your tyre size and vehicle — we'll confirm availability, give you pricing across all tiers, and book you in. Or call <?php echo esc_html($phone_local); ?> directly.</p>
+                <p class="bt-lead">Tell us your tyre size and vehicle. We'll confirm availability, give you pricing across all tiers, and book you in. Or call <?php echo esc_html($phone_local); ?> directly.</p>
                 <ul class="bt-booking__checks">
                     <li><?php echo esc_html($hours); ?></li>
                     <li>139 Cavendish Drive, Manukau</li>
                     <li>Balancing included with every fit</li>
-                    <li>No upsell — honest pricing across all tiers</li>
+                    <li>No upsell, honest pricing across all tiers</li>
                     <li>We confirm within 1 business hour</li>
                 </ul>
             </div>

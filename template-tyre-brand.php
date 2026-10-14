@@ -43,9 +43,9 @@ $tier_labels = ['budget'=>'Budget','mid'=>'Mid-Range','premium'=>'Premium','mid-
 $tier_label  = isset($tier_labels[$brand_tier]) ? $tier_labels[$brand_tier] : ucfirst($brand_tier);
 
 $faqs = [
-    ['q'=>"Do you carry {$brand_name} tyres?",'a'=>"Yes. We stock {$brand_name} tyres across a wide range of sizes and patterns. Use the catalogue below or our tyre finder to check availability in your size."],
+    ['q'=>"Do you carry {$brand_name} tyres?",'a'=>"Yes. We stock {$brand_name} tyres in a good spread of sizes and patterns. Use the catalogue below or our tyre finder to check availability in your size."],
     ['q'=>"How much do {$brand_name} tyres cost?",'a'=>"Pricing depends on size and pattern. Contact us on " . TAAS_PHONE_FREE . " with your tyre size or rego for an estimate. Finance available via Afterpay, Q Card and GEM Finance."],
-    ['q'=>"Do you fit and balance {$brand_name} tyres?",'a'=>"Yes — supply, fit, balance and alignment all done on-site. One stop, one visit."],
+    ['q'=>"Do you fit and balance {$brand_name} tyres?",'a'=>"Yes. Supply, fit, balance and alignment are all done on-site. One stop, one visit."],
     ['q'=>"Can you order a {$brand_name} size not shown?",'a'=>"We can source most sizes through our supplier network. Call " . TAAS_PHONE_FREE . " with the size you need."],
     ['q'=>"Where is your tyre shop?",'a'=>"139 Cavendish Drive, Manukau, Auckland 2104. Open " . TAAS_HOURS . ". Call " . TAAS_PHONE_FREE . "."],
 ];
@@ -143,8 +143,8 @@ body.page-template-template-tyre-brand{overflow-x:hidden;}
 
 <section class="tbp-hero">
   <div class="tbp-hero__inner">
-    <span class="tbp-hero__eyebrow">Tyre Brands — <?php echo esc_html($brand_name); ?></span>
-    <h1><?php echo esc_html($brand_name); ?> Tyres<br><span>Manukau — South Auckland</span></h1>
+    <span class="tbp-hero__eyebrow">Tyre Brands · <?php echo esc_html($brand_name); ?></span>
+    <h1><?php echo esc_html($brand_name); ?> Tyres<br><span>Manukau, South Auckland</span></h1>
     <p class="tbp-hero__sub"><?php echo $brand_summary ? wp_kses_post($brand_summary) : esc_html($brand_name) . ' tyres supplied, fitted and balanced at 139 Cavendish Drive, Manukau. ' . esc_html($tier_label) . ' range.'; ?></p>
     <div class="tbp-hero__ctas">
       <a href="#enquire" class="taas-btn taas-btn--primary">Get an Estimate</a>
@@ -167,7 +167,7 @@ body.page-template-template-tyre-brand{overflow-x:hidden;}
 <section class="tbp-section tbp-section--white">
   <div class="tbp-section__inner">
     <span class="tbp-section__eyebrow">About <?php echo esc_html($brand_name); ?></span>
-    <h2 class="tbp-section__heading"><?php echo esc_html($brand_name); ?> — <?php echo esc_html($brand_origin); ?></h2>
+    <h2 class="tbp-section__heading"><?php echo esc_html($brand_name); ?>: <?php echo esc_html($brand_origin); ?></h2>
     <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;max-width:720px;">
       <?php foreach ($strengths as $s) : ?>
       <li style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:15px;color:var(--taas-body,#333);padding-left:20px;position:relative;line-height:1.5;"><span style="position:absolute;left:0;color:var(--taas-yellow,#FFC800);font-weight:700;">✓</span><?php echo esc_html($s); ?></li>
@@ -180,8 +180,8 @@ body.page-template-template-tyre-brand{overflow-x:hidden;}
 <section class="tbp-section tbp-section--grey">
   <div class="tbp-section__inner">
     <span class="tbp-section__eyebrow">Catalogue</span>
-    <h2 class="tbp-section__heading"><?php echo esc_html($brand_name); ?> Tyres — Available Sizes</h2>
-    <p class="tbp-section__sub">Showing all <?php echo esc_html($brand_name); ?> tyres in our catalogue. Contact us for pricing — <?php echo esc_html(TAAS_PHONE_FREE); ?>.</p>
+    <h2 class="tbp-section__heading"><?php echo esc_html($brand_name); ?> Tyres: Available Sizes</h2>
+    <p class="tbp-section__sub">Showing all <?php echo esc_html($brand_name); ?> tyres in our catalogue. Contact us for pricing on <?php echo esc_html(TAAS_PHONE_FREE); ?>.</p>
     <div id="tbp-catalogue" class="tbp-catalogue"><p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;color:var(--taas-mid,#666);">Loading catalogue...</p></div>
   </div>
 </section>
@@ -205,7 +205,7 @@ body.page-template-template-tyre-brand{overflow-x:hidden;}
   <div class="tbp-section__inner">
     <div class="tbp-faq">
       <span class="tbp-section__eyebrow">FAQ</span>
-      <h2 class="tbp-section__heading"><?php echo esc_html($brand_name); ?> Tyres — Questions</h2>
+      <h2 class="tbp-section__heading"><?php echo esc_html($brand_name); ?> Tyres: Questions</h2>
       <div class="tbp-faq__list">
         <?php foreach ($faqs as $faq) : ?>
         <div class="tbp-faq__item">
@@ -241,7 +241,7 @@ body.page-template-template-tyre-brand{overflow-x:hidden;}
     var tyres = groups[rim];
     tyres.sort(function(a,b){ return (a.size||'').localeCompare(b.size||''); });
     html += '<div class="tbp-rim-group">';
-    html += '<div class="tbp-rim-group__title">R' + rim + ' — ' + tyres.length + ' sizes</div>';
+    html += '<div class="tbp-rim-group__title">R' + rim + ': ' + tyres.length + ' sizes</div>';
     html += '<table class="tbp-table"><thead><tr><th>Size</th><th>Pattern</th><th>Load</th><th>Stock</th></tr></thead><tbody>';
     tyres.forEach(function(t){
       var stock = t.instock ? '<span class="tbp-stock-yes">In Stock</span>' : '<span class="tbp-stock-no">Order In</span>';

@@ -29,30 +29,30 @@ $years_trading = date('Y') - intval($established);
 $patterns = [
     ['name'=>'Forward Cross','desc'=>'Front tyres move straight back. Rears cross to opposite sides going forward. Common on FWD vehicles.','best'=>'Front-wheel drive cars'],
     ['name'=>'Rearward Cross','desc'=>'Rear tyres move straight forward. Fronts cross to opposite sides going rearward. Mirrors the forward cross.','best'=>'RWD and 4WD vehicles'],
-    ['name'=>'X-Pattern','desc'=>'All four tyres cross diagonally. Front-left to rear-right, front-right to rear-left.','best'=>'FWD vehicles — more aggressive equalisation'],
+    ['name'=>'X-Pattern','desc'=>'All four tyres cross diagonally. Front-left to rear-right, front-right to rear-left.','best'=>'FWD vehicles: more aggressive equalisation'],
     ['name'=>'Side-to-Side','desc'=>'Tyres swap left-to-right only. Used for directional tyres or staggered fitments where front and rear sizes differ.','best'=>'Vehicles with different front/rear sizes'],
 ];
 
 $faqs = [
     [
         'q' => 'How often should I rotate my tyres?',
-        'a' => 'Every 8,000–10,000km is a common recommendation, or at each service. The exact interval depends on your vehicle, driving style, and tyre type. Front-wheel drive vehicles wear front tyres significantly faster — more frequent rotation is beneficial. Check your vehicle owner\'s manual for the manufacturer\'s recommendation.',
+        'a' => 'Every 8,000–10,000km is a common recommendation, or at each service. The exact interval depends on your vehicle, driving style, and tyre type. Front-wheel drive vehicles wear front tyres significantly faster, so more frequent rotation is beneficial. Check your vehicle owner\'s manual for the manufacturer\'s recommendation.',
     ],
     [
         'q' => 'What does tyre rotation actually do?',
-        'a' => 'Tyre rotation moves tyres to different positions on the vehicle so they wear more evenly across the full set. Front tyres typically wear faster on front-wheel drive vehicles due to steering and power delivery. Rotating tyres evens out this differential wear — extending the life of the full set and ensuring they wear out around the same time.',
+        'a' => 'Tyre rotation moves tyres to different positions on the vehicle so they wear more evenly across the full set. Front tyres typically wear faster on front-wheel drive vehicles due to steering and power delivery. Rotating tyres evens out this differential wear. It extends the life of the full set so they wear out around the same time.',
     ],
     [
         'q' => 'Can I rotate directional tyres?',
-        'a' => 'Directional tyres — those with a V-shaped tread pattern designed to roll in one direction — can only be rotated front-to-back on the same side. They cannot be crossed over to the opposite side without dismounting and re-mounting the tyre on the rim. We can do this if needed — call us on ' . $phone_local . '.',
+        'a' => 'Directional tyres (those with a V-shaped tread pattern designed to roll in one direction) can only be rotated front-to-back on the same side. They cannot be crossed over to the opposite side without dismounting and re-mounting the tyre on the rim. We can do this if needed. Call us on ' . $phone_local . '.',
     ],
     [
         'q' => 'Do you rebalance tyres after rotation?',
-        'a' => 'We recommend it — and we\'ll advise you at the time based on how the tyres are wearing. If a tyre has developed a flat spot or has been wearing unevenly, rebalancing after rotation is worth doing. We can combine rotation and balance in one visit.',
+        'a' => 'We recommend it, and we\'ll advise you at the time based on how the tyres are wearing. If a tyre has developed a flat spot or has been wearing unevenly, rebalancing after rotation is worth doing. We can combine rotation and balance in one visit.',
     ],
     [
         'q' => 'Can I rotate tyres if the front and rear are different sizes?',
-        'a' => 'If your vehicle has a staggered fitment — different sizes front and rear, common on performance and European vehicles — straight rotation is not possible. A side-to-side swap may be possible if the tyres are non-directional. Directional tyres would need to be dismounted and remounted to swap sides. Call us on ' . $phone_local . ' with your vehicle details.',
+        'a' => 'If your vehicle has a staggered fitment (different sizes front and rear, common on performance and European vehicles), straight rotation is not possible. A side-to-side swap may be possible if the tyres are non-directional. Directional tyres would need to be dismounted and remounted to swap sides. Call us on ' . $phone_local . ' with your vehicle details.',
     ],
 ];
 
@@ -171,9 +171,9 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span>Tyre Rotation Manukau</span>
             </nav>
             <div>
-                <span class="tr-ey tr-ey--yellow">Tyre Centre — Manukau</span>
+                <span class="tr-ey tr-ey--yellow">Tyre Centre · Manukau</span>
                 <h1 class="tr-h1">Tyre Rotation<br><em>Manukau</em></h1>
-                <p class="tr-hero__sub">Extend tyre life by rotating regularly. Done at 139 Cavendish Drive — combined with balancing, alignment, or your regular service in one visit.</p>
+                <p class="tr-hero__sub">Extend tyre life by rotating regularly. Done at 139 Cavendish Drive. Combine it with balancing, alignment, or your regular service in one visit.</p>
                 <div class="tr-hero__btns">
                     <a href="#tr-booking" class="tr-btn tr-btn--primary">Book Tyre Rotation</a>
                     <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/','',$phone_local)); ?>" class="tr-btn tr-btn--outline"><?php echo esc_html($phone_local); ?></a>
@@ -182,7 +182,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div class="tr-hero__card">
                 <h3>Tyre Rotation</h3>
                 <ul>
-                    <li>All rotation patterns — FWD, RWD, 4WD</li>
+                    <li>All rotation patterns: FWD, RWD, 4WD</li>
                     <li>Directional tyre rotation available</li>
                     <li>Combined with balance on request</li>
                     <li>Same visit as service or WOF</li>
@@ -224,8 +224,8 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span class="tr-ey tr-ey--dark">Why Rotate?</span>
                 <h2 class="tr-h2" id="tr-why-h2">Tyre Rotation Extends the Life of Your Full Set</h2>
                 <div class="tr-why__body">
-                    <p>Tyres don't wear evenly. Front tyres on a front-wheel drive vehicle carry the steering forces and power delivery — they wear significantly faster than the rear. Without rotation, you end up replacing fronts long before rears, often disposing of rears that still have useful life left.</p>
-                    <p>Regular rotation moves tyres to different positions so wear is distributed across all four. When done consistently, all four tyres reach the end of their life at roughly the same time — meaning you replace all four together rather than in mismatched pairs.</p>
+                    <p>Tyres don't wear evenly. Front tyres on a front-wheel drive vehicle carry the steering forces and power delivery, so they wear significantly faster than the rear. Without rotation, you end up replacing fronts long before rears, often disposing of rears that still have useful life left.</p>
+                    <p>Regular rotation moves tyres to different positions so wear is distributed across all four. When done consistently, all four tyres reach the end of their life at roughly the same time. That means you replace all four together rather than in mismatched pairs.</p>
                     <p>The practical result: you get more kilometres from the same set of tyres. On a quality set of tyres, regular rotation can add thousands of kilometres to the effective life of the set.</p>
                 </div>
             </div>
@@ -240,7 +240,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 </div>
                 <div class="tr-stat">
                     <div class="tr-stat__num">1 visit</div>
-                    <div class="tr-stat__label">Combine with your WOF, service, or alignment — no extra trip</div>
+                    <div class="tr-stat__label">Combine with your WOF, service, or alignment. No extra trip</div>
                 </div>
             </div>
         </div>
@@ -274,7 +274,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <ul class="tr-booking__checks">
                     <li><?php echo esc_html($hours); ?></li>
                     <li>139 Cavendish Drive, Manukau</li>
-                    <li>All drivetrain types — FWD, RWD, AWD, 4WD</li>
+                    <li>All drivetrain types: FWD, RWD, AWD, 4WD</li>
                     <li>Directional tyre rotation available</li>
                     <li>Combine with balance or alignment</li>
                 </ul>

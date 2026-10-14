@@ -41,8 +41,8 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 $finance = [['name'=>'Afterpay','logo'=>''],['name'=>'Q Card','logo'=>''],['name'=>'GEM Finance','logo'=>''],['name'=>'Aotea Finance','logo'=>'']];
 
 $services = [
-    ['badge'=>'CK','title'=>'Clutch Kit Replacement','desc'=>'Complete clutch kit — disc, pressure plate, and release bearing replaced together. Flywheel inspected and replaced if worn.','url'=>'/clutch-kit-replacement-manukau/','cta'=>'Clutch Kit →'],
-    ['badge'=>'FW','title'=>'Flywheel Replacement','desc'=>'Worn, cracked, or heat-damaged flywheels replaced. Dual-mass flywheels on European vehicles cannot be repaired — replacement only.','url'=>'/flywheel-replacement-manukau/','cta'=>'Flywheel →'],
+    ['badge'=>'CK','title'=>'Clutch Kit Replacement','desc'=>'Complete clutch kit: disc, pressure plate and release bearing replaced together. Flywheel inspected and replaced if worn.','url'=>'/clutch-kit-replacement-manukau/','cta'=>'Clutch Kit →'],
+    ['badge'=>'FW','title'=>'Flywheel Replacement','desc'=>'Worn, cracked, or heat-damaged flywheels replaced. Dual-mass flywheels on European vehicles cannot be repaired. Replacement only.','url'=>'/flywheel-replacement-manukau/','cta'=>'Flywheel →'],
     ['badge'=>'CH','title'=>'Clutch Hydraulics','desc'=>'Clutch master cylinder, slave cylinder, and hydraulic line repair. Leaking or spongy clutch pedal diagnosed and fixed.','url'=>'/clutch-hydraulics-manukau/','cta'=>'Hydraulics →'],
 ];
 
@@ -114,9 +114,9 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="clu-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="clu-w"><div class="clu-hero__inner">
   <div>
-    <span class="clu-eye clu-eye--yellow">Clutch — Manukau</span>
+    <span class="clu-eye clu-eye--yellow">Clutch · Manukau</span>
     <h1>Clutch Replacement<br>&amp; Repair <span>Manukau</span></h1>
-    <p class="clu-hero__sub">Complete clutch kit replacement — disc, pressure plate, and release bearing together. Flywheel inspected and replaced if worn. We do not cut corners on clutch work. <?php echo esc_html($years); ?> years of workshop experience.</p>
+    <p class="clu-hero__sub">Complete clutch kit replacement: disc, pressure plate and release bearing together. Flywheel inspected and replaced if worn. We do not cut corners on clutch work. <?php echo esc_html($years); ?> years of workshop experience.</p>
     <div class="clu-hero__price">Clutch replacement <?php echo esc_html($clutch_price); ?></div>
     <div class="clu-hero__ctas">
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="clu-btn clu-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
@@ -141,8 +141,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <h2 class="clu-h2">Why We Replace the Clutch as a Complete Kit</h2>
   <div class="clu-content">
     <p>The clutch connects your engine to the gearbox. When you press the clutch pedal, the clutch disc separates from the flywheel, disconnecting engine power so you can change gears. When you release the pedal, the pressure plate clamps the disc back against the flywheel and power transfers to the wheels.</p>
-    <p>The disc, pressure plate, and release bearing all wear together over the life of the clutch. The gearbox has to be removed to access any of them — and the labour is the same whether you replace one component or all three. Replacing the disc alone against a worn pressure plate means the new disc wears faster, and you pay the full labour cost again when the pressure plate fails six months later.</p>
-    <p>We always replace the clutch as a complete kit. We also inspect the flywheel surface before reassembly — if it is worn, heat-damaged, or cracked, we replace it. A new clutch on a damaged flywheel will judder, slip early, and not last. On vehicles with dual-mass flywheels — common on European and many modern Japanese and Korean models — the flywheel cannot be repaired and must be replaced when it fails.</p>
+    <p>The disc, pressure plate, and release bearing all wear together over the life of the clutch. The gearbox has to be removed to access any of them, and the labour is the same whether you replace one component or all three. Replacing the disc alone against a worn pressure plate means the new disc wears faster, and you pay the full labour cost again when the pressure plate fails six months later.</p>
+    <p>We always replace the clutch as a complete kit. We also inspect the flywheel surface before reassembly. If it is worn, heat-damaged, or cracked, we replace it. A new clutch on a damaged flywheel will judder, slip early, and not last. On vehicles with dual-mass flywheels (common on European and many modern Japanese and Korean models), the flywheel cannot be repaired and must be replaced when it fails.</p>
   </div>
 </div></section>
 
@@ -155,15 +155,15 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="clu-section clu-section--dark"><div class="clu-w">
   <span class="clu-eye clu-eye--yellow">Warning Signs</span>
   <h2 class="clu-h2 clu-h2--white">Does This Sound Like Your Vehicle?</h2>
-  <p class="clu-lead">A slipping clutch gets worse rapidly. The longer you drive on it, the more damage occurs to the flywheel and pressure plate — turning a clutch job into a significantly more expensive repair.</p>
+  <p class="clu-lead">A slipping clutch gets worse rapidly. The longer you drive on it, the more damage occurs to the flywheel and pressure plate. That turns a clutch job into a much more expensive repair.</p>
   <ul class="clu-symptoms">
-    <li>Slipping — engine revs rise but vehicle does not accelerate, especially under load or uphill</li>
-    <li>Difficulty selecting gears — particularly first and reverse when cold</li>
-    <li>High or changing bite point — pedal engages closer to the top of travel</li>
+    <li>Slipping: engine revs rise but vehicle does not accelerate, especially under load or uphill</li>
+    <li>Difficulty selecting gears, particularly first and reverse when cold</li>
+    <li>High or changing bite point: pedal engages closer to the top of travel</li>
     <li>Juddering or vibration on take-off from a standstill</li>
-    <li>Burning smell — especially in stop-start traffic or on hills</li>
+    <li>Burning smell, especially in stop-start traffic or on hills</li>
     <li>Clutch pedal feels soft, spongy, or sticks to the floor</li>
-    <li>Rattling or chattering noise with the clutch pedal released — dual-mass flywheel</li>
+    <li>Rattling or chattering noise with the clutch pedal released (dual-mass flywheel)</li>
   </ul>
   <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="clu-btn clu-btn--primary" style="margin-top:28px;">Call <?php echo esc_html($phone_free); ?></a>
 </div></section>
@@ -171,15 +171,15 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="clu-section clu-section--white"><div class="clu-w">
   <span class="clu-eye clu-eye--dark">Pricing</span>
   <h2 class="clu-h2">How Much Does Clutch Replacement Cost?</h2>
-  <p class="clu-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
+  <p class="clu-lead">We give you an estimate before starting work and keep you informed if anything changes.</p>
   <div class="clu-pricing">
     <div class="clu-pricing__title">Clutch replacement <?php echo esc_html($clutch_price); ?></div>
-    <div class="clu-pricing__body">Includes clutch disc, pressure plate, and release bearing as a complete kit. Flywheel replacement additional if required — we inspect and advise. Dual-mass flywheel replacement adds to the cost on European and some Asian vehicles. Call <?php echo esc_html($phone_free); ?> with your make and model.</div>
+    <div class="clu-pricing__body">Includes clutch disc, pressure plate, and release bearing as a complete kit. Flywheel replacement additional if required. We inspect and advise. Dual-mass flywheel replacement adds to the cost on European and some Asian vehicles. Call <?php echo esc_html($phone_free); ?> with your make and model.</div>
   </div>
 </div></section>
 
 <div class="clu-finance"><div class="clu-finance__inner">
-  <div class="clu-finance__text"><strong>Finance available</strong> — a clutch replacement is a significant job. Don't delay.</div>
+  <div class="clu-finance__text"><strong>Finance available.</strong> A clutch replacement is a big job. Don't delay.</div>
   <div class="clu-finance__logos"><?php foreach ($finance as $f): ?><span class="clu-fin"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
   <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" class="clu-finance__link">View finance options →</a>
 </div></div>
@@ -187,13 +187,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="clu-enquire" class="clu-section clu-section--dark"><div class="clu-w"><div class="clu-enquiry">
   <div>
     <span class="clu-eye clu-eye--yellow">Book or Enquire</span>
-    <h2 class="clu-h2 clu-h2--white">Clutch Replacement — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
-    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your vehicle make, model, and what symptoms you are noticing — slipping, juddering, burning smell, difficulty selecting gears. We will advise on next steps.</p>
-    <ul class="clu-enquiry__list"><?php foreach (['Complete clutch kit — disc, pressure plate, release bearing','Written estimate before any work begins','Flywheel inspected and replaced if worn','Finance available — pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
+    <h2 class="clu-h2 clu-h2--white">Clutch Replacement: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your vehicle make, model, and what symptoms you are noticing: slipping, juddering, burning smell, difficulty selecting gears. We will advise on next steps.</p>
+    <ul class="clu-enquiry__list"><?php foreach (['Complete clutch kit: disc, pressure plate, release bearing','Written estimate before any work begins','Flywheel inspected and replaced if worn','Finance available to pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="clu-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="clu-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     <div class="clu-enquiry__badges"><?php foreach ($finance as $f): ?><span class="clu-enquiry__badge"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
-    <div class="clu-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price before any work begins — no surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
+    <div class="clu-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price before any work begins. No surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="clu-enquiry__form">
     <div class="clu-enquiry__form-title">Send Us Your Details</div>
@@ -217,7 +217,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="clu-section clu-section--white"><div class="clu-w">
   <span class="clu-eye clu-eye--dark">Common Questions</span>
-  <h2 class="clu-h2">Clutch Replacement — FAQ</h2>
+  <h2 class="clu-h2">Clutch Replacement FAQ</h2>
   <div class="clu-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="clu-faq__item<?php echo $i===0?' clu-faq__item--open':''; ?>"><button class="clu-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="clu-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="clu-a-<?php echo $i; ?>" class="clu-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>
@@ -225,7 +225,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="clu-section clu-section--grey"><div class="clu-w">
   <span class="clu-eye clu-eye--dark">South Auckland</span>
-  <h2 class="clu-h2">Clutch Replacement — Manukau</h2>
+  <h2 class="clu-h2">Clutch Replacement in Manukau</h2>
   <p class="clu-lead" style="margin-bottom:0;">Serving Papatoetoe, Māngere, Ōtāhuhu, Wiri, Ōtara, Flat Bush, Manurewa, Takanini, Papakura, Botany and all of South Auckland from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a>.</p>
   <div class="clu-close">
     <div class="clu-close__text">A slipping clutch gets worse every day you wait.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>

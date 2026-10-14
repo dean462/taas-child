@@ -81,7 +81,7 @@ $schema = [
             'provider'   => ['@id' => $site_url . '/#organization'],
             'areaServed' => 'South Auckland',
             'hasOfferCatalog' => ['@type' => 'OfferCatalog', 'name' => 'PPI Tiers', 'itemListElement' => [
-                ['@type' => 'Offer', 'name' => 'Basic Pre-Purchase Inspection', 'price' => preg_replace('/[^0-9.]/', '', $ppi_basic), 'priceCurrency' => 'NZD', 'description' => 'Visual and electronic check — underbody, engine bay, OBD scan, battery test, written checklist report. 45–60 minutes.'],
+                ['@type' => 'Offer', 'name' => 'Basic Pre-Purchase Inspection', 'price' => preg_replace('/[^0-9.]/', '', $ppi_basic), 'priceCurrency' => 'NZD', 'description' => 'Visual and electronic check: underbody, engine bay, OBD scan, battery test, written checklist report. 45–60 minutes.'],
                 ['@type' => 'Offer', 'name' => 'Standard Pre-Purchase Inspection', 'price' => preg_replace('/[^0-9.]/', '', $ppi_standard), 'priceCurrency' => 'NZD', 'description' => 'Full road test, detailed suspension assessment, brake disc measurement, cambelt history, AC test, detailed written report with purchase recommendation. 60–75 minutes.'],
                 ['@type' => 'Offer', 'name' => 'Premium Pre-Purchase Inspection', 'price' => preg_replace('/[^0-9.]/', '', $ppi_premium), 'priceCurrency' => 'NZD', 'description' => 'Relative compression test, Carjam vehicle history, European-specific checks, hybrid/EV battery health, full written report with photos. 75–90 minutes.'],
             ]],
@@ -268,10 +268,10 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
 <!-- ══ HERO ══════════════════════════════════════════════════════════════════ -->
 <section class="ppi-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
   <div class="ppi-hero__inner">
-    <span class="ppi-hero__eyebrow">Pre-Purchase Inspection — Manukau</span>
+    <span class="ppi-hero__eyebrow">Pre-Purchase Inspection · Manukau</span>
     <h1>Pre-Purchase Vehicle<br><span>Inspection</span></h1>
     <p style="font-size:18px;font-weight:600;color:var(--taas-yellow,#FFC800);margin:0 0 16px;font-family:var(--taas-font,'Inter',Arial,sans-serif);">Don't buy a used car without one.</p>
-    <p class="ppi-hero__sub">Buying a used car is one of the biggest purchases you'll make. A pre-purchase inspection gives you the full picture before you commit — what's good, what needs attention, and what could cost you down the road. Independent inspections by MTA Assured technicians. Serving South Auckland since <?php echo esc_html($established); ?>.</p>
+    <p class="ppi-hero__sub">Buying a used car is one of the biggest purchases you'll make. A pre-purchase inspection gives you the full picture before you commit: what's good, what needs attention, and what could cost you down the road. Independent inspections by MTA Assured technicians. Serving South Auckland since <?php echo esc_html($established); ?>.</p>
     <div class="ppi-hero__ctas">
       <a href="#enquire" class="ppi-btn ppi-btn--primary">Book an Inspection</a>
       <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>" class="ppi-btn ppi-btn--outline"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
@@ -288,7 +288,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
     <div class="ppi-trust__item">MTA Assured</div>
     <div class="ppi-trust__item">NZTA Authorised</div>
     <div class="ppi-trust__item"><?php echo esc_html(TAAS_RATING); ?>★ · <?php echo esc_html(TAAS_REVIEWS); ?> Reviews</div>
-    <div class="ppi-trust__item">Independent — No Relationship With Seller</div>
+    <div class="ppi-trust__item">Independent: No Relationship With Seller</div>
     <div class="ppi-trust__item">Since <?php echo esc_html($established); ?></div>
   </div>
 </div>
@@ -298,7 +298,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
   <div class="ppi-section__inner">
     <span class="ppi-section__eyebrow">Why It Matters</span>
     <h2 class="ppi-section__heading">What a WOF Doesn't Check</h2>
-    <p class="ppi-section__sub">A current WOF means the vehicle is safe to drive today. It tells you nothing about how long it will stay that way — or how much it will cost you over the next 12 months.</p>
+    <p class="ppi-section__sub">A current WOF means the vehicle is safe to drive today. It tells you nothing about how long it will stay that way, or how much it will cost you over the next 12 months.</p>
     <div class="ppi-why">
       <div>
         <ul class="ppi-why__list">
@@ -315,12 +315,12 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
       <div class="ppi-why__panel">
         <div class="ppi-why__panel-title">A TAAS Pre-Purchase Inspection Checks</div>
         <ul class="ppi-why__panel-list">
-          <li>All of the above — depending on the tier you choose</li>
+          <li>All of the above, depending on the tier you choose</li>
           <li>Written report with condition ratings</li>
           <li>Repair cost estimates for everything identified</li>
-          <li>Clear recommendation — buy, buy with conditions, or don't buy</li>
+          <li>Clear recommendation: buy, buy with conditions, or don't buy</li>
           <li>Verbal debrief with the inspecting technician</li>
-          <li>Independent assessment — we work for you, not the seller</li>
+          <li>Independent assessment. We work for you, not the seller</li>
         </ul>
       </div>
     </div>
@@ -340,7 +340,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
         <div class="ppi-tier__name">Basic</div>
         <div class="ppi-tier__price"><?php echo esc_html($ppi_basic); ?> <span style="font-size:12px;font-weight:400;color:#888;">incl. GST</span></div>
         <p class="ppi-tier__tag">Essential safety and condition check</p>
-        <p class="ppi-tier__best"><strong>Best for:</strong> Vehicles under $10,000 — covers the fundamentals so you know what you're buying.</p>
+        <p class="ppi-tier__best"><strong>Best for:</strong> Vehicles under $10,000. Covers the fundamentals so you know what you're buying.</p>
         <ul class="ppi-tier__list">
           <li>Visual inspection across all major systems</li>
           <li>OBD fault code scan</li>
@@ -353,12 +353,12 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
           <p><strong>Exterior:</strong> Body condition, glass and windscreen, all lights, wiper blades</p>
           <p><strong>Engine Bay:</strong> All fluid levels and condition, drive belt condition, leak check, air filter visual, 12V battery health test</p>
           <p><strong>Tyres:</strong> Tread depth all four, condition and wear pattern, spare tyre, matching brands and sizes</p>
-          <p><strong>Brakes:</strong> Front and rear pad condition — visual (wheels on). Disc condition — good/scored/worn</p>
+          <p><strong>Brakes:</strong> Front and rear pad condition, visual (wheels on). Disc condition: good/scored/worn</p>
           <p><strong>Interior:</strong> Seats, dashboard warning lights, radio/Bluetooth/USB, instrument cluster, carpet and headliner</p>
           <p><strong>Underbody:</strong> Rust and corrosion check, leak check from underneath, exhaust condition</p>
-          <p><strong>Road Test:</strong> Short drive up to 50 km/h — engine start/idle, noise and vibration check</p>
-          <p><strong>Diagnostics:</strong> OBD fault code scan — stored codes, pending codes, readiness monitors</p>
-          <p><strong>Report:</strong> Written checklist — Good / Fair / Poor per item. Verbal debrief with your technician</p>
+          <p><strong>Road Test:</strong> Short drive up to 50 km/h: engine start/idle, noise and vibration check</p>
+          <p><strong>Diagnostics:</strong> OBD fault code scan: stored codes, pending codes, readiness monitors</p>
+          <p><strong>Report:</strong> Written checklist: Good / Fair / Poor per item. Verbal debrief with your technician</p>
           <p style="font-size:12px;color:#999;margin-top:12px;"><em>Does not include: suspension and steering assessment, cooling system pressure test, brake roller test, disc measurement, air conditioning check, Carjam history, repair cost estimates, or purchase recommendation.</em></p>
         </div>
         <a href="#enquire" class="ppi-tier__cta ppi-tier__cta--outline">Book Basic</a>
@@ -369,7 +369,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
         <span class="ppi-tier__badge">Most Popular</span>
         <div class="ppi-tier__name">Standard</div>
         <div class="ppi-tier__price"><?php echo esc_html($ppi_standard); ?> <span style="font-size:12px;font-weight:400;color:#888;">incl. GST</span></div>
-        <p class="ppi-tier__tag">Comprehensive mechanical assessment</p>
+        <p class="ppi-tier__tag">Full mechanical assessment</p>
         <p class="ppi-tier__best"><strong>Best for:</strong> Any used vehicle purchase. Covers everything a buyer needs to make a confident decision.</p>
         <ul class="ppi-tier__list">
           <li>Everything in Basic plus:</li>
@@ -385,14 +385,14 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
         <button class="ppi-tier__expand" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.style.display=this.getAttribute('aria-expanded')==='true'?'block':'none';">What's Included ▾</button>
         <div class="ppi-tier__detail" style="display:none;">
           <p style="font-weight:700;color:var(--taas-yellow,#FFC800);margin-bottom:8px;">Everything in Basic, plus…</p>
-          <p><strong>Engine Bay — Extended:</strong> Cambelt history and visual check, radiator and hose condition, transmission fluid check</p>
-          <p><strong>Brakes — Full Assessment:</strong> Brake roller test (braking efficiency per wheel), brake fluid condition test, caliper function check, handbrake/park brake operation</p>
+          <p><strong>Engine Bay (Extended):</strong> Cambelt history and visual check, radiator and hose condition, transmission fluid check</p>
+          <p><strong>Brakes (Full Assessment):</strong> Brake roller test (braking efficiency per wheel), brake fluid condition test, caliper function check, handbrake/park brake operation</p>
           <p><strong>Steering & Suspension:</strong> Shock absorbers, bushes, ball joints, CV boots and driveshafts, steering rack and boots, wheel bearings, tie rod ends</p>
           <p><strong>Cooling System:</strong> Pressure test, radiator cap test, hose condition, water pump assessment</p>
-          <p><strong>Interior — Extended:</strong> Air conditioning function and temperature, all power windows, central locking, heated seats and electric mirrors (where fitted)</p>
-          <p><strong>Underbody — Full Hoist:</strong> Chassis rail integrity, subframe condition, sill panels and floor, fuel and brake line condition</p>
-          <p><strong>Road Test — Thorough:</strong> Engine under load, transmission shift quality/clutch, brakes under load, steering response, suspension feel</p>
-          <p><strong>Report — Detailed:</strong> Condition rating per system, repair cost estimates, clear purchase recommendation: Buy / Buy with conditions / Do not buy. Verbal debrief</p>
+          <p><strong>Interior (Extended):</strong> Air conditioning function and temperature, all power windows, central locking, heated seats and electric mirrors (where fitted)</p>
+          <p><strong>Underbody (Full Hoist):</strong> Chassis rail integrity, subframe condition, sill panels and floor, fuel and brake line condition</p>
+          <p><strong>Road Test (Thorough):</strong> Engine under load, transmission shift quality/clutch, brakes under load, steering response, suspension feel</p>
+          <p><strong>Report (Detailed):</strong> Condition rating per system, repair cost estimates, clear purchase recommendation: Buy / Buy with conditions / Do not buy. Verbal debrief</p>
         </div>
         <a href="#enquire" class="ppi-tier__cta ppi-tier__cta--primary">Book Standard</a>
       </div>
@@ -401,7 +401,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
       <div class="ppi-tier">
         <div class="ppi-tier__name">Premium</div>
         <div class="ppi-tier__price"><?php echo esc_html($ppi_premium); ?> <span style="font-size:12px;font-weight:400;color:#888;">incl. GST</span></div>
-        <p class="ppi-tier__tag">The complete picture — engine health, wheels off, and specialist checks</p>
+        <p class="ppi-tier__tag">The complete picture: engine health, wheels off, and specialist checks</p>
         <p class="ppi-tier__best"><strong>Best for:</strong> Higher-value vehicles, European cars, performance vehicles, or any purchase where you want nothing left to chance.</p>
         <ul class="ppi-tier__list">
           <li>Everything in Standard plus:</li>
@@ -414,8 +414,8 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
         <button class="ppi-tier__expand" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.style.display=this.getAttribute('aria-expanded')==='true'?'block':'none';">What's Included ▾</button>
         <div class="ppi-tier__detail" style="display:none;">
           <p style="font-weight:700;color:var(--taas-yellow,#FFC800);margin-bottom:8px;">Everything in Standard, plus…</p>
-          <p><strong>Brakes — Wheels Removed:</strong> Direct pad inspection and disc measurement against manufacturer minimum specification. Full visual caliper inspection</p>
-          <p><strong>Engine Health:</strong> Relative compression test — confirms engine health across all cylinders. Non-invasive assessment that flags internal engine wear</p>
+          <p><strong>Brakes (Wheels Removed):</strong> Direct pad inspection and disc measurement against manufacturer minimum specification. Full visual caliper inspection</p>
+          <p><strong>Engine Health:</strong> Relative compression test. Confirms engine health across all cylinders. Non-invasive assessment that flags internal engine wear</p>
           <p><strong>European Specialist Checks (where applicable):</strong> DSG/DCT fluid condition, air suspension assessment, brand-specific known fault check</p>
           <p><strong>Documentation:</strong> Photos of all concerns identified. Full written report with cost estimates for every item. Clear Buy / Buy with conditions / Do not buy recommendation. Verbal debrief with a senior technician</p>
         </div>
@@ -425,7 +425,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
 
     <!-- Carjam add-on -->
     <div class="ppi-callout" style="margin-top:32px;">
-      <div class="ppi-callout__title">Add a Carjam Vehicle History Report — $25</div>
+      <div class="ppi-callout__title">Add a Carjam Vehicle History Report: $25</div>
       <p class="ppi-callout__body">Know the full history before you buy. A Carjam report checks ownership count, odometer reading history for discrepancies, finance and security interests, stolen vehicle flags, accident and write-off history, and import details. Available as an add-on with any inspection level. Just let us know when you book.</p>
     </div>
 
@@ -433,7 +433,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
     <div class="ppi-callout" style="margin-top:16px;">
       <div class="ppi-callout__title">Buying a Hybrid or EV?</div>
       <p class="ppi-callout__body">Add our EV/Hybrid Battery Health Assessment to your inspection for $100, or book it as a standalone service. We read the traction battery cell data and produce a full report covering cell balance, voltage consistency, remaining capacity, and degradation assessment. Essential for any hybrid or EV purchase where battery condition is a major factor in vehicle value.</p>
-      <p style="margin-top:10px;"><a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:700;font-size:14px;text-decoration:none;">Ask about battery health testing — <?php echo esc_html($phone_free); ?></a></p>
+      <p style="margin-top:10px;"><a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:700;font-size:14px;text-decoration:none;">Ask about battery health testing: <?php echo esc_html($phone_free); ?></a></p>
     </div>
   </div>
 </section>
@@ -447,11 +447,11 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
     <div class="ppi-process">
       <div class="ppi-step">
         <div class="ppi-step__title">Book Your Inspection</div>
-        <p class="ppi-step__body">Call <?php echo esc_html(TAAS_PHONE_FREE); ?> or use the form below. Tell us the vehicle make, model, and year — plus which tier you want. We'll book a time that works for you.</p>
+        <p class="ppi-step__body">Call <?php echo esc_html(TAAS_PHONE_FREE); ?> or use the form below. Tell us the vehicle make, model, and year, plus which tier you want. We'll book a time that works for you.</p>
       </div>
       <div class="ppi-step">
         <div class="ppi-step__title">Bring the Vehicle In</div>
-        <p class="ppi-step__body">You or the seller brings the vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>. We inspect it on the hoist, scan tools, and road test — independently and thoroughly.</p>
+        <p class="ppi-step__body">You or the seller brings the vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>. We put it on the hoist, scan it and road test it. We are independent of the seller.</p>
       </div>
       <div class="ppi-step">
         <div class="ppi-step__title">Get Your Report</div>
@@ -491,7 +491,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
   <div class="ppi-section__inner">
     <span class="ppi-section__eyebrow">Also at TAAS</span>
     <h2 class="ppi-section__heading">Related Services</h2>
-    <p class="ppi-section__sub">If we find work that needs doing, we can carry it out — or you can use the report to negotiate with the seller.</p>
+    <p class="ppi-section__sub">If we find work that needs doing, we can carry it out, or you can use the report to negotiate with the seller.</p>
     <div class="ppi-related">
       <?php
       $related = [
@@ -519,7 +519,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:28px;">
       <div style="display:flex;gap:14px;align-items:flex-start;">
         <span style="font-size:24px;flex-shrink:0;">🛡️</span>
-        <div><strong style="font-size:15px;color:var(--taas-black,#111);">Independent</strong><p style="font-size:14px;color:var(--taas-mid,#666);line-height:1.75;margin-top:4px;">We're not connected to any dealer or seller. Our report is for you — honest, unbiased, and in your interest.</p></div>
+        <div><strong style="font-size:15px;color:var(--taas-black,#111);">Independent</strong><p style="font-size:14px;color:var(--taas-mid,#666);line-height:1.75;margin-top:4px;">We're not connected to any dealer or seller. Our report is for you, and it is honest and unbiased.</p></div>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;">
         <span style="font-size:24px;flex-shrink:0;">🔧</span>
@@ -546,7 +546,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
 </section>
 
 <!-- ══ FINANCE STRIP ════════════════════════════════════════════════════════ -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong>: interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 
 <!-- ══ FAQ ═══════════════════════════════════════════════════════════════════ -->
 <section class="ppi-section ppi-section--white">
@@ -567,7 +567,7 @@ body.page-template-template-pre-purchase-inspection { overflow-x:hidden;-webkit-
 <!-- ══ DISCLAIMER ═══════════════════════════════════════════════════════════ -->
 <div style="background:var(--taas-panel,#F7F7F5);padding:28px 0;border-top:1px solid var(--taas-border,#E8E8E4);">
   <div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;">
-    <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:11px;color:#999;line-height:1.75;">This inspection records the condition of the vehicle at the time of inspection based on a visual and mechanical assessment appropriate to the level selected. It does not constitute a warranty or guarantee of the vehicle's condition, future reliability, or fitness for any particular purpose. Concealed faults, intermittent faults, or conditions not detectable within the scope of the inspection level selected are expressly excluded. Body panel, paint, and cosmetic observations are visual only and do not represent a professional panel and paint assessment — a specialist report is recommended where cosmetic condition is a material consideration. Tony Allen Auto Service Ltd accepts no liability for any loss, damage, or expense arising from reliance on this report.</p>
+    <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:11px;color:#999;line-height:1.75;">This inspection records the condition of the vehicle at the time of inspection based on a visual and mechanical assessment appropriate to the level selected. It does not constitute a warranty or guarantee of the vehicle's condition, future reliability, or fitness for any particular purpose. Concealed faults, intermittent faults, or conditions not detectable within the scope of the inspection level selected are expressly excluded. Body panel, paint, and cosmetic observations are visual only and do not represent a professional panel and paint assessment. A specialist report is recommended where cosmetic condition is a material consideration. Tony Allen Auto Service Ltd accepts no liability for any loss, damage, or expense arising from reliance on this report.</p>
   </div>
 </div>
 

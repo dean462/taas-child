@@ -55,25 +55,25 @@ $related = [
 
 $faqs = [
     ['q' => 'Do you offer disc skimming for ' . $suburb_name . ' customers?',
-     'a' => 'Yes. Tony Allen Auto Service at 139 Cavendish Drive, Manukau is ' . ($distance_note ? $distance_note . ' from ' . $suburb_name : 'easily accessible from ' . $suburb_name) . '. We machine brake rotors on-site — no need to send them away.'],
+     'a' => 'Yes. Tony Allen Auto Service at 139 Cavendish Drive, Manukau is ' . ($distance_note ? $distance_note . ' from ' . $suburb_name : 'easily accessible from ' . $suburb_name) . '. We machine brake rotors on-site, so there is no need to send them away.'],
     ['q' => 'What is disc skimming?',
      'a' => 'Disc skimming resurfaces your brake rotors to a flat, smooth finish. It removes grooves, light scoring, and minor warping caused by heat and wear. Paired with new pads, a skimmed rotor beds in correctly and delivers even, consistent braking without noise or vibration.'],
     ['q' => 'Why pair disc skimming with new pads?',
-     'a' => 'New pads on a grooved rotor will not make full contact. They ride on the high spots, wear unevenly, and the old groove pattern transfers into the new pads. Skimming removes the old pattern and gives the new pads a flat surface to bed into — resulting in correct wear and no squeal.'],
+     'a' => 'New pads on a grooved rotor will not make full contact. They ride on the high spots, wear unevenly, and the old groove pattern transfers into the new pads. Skimming removes the old pattern and gives the new pads a flat surface to bed into. The result is correct wear and no squeal.'],
     ['q' => 'Can all rotors be skimmed?',
      'a' => 'Rotors can be skimmed if they are above minimum thickness after machining and have no cracks. If a rotor is too thin, cracked, or severely damaged, it must be replaced. We measure every rotor before and after skimming to confirm it meets specification.'],
     ['q' => 'How much does disc skimming cost?',
-     'a' => 'Contact us for pricing — cost depends on the rotor type and condition. Call ' . $phone_free . ' with your vehicle details.'],
+     'a' => 'Contact us for pricing. Cost depends on the rotor type and condition. Call ' . $phone_free . ' with your vehicle details.'],
     ['q' => 'How long does disc skimming take?',
      'a' => 'Typically completed same-day as part of a brake pad and rotor service. Skimming itself takes minutes per rotor.'],
     ['q' => 'Can you fix WOF brake failures?',
-     'a' => 'Yes — brakes are one of the most common WOF failure items. We repair the fault and re-inspect on-site. NZTA Authorised. Same-day where possible. Call ' . $phone_free . '.'],
+     'a' => 'Yes. Brakes are one of the most common WOF failure items. We repair the fault and re-inspect on-site. NZTA Authorised. Same-day where possible. Call ' . $phone_free . '.'],
     ['q' => 'Do you offer finance?',
-     'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted.'],
+     'a' => 'Yes. Afterpay, Q Card, GEM Finance, and Aotea Finance accepted.'],
     ['q' => 'Where is your workshop?',
      'a' => '139 Cavendish Drive, Manukau, Auckland 2104. ' . ($distance_note ? ucfirst($distance_note) . ' from ' . $suburb_name . '. ' : '') . 'Open ' . $hours . '. Call ' . $phone_free . '.'],
     ['q' => 'Do you work on European vehicle brakes?',
-     'a' => 'Yes. Our TAAS European division covers all European makes — specific rotor specifications and pad compounds followed to manufacturer data.'],
+     'a' => 'Yes. Our TAAS European division covers all European makes, following manufacturer data for rotor specifications and pad compounds.'],
 ];
 
 $schema_faqs = [];
@@ -151,7 +151,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="dsl-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="dsl-w">
   <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/disc-skimming/'); ?>" style="color:#555;text-decoration:none;">Disc Skimming</a><span style="margin:0 6px;">›</span><span style="color:#888;"><?php echo esc_html($suburb_name); ?></span></nav>
-  <span class="dsl-eye dsl-eye--yellow">Disc Skimming — <?php echo esc_html($suburb_name); ?></span>
+  <span class="dsl-eye dsl-eye--yellow">Disc Skimming · <?php echo esc_html($suburb_name); ?></span>
   <h1>Brake Disc Skimming<br><span><?php echo esc_html($suburb_name); ?></span></h1>
   <p class="dsl-hero__sub">On-site brake rotor machining for <?php echo esc_html($suburb_name); ?> drivers. Removes grooves, scoring, and minor warping. Paired with new pads for correct bedding. <?php echo ($distance_note ? esc_html(ucfirst($distance_note)) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?><?php echo esc_html($customers); ?> customers serviced.</p>
   <div class="dsl-hero__ctas">
@@ -163,11 +163,11 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <div class="dsl-trust" role="list"><div class="dsl-trust__inner"><div class="dsl-trust__item" role="listitem">MTA Assured</div><div class="dsl-trust__item" role="listitem">On-Site Machining</div><div class="dsl-trust__item" role="listitem">Same-Day Service</div><div class="dsl-trust__item" role="listitem">All Makes &amp; Models</div><div class="dsl-trust__item" role="listitem"><?php echo esc_html($rating); ?>★ · <?php echo esc_html($reviews); ?> Reviews</div></div></div>
 
 <section class="dsl-section dsl-section--white"><div class="dsl-w">
-  <span class="dsl-eye dsl-eye--dark">Disc Skimming — <?php echo esc_html($suburb_name); ?></span>
+  <span class="dsl-eye dsl-eye--dark">Disc Skimming · <?php echo esc_html($suburb_name); ?></span>
   <h2 class="dsl-h2">On-Site Disc Skimming for <?php echo esc_html($suburb_name); ?> Drivers</h2>
   <div class="dsl-content">
-    <p>Tony Allen Auto Service at 139 Cavendish Drive, Manukau provides on-site brake disc skimming for <?php echo esc_html($suburb_name); ?> and surrounding areas. <?php echo ($distance_note ? 'We are ' . esc_html($distance_note) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?>Rotors are machined on a precision lathe in our workshop — no need to send them away.</p>
-    <p>We only occasionally fit pads on their own. New pads on a grooved rotor will not bed in correctly — they wear unevenly, squeal, and the old groove pattern transfers into the new pads. Every brake job includes rotor machining or replacement alongside new pads. If the rotor is below minimum thickness or cracked, we replace it instead of skimming.</p>
+    <p>Tony Allen Auto Service at 139 Cavendish Drive, Manukau provides on-site brake disc skimming for <?php echo esc_html($suburb_name); ?> and surrounding areas. <?php echo ($distance_note ? 'We are ' . esc_html($distance_note) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?>Rotors are machined on a precision lathe in our workshop, so there is no need to send them away.</p>
+    <p>We only occasionally fit pads on their own. New pads on a grooved rotor will not bed in correctly. They wear unevenly, squeal, and the old groove pattern transfers into the new pads. Every brake job includes rotor machining or replacement alongside new pads. If the rotor is below minimum thickness or cracked, we replace it instead of skimming.</p>
     <p>For detailed information on our disc skimming process, visit our <a href="<?php echo esc_url($site_url.'/disc-skimming/'); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;">disc skimming hub page</a>.</p>
   </div>
 </div></section>
@@ -178,11 +178,11 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div class="dsl-related__grid"><?php foreach ($related as $r): ?><a href="<?php echo esc_url($site_url.$r['url']); ?>" class="dsl-related__link"><?php echo esc_html($r['label']); ?><span style="color:var(--taas-yellow,#FFC800);font-size:18px;">→</span></a><?php endforeach; ?></div>
 </div></section>
 
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong>: interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section id="dsl-enquire" class="dsl-section dsl-section--dark"><div class="dsl-w"><div class="dsl-enquiry">
   <div>
     <span class="dsl-eye dsl-eye--yellow">Book Today</span>
-    <h2 class="dsl-h2 dsl-h2--white">Disc Skimming — <span style="color:var(--taas-yellow,#FFC800);">Enquire Now</span></h2>
+    <h2 class="dsl-h2 dsl-h2--white">Disc Skimming: <span style="color:var(--taas-yellow,#FFC800);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow,#FFC800);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.75;"><strong style="color:var(--taas-white,#fff);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -208,7 +208,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="dsl-section dsl-section--grey"><div class="dsl-w">
   <span class="dsl-eye dsl-eye--dark">Common Questions</span>
-  <h2 class="dsl-h2">Disc Skimming <?php echo esc_html($suburb_name); ?> — FAQ</h2>
+  <h2 class="dsl-h2">Disc Skimming <?php echo esc_html($suburb_name); ?> FAQs</h2>
   <div class="dsl-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="dsl-faq__item<?php echo $i===0?' dsl-faq__item--open':''; ?>"><button class="dsl-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="dsl-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="dsl-a-<?php echo $i; ?>" class="dsl-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

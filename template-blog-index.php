@@ -462,7 +462,7 @@ if ($categories && count($categories) > 1):
       <div class="bi-empty">
         <div class="bi-empty__icon">📝</div>
         <div class="bi-empty__title">Articles Coming Soon</div>
-        <p class="bi-empty__text">We're working on it. Check back shortly — or call us on <?php echo esc_html($phone_free); ?> with any questions.</p>
+        <p class="bi-empty__text">We're working on it. Check back shortly, or call us on <?php echo esc_html($phone_free); ?> with any questions.</p>
       </div>
     <?php endif;
     wp_reset_postdata();

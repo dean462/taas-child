@@ -70,9 +70,9 @@ $maps_url      = 'https://www.google.com/maps/search/?api=1&query=Tony+Allen+Aut
 $faqs = [
   // Suburb-specific (need $suburb_name interpolation — can't live in shared library)
   ['q' => "Where is the nearest WOF station to {$suburb_name}?",
-   'a' => "Tony Allen Auto Service is at 139 Cavendish Drive, Manukau — {$distance_text}. " . rtrim($sub['getting_here'], '.') . ". We are NZTA Authorised and have been providing WOF inspections to {$suburb_name} and surrounding South Auckland suburbs since {$established}. Call {$phone_free} or book online to arrange a drop-off."],
+   'a' => "Tony Allen Auto Service is at 139 Cavendish Drive, Manukau, {$distance_text}. " . rtrim($sub['getting_here'], '.') . ". We are NZTA Authorised and have been providing WOF inspections to {$suburb_name} and surrounding South Auckland suburbs since {$established}. Call {$phone_free} or book online to arrange a drop-off."],
   ['q' => "How much does a WOF cost near {$suburb_name}?",
-   'a' => "A Warrant of Fitness at Tony Allen Auto Service is {$price} incl. GST — all makes, all models, no hidden charges. We're at 139 Cavendish Drive, Manukau ({$distance_text}). If anything fails, we give you a written estimate, and most repairs can be done the same visit."],
+   'a' => "A Warrant of Fitness at Tony Allen Auto Service is {$price} incl. GST for all makes and models, with no hidden charges. We're at 139 Cavendish Drive, Manukau ({$distance_text}). If anything fails, we give you a written estimate, and most repairs can be done the same visit."],
   ['q' => "Do I need to book a WOF from {$suburb_name}?",
    'a' => "Yes. WOF inspections are booked as drop-offs so we can allow time to fix anything that fails on the same visit. Dropping off early (7:30–9:00am) gives {$suburb_name} drivers the best chance of having it inspected, repaired and re-checked the same day. Call {$phone_free} or book online. If you need to wait with your vehicle, tell us when you book and we'll confirm whether we can fit it in."],
   ['q' => "What happens if my car fails its WOF?",
@@ -81,11 +81,11 @@ $faqs = [
   $taas_faqs['wof_frequency_2026'],
   $taas_faqs['wof_checklist'],
   ['q' => "Can you carry out repairs if my car fails?",
-   'a' => "Yes. Tony Allen Auto Service is a full-service MTA Assured workshop with {$division_count} specialist divisions under one roof — brakes, steering, auto electrical, air conditioning, tyres, and more. In most cases we can carry out WOF repairs on the same visit — saving {$suburb_name} drivers the hassle of booking elsewhere. We give you a clear estimate and timeframe before starting work."],
+   'a' => "Yes. Tony Allen Auto Service is a full-service MTA Assured workshop with {$division_count} specialist divisions under one roof: brakes, steering, auto electrical, air conditioning, tyres and more. In most cases we can carry out WOF repairs on the same visit, so {$suburb_name} drivers do not need to book elsewhere. We give you a clear estimate and timeframe before starting work."],
   $taas_faqs['wof_fine_2026'],
   $taas_faqs['wof_older_vehicles'],
   ["q" => "What areas do you cover from Manukau?",
-   "a" => "We serve all of South Auckland from 139 Cavendish Drive, Manukau — including {$area_served}. {$years} years at the same address. " . rtrim($sub['intro'], '.') . "."],
+   "a" => "We serve all of South Auckland from 139 Cavendish Drive, Manukau, including {$area_served}. {$years} years at the same address. " . rtrim($sub['intro'], '.') . "."],
   $taas_faqs['wof_reminders'],
   $taas_faqs['finance'],
 ];
@@ -116,7 +116,7 @@ $schema = [
       '@type'       => ['AutoRepair','LocalBusiness'],
       '@id'         => $site_url . '/#organization',
       'name'        => 'Tony Allen Auto Service',
-      'description' => 'NZTA Authorised WOF inspections — ' . $price . ' flat rate. MTA Assured. ' . $ms_number . '.',
+      'description' => 'NZTA Authorised WOF inspections. ' . $price . ' flat rate. MTA Assured. ' . $ms_number . '.',
       'url'         => $site_url,
       'telephone'   => [$phone_local, $phone_free],
       'email'       => $email,
@@ -154,15 +154,15 @@ $schema = [
     ],
     [
       '@type'       => 'Service',
-      'name'        => 'WOF ' . $suburb_name . ' — Warrant of Fitness Inspection',
-      'description' => 'NZTA-authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Booked drop-off — if anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
+      'name'        => 'WOF ' . $suburb_name . ': Warrant of Fitness Inspection',
+      'description' => 'NZTA-authorised Warrant of Fitness inspections for ' . $suburb_name . ' drivers at ' . $price . ' incl. GST. Booked drop-off. If anything fails, we give you an estimate and can usually fix it the same visit. Re-inspection within 28 days at no charge.',
       'provider'    => ['@id' => $site_url . '/#organization'],
       'areaServed'  => $suburb_name . ', South Auckland, New Zealand',
       'offers'      => [
         '@type'         => 'Offer',
         'price'         => '80',
         'priceCurrency' => 'NZD',
-        'description'   => 'WOF inspection — all makes and models, incl. GST',
+        'description'   => 'WOF inspection, all makes and models, incl. GST',
       ],
     ],
     [
@@ -637,15 +637,15 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <div>
         <div class="wl-hero__eye">
           <div class="wl-hero__line"></div>
-          <span class="wl-hero__eye-txt">NZTA Authorised — WOF <?php echo esc_html($suburb_name); ?></span>
+          <span class="wl-hero__eye-txt">NZTA Authorised · WOF <?php echo esc_html($suburb_name); ?></span>
         </div>
         <h1 class="wl-hero__h1">
           WOF Inspection<br>
-          <span><?php echo esc_html($suburb_name); ?> — Inspected &amp; Fixed</span>
+          <span><?php echo esc_html($suburb_name); ?>: Inspected &amp; Fixed</span>
         </h1>
         <div class="wl-hero__pill"><?php echo esc_html(strtoupper('Booked drop-off · ' . $hours . ($sub['distance'] ? ' · ' . $sub['distance'] : ''))); ?></div>
         <p class="wl-hero__sub">
-          NZTA-authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?> — <?php echo esc_html($distance_text); ?><?php endif; ?>. <?php echo esc_html($price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and most repairs can be done the same visit.
+          NZTA-authorised Warrant of Fitness inspections for <?php echo esc_html($suburb_name); ?> drivers at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a><?php if ($distance_text): ?>, <?php echo esc_html($distance_text); ?><?php endif; ?>. <?php echo esc_html($price); ?> for all makes and models. If anything fails, we'll explain what's needed and give you an estimate, and most repairs can be done the same visit.
         </p>
         <div class="wl-hero__ctas">
           <a href="#wl-book" class="wl-btn wl-btn--yellow">
@@ -711,7 +711,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wl-pstrip__num"><?php echo esc_html($phone_free); ?></a>
         <span class="wl-pstrip__hours"><?php echo esc_html($hours); ?></span>
       </div>
-      <span class="wl-pstrip__walkin">Booked drop-off WOFs — drop off early for same-day repairs</span>
+      <span class="wl-pstrip__walkin">Booked drop-off WOFs. Drop off early for same-day repairs</span>
     </div>
   </div>
 </div>
@@ -749,13 +749,13 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <div class="wl-grid-2">
       <div>
         <h2 class="wl-about__h2" id="wl-about-head">
-          WOF <?php echo esc_html($suburb_name); ?> — <span>South Auckland's Trusted Workshop</span>
+          WOF <?php echo esc_html($suburb_name); ?>: <span>South Auckland's Trusted Workshop</span>
         </h2>
         <p class="wl-about__body">
-          Tony Allen Auto Service has been providing Warrant of Fitness inspections to <?php echo esc_html($suburb_name); ?> and surrounding South Auckland suburbs since <?php echo esc_html($established); ?>. We are NZTA Authorised and MTA Assured — every <?php echo esc_html($suburb_name); ?> WOF is carried out to the same standard, every time.
+          Tony Allen Auto Service has been providing Warrant of Fitness inspections to <?php echo esc_html($suburb_name); ?> and surrounding South Auckland suburbs since <?php echo esc_html($established); ?>. We are NZTA Authorised and MTA Assured. Every <?php echo esc_html($suburb_name); ?> WOF is carried out to the same standard, every time.
         </p>
         <p class="wl-about__body">
-          Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a><?php echo $distance_text ? ' — ' . esc_html($distance_text) : ''; ?>. We are one of the largest independent automotive workshops in South Auckland, operating <?php echo esc_html($division_count); ?> specialist divisions under one roof. Whatever your vehicle — daily driver, ute, van, or light commercial — our technicians have the experience to get your WOF done efficiently.
+          Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a><?php echo $distance_text ? ', ' . esc_html($distance_text) : ''; ?>. We are one of the largest independent automotive workshops in South Auckland, operating <?php echo esc_html($division_count); ?> specialist divisions under one roof. Whatever your vehicle (daily driver, ute, van or light commercial), our technicians have the experience to get your WOF done efficiently.
         </p>
         <p class="wl-about__body">
           <?php echo esc_html($suburb_name); ?> drivers choose us because we are straight with you. If your vehicle passes, you are out the door. If it needs work, we give you a clear written estimate before any repair work. You decide whether to proceed. No pressure, no surprises.
@@ -766,13 +766,13 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <div style="background:#F7F7F5;border:1px solid #E8E8E4;border-top:3px solid #FFC800;padding:28px;margin-bottom:20px;">
           <h3 style="font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#999;margin-bottom:20px;">Why <?php echo esc_html($suburb_name); ?> Drivers Choose TAAS</h3>
           <ul class="wl-choose">
-            <li>NZTA authorised — every inspector trained and certified</li>
-            <li><?php echo esc_html($price); ?> flat rate — all makes, all models, no hidden charges</li>
+            <li>NZTA authorised, every inspector trained and certified</li>
+            <li><?php echo esc_html($price); ?> flat rate for all makes and models, no hidden charges</li>
             <li>Drop off early and we'll aim to inspect, estimate and repair the same day</li>
-            <li>Repairs carried out in Manukau — no need to book elsewhere</li>
+            <li>Repairs carried out in Manukau, no need to book elsewhere</li>
             <li>Re-inspection within 28 days at no charge</li>
             <li>Afterpay, Q Card, Gem Finance, Aotea Finance accepted</li>
-            <li>Trading since <?php echo esc_html($established); ?> — <?php echo esc_html($years); ?> years serving South Auckland</li>
+            <li>Trading since <?php echo esc_html($established); ?>: <?php echo esc_html($years); ?> years serving South Auckland</li>
           </ul>
         </div>
         <div class="wl-cta-panel">
@@ -793,7 +793,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       What We Check in Your <span>WOF Inspection</span>
     </h2>
     <p class="wl-checks__sub">
-      Our NZTA-authorised inspectors work through all mandatory checkpoints — every time, no shortcuts.
+      Our NZTA-authorised inspectors work through all mandatory checkpoints. Every time, no shortcuts.
     </p>
     <div class="wl-checks__grid">
       <div class="wl-check-item">Tyres &amp; tread depth</div>
@@ -810,7 +810,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <div class="wl-check-item">ADAS warning lights <span style="font-size:11px;color:#FFC800;font-weight:800;margin-left:4px;">NEW 2026</span></div>
     </div>
     <div class="wl-checks__note">
-      <strong>Failed your WOF?</strong> In most cases we can carry out the repairs in Manukau on the same visit — saving you the hassle of booking elsewhere. Subject to work required and parts availability.
+      <strong>Failed your WOF?</strong> In most cases we can carry out the repairs in Manukau on the same visit, so you do not need to book elsewhere. Subject to work required and parts availability.
     </div>
   </div>
 </section>
@@ -819,8 +819,8 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 <!-- ══ 2026 RULES (white) ════════════════════════════════════════════════ -->
 <section class="wl-rules" aria-labelledby="wl-rules-head">
   <div class="wl-w">
-    <div class="wl-rules__eye">Important — Updated Rules</div>
-    <h2 class="wl-rules__h2" id="wl-rules-head">New WOF Rules from November 2026 — What Changes for You</h2>
+    <div class="wl-rules__eye">Important: Updated Rules</div>
+    <h2 class="wl-rules__h2" id="wl-rules-head">New WOF Rules from November 2026: What Changes for You</h2>
     <p class="wl-rules__sub">The New Zealand Government has confirmed changes to WOF inspection frequency, effective <strong>1 November 2026</strong>. Here is a plain-English summary for <?php echo esc_html($suburb_name); ?> drivers.</p>
 
     <div class="wl-table-wrap">
@@ -836,7 +836,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
           <tr><td>New vehicle (first WOF)</td><td>WOF at 3 years</td><td><span class="tag-new">WOF at 4 years</span></td></tr>
           <tr><td>4–14 years old (registered from Nov 2019)</td><td>Annual WOF</td><td><span class="tag-new">Every 2 years</span></td></tr>
           <tr><td>4–14 years old (registered from Nov 2013)</td><td>Annual WOF</td><td><span class="tag-new">Every 2 years from Nov 2027</span></td></tr>
-          <tr><td>Over 14 years old</td><td>Annual WOF</td><td><span class="tag-nc">Annual WOF — no change</span></td></tr>
+          <tr><td>Over 14 years old</td><td>Annual WOF</td><td><span class="tag-nc">Annual WOF, no change</span></td></tr>
           <tr><td>Pre-2000 vehicles</td><td>6-monthly WOF</td><td><span class="tag-new">Annual WOF</span></td></tr>
           <tr><td>Light rental vehicles</td><td>6-monthly</td><td><span class="tag-new">Annual from Nov 2026</span></td></tr>
         </tbody>
@@ -844,7 +844,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     </div>
 
     <div class="wl-rules__note">
-      <strong>Important for <?php echo esc_html($suburb_name); ?> drivers:</strong> Most vehicles over 14 years old — which make up a large proportion of the South Auckland fleet — continue on annual WOFs with no change. WOF fines are also increasing: from 1 November 2026, driving with a WOF expired by more than two months attracts a <strong>$350 fine</strong> (up from $200). Illegal tyres and wheels go up to $350 too. Not sure when your WOF is due? Call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> and we'll check for you.
+      <strong>Important for <?php echo esc_html($suburb_name); ?> drivers:</strong> Most vehicles over 14 years old (a large share of the South Auckland fleet) continue on annual WOFs with no change. WOF fines are also increasing: from 1 November 2026, driving with a WOF expired by more than two months attracts a <strong>$350 fine</strong> (up from $200). Illegal tyres and wheels go up to $350 too. Not sure when your WOF is due? Call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>"><?php echo esc_html($phone_free); ?></a> and we'll check for you.
     </div>
     <p style="margin-top:14px;font-size:13px;color:#999;">Source: NZTA. Always verify current standards at <a href="https://www.nzta.govt.nz" target="_blank" rel="noopener noreferrer" style="color:#FFC800;">nzta.govt.nz</a>.</p>
   </div>
@@ -953,7 +953,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <?php $nearby = taas_suburb_nearby($suburb_slug, $suburb_name); if (!empty($nearby)): ?>
     <div style="margin-bottom:40px;">
       <h2 class="wl-suburbs__h2" id="wl-suburbs-head">WOF for <?php echo esc_html($suburb_name); ?> &amp; Nearby</h2>
-      <p class="wl-suburbs__sub">Our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a> serves drivers from <?php echo esc_html($suburb_name); ?> and surrounding areas<?php echo $distance_text ? ' — ' . esc_html($distance_text) : ''; ?>.</p>
+      <p class="wl-suburbs__sub">Our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a> serves drivers from <?php echo esc_html($suburb_name); ?> and surrounding areas<?php echo $distance_text ? ', ' . esc_html($distance_text) : ''; ?>.</p>
       <div style="display:flex;flex-wrap:wrap;gap:8px;">
         <?php foreach ($nearby as $area): ?>
         <span style="background:#fff;border:1px solid #E8E8E4;padding:6px 14px;font-size:13px;font-weight:600;color:#333;"><?php echo esc_html($area); ?></span>
@@ -1001,7 +1001,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 <!-- ══ FAQ (white) ════════════════════════════════════════════════════════ -->
 <section class="wl-faq" aria-labelledby="wl-faq-head">
   <div class="wl-w">
-    <h2 class="wl-faq__h2" id="wl-faq-head">WOF <?php echo esc_html($suburb_name); ?> — <span>Questions Answered</span></h2>
+    <h2 class="wl-faq__h2" id="wl-faq-head">WOF <?php echo esc_html($suburb_name); ?>: <span>Questions Answered</span></h2>
     <p class="wl-faq__sub">Updated for the 2026 rule changes. Answers reflect current NZTA requirements.</p>
     <div class="wl-faq__list">
       <?php foreach ($faqs as $i => $faq): ?>
@@ -1026,14 +1026,14 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <div>
         <div class="wl-awards__label">Industry recognition</div>
         <div class="wl-awards__list">
-          <span class="wl-award-pill">🏆 MTA Best General Repairer — South Auckland 2010</span>
+          <span class="wl-award-pill">🏆 MTA Best General Repairer, South Auckland 2010</span>
           <span class="wl-award-pill">MTA Awards Finalist 2012</span>
           <span class="wl-award-pill">MTA Awards Finalist 2014</span>
           <span class="wl-award-pill">2 Degrees Business Awards Nominee 2026</span>
         </div>
       </div>
       <div>
-        <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured — Motor Trade Association member" style="height:70px;width:auto;" loading="lazy">
+        <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured, Motor Trade Association member" style="height:70px;width:auto;" loading="lazy">
       </div>
     </div>
   </div>

@@ -47,7 +47,7 @@ function mbc_badge($initials,$size=56){$fs=strlen($initials)>2?14:18;return '<sv
 $hubs = [
     ['badge'=>'BR','title'=>'Brake Repairs & Servicing','desc'=>'Pad and rotor replacement, brake fluid, callipers, drums, handbrake repairs, and brake noise diagnosis. WOF brake failures fixed and re-inspected on-site.','price'=>$brake_price,'url'=>'/brake-repairs-manukau/','cta'=>'Brake Repairs →'],
     ['badge'=>'CL','title'=>'Clutch Replacement & Repair','desc'=>'Clutch kit replacement, flywheel inspection and replacement, hydraulic clutch systems, and clutch diagnosis.','price'=>$clutch_price,'url'=>'/clutch-replacement-manukau/','cta'=>'Clutch Repairs →'],
-    ['badge'=>'DS','title'=>'Disc Skimming','desc'=>'On-site brake disc machining. Rotors resurfaced to specification — removes grooves, scoring, and minor warping. Paired with new pads for correct bedding.','price'=>'Contact for pricing','url'=>'/disc-skimming/','cta'=>'Disc Skimming →'],
+    ['badge'=>'DS','title'=>'Disc Skimming','desc'=>'On-site brake disc machining. Rotors resurfaced to specification to remove grooves, scoring and minor warping. Paired with new pads for correct bedding.','price'=>'Contact for pricing','url'=>'/disc-skimming/','cta'=>'Disc Skimming →'],
 ];
 
 $related = [['label'=>'WOF Inspections','url'=>'/wof/'],['label'=>'Vehicle Servicing','url'=>'/vehicle-servicing/'],['label'=>'Steering & Suspension','url'=>'/steering-and-suspension/'],['label'=>'Wheel Alignment','url'=>'/wheel-alignment-manukau/'],['label'=>'Transmission Service','url'=>'/transmission-service-and-repair/'],['label'=>'Diagnostic Scanning','url'=>'/diagnostic-scanning/'],['label'=>'TAAS European','url'=>'/european/'],['label'=>'EV & Hybrid Servicing','url'=>'/electric-hybrid-vehicle-servicing/'],['label'=>'Finance Options','url'=>'/finance-options/'],['label'=>'MBI Approved Repairer','url'=>'/mechanical-breakdown-insurance/']];
@@ -72,7 +72,7 @@ $faqs = [
 $schema_faqs=[];foreach($faqs as $faq){$schema_faqs[]=['@type'=>'Question','name'=>$faq['q'],'acceptedAnswer'=>['@type'=>'Answer','text'=>strip_tags($faq['a'])]];}
 $schema=['@context'=>'https://schema.org','@graph'=>[
     ['@type'=>'BreadcrumbList','itemListElement'=>[['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],['@type'=>'ListItem','position'=>2,'name'=>'Services','item'=>$site_url.'/services/'],['@type'=>'ListItem','position'=>3,'name'=>'Manukau Brake & Clutch','item'=>$page_url]]],
-    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Manukau Brake & Clutch — specialist brake and clutch division of Tony Allen Auto Service. Brake repairs '.$brake_price.'. Clutch replacement '.$clutch_price.'. On-site disc skimming. NZTA Authorised WOF re-inspection. MTA Assured. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'priceRange'=>'$$','areaServed'=>'South Auckland','sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, GEM Finance, Aotea Finance'],
+    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Manukau Brake & Clutch is the specialist brake and clutch division of Tony Allen Auto Service. Brake repairs '.$brake_price.'. Clutch replacement '.$clutch_price.'. On-site disc skimming. NZTA Authorised WOF re-inspection. MTA Assured. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'priceRange'=>'$$','areaServed'=>'South Auckland','sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, GEM Finance, Aotea Finance'],
     ['@type'=>'SpeakableSpecification','cssSelector'=>['.mbc-hero__sub','.mbc-faq__item:first-of-type .mbc-faq__a']],
     ['@type'=>'FAQPage','mainEntity'=>$schema_faqs],
 ]];
@@ -120,7 +120,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div>
     <span class="mbc-eye mbc-eye--yellow">Manukau Brake &amp; Clutch</span>
     <h1>Brake &amp; Clutch<br><span>Specialists Manukau</span></h1>
-    <p class="mbc-hero__sub">Manukau Brake &amp; Clutch — specialist brake and clutch division of Tony Allen Auto Service. Brake repairs, clutch replacement, and on-site disc skimming. Safety-critical work done properly the first time. <?php echo esc_html($years); ?> years of workshop experience.</p>
+    <p class="mbc-hero__sub">Manukau Brake &amp; Clutch is the specialist brake and clutch division of Tony Allen Auto Service. Brake repairs, clutch replacement, and on-site disc skimming. Safety-critical work done properly the first time. <?php echo esc_html($years); ?> years of workshop experience.</p>
     <div class="mbc-hero__prices"><div class="mbc-hero__price">Brakes <?php echo esc_html($brake_price); ?></div><div class="mbc-hero__price">Clutch <?php echo esc_html($clutch_price); ?></div></div>
     <div class="mbc-hero__ctas">
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="mbc-btn mbc-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
@@ -144,13 +144,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <span class="mbc-eye mbc-eye--dark">Why It Matters</span>
   <h2 class="mbc-h2">Brakes and Clutch Are Safety-Critical</h2>
   <div class="mbc-content">
-    <p>Your brakes are the most important safety system on your vehicle. A steering failure is dangerous. An engine failure is inconvenient. A brake failure is life-threatening. Brakes are also one of the most common WOF failure items in New Zealand — and the difference between a workshop that does brake work properly and one that takes shortcuts is the difference between a repair that lasts and one that puts you back in the same position six months later.</p>
-    <p>We only occasionally fit pads on their own. New brake pads on a worn, grooved, or scored rotor will not bed in correctly. They wear unevenly, they squeal, and the grooves from the old pads transfer straight into the new ones. Every brake job at Manukau Brake &amp; Clutch includes rotor machining or replacement alongside new pads — because that is the only way to do it properly.</p>
-    <p>Clutch work is the same principle. We replace the clutch as a kit — disc, pressure plate, and release bearing together — and inspect the flywheel before reassembly. A new clutch disc on a worn flywheel will judder, slip early, and cost you twice.</p>
+    <p>Your brakes are the most important safety system on your vehicle. A steering failure is dangerous. An engine failure is inconvenient. A brake failure is life-threatening. Brakes are also one of the most common WOF failure items in New Zealand. The difference between a workshop that does brake work properly and one that takes shortcuts is the difference between a repair that lasts and one that puts you back in the same position six months later.</p>
+    <p>We only occasionally fit pads on their own. New brake pads on a worn, grooved, or scored rotor will not bed in correctly. They wear unevenly, they squeal, and the grooves from the old pads transfer straight into the new ones. Every brake job at Manukau Brake &amp; Clutch includes rotor machining or replacement alongside new pads, because that is the only way to do it properly.</p>
+    <p>Clutch work is the same principle. We replace the clutch as a kit (disc, pressure plate and release bearing together) and inspect the flywheel before reassembly. A new clutch disc on a worn flywheel will judder, slip early, and cost you twice.</p>
   </div>
   <div class="mbc-safety">
     <div class="mbc-safety__title">Failed Your WOF on Brakes?</div>
-    <div class="mbc-safety__body">We repair the fault and re-inspect on-site. NZTA Authorised — you do not need to go elsewhere for re-inspection. Same-day where possible, subject to parts availability. Call <?php echo esc_html($phone_free); ?>.</div>
+    <div class="mbc-safety__body">We repair the fault and re-inspect on-site. We are NZTA Authorised, so you do not need to go elsewhere for re-inspection. Same-day where possible, subject to parts availability. Call <?php echo esc_html($phone_free); ?>.</div>
   </div>
 </div></section>
 
@@ -163,7 +163,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 </div></section>
 
 <div class="mbc-finance"><div class="mbc-finance__inner">
-  <div class="mbc-finance__text"><strong>Finance available</strong> — brake and clutch repairs are safety-critical. Don't delay.</div>
+  <div class="mbc-finance__text"><strong>Finance available.</strong> Brake and clutch repairs are safety-critical. Don't delay.</div>
   <div class="mbc-finance__logos"><?php foreach ($finance as $f): ?><span class="mbc-fin"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
   <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" class="mbc-finance__link">View finance options →</a>
 </div></div>
@@ -171,13 +171,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="mbc-enquire" class="mbc-section mbc-section--dark"><div class="mbc-w"><div class="mbc-enquiry">
   <div>
     <span class="mbc-eye mbc-eye--yellow">Book or Enquire</span>
-    <h2 class="mbc-h2 mbc-h2--white">Brake &amp; Clutch — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <h2 class="mbc-h2 mbc-h2--white">Brake &amp; Clutch: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
     <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your vehicle make and model and whether it is brakes, clutch, or both. We will advise on next steps and provide an estimate.</p>
-    <ul class="mbc-enquiry__list"><?php foreach (['Pads and rotors always — never pads only','Complete clutch kit — disc, pressure plate, release bearing','Written estimate before any work begins','Finance available — pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
+    <ul class="mbc-enquiry__list"><?php foreach (['Pads and rotors, done properly','Complete clutch kit: disc, pressure plate, release bearing','Written estimate before any work begins','Finance available to pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="mbc-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="mbc-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     <div class="mbc-enquiry__badges"><?php foreach ($finance as $f): ?><span class="mbc-enquiry__badge"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
-    <div class="mbc-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price before any work begins — no surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
+    <div class="mbc-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price before any work begins. No surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="mbc-enquiry__form">
     <div class="mbc-enquiry__form-title">Send Us Your Details</div>
@@ -201,7 +201,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="mbc-section mbc-section--white"><div class="mbc-w">
   <span class="mbc-eye mbc-eye--dark">Common Questions</span>
-  <h2 class="mbc-h2">Manukau Brake &amp; Clutch — FAQ</h2>
+  <h2 class="mbc-h2">Manukau Brake &amp; Clutch FAQ</h2>
   <div class="mbc-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="mbc-faq__item<?php echo $i===0?' mbc-faq__item--open':''; ?>"><button class="mbc-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="mbc-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="mbc-a-<?php echo $i; ?>" class="mbc-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>
@@ -212,7 +212,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <h2 class="mbc-h2">Brake &amp; Clutch Across South Auckland</h2>
   <div class="mbc-suburb-pills"><?php foreach ($suburbs as $s): ?><a href="<?php echo esc_url($site_url.'/brake-repairs-'.$s['slug'].'/'); ?>" class="mbc-suburb-pill"><?php echo esc_html($s['name']); ?></a><?php endforeach; ?></div>
   <div class="mbc-close">
-    <div class="mbc-close__text">Brakes and clutch are safety-critical — don't wait.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>
+    <div class="mbc-close__text">Brakes and clutch are safety-critical. Don't wait.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>
     <div class="mbc-close__ctas"><a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="mbc-btn mbc-btn--primary"><?php echo esc_html($phone_free); ?></a><a href="#mbc-enquire" class="mbc-btn mbc-btn--dark">Book Online</a></div>
   </div>
 </div></section>

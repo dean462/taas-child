@@ -40,13 +40,13 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 
 // ── Master array ─────────────────────────────────────────────────────────────
 $bss_master = [
-    'brake-pad-rotor-replacement-manukau' => ['name'=>'Brake Pad & Rotor Replacement','badge'=>'PR','short'=>'New pads plus rotor machining or replacement — always together. The correct way to do brake work.','price'=>$brake_price,'urgency'=>'medium'],
-    'brake-fluid-service-manukau'         => ['name'=>'Brake Fluid Service','badge'=>'BF','short'=>'Brake fluid absorbs moisture and degrades. A fluid change restores the boiling point and prevents brake fade.','price'=>'Brake fluid change — contact for pricing','urgency'=>'low'],
-    'brake-calliper-repair-manukau'       => ['name'=>'Brake Calliper Repair','badge'=>'CA','short'=>'Seized, sticking, or leaking callipers cause uneven braking and accelerated pad wear. Rebuild or replacement.','price'=>'Calliper repair — estimate after inspection','urgency'=>'medium'],
-    'drum-brake-repair-manukau'           => ['name'=>'Drum Brake & Shoe Replacement','badge'=>'DR','short'=>'Rear drum brake inspection, shoe replacement, and wheel cylinder repair. Common on older vehicles and some modern rear axles.','price'=>'Drum brake repair — estimate after inspection','urgency'=>'medium'],
-    'handbrake-repair-manukau'            => ['name'=>'Handbrake Repair','badge'=>'HB','short'=>'Cable adjustment, shoe replacement, and electronic handbrake diagnosis. A functioning handbrake is a WOF requirement.','price'=>'Handbrake repair — estimate after inspection','urgency'=>'low'],
-    'brake-noise-diagnosis-manukau'       => ['name'=>'Brake Noise Diagnosis','badge'=>'BN','short'=>'Squealing, grinding, or scraping when braking? We identify the cause — pad wear indicator, glazed pads, rotor damage, seized calliper, or debris.','price'=>'Brake inspection — contact for pricing','urgency'=>'medium'],
-    'wof-brake-failure-manukau'           => ['name'=>'WOF Brake Failure Repairs','badge'=>'WF','short'=>'Failed your WOF on brakes? We fix it and re-inspect on-site. NZTA Authorised — no need to go elsewhere.','price'=>'Estimate after WOF failure assessment','urgency'=>'high'],
+    'brake-pad-rotor-replacement-manukau' => ['name'=>'Brake Pad & Rotor Replacement','badge'=>'PR','short'=>'New pads plus rotor machining or replacement. Always together. The correct way to do brake work.','price'=>$brake_price,'urgency'=>'medium'],
+    'brake-fluid-service-manukau'         => ['name'=>'Brake Fluid Service','badge'=>'BF','short'=>'Brake fluid absorbs moisture and degrades. A fluid change restores the boiling point and prevents brake fade.','price'=>'Brake fluid change: contact for pricing','urgency'=>'low'],
+    'brake-calliper-repair-manukau'       => ['name'=>'Brake Calliper Repair','badge'=>'CA','short'=>'Seized, sticking, or leaking callipers cause uneven braking and accelerated pad wear. Rebuild or replacement.','price'=>'Calliper repair: estimate after inspection','urgency'=>'medium'],
+    'drum-brake-repair-manukau'           => ['name'=>'Drum Brake & Shoe Replacement','badge'=>'DR','short'=>'Rear drum brake inspection, shoe replacement, and wheel cylinder repair. Common on older vehicles and some modern rear axles.','price'=>'Drum brake repair: estimate after inspection','urgency'=>'medium'],
+    'handbrake-repair-manukau'            => ['name'=>'Handbrake Repair','badge'=>'HB','short'=>'Cable adjustment, shoe replacement, and electronic handbrake diagnosis. A functioning handbrake is a WOF requirement.','price'=>'Handbrake repair: estimate after inspection','urgency'=>'low'],
+    'brake-noise-diagnosis-manukau'       => ['name'=>'Brake Noise Diagnosis','badge'=>'BN','short'=>'Squealing, grinding, or scraping when braking? We identify the cause: pad wear indicator, glazed pads, rotor damage, seized calliper, or debris.','price'=>'Brake inspection: contact for pricing','urgency'=>'medium'],
+    'wof-brake-failure-manukau'           => ['name'=>'WOF Brake Failure Repairs','badge'=>'WF','short'=>'Failed your WOF on brakes? We fix it and re-inspect on-site. NZTA Authorised, so no need to go elsewhere.','price'=>'Estimate after WOF failure assessment','urgency'=>'high'],
 ];
 
 $current = isset($bss_master[$page_slug]) ? $bss_master[$page_slug] : null;
@@ -76,7 +76,7 @@ for ($i = 1; $i <= 5; $i++) {
 }
 
 $uc_map = [
-    'high'   => ['bg'=>'rgba(192,57,43,.12)','border'=>'var(--taas-alert,#C0392B)','text'=>'#f5a0a0','label'=>'Urgent — Do Not Ignore'],
+    'high'   => ['bg'=>'rgba(192,57,43,.12)','border'=>'var(--taas-alert,#C0392B)','text'=>'#f5a0a0','label'=>'Urgent: Do Not Ignore'],
     'medium' => ['bg'=>'rgba(255,200,0,.08)','border'=>'var(--taas-yellow,#FFC800)','text'=>'var(--taas-yellow,#FFC800)','label'=>'Book Soon'],
     'low'    => ['bg'=>'rgba(255,255,255,.06)','border'=>'#555','text'=>'#aaa','label'=>'Preventative Maintenance'],
 ];
@@ -99,12 +99,12 @@ if ($causes_raw)    { $faqs[] = ['q' => "What causes {$service_name} issues?", '
 if ($symptoms_raw)  { $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Signs include: ' . strtolower(implode('; ', $symptoms)) . '. Call ' . $phone_free . '.']; }
 $faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We give you an estimate before starting work. Call ' . $phone_free . '.'];
 $faqs[] = ['q' => 'Why don\'t you just replace brake pads?', 'a' => 'New pads on a worn rotor will not bed in correctly. They wear unevenly, squeal, and the groove pattern transfers into the new pads. We always pair new pads with rotor machining or replacement.'];
-$faqs[] = ['q' => 'Can you fix WOF brake failures?', 'a' => 'Yes — we repair the fault and re-inspect on-site. NZTA Authorised. Same-day where possible. Call ' . $phone_free . '.'];
-$faqs[] = ['q' => 'Do you offer finance for brake repairs?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, Aotea Finance. Brake repairs are safety-critical and should not be delayed.'];
+$faqs[] = ['q' => 'Can you fix WOF brake failures?', 'a' => 'Yes. We repair the fault and re-inspect on-site. NZTA Authorised. Same-day where possible. Call ' . $phone_free . '.'];
+$faqs[] = ['q' => 'Do you offer finance for brake repairs?', 'a' => 'Yes. Afterpay, Q Card, GEM Finance, Aotea Finance. Brake repairs are safety-critical and should not be delayed.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . '.'];
 if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => 'Timing depends on the vehicle and repair scope. Pad and rotor replacement is typically same-day. We advise on timeframe when you book. Call ' . $phone_free . '.']; }
-if (count($faqs) < 10) { $faqs[] = ['q' => 'Do you work on European vehicle brakes?', 'a' => 'Yes. Our TAAS European division covers all European makes — electronic handbrakes, pad wear sensors, ceramic compounds, and specific rotor specifications.']; }
+if (count($faqs) < 10) { $faqs[] = ['q' => 'Do you work on European vehicle brakes?', 'a' => 'Yes. Our TAAS European division covers all European makes, including electronic handbrakes, pad wear sensors, ceramic compounds, and specific rotor specifications.']; }
 
 // ── Badge helper (unique to this template) ───────────────────────────────────
 function bss_badge($initials, $size = 40) {
@@ -216,8 +216,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="bss-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="bss-w"><div class="bss-hero__inner">
   <div>
     <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/brake-repairs-manukau/'); ?>" style="color:#555;text-decoration:none;">Brake Repairs</a><span style="margin:0 6px;">›</span><span style="color:#888;"><?php echo esc_html($service_name); ?></span></nav>
-    <span class="bss-eye bss-eye--yellow">Brakes — Manukau</span>
-    <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
+    <span class="bss-eye bss-eye--yellow">Brakes · Manukau</span>
+    <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
     <p class="bss-hero__sub"><?php echo esc_html($current['short']); ?> <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
     <?php if ($price_signal): ?><div class="bss-hero__price"><?php echo esc_html($price_signal); ?></div><?php endif; ?>
     <div class="bss-hero__ctas">
@@ -273,11 +273,11 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   </div>
 </div></section>
 
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong>: interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section id="bss-enquire" class="bss-section bss-section--dark"><div class="bss-w"><div class="bss-enquiry">
   <div>
     <span class="bss-eye bss-eye--yellow">Book Today</span>
-    <h2 class="bss-h2 bss-h2--white"><?php echo esc_html($service_name); ?> — <span style="color:var(--taas-yellow,#FFC800);">Enquire Now</span></h2>
+    <h2 class="bss-h2 bss-h2--white"><?php echo esc_html($service_name); ?>: <span style="color:var(--taas-yellow,#FFC800);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow,#FFC800);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.75;"><strong style="color:var(--taas-white,#fff);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -303,7 +303,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="bss-section bss-section--grey"><div class="bss-w">
   <span class="bss-eye bss-eye--dark">Common Questions</span>
-  <h2 class="bss-h2"><?php echo esc_html($service_name); ?> — FAQ</h2>
+  <h2 class="bss-h2"><?php echo esc_html($service_name); ?> FAQs</h2>
   <div class="bss-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="bss-faq__item<?php echo $i===0?' bss-faq__item--open':''; ?>"><button class="bss-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="bss-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="bss-a-<?php echo $i; ?>" class="bss-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

@@ -62,7 +62,7 @@ $tyre_master = [
         'name'       => 'Tyre Fitting',
         'badge'      => 'TF',
         'short'      => 'New tyres fitted, balanced and aligned. All makes and sizes.',
-        'hero_price' => 'Contact for tyre pricing — fitting, balancing and alignment included',
+        'hero_price' => 'Contact for tyre pricing. Fitting, balancing and alignment included',
         'price'      => 'Tyre prices depend on size, brand and availability. Wheel alignment ' . $alignment_price . '. Balancing ' . $balance_price . ' (included with new tyre fitting).',
         'urgency'    => 'medium',
         'url'        => '/tyre-fitting-manukau/',
@@ -71,7 +71,7 @@ $tyre_master = [
         'name'       => 'Tyre Rotation',
         'badge'      => 'TR',
         'short'      => 'Even out wear across all four tyres. Extend tyre life.',
-        'hero_price' => 'Contact for pricing — often done at the same time as a service',
+        'hero_price' => 'Contact for pricing. Often done at the same time as a service',
         'price'      => 'Contact us for tyre rotation pricing. Often combined with a vehicle service for efficiency.',
         'urgency'    => 'low',
         'url'        => '/tyre-rotation-manukau/',
@@ -80,7 +80,7 @@ $tyre_master = [
         'name'       => '4WD & SUV Tyres',
         'badge'      => '4WD',
         'short'      => 'All-terrain, highway terrain and mud terrain. Fitted and balanced.',
-        'hero_price' => 'Contact for 4WD tyre pricing — depends on size and pattern',
+        'hero_price' => 'Contact for 4WD tyre pricing (depends on size and pattern)',
         'price'      => '4WD tyre prices vary by size, brand and tread pattern. We carry Maxxis Bravo, Continental CrossContact, Goodyear Wrangler and budget alternatives. Call with your tyre size for an estimate.',
         'urgency'    => 'medium',
         'url'        => '/4wd-tyres-manukau/',
@@ -89,7 +89,7 @@ $tyre_master = [
         'name'       => 'Budget Tyres',
         'badge'      => 'BT',
         'short'      => 'Quality budget options. Same fitting standard as premium.',
-        'hero_price' => 'Contact for pricing — budget options for most sizes',
+        'hero_price' => 'Contact for pricing. Budget options for most sizes',
         'price'      => 'Budget tyre prices depend on size and availability. We carry Hifly, Rovelo, Vitora and other quality budget brands. Fitted, balanced and aligned to the same standard as premium tyres.',
         'urgency'    => 'low',
         'url'        => '/budget-tyres-manukau/',
@@ -98,7 +98,7 @@ $tyre_master = [
         'name'       => 'Run-Flat Tyres',
         'badge'      => 'RF',
         'short'      => 'Supply and fit run-flat tyres for BMW, Mercedes-Benz, MINI.',
-        'hero_price' => 'Contact for run-flat tyre pricing — vehicle-specific sizing',
+        'hero_price' => 'Contact for run-flat tyre pricing (vehicle-specific sizing)',
         'price'      => 'Run-flat tyre prices depend on the vehicle and size. Common on BMW, Mercedes-Benz, MINI and some Audi vehicles. We source and fit the correct specification for your vehicle.',
         'urgency'    => 'medium',
         'url'        => '/run-flat-tyres-manukau/',
@@ -108,7 +108,7 @@ $tyre_master = [
         'badge'      => 'PR',
         'short'      => 'Plug and patch where repairable. Honest assessment if not.',
         'hero_price' => $puncture_price ? ('Puncture repair ' . $puncture_price) : 'Contact for puncture repair pricing',
-        'price'      => $puncture_price ? ('Puncture repair ' . $puncture_price . '. Not all punctures are repairable — sidewall damage, repairs too close to the edge, or previous repairs in the same area mean the tyre needs replacing. We assess honestly.') : 'Contact us for puncture repair pricing. Not all punctures are repairable — sidewall damage, repairs too close to the edge, or previous repairs in the same area mean the tyre needs replacing. We assess honestly.',
+        'price'      => $puncture_price ? ('Puncture repair ' . $puncture_price . '. Not all punctures are repairable. Sidewall damage, repairs too close to the edge, or previous repairs in the same area mean the tyre needs replacing. We assess honestly.') : 'Contact us for puncture repair pricing. Not all punctures are repairable. Sidewall damage, repairs too close to the edge, or previous repairs in the same area mean the tyre needs replacing. We assess honestly.',
         'urgency'    => 'high',
         'url'        => '/tyre-centre/puncture-repair-manukau/',
     ],
@@ -116,8 +116,8 @@ $tyre_master = [
         'name'       => 'TPMS Reset',
         'badge'      => 'TPMS',
         'short'      => 'Tyre pressure monitoring reset and sensor diagnosis.',
-        'hero_price' => 'TPMS reset ' . $tpms_price . ' — sensor replacement additional',
-        'price'      => 'TPMS reset ' . $tpms_price . '. Sensor replacement additional — sensor prices vary by vehicle. Call with your vehicle details for an estimate.',
+        'hero_price' => 'TPMS reset ' . $tpms_price . '. Sensor replacement additional',
+        'price'      => 'TPMS reset ' . $tpms_price . '. Sensor replacement additional, as sensor prices vary by vehicle. Call with your vehicle details for an estimate.',
         'urgency'    => 'low',
         'url'        => '/tpms-reset-manukau/',
     ],
@@ -167,18 +167,18 @@ $faqs[] = ['q' => "How much does {$service_name} cost?", 'a' => $price_signal . 
 if ($process_raw) {
     $faqs[] = ['q' => "What is your process for {$service_name}?", 'a' => implode('. ', $process) . '.'];
 }
-$faqs[] = ['q' => "Do I need a wheel alignment after new tyres?", 'a' => "We recommend a wheel alignment after fitting new tyres — it ensures even wear and extends tyre life. Alignment {$alignment_price}. Without it, new tyres can develop uneven wear within months."];
+$faqs[] = ['q' => "Do I need a wheel alignment after new tyres?", 'a' => "We recommend a wheel alignment after fitting new tyres. It keeps wear even and extends tyre life. Alignment {$alignment_price}. Without it, new tyres can develop uneven wear within months."];
 $faqs[] = ['q' => "Do you do 4WD and SUV tyres?", 'a' => "Yes. We carry all-terrain, highway terrain and mud terrain patterns. Brands include Maxxis, Continental, Goodyear and budget alternatives. Fitted, balanced and aligned on-site."];
 $faqs[] = ['q' => "Can I pay with finance?", 'a' => "Yes. We accept Afterpay, Q Card and GEM Finance. Apply in-store or set up your account before you arrive."];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
-$faqs[] = ['q' => "Do you fit tyres I have bought elsewhere?", 'a' => "Yes. Bring your tyres in and we will fit, balance and align. Check the size and load rating match your vehicle before purchasing — call {$phone_free} if unsure."];
+$faqs[] = ['q' => "Do you fit tyres I have bought elsewhere?", 'a' => "Yes. Bring your tyres in and we will fit, balance and align. Check the size and load rating match your vehicle before purchasing. Call {$phone_free} if unsure."];
 $faqs[] = ['q' => "Where is your tyre shop?", 'a' => "139 Cavendish Drive, Manukau, Auckland 2104. Open {$hours}. Call {$phone_free} to book or drop in."];
 
 // Pad to minimum 10 if needed
 if (count($faqs) < 10) {
     $padding_faqs = [
         ['q' => "How long does tyre fitting take?", 'a' => "Tyre fitting for a standard set of four takes around 45 minutes to an hour, including balancing. Alignment is an additional 30 to 45 minutes if required."],
-        ['q' => "How often should I check my tyre pressure?", 'a' => "At least once a month and before any long journey. Correct pressure improves fuel economy, tyre life and handling. Check with the tyres cold — the recommended pressures are on a sticker inside the driver's door or in your vehicle handbook."],
+        ['q' => "How often should I check my tyre pressure?", 'a' => "At least once a month and before any long trip. Correct pressure improves fuel economy, tyre life and handling. Check with the tyres cold. The recommended pressures are on a sticker inside the driver's door or in your vehicle handbook."],
         ['q' => "What is the legal minimum tread depth in New Zealand?", 'a' => "1.5mm across the full width of the tyre that contacts the road. Below this depth the tyre will fail a WOF inspection and your stopping distances increase significantly, especially in wet conditions."],
     ];
     foreach ($padding_faqs as $pf) {
@@ -360,10 +360,10 @@ body.page-template-template-tyre-sub-service { overflow-x:hidden; }
 <!-- ══════════════════════════════════════════════════════════════════════════ -->
 <section class="tss-hero">
   <div class="tss-hero__inner">
-    <span class="tss-hero__eyebrow">Tyre Centre — Manukau</span>
-    <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
+    <span class="tss-hero__eyebrow">Tyre Centre · Manukau</span>
+    <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
     <?php if ($hero_price) : ?><p class="tss-hero__price"><?php echo esc_html($hero_price); ?></p><?php endif; ?>
-    <p class="tss-hero__sub"><?php echo esc_html($current['short']); ?> Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>. MTA Assured workshop — <?php echo $years; ?> years of experience.</p>
+    <p class="tss-hero__sub"><?php echo esc_html($current['short']); ?> Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>. MTA Assured workshop with <?php echo $years; ?> years of experience.</p>
     <div class="tss-hero__ctas">
       <a href="#enquire" class="taas-btn taas-btn--primary">Get an Estimate</a>
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -457,7 +457,7 @@ body.page-template-template-tyre-sub-service { overflow-x:hidden; }
 <section class="tss-section tss-section--grey">
   <div class="tss-section__inner">
     <span class="tss-section__eyebrow">Pricing</span>
-    <h2 class="tss-section__heading"><?php echo esc_html($service_name); ?> — Pricing</h2>
+    <h2 class="tss-section__heading"><?php echo esc_html($service_name); ?> Pricing</h2>
     <div class="tss-callout">
       <div class="tss-callout__title"><?php echo esc_html($service_name); ?></div>
       <p class="tss-callout__body"><?php echo wp_kses_post($price_signal); ?> Finance available via Afterpay, Q Card and GEM Finance.</p>
@@ -477,7 +477,7 @@ body.page-template-template-tyre-sub-service { overflow-x:hidden; }
       <div>
         <span class="tss-section__eyebrow">Book or Enquire</span>
         <h2 class="tss-section__heading">Get an Estimate</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your vehicle and what you need — we will come back with an estimate.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your vehicle and what you need and we will come back with an estimate.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="tss-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="tss-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>Mon–Fri 7:30am–5:00pm · <?php echo esc_html($phone_local); ?></div>
       </div>
@@ -533,7 +533,7 @@ body.page-template-template-tyre-sub-service { overflow-x:hidden; }
   <div class="tss-section__inner">
     <div class="tss-faq">
       <span class="tss-section__eyebrow">FAQ</span>
-      <h2 class="tss-section__heading">Common Questions — <?php echo esc_html($service_name); ?></h2>
+      <h2 class="tss-section__heading">Common Questions: <?php echo esc_html($service_name); ?></h2>
       <div class="tss-faq__list">
         <?php foreach ($faqs as $faq) : ?>
         <div class="tss-faq__item">

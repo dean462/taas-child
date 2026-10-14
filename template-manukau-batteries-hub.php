@@ -49,7 +49,7 @@ function mbh_badge($initials, $size = 48) {
 
 $battery_types = [
     ['badge'=>'CAR','name'=>'Car Batteries','desc'=>'Standard, EFB, AGM and stop-start batteries for all cars and passenger vehicles. Matched to your vehicle specification.','url'=>'/car-battery-manukau/','cta'=>'Car Batteries →','chips'=>['Standard','EFB','AGM','Stop-Start']],
-    ['badge'=>'4WD','name'=>'4WD &amp; SUV Batteries','desc'=>'High-CCA batteries for 4WDs, utes and SUVs. Hilux, Ranger, Navara, D-MAX, Triton, Pajero — stock held.','url'=>'/4wd-battery-manukau/','cta'=>'4WD Batteries →','chips'=>['4WD','SUV','Ute','Diesel']],
+    ['badge'=>'4WD','name'=>'4WD &amp; SUV Batteries','desc'=>'High-CCA batteries for 4WDs, utes and SUVs. Hilux, Ranger, Navara, D-MAX, Triton, Pajero. Stock held.','url'=>'/4wd-battery-manukau/','cta'=>'4WD Batteries →','chips'=>['4WD','SUV','Ute','Diesel']],
     ['badge'=>'AGM','name'=>'AGM / Stop-Start','desc'=>'Stop-start vehicle specialists. Correct AGM spec matched every time. BMS registration included for European vehicles.','url'=>'/agm-battery-manukau/','cta'=>'AGM Batteries →','chips'=>['AGM','EFB','BMS Reg','European']],
     ['badge'=>'MAR','name'=>'Marine Batteries','desc'=>'Starting, deep cycle and dual-purpose marine batteries for boats and jet skis. Built for on-water vibration.','url'=>'/marine-battery-manukau/','cta'=>'Marine Batteries →','chips'=>['Starting','Deep Cycle','Dual Purpose']],
     ['badge'=>'MCY','name'=>'Motorcycle Batteries','desc'=>'Conventional, AGM and gel motorcycle batteries. Most common models in stock. Bring the bike in or call with details.','url'=>'/motorcycle-battery-manukau/','cta'=>'Motorcycle Batteries →','chips'=>['Conventional','AGM','Gel','Scooter']],
@@ -74,7 +74,7 @@ foreach ($faqs as $f) { $schema_faqs[] = ['@type'=>'Question','name'=>$f['q'],'a
 $schema = [
     '@context'=>'https://schema.org',
     '@graph'=>[
-        ['@type'=>['AutoPartsStore','LocalBusiness'],'@id'=>$site_url.'/#manukau-batteries','name'=>'Manukau Batteries — Tony Allen Auto Service',
+        ['@type'=>['AutoPartsStore','LocalBusiness'],'@id'=>$site_url.'/#manukau-batteries','name'=>'Manukau Batteries (Tony Allen Auto Service)',
          'url'=>$page_url,
          'description'=>'Car, 4WD, AGM, marine and motorcycle batteries in Manukau, South Auckland. Supply and fit. Authorised Neuton Power and Bosch dealer. Free battery testing. Family-owned since '.$established.'.',
          'telephone'=>[$phone_free,$phone_local],'email'=>defined('TAAS_EMAIL')?TAAS_EMAIL:'enquiries@taas.co.nz','foundingDate'=>'1985-10',
@@ -199,7 +199,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
   <div>
     <span class="mbh-hero__eyebrow">Manukau Batteries</span>
     <h1>Car Batteries <span>Manukau</span><br>Supply &amp; Fit</h1>
-    <p class="mbh-hero__sub">Authorised Neuton Power and Bosch dealer. Car, 4WD, AGM, marine and motorcycle batteries — supply and fit at 139 Cavendish Drive. Free battery testing. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+    <p class="mbh-hero__sub">Authorised Neuton Power and Bosch dealer. Car, 4WD, AGM, marine and motorcycle batteries. Supply and fit at 139 Cavendish Drive. Free battery testing. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
     <div class="mbh-hero__ctas">
       <a href="#enquire" class="taas-btn taas-btn--primary">Get an Estimate</a>
       <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -212,7 +212,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
       <li>Same-day supply &amp; fit</li>
       <li>Free battery load test</li>
       <li>Free alternator &amp; starter test</li>
-      <li>BMS registration — European cars</li>
+      <li>BMS registration for European cars</li>
       <li>Old battery recycled free</li>
       <li>Walk-ins welcome</li>
     </ul>
@@ -238,12 +238,12 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
   <h2 class="mbh-sec__h2">Why the Right Battery Matters</h2>
   <div class="mbh-edu">
     <div class="mbh-edu__text">
-      <p>A car battery does more than start the engine. It stabilises voltage across the electrical system, powers accessories when the engine is off, and in modern vehicles with stop-start systems, it cycles hundreds of times a day. The wrong battery — wrong chemistry, wrong CCA, wrong group size — shortens battery life and can cause electrical faults.</p>
-      <p>Standard lead-acid batteries work fine in conventional vehicles. But stop-start vehicles need AGM or EFB batteries that handle deep cycling. European vehicles need BMS registration after replacement so the charging system knows a new battery is fitted. Marine applications need batteries built for vibration and deep discharge. Fitting the wrong type is not just a waste of money — it can damage the charging system.</p>
+      <p>A car battery does more than start the engine. It stabilises voltage across the electrical system, powers accessories when the engine is off, and in modern vehicles with stop-start systems, it cycles hundreds of times a day. The wrong battery (wrong chemistry, wrong CCA, wrong group size) shortens battery life and can cause electrical faults.</p>
+      <p>Standard lead-acid batteries work fine in conventional vehicles. But stop-start vehicles need AGM or EFB batteries that handle deep cycling. European vehicles need BMS registration after replacement so the charging system knows a new battery is fitted. Marine applications need batteries built for vibration and deep discharge. Fitting the wrong type is a waste of money, and it can damage the charging system.</p>
       <p>We test before we recommend. A free load test tells us whether the battery is genuinely failing or whether the problem is actually the alternator, a parasitic drain, or a wiring fault. Fitting a new battery does not fix a charging problem.</p>
       <div class="mbh-edu__callout">
         <h3>Test Before You Replace</h3>
-        <p>A battery that keeps going flat is not always a battery problem. We test the battery, alternator, and starter motor before recommending anything. No charge for testing — walk in any weekday.</p>
+        <p>A battery that keeps going flat is not always a battery problem. We test the battery, alternator, and starter motor before recommending anything. No charge for testing. Walk in any weekday.</p>
       </div>
     </div>
     <div>
@@ -288,7 +288,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
 <!-- 5. PRICING -->
 <section class="mbh-sec mbh-sec--white"><div class="mbh-sec__inner">
   <span class="mbh-sec__eyebrow">Pricing Guide</span>
-  <h2 class="mbh-sec__h2">Battery Pricing — Manukau</h2>
+  <h2 class="mbh-sec__h2">Battery Pricing in Manukau</h2>
   <p class="mbh-sec__sub">All prices include supply, fitting, and old battery disposal. Call with your registration number for an exact price.</p>
   <div class="mbh-pricing">
     <div class="mbh-pricing__card mbh-pricing__card--highlight">
@@ -314,7 +314,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
 </div></section>
 
 <!-- 6. ENQUIRY -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="mbh-sec mbh-sec--dark" id="enquire"><div class="mbh-sec__inner">
   <div class="mbh-enquiry">
     <div>
@@ -322,7 +322,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
       <h2 class="mbh-sec__h2">Talk to Manukau Batteries</h2>
       <p style="font-size:16px;color:#aaa;line-height:1.75;margin-bottom:8px;">Tell us your vehicle make, model and year. We will confirm stock and pricing before you come in.</p>
       <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="mbh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
-      <div class="mbh-enquiry__detail"><strong>Manukau Batteries — Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;"><?php echo esc_html($address); ?></a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
+      <div class="mbh-enquiry__detail"><strong>Manukau Batteries, Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;"><?php echo esc_html($address); ?></a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     </div>
     <div><?php echo do_shortcode($cf7_general); ?></div>
   </div>
@@ -349,7 +349,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
 <!-- 9. SUBURB PILLS — grouped by type -->
 <section class="mbh-sec mbh-sec--grey"><div class="mbh-sec__inner">
   <span class="mbh-sec__eyebrow">Battery by Suburb</span>
-  <h2 class="mbh-sec__h2">Battery Replacement — South Auckland</h2>
+  <h2 class="mbh-sec__h2">Battery Replacement in South Auckland</h2>
   <p class="mbh-sec__sub">Serving all of South Auckland from 139 Cavendish Drive, Manukau.</p>
   <?php
   $suburbs = [
@@ -383,7 +383,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
 <!-- 10. FAQ -->
 <section class="mbh-sec mbh-sec--white"><div class="mbh-sec__inner">
   <span class="mbh-sec__eyebrow">FAQ</span>
-  <h2 class="mbh-sec__h2">Common Questions — Manukau Batteries</h2>
+  <h2 class="mbh-sec__h2">Common Questions: Manukau Batteries</h2>
   <div class="mbh-faq">
     <?php foreach ($faqs as $i => $faq) : ?>
     <div class="mbh-faq__item<?php echo $i===0?' mbh-faq__item--open':''; ?>">

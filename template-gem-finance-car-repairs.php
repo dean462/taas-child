@@ -37,7 +37,7 @@ $years_trading = date('Y') - intval($established);
 $faqs = [
     [
         'q' => 'Can I use GEM Visa for any repair at Tony Allen Auto Service?',
-        'a' => 'Yes. GEM Visa is accepted across our full range of services — WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, clutch, and diagnostics. An interest-free period may apply on purchases of $250 or more — check your current GEM Visa offer.',
+        'a' => 'Yes. GEM Visa is accepted across all our services: WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, clutch, and diagnostics. An interest-free period may apply on purchases of $250 or more. Check your current GEM Visa offer.',
     ],
     [
         'q' => 'Do I need a GEM Visa card before I come in?',
@@ -49,11 +49,11 @@ $faqs = [
     ],
     [
         'q' => 'Is GEM Visa interest-free?',
-        'a' => 'GEM Visa interest-free periods are available on qualifying purchases — typically $250 or more. During the interest-free period, no interest is charged provided you make the minimum monthly repayment. Once the period ends, the standard interest rate applies to any remaining balance.',
+        'a' => 'GEM Visa interest-free periods are available on qualifying purchases, typically $250 or more. During the interest-free period, no interest is charged provided you make the minimum monthly repayment. Once the period ends, the standard interest rate applies to any remaining balance.',
     ],
     [
         'q' => 'How do I apply an interest-free offer at pickup?',
-        'a' => 'When collecting your vehicle, let our service desk know you\'d like to apply an interest-free promotion to your GEM Visa. We\'ll process the payment accordingly. Make sure your offer is current — check your GEM Visa account before coming in.',
+        'a' => 'When collecting your vehicle, let our service desk know you\'d like to apply an interest-free promotion to your GEM Visa. We\'ll process the payment accordingly. Make sure your offer is current. Check your GEM Visa account before coming in.',
     ],
     [
         'q' => 'What happens if I miss a payment?',
@@ -702,13 +702,13 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <section class="taas-hero" aria-label="Page hero">
     <div>
-        <span class="taas-hero__eyebrow">Manukau's GEM Finance Mechanic — Est. <?php echo esc_html($established); ?></span>
+        <span class="taas-hero__eyebrow">Manukau's GEM Finance Mechanic · Est. <?php echo esc_html($established); ?></span>
 
         <h1>Car Repairs &amp; Servicing.<br>
         <span>Pay with GEM Visa.</span></h1>
 
         <p class="taas-hero__sub">
-            Tony Allen Auto Service accepts GEM Visa across all repairs and services. Use your existing GEM Visa card — with interest-free periods available on qualifying purchases.
+            Tony Allen Auto Service accepts GEM Visa across all repairs and services. Use your existing GEM Visa card, with interest-free periods available on qualifying purchases.
         </p>
 
         <div class="taas-hero__ctas">
@@ -778,30 +778,30 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">How It Works</span>
         <h2 class="taas-section__title" id="how-heading">Use Your GEM Visa. <span>Pay Over Time.</span></h2>
-        <p class="taas-section__sub">If you hold a GEM Visa card, you may be eligible for interest-free periods on car repairs at Tony Allen Auto Service. No new credit required — just use your existing card.</p>
+        <p class="taas-section__sub">If you hold a GEM Visa card, you may be eligible for interest-free periods on car repairs at Tony Allen Auto Service. No new credit required. Just use your existing card.</p>
 
         <div class="taas-steps">
             <div class="taas-step">
                 <div class="taas-step__num">01</div>
                 <div class="taas-step__title">Book Your Vehicle In</div>
-                <p class="taas-step__text">Call us on <?php echo esc_html($phone_free); ?> or book online. Let us know you'd like to pay with Afterpay.</p>
+                <p class="taas-step__text">Call us on <?php echo esc_html($phone_free); ?> or book online. Let us know you'd like to pay with GEM Visa.</p>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">02</div>
                 <div class="taas-step__title">We Complete the Work</div>
-                <p class="taas-step__text">Our technicians carry out the repair or service. We call before starting any additional work.</p>
+                <p class="taas-step__text">Our technicians carry out the repair or service. If anything changes once we're into the job, we'll contact you before going further.</p>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">03</div>
-                <div class="taas-step__title">Pay Your First Instalment</div>
-                <p class="taas-step__text">At checkout you pay 25% of the total. Afterpay pays us the full amount immediately.</p>
-                <span class="taas-step__badge">25% due today</span>
+                <div class="taas-step__title">Pay with Your GEM Visa</div>
+                <p class="taas-step__text">At collection, pay with your GEM Visa at our counter. Purchases of $250 or more can qualify for interest-free terms.</p>
+                <span class="taas-step__badge">Pay at the counter</span>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">04</div>
-                <div class="taas-step__title">Three More Payments</div>
-                <p class="taas-step__text">The remaining three equal instalments are automatically deducted every two weeks — always interest-free.</p>
-                <span class="taas-step__badge">Every 2 weeks</span>
+                <div class="taas-step__title">Repay Over Time</div>
+                <p class="taas-step__text">Make your repayments to GEM under the current offer. See gemfinance.co.nz for terms and conditions.</p>
+                <span class="taas-step__badge">Monthly repayments</span>
             </div>
         </div>
     </div>
@@ -814,7 +814,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">What's Covered</span>
         <h2 class="taas-section__title" id="services-heading">Use GEM Visa Across <span>All Our Services</span></h2>
-        <p class="taas-section__sub">GEM Visa is accepted for the full range of repairs and servicing at Tony Allen Auto Service.</p>
+        <p class="taas-section__sub">GEM Visa is accepted for all repairs and servicing at Tony Allen Auto Service.</p>
 
         <div class="taas-services">
             <?php foreach ($services as $service): ?>
@@ -856,14 +856,14 @@ get_header();
                     <li>Interest-free periods available on qualifying purchases</li>
                     <li>Standard interest rate applies once interest-free period ends</li>
                     <li>Minimum monthly repayment required during interest-free period</li>
-                    <li>Monthly account fee may apply — check your card terms</li>
+                    <li>Monthly account fee may apply. Check your card terms</li>
                     <li>No early repayment fees</li>
-                    <li>Annual fee may apply — see gemfinance.co.nz for current terms</li>
+                    <li>Annual fee may apply. See gemfinance.co.nz for current terms</li>
                 </ul>
 
                 <div class="taas-info-box" style="margin-top:24px;">
                     <strong>Using GEM In-Store</strong><br>
-                    Simply present your physical GEM Visa card at our payment terminal. If you'd like to apply an interest-free promotion, ask our service desk — we'll process it accordingly.
+                    Simply present your physical GEM Visa card at our payment terminal. If you'd like to apply an interest-free promotion, ask our service desk and we'll process it accordingly.
                 </div>
             </div>
         </div>
@@ -900,7 +900,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>Afterpay</td>
-                        <td><span class="taas-tick">✓ Always — 4 payments</span></td>
+                        <td><span class="taas-tick">✓ Always, 4 payments</span></td>
                         <td>4 × fortnightly</td>
                         <td>Varies</td>
                         <td>Afterpay app</td>
@@ -933,7 +933,7 @@ get_header();
 <section class="taas-section" aria-labelledby="faq-heading">
     <div class="taas-container">
         <span class="taas-label">Common Questions</span>
-        <h2 class="taas-section__title" id="faq-heading">GEM Visa at TAAS — <span>Frequently Asked</span></h2>
+        <h2 class="taas-section__title" id="faq-heading">GEM Visa at TAAS: <span>Frequently Asked</span></h2>
 
         <ul class="taas-faq" role="list" style="margin-top:32px;">
             <?php foreach ($faqs as $i => $faq): ?>
@@ -964,7 +964,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">Service Area</span>
         <h2 class="taas-section__title" id="area-heading">Serving South Auckland <span>&amp; Manukau</span></h2>
-        <p class="taas-section__sub">Tony Allen Auto Service is located at 139 Cavendish Drive, Manukau. We're the go-to GEM Finance mechanic for drivers across South Auckland.</p>
+        <p class="taas-section__sub">Tony Allen Auto Service is located at 139 Cavendish Drive, Manukau. We accept GEM Finance from drivers across South Auckland.</p>
 
         <ul class="taas-pills" aria-label="Areas served">
             <?php foreach ($service_areas as $area): ?>
@@ -1031,7 +1031,7 @@ get_header();
 
                     if ( $f_name && $f_phone && $f_msg ) {
                         $to      = $email; // enquiries@taas.co.nz
-                        $subject = 'Afterpay Finance Enquiry — ' . $f_name;
+                        $subject = 'GEM Finance Enquiry: ' . $f_name;
                         $body    = "Name: {$f_name}\nPhone: {$f_phone}\nEmail: {$f_email}\nVehicle: {$f_vehicle}\n\nMessage:\n{$f_msg}\n\n(Sent via GEM Finance page)";
                         $headers = ['Content-Type: text/plain; charset=UTF-8'];
                         if ( $f_email ) {
@@ -1054,7 +1054,7 @@ get_header();
                     <div style="background:var(--taas-black);border:1px solid #2a2a2a;border-top:4px solid var(--taas-yellow);border-radius:var(--taas-radius);padding:36px;text-align:center;">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--taas-yellow)" stroke-width="2" style="margin-bottom:16px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         <h3 style="color:var(--taas-white);font-size:20px;margin-bottom:10px;">Message Sent</h3>
-                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks — we'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
+                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks, we'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
                     </div>
                 <?php else: ?>
                 <!-- Native fallback form — used when TAAS_CF7_FINANCE is not set -->
@@ -1122,7 +1122,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">Google Reviews</span>
         <h2 class="taas-section__title" id="reviews-heading">
-            Trusted by South Auckland Drivers — <span><?php echo esc_html($years_trading); ?> Years</span>
+            Trusted by South Auckland Drivers for <span><?php echo esc_html($years_trading); ?> Years</span>
         </h2>
 
         <div class="taas-reviews-header">
@@ -1138,7 +1138,7 @@ get_header();
         <?php else: ?>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;">
             <div style="background:var(--taas-black);border:1px solid #252525;border-top:4px solid var(--taas-yellow);border-radius:var(--taas-radius);padding:28px;">
-                <p style="color:#fff;font-size:18px;font-weight:700;margin-bottom:10px;">Used Afterpay with us recently?</p>
+                <p style="color:#fff;font-size:18px;font-weight:700;margin-bottom:10px;">Used GEM Visa with us recently?</p>
                 <p style="color:#bbb;font-size:16px;line-height:1.7;margin-bottom:20px;">Your feedback helps South Auckland drivers find a trustworthy workshop. Takes less than a minute.</p>
                 <a href="https://www.google.com/maps/place/Tony+Allen+Auto+Service/@-36.993,174.879,15z" target="_blank" rel="noopener noreferrer"
                    style="display:inline-flex;align-items:center;gap:10px;background:var(--taas-yellow);color:#111;font-weight:700;font-size:16px;padding:13px 24px;border-radius:var(--taas-radius);text-decoration:none;">
@@ -1197,7 +1197,7 @@ get_header();
 <div class="taas-footer-cta">
     <div class="taas-container">
         <h2>Ready to Book Your Repair?</h2>
-        <p>Use your GEM Visa card at Tony Allen Auto Service — interest-free options available on qualifying purchases.</p>
+        <p>Use your GEM Visa card at Tony Allen Auto Service. Interest-free options available on qualifying purchases.</p>
         <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
             <a href="#book" class="taas-btn taas-btn--primary">Book Now</a>
             <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>" class="taas-btn taas-btn--outline">
@@ -1212,7 +1212,7 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <div class="taas-disclaimer">
     <div class="taas-container">
-        GEM Visa is issued by Latitude Financial Services Limited. Interest-free offer is available on qualifying purchases of $250 or more. Standard interest rate and monthly account fee apply. Minimum monthly repayments required. Terms and conditions apply — see latitudefinancial.co.nz for full details. Tony Allen Auto Service Ltd is an independent merchant.
+        GEM Visa is issued by Latitude Financial Services Limited. Interest-free offer is available on qualifying purchases of $250 or more. Standard interest rate and monthly account fee apply. Minimum monthly repayments required. Terms and conditions apply. See latitudefinancial.co.nz for full details. Tony Allen Auto Service Ltd is an independent merchant.
         See <a href="https://www.gemfinance.co.nz/" target="_blank" rel="noopener noreferrer">gemfinance.co.nz</a> for full details.
     </div>
 </div>

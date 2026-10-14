@@ -36,32 +36,32 @@ $page_url       = get_permalink();
 if ($page_type === 'overheating') {
     $h1_line1   = 'Car Overheating';
     $h1_em      = $suburb_name;
-    $eyebrow    = 'Overheating Engine — ' . $suburb_name;
+    $eyebrow    = 'Overheating Engine · ' . $suburb_name;
     $hero_sub   = 'Engine overheating near ' . $suburb_name . '? Pull over immediately. We diagnose the cause and repair it properly. ' . $distance_note . '.';
     $hub_url    = '/cooling-system/';
     $hub_label  = 'Cooling System';
     $spoke_base = '/overheating-engine-';
     $urgency    = '<strong>⚠ Pull over immediately.</strong> Driving an overheating engine causes head gasket failure and serious engine damage within minutes. Turn off the engine, wait 20 minutes, and call us on ' . $phone_free . '.';
-    $services_h2 = 'Overheating Diagnosis &amp; Repair — ' . $suburb_name;
+    $services_h2 = 'Overheating Diagnosis &amp; Repair for ' . $suburb_name;
     $services_lead = 'We find the cause of the overheating and fix it. Not just add coolant.';
     $cta_h2     = 'Engine Overheating Near ' . $suburb_name . '?';
-    $faq_h2     = 'Overheating Engine FAQ — ' . $suburb_name;
+    $faq_h2     = 'Overheating Engine FAQ: ' . $suburb_name;
     $services = [
         'Overheating diagnosis', 'Coolant leak repair', 'Radiator repair &amp; replacement',
         'Thermostat replacement', 'Water pump replacement', 'Radiator hose replacement',
         'Head gasket assessment', 'Coolant flush &amp; refill',
     ];
     $faqs_extra = [
-        ['q' => 'My car is overheating near ' . $suburb_name . ' — what should I do?', 'a' => 'Pull over immediately and turn the engine off. Do not try to drive to a workshop if the temperature gauge is in the red — this causes head gasket failure. Wait at least 20 minutes for the engine to cool. Do not open the radiator cap while the engine is hot. Call us on ' . $phone_free . ' and we can advise on whether you need a tow or whether it is safe to drive once cooled.'],
-        ['q' => 'What causes a car engine to overheat?', 'a' => 'The most common causes are: a coolant leak from a hose, the radiator, or the water pump; a failed thermostat stuck in the closed position; a blocked or damaged radiator reducing coolant flow; a failed radiator fan; or a blown head gasket. We carry out a full cooling system diagnosis to find the actual cause — not just top up the coolant and send you on your way.'],
-        ['q' => 'Will my engine be damaged if it overheated?', 'a' => 'It depends on how long it ran hot and how hot it got. A brief overheat caught quickly often causes no lasting damage. Sustained overheating — especially if the engine kept running after the warning light came on — can cause a blown head gasket, warped cylinder head, or in severe cases cracked engine block. We can assess the damage when you bring the vehicle in.'],
+        ['q' => 'My car is overheating near ' . $suburb_name . '. What should I do?', 'a' => 'Pull over immediately and turn the engine off. Do not try to drive to a workshop if the temperature gauge is in the red. This causes head gasket failure. Wait at least 20 minutes for the engine to cool. Do not open the radiator cap while the engine is hot. Call us on ' . $phone_free . ' and we can advise on whether you need a tow or whether it is safe to drive once cooled.'],
+        ['q' => 'What causes a car engine to overheat?', 'a' => 'The most common causes are: a coolant leak from a hose, the radiator, or the water pump; a failed thermostat stuck in the closed position; a blocked or damaged radiator reducing coolant flow; a failed radiator fan; or a blown head gasket. We carry out a full cooling system diagnosis to find the actual cause. We do not just top up the coolant and send you on your way.'],
+        ['q' => 'Will my engine be damaged if it overheated?', 'a' => 'It depends on how long it ran hot and how hot it got. A brief overheat caught quickly often causes no lasting damage. Sustained overheating, especially if the engine kept running after the warning light came on, can cause a blown head gasket, warped cylinder head, or in severe cases cracked engine block. We can assess the damage when you bring the vehicle in.'],
         ['q' => 'How much does it cost to repair an overheating engine near ' . $suburb_name . '?', 'a' => 'It depends entirely on the cause. A thermostat replacement is inexpensive. A head gasket repair is a significant job. We diagnose first and give you an estimate before starting work. Call us on ' . $phone_free . ' to discuss your situation.'],
-        ['q' => 'Is it safe to add water to the radiator if my car is overheating?', 'a' => 'Only if the engine has fully cooled — never open the radiator cap on a hot engine. You can add water as a temporary measure to get to a workshop, but water alone does not provide corrosion protection or the correct boiling/freezing point of proper coolant. We will flush and refill with the correct coolant when you arrive.'],
+        ['q' => 'Is it safe to add water to the radiator if my car is overheating?', 'a' => 'Only if the engine has fully cooled. Never open the radiator cap on a hot engine. You can add water as a temporary measure to get to a workshop, but water alone does not provide corrosion protection or the correct boiling/freezing point of proper coolant. We will flush and refill with the correct coolant when you arrive.'],
     ];
 } else {
     $h1_line1   = 'Radiator Repair';
     $h1_em      = $suburb_name;
-    $eyebrow    = 'Radiator Repair — ' . $suburb_name;
+    $eyebrow    = 'Radiator Repair · ' . $suburb_name;
     $hero_sub   = 'Radiator repair and replacement for ' . $suburb_name . ' customers at Tony Allen Auto Service. ' . $distance_note . '. Estimate before we start.';
     $hub_url    = '/cooling-system/';
     $hub_label  = 'Cooling System';
@@ -70,7 +70,7 @@ if ($page_type === 'overheating') {
     $services_h2 = 'Radiator Services for ' . $suburb_name . ' Customers';
     $services_lead = 'Radiator repair, replacement, and full cooling system service at our Manukau workshop.';
     $cta_h2     = 'Radiator Problem Near ' . $suburb_name . '?';
-    $faq_h2     = 'Radiator FAQ — ' . $suburb_name;
+    $faq_h2     = 'Radiator FAQ: ' . $suburb_name;
     $services = [
         'Radiator repair', 'Radiator replacement', 'Coolant flush &amp; refill',
         'Coolant leak diagnosis', 'Water pump replacement', 'Thermostat replacement',
@@ -78,9 +78,9 @@ if ($page_type === 'overheating') {
     ];
     $faqs_extra = [
         ['q' => 'How much does radiator repair or replacement cost near ' . $suburb_name . '?', 'a' => 'Costs vary depending on whether the radiator can be repaired or needs replacing, and the make and model of your vehicle. We assess the radiator first and give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details for a guide price.'],
-        ['q' => 'Can a leaking radiator be repaired or does it need replacing?', 'a' => 'It depends on the type and extent of the damage. Small leaks from fittings or minor corrosion can often be repaired. Radiators with significant stone damage, severe internal corrosion, or multiple leak points usually require replacement. We assess the condition before making a recommendation — we do not replace parts that can be fixed.'],
-        ['q' => 'How long does a radiator replacement take?', 'a' => 'Most radiator replacements can be completed in 2 to 4 hours, depending on the vehicle and access. We recommend booking in advance — call us on ' . $phone_free . '. We are open Monday to Friday, 7:30am to 5:00pm at 139 Cavendish Drive, Manukau.'],
-        ['q' => 'Should I replace the coolant at the same time as the radiator?', 'a' => 'Yes — the cooling system is fully drained during a radiator replacement. We always refill with fresh coolant at the correct concentration. If the old coolant was contaminated or degraded, it may have contributed to the radiator failure, so starting fresh makes sense.'],
+        ['q' => 'Can a leaking radiator be repaired or does it need replacing?', 'a' => 'It depends on the type and extent of the damage. Small leaks from fittings or minor corrosion can often be repaired. Radiators with significant stone damage, severe internal corrosion, or multiple leak points usually require replacement. We assess the condition before making a recommendation. We do not replace parts that can be fixed.'],
+        ['q' => 'How long does a radiator replacement take?', 'a' => 'Most radiator replacements can be completed in 2 to 4 hours, depending on the vehicle and access. We recommend booking in advance. Call us on ' . $phone_free . '. We are open Monday to Friday, 7:30am to 5:00pm at 139 Cavendish Drive, Manukau.'],
+        ['q' => 'Should I replace the coolant at the same time as the radiator?', 'a' => 'Yes. The cooling system is fully drained during a radiator replacement. We always refill with fresh coolant at the correct concentration. If the old coolant was contaminated or degraded, it may have contributed to the radiator failure, so starting fresh makes sense.'],
         ['q' => 'What is included in a radiator service at Tony Allen Auto Service?', 'a' => 'We carry out a pressure test of the cooling system, inspect all hoses and connections, repair or replace the radiator as required, flush the cooling system, and refill with fresh coolant at the correct concentration. We also check the thermostat and coolant temperature sensor condition as part of the inspection.'],
     ];
 }
@@ -225,13 +225,13 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:40px;align-items:start;">
             <div>
                 <h3 style="font-family:'Oswald',Arial,sans-serif;font-size:22px;font-weight:900;color:#111;margin-bottom:12px;">What Causes Engine Overheating?</h3>
-                <p style="font-size:15px;color:#555;line-height:1.7;margin-bottom:16px;">An overheating engine is always a symptom — something in the cooling system has failed. The most common causes are a coolant leak from a hose, radiator, or water pump; a thermostat stuck in the closed position preventing coolant from reaching the radiator; a failed radiator fan; or a head gasket leak.</p>
-                <p style="font-size:15px;color:#555;line-height:1.7;">The most important thing is to stop immediately when the temperature warning light comes on. Continued driving causes head gasket failure within minutes. We diagnose the actual cause — not just top up the coolant.</p>
+                <p style="font-size:15px;color:#555;line-height:1.7;margin-bottom:16px;">An overheating engine is always a symptom. Something in the cooling system has failed. The most common causes are a coolant leak from a hose, radiator, or water pump; a thermostat stuck in the closed position preventing coolant from reaching the radiator; a failed radiator fan; or a head gasket leak.</p>
+                <p style="font-size:15px;color:#555;line-height:1.7;">The most important thing is to stop immediately when the temperature warning light comes on. Continued driving causes head gasket failure within minutes. We diagnose the actual cause instead of just topping up the coolant.</p>
             </div>
             <div>
                 <h3 style="font-family:'Oswald',Arial,sans-serif;font-size:22px;font-weight:900;color:#111;margin-bottom:12px;">What To Do Right Now</h3>
                 <div style="display:flex;flex-direction:column;gap:12px;">
-                    <?php foreach (['Pull over and turn the engine off immediately','Do not open the radiator cap — wait 20 minutes for the engine to cool','Turn the heater on full if you need to reach a safe spot — it helps dissipate heat','Do not attempt to drive to a workshop if the gauge is in the red','Call us on ' . $phone_free . ' — we can advise on whether to tow or drive'] as $step): ?>
+                    <?php foreach (['Pull over and turn the engine off immediately','Do not open the radiator cap. Wait 20 minutes for the engine to cool','Turn the heater on full if you need to reach a safe spot. It helps shed heat','Do not attempt to drive to a workshop if the gauge is in the red','Call us on ' . $phone_free . ' and we can advise on whether to tow or drive'] as $step): ?>
                     <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:#333;line-height:1.5;">
                         <span style="background:#C0392B;color:#fff;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;flex-shrink:0;margin-top:2px;">!</span>
                         <?php echo esc_html($step); ?>
@@ -250,7 +250,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div>
                 <h3 style="font-family:'Oswald',Arial,sans-serif;font-size:22px;font-weight:900;color:#111;margin-bottom:12px;">What We Check</h3>
                 <div style="display:flex;flex-direction:column;gap:12px;">
-                    <?php foreach (['Radiator core and end tanks — damage, cracks, corrosion','All hoses — upper, lower, bypass, and heater hoses','Thermostat — confirm it opens and closes at the correct temperature','Water pump — check for weep hole leaks and bearing noise','Cooling fan — confirm correct operation at the correct temperature','Coolant condition — colour, concentration, and contamination'] as $item): ?>
+                    <?php foreach (['Radiator core and end tanks: damage, cracks, corrosion','All hoses: upper, lower, bypass and heater hoses','Thermostat: confirm it opens and closes at the correct temperature','Water pump: check for weep hole leaks and bearing noise','Cooling fan: confirm correct operation at the correct temperature','Coolant condition: colour, concentration and contamination'] as $item): ?>
                     <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:#333;line-height:1.5;">
                         <span style="color:#FFC800;font-weight:700;flex-shrink:0;margin-top:2px;">✓</span>
                         <?php echo esc_html($item); ?>
@@ -280,16 +280,16 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div>
                 <span class="rl-eyebrow rl-eyebrow--yellow">Why Choose TAAS</span>
                 <h2 class="rl-h2 rl-h2--white">Serving <?php echo esc_html($suburb_name); ?> Since <?php echo esc_html($established); ?></h2>
-                <p style="font-size:16px;color:#888;line-height:1.6;margin-bottom:28px;">Family-owned, independent, honest. We diagnose first — we find the actual fault before recommending any work.</p>
+                <p style="font-size:16px;color:#888;line-height:1.6;margin-bottom:28px;">Family-owned, independent, honest. We diagnose first and find the actual fault before recommending any work.</p>
                 <ul class="rl-why__points">
-                    <?php foreach (['Diagnose first — find the actual fault before any recommendation','Estimate before we start — no surprise invoices','All makes and models — Japanese, Korean, European','Finance available — Afterpay, Q Card and more','MTA Assured workshop since ' . $established,'Open Monday–Friday, 7:30am–5:00pm'] as $pt): ?>
+                    <?php foreach (['Diagnose first: find the actual fault before any recommendation','Estimate before we start, no surprise invoices','All makes and models: Japanese, Korean, European','Finance available: Afterpay, Q Card and more','MTA Assured workshop since ' . $established,'Open Monday–Friday, 7:30am–5:00pm'] as $pt): ?>
                     <li class="rl-why__point"><?php echo esc_html($pt); ?></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
             <div style="background:#111;border:1px solid #2a2a2a;border-radius:8px;padding:32px;">
                 <h3 style="font-family:'Oswald',Arial,sans-serif;font-size:26px;font-weight:900;color:#FFC800;margin-bottom:12px;">While You're In</h3>
-                <p style="font-size:14px;color:#888;line-height:1.6;margin-bottom:20px;">Combine your cooling system repair with a vehicle service, WOF, or cambelt — one visit, less total labour cost.</p>
+                <p style="font-size:14px;color:#888;line-height:1.6;margin-bottom:20px;">Combine your cooling system repair with a vehicle service, WOF or cambelt. One visit, less total labour cost.</p>
                 <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
                     <?php foreach ([['Cambelt & Water Pump','/cambelts-and-water-pumps/'],['Vehicle Servicing','/vehicle-servicing/'],['Warrant of Fitness','/wof/'],['Finance Options','/finance-options/']] as $ex): ?>
                     <a href="<?php echo esc_url($site_url . $ex[1]); ?>" style="display:flex;align-items:center;gap:8px;font-size:14px;color:#FFC800;text-decoration:none;font-weight:600;"><span>→</span><?php echo esc_html($ex[0]); ?></a>
@@ -312,7 +312,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
                                         <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#333;">
                         <span style="color:#FFC800;font-weight:700;font-size:16px;">✓</span>
-                        Diagnose first — find the actual fault
+                        Diagnose first to find the actual fault
                     </li>
                     <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#333;">
                         <span style="color:#FFC800;font-weight:700;font-size:16px;">✓</span>
@@ -324,7 +324,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                     </li>
                     <li style="display:flex;align-items:center;gap:10px;font-size:14px;color:#333;">
                         <span style="color:#FFC800;font-weight:700;font-size:16px;">✓</span>
-                        Finance available — Afterpay, Q Card
+                        Finance available: Afterpay, Q Card
                     </li>
 
                 </ul>

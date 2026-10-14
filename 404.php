@@ -90,21 +90,21 @@ foreach ($hub_map as $needle => $hub) {
 if ($coming_soon) {
     $eyebrow = 'Coming soon';
     $heading = 'This page is coming soon';
-    $sub     = 'We’re finishing this page now. Everything you need is on our main service pages in the meantime — or give us a call.';
+    $sub     = 'We’re finishing this page now. Everything you need is on our main service pages in the meantime, or give us a call.';
 } else {
     $eyebrow = 'Page not found';
     $heading = 'We can’t find that page';
-    $sub     = 'It may have moved, or the link may be out of date. Try one of our main pages below — or give us a call.';
+    $sub     = 'It may have moved, or the link may be out of date. Try one of our main pages below, or give us a call.';
 }
 
 $cards = [
     ['/wof/',                               'WOF Inspections',     'NZTA Authorised. Failures fixed and re-checked on-site.'],
     ['/vehicle-servicing/',                 'Vehicle Servicing',   'Essential, Standard and Premium services for all makes.'],
-    ['/manukau-brake-clutch/',              'Brakes & Clutch',     'Manukau Brake & Clutch — pads, rotors, clutches, disc skimming.'],
+    ['/manukau-brake-clutch/',              'Brakes & Clutch',     'Manukau Brake & Clutch: pads, rotors, clutches, disc skimming.'],
     ['/auto-electrical/',                   'Auto Electrical',     'Fault finding, alternators, starters and warning lights.'],
     ['/tyre-centre/',                       'Tyre Centre',         'Tyres supplied and fitted, wheel alignment and balancing.'],
     ['/european/',                          'TAAS European',       'BMW, Mercedes-Benz, Audi, Volkswagen, Volvo and more.'],
-    ['/manukau-batteries/',                 'Manukau Batteries',   'Car, 4WD and AGM batteries — supplied and fitted.'],
+    ['/manukau-batteries/',                 'Manukau Batteries',   'Car, 4WD and AGM batteries, supplied and fitted.'],
     ['/contact-us/',                        'Contact Us',          '139 Cavendish Drive, Manukau. ' . $hours . '.'],
 ];
 // Don't repeat the suggested hub in the grid.

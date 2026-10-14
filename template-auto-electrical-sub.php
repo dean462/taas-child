@@ -81,21 +81,21 @@ function aes_replace_constants($text) {
 // ── Master services array ────────────────────────────────────────────────────
 $ae_master = [
     'diagnostic-scanning' => ['name'=>'Diagnostic Scanning','badge'=>'DS','short'=>'ECU fault codes, live data, all modules. Factory-spec equipment.','hero_price'=>'Diagnostic scan '.$scan_price.' · Full diagnostic '.$autoelec_diag,'price'=>'Diagnostic scan '.$scan_price.' · Full diagnostic '.$autoelec_diag,'urgency'=>'medium'],
-    'dashboard-warning-lights-manukau' => ['name'=>'Dashboard Warning Lights','badge'=>'DW','short'=>'Engine light, ABS, SRS, TPMS, oil — every warning light diagnosed.','hero_price'=>'Warning light scan '.$scan_price.' — diagnosis and repair additional','price'=>'Diagnostic scan '.$scan_price,'urgency'=>'medium'],
-    'car-wont-start-manukau' => ['name'=>"Car Won't Start",'badge'=>'CS','short'=>"Dead flat, clicks, cranks but won't fire — cause diagnosed, not guessed.",'hero_price'=>'Diagnostic scan '.$scan_price.' — repair additional depending on cause','price'=>'Diagnostic scan '.$scan_price,'urgency'=>'high'],
-    'auto-electrical-battery' => ['name'=>'Car Battery','badge'=>'CB','short'=>'Load testing, supply and fit. BMS registration for European vehicles.','hero_price'=>'Car batteries '.$battery_price.' — diagnostic scan '.$scan_price,'price'=>'Car batteries '.$battery_price.' · Diagnostic scan '.$scan_price,'urgency'=>'high'],
-    'auto-electrical-alternator' => ['name'=>'Alternator Repair','badge'=>'AR','short'=>'Battery light on, flat battery, dimming lights. Output tested first.','hero_price'=>'Alternator testing '.$alt_test.' — replacement additional','price'=>'Alternator testing '.$alt_test.' · Diagnostic scan '.$scan_price,'urgency'=>'medium'],
-    'auto-electrical-starter-motor' => ['name'=>'Starter Motor','badge'=>'SM','short'=>'Click but no crank. Solenoid vs motor fault identified before parts ordered.','hero_price'=>'Starter motor testing '.$starter_test.' — replacement additional','price'=>'Starter motor testing '.$starter_test.' · Diagnostic scan '.$scan_price,'urgency'=>'high'],
-    'abs-fault-diagnosis-manukau' => ['name'=>'ABS Fault Diagnosis','badge'=>'ABS','short'=>'ABS warning light, wheel speed sensors, ABS module diagnosis.','hero_price'=>'ABS diagnostic '.$scan_price.' — sensor and module repair additional','price'=>'ABS diagnostic '.$abs_diag.' — parts additional','urgency'=>'medium'],
-    'srs-airbag-repair-manukau' => ['name'=>'SRS & Airbag','badge'=>'SRS','short'=>'SRS warning light, clock spring, pretensioner, sensor faults.','hero_price'=>'SRS diagnostic '.$scan_price.' — repair additional','price'=>'SRS diagnostic '.$srs_diag.' — parts additional','urgency'=>'high'],
-    'traction-stability-control-manukau' => ['name'=>'Traction & Stability','badge'=>'TCS','short'=>'ESC, TCS, VSC warning lights. Often shares sensors with ABS.','hero_price'=>'Diagnostic scan '.$scan_price.' — sensor and module repair additional','price'=>'Diagnostic scan '.$scan_price,'urgency'=>'medium'],
-    'egr-repair-manukau' => ['name'=>'EGR & Emission Faults','badge'=>'EGR','short'=>'Engine light, rough idle, excess smoke. EGR cleaning or replacement.','hero_price'=>'EGR diagnostic '.$scan_price.' — cleaning or replacement additional','price'=>'EGR diagnostic '.$egr_diag.' — call for pricing','urgency'=>'medium'],
-    'auto-electrical-central-locking' => ['name'=>'Central Locking','badge'=>'CL','short'=>'Actuator failure, wiring fault, key fob programming.','hero_price'=>'Central locking diagnostic '.$scan_price.' — actuator and parts additional','price'=>'Central locking diagnostic '.$cl_diag.' — parts additional','urgency'=>'low'],
-    'electric-window-repair-manukau' => ['name'=>'Electric Windows','badge'=>'EW','short'=>'Motor, regulator, or switch fault. Diagnosed before parts ordered.','hero_price'=>'Window fault diagnosis '.$scan_price.' — motor, regulator and parts additional','price'=>'Window fault diagnosis '.$window_diag.' — parts additional','urgency'=>'low'],
-    'auto-electrical-immobiliser' => ['name'=>'Immobiliser & Keys','badge'=>'IK','short'=>'Immobiliser triggered, key programming, transponder faults.','hero_price'=>'Immobiliser diagnostic '.$scan_price.' — programming additional','price'=>'Immobiliser diagnostic '.$immob_diag.' — call for pricing','urgency'=>'high'],
-    'auto-electrical-lighting' => ['name'=>'Lighting & Headlights','badge'=>'LH','short'=>'Headlight adjustment, HID/xenon, LED issues, wiring faults.','hero_price'=>'Lighting diagnosis '.$scan_price.' — parts and fitting additional','price'=>'Lighting diagnosis '.$lighting_diag.' — parts additional','urgency'=>'low'],
-    'wiring-fault-repair-manukau' => ['name'=>'Wiring Fault Repair','badge'=>'WF','short'=>'Intermittent faults, chafed wiring, rodent damage, aftermarket issues.','hero_price'=>'Wiring diagnostic '.$wiring_diag.' — depends on fault extent','price'=>'Wiring diagnostic '.$wiring_diag.' — depends on fault extent','urgency'=>'medium'],
-    'tpms-reset-manukau' => ['name'=>'TPMS Reset','badge'=>'TPMS','short'=>'Tyre pressure monitoring light. Reset and sensor replacement.','hero_price'=>'TPMS reset '.$tpms_price.' — sensor replacement additional','price'=>'TPMS reset '.$tpms_price.' · Sensor replacement — call for pricing','urgency'=>'low'],
+    'dashboard-warning-lights-manukau' => ['name'=>'Dashboard Warning Lights','badge'=>'DW','short'=>'Engine light, ABS, SRS, TPMS, oil. Every warning light diagnosed.','hero_price'=>'Warning light scan '.$scan_price.' (diagnosis and repair additional)','price'=>'Diagnostic scan '.$scan_price,'urgency'=>'medium'],
+    'car-wont-start-manukau' => ['name'=>"Car Won't Start",'badge'=>'CS','short'=>"Dead flat, clicks, cranks but won't fire. Cause diagnosed, not guessed.",'hero_price'=>'Diagnostic scan '.$scan_price.' (repair additional depending on cause)','price'=>'Diagnostic scan '.$scan_price,'urgency'=>'high'],
+    'auto-electrical-battery' => ['name'=>'Car Battery','badge'=>'CB','short'=>'Load testing, supply and fit. BMS registration for European vehicles.','hero_price'=>'Car batteries '.$battery_price.' · Diagnostic scan '.$scan_price,'price'=>'Car batteries '.$battery_price.' · Diagnostic scan '.$scan_price,'urgency'=>'high'],
+    'auto-electrical-alternator' => ['name'=>'Alternator Repair','badge'=>'AR','short'=>'Battery light on, flat battery, dimming lights. Output tested first.','hero_price'=>'Alternator testing '.$alt_test.' (replacement additional)','price'=>'Alternator testing '.$alt_test.' · Diagnostic scan '.$scan_price,'urgency'=>'medium'],
+    'auto-electrical-starter-motor' => ['name'=>'Starter Motor','badge'=>'SM','short'=>'Click but no crank. Solenoid vs motor fault identified before parts ordered.','hero_price'=>'Starter motor testing '.$starter_test.' (replacement additional)','price'=>'Starter motor testing '.$starter_test.' · Diagnostic scan '.$scan_price,'urgency'=>'high'],
+    'abs-fault-diagnosis-manukau' => ['name'=>'ABS Fault Diagnosis','badge'=>'ABS','short'=>'ABS warning light, wheel speed sensors, ABS module diagnosis.','hero_price'=>'ABS diagnostic '.$scan_price.' (sensor and module repair additional)','price'=>'ABS diagnostic '.$abs_diag.' (parts additional)','urgency'=>'medium'],
+    'srs-airbag-repair-manukau' => ['name'=>'SRS & Airbag','badge'=>'SRS','short'=>'SRS warning light, clock spring, pretensioner, sensor faults.','hero_price'=>'SRS diagnostic '.$scan_price.' (repair additional)','price'=>'SRS diagnostic '.$srs_diag.' (parts additional)','urgency'=>'high'],
+    'traction-stability-control-manukau' => ['name'=>'Traction & Stability','badge'=>'TCS','short'=>'ESC, TCS, VSC warning lights. Often shares sensors with ABS.','hero_price'=>'Diagnostic scan '.$scan_price.' (sensor and module repair additional)','price'=>'Diagnostic scan '.$scan_price,'urgency'=>'medium'],
+    'egr-repair-manukau' => ['name'=>'EGR & Emission Faults','badge'=>'EGR','short'=>'Engine light, rough idle, excess smoke. EGR cleaning or replacement.','hero_price'=>'EGR diagnostic '.$scan_price.' (cleaning or replacement additional)','price'=>'EGR diagnostic '.$egr_diag.' (call for pricing)','urgency'=>'medium'],
+    'auto-electrical-central-locking' => ['name'=>'Central Locking','badge'=>'CL','short'=>'Actuator failure, wiring fault, key fob programming.','hero_price'=>'Central locking diagnostic '.$scan_price.' (actuator and parts additional)','price'=>'Central locking diagnostic '.$cl_diag.' (parts additional)','urgency'=>'low'],
+    'electric-window-repair-manukau' => ['name'=>'Electric Windows','badge'=>'EW','short'=>'Motor, regulator, or switch fault. Diagnosed before parts ordered.','hero_price'=>'Window fault diagnosis '.$scan_price.' (motor, regulator and parts additional)','price'=>'Window fault diagnosis '.$window_diag.' (parts additional)','urgency'=>'low'],
+    'auto-electrical-immobiliser' => ['name'=>'Immobiliser & Keys','badge'=>'IK','short'=>'Immobiliser triggered, key programming, transponder faults.','hero_price'=>'Immobiliser diagnostic '.$scan_price.' (programming additional)','price'=>'Immobiliser diagnostic '.$immob_diag.' (call for pricing)','urgency'=>'high'],
+    'auto-electrical-lighting' => ['name'=>'Lighting & Headlights','badge'=>'LH','short'=>'Headlight adjustment, HID/xenon, LED issues, wiring faults.','hero_price'=>'Lighting diagnosis '.$scan_price.' (parts and fitting additional)','price'=>'Lighting diagnosis '.$lighting_diag.' (parts additional)','urgency'=>'low'],
+    'wiring-fault-repair-manukau' => ['name'=>'Wiring Fault Repair','badge'=>'WF','short'=>'Intermittent faults, chafed wiring, rodent damage, aftermarket issues.','hero_price'=>'Wiring diagnostic '.$wiring_diag.' (depends on fault extent)','price'=>'Wiring diagnostic '.$wiring_diag.' (depends on fault extent)','urgency'=>'medium'],
+    'tpms-reset-manukau' => ['name'=>'TPMS Reset','badge'=>'TPMS','short'=>'Tyre pressure monitoring light. Reset and sensor replacement.','hero_price'=>'TPMS reset '.$tpms_price.' (sensor replacement additional)','price'=>'TPMS reset '.$tpms_price.' · Sensor replacement: call for pricing','urgency'=>'low'],
 ];
 
 // ── Current page data ────────────────────────────────────────────────────────
@@ -154,9 +154,9 @@ if (!$price_text || $price_text === "Diagnostic scan {$scan_price}") {
     $price_text .= ". Diagnostic scan {$scan_price} · full diagnostic {$autoelec_diag}";
 }
 $faqs[] = ['q'=>"How much does {$service_name} cost in Manukau?",'a'=>$price_text . '. We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job.'];
-$faqs[] = ['q'=>"Do you diagnose before replacing parts?",'a'=>"Yes — always. Raj verifies the fault before recommending any parts. Scan tool codes tell you where to look, not what to replace. We test, confirm, then recommend."];
+$faqs[] = ['q'=>"Do you diagnose before replacing parts?",'a'=>"Yes, always. Raj verifies the fault before recommending any parts. Scan tool codes tell you where to look, not what to replace. We test, confirm, then recommend."];
 $faqs[] = ['q'=>"Can you do this on European vehicles?",'a'=>"Yes. We carry factory-spec diagnostic equipment for {$euro_brands} through our TAAS European division."];
-$faqs[] = ['q'=>"Is it safe to drive with this fault?",'a'=>$urgency_msg ?: "It depends on the severity. Call us on {$phone_free} and describe the symptoms — we can advise whether it is safe to drive in or needs towing."];
+$faqs[] = ['q'=>"Is it safe to drive with this fault?",'a'=>$urgency_msg ?: "It depends on the severity. Call us on {$phone_free} and describe the symptoms. We can advise whether it is safe to drive in or needs towing."];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q'=>"How long does {$service_name} take?",'a'=>"Timeframe depends on the fault complexity and whether parts are required. A diagnostic scan takes 30 to 60 minutes. Repairs involving parts can range from same-day to 2 to 3 days if specialist parts need ordering. We give you a timeframe when you book in."];
 $faqs[] = ['q'=>"Where is your auto electrical workshop?",'a'=>"Tony Allen Auto Service, 139 Cavendish Drive, Manukau, Auckland 2104. Open {$hours}. Call {$phone_free} to book."];
@@ -175,7 +175,7 @@ function aes_badge($initials, $size = 40) {
 
 // ── Urgency colours ──────────────────────────────────────────────────────────
 $urgency_colors = [
-    'high'   => ['bg'=>'#C0392B','border'=>'#A93226','text'=>'#fff','label'=>'Urgent — Book Now'],
+    'high'   => ['bg'=>'#C0392B','border'=>'#A93226','text'=>'#fff','label'=>'Urgent: Book Now'],
     'medium' => ['bg'=>'#fffbea','border'=>'#FFC800','text'=>'#1A1A1A','label'=>'Book Soon'],
     'low'    => ['bg'=>'var(--taas-panel, #F7F7F5)','border'=>'var(--taas-border, #E8E8E4)','text'=>'#333','label'=>'When Convenient'],
 ];
@@ -334,9 +334,9 @@ body.page-template-template-auto-electrical-sub { overflow-x:hidden;-webkit-text
 <!-- 1. HERO -->
 <section class="aes-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
   <div class="aes-hero__inner">
-    <span class="aes-hero__eyebrow">Auto Electrical — Manukau</span>
-    <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
-    <p class="aes-hero__sub"><?php echo esc_html($current['short']); ?> Led by Raj — Lead Diagnostics & Auto Electrical Technician. Fault confirmed before any parts are replaced.</p>
+    <span class="aes-hero__eyebrow">Auto Electrical · Manukau</span>
+    <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
+    <p class="aes-hero__sub"><?php echo esc_html($current['short']); ?> Led by Raj, our Lead Diagnostics & Auto Electrical Technician. Fault confirmed before any parts are replaced.</p>
     <?php if ($hero_price) : ?>
       <div class="aes-hero__price"><?php echo esc_html($hero_price); ?></div>
     <?php endif; ?>
@@ -364,7 +364,7 @@ body.page-template-template-auto-electrical-sub { overflow-x:hidden;-webkit-text
 <section class="aes-sec aes-sec--white">
   <div class="aes-sec__inner">
     <span class="aes-sec__eyebrow">What Is It</span>
-    <h2 class="aes-sec__h2"><?php echo esc_html($service_name); ?> — Explained</h2>
+    <h2 class="aes-sec__h2"><?php echo esc_html($service_name); ?> Explained</h2>
     <div class="aes-sec__body"><?php echo wp_kses_post($what_it_is); ?></div>
     <?php if ($vehicles_note) : ?>
       <p style="font-size:14px;color:var(--taas-mid, #666666);line-height:1.75;font-style:italic;"><?php echo wp_kses_post($vehicles_note); ?></p>
@@ -414,7 +414,7 @@ body.page-template-template-auto-electrical-sub { overflow-x:hidden;-webkit-text
 <section class="aes-sec aes-sec--grey">
   <div class="aes-sec__inner">
     <span class="aes-sec__eyebrow">Pricing</span>
-    <h2 class="aes-sec__h2"><?php echo esc_html($service_name); ?> — Pricing Guide</h2>
+    <h2 class="aes-sec__h2"><?php echo esc_html($service_name); ?> Pricing Guide</h2>
     <div class="aes-price-box">
       <div class="aes-price-box__title"><?php echo esc_html($service_name); ?></div>
       <p class="aes-price-box__body"><?php echo wp_kses_post($price_signal); ?>. We explain the diagnostic fee before we start. The diagnostic is charged whether or not you go ahead. If you do go ahead, it becomes part of the repair job. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2, #e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
@@ -423,7 +423,7 @@ body.page-template-template-auto-electrical-sub { overflow-x:hidden;-webkit-text
 </section>
 
 <!-- 7. ENQUIRY — immediately after pricing -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="aes-sec aes-sec--dark" id="enquire">
   <div class="aes-sec__inner">
     <div class="aes-enquiry">
@@ -471,7 +471,7 @@ body.page-template-template-auto-electrical-sub { overflow-x:hidden;-webkit-text
 <section class="aes-sec aes-sec--grey">
   <div class="aes-sec__inner">
     <span class="aes-sec__eyebrow">FAQ</span>
-    <h2 class="aes-sec__h2"><?php echo esc_html($service_name); ?> — Common Questions</h2>
+    <h2 class="aes-sec__h2"><?php echo esc_html($service_name); ?>: Common Questions</h2>
     <div class="aes-faq">
       <?php foreach ($faqs as $i => $faq) : ?>
       <div class="aes-faq__item<?php echo $i===0?' aes-faq__item--open':''; ?>">

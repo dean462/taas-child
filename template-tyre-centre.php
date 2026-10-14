@@ -59,21 +59,21 @@ $schema = ['@context' => 'https://schema.org', '@graph' => [
             ['@type'=>'Question','name'=>'What tyre services do you offer?',
              'acceptedAnswer'=>['@type'=>'Answer','text'=>'Tyre supply and fitting, wheel alignment (3D laser), wheel balancing, tyre rotation, puncture repair, TPMS reset and diagnosis, budget tyres, 4WD and SUV tyres, and run-flat tyres. We supply, fit and balance in one visit at 139 Cavendish Drive, Manukau.']],
             ['@type'=>'Question','name'=>'How much does a wheel alignment cost?',
-             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Wheel alignment '.$alignment_price.'. 3D laser alignment on our dedicated alignment hoist — front and rear geometry checked and adjusted. Recommended after any new tyre fitting, suspension work, or if you notice uneven tyre wear or steering pull.']],
+             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Wheel alignment '.$alignment_price.'. 3D laser alignment on our dedicated alignment hoist. Front and rear geometry checked and adjusted. Recommended after any new tyre fitting, suspension work, or if you notice uneven tyre wear or steering pull.']],
             ['@type'=>'Question','name'=>'How much does wheel balancing cost?',
-             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Wheel balancing '.$balance_price.'. Done on our ER85 touchscreen balancer — static, dynamic and run-out measured in a single spin. Balancing is included when we fit new tyres.']],
+             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Wheel balancing '.$balance_price.'. Done on our ER85 touchscreen balancer: static, dynamic and run-out measured in a single spin. Balancing is included when we fit new tyres.']],
             ['@type'=>'Question','name'=>'How do I know when I need new tyres?',
-             'acceptedAnswer'=>['@type'=>'Answer','text'=>'The legal minimum tread depth in New Zealand is 1.5mm. Look for the tread wear indicators — small raised bars between the main grooves. If the tread is level with these bars, the tyre needs replacing. Other signs include visible sidewall damage, cracking, bulges, or uneven wear across the tread face. We check tyres as part of every WOF and service.']],
+             'acceptedAnswer'=>['@type'=>'Answer','text'=>'The legal minimum tread depth in New Zealand is 1.5mm. Look for the tread wear indicators, the small raised bars between the main grooves. If the tread is level with these bars, the tyre needs replacing. Other signs include visible sidewall damage, cracking, bulges, or uneven wear across the tread face. We check tyres as part of every WOF and service.']],
             ['@type'=>'Question','name'=>'Do you fit tyres I have bought elsewhere?',
-             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Yes. Bring your tyres in and we will fit, balance and align. We recommend checking the size and load rating match your vehicle before purchasing — if you are unsure, call us on '.TAAS_PHONE_FREE.' and we will confirm.']],
+             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Yes. Bring your tyres in and we will fit, balance and align. We recommend checking the size and load rating match your vehicle before purchasing. If you are unsure, call us on '.TAAS_PHONE_FREE.' and we will confirm.']],
             ['@type'=>'Question','name'=>'Can you help me choose the right tyre for my vehicle?',
-             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Yes. Tell us your vehicle make and model, or your tyre size, and we will recommend options across budget, mid-range and premium brands. We carry Maxxis, Continental, Goodyear, Hifly and more — and can source any brand you need.']],
+             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Yes. Tell us your vehicle make and model, or your tyre size, and we will recommend options across budget, mid-range and premium brands. We carry Maxxis, Continental, Goodyear, Hifly and more, and can source any brand you need.']],
             ['@type'=>'Question','name'=>'Do you do 4WD and SUV tyres?',
              'acceptedAnswer'=>['@type'=>'Answer','text'=>'Yes. We carry all-terrain, highway terrain and mud terrain patterns for 4WDs and SUVs. Brands include Maxxis Bravo, Continental CrossContact, Goodyear Wrangler and budget alternatives. We also fit and balance larger-diameter rims common on 4WD vehicles.']],
             ['@type'=>'Question','name'=>'What is the difference between budget and premium tyres?',
-             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Budget tyres use a simpler rubber compound and tread design. They do the job for lower-mileage drivers and city commuting. Premium tyres use advanced compounds that grip better in wet conditions, last longer, and produce less road noise. The right choice depends on how and where you drive — we help you decide.']],
+             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Budget tyres use a simpler rubber compound and tread design. They do the job for lower-mileage drivers and city commuting. Premium tyres use advanced compounds that grip better in wet conditions, last longer, and produce less road noise. The right choice depends on how and where you drive. We help you decide.']],
             ['@type'=>'Question','name'=>'How often should I rotate my tyres?',
-             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Every 8,000 to 10,000 km, or at every service. Rotation moves tyres between positions so they wear evenly — front tyres typically wear faster on front-wheel-drive vehicles. Regular rotation extends tyre life and keeps handling predictable.']],
+             'acceptedAnswer'=>['@type'=>'Answer','text'=>'Every 8,000 to 10,000 km, or at every service. Rotation moves tyres between positions so they wear evenly. Front tyres typically wear faster on front-wheel-drive vehicles. Regular rotation extends tyre life and keeps handling predictable.']],
             ['@type'=>'Question','name'=>'Do you offer finance for tyre purchases?',
              'acceptedAnswer'=>['@type'=>'Answer','text'=>'Yes. We accept Afterpay, Q Card and GEM Finance. Spread the cost of tyres, alignment and any other work done at the same time. Apply in-store or set up your account before you arrive.']],
             ['@type'=>'Question','name'=>'Where is your tyre shop?',
@@ -258,9 +258,9 @@ function tc_badge($initials) {
 <section class="tc-hero">
   <div class="tc-hero__inner">
     <div>
-      <span class="tc-hero__eyebrow">Tyre Centre — Manukau</span>
-      <h1>Tyres<br><span>Manukau — South Auckland</span></h1>
-      <p class="tc-hero__sub">Supply, fit and balance — all in one visit. Budget to premium tyres for cars, SUVs, 4WDs and light commercial. 3D laser wheel alignment on-site. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+      <span class="tc-hero__eyebrow">Tyre Centre · Manukau</span>
+      <h1>Tyres<br><span>Manukau, South Auckland</span></h1>
+      <p class="tc-hero__sub">Supply, fit and balance in one visit. Budget to premium tyres for cars, SUVs, 4WDs and light commercial. 3D laser wheel alignment on-site. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
       <div class="tc-hero__ctas">
         <a href="#enquire" class="taas-btn taas-btn--primary">Get a Tyre Estimate</a>
         <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
@@ -309,12 +309,12 @@ function tc_badge($initials) {
     <div class="tc-edu">
       <div>
         <h2 class="tc-section__heading">Understanding Your Tyres</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:16px;">Your tyres are the only part of your car that touches the road. Every time you brake, accelerate, turn or drive in the rain, it comes down to four patches of rubber — each roughly the size of your hand. When those patches are worn, damaged or incorrectly inflated, your car cannot do what you ask it to.</p>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:16px;">Tread depth is the single biggest factor. New tyres start at 7–8mm of tread. At 3mm, wet braking distance starts to increase significantly. At 1.5mm — the legal minimum in New Zealand — the tyre has lost most of its ability to disperse water and will fail a WOF inspection. The tread wear indicators moulded into every tyre show you exactly when you have reached that point.</p>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:20px;">Uneven wear is the other thing to watch. If one edge of the tread is wearing faster than the other, or if the centre is wearing but the edges are not, there is a problem — alignment, inflation, or suspension. Fitting new tyres without fixing the cause means the same wear pattern will come back. That is why we check alignment on every tyre fitting and recommend a full alignment where needed.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:16px;">Your tyres are the only part of your car that touches the road. Every time you brake, accelerate, turn or drive in the rain, it comes down to four patches of rubber, each roughly the size of your hand. When those patches are worn, damaged or incorrectly inflated, your car cannot do what you ask it to.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:16px;">Tread depth is the single biggest factor. New tyres start at 7–8mm of tread. At 3mm, wet braking distance starts to increase significantly. At 1.5mm (the legal minimum in New Zealand) the tyre has lost most of its ability to disperse water and will fail a WOF inspection. The tread wear indicators moulded into every tyre show you exactly when you have reached that point.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:20px;">Uneven wear is the other thing to watch. If one edge of the tread is wearing faster than the other, or if the centre is wearing but the edges are not, there is a problem with alignment, inflation or suspension. Fitting new tyres without fixing the cause means the same wear pattern will come back. That is why we check alignment on every tyre fitting and recommend a full alignment where needed.</p>
         <div class="tc-callout">
           <div class="tc-callout__title">Tyres are checked at every WOF</div>
-          <p class="tc-callout__body">Tread depth below 1.5mm, sidewall damage, bulges, cracking, uneven wear and incorrect tyre sizes are all WOF failure points. We check tyres as part of every WOF and every service — if something needs attention, we tell you before it becomes a problem.</p>
+          <p class="tc-callout__body">Tread depth below 1.5mm, sidewall damage, bulges, cracking, uneven wear and incorrect tyre sizes are all WOF failure points. We check tyres as part of every WOF and every service. If something needs attention, we tell you before it becomes a problem.</p>
           <a href="<?php echo esc_url($site_url . '/wof/'); ?>" style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;font-weight:700;color:var(--taas-yellow2,#e6b400);text-decoration:none;">WOF Information →</a>
         </div>
       </div>
@@ -325,7 +325,7 @@ function tc_badge($initials) {
           <li>Visible sidewall cracks, cuts or bulges</li>
           <li>Steering vibration at highway speed</li>
           <li>Vehicle pulling to one side under braking</li>
-          <li>Uneven wear — one edge, centre, or cupping</li>
+          <li>Uneven wear on one edge, the centre, or cupping</li>
           <li>Tyres older than 6 years (check DOT date)</li>
           <li>Puncture too close to sidewall to repair safely</li>
           <li>WOF failure on tyre condition</li>
@@ -341,25 +341,25 @@ function tc_badge($initials) {
 <section class="tc-section tc-section--grey">
   <div class="tc-section__inner">
     <span class="tc-section__eyebrow">Services</span>
-    <h2 class="tc-section__heading">Tyre Services — Manukau</h2>
+    <h2 class="tc-section__heading">Tyre Services in Manukau</h2>
     <p class="tc-section__sub">All work carried out on-site at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive</a>. Supply, fit and balance in one visit.</p>
     <div class="tc-services">
       <a href="<?php echo esc_url($site_url . '/tyre-fitting-manukau/'); ?>" class="tc-service">
         <div class="tc-service__icon"><?php echo tc_badge('TF'); ?></div>
         <div class="tc-service__title">Tyre Fitting</div>
-        <p class="tc-service__desc">New tyres fitted, balanced and aligned. All makes and sizes — passenger, SUV, 4WD, light commercial.</p>
+        <p class="tc-service__desc">New tyres fitted, balanced and aligned. All makes and sizes: passenger, SUV, 4WD, light commercial.</p>
         <span class="tc-service__link">Tyre Fitting →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/wheel-alignment-manukau/'); ?>" class="tc-service">
         <div class="tc-service__icon"><?php echo tc_badge('WA'); ?></div>
         <div class="tc-service__title">Wheel Alignment</div>
-        <p class="tc-service__desc">3D laser alignment — front and rear geometry checked and adjusted. Prevents uneven tyre wear and steering pull.</p>
+        <p class="tc-service__desc">3D laser alignment. Front and rear geometry checked and adjusted. Prevents uneven tyre wear and steering pull.</p>
         <span class="tc-service__link">Wheel Alignment →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/wheel-balancing-manukau/'); ?>" class="tc-service">
         <div class="tc-service__icon"><?php echo tc_badge('WB'); ?></div>
         <div class="tc-service__title">Wheel Balancing</div>
-        <p class="tc-service__desc">ER85 touchscreen balancer — static, dynamic and run-out measured in a single spin. Eliminates vibration.</p>
+        <p class="tc-service__desc">ER85 touchscreen balancer: static, dynamic and run-out measured in a single spin. Eliminates vibration.</p>
         <span class="tc-service__link">Wheel Balancing →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/tyre-rotation-manukau/'); ?>" class="tc-service">
@@ -377,7 +377,7 @@ function tc_badge($initials) {
       <a href="<?php echo esc_url($site_url . '/budget-tyres-manukau/'); ?>" class="tc-service">
         <div class="tc-service__icon"><?php echo tc_badge('BT'); ?></div>
         <div class="tc-service__title">Budget Tyres</div>
-        <p class="tc-service__desc">Quality budget options for everyday driving. Fitted, balanced and aligned — same service standard as premium.</p>
+        <p class="tc-service__desc">Quality budget options for everyday driving. Fitted, balanced and aligned, with the same service standard as premium.</p>
         <span class="tc-service__link">Budget Tyres →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/run-flat-tyres-manukau/'); ?>" class="tc-service">
@@ -389,7 +389,7 @@ function tc_badge($initials) {
       <a href="<?php echo esc_url($site_url . '/tyre-centre/puncture-repair-manukau/'); ?>" class="tc-service">
         <div class="tc-service__icon"><?php echo tc_badge('PR'); ?></div>
         <div class="tc-service__title">Puncture Repair</div>
-        <p class="tc-service__desc">Plug and patch repairs where the tyre is repairable. Honest assessment — if it cannot be repaired safely, we tell you.</p>
+        <p class="tc-service__desc">Plug and patch repairs where the tyre is repairable. Honest assessment. If it cannot be repaired safely, we tell you.</p>
         <span class="tc-service__link">Puncture Repair →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/tpms-reset-manukau/'); ?>" class="tc-service">
@@ -404,7 +404,7 @@ function tc_badge($initials) {
     <div class="tc-finder">
       <div>
         <h3 class="tc-finder__heading">Know Your Tyre Size? Search Our Stock</h3>
-        <p class="tc-finder__body">Enter your width, profile and rim diameter to see what we have available. Budget and premium brands — filtered by your exact size.</p>
+        <p class="tc-finder__body">Enter your width, profile and rim diameter to see what we have available. Budget and premium brands, filtered by your exact size.</p>
       </div>
       <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>" class="taas-btn taas-btn--primary" style="white-space:nowrap;">Search Tyres →</a>
     </div>
@@ -418,26 +418,26 @@ function tc_badge($initials) {
   <div class="tc-section__inner">
     <span class="tc-section__eyebrow">Pricing</span>
     <h2 class="tc-section__heading">Tyre Service Pricing</h2>
-    <p class="tc-section__sub">Tyre supply pricing depends on size, brand and pattern — call us or use the <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">tyre finder</a> to check availability. The services below are priced as follows.</p>
+    <p class="tc-section__sub">Tyre supply pricing depends on size, brand and pattern. Call us or use the <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">tyre finder</a> to check availability. The services below are priced as follows.</p>
     <div class="tc-pricing">
       <div class="tc-price-card">
         <div class="tc-price-card__label">Wheel Alignment</div>
         <div class="tc-price-card__price"><?php echo esc_html($alignment_price); ?></div>
-        <div class="tc-price-card__note">3D laser alignment — front and rear geometry checked and adjusted</div>
+        <div class="tc-price-card__note">3D laser alignment. Front and rear geometry checked and adjusted</div>
       </div>
       <div class="tc-price-card">
         <div class="tc-price-card__label">Wheel Balancing</div>
         <div class="tc-price-card__price"><?php echo esc_html($balance_price); ?></div>
-        <div class="tc-price-card__note">ER85 touchscreen balancer — included with new tyre fitting</div>
+        <div class="tc-price-card__note">ER85 touchscreen balancer, included with new tyre fitting</div>
       </div>
       <div class="tc-price-card">
         <div class="tc-price-card__label">TPMS Reset</div>
         <div class="tc-price-card__price"><?php echo esc_html($tpms_price); ?></div>
-        <div class="tc-price-card__note">Sensor diagnosis and system reset — sensor replacement additional</div>
+        <div class="tc-price-card__note">Sensor diagnosis and system reset. Sensor replacement additional</div>
       </div>
     </div>
     <div class="tc-callout" style="margin-top:28px;">
-      <div class="tc-callout__title">Tyre pricing — contact for an estimate</div>
+      <div class="tc-callout__title">Tyre pricing: contact us for an estimate</div>
       <p class="tc-callout__body">Tyre prices depend on size, brand and availability. Call us on <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> with your tyre size or vehicle rego and we will give you an estimate. Finance available via Afterpay, Q Card and GEM Finance.</p>
     </div>
   </div>
@@ -452,7 +452,7 @@ function tc_badge($initials) {
       <div>
         <span class="tc-section__eyebrow">Book or Enquire</span>
         <h2 class="tc-section__heading">Get a Tyre Estimate</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your vehicle make, model and tyre size — or just your rego number — and we will come back with an estimate.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your vehicle make, model and tyre size (or just your rego number) and we will come back with an estimate.</p>
         <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>" class="tc-enquiry__phone"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
         <div class="tc-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>Mon–Fri 7:30am–5:00pm · <?php echo esc_html(TAAS_PHONE_LOCAL); ?></div>
       </div>
@@ -468,7 +468,7 @@ function tc_badge($initials) {
   <div class="tc-section__inner">
     <span class="tc-section__eyebrow">Also at TAAS</span>
     <h2 class="tc-section__heading">Related Services</h2>
-    <p class="tc-section__sub">Tyre work often overlaps with these services — all available at the same workshop.</p>
+    <p class="tc-section__sub">Tyre work often overlaps with these services, all available at the same workshop.</p>
     <div class="tc-services" style="grid-template-columns:repeat(3,1fr);">
       <a href="<?php echo esc_url($site_url . '/wof/'); ?>" class="tc-service">
         <div class="tc-service__icon"><?php echo tc_badge('WOF'); ?></div>
@@ -548,17 +548,17 @@ function tc_badge($initials) {
   <div class="tc-section__inner">
     <div class="tc-faq">
       <span class="tc-section__eyebrow">FAQ</span>
-      <h2 class="tc-section__heading">Common Questions — Tyres</h2>
+      <h2 class="tc-section__heading">Common Questions: Tyres</h2>
       <div class="tc-faq__list">
-        <div class="tc-faq__item"><button class="tc-faq__q">What tyre services do you offer?</button><div class="tc-faq__a"><p>Tyre supply and fitting, wheel alignment (3D laser), wheel balancing (ER85), tyre rotation, puncture repair, TPMS reset and diagnosis, budget tyres, 4WD and SUV tyres, and run-flat tyres. All work done on-site at 139 Cavendish Drive, Manukau — supply, fit and balance in one visit.</p></div></div>
-        <div class="tc-faq__item"><button class="tc-faq__q">How much does a wheel alignment cost?</button><div class="tc-faq__a"><p>Wheel alignment <?php echo esc_html($alignment_price); ?>. 3D laser alignment on our dedicated alignment hoist — front and rear geometry checked and adjusted. Recommended after any new tyre fitting, suspension work, or if you notice uneven tyre wear or steering pull.</p></div></div>
-        <div class="tc-faq__item"><button class="tc-faq__q">How much does wheel balancing cost?</button><div class="tc-faq__a"><p>Wheel balancing <?php echo esc_html($balance_price); ?>. Done on our ER85 touchscreen balancer — static, dynamic and run-out measured in a single spin. Balancing is included when we fit new tyres.</p></div></div>
-        <div class="tc-faq__item"><button class="tc-faq__q">How do I know when I need new tyres?</button><div class="tc-faq__a"><p>The legal minimum tread depth in New Zealand is 1.5mm. Look for the tread wear indicators — small raised bars between the main grooves. If the tread is level with these bars, the tyre needs replacing. Other signs include visible sidewall damage, cracking, bulges, or uneven wear across the tread face. We check tyres as part of every <a href="<?php echo esc_url($site_url . '/wof/'); ?>">WOF</a> and service.</p></div></div>
-        <div class="tc-faq__item"><button class="tc-faq__q">Do you fit tyres I have bought elsewhere?</button><div class="tc-faq__a"><p>Yes. Bring your tyres in and we will fit, balance and align. We recommend checking the size and load rating match your vehicle before purchasing — if you are unsure, call us on <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> and we will confirm.</p></div></div>
-        <div class="tc-faq__item"><button class="tc-faq__q">Can you help me choose the right tyre for my vehicle?</button><div class="tc-faq__a"><p>Yes. Tell us your vehicle make and model, or your tyre size, and we will recommend options across budget, mid-range and premium brands. We carry Maxxis, Continental, Goodyear, Hifly and more — and can source any brand you need. Use the <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>">tyre finder</a> to search by size.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">What tyre services do you offer?</button><div class="tc-faq__a"><p>Tyre supply and fitting, wheel alignment (3D laser), wheel balancing (ER85), tyre rotation, puncture repair, TPMS reset and diagnosis, budget tyres, 4WD and SUV tyres, and run-flat tyres. All work done on-site at 139 Cavendish Drive, Manukau. Supply, fit and balance in one visit.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">How much does a wheel alignment cost?</button><div class="tc-faq__a"><p>Wheel alignment <?php echo esc_html($alignment_price); ?>. 3D laser alignment on our dedicated alignment hoist. Front and rear geometry checked and adjusted. Recommended after any new tyre fitting, suspension work, or if you notice uneven tyre wear or steering pull.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">How much does wheel balancing cost?</button><div class="tc-faq__a"><p>Wheel balancing <?php echo esc_html($balance_price); ?>. Done on our ER85 touchscreen balancer: static, dynamic and run-out measured in a single spin. Balancing is included when we fit new tyres.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">How do I know when I need new tyres?</button><div class="tc-faq__a"><p>The legal minimum tread depth in New Zealand is 1.5mm. Look for the tread wear indicators, the small raised bars between the main grooves. If the tread is level with these bars, the tyre needs replacing. Other signs include visible sidewall damage, cracking, bulges, or uneven wear across the tread face. We check tyres as part of every <a href="<?php echo esc_url($site_url . '/wof/'); ?>">WOF</a> and service.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">Do you fit tyres I have bought elsewhere?</button><div class="tc-faq__a"><p>Yes. Bring your tyres in and we will fit, balance and align. We recommend checking the size and load rating match your vehicle before purchasing. If you are unsure, call us on <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> and we will confirm.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">Can you help me choose the right tyre for my vehicle?</button><div class="tc-faq__a"><p>Yes. Tell us your vehicle make and model, or your tyre size, and we will recommend options across budget, mid-range and premium brands. We carry Maxxis, Continental, Goodyear, Hifly and more, and can source any brand you need. Use the <a href="<?php echo esc_url($site_url . '/tyre-finder/'); ?>">tyre finder</a> to search by size.</p></div></div>
         <div class="tc-faq__item"><button class="tc-faq__q">Do you do 4WD and SUV tyres?</button><div class="tc-faq__a"><p>Yes. We carry all-terrain, highway terrain and mud terrain patterns for 4WDs and SUVs. Brands include Maxxis Bravo, Continental CrossContact, Goodyear Wrangler and budget alternatives. We also fit and balance larger-diameter rims common on 4WD vehicles. See our <a href="<?php echo esc_url($site_url . '/4wd-tyres-manukau/'); ?>">4WD tyres page</a>.</p></div></div>
-        <div class="tc-faq__item"><button class="tc-faq__q">What is the difference between budget and premium tyres?</button><div class="tc-faq__a"><p>Budget tyres use a simpler rubber compound and tread design. They do the job for lower-mileage drivers and city commuting. Premium tyres use advanced compounds that grip better in wet conditions, last longer, and produce less road noise. The right choice depends on how and where you drive — we help you decide without pushing you toward the most expensive option.</p></div></div>
-        <div class="tc-faq__item"><button class="tc-faq__q">How often should I rotate my tyres?</button><div class="tc-faq__a"><p>Every 8,000 to 10,000 km, or at every service. Rotation moves tyres between positions so they wear evenly — front tyres typically wear faster on front-wheel-drive vehicles. Regular rotation extends tyre life and keeps handling predictable. See our <a href="<?php echo esc_url($site_url . '/tyre-rotation-manukau/'); ?>">tyre rotation page</a>.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">What is the difference between budget and premium tyres?</button><div class="tc-faq__a"><p>Budget tyres use a simpler rubber compound and tread design. They do the job for lower-mileage drivers and city commuting. Premium tyres use advanced compounds that grip better in wet conditions, last longer, and produce less road noise. The right choice depends on how and where you drive. We help you decide without pushing you toward the most expensive option.</p></div></div>
+        <div class="tc-faq__item"><button class="tc-faq__q">How often should I rotate my tyres?</button><div class="tc-faq__a"><p>Every 8,000 to 10,000 km, or at every service. Rotation moves tyres between positions so they wear evenly. Front tyres typically wear faster on front-wheel-drive vehicles. Regular rotation extends tyre life and keeps handling predictable. See our <a href="<?php echo esc_url($site_url . '/tyre-rotation-manukau/'); ?>">tyre rotation page</a>.</p></div></div>
         <div class="tc-faq__item"><button class="tc-faq__q">Do you offer finance for tyre purchases?</button><div class="tc-faq__a"><p>Yes. We accept Afterpay, Q Card and GEM Finance. Spread the cost of tyres, alignment and any other work done at the same time. Apply in-store or set up your account before you arrive. See our <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">finance options</a>.</p></div></div>
         <div class="tc-faq__item"><button class="tc-faq__q">Where is your tyre shop?</button><div class="tc-faq__a"><p><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau, Auckland 2104</a>. Open Monday to Friday, 7:30am to 5:00pm. Call <a href="tel:<?php echo str_replace(' ', '', TAAS_PHONE_FREE); ?>"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> or drop in. Serving Papatoetoe, Māngere, Ōtāhuhu, Wiri, Manurewa, Flat Bush, Takanini, Papakura, Ōtara, Botany and all of South Auckland.</p></div></div>
       </div>

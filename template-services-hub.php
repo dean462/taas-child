@@ -77,34 +77,34 @@ $service_images = [
 $services = [
 
     // ── MOST POPULAR ─────────────────────────────────────────────────────────
-    ['title'=>'Warrant of Fitness',       'sub'=>'NZTA-authorised inspections — $80 flat rate',               'url'=>'/wof/',                                            'group'=>'popular',    'featured'=>true],
-    ['title'=>'Vehicle Servicing',        'sub'=>'Full & interim services — all makes and models',             'url'=>'/vehicle-servicing/',                              'group'=>'popular',    'featured'=>true],
-    ['title'=>'Tyres & Wheels',           'sub'=>'Supply, fit and balance — leading brands stocked',           'url'=>'/tyre-centre/',                                 'group'=>'popular',    'featured'=>true],
-    ['title'=>'Brakes',                   'sub'=>'Pads, rotors, calipers — full brake system repairs',              'url'=>'/manukau-brake-clutch/',                                'group'=>'popular',    'featured'=>true],
+    ['title'=>'Warrant of Fitness',       'sub'=>'NZTA-authorised inspections, $80 flat rate',               'url'=>'/wof/',                                            'group'=>'popular',    'featured'=>true],
+    ['title'=>'Vehicle Servicing',        'sub'=>'Full & interim services, all makes and models',             'url'=>'/vehicle-servicing/',                              'group'=>'popular',    'featured'=>true],
+    ['title'=>'Tyres & Wheels',           'sub'=>'Supply, fit and balance. Leading brands stocked',           'url'=>'/tyre-centre/',                                 'group'=>'popular',    'featured'=>true],
+    ['title'=>'Brakes',                   'sub'=>'Pads, rotors, calipers: full brake system repairs',              'url'=>'/manukau-brake-clutch/',                                'group'=>'popular',    'featured'=>true],
 
     // ── SPECIALIST SERVICES ───────────────────────────────────────────────────
-    ['title'=>'Engine Repairs',           'sub'=>'Diagnostics, head gaskets, timing, oil leaks — sorted in-house','url'=>'/engine-repairs/',                        'group'=>'specialist', 'featured'=>false],
+    ['title'=>'Engine Repairs',           'sub'=>'Diagnostics, head gaskets, timing, oil leaks. Sorted in-house','url'=>'/engine-repairs/',                        'group'=>'specialist', 'featured'=>false],
     ['title'=>'Auto Electrical',          'sub'=>'Wiring, alternators, starters & ECU diagnostics',            'url'=>'/auto-electrical/',                       'group'=>'specialist', 'featured'=>false],
     ['title'=>'Diagnostic Scanning',      'sub'=>'Check engine light? We read every fault code',               'url'=>'/diagnostic-scanning/',                   'group'=>'specialist', 'featured'=>false],
-    ['title'=>'Cambelt & Water Pump',     'sub'=>'Don\'t risk an engine failure — replace on schedule',        'url'=>'/cambelts-and-water-pumps/',              'group'=>'specialist', 'featured'=>false],
+    ['title'=>'Cambelt & Water Pump',     'sub'=>'Don\'t risk an engine failure. Replace on schedule',        'url'=>'/cambelts-and-water-pumps/',              'group'=>'specialist', 'featured'=>false],
     ['title'=>'Clutch Repair',            'sub'=>'Slipping or stiff? Full clutch service in-house',            'url'=>'/clutch-repair-manukau/',                      'group'=>'specialist', 'featured'=>false],
     ['title'=>'Transmission Service',     'sub'=>'Auto and manual gearbox service and repair',                 'url'=>'/transmission-service-and-repair/',       'group'=>'specialist', 'featured'=>false],
     ['title'=>'Steering & Suspension',    'sub'=>'Computerised alignment, shocks, struts, ball joints and rack repairs',        'url'=>'/steering-and-suspension/',               'group'=>'specialist', 'featured'=>false],
-    ['title'=>'Cooling System',           'sub'=>'Radiator, thermostat & coolant — prevent overheating',       'url'=>'/cooling-system/',                        'group'=>'specialist', 'featured'=>false],
+    ['title'=>'Cooling System',           'sub'=>'Radiator, thermostat & coolant to prevent overheating',       'url'=>'/cooling-system/',                        'group'=>'specialist', 'featured'=>false],
     ['title'=>'Air Conditioning',         'sub'=>'Regas, leak detection & full AC system repair',              'url'=>'/air-conditioning/',           'group'=>'specialist', 'featured'=>false],
     ['title'=>'Electric & Hybrid',        'sub'=>'Servicing and repairs for EV and hybrid vehicles',            'url'=>'/electric-hybrid-vehicle-servicing/','group'=>'specialist','featured'=>false],
     ['title'=>'European Vehicles',        'sub'=>$euro_brands . '. Specialist servicing',                      'url'=>'/european/',                                       'group'=>'specialist', 'featured'=>false],
 
     // ── WORKSHOP & FLEET ──────────────────────────────────────────────────────
-    ['title'=>'Battery Centre',           'sub'=>'Test, supply and fit — all vehicle types',                   'url'=>'/manukau-batteries/',                         'group'=>'workshop',   'featured'=>false],
-    ['title'=>'Wheel Alignment',          'sub'=>'Laser computerised alignment — straight tracking guaranteed', 'url'=>'/wheel-alignment-manukau/',                       'group'=>'workshop',   'featured'=>false],
-    ['title'=>'Wheel Balancing',          'sub'=>'Precision balancing — stops vibration through the steering wheel',        'url'=>'/wheel-balancing-manukau/',                       'group'=>'workshop',   'featured'=>false],
-    ['title'=>'Commercial Vehicles',      'sub'=>'Vans, light trucks and campervans — all repairs covered',    'url'=>'/commercial-vehicles/',    'group'=>'workshop',   'featured'=>false],
+    ['title'=>'Battery Centre',           'sub'=>'Test, supply and fit for all vehicle types',                   'url'=>'/manukau-batteries/',                         'group'=>'workshop',   'featured'=>false],
+    ['title'=>'Wheel Alignment',          'sub'=>'Laser computerised alignment with a before-and-after print-out', 'url'=>'/wheel-alignment-manukau/',                       'group'=>'workshop',   'featured'=>false],
+    ['title'=>'Wheel Balancing',          'sub'=>'Precision balancing to stop vibration through the steering wheel',        'url'=>'/wheel-balancing-manukau/',                       'group'=>'workshop',   'featured'=>false],
+    ['title'=>'Commercial Vehicles',      'sub'=>'Vans, light trucks and campervans. All repairs covered',    'url'=>'/commercial-vehicles/',    'group'=>'workshop',   'featured'=>false],
     ['title'=>'Fleet Servicing',          'sub'=>'B2B fleet servicing & repairs. Lease company repairs. Direct invoicing','url'=>'/fleet-servicing/',                                'group'=>'workshop',   'featured'=>false, 'badge'=>'Fleet Accounts Welcome'],
-    ['title'=>'Mechanical Warranty',      'sub'=>'MBI approved — Autosure, Assurant, Provident & more',       'url'=>'/mechanical-breakdown-insurance/',                  'group'=>'workshop',   'featured'=>false, 'badge'=>'MBI Approved'],
+    ['title'=>'Mechanical Warranty',      'sub'=>'MBI approved: Autosure, Assurant, Provident & more',       'url'=>'/mechanical-breakdown-insurance/',                  'group'=>'workshop',   'featured'=>false, 'badge'=>'MBI Approved'],
 
     // ── ARRANGED ──────────────────────────────────────────────────────────────
-    ['title'=>'Towing',                   'sub'=>'Arranged via trusted partners — we coordinate for you',      'url'=>'/towing/',                                'group'=>'arranged',   'featured'=>false],
+    ['title'=>'Towing',                   'sub'=>'Arranged through our towing partners. We coordinate it for you',      'url'=>'/towing/',                                'group'=>'arranged',   'featured'=>false],
 ];
 
 // Group services
@@ -494,7 +494,7 @@ a.sh-finance__pill:hover { background:rgba(255,200,0,.15); border-color:rgba(255
       <em>One Address.</em>
     </h1>
     <p class="sh-hero__sub">
-      Everything from a WOF to European diagnostics, EV and hybrid servicing to fleet repairs — all under one roof at 139 Cavendish Drive, Manukau. MTA Assured. NZTA Authorised. Trading since <?php echo esc_html($established); ?>.
+      Everything from a WOF to European diagnostics, EV and hybrid servicing to fleet repairs, all under one roof at 139 Cavendish Drive, Manukau. MTA Assured. NZTA Authorised. Trading since <?php echo esc_html($established); ?>.
     </p>
     <div class="sh-hero__ctas">
       <a href="<?php echo esc_url($site_url . '/contact-us/'); ?>" class="sh-btn sh-btn--yellow">Book a Service</a>
@@ -557,7 +557,7 @@ a.sh-finance__pill:hover { background:rgba(255,200,0,.15); border-color:rgba(255
       ?>
         <div class="sh-card__ph">
           <?php if (!empty($service_images[$s['title']])): ?>
-            <img src="<?php echo esc_url($service_images[$s['title']]); ?>" alt="<?php echo esc_attr($s['title']); ?> — Tony Allen Auto Service" loading="lazy">
+            <img src="<?php echo esc_url($service_images[$s['title']]); ?>" alt="<?php echo esc_attr($s['title']); ?> at Tony Allen Auto Service" loading="lazy">
           <?php else: ?>
             <?php echo $service_icons[$s['title']] ?? ''; ?>
           <?php endif; ?>
@@ -585,7 +585,7 @@ a.sh-finance__pill:hover { background:rgba(255,200,0,.15); border-color:rgba(255
       <a href="<?php echo esc_url($site_url . $s['url']); ?>" class="sh-card">
         <div class="sh-card__ph">
           <?php if (!empty($service_images[$s['title']])): ?>
-            <img src="<?php echo esc_url($service_images[$s['title']]); ?>" alt="<?php echo esc_attr($s['title']); ?> — Tony Allen Auto Service" loading="lazy">
+            <img src="<?php echo esc_url($service_images[$s['title']]); ?>" alt="<?php echo esc_attr($s['title']); ?> at Tony Allen Auto Service" loading="lazy">
           <?php else: ?>
             <?php echo $service_icons[$s['title']] ?? ''; ?>
           <?php endif; ?>
@@ -611,7 +611,7 @@ a.sh-finance__pill:hover { background:rgba(255,200,0,.15); border-color:rgba(255
       <div>
         <span class="sh-contact__label">Get in Touch</span>
         <h2 class="sh-contact__h2" id="sh-contact-head">Book a Service<br>or Ask Us Anything</h2>
-        <p class="sh-contact__lead">Fill in the form and we'll get back to you — usually same day. Or call us directly. We're here <?php echo esc_html($hours); ?>.</p>
+        <p class="sh-contact__lead">Fill in the form and we'll get back to you, usually the same day. Or call us directly. We're here <?php echo esc_html($hours); ?>.</p>
         <div class="sh-contact-card">
           <h3>Tony Allen Auto Service</h3>
           <div class="sh-contact-row">
@@ -640,7 +640,7 @@ a.sh-finance__pill:hover { background:rgba(255,200,0,.15); border-color:rgba(255
         <?php if ($cf7_general): ?>
           <?php echo do_shortcode($cf7_general); ?>
         <?php else: ?>
-          <p style="font-size:15px;color:#666;margin-bottom:20px;">Call or email to book — we'll confirm your appointment promptly.</p>
+          <p style="font-size:15px;color:#666;margin-bottom:20px;">Call or email to book. We'll confirm your appointment promptly.</p>
           <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="sh-btn sh-btn--yellow" style="display:block;text-align:center;margin-bottom:12px;">Call <?php echo esc_html($phone_free); ?></a>
           <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="sh-btn sh-btn--dark" style="display:block;text-align:center;">Call <?php echo esc_html($phone_local); ?></a>
         <?php endif; ?>
@@ -654,7 +654,7 @@ a.sh-finance__pill:hover { background:rgba(255,200,0,.15); border-color:rgba(255
 <div class="sh-finance" role="region" aria-label="Payment options">
   <div class="sh-w">
     <h2 class="sh-finance__h2">Flexible Payment Options</h2>
-    <p class="sh-finance__sub">Pay your way — interest-free options available for all repairs.</p>
+    <p class="sh-finance__sub">Pay your way. Interest-free options available for all repairs.</p>
     <div class="sh-finance__providers">
       <a href="<?php echo esc_url($site_url . '/afterpay-car-repairs/'); ?>" class="sh-finance__pill">Afterpay</a>
       <a href="<?php echo esc_url($site_url . '/qcard-car-repairs/'); ?>" class="sh-finance__pill">Q Card</a>
@@ -672,14 +672,14 @@ a.sh-finance__pill:hover { background:rgba(255,200,0,.15); border-color:rgba(255
   <div class="sh-w">
     <div class="sh-section-head">
       <h2 class="sh-section-head__h2" id="sh-arranged-head">Arranged Services</h2>
-      <span class="sh-section-head__count">Via trusted partners</span>
+      <span class="sh-section-head__count">Via our partners</span>
     </div>
     <div class="sh-grid">
       <?php foreach ($groups['arranged'] as $s): ?>
       <a href="<?php echo esc_url($site_url . $s['url']); ?>" class="sh-card sh-card--arranged">
         <div class="sh-card__ph">
           <?php if (!empty($service_images[$s['title']])): ?>
-            <img src="<?php echo esc_url($service_images[$s['title']]); ?>" alt="<?php echo esc_attr($s['title']); ?> — Tony Allen Auto Service" loading="lazy">
+            <img src="<?php echo esc_url($service_images[$s['title']]); ?>" alt="<?php echo esc_attr($s['title']); ?> at Tony Allen Auto Service" loading="lazy">
           <?php else: ?>
             <?php echo $service_icons[$s['title']] ?? ''; ?>
           <?php endif; ?>

@@ -28,22 +28,22 @@ $page_url      = get_permalink();
 $years_trading = date('Y') - intval($established);
 
 $why_light_on = [
-    ['icon'=>'💨','title'=>'Tyre Pressure Low','desc'=>'The most common reason. One or more tyres has dropped below the minimum pressure threshold — typically 25% below recommended. Check and inflate before driving further.'],
+    ['icon'=>'💨','title'=>'Tyre Pressure Low','desc'=>'The most common reason. One or more tyres has dropped below the minimum pressure threshold, typically 25% below recommended. Check and inflate before driving further.'],
     ['icon'=>'🌡️','title'=>'Temperature Change','desc'=>'Cold weather reduces tyre pressure. A significant overnight temperature drop can trigger TPMS even on tyres that were correctly inflated. Inflate to spec and the light should clear.'],
     ['icon'=>'🔄','title'=>'After Tyre Fitting or Rotation','desc'=>'TPMS sensors need to be reset after tyres are rotated or replaced. The system may not recognise the new sensor positions until a reset is performed.'],
     ['icon'=>'🔋','title'=>'Sensor Battery Low','desc'=>'TPMS sensors run on batteries with a typical life of 5–10 years. When the battery dies, the sensor stops transmitting and the light activates.'],
     ['icon'=>'📡','title'=>'Sensor Fault or Damage','desc'=>'A sensor can be damaged during tyre fitting or by road debris. A faulty sensor will trigger the TPMS warning light.'],
-    ['icon'=>'🖥️','title'=>'System Needs Calibration','desc'=>'On some vehicles with indirect TPMS (no physical sensors — uses wheel speed instead), the system needs recalibration after tyre changes.'],
+    ['icon'=>'🖥️','title'=>'System Needs Calibration','desc'=>'On some vehicles with indirect TPMS (no physical sensors, uses wheel speed instead), the system needs recalibration after tyre changes.'],
 ];
 
 $faqs = [
     [
         'q' => 'What does the TPMS warning light mean?',
-        'a' => 'TPMS stands for Tyre Pressure Monitoring System. The warning light — typically a cross-section of a tyre with an exclamation mark — means one or more tyres has dropped below the minimum safe pressure threshold. Check your tyre pressures first. If all pressures are correct and the light remains on, the system may need a reset or a sensor may have a fault.',
+        'a' => 'TPMS stands for Tyre Pressure Monitoring System. The warning light (typically a cross-section of a tyre with an exclamation mark) means one or more tyres has dropped below the minimum safe pressure threshold. Check your tyre pressures first. If all pressures are correct and the light remains on, the system may need a reset or a sensor may have a fault.',
     ],
     [
         'q' => 'Can I drive with the TPMS light on?',
-        'a' => 'You should check your tyre pressures before continuing to drive. If the light is on due to genuinely low pressure, continuing to drive risks tyre damage or failure. If you\'ve checked the pressures, they\'re all correct, and the light is still on, it\'s likely a sensor or system issue rather than an immediate safety concern — but get it checked.',
+        'a' => 'You should check your tyre pressures before continuing to drive. If the light is on due to genuinely low pressure, continuing to drive risks tyre damage or failure. If you\'ve checked the pressures, they\'re all correct, and the light is still on, it\'s likely a sensor or system issue rather than an immediate safety concern, but get it checked.',
     ],
     [
         'q' => 'Why is my TPMS light on after fitting new tyres?',
@@ -55,11 +55,11 @@ $faqs = [
     ],
     [
         'q' => 'Do TPMS sensors need to be replaced when I fit new tyres?',
-        'a' => 'Not necessarily — if your existing sensors are working and within their service life, they can be transferred to new tyres. However, the valve stem and seal should be inspected and replaced if needed. If a sensor battery is near end of life (typically after 5–7 years), replacement at the time of tyre fitting avoids a second service visit later.',
+        'a' => 'Not necessarily. If your existing sensors are working and within their service life, they can be transferred to new tyres. However, the valve stem and seal should be inspected and replaced if needed. If a sensor battery is near end of life (typically after 5–7 years), replacement at the time of tyre fitting avoids a second service visit later.',
     ],
     [
         'q' => 'How much does TPMS service cost in Manukau?',
-        'a' => 'Cost varies depending on what\'s needed — a simple reset is typically a short job, while sensor replacement involves parts and more labour. Call us on ' . $phone_local . ' with your vehicle make, model, and year and we\'ll give you a price.',
+        'a' => 'Cost varies depending on what\'s needed. A simple reset is typically a short job, while sensor replacement involves parts and more labour. Call us on ' . $phone_local . ' with your vehicle make, model, and year and we\'ll give you a price.',
     ],
 ];
 
@@ -182,7 +182,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span>TPMS Reset Manukau</span>
             </nav>
             <div>
-                <span class="tpms-ey tpms-ey--yellow">Tyre Centre — Manukau</span>
+                <span class="tpms-ey tpms-ey--yellow">Tyre Centre · Manukau</span>
                 <h1 class="tpms-h1">TPMS Reset &amp;<br><em>Sensor Service</em></h1>
                 <p class="tpms-hero__sub">Tyre pressure warning light on? We diagnose, reset, and service TPMS systems at 139 Cavendish Drive. All vehicle makes and models.</p>
                 <div class="tpms-hero__btns">
@@ -232,7 +232,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
     <div class="tpms-w">
         <span class="tpms-ey tpms-ey--dark">Why Is the Light On?</span>
         <h2 class="tpms-h2" id="tpms-why-h2">Common Reasons Your TPMS Light Is On</h2>
-        <p class="tpms-lead">The tyre pressure warning light can come on for several reasons — not all of them mean your tyre is flat right now.</p>
+        <p class="tpms-lead">The tyre pressure warning light can come on for several reasons, and not all of them mean your tyre is flat right now.</p>
         <div class="tpms-why__grid">
             <?php foreach ($why_light_on as $w): ?>
             <div class="tpms-why-card">
@@ -257,9 +257,9 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 </div>
                 <ul class="tpms-service__list">
                     <?php foreach ([
-                        'TPMS diagnostic scan — identify which sensor or system is at fault',
+                        'TPMS diagnostic scan to identify which sensor or system is at fault',
                         'Reset after tyre fitting or rotation',
-                        'Sensor replacement — programmed to vehicle',
+                        'Sensor replacement, programmed to vehicle',
                         'Valve stem and seal replacement',
                         'Indirect TPMS calibration and reset',
                         'All makes and models including European vehicles',
@@ -273,8 +273,8 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <p>Before bringing the vehicle in, check all four tyre pressures and inflate to the manufacturer's recommendation (found on the door jamb sticker or owner's manual). Then:</p>
                 <ul class="tpms-action__steps">
                     <li><span class="tpms-action__num">1</span>Inflate all four tyres to correct pressure</li>
-                    <li><span class="tpms-action__num">2</span>Drive at speed for 10+ minutes — some systems reset automatically</li>
-                    <li><span class="tpms-action__num">3</span>If the light is still on, bring it in — we'll diagnose and reset</li>
+                    <li><span class="tpms-action__num">2</span>Drive at speed for 10+ minutes. Some systems reset automatically</li>
+                    <li><span class="tpms-action__num">3</span>If the light is still on, bring it in and we'll diagnose and reset</li>
                 </ul>
                 <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/','',$phone_local)); ?>" class="tpms-btn tpms-btn--primary" style="width:100%;justify-content:center;">
                     Call <?php echo esc_html($phone_local); ?>
@@ -289,8 +289,8 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
         <div class="tpms-booking__inner">
             <div>
                 <span class="tpms-ey tpms-ey--dark">Enquire</span>
-                <h2 class="tpms-h2" id="tpms-booking-h2">TPMS Service — Enquire Online</h2>
-                <p class="tpms-lead">Tell us your vehicle make, model, and what the warning light is doing — we'll advise on what's needed and book you in.</p>
+                <h2 class="tpms-h2" id="tpms-booking-h2">TPMS Service: Enquire Online</h2>
+                <p class="tpms-lead">Tell us your vehicle make, model, and what the warning light is doing. We'll advise on what's needed and book you in.</p>
                 <ul class="tpms-booking__checks">
                     <li><?php echo esc_html($hours); ?></li>
                     <li>139 Cavendish Drive, Manukau</li>

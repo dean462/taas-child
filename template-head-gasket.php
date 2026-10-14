@@ -45,28 +45,28 @@ $mbi_providers = [
 
 // ── Symptoms ─────────────────────────────────────────────────────────────────
 $symptoms = [
-    'White smoke or steam from the exhaust — coolant burning in the combustion chamber',
-    'Milky or creamy residue under the oil filler cap — coolant mixing with engine oil',
+    'White smoke or steam from the exhaust: coolant burning in the combustion chamber',
+    'Milky or creamy residue under the oil filler cap: coolant mixing with engine oil',
     'Unexplained coolant loss with no visible external leak',
-    'Overheating — especially after short journeys or in stop-start traffic',
-    'Bubbling in the coolant overflow bottle while the engine is running — combustion gases in the cooling system',
-    'Rough idle, misfire, or loss of power — coolant entering a cylinder',
-    'Sweet smell from the exhaust — burning coolant',
-    'Oil in the coolant — chocolate milk appearance in the overflow bottle',
+    'Overheating, especially after short trips or in stop-start traffic',
+    'Bubbling in the coolant overflow bottle while the engine is running: combustion gases in the cooling system',
+    'Rough idle, misfire, or loss of power: coolant entering a cylinder',
+    'Sweet smell from the exhaust: burning coolant',
+    'Oil in the coolant: a chocolate milk appearance in the overflow bottle',
 ];
 
 // ── Causes ───────────────────────────────────────────────────────────────────
 $causes = [
-    ['title' => 'Overheating', 'text' => 'The number one cause. The head gasket is designed for specific temperature ranges. Sustained overheating distorts the mating surfaces between the head and the block — once those surfaces are no longer flat, the gasket cannot seal.'],
+    ['title' => 'Overheating', 'text' => 'The number one cause. The head gasket is designed for specific temperature ranges. Sustained overheating distorts the mating surfaces between the head and the block. Once those surfaces are no longer flat, the gasket cannot seal.'],
     ['title' => 'Cooling System Neglect', 'text' => 'Old coolant turns acidic and corrodes aluminium cylinder heads from the inside. Uneven surface wear creates weak spots where the gasket fails first. A $200 coolant flush every two years prevents this.'],
-    ['title' => 'Pre-Existing Cooling Faults', 'text' => 'A failed thermostat, blocked radiator, or leaking water pump causes localised hot spots in the engine. The head gasket fails at the hottest point — usually between two adjacent cylinders or at a coolant passage.'],
+    ['title' => 'Pre-Existing Cooling Faults', 'text' => 'A failed thermostat, blocked radiator, or leaking water pump causes localised hot spots in the engine. The head gasket fails at the hottest point, usually between two adjacent cylinders or at a coolant passage.'],
     ['title' => 'Age and Mileage', 'text' => 'Gasket material degrades through thousands of heat cycles over the life of the engine. High-mileage engines with original gaskets are more susceptible, particularly if the coolant has not been maintained.'],
 ];
 
 // ── Diagnostic methods ───────────────────────────────────────────────────────
 $diagnostics = [
     ['title' => 'Compression Test', 'text' => 'Measures the pressure each cylinder can hold. Low or uneven compression between adjacent cylinders indicates a gasket breach. This test also reveals whether valve or piston ring damage has occurred.'],
-    ['title' => 'Chemical Block Test', 'text' => 'Also called a combustion leak test or sniff test. A test fluid is drawn through the coolant — if combustion gases are present in the cooling system, the fluid changes colour. This confirms the gasket has failed between a combustion chamber and a coolant passage.'],
+    ['title' => 'Chemical Block Test', 'text' => 'Also called a combustion leak test or sniff test. A test fluid is drawn through the coolant. If combustion gases are present in the cooling system, the fluid changes colour. This confirms the gasket has failed between a combustion chamber and a coolant passage.'],
     ['title' => 'Cooling System Pressure Test', 'text' => 'The cooling system is pressurised and monitored. A pressure drop with no visible external leak points to an internal gasket failure. Combined with the other two tests, this gives a complete picture of where and how badly the gasket has failed.'],
 ];
 
@@ -74,10 +74,10 @@ $diagnostics = [
 $process = [
     ['title' => 'Diagnose',              'text' => 'Compression test, chemical block test, and pressure test to confirm head gasket failure and assess whether secondary damage has occurred. We do not estimate head gasket replacement based on symptoms alone.'],
     ['title' => 'Honest Assessment',     'text' => 'You get a straight answer: gasket only, gasket plus head machining, or whether the repair cost exceeds the vehicle value. We tell you the truth before you commit to anything.'],
-    ['title' => 'Detailed Estimate',     'text' => 'Parts and labour — gasket kit, head bolts, coolant, oil, and any machining or additional components. Estimate provided before we start.'],
-    ['title' => 'Head Removal',          'text' => 'Cylinder head removed and inspected. Head and block mating surfaces checked for warping with a straight edge. Damage assessed — determines whether the head can be machined or needs replacement.'],
-    ['title' => 'Machine if Required',   'text' => 'If the cylinder head is warped (common after overheating), it is sent to a machinist for resurfacing. A flat surface is essential — fitting a new gasket to a warped head will fail again.'],
-    ['title' => 'Reassemble',            'text' => 'New head gasket kit fitted — gasket, head bolts (stretch bolts are always replaced, never reused), and valve stem seals where applicable. Torqued to manufacturer specification in the correct sequence.'],
+    ['title' => 'Detailed Estimate',     'text' => 'Parts and labour: gasket kit, head bolts, coolant, oil, and any machining or additional components. Estimate provided before we start.'],
+    ['title' => 'Head Removal',          'text' => 'Cylinder head removed and inspected. Head and block mating surfaces checked for warping with a straight edge. Damage is assessed to decide whether the head can be machined or needs replacement.'],
+    ['title' => 'Machine if Required',   'text' => 'If the cylinder head is warped (common after overheating), it is sent to a machinist for resurfacing. A flat surface is essential. Fitting a new gasket to a warped head will fail again.'],
+    ['title' => 'Reassemble',            'text' => 'New head gasket kit fitted: gasket, head bolts (stretch bolts are always replaced, never reused), and valve stem seals where applicable. Torqued to manufacturer specification in the correct sequence.'],
     ['title' => 'Fluids & Bleed',        'text' => 'Fresh coolant at the correct concentration, new engine oil and filter (contaminated oil must be replaced). Cooling system bled of air to prevent hot spots.'],
     ['title' => 'Test & Confirm',        'text' => 'Compression retest, pressure test, road test to operating temperature. Temperature stable. No leaks. No smoke. Confirmed correct operation before handover.'],
 ];
@@ -99,25 +99,25 @@ $related = [
 // ── FAQs (11) ────────────────────────────────────────────────────────────────
 $faqs = [
     ['q' => 'What is a head gasket and what does it do?',
-     'a' => 'The head gasket sits between the engine block and the cylinder head. It seals three separate systems: combustion pressure, coolant passages, and oil passages. When it fails, these systems cross-contaminate — coolant enters combustion chambers, oil mixes with coolant, or combustion gases pressurise the cooling system. Any of these will damage the engine if not addressed.'],
+     'a' => 'The head gasket sits between the engine block and the cylinder head. It seals three separate systems: combustion pressure, coolant passages, and oil passages. When it fails, these systems cross-contaminate. Coolant enters combustion chambers, oil mixes with coolant, or combustion gases pressurise the cooling system. Any of these will damage the engine if not addressed.'],
     ['q' => 'What causes a head gasket to fail?',
-     'a' => 'Overheating is the primary cause. Sustained high temperatures distort the mating surfaces between the head and block, and the gasket can no longer seal. Other causes include old acidic coolant corroding aluminium heads, pre-existing cooling system faults like a blocked radiator or failed thermostat, and simple age — gasket material degrades over thousands of heat cycles.'],
+     'a' => 'Overheating is the primary cause. Sustained high temperatures distort the mating surfaces between the head and block, and the gasket can no longer seal. Other causes include old acidic coolant corroding aluminium heads, pre-existing cooling system faults like a blocked radiator or failed thermostat, and simple age, as gasket material degrades over thousands of heat cycles.'],
     ['q' => 'How much does head gasket repair cost in Manukau?',
-     'a' => 'Head gasket replacement starts ' . (defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000') . '. If the cylinder head needs machining, add ' . (defined('TAAS_CS_HEADMACHINE') ? TAAS_CS_HEADMACHINE : '$400–$600') . '. Complex engines — V6, European, turbocharged — cost more depending on the extent of damage. We diagnose first and give you an estimate before starting work. Call ' . $phone_free . ' with your vehicle details.'],
+     'a' => 'Head gasket replacement starts ' . (defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000') . '. If the cylinder head needs machining, add ' . (defined('TAAS_CS_HEADMACHINE') ? TAAS_CS_HEADMACHINE : '$400–$600') . '. Complex engines (V6, European, turbocharged) cost more depending on the extent of damage. We diagnose first and give you an estimate before starting work. Call ' . $phone_free . ' with your vehicle details.'],
     ['q' => 'How do I know if my head gasket has failed?',
-     'a' => 'The most common signs are white smoke from the exhaust, milky residue under the oil filler cap, unexplained coolant loss with no visible leak, and overheating. Bubbling in the coolant overflow bottle while the engine is running is another strong indicator — it means combustion gases are entering the cooling system. If you notice any of these, do not continue driving. Call us on ' . $phone_free . '.'],
+     'a' => 'The most common signs are white smoke from the exhaust, milky residue under the oil filler cap, unexplained coolant loss with no visible leak, and overheating. Bubbling in the coolant overflow bottle while the engine is running is another strong indicator. It means combustion gases are entering the cooling system. If you notice any of these, do not continue driving. Call us on ' . $phone_free . '.'],
     ['q' => 'Is it worth repairing a blown head gasket?',
-     'a' => 'It depends on four factors: the value of the vehicle, the condition of the engine, how far the damage has progressed, and whether you drove the vehicle after symptoms appeared. If the gasket failure is caught early and the head is not warped, the repair is worthwhile on most vehicles. If the engine has sustained secondary damage from continued driving — warped head, damaged bores, cracked block — the cost escalates and may exceed the vehicle value. We diagnose first and give you a straight answer.'],
+     'a' => 'It depends on four factors: the value of the vehicle, the condition of the engine, how far the damage has progressed, and whether you drove the vehicle after symptoms appeared. If the gasket failure is caught early and the head is not warped, the repair is worthwhile on most vehicles. If the engine has sustained secondary damage from continued driving (warped head, damaged bores, cracked block), the cost escalates and may exceed the vehicle value. We diagnose first and give you a straight answer.'],
     ['q' => 'Can I drive with a blown head gasket?',
      'a' => 'No. Every kilometre driven with a blown head gasket causes additional damage. Coolant in the combustion chamber washes oil from the cylinder walls, accelerating bore wear. Combustion gases in the cooling system cause further overheating. Oil contaminated with coolant loses its lubricating properties. What starts as a gasket-only repair becomes a head machining job, then an engine replacement. Stop driving and call us.'],
     ['q' => 'Is head gasket failure covered by mechanical breakdown insurance?',
-     'a' => 'In most cases, yes — head gasket failure is a mechanical component failure and is commonly covered under MBI policies. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. We handle the claim directly. You pay the excess and any costs the policy does not cover — we confirm these once the claim is approved. Note: some policies may not cover damage resulting from continued driving after symptoms appeared, which is another reason early diagnosis matters.'],
+     'a' => 'In most cases, yes. Head gasket failure is a mechanical component failure and is commonly covered under MBI policies. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. We handle the claim directly. You pay the excess and any costs the policy does not cover, and we confirm these once the claim is approved. Note: some policies may not cover damage resulting from continued driving after symptoms appeared, which is another reason early diagnosis matters.'],
     ['q' => 'How long does head gasket replacement take?',
-     'a' => 'A straightforward replacement typically takes 1–2 days. If the cylinder head needs machining, add 1–2 days for the machinist. Complex engines or those with secondary damage may take longer. We advise on expected timeframe after diagnosis. We do not rush head gasket work — it needs to be done correctly the first time.'],
+     'a' => 'A straightforward replacement typically takes 1–2 days. If the cylinder head needs machining, add 1–2 days for the machinist. Complex engines or those with secondary damage may take longer. We advise on expected timeframe after diagnosis. We do not rush head gasket work. It needs to be done correctly the first time.'],
     ['q' => 'Can a head gasket be repaired with a sealant?',
-     'a' => 'We do not recommend chemical sealants for head gasket repair. They may temporarily reduce symptoms on a minor failure, but they cannot fix a mechanical breach between a combustion chamber and a coolant passage. Sealant can also block heater cores, radiator passages, and thermostat ports — creating new problems. If your gasket has failed, it needs replacing properly.'],
+     'a' => 'We do not recommend chemical sealants for head gasket repair. They may temporarily reduce symptoms on a minor failure, but they cannot fix a mechanical breach between a combustion chamber and a coolant passage. Sealant can also block heater cores, radiator passages, and thermostat ports, which creates new problems. If your gasket has failed, it needs replacing properly.'],
     ['q' => 'Do you work on European vehicle head gaskets?',
-     'a' => 'Yes. Our TAAS European division covers all European makes including BMW, Audi, Volkswagen, Mercedes-Benz, and others. European engines often use multi-layer steel gaskets and require specific torque procedures and head bolt specifications — we follow manufacturer repair data for every engine.'],
+     'a' => 'Yes. Our TAAS European division covers all European makes including BMW, Audi, Volkswagen, Mercedes-Benz, and others. European engines often use multi-layer steel gaskets and require specific torque procedures and head bolt specifications. We follow manufacturer repair data for every engine.'],
     ['q' => 'Where is your workshop?',
      'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book a diagnostic appointment.'],
 ];
@@ -282,10 +282,10 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="hgs-hero"><div class="hgs-w"><div class="hgs-hero__inner">
   <div>
     <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/engine-repairs/'); ?>" style="color:#555;text-decoration:none;">Engine Repairs</a><span style="margin:0 6px;">›</span><span style="color:#888;">Head Gasket Repair</span></nav>
-    <span class="hgs-eye hgs-eye--alert">High-Cost Repair — Diagnosis First</span>
-    <h1>Head Gasket Repair<br><span>Manukau — South Auckland</span></h1>
-    <p class="hgs-hero__sub">A blown head gasket is the most expensive cooling system repair — and every kilometre driven after it fails makes it worse. Tony Allen Auto Service diagnoses the extent of damage before you commit to anything. <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
-    <div class="hgs-hero__price">Diagnosis <?php echo esc_html($mech_diag); ?> · Repair — estimate after diagnosis</div>
+    <span class="hgs-eye hgs-eye--alert">High-Cost Repair: Diagnosis First</span>
+    <h1>Head Gasket Repair<br><span>Manukau, South Auckland</span></h1>
+    <p class="hgs-hero__sub">A blown head gasket is the most expensive cooling system repair, and every kilometre driven after it fails makes it worse. Tony Allen Auto Service diagnoses the extent of damage before you commit to anything. <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
+    <div class="hgs-hero__price">Diagnosis <?php echo esc_html($mech_diag); ?> · Repair: estimate after diagnosis</div>
     <div class="hgs-hero__ctas">
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="hgs-btn hgs-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
       <a href="#hgs-enquire" class="hgs-btn hgs-btn--outline">Book Diagnosis</a>
@@ -311,8 +311,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <span class="hgs-eye hgs-eye--dark">Understanding Head Gaskets</span>
   <h2 class="hgs-h2">What Is a Head Gasket and Why Does It Fail?</h2>
   <div class="hgs-content">
-    <p>The head gasket sits between the engine block and the cylinder head. Its job is to seal three completely separate systems: the high-pressure combustion gases inside each cylinder, the coolant passages that carry heat away from the engine, and the oil passages that lubricate the valve train and camshaft. When a head gasket fails, these systems cross-contaminate — and the consequences escalate fast.</p>
-    <p>Coolant enters the combustion chamber and burns as white smoke. Oil mixes with coolant and turns into a milky sludge that cannot lubricate. Combustion gases pressurise the cooling system and cause further overheating. What started as a gasket failure becomes cylinder head damage, bore wear, and potentially a written-off engine — all because the three systems that should never meet are now mixing freely.</p>
+    <p>The head gasket sits between the engine block and the cylinder head. Its job is to seal three completely separate systems: the high-pressure combustion gases inside each cylinder, the coolant passages that carry heat away from the engine, and the oil passages that lubricate the valve train and camshaft. When a head gasket fails, these systems cross-contaminate, and the consequences escalate fast.</p>
+    <p>Coolant enters the combustion chamber and burns as white smoke. Oil mixes with coolant and turns into a milky sludge that cannot lubricate. Combustion gases pressurise the cooling system and cause further overheating. What started as a gasket failure becomes cylinder head damage, bore wear, and potentially a written-off engine, all because the three systems that should never meet are now mixing freely.</p>
   </div>
   <div class="hgs-causes">
     <?php foreach ($causes as $c): ?>
@@ -327,7 +327,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="hgs-section hgs-section--dark"><div class="hgs-w">
   <span class="hgs-eye hgs-eye--yellow">Warning Signs</span>
   <h2 class="hgs-h2 hgs-h2--white">How Do You Know Your Head Gasket Has Failed?</h2>
-  <p class="hgs-lead">A blown head gasket does not always present the same way. Some vehicles show one symptom, others show several. Any of the following warrants immediate diagnosis — do not wait for multiple signs to appear.</p>
+  <p class="hgs-lead">A blown head gasket does not always present the same way. Some vehicles show one symptom, others show several. Any of the following warrants immediate diagnosis. Do not wait for multiple signs to appear.</p>
   <ul class="hgs-symptoms">
     <?php foreach ($symptoms as $s): ?><li><?php echo esc_html($s); ?></li><?php endforeach; ?>
   </ul>
@@ -355,7 +355,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <span class="hgs-eye hgs-eye--dark">The Real Question</span>
   <h2 class="hgs-h2">Is It Worth Repairing a Blown Head Gasket?</h2>
   <div class="hgs-worth">
-    <p class="hgs-lead" style="margin-bottom:8px;">This is the question everyone asks — and we give you a straight answer after diagnosis, not a sales pitch.</p>
+    <p class="hgs-lead" style="margin-bottom:8px;">This is the question everyone asks, and we give you a straight answer after diagnosis, not a sales pitch.</p>
     <div class="hgs-worth__factors">
       <div class="hgs-worth__factor hgs-worth__factor--yes">
         <h3>Repair Is Usually Worthwhile When</h3>
@@ -363,10 +363,10 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
       </div>
       <div class="hgs-worth__factor hgs-worth__factor--no">
         <h3>Repair May Not Be Worthwhile When</h3>
-        <p>The vehicle was driven overheating for a sustained period. The cylinder head is warped or cracked. The engine has secondary damage — scored bores, damaged bearings, cracked block. The repair cost approaches or exceeds the vehicle value.</p>
+        <p>The vehicle was driven overheating for a sustained period. The cylinder head is warped or cracked. The engine has secondary damage: scored bores, damaged bearings, cracked block. The repair cost approaches or exceeds the vehicle value.</p>
       </div>
     </div>
-    <div class="hgs-worth__bottom">We tell you the truth before you spend your money. If the repair does not make financial sense, we will say so — and help you understand what the alternatives are. That is what <?php echo esc_html($years); ?> years in business looks like.</div>
+    <div class="hgs-worth__bottom">We tell you the truth before you spend your money. If the repair does not make financial sense, we will say so and help you understand what the alternatives are. That is what <?php echo esc_html($years); ?> years in business looks like.</div>
   </div>
 </div></section>
 
@@ -396,7 +396,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="hgs-section hgs-section--white"><div class="hgs-w">
   <span class="hgs-eye hgs-eye--dark">Pricing</span>
   <h2 class="hgs-h2">How Much Does Head Gasket Repair Cost?</h2>
-  <p class="hgs-lead">We give you an estimate after diagnosis and before starting work — and keep you informed if anything changes.</p>
+  <p class="hgs-lead">We give you an estimate after diagnosis and before starting work, and keep you informed if anything changes.</p>
 
   <div class="hgs-pricing">
     <div class="hgs-pricing__card">
@@ -418,11 +418,11 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
   <div class="hgs-pricing__note"><strong>Diagnosis first:</strong> Mechanical diagnosis <?php echo esc_html($mech_diag); ?>. This confirms the head gasket fault and the extent of any secondary damage before you commit to the repair. We do not provide a repair estimate based on symptoms alone.</div>
 
-  <div class="hgs-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, Aotea Finance. A head gasket repair is a significant cost — finance options help you get the repair done without delay. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>
+  <div class="hgs-pricing__finance"><strong>Finance available:</strong> Afterpay, Q Card, GEM Finance, Aotea Finance. A head gasket repair is a significant cost. Finance options help you get the repair done without delay. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="color:var(--taas-yellow2);font-weight:600;">View finance options →</a></div>
 
   <div class="hgs-mbi">
     <div class="hgs-mbi__title">Covered by Mechanical Breakdown Insurance?</div>
-    <div class="hgs-mbi__body">Head gasket failure is commonly covered under MBI policies — often as a high-value claim. Tony Allen Auto Service is an approved repairer and we handle the claim process directly. Note: some policies may not cover damage resulting from continued driving after symptoms appeared, which is another reason early diagnosis matters.</div>
+    <div class="hgs-mbi__body">Head gasket failure is commonly covered under MBI policies, often as a high-value claim. Tony Allen Auto Service is an approved repairer and we handle the claim process directly. Note: some policies may not cover damage resulting from continued driving after symptoms appeared, which is another reason early diagnosis matters.</div>
     <div class="hgs-mbi__providers">
       <?php foreach ($mbi_providers as $p): ?><a href="<?php echo esc_url($site_url.$p['url']); ?>" class="hgs-mbi__pill"><?php echo esc_html($p['name']); ?></a><?php endforeach; ?>
       <a href="<?php echo esc_url($site_url.'/mechanical-breakdown-insurance/'); ?>" class="hgs-mbi__pill" style="background:var(--taas-dark,#1A1A1A);color:var(--taas-yellow,#FFC800);border-color:var(--taas-dark,#1A1A1A);">All MBI Providers →</a>
@@ -436,7 +436,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="hgs-enquire" class="hgs-section hgs-section--dark"><div class="hgs-w"><div class="hgs-enquiry">
   <div>
     <span class="hgs-eye hgs-eye--yellow">Book Today</span>
-    <h2 class="hgs-h2 hgs-h2--white">Head Gasket Diagnosis — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <h2 class="hgs-h2 hgs-h2--white">Head Gasket Diagnosis: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.7;"><strong style="color:var(--taas-white);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -465,7 +465,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- FAQ -->
 <section class="hgs-section hgs-section--grey"><div class="hgs-w">
   <span class="hgs-eye hgs-eye--dark">Common Questions</span>
-  <h2 class="hgs-h2">Head Gasket Repair — FAQ</h2>
+  <h2 class="hgs-h2">Head Gasket Repair FAQs</h2>
   <div class="hgs-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="hgs-faq__item<?php echo $i===0?' hgs-faq__item--open':''; ?>"><button class="hgs-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="hgs-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="hgs-a-<?php echo $i; ?>" class="hgs-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

@@ -51,31 +51,31 @@ $service_category  = ($has_acf ? get_field('service_category')  : null) ?: 'Auto
 $service_hub_url   = ($has_acf ? get_field('service_hub_url')   : null) ?: '/services/auto-electrical/';
 $service_hub_label = ($has_acf ? get_field('service_hub_label') : null) ?: 'Auto Electrical';
 $urgency_level     = ($has_acf ? get_field('urgency_level')     : null) ?: 'medium'; // high | medium | low
-$urgency_message   = ($has_acf ? get_field('urgency_message')   : null) ?: 'Safe to drive short distances — but book within 48 hours. A failing battery can leave you stranded without warning.';
+$urgency_message   = ($has_acf ? get_field('urgency_message')   : null) ?: 'Safe to drive short distances, but book within 48 hours. A failing battery can leave you stranded without warning.';
 $price_signal      = ($has_acf ? get_field('price_signal')      : null) ?: 'Car batteries ' . TAAS_BATTERY_PRICE . ' · Diagnostic check ' . TAAS_ALT_TEST;
 $specialist_name   = ($has_acf ? get_field('specialist_name')   : null) ?: 'Raj';
 $specialist_role   = ($has_acf ? get_field('specialist_role')   : null) ?: 'Lead Diagnostics & Auto Electrical Technician';
 $hide_specialist   = ($has_acf ? get_field('hide_specialist_intro') : null) ?: false;
 
 $what_it_is = ($has_acf ? get_field('what_it_is') : null) ?:
-    'Your car battery provides the electrical charge needed to start the engine and powers all electrical systems when the alternator is not running. Most car batteries last 3–5 years in New Zealand conditions — heat, short trips, and age all accelerate wear. When a battery begins to fail, it may still start the car on a good morning but leave you stranded when conditions are less favourable — cold weather, lights left on, or a battery that is simply too weak to crank a cold engine.';
+    'Your car battery provides the electrical charge needed to start the engine and powers all electrical systems when the alternator is not running. Most car batteries last 3–5 years in New Zealand conditions. Heat, short trips and age all wear them out faster. When a battery begins to fail, it may still start the car on a good morning but leave you stranded when conditions are less favourable: cold weather, lights left on, or a battery that is simply too weak to crank a cold engine.';
 
 // Pipe-separated lists — split into arrays for rendering
 $causes_raw = ($has_acf ? get_field('causes') : null) ?:
     'Battery age — most batteries last 3–5 years|Excessive heat or cold cycling|Short trips that prevent full recharge|Parasitic drain — something drawing power when the car is off|Faulty alternator not recharging the battery|Lights or accessories left on|Original battery at end of factory life';
 
 $symptoms_raw = ($has_acf ? get_field('symptoms') : null) ?:
-    'Engine slow to crank — takes longer than usual to start|Battery warning light on the dashboard|Lights dimmer than normal|Electrical accessories behaving oddly — radio resetting, windows slow|Car clicks but won\'t start|Completely dead — no lights, no response at all|Battery swollen or leaking (visible when checking under the bonnet)';
+    'Engine slow to crank and takes longer than usual to start|Battery warning light on the dashboard|Lights dimmer than normal|Electrical accessories behaving oddly (radio resetting, windows slow)|Car clicks but won\'t start|Completely dead: no lights, no response at all|Battery swollen or leaking (visible when checking under the bonnet)';
 
 $process_raw = ($has_acf ? get_field('our_process') : null) ?:
     'Test the existing battery — we load-test the battery to check its actual capacity, not just resting voltage|Test the charging system — a bad alternator kills new batteries, so we check alternator output before recommending replacement|Check for parasitic drain — if your battery keeps going flat, we identify what is drawing power overnight|Supply and fit the right battery — we carry batteries suited to the South Auckland climate and vehicle range. We match the correct capacity (CCA and Ah) for your specific vehicle|Dispose of the old battery responsibly — all old batteries are recycled through approved channels|Road test and confirm — we confirm charging voltage after fitting to make sure the alternator is keeping the new battery charged correctly';
 
 $vehicles_note = ($has_acf ? get_field('vehicles_note') : null) ?:
-    'Some vehicles — particularly European makes such as BMW, Mercedes-Benz, Volkswagen and Audi — require battery registration after replacement. This programmes the new battery into the vehicle\'s power management system. Skipping this step on these vehicles can cause flat batteries and electrical gremlins within weeks. Raj carries out battery registration as part of the job on affected vehicles — always ask your workshop if your car requires this.';
+    'Some vehicles, particularly European makes such as BMW, Mercedes-Benz, Volkswagen and Audi, require battery registration after replacement. This programmes the new battery into the vehicle\'s power management system. Skipping this step on these vehicles can cause flat batteries and electrical gremlins within weeks. Raj carries out battery registration as part of the job on affected vehicles. Always ask your workshop if your car requires this.';
 
 $related_1_label = ($has_acf ? get_field('related_1_label') : null) ?: 'Alternator Repair & Replacement';
 $related_1_url   = ($has_acf ? get_field('related_1_url')   : null) ?: '/auto-electrical-alternator/';
-$related_2_label = ($has_acf ? get_field('related_2_label') : null) ?: 'Car Won\'t Start — Help';
+$related_2_label = ($has_acf ? get_field('related_2_label') : null) ?: 'Car Won\'t Start? Get Help';
 $related_2_url   = ($has_acf ? get_field('related_2_url')   : null) ?: '/car-wont-start-manukau/';
 $related_3_label = ($has_acf ? get_field('related_3_label') : null) ?: 'Diagnostic Scanning';
 $related_3_url   = ($has_acf ? get_field('related_3_url')   : null) ?: '/services/diagnostic-scanning/';
@@ -154,11 +154,11 @@ if (empty($faqs)) {
     ];
     $faqs[] = [
         'q' => 'How much does ' . strtolower($service_name) . ' cost in Manukau?',
-        'a'  => 'We estimate after diagnosis — ' . $price_signal . '. Call us on ' . $phone_free . ' and describe what your vehicle is doing.',
+        'a'  => 'We give you an estimate after diagnosis: ' . $price_signal . '. Call us on ' . $phone_free . ' and describe what your vehicle is doing.',
     ];
     $faqs[] = [
         'q' => 'Do you work on all makes and models?',
-        'a'  => 'Yes — all makes and models including Japanese, Korean, and European vehicles. Tony Allen Auto Service has been in Manukau since 1985.',
+        'a'  => 'Yes. We work on all makes and models, including Japanese, Korean and European vehicles. Tony Allen Auto Service has been in Manukau since 1985.',
     ];
 }
 
@@ -629,7 +629,7 @@ body{-webkit-text-size-adjust:100%;text-size-adjust:100%;font-weight:300;overflo
         <h1><?php echo esc_html($service_name); ?></h1>
 
         <p class="taas-hero__intro">
-            Tony Allen Auto Service — South Auckland's trusted workshop since <?php echo esc_html($established); ?>. <?php echo esc_html($specialist_name); ?> and the team carry out <?php echo esc_html(strtolower($service_name)); ?> for all makes and models at 139 Cavendish Drive, Manukau. Estimate before we start. No surprises.
+            Tony Allen Auto Service has been South Auckland's local workshop since <?php echo esc_html($established); ?>. <?php echo esc_html($specialist_name); ?> and the team carry out <?php echo esc_html(strtolower($service_name)); ?> for all makes and models at 139 Cavendish Drive, Manukau. Estimate before we start. No surprises.
         </p>
 
         <div class="taas-hero__ctas">
@@ -673,7 +673,7 @@ body{-webkit-text-size-adjust:100%;text-size-adjust:100%;font-weight:300;overflo
         </div>
         <div class="taas-trust__item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Trading Since <?php echo esc_html($established); ?> — <?php echo esc_html($years_trading); ?> Years
+            Trading Since <?php echo esc_html($established); ?> · <?php echo esc_html($years_trading); ?> Years
 $hero_img = defined('TAAS_HERO_DEFAULT') ? TAAS_HERO_DEFAULT : '';
 $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%,rgba(17,17,17,.92) 100%),url('" . esc_url($hero_img) . "') center 38%/cover no-repeat;" : '';
         </div>
@@ -717,7 +717,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                 </p>
                 <p style="color:#bbb;font-size:17px;line-height:1.85;">
                     <?php if ( ! $hide_specialist ): ?>
-                    At Tony Allen Auto Service, <?php echo esc_html($service_name); ?> is handled by <?php echo esc_html($specialist_name); ?> — our <?php echo esc_html($specialist_role); ?>. Every job starts with a proper assessment, not an assumption. We tell you what we find before we start any work.
+                    At Tony Allen Auto Service, <?php echo esc_html($service_name); ?> is handled by <?php echo esc_html($specialist_name); ?>, our <?php echo esc_html($specialist_role); ?>. Every job starts with a proper assessment, not an assumption. We tell you what we find before we start any work.
                     <?php endif; ?>
                 </p>
 
@@ -736,9 +736,9 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                     <div class="taas-specialist-card__role"><?php echo esc_html($specialist_role); ?></div>
                     <?php if ( $hide_specialist ): ?>
                     <p>Call us on <?php echo esc_html($phone_free); ?> and we will advise on next steps. We carry out a full diagnosis and contact you with an estimate before any work begins.</p>
-                    <p>All makes and models. Estimate before we start — no surprise invoices.</p>
+                    <p>All makes and models. Estimate before we start. No surprise invoices.</p>
                     <?php else: ?>
-                    <p>Handling your <?php echo esc_html(strtolower($service_name)); ?> at TAAS. <?php echo esc_html($specialist_name); ?> tests the full system — not just the obvious part — so the fault is fixed properly the first time.</p>
+                    <p>Handling your <?php echo esc_html(strtolower($service_name)); ?> at TAAS. <?php echo esc_html($specialist_name); ?> tests the full system, not just the obvious part, so the fault is fixed properly the first time.</p>
                     <p>All makes and models. We estimate after diagnosis. Call us to describe what your vehicle is doing and we'll give you an honest assessment.</p>
                     <?php endif; ?>
                     <div class="taas-specialist-card__cta">
@@ -790,7 +790,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 <section class="taas-section" aria-labelledby="symptoms-heading">
     <div class="taas-container">
         <h2 class="taas-section__title" id="symptoms-heading">
-            Warning Signs — <span>Does This Sound Like Your Vehicle?</span>
+            Warning Signs: <span>Does This Sound Like Your Vehicle?</span>
         </h2>
         <p class="taas-section__sub">These are the symptoms South Auckland drivers describe when they call us about <?php echo esc_html(strtolower($service_name)); ?>. If your vehicle is showing any of these, call <?php echo esc_html($phone_free); ?> or book in today.</p>
 
@@ -805,7 +805,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 
         <div style="margin-top:28px;text-align:center;">
             <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>" class="taas-btn taas-btn--primary">
-                Call <?php echo esc_html($phone_free); ?> — Describe Your Symptoms
+                Call <?php echo esc_html($phone_free); ?> and Describe Your Symptoms
             </a>
         </div>
     </div>
@@ -821,7 +821,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
             How We Handle <span><?php echo esc_html($service_name); ?></span> at TAAS
         </h2>
         <p class="taas-section__sub">
-            At Tony Allen Auto Service, we do not guess. <?php echo esc_html($specialist_name); ?> follows a structured process for every <?php echo esc_html(strtolower($service_name)); ?> job — so you get an accurate diagnosis and a repair that lasts.
+            At Tony Allen Auto Service, we do not guess. <?php echo esc_html($specialist_name); ?> follows a structured process for every <?php echo esc_html(strtolower($service_name)); ?> job, so you get an accurate diagnosis and a repair that lasts.
         </p>
 
         <ol class="taas-process" role="list">
@@ -857,15 +857,15 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                 </h2>
                 <p style="color:#bbb;font-size:17px;line-height:1.85;margin-bottom:18px;">
                     <?php if ( $hide_specialist ): ?>
-                    Towing costs are set by the towing company — not by us. <a href="https://towingandrecovery.co.nz" target="_blank" rel="noopener" style="color:var(--taas-yellow);">Towing and Recovery</a> can advise current rates when you call. If your insurance includes roadside assistance, towing may already be covered.
+                    Towing costs are set by the towing company, not by us. <a href="https://towingandrecovery.co.nz" target="_blank" rel="noopener" style="color:var(--taas-yellow);">Towing and Recovery</a> can advise current rates when you call. If your insurance includes roadside assistance, towing may already be covered.
                 </p>
                 <p style="color:#bbb;font-size:17px;line-height:1.85;margin-bottom:24px;">
                     Once your vehicle is with us, we give you an estimate before starting any repair work. If anything changes once we're into the job, we'll contact you before going further.
                     <?php else: ?>
-                    We understand that pricing anxiety stops people calling. So here is an honest guide. We will always give you an estimate before any work starts — what you see below is a general price guide.
+                    We understand that pricing anxiety stops people calling. So here is an honest guide. We will always give you an estimate before any work starts. What you see below is a general price guide.
                 </p>
                 <p style="color:#bbb;font-size:17px;line-height:1.85;margin-bottom:24px;">
-                    The final price for <?php echo esc_html(strtolower($service_name)); ?> depends on your specific vehicle, the parts required, and whether additional faults are found during our assessment. We'll keep you informed every step of the way.
+                    The final price for <?php echo esc_html(strtolower($service_name)); ?> depends on your specific vehicle, the parts required, and whether additional faults are found during our assessment. We'll keep you updated as the job goes.
                     <?php endif; ?>
                 </p>
                 <div style="background:#1a1400;border-left:4px solid var(--taas-yellow);border-radius:0 var(--taas-radius) var(--taas-radius) 0;padding:16px 20px;font-size:16px;color:#ccc;line-height:1.75;">
@@ -874,7 +874,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
             </div>
 
             <div class="taas-pricing-card">
-                <h3><?php echo esc_html($service_name); ?> — Price Guide</h3>
+                <h3><?php echo esc_html($service_name); ?> Price Guide</h3>
                 <div class="taas-pricing-card__signal"><?php echo esc_html($price_signal); ?></div>
                 <div class="taas-pricing-card__note">Price indication only. Estimate provided before work starts. Prices include GST.</div>
                 <ul class="taas-pricing-card__items">
@@ -900,7 +900,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                 </div>
                 <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>"
                    class="taas-btn taas-btn--primary" style="width:100%;justify-content:center;margin-top:18px;">
-                    Get an Estimate — Call <?php echo esc_html($phone_free); ?>
+                    Get an Estimate: Call <?php echo esc_html($phone_free); ?>
                 </a>
             </div>
         </div>
@@ -913,7 +913,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 <section class="taas-section taas-section--alt" aria-labelledby="related-heading">
     <div class="taas-container">
         <h2 class="taas-section__title" id="related-heading">
-            Related Services — <span>Often Diagnosed Together</span>
+            Related Services: <span>Often Diagnosed Together</span>
         </h2>
         <p class="taas-section__sub">These services are frequently related to <?php echo esc_html(strtolower($service_name)); ?>. <?php echo esc_html($specialist_name); ?> will flag if any of these need attention during your visit.</p>
 
@@ -923,7 +923,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                 [$related_1_label, $related_1_url],
                 [$related_2_label, $related_2_url],
                 [$related_3_label, $related_3_url],
-                [$service_hub_label . ' — Full Service List', $service_hub_url],
+                [$service_hub_label . ': Full Service List', $service_hub_url],
             ];
             foreach ($related as $rel):
                 if (!$rel[0] || !$rel[1]) continue;
@@ -946,9 +946,9 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 <section class="taas-section" aria-labelledby="faq-heading">
     <div class="taas-container">
         <h2 class="taas-section__title" id="faq-heading">
-            <?php echo esc_html($service_name); ?> Manukau — <span>Questions Answered</span>
+            <?php echo esc_html($service_name); ?> Manukau: <span>Questions Answered</span>
         </h2>
-        <p class="taas-section__sub">Real questions from South Auckland drivers — answered honestly by the team at Tony Allen Auto Service.</p>
+        <p class="taas-section__sub">Real questions from South Auckland drivers, answered honestly by the team at Tony Allen Auto Service.</p>
 
         <ul class="taas-faq" id="taas-faq-list">
             <?php foreach ($faqs as $idx => $faq): ?>
@@ -1039,7 +1039,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
                 <div class="taas-contact-card__row">
                     <span class="taas-contact-card__label">Specialist</span>
                     <span class="taas-contact-card__val" style="color:var(--taas-yellow);font-weight:700;">
-                        <?php echo esc_html($specialist_name); ?> — <?php echo esc_html($specialist_role); ?>
+                        <?php echo esc_html($specialist_name); ?>, <?php echo esc_html($specialist_role); ?>
                     </span>
                 </div>
                 <div class="taas-contact-card__row">
@@ -1054,11 +1054,11 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 <!-- ════════════════════════════════════════════════════════════════════
      FOOTER CTA
      ════════════════════════════════════════════════════════════════════ -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <div class="taas-footer-cta">
     <div class="taas-container">
-        <h2><?php echo esc_html($service_name); ?> in Manukau — Book Today</h2>
-        <p><?php echo esc_html($specialist_name); ?> and the team are ready. Call us or book online — estimate before we start.</p>
+        <h2><?php echo esc_html($service_name); ?> in Manukau: Book Today</h2>
+        <p><?php echo esc_html($specialist_name); ?> and the team are ready. Call us or book online. Estimate before we start.</p>
         <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
             <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>" class="taas-btn taas-btn--primary">
                 Call <?php echo esc_html($phone_free); ?>
@@ -1139,7 +1139,7 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
         "itemListElement": [
           {
             "@type": "Offer",
-            "name": "<?php echo esc_js($service_name); ?> — Manukau",
+            "name": "<?php echo esc_js($service_name); ?> in Manukau",
             "description": "<?php echo esc_js($price_signal); ?>",
             "seller": {"@type":"AutoRepair","name":"Tony Allen Auto Service"}
           }

@@ -61,10 +61,10 @@ $providers = [
         'since'    => '50+ years',
         'badge'    => 'NZ Owned',
         'featured' => true,
-        'tagline'  => 'NZ\'s Leading MBI Provider — 50+ Years',
+        'tagline'  => 'NZ\'s Leading MBI Provider, 50+ Years',
         'about'    => 'Autosure is one of New Zealand\'s most recognised MBI providers, operating for over 50 years with a network of more than 700 authorised repairers nationwide. Policies are underwritten by Autosure Insurance Limited, which holds a B++ (Good) financial strength rating from A.M. Best.',
-        'cover'    => 'Two tiers — Extreme Plus and Essential. Extreme Plus covers engine, transmission, turbo, fuel system, electrical, clutch, differential, suspension, steering, air conditioning and cooling. Vehicles up to 20 years old and 200,000 km. Includes unlimited AA Roadservice for the life of the policy.',
-        'claim'    => 'Call Autosure before any repairs start. They locate your nearest authorised repairer and authorise the work. Servicing records must be current — keep all receipts.',
+        'cover'    => 'Two tiers: Extreme Plus and Essential. Extreme Plus covers engine, transmission, turbo, fuel system, electrical, clutch, differential, suspension, steering, air conditioning and cooling. Vehicles up to 20 years old and 200,000 km. Includes unlimited AA Roadservice for the life of the policy.',
+        'claim'    => 'Call Autosure before any repairs start. They locate your nearest authorised repairer and authorise the work. Servicing records must be current, so keep all receipts.',
         'claims_ph'=> '0800 809 700',
         'website'  => 'https://autosure.co.nz',
         'facts'    => [
@@ -81,9 +81,9 @@ $providers = [
         'since'    => 'Formerly Protecta',
         'badge'    => '35+ Years in NZ',
         'featured' => false,
-        'tagline'  => '35+ Years — Formerly Protecta Insurance',
-        'about'    => 'Assurant (formerly Protecta Insurance) completed its rebrand in December 2024 following Assurant Inc\'s acquisition of Protecta in 2022. The same NZ team, same policies, same service — now under the global Assurant brand. Policies are issued by Protecta Insurance NZ Ltd as agent for Virginia Surety Company Inc (A+ financial strength rating from A.M. Best).',
-        'cover'    => 'Three tiers — Optimum, Maxi, and Kinetic. All tiers cover major mechanical, electrical, and electronic components including labour. Vehicles up to 15 years old or 250,000 km. Includes towing, rental car allowance, roadside assistance, and travel costs for breakdowns over 100 km from home.',
+        'tagline'  => '35+ Years, Formerly Protecta Insurance',
+        'about'    => 'Assurant (formerly Protecta Insurance) completed its rebrand in December 2024 following Assurant Inc\'s acquisition of Protecta in 2022. The same NZ team, same policies, same service, now under the global Assurant brand. Policies are issued by Protecta Insurance NZ Ltd as agent for Virginia Surety Company Inc (A+ financial strength rating from A.M. Best).',
+        'cover'    => 'Three tiers: Optimum, Maxi and Kinetic. All tiers cover major mechanical, electrical, and electronic components including labour. Vehicles up to 15 years old or 250,000 km. Includes towing, rental car allowance, roadside assistance, and travel costs for breakdowns over 100 km from home.',
         'claim'    => 'Contact Assurant before authorising any repairs. Servicing must follow your Vehicle Service Programme and be carried out by a registered MTA workshop. Claims team available to guide the process.',
         'claims_ph'=> '0800 776 832',
         'website'  => 'https://www.assurant.nz',
@@ -101,7 +101,7 @@ $providers = [
         'since'    => '30+ years',
         'badge'    => '100% NZ Owned',
         'featured' => false,
-        'tagline'  => '100% New Zealand Owned — 30+ Years',
+        'tagline'  => '100% New Zealand Owned, 30+ Years',
         'about'    => 'Provident Insurance Corporation Limited is a 100% New Zealand owned motor insurance specialist with over 30 years of operation. They hold a B+ (Good) financial strength rating from A.M. Best. Policies are available exclusively through Provident Authorised motor vehicle traders.',
         'cover'    => 'Cover for 1, 2, or 3 years with a range of excess options. Covers sudden or unforeseen mechanical and electrical failure of major components including engine, transmission, brakes, suspension, air conditioning, and more. Includes full NZ roadside assistance (towing, lost keys, flat tyre, flat battery). EV Shield and Hybrid Shield policies available for electric and hybrid vehicles.',
         'claim'    => 'Call Provident Claims on 0800 676 864 (24/7). They identify the nearest authorised repair facility and authorise the work. Present your policy booklet to the repairer on arrival.',
@@ -121,7 +121,7 @@ $providers = [
         'since'    => '25+ years',
         'badge'    => 'One Excess Per Claim',
         'featured' => false,
-        'tagline'  => '25+ Years — Single Excess Per Claim',
+        'tagline'  => '25+ Years, Single Excess Per Claim',
         'about'    => 'Janssen Insurance has been providing MBI in New Zealand for over 25 years. All products are underwritten by Quest Insurance, a licensed insurer regulated by the RBNZ. A key differentiator: only one excess applies per claim event, even if multiple components require repair simultaneously.',
         'cover'    => 'Multiple tiers including Elite Cover (up to $10,000 claim entitlement) and Elite Cover Plus. Includes unlimited roadside assistance callouts with no dollar limit, $2,000 customer care package for hire car and accommodation during repairs, and free policy transfer when selling your vehicle. Elite Eco Cover for hybrid and EV vehicles covers traction battery and EV-specific components.',
         'claim'    => 'Call Janssen on 0800 526 7736 (0800 JANSSEN) before any work begins. Do not authorise repairs without prior approval. Service invoices must be provided before a claim proceeds.',
@@ -141,8 +141,8 @@ $providers = [
         'since'    => 'Part of Beneficial Insurance',
         'badge'    => 'Fast Claims',
         'featured' => false,
-        'tagline'  => 'Fast Claims — 96.5% Paid Within 14 Days',
-        'about'    => 'Autolife is a fully owned subsidiary of Beneficial Insurance Limited, a licensed NZ insurer. Their standout claim is speed: 96.5% of claim payments are made within 14 days, and 99.5% within 21 days. Policies are available directly online — no dealer required. Vehicles must be NZ registered, post-2000, and under 200,000 km.',
+        'tagline'  => 'Fast Claims: 96.5% Paid Within 14 Days',
+        'about'    => 'Autolife is a fully owned subsidiary of Beneficial Insurance Limited, a licensed NZ insurer. Their standout claim is speed: 96.5% of claim payments are made within 14 days, and 99.5% within 21 days. Policies are available directly online, no dealer required. Vehicles must be NZ registered, post-2000, and under 200,000 km.',
         'cover'    => 'Standard cover of $4,000–$5,000 per claim (depending on odometer). Covers engine, transmission, electrical systems, steering, suspension, air conditioning, fuel system and more. Includes 24/7 roadside assistance with towing to any licensed MTA mechanic at no additional cost, and rental car allowance for up to 5 days. 7-day free look period on new policies.',
         'claim'    => 'Call Autolife on 0800 288 654 before authorising any repairs. Complete the online claim form with service records. The repairer contacts Autolife for authorisation, you pay the excess and any client contributions to the garage, and Autolife pays the approved amount directly.',
         'claims_ph'=> '0800 288 654',
@@ -610,7 +610,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 <div class="mbi-trust" role="region" aria-label="Trust signals">
   <div class="mbi-w">
     <div class="mbi-trust__inner">
-      <div class="mbi-trust__item">Approved repairer — 5 MBI providers</div>
+      <div class="mbi-trust__item">Approved repairer for 5 MBI providers</div>
       <div class="mbi-trust__item">MTA Assured</div>
       <div class="mbi-trust__item">NZTA Authorised</div>
       <div class="mbi-trust__item"><?php echo esc_html($years); ?> years in South Auckland</div>
@@ -626,8 +626,8 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <div class="mbi-what__inner">
       <div>
         <span class="mbi-sec-eye mbi-sec-eye--yellow">What is MBI?</span>
-        <h2 class="mbi-sec-h2" id="mbi-what-head">Mechanical Breakdown Insurance — What It Covers</h2>
-        <p class="mbi-body">Mechanical Breakdown Insurance covers the cost of repairing or replacing mechanical and electrical components that fail due to sudden or unforeseen breakdown. It fills the gap left by your standard car insurance, which only covers accidents, theft, and fire — not mechanical failures.</p>
+        <h2 class="mbi-sec-h2" id="mbi-what-head">Mechanical Breakdown Insurance: What It Covers</h2>
+        <p class="mbi-body">Mechanical Breakdown Insurance covers the cost of repairing or replacing mechanical and electrical components that fail due to sudden or unforeseen breakdown. It fills the gap left by your standard car insurance, which only covers accidents, theft and fire, not mechanical failures.</p>
         <p class="mbi-body">Think of it as an extended warranty backed by an insurance company. When your transmission fails, your engine overheats, or your air conditioning stops working, MBI covers the repair under your policy terms. You pay the excess and any client contributions, and we handle the claim with your provider.</p>
         <p class="mbi-body">All five providers we work with require your vehicle to be serviced at regular intervals and at an approved workshop to keep your policy valid. As an MTA Assured workshop, TAAS satisfies the servicing requirements of all five.</p>
       </div>
@@ -670,8 +670,8 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 <section class="mbi-providers" id="mbi-providers" aria-labelledby="mbi-providers-head">
   <div class="mbi-w">
     <span class="mbi-sec-eye mbi-sec-eye--yellow">Approved Providers</span>
-    <h2 class="mbi-sec-h2" id="mbi-providers-head">Five MBI Providers — One Approved Workshop</h2>
-    <p class="mbi-body" style="max-width:640px;">If you hold a policy with any of these providers, TAAS is an approved repairer. Bring your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-dark, #1A1A1A);font-weight:600;text-decoration:underline;text-decoration-color:var(--taas-yellow, #FFC800);text-decoration-thickness:2px;text-underline-offset:3px;">139 Cavendish Drive, Manukau</a> — we liaise with your insurer and manage the claim process.</p>
+    <h2 class="mbi-sec-h2" id="mbi-providers-head">Five MBI Providers, One Approved Workshop</h2>
+    <p class="mbi-body" style="max-width:640px;">If you hold a policy with any of these providers, TAAS is an approved repairer. Bring your vehicle to <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-dark, #1A1A1A);font-weight:600;text-decoration:underline;text-decoration-color:var(--taas-yellow, #FFC800);text-decoration-thickness:2px;text-underline-offset:3px;">139 Cavendish Drive, Manukau</a>. We liaise with your insurer and manage the claim process.</p>
 
     <div class="mbi-providers__grid">
       <?php foreach ($providers as $p):
@@ -736,7 +736,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       <div class="mbi-step">
         <div class="mbi-step__num">1</div>
         <div class="mbi-step__title">Call your MBI provider first</div>
-        <p class="mbi-step__text">Before any repairs start, call your insurer. This is critical — if work starts without authorisation, the claim may be declined. Have your policy number and registration ready.</p>
+        <p class="mbi-step__text">Before any repairs start, call your insurer. This is critical. If work starts without authorisation, the claim may be declined. Have your policy number and registration ready.</p>
       </div>
       <div class="mbi-step">
         <div class="mbi-step__num">2</div>
@@ -762,7 +762,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
 <div class="mbi-finance" role="region" aria-label="Finance options">
   <div class="mbi-w">
     <div class="mbi-finance__inner">
-      <span class="mbi-finance__text">Excess or uncovered repairs? <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Split the cost</a> —</span>
+      <span class="mbi-finance__text">Excess or uncovered repairs? <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Split the cost</a>:</span>
       <div class="mbi-finance__badges">
         <span class="mbi-finance__badge">Afterpay</span>
         <span class="mbi-finance__badge">Q Card</span>
@@ -781,13 +781,13 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <h2 class="mbi-sec-h2" id="mbi-why-head">Why South Auckland MBI holders choose TAAS</h2>
     <ul class="mbi-checklist">
       <li>Approved repairer for <?php echo esc_html($mbi_list); ?></li>
-      <li>MTA Assured — satisfies the servicing requirements of all five providers</li>
-      <li>Trading since <?php echo esc_html($established); ?> — <?php echo esc_html($years); ?> years of experience with MBI claims</li>
-      <li><?php echo esc_html($division_count); ?> specialist divisions under one roof — most repairs handled in-house</li>
-      <li>Raj leads diagnostics — fault confirmed before parts are replaced</li>
-      <li>Full servicing capability — keep your MBI valid with regular servicing at TAAS</li>
-      <li>European vehicle specialists — MBI claims on <?php echo esc_html($euro_brands); ?></li>
-      <li>Finance available for excess payments and uncovered work — <?php echo esc_html($finance_list); ?></li>
+      <li>MTA Assured, which meets the servicing requirements of all five providers</li>
+      <li>Trading since <?php echo esc_html($established); ?>: <?php echo esc_html($years); ?> years of experience with MBI claims</li>
+      <li><?php echo esc_html($division_count); ?> specialist divisions under one roof, so most repairs are handled in-house</li>
+      <li>Raj leads diagnostics. Fault confirmed before parts are replaced</li>
+      <li>Full servicing capability. Keep your MBI valid with regular servicing at TAAS</li>
+      <li>European vehicle specialists: MBI claims on <?php echo esc_html($euro_brands); ?></li>
+      <li>Finance available for excess payments and uncovered work: <?php echo esc_html($finance_list); ?></li>
       <li><?php echo esc_html($rating); ?>★ Google rating from <?php echo esc_html($reviews); ?> reviews</li>
       <li>We'll keep you informed every step of the way</li>
     </ul>
@@ -819,7 +819,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
         <?php if ($cf7_general): ?>
           <?php echo do_shortcode($cf7_general); ?>
         <?php else: ?>
-          <p style="color:#888;font-size:14px;font-weight:300;line-height:1.75;">Contact form loading — please call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow, #FFC800);"><?php echo esc_html($phone_free); ?></a></p>
+          <p style="color:#888;font-size:14px;font-weight:300;line-height:1.75;">Contact form loading. Please call <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow, #FFC800);"><?php echo esc_html($phone_free); ?></a></p>
         <?php endif; ?>
       </div>
     </div>
@@ -851,7 +851,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
       </a>
       <a href="<?php echo esc_url($site_url . '/auto-electrical/'); ?>" class="mbi-related__card">
         <div class="mbi-related__card-title">Auto Electrical &amp; Diagnostics</div>
-        <p class="mbi-related__card-text">Specialist fault diagnosis with Raj. Diagnostic scan <?php echo esc_html(defined('TAAS_SCAN_PRICE') ? TAAS_SCAN_PRICE : 'from $75'); ?> — printout included, no pressure to proceed.</p>
+        <p class="mbi-related__card-text">Specialist fault diagnosis with Raj. Diagnostic scan <?php echo esc_html(defined('TAAS_SCAN_PRICE') ? TAAS_SCAN_PRICE : 'from $75'); ?>, printout included, no pressure to proceed.</p>
       </a>
       <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" class="mbi-related__card">
         <div class="mbi-related__card-title">Finance Options</div>

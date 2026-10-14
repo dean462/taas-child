@@ -76,7 +76,7 @@ $schema = [
             '@id'         => $site_url . '/#business',
             'name'        => 'Tony Allen Auto Service',
             'url'         => $site_url,
-            'description' => 'Manukau\'s trusted mechanic since 1985. Seven specialist divisions under one roof — servicing, WOF, brakes, auto electrical, tyres, European vehicles, fleet. Family-owned at 139 Cavendish Drive, Manukau, South Auckland.',
+            'description' => 'Manukau\'s trusted mechanic since 1985. Seven specialist divisions under one roof: servicing, WOF, brakes, auto electrical, tyres, European vehicles, fleet. Family-owned at 139 Cavendish Drive, Manukau, South Auckland.',
             'telephone'   => [$phone_free, '+6492789556'],
             'email'       => $email,
             'foundingDate'=> '1985-10',
@@ -689,7 +689,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
         </div>
         <div>
           <div class="hp-hero__trust-label"><?php echo esc_html($rating); ?> Stars &nbsp;&middot;&nbsp; <?php echo esc_html($reviews); ?> Reviews</div>
-          <div class="hp-hero__trust-sub">Google verified — real customers</div>
+          <div class="hp-hero__trust-sub">Google verified, real customers</div>
         </div>
       </div>
       <div class="hp-hero__trust-item">
@@ -753,7 +753,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
   <div class="w">
     <div class="hp-sh">
       <h2 class="hp-h2" id="hp-brands-head">Find the <span>right service</span><br>for your situation</h2>
-      <p class="hp-sub">Not every problem comes with a name. If you&rsquo;re not sure what your car needs, just give us a call and tell us what&rsquo;s happening &mdash; we&rsquo;ll take it from there.</p>
+      <p class="hp-sub">Not every problem comes with a name. If you&rsquo;re not sure what your car needs, just give us a call and tell us what&rsquo;s happening. We&rsquo;ll take it from there.</p>
     </div>
     <div class="hp-brands-grid">
 
@@ -767,7 +767,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
         </div>
         <div class="hp-brand__name">Tony Allen<br>Auto Service</div>
         <div class="hp-brand__tag">Full-service workshop</div>
-        <div class="hp-brand__desc">South Auckland's largest independent workshop. Servicing, diagnostics, WOF, auto electrical, steering &amp; suspension, tyres &mdash; all in-house.</div>
+        <div class="hp-brand__desc">South Auckland's largest independent workshop. Servicing, diagnostics, WOF, auto electrical, steering &amp; suspension, tyres. All in-house.</div>
         <div class="hp-brand__link">All Services &rarr;</div>
       </a>
 
@@ -902,18 +902,18 @@ body.page-template-template-homepage { overflow-x:hidden; }
       <h2 class="hp-h2" style="margin-top:14px;" id="hp-why-head"><?php echo esc_html($years); ?> years.<br>Same <span>family.</span><br>Same street.</h2>
       <ul class="hp-checklist">
         <li class="hp-check"><span class="hp-check__icon">&check;</span>Independent, family-owned &amp; operated</li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span><?php echo esc_html($division_count); ?> specialist divisions under one roof &mdash; servicing, brakes, tyres, batteries, auto electrical, European, fleet</li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span><?php echo esc_html($division_count); ?> specialist divisions under one roof: servicing, brakes, tyres, batteries, auto electrical, European, fleet</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>We'll keep you informed every step of the way</li>
         <li class="hp-check"><span class="hp-check__icon">&check;</span>We verify the fault before replacing any part</li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span>We explain what we find and what it costs &mdash; no jargon, kept informed</li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span>Finance available &mdash; <?php echo esc_html($finance_list); ?></li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span>MBI approved repairer &mdash; <?php echo esc_html($mbi_list); ?></li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span>MTA Assured &mdash; Motor Trade Association member</li>
-        <li class="hp-check"><span class="hp-check__icon">&check;</span>NZTA Authorised &mdash; <?php echo esc_html($ms_number); ?></li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span>We explain what we find and what it costs. No jargon, and you are kept informed</li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span>Finance available: <?php echo esc_html($finance_list); ?></li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span>MBI approved repairer: <?php echo esc_html($mbi_list); ?></li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span>MTA Assured, Motor Trade Association member</li>
+        <li class="hp-check"><span class="hp-check__icon">&check;</span>NZTA Authorised, <?php echo esc_html($ms_number); ?></li>
       </ul>
       <div class="hp-mta" style="margin-top:24px;">
         <div class="hp-mta-wrap">
-          <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured — Motor Trade Association member" width="120" loading="lazy">
+          <img src="<?php echo esc_url($mta_badge); ?>" alt="MTA Assured, Motor Trade Association member" width="120" loading="lazy">
           <div style="background:transparent;padding:0;display:inline-flex;align-items:center;gap:8px;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 102" width="48" height="38" aria-hidden="true">
               <path fill="#AFBD22" d="M85.91,101.09c-11.2-1.2-12.29-21.9-13.53-44.24c-0.14-2.37-0.26-4.74-0.41-7.12C70.44,24.73,67.39,0,48.81,0C12.85,0,0,56.85,0,56.85h58.69l-0.89-7.12H10.59c8.15-35.53,43.04-61.04,50.43,0l0.88,7.12c2.48,24.09,9.47,43.58,24.22,44.29C86.21,101.14,85.99,101.1,85.91,101.09"/>
@@ -945,7 +945,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
     <div class="hp-sh">
       <span class="hp-eye hp-eye--dark">Flexible Payment</span>
       <h2 class="hp-h2" id="hp-fin-head">Don&rsquo;t let the cost <span>hold you back</span></h2>
-      <p class="hp-sub" style="margin:12px auto 0;">Need it done now but the timing&rsquo;s tight? Four finance options available across all services. No pressure &mdash; just flexible options from a workshop you can trust.</p>
+      <p class="hp-sub" style="margin:12px auto 0;">Need it done now but the timing&rsquo;s tight? Four finance options available across all services. No pressure, just flexible ways to pay.</p>
     </div>
     <div class="hp-finance-grid">
       <a href="<?php echo esc_url($site_url . '/afterpay-car-repairs/'); ?>" class="hp-fin-card" style="text-decoration:none;">
@@ -983,7 +983,7 @@ body.page-template-template-homepage { overflow-x:hidden; }
       <div>
         <span class="hp-eye hp-eye--yellow">Get in Touch</span>
         <h2 class="hp-h2 hp-h2--white" id="hp-enq-head" style="margin-top:14px;">Ready to get <span>sorted?</span></h2>
-        <p style="font-size:15px;font-weight:300;color:#aaa;line-height:1.75;letter-spacing:-0.1px;margin-top:12px;margin-bottom:8px;">Tell us what you need &mdash; servicing, WOF, repairs, tyres, diagnostics. We&rsquo;ll let you know what&rsquo;s needed and what it&rsquo;ll cost before you go ahead.</p>
+        <p style="font-size:15px;font-weight:300;color:#aaa;line-height:1.75;letter-spacing:-0.1px;margin-top:12px;margin-bottom:8px;">Tell us what you need: servicing, WOF, repairs, tyres, diagnostics. We&rsquo;ll let you know what&rsquo;s needed and what it&rsquo;ll cost before you go ahead.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="hp-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="hp-enquiry__detail">
           <strong>Tony Allen Auto Service</strong><br>

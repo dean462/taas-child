@@ -40,36 +40,36 @@ $evs_master = [
     'hybrid-vehicle-servicing-manukau' => [
         'name'    => 'Hybrid Vehicle Servicing',
         'badge'   => 'HV',
-        'short'   => 'Scheduled servicing for all hybrid types — HEV, PHEV, MHEV. Oil, filters, brakes, coolant, and hybrid-specific system checks. Dealer alternative.',
-        'price'   => 'Hybrid service — contact for pricing based on your make and model',
+        'short'   => 'Scheduled servicing for all hybrid types: HEV, PHEV, MHEV. Oil, filters, brakes, coolant, and hybrid-specific system checks. Dealer alternative.',
+        'price'   => 'Hybrid service: contact for pricing based on your make and model',
         'urgency' => 'low',
     ],
     'electric-vehicle-servicing-manukau' => [
         'name'    => 'Electric Vehicle Servicing',
         'badge'   => 'EV',
-        'short'   => 'BEV service — brake fluid, coolant, cabin filter, tyres, suspension, 12V battery, and full diagnostic health check. No engine oil required.',
-        'price'   => 'EV service — contact for pricing based on your make and model',
+        'short'   => 'BEV service: brake fluid, coolant, cabin filter, tyres, suspension, 12V battery, and full diagnostic health check. No engine oil required.',
+        'price'   => 'EV service: contact for pricing based on your make and model',
         'urgency' => 'low',
     ],
     'hybrid-battery-check-manukau' => [
         'name'    => 'Hybrid Battery Health Check',
         'badge'   => 'BC',
-        'short'   => 'HV battery health assessment — individual cell voltages, state of charge balance, capacity vs original specification. Know the true condition of your battery.',
-        'price'   => 'Battery health check — contact for pricing',
+        'short'   => 'HV battery health assessment: individual cell voltages, state of charge balance, capacity vs original specification. Know the true condition of your battery.',
+        'price'   => 'Battery health check: contact for pricing',
         'urgency' => 'medium',
     ],
     'phev-servicing-manukau' => [
         'name'    => 'PHEV Servicing',
         'badge'   => 'PH',
-        'short'   => 'Plug-in hybrid service covers both the petrol engine schedule and EV-specific components. Two systems in one vehicle — both need maintaining.',
-        'price'   => 'PHEV service — contact for pricing based on your make and model',
+        'short'   => 'Plug-in hybrid service covers both the petrol engine schedule and EV-specific components. Two systems in one vehicle, and both need maintaining.',
+        'price'   => 'PHEV service: contact for pricing based on your make and model',
         'urgency' => 'low',
     ],
     'ev-brake-service-manukau' => [
         'name'    => 'EV Brake Service',
         'badge'   => 'EB',
-        'short'   => 'Regenerative braking means the physical brakes are used less — but brake fluid still degrades, callipers seize, and pads need checking. EV brakes need a different service approach.',
-        'price'   => 'EV brake service — contact for pricing',
+        'short'   => 'Regenerative braking means the physical brakes are used less, but brake fluid still degrades, callipers seize, and pads need checking. EV brakes need a different service approach.',
+        'price'   => 'EV brake service: contact for pricing',
         'urgency' => 'medium',
     ],
 ];
@@ -121,11 +121,11 @@ if ($symptoms_raw) { $faqs[] = ['q' => "How do I know if I need {$service_name}?
 $faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We give you an estimate before starting work. Call us on ' . $phone_free . ' with your make, model, and year.'];
 $faqs[] = ['q' => 'Do I have to go to the dealer for EV or hybrid servicing?', 'a' => 'No. Once the factory warranty has expired, any qualified workshop with the right equipment and training can service your vehicle. We have the diagnostic equipment for the EV and hybrid models we service. Two of our technicians are fully trained in high-voltage systems, and two more are in training. Call ' . $phone_free . ' to discuss your vehicle.'];
 $faqs[] = ['q' => 'Can you work on the high-voltage battery system?', 'a' => 'Yes. Two of our technicians are fully trained in high-voltage systems, and two more are in training. We carry out battery health assessments, read individual cell data, diagnose HV system faults, and carry out in-car repairs on HV components.'];
-$faqs[] = ['q' => 'Do you offer finance for EV and hybrid servicing?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted.'];
+$faqs[] = ['q' => 'Do you offer finance for EV and hybrid servicing?', 'a' => 'Yes. Afterpay, Q Card, GEM Finance, and Aotea Finance accepted.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book.'];
 if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Timing depends on the vehicle and service scope. Most routine EV and hybrid services are completed same-day. We advise on expected timeframe when you book. Call " . $phone_free . "."]; }
-if (count($faqs) < 10) { $faqs[] = ['q' => 'What EV and hybrid models do you work on?', 'a' => 'All makes — Japanese, Korean, European, and Chinese. Toyota, Nissan, Honda, Mitsubishi, Hyundai, Kia, BYD, MG, GWM, Volvo, BMW, Volkswagen, and more. Call ' . $phone_free . ' with your vehicle details.']; }
+if (count($faqs) < 10) { $faqs[] = ['q' => 'What EV and hybrid models do you work on?', 'a' => 'All makes: Japanese, Korean, European and Chinese. Toyota, Nissan, Honda, Mitsubishi, Hyundai, Kia, BYD, MG, GWM, Volvo, BMW, Volkswagen, and more. Call ' . $phone_free . ' with your vehicle details.']; }
 if (count($faqs) < 10) { $faqs[] = ['q' => 'Why does my EV still need brake fluid changes?', 'a' => 'Brake fluid absorbs moisture from the air regardless of how often the brakes are physically used. Degraded brake fluid has a lower boiling point, causing brake fade under heavy braking. We change brake fluid to manufacturer intervals on all hybrid and EV models.']; }
 
 // ── Badge helper ─────────────────────────────────────────────────────────────
@@ -236,8 +236,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="evs-hero"><div class="evs-w"><div class="evs-hero__inner">
   <div>
     <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/electric-hybrid-vehicle-servicing/'); ?>" style="color:#555;text-decoration:none;">EV &amp; Hybrid</a><span style="margin:0 6px;">›</span><span style="color:#888;"><?php echo esc_html($service_name); ?></span></nav>
-    <span class="evs-eye evs-eye--green">EV &amp; Hybrid — Manukau</span>
-    <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
+    <span class="evs-eye evs-eye--green">EV &amp; Hybrid · Manukau</span>
+    <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
     <p class="evs-hero__sub"><?php echo esc_html($current['short']); ?> <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
     <?php if ($price_signal): ?><div class="evs-hero__price"><?php echo esc_html($price_signal); ?></div><?php endif; ?>
     <div class="evs-hero__ctas">
@@ -303,7 +303,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="evs-enquire" class="evs-section evs-section--dark"><div class="evs-w"><div class="evs-enquiry">
   <div>
     <span class="evs-eye evs-eye--yellow">Book Today</span>
-    <h2 class="evs-h2 evs-h2--white"><?php echo esc_html($service_name); ?> — <span style="color:var(--ev-green);">Enquire Now</span></h2>
+    <h2 class="evs-h2 evs-h2--white"><?php echo esc_html($service_name); ?>: <span style="color:var(--ev-green);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.7;"><strong style="color:var(--taas-white);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -329,7 +329,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="evs-section evs-section--grey"><div class="evs-w">
   <span class="evs-eye evs-eye--dark">Common Questions</span>
-  <h2 class="evs-h2"><?php echo esc_html($service_name); ?> — FAQ</h2>
+  <h2 class="evs-h2"><?php echo esc_html($service_name); ?> FAQ</h2>
   <div class="evs-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="evs-faq__item<?php echo $i===0?' evs-faq__item--open':''; ?>"><button class="evs-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="evs-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="evs-a-<?php echo $i; ?>" class="evs-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

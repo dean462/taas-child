@@ -43,28 +43,28 @@ $tss_master = [
         'name'    => 'Automatic Transmission Service',
         'badge'   => 'AT',
         'short'   => 'Fluid and filter service, solenoid replacement, torque converter diagnosis, and in-car repairs on conventional automatic transmissions. Full rebuilds arranged through specialist.',
-        'price'   => 'Fluid service — contact for pricing · In-car repairs — estimate after diagnosis',
+        'price'   => 'Fluid service: contact for pricing · In-car repairs: estimate after diagnosis',
         'urgency' => 'medium',
     ],
     'manual-gearbox-repair-manukau' => [
         'name'    => 'Manual Gearbox Repair',
         'badge'   => 'MG',
         'short'   => 'Clutch replacement, synchro diagnosis, gear selection faults, gearbox oil service, and bearing replacement on manual transmissions.',
-        'price'   => 'Gearbox repair — estimate after inspection. Clutch replacement — estimate by vehicle',
+        'price'   => 'Gearbox repair: estimate after inspection. Clutch replacement: estimate by vehicle',
         'urgency' => 'medium',
     ],
     'cvt-transmission-service-manukau' => [
         'name'    => 'CVT Transmission Service',
         'badge'   => 'CV',
-        'short'   => 'CVT fluid must be changed every 40,000 km — this is non-negotiable. Belt and pulley inspection, judder diagnosis, and valve body repair on all CVT-equipped vehicles.',
-        'price'   => 'CVT fluid service — contact for pricing · Repair — estimate after diagnosis',
+        'short'   => 'CVT fluid must be changed every 40,000 km. This is non-negotiable. Belt and pulley inspection, judder diagnosis, and valve body repair on all CVT-equipped vehicles.',
+        'price'   => 'CVT fluid service: contact for pricing · Repair: estimate after diagnosis',
         'urgency' => 'high',
     ],
     'transmission-fluid-change-manukau' => [
         'name'    => 'Transmission Fluid Change',
         'badge'   => 'TF',
-        'short'   => 'Drain-and-fill or machine exchange with the correct fluid specification for your transmission type — automatic, CVT, DSG, or manual gearbox oil.',
-        'price'   => 'Transmission fluid change — contact for pricing. Fluid type depends on your vehicle',
+        'short'   => 'Drain-and-fill or machine exchange with the correct fluid specification for your transmission type: automatic, CVT, DSG or manual gearbox oil.',
+        'price'   => 'Transmission fluid change: contact for pricing. Fluid type depends on your vehicle',
         'urgency' => 'low',
     ],
 ];
@@ -100,7 +100,7 @@ for ($i = 1; $i <= 5; $i++) {
 
 // ── Urgency colours ──────────────────────────────────────────────────────────
 $uc_map = [
-    'high'   => ['bg' => 'rgba(192,57,43,.12)', 'border' => 'var(--taas-alert, #C0392B)', 'text' => '#f5a0a0', 'label' => 'Urgent — Do Not Ignore'],
+    'high'   => ['bg' => 'rgba(192,57,43,.12)', 'border' => 'var(--taas-alert, #C0392B)', 'text' => '#f5a0a0', 'label' => 'Urgent: Do Not Ignore'],
     'medium' => ['bg' => 'rgba(255,200,0,.08)', 'border' => 'var(--taas-yellow, #FFC800)', 'text' => 'var(--taas-yellow, #FFC800)', 'label' => 'Book Soon'],
     'low'    => ['bg' => 'rgba(255,255,255,.06)', 'border' => '#555', 'text' => '#aaa', 'label' => 'Preventative Maintenance'],
 ];
@@ -126,13 +126,13 @@ if ($what_it_is) { $faqs[] = ['q' => "What is {$service_name}?", 'a' => $what_it
 if ($causes_raw) { $faqs[] = ['q' => "What causes {$service_name} problems?", 'a' => implode('. ', $causes) . '.']; }
 if ($symptoms_raw) { $faqs[] = ['q' => "How do I know if I need {$service_name}?", 'a' => 'Common signs include: ' . strtolower(implode('; ', $symptoms)) . '. If your vehicle is showing any of these, call us on ' . $phone_free . '.']; }
 $faqs[] = ['q' => "How much does {$service_name} cost in Manukau?", 'a' => $price_signal . '. We give you an estimate before starting work. Call us on ' . $phone_free . ' with your vehicle details.'];
-$faqs[] = ['q' => 'My transmission is slipping — is it safe to drive?', 'a' => 'No. A slipping transmission is actively destroying itself. The clutch packs overheat, the fluid breaks down, and debris circulates through the valve body and solenoids. What might be a minor repair today becomes a full rebuild next week. Stop driving and call us on ' . $phone_free . '.'];
-$faqs[] = ['q' => 'Do you carry out full transmission rebuilds?', 'a' => 'Full rebuilds are carried out by a trusted transmission specialist. We diagnose the fault, remove the transmission, and manage the rebuild process on your behalf. This is the honest approach — a rebuild requires specialist tooling that a general workshop should not pretend to have.'];
+$faqs[] = ['q' => 'My transmission is slipping. Is it safe to drive?', 'a' => 'No. A slipping transmission is actively destroying itself. The clutch packs overheat, the fluid breaks down, and debris circulates through the valve body and solenoids. What might be a minor repair today becomes a full rebuild next week. Stop driving and call us on ' . $phone_free . '.'];
+$faqs[] = ['q' => 'Do you carry out full transmission rebuilds?', 'a' => 'Full rebuilds are carried out by a trusted transmission specialist. We diagnose the fault, remove the transmission, and manage the rebuild process on your behalf. This is the honest approach. A rebuild requires specialist tooling that a general workshop should not pretend to have.'];
 $faqs[] = ['q' => 'Do you work on European vehicle transmissions?', 'a' => 'Yes. Our TAAS European division covers all European makes. ZF automatics, Aisin units, and VW/Audi DSG gearboxes have specific fluid requirements and service procedures that we follow to manufacturer specification.'];
-$faqs[] = ['q' => 'Do you offer finance for transmission repairs?', 'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Transmission repairs should not be delayed — the longer you wait, the more internal damage occurs.'];
+$faqs[] = ['q' => 'Do you offer finance for transmission repairs?', 'a' => 'Yes. Afterpay, Q Card, GEM Finance, and Aotea Finance accepted. Transmission repairs should not be delayed. The longer you wait, the more internal damage occurs.'];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
 $faqs[] = ['q' => 'Where is your workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . $hours . '. Call ' . $phone_free . ' to book.'];
-if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Timing depends on the specific repair and vehicle. A fluid service is typically same-day. In-car repairs may take 1–2 days. Full rebuilds take longer — we advise on expected timeframe after diagnosis. Call " . $phone_free . "."]; }
+if (count($faqs) < 10) { $faqs[] = ['q' => "How long does {$service_name} take?", 'a' => "Timing depends on the specific repair and vehicle. A fluid service is typically same-day. In-car repairs may take 1–2 days. Full rebuilds take longer. We advise on the expected timeframe after diagnosis. Call " . $phone_free . "."]; }
 if (count($faqs) < 10) { $faqs[] = ['q' => 'Is transmission failure covered by mechanical breakdown insurance?', 'a' => 'In most cases, yes. Transmission component failure is commonly covered under MBI. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. We handle MBI claims directly.']; }
 
 // ── Badge helper ─────────────────────────────────────────────────────────────
@@ -244,8 +244,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="tss-hero"><div class="tss-w"><div class="tss-hero__inner">
   <div>
     <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/transmission-service-and-repair/'); ?>" style="color:#555;text-decoration:none;">Transmission</a><span style="margin:0 6px;">›</span><span style="color:#888;"><?php echo esc_html($service_name); ?></span></nav>
-    <span class="tss-eye tss-eye--yellow">Transmission — Manukau</span>
-    <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
+    <span class="tss-eye tss-eye--yellow">Transmission · Manukau</span>
+    <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
     <p class="tss-hero__sub"><?php echo esc_html($current['short']); ?> <?php echo esc_html($years); ?> years of workshop experience. <?php echo esc_html($customers); ?> customers serviced.</p>
     <?php if ($price_signal): ?><div class="tss-hero__price"><?php echo esc_html($price_signal); ?></div><?php endif; ?>
     <div class="tss-hero__ctas">
@@ -285,7 +285,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="tss-section tss-section--grey"><div class="tss-w">
   <span class="tss-eye tss-eye--dark">Our Process</span>
   <h2 class="tss-h2">How We Handle <?php echo esc_html($service_name); ?></h2>
-  <p class="tss-lead">We diagnose first — every time. No guesswork, no replacing parts on a hunch.</p>
+  <p class="tss-lead">We diagnose first, every time. No guesswork, no replacing parts on a hunch.</p>
   <div class="tss-steps"><?php foreach ($process as $i => $step): ?><div class="tss-step"><div class="tss-step__num"><?php echo $i+1; ?></div><div class="tss-step__text"><?php echo esc_html($step); ?></div></div><?php endforeach; ?></div>
 </div></section>
 <?php endif; ?>
@@ -293,7 +293,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="tss-section tss-section--white"><div class="tss-w">
   <span class="tss-eye tss-eye--dark">Pricing</span>
   <h2 class="tss-h2">How Much Does <?php echo esc_html($service_name); ?> Cost?</h2>
-  <p class="tss-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
+  <p class="tss-lead">We give you an estimate before starting work and keep you informed if anything changes.</p>
   <div class="tss-pricing">
     <div class="tss-pricing__signal"><?php echo esc_html($price_signal); ?></div>
     <div class="tss-pricing__body">Price varies by vehicle make, model, and transmission type. Call <?php echo esc_html($phone_free); ?> with your vehicle details for an estimate.</div>
@@ -304,7 +304,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="tss-enquire" class="tss-section tss-section--dark"><div class="tss-w"><div class="tss-enquiry">
   <div>
     <span class="tss-eye tss-eye--yellow">Book Today</span>
-    <h2 class="tss-h2 tss-h2--white"><?php echo esc_html($service_name); ?> — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <h2 class="tss-h2 tss-h2--white"><?php echo esc_html($service_name); ?>: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.7;"><strong style="color:var(--taas-white);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -330,7 +330,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="tss-section tss-section--grey"><div class="tss-w">
   <span class="tss-eye tss-eye--dark">Common Questions</span>
-  <h2 class="tss-h2"><?php echo esc_html($service_name); ?> — FAQ</h2>
+  <h2 class="tss-h2"><?php echo esc_html($service_name); ?> FAQ</h2>
   <div class="tss-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="tss-faq__item<?php echo $i===0?' tss-faq__item--open':''; ?>"><button class="tss-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="tss-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="tss-a-<?php echo $i; ?>" class="tss-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

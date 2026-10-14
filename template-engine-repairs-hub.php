@@ -343,9 +343,9 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
   <div class="erh-w">
     <div class="erh-hero__inner">
       <div>
-        <span class="erh-hero__eyebrow">Engine Repairs — Manukau</span>
-        <h1>Engine Repairs<br><span>Manukau — South Auckland</span></h1>
-        <p class="erh-hero__sub">Oil leaks, engine noise, misfires, oil consumption, head gaskets and more — diagnosed properly, repaired in-house. We keep you informed at every stage. <?php echo esc_html($years_trading); ?> years of workshop experience.</p>
+        <span class="erh-hero__eyebrow">Engine Repairs · Manukau</span>
+        <h1>Engine Repairs<br><span>Manukau, South Auckland</span></h1>
+        <p class="erh-hero__sub">Oil leaks, engine noise, misfires, oil consumption, head gaskets and more. Diagnosed properly, repaired in-house. We keep you informed at every stage. <?php echo esc_html($years_trading); ?> years of workshop experience.</p>
         <div class="erh-hero__ctas">
           <a href="#erh-enquire" class="erh-btn erh-btn--primary">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
@@ -410,12 +410,12 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
   <div class="erh-w">
     <span class="erh-section__eyebrow">Engine Division</span>
     <h2 class="erh-section__heading">What we diagnose and repair</h2>
-    <p class="erh-section__sub">Engine problems rarely fix themselves. The sooner you get it looked at, the less it costs to put right. We diagnose first, explain clearly, then repair — with your approval at every step.</p>
+    <p class="erh-section__sub">Engine problems rarely fix themselves. The sooner you get it looked at, the less it costs to put right. We diagnose first, explain clearly, then repair with your approval at every step.</p>
     <div class="erh-services">
       <a href="<?php echo esc_url($site_url . '/engine-oil-leak-repair-manukau/'); ?>" class="erh-service">
         <div class="erh-service__icon"><?php echo erh_badge('OL'); ?></div>
         <div class="erh-service__title">Oil Leak Diagnosis &amp; Repair</div>
-        <p class="erh-service__desc">Rocker cover gaskets, sump gaskets, cam seals, crank seals, oil cooler seals. We find the source first — sometimes what looks like one leak is actually two.</p>
+        <p class="erh-service__desc">Rocker cover gaskets, sump gaskets, cam seals, crank seals, oil cooler seals. We find the source first. Sometimes what looks like one leak is actually two.</p>
         <span class="erh-service__link">Oil Leak Repair →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/engine-misfire-manukau/'); ?>" class="erh-service">
@@ -427,7 +427,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
       <a href="<?php echo esc_url($site_url . '/engine-noise-diagnosis-manukau/'); ?>" class="erh-service">
         <div class="erh-service__icon"><?php echo erh_badge('EN'); ?></div>
         <div class="erh-service__title">Engine Noise Investigation</div>
-        <p class="erh-service__desc">Knocking, ticking, rattling, whining — every noise has a cause. We use stethoscope diagnosis and systematic testing to isolate the source.</p>
+        <p class="erh-service__desc">Knocking, ticking, rattling, whining. Every noise has a cause. We use stethoscope diagnosis and systematic testing to isolate the source.</p>
         <span class="erh-service__link">Noise Diagnosis →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/head-gasket-repair-manukau/'); ?>" class="erh-service">
@@ -447,8 +447,8 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
     <h2 class="erh-section__heading">Our approach to engine repairs</h2>
     <div class="erh-approach">
       <div>
-        <p class="erh-approach__text">Engine repairs can be stressful. The symptoms are alarming, the terminology is unfamiliar, and the costs can be significant. We understand that — which is why we break everything down in plain English and keep you informed at every stage.</p>
-        <p class="erh-approach__text">Every engine repair starts with a diagnostic. We use a combination of scan tools, mechanical testing, and visual inspection to identify the actual fault. We then explain what we have found, what it means, and what the repair involves — including the cost. You decide whether to proceed.</p>
+        <p class="erh-approach__text">Engine repairs can be stressful. The symptoms are alarming, the terminology is unfamiliar, and the costs can be significant. We understand that, which is why we break everything down in plain English and keep you informed at every stage.</p>
+        <p class="erh-approach__text">Every engine repair starts with a diagnostic. We use a combination of scan tools, mechanical testing, and visual inspection to identify the actual fault. We then explain what we have found, what it means, and what the repair involves, including the cost. You decide whether to proceed.</p>
         <div class="erh-callout">
           <div class="erh-callout__title">We diagnose first</div>
           <p class="erh-callout__body">No guesswork. No replacing parts on a hunch. We confirm the fault before recommending the repair. Diagnostic assessment <?php echo esc_html($scan_price); ?> (scan) or <?php echo esc_html($mech_diag); ?> (full mechanical).</p>
@@ -464,7 +464,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
           <li>Updates while the work is in progress</li>
           <li>Parts shown to you on request</li>
           <li>Road test and quality check before handover</li>
-          <li>All work guaranteed</li>
+          <li>12 month / 20,000 km workmanship guarantee</li>
         </ul>
       </div>
     </div>
@@ -480,15 +480,15 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
     <div class="erh-problems">
       <div>
         <h3>Oil on the ground where you park</h3>
-        <p>Usually a gasket or seal failure — rocker cover, sump, cam seal, crank seal. Left unchecked, oil level drops and engine damage follows. We find the source and repair it.</p>
+        <p>Usually a gasket or seal failure: rocker cover, sump, cam seal, crank seal. Left unchecked, oil level drops and engine damage follows. We find the source and repair it.</p>
       </div>
       <div>
         <h3>Check engine light on the dash</h3>
-        <p>A solid light means a stored fault — get it scanned. A flashing light means an active misfire — stop driving and call us. Ignoring it risks catalytic converter damage.</p>
+        <p>A solid light means a stored fault. Get it scanned. A flashing light means an active misfire. Stop driving and call us. Ignoring it risks catalytic converter damage.</p>
       </div>
       <div>
         <h3>Engine knocking, ticking or rattling</h3>
-        <p>Could be anything from a worn timing chain to low oil pressure to a failing hydraulic lifter. The noise itself tells us a lot — we use stethoscope diagnosis to isolate it.</p>
+        <p>Could be anything from a worn timing chain to low oil pressure to a failing hydraulic lifter. The noise itself tells us a lot, and we use stethoscope diagnosis to isolate it.</p>
       </div>
       <div>
         <h3>Rough idle or loss of power</h3>
@@ -496,11 +496,11 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
       </div>
       <div>
         <h3>Using too much oil between services</h3>
-        <p>If you are topping up oil regularly, there is a leak or internal consumption issue. We test for both — external leak inspection plus compression and leak-down testing for internal wear.</p>
+        <p>If you are topping up oil regularly, there is a leak or internal consumption issue. We test for both: external leak inspection plus compression and leak-down testing for internal wear.</p>
       </div>
       <div>
         <h3>Overheating</h3>
-        <p>Coolant leaks, thermostat failure, water pump failure, head gasket failure, blocked radiator. Do not drive an overheating vehicle — the repair cost escalates dramatically. Call us for a tow-in.</p>
+        <p>Coolant leaks, thermostat failure, water pump failure, head gasket failure, blocked radiator. Do not drive an overheating vehicle. The repair cost climbs fast. Call us for a tow-in.</p>
       </div>
     </div>
   </div>
@@ -528,7 +528,7 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
       <div>
         <span class="erh-section__eyebrow">Book or Enquire</span>
         <h2 class="erh-section__heading">Book an Engine Diagnostic</h2>
-        <p style="font-size:15px;font-weight:300;color:#aaa;line-height:1.75;letter-spacing:-0.1px;margin-bottom:8px;">Tell us your vehicle make, model and what symptoms you have noticed — noises, warning lights, oil loss, rough running.</p>
+        <p style="font-size:15px;font-weight:300;color:#aaa;line-height:1.75;letter-spacing:-0.1px;margin-bottom:8px;">Tell us your vehicle make, model and what symptoms you have noticed: noises, warning lights, oil loss, rough running.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="erh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
         <div class="erh-enquiry__detail">
           <strong>Tony Allen Auto Service</strong><br>
@@ -592,13 +592,13 @@ body.page-template-template-engine-repairs-hub { overflow-x:hidden; }
       <a href="<?php echo esc_url($site_url . '/cambelts-and-water-pumps/'); ?>" class="erh-service">
         <div class="erh-service__icon"><?php echo erh_badge('CB'); ?></div>
         <div class="erh-service__title">Cambelts &amp; Water Pumps</div>
-        <p class="erh-service__desc">Replace on schedule — a snapped cambelt destroys the engine. We do the full kit: belt, tensioner, water pump.</p>
+        <p class="erh-service__desc">Replace on schedule. A snapped cambelt destroys the engine. We do the full kit: belt, tensioner, water pump.</p>
         <span class="erh-service__link">Cambelt Info →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/cooling-system/'); ?>" class="erh-service">
         <div class="erh-service__icon"><?php echo erh_badge('CS'); ?></div>
         <div class="erh-service__title">Cooling System</div>
-        <p class="erh-service__desc">Overheating causes head gasket failure and warped heads. Radiators, thermostats, water pumps, coolant leaks — all done in-house.</p>
+        <p class="erh-service__desc">Overheating causes head gasket failure and warped heads. Radiators, thermostats, water pumps, coolant leaks. All done in-house.</p>
         <span class="erh-service__link">Cooling System →</span>
       </a>
       <a href="<?php echo esc_url($site_url . '/transmission-service-and-repair/'); ?>" class="erh-service">

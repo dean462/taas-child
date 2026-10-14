@@ -196,33 +196,33 @@ body.page-template-template-towing{overflow-x:hidden;-webkit-text-size-adjust:10
   <h2 class="tw-sec__h2">What to Do When Your Car Breaks Down</h2>
   <div class="tw-breakdown">
     <div class="tw-breakdown__text">
-      <p>If your car breaks down on the road, the first priority is safety. Pull over as far left as possible — off the road if you can. Turn on your hazard lights immediately. If you are on a motorway, stay in the vehicle with your seatbelt on — it is safer inside the car than standing on the roadside.</p>
+      <p>If your car breaks down on the road, the first priority is safety. Pull over as far left as possible, off the road if you can. Turn on your hazard lights immediately. If you are on a motorway, stay in the vehicle with your seatbelt on. It is safer inside the car than standing on the roadside.</p>
       <p>Once you are safe, call us on <?php echo esc_html($phone_free); ?>. Tell us where you are, what happened, and what the vehicle is doing (or not doing). We will arrange a tow to our workshop and advise on the next steps.</p>
-      <p>If the vehicle has overheated, do not open the radiator cap — the coolant is under pressure and can cause serious burns. If there is smoke or a burning smell, move away from the vehicle and call emergency services first, then call us.</p>
+      <p>If the vehicle has overheated, do not open the radiator cap. The coolant is under pressure and can cause serious burns. If there is smoke or a burning smell, move away from the vehicle and call emergency services first, then call us.</p>
     </div>
     <div class="tw-breakdown__callout">
       <div class="tw-breakdown__callout-title">Common Reasons We Arrange Tows</div>
       <ul class="tw-breakdown__list">
-        <li>Engine will not start — no crank, no fire</li>
-        <li>Overheating — temperature gauge in the red</li>
+        <li>Engine will not start: no crank, no fire</li>
+        <li>Overheating, temperature gauge in the red</li>
         <li>Cambelt or timing chain failure</li>
-        <li>Transmission failure — will not drive</li>
-        <li>Major electrical fault — complete loss of power</li>
+        <li>Transmission failure, will not drive</li>
+        <li>Major electrical fault, complete loss of power</li>
         <li>Accident damage assessment</li>
-        <li>Clutch failure — cannot select gears</li>
+        <li>Clutch failure, cannot select gears</li>
         <li>Severe steering or suspension damage</li>
         <li>Vehicle is unsafe to drive to the workshop</li>
       </ul>
     </div>
   </div>
   <div class="tw-notice">
-    <div class="tw-notice__title">Important — Towing to Our Workshop Only</div>
-    <div class="tw-notice__body">We arrange towing specifically for vehicles being brought to Tony Allen Auto Service for diagnosis and repair. This is not a general towing service. The tow truck is organised through a trusted operator we work with regularly — you deal with us throughout the process.</div>
+    <div class="tw-notice__title">Important: Towing to Our Workshop Only</div>
+    <div class="tw-notice__body">We arrange towing specifically for vehicles being brought to Tony Allen Auto Service for diagnosis and repair. This is not a general towing service. The tow truck is organised through a trusted operator we work with regularly. You deal with us throughout.</div>
   </div>
 </div></section>
 
 <!-- 5. ENQUIRY -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="tw-sec tw-sec--dark" id="enquire"><div class="tw-sec__inner">
   <div class="tw-enquiry">
     <div>
@@ -261,7 +261,7 @@ body.page-template-template-towing{overflow-x:hidden;-webkit-text-size-adjust:10
 <!-- 8. FAQ -->
 <section class="tw-sec tw-sec--grey"><div class="tw-sec__inner">
   <span class="tw-sec__eyebrow">FAQ</span>
-  <h2 class="tw-sec__h2">Towing — Common Questions</h2>
+  <h2 class="tw-sec__h2">Towing: Common Questions</h2>
   <div class="tw-faq">
     <?php foreach ($faqs as $faq) : ?>
     <div class="tw-faq__item<?php echo $i===0?' tw-faq__item--open':''; ?>">

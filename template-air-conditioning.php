@@ -53,16 +53,16 @@ function ach_badge($initials, $size = 40) {
 
 // ── Services ─────────────────────────────────────────────────────────────────
 $services = [
-    ['badge'=>'DR','title'=>'Degassing &amp; Regassing','desc'=>'Full refrigerant evacuation and recharge to manufacturer specification. R134a and R1234yf — covering older and newer vehicles.','url'=>'/air-conditioning-regas-manukau/','cta'=>'AC Regas →'],
-    ['badge'=>'SD','title'=>'System Diagnosis &amp; Repair','desc'=>'Electronic and mechanical diagnosis of all AC faults — compressor, condenser, evaporator, expansion valve. Fault confirmed before repair recommended.','url'=>'/air-conditioning-diagnosis-manukau/','cta'=>'AC Diagnosis →'],
-    ['badge'=>'CH','title'=>'Cooling &amp; Heating Repairs','desc'=>'Fault diagnosis and repair of both the cooling and heating circuits — including blend doors, heater cores, and actuators.','url'=>'/car-air-conditioning-repair-manukau/','cta'=>'AC Repair →'],
+    ['badge'=>'DR','title'=>'Degassing &amp; Regassing','desc'=>'Full refrigerant evacuation and recharge to manufacturer specification. R134a and R1234yf, covering older and newer vehicles.','url'=>'/air-conditioning-regas-manukau/','cta'=>'AC Regas →'],
+    ['badge'=>'SD','title'=>'System Diagnosis &amp; Repair','desc'=>'Electronic and mechanical diagnosis of all AC faults: compressor, condenser, evaporator, expansion valve. Fault confirmed before repair recommended.','url'=>'/air-conditioning-diagnosis-manukau/','cta'=>'AC Diagnosis →'],
+    ['badge'=>'CH','title'=>'Cooling &amp; Heating Repairs','desc'=>'Fault diagnosis and repair of both the cooling and heating circuits, including blend doors, heater cores, and actuators.','url'=>'/car-air-conditioning-repair-manukau/','cta'=>'AC Repair →'],
     ['badge'=>'LD','title'=>'Leak &amp; Blockage Detection','desc'=>'UV dye and electronic leak detection to locate refrigerant loss. Blockage identification and clearance to restore full system performance.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
-    ['badge'=>'PT','title'=>'Dry Pressure Testing','desc'=>'Pressure testing without refrigerant to confirm system integrity before regassing. Ensures repairs hold before refrigerant is introduced.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
-    ['badge'=>'PH','title'=>'Custom Pipe &amp; Hose Manufacture','desc'=>'On-site manufacture of replacement AC hoses and pipes — for vehicles where standard parts are unavailable or discontinued.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
+    ['badge'=>'PT','title'=>'Dry Pressure Testing','desc'=>'Pressure testing without refrigerant to confirm system integrity before regassing. Confirms repairs hold before refrigerant goes in.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
+    ['badge'=>'PH','title'=>'Custom Pipe &amp; Hose Manufacture','desc'=>'On-site manufacture of replacement AC hoses and pipes for vehicles where standard parts are unavailable or discontinued.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
     ['badge'=>'OT','title'=>'Odour Treatment &amp; Deodorisation','desc'=>'Antibacterial treatment of the evaporator and cabin to eliminate musty or mouldy smells. Effective on all vehicle types.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
-    ['badge'=>'CF','title'=>'Cabin / Pollen Filter Replacement','desc'=>'Supply and fit of the correct cabin filter — improves in-cabin air quality and reduces strain on the AC system.','url'=>'/cabin-filter-replacement-manukau/','cta'=>'Cabin Filter →'],
-    ['badge'=>'WD','title'=>'Windscreen Demisting','desc'=>'Diagnosis of slow or ineffective demisting — often linked to AC performance, low refrigerant, or blend door faults. A safety issue in winter.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
-    ['badge'=>'CC','title'=>'Climate Control Repairs','desc'=>'Fault diagnosis and repair of electronic climate control systems — single-zone, dual-zone, and automatic temperature control on all makes.','url'=>'/climate-control-repair-manukau/','cta'=>'Climate Control →'],
+    ['badge'=>'CF','title'=>'Cabin / Pollen Filter Replacement','desc'=>'Supply and fit of the correct cabin filter. Improves in-cabin air quality and reduces strain on the AC system.','url'=>'/cabin-filter-replacement-manukau/','cta'=>'Cabin Filter →'],
+    ['badge'=>'WD','title'=>'Windscreen Demisting','desc'=>'Diagnosis of slow or ineffective demisting, often linked to AC performance, low refrigerant, or blend door faults. A safety issue in winter.','url'=>'/air-conditioning/','cta'=>'Enquire →'],
+    ['badge'=>'CC','title'=>'Climate Control Repairs','desc'=>'Fault diagnosis and repair of electronic climate control systems: single-zone, dual-zone and automatic temperature control on all makes.','url'=>'/climate-control-repair-manukau/','cta'=>'Climate Control →'],
 ];
 
 // ── FAQs ─────────────────────────────────────────────────────────────────────
@@ -240,9 +240,9 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
 <section class="ach-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
   <div class="ach-hero__inner">
     <div>
-      <span class="ach-hero__eyebrow">Air Conditioning — Manukau</span>
+      <span class="ach-hero__eyebrow">Air Conditioning · Manukau</span>
       <h1>Air Conditioning<br><span>Service &amp; Repairs</span></h1>
-      <p class="ach-hero__sub">Regassing, diagnosis, leak detection and repairs for all makes and models. We diagnose before we recommend — find the fault first, fix it right. Serving <?php echo esc_html($customers); ?> customers across South Auckland since <?php echo esc_html($established); ?>.</p>
+      <p class="ach-hero__sub">Regassing, diagnosis, leak detection and repairs for all makes and models. We diagnose before we recommend. Find the fault first, fix it right. Serving <?php echo esc_html($customers); ?> customers across South Auckland since <?php echo esc_html($established); ?>.</p>
       <div class="ach-hero__ctas">
         <a href="#enquire" class="taas-btn taas-btn--primary">Enquire About AC Service</a>
         <a href="tel:<?php echo esc_attr($phone_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html($phone_free); ?></a>
@@ -286,12 +286,12 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
     <h2 class="ach-sec__h2">How Your Car's Air Conditioning Works</h2>
     <div class="ach-edu">
       <div class="ach-edu__text">
-        <p>Your car's AC system does more than cool the cabin. It dehumidifies the air, clears windscreen fog in winter, and filters airborne particles through the cabin filter. When any part of this system fails, the effects go beyond comfort — a car that cannot demist properly is a safety issue.</p>
+        <p>Your car's AC system does more than cool the cabin. It dehumidifies the air, clears windscreen fog in winter, and filters airborne particles through the cabin filter. When any part of this system fails, the effects go beyond comfort. A car that cannot demist properly is a safety issue.</p>
         <p>The system works by compressing refrigerant gas into a high-pressure liquid, passing it through a condenser to shed heat, then expanding it through a valve into the evaporator inside the dashboard. As it expands, it absorbs heat from the cabin air, cooling it. A blower motor pushes that cooled air through the vents.</p>
-        <p>Over time, refrigerant escapes through micro-leaks in hoses, O-rings, and seals. This is normal — most systems lose a small amount each year. But a system that needs regassing every season has a leak that needs finding and fixing, not just topping up.</p>
+        <p>Over time, refrigerant escapes through micro-leaks in hoses, O-rings, and seals. This is normal. Most systems lose a small amount each year. But a system that needs regassing every season has a leak that needs finding and fixing, not just topping up.</p>
         <div class="ach-edu__callout">
           <h3>Why "Just Regas It" Often Doesn't Work</h3>
-          <p>A regas puts refrigerant back into the system — but if the system has a leak, that new gas will escape in weeks or months. If the compressor is failing, no amount of gas will fix the noise or the lack of cooling. If a blend door actuator has seized, the system may cool but not direct air correctly.</p>
+          <p>A regas puts refrigerant back into the system, but if the system has a leak, that new gas will escape in weeks or months. If the compressor is failing, no amount of gas will fix the noise or the lack of cooling. If a blend door actuator has seized, the system may cool but not direct air correctly.</p>
           <p>That is why we diagnose first. We test the system, find the fault, and give you an estimate before doing any work. If it genuinely just needs a regas, that is what we do. If there is a fault, you know about it before spending money on gas that will leak out again.</p>
         </div>
       </div>
@@ -307,8 +307,8 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
             <li>Blend door and actuator repair</li>
             <li>Cabin filter supply and fit</li>
             <li>Antibacterial odour treatment</li>
-            <li>All makes — Japanese, Korean, European, American</li>
-            <li>Finance available — Afterpay, Q Card</li>
+            <li>All makes: Japanese, Korean, European, American</li>
+            <li>Finance available: Afterpay, Q Card</li>
           </ul>
         </div>
       </div>
@@ -320,7 +320,7 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
 <section class="ach-sec ach-sec--grey">
   <div class="ach-sec__inner">
     <span class="ach-sec__eyebrow">Services</span>
-    <h2 class="ach-sec__h2">Air Conditioning Services — Manukau</h2>
+    <h2 class="ach-sec__h2">Air Conditioning Services in Manukau</h2>
     <p class="ach-sec__sub">All work carried out in-house at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive</a>. No outsourcing, no waiting.</p>
     <div class="ach-services">
       <?php foreach ($services as $svc) : ?>
@@ -344,19 +344,19 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
     <div class="ach-problems">
       <div>
         <h3>AC blows warm or less-cold air</h3>
-        <p>The most common complaint. Often low refrigerant — but not always. Could be a compressor starting to fail, a blocked expansion valve, or a faulty pressure switch. We test the system pressures and component function before recommending a regas or a repair.</p>
+        <p>The most common complaint. Often low refrigerant, but not always. Could be a compressor starting to fail, a blocked expansion valve, or a faulty pressure switch. We test the system pressures and component function before recommending a regas or a repair.</p>
       </div>
       <div>
         <h3>Musty smell when AC is turned on</h3>
-        <p>Bacterial and fungal growth on the evaporator — the component that sits inside the dashboard in a dark, damp environment. We carry out an antibacterial treatment and cabin filter replacement. Common after winter when the AC has not been used for months.</p>
+        <p>Bacterial and fungal growth on the evaporator, the part that sits inside the dashboard in a dark, damp environment. We carry out an antibacterial treatment and cabin filter replacement. Common after winter when the AC has not been used for months.</p>
       </div>
       <div>
         <h3>AC makes a noise when it kicks in</h3>
-        <p>A clunk, rattle, or grinding noise when the compressor engages usually means the compressor clutch or bearings are worn. This is the most expensive AC component — but catching it early can sometimes avoid a full replacement. Do not ignore AC noises.</p>
+        <p>A clunk, rattle, or grinding noise when the compressor engages usually means the compressor clutch or bearings are worn. This is the most expensive AC component, but catching it early can sometimes avoid a full replacement. Do not ignore AC noises.</p>
       </div>
       <div>
         <h3>Windscreen will not demist properly</h3>
-        <p>The AC system is critical for demisting — it dehumidifies the air before the heater warms it. If your demisting is slow or ineffective, the AC system is likely low on refrigerant or has a fault. This is a safety issue in winter driving conditions.</p>
+        <p>The AC system is critical for demisting. It dehumidifies the air before the heater warms it. If your demisting is slow or ineffective, the AC system is likely low on refrigerant or has a fault. This is a safety issue in winter driving conditions.</p>
       </div>
     </div>
   </div>
@@ -366,7 +366,7 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
 <section class="ach-sec ach-sec--grey">
   <div class="ach-sec__inner">
     <span class="ach-sec__eyebrow">Pricing Guide</span>
-    <h2 class="ach-sec__h2">Air Conditioning Pricing — Manukau</h2>
+    <h2 class="ach-sec__h2">Air Conditioning Pricing in Manukau</h2>
     <p class="ach-sec__sub">All fees explained upfront before any work begins. Estimate provided before proceeding with any repair.</p>
     <div class="ach-pricing">
       <div class="ach-pricing__card ach-pricing__card--highlight">
@@ -379,7 +379,7 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
         <div class="ach-pricing__badge"><?php echo ach_badge('SD', 48); ?></div>
         <div class="ach-pricing__title">System Diagnosis &amp; Repair</div>
         <div class="ach-pricing__price">Contact for estimate</div>
-        <p class="ach-pricing__desc">Full system diagnosis including pressure testing, leak detection, and component checks. Repair cost depends on the fault — estimate provided before any work.</p>
+        <p class="ach-pricing__desc">Full system diagnosis including pressure testing, leak detection, and component checks. Repair cost depends on the fault. Estimate provided before any work.</p>
       </div>
       <div class="ach-pricing__card">
         <div class="ach-pricing__badge"><?php echo ach_badge('CF', 48); ?></div>
@@ -388,12 +388,12 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
         <p class="ach-pricing__desc">Supply and fit the correct cabin filter for your vehicle. Price varies by make and model. Often done alongside a regas or service.</p>
       </div>
     </div>
-    <p class="ach-pricing__note">Compressor, condenser, and evaporator repairs are priced on inspection — cost depends on the vehicle and the fault. Custom hose manufacture and odour treatment also available. All pricing includes GST. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate.</p>
+    <p class="ach-pricing__note">Compressor, condenser, and evaporator repairs are priced on inspection. Cost depends on the vehicle and the fault. Custom hose manufacture and odour treatment also available. All pricing includes GST. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate.</p>
   </div>
 </section>
 
 <!-- 7. ENQUIRY -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost.</strong> Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="ach-sec ach-sec--dark" id="enquire">
   <div class="ach-sec__inner">
     <div class="ach-enquiry">
@@ -414,7 +414,7 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
   <div class="ach-sec__inner">
     <span class="ach-sec__eyebrow">Also at TAAS</span>
     <h2 class="ach-sec__h2">Related Services</h2>
-    <p class="ach-sec__sub">AC work often overlaps with other services. Combine them in one visit — fewer trips, less downtime.</p>
+    <p class="ach-sec__sub">AC work often overlaps with other services. Combine them in one visit for fewer trips and less downtime.</p>
     <div class="ach-related">
       <a href="<?php echo esc_url($site_url . '/auto-electrical/'); ?>" class="ach-service">
         <div class="ach-service__icon"><?php echo ach_badge('AE'); ?></div>
@@ -478,7 +478,7 @@ body.page-template-template-air-conditioning{overflow-x:hidden;-webkit-text-size
 <section class="ach-sec ach-sec--white">
   <div class="ach-sec__inner">
     <span class="ach-sec__eyebrow">FAQ</span>
-    <h2 class="ach-sec__h2">Common Questions — Air Conditioning</h2>
+    <h2 class="ach-sec__h2">Common Questions: Air Conditioning</h2>
     <div class="ach-faq">
       <?php foreach ($faqs as $i => $faq) : ?>
       <div class="ach-faq__item<?php echo $i===0?' ach-faq__item--open':''; ?>">

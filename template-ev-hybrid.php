@@ -45,31 +45,31 @@ $finance = [
 
 // ── EV types ─────────────────────────────────────────────────────────────────
 $ev_types = [
-    ['abbr' => 'BEV',  'name' => 'Battery Electric',    'desc' => 'Fully electric — no petrol engine. Charges from the wall. Tesla, Nissan Leaf, BYD, MG ZS EV, Hyundai Ioniq 5, Kia EV6.'],
-    ['abbr' => 'HEV',  'name' => 'Full Hybrid',         'desc' => 'Petrol engine plus electric motor. Charges itself by driving — no plug required. Toyota Prius, RAV4 Hybrid, Corolla Hybrid, Honda e:HEV.'],
-    ['abbr' => 'PHEV', 'name' => 'Plug-in Hybrid',      'desc' => 'Larger battery than a hybrid — charges from the wall and runs on electric first. Mitsubishi Outlander PHEV, Kia Niro PHEV, Hyundai Tucson PHEV.'],
-    ['abbr' => 'MHEV', 'name' => 'Mild Hybrid',         'desc' => 'Small battery assists the petrol engine — often invisible to owners. Very common. Many Suzuki, Volvo, Land Rover, and Ford models.'],
+    ['abbr' => 'BEV',  'name' => 'Battery Electric',    'desc' => 'Fully electric, no petrol engine. Charges from the wall. Tesla, Nissan Leaf, BYD, MG ZS EV, Hyundai Ioniq 5, Kia EV6.'],
+    ['abbr' => 'HEV',  'name' => 'Full Hybrid',         'desc' => 'Petrol engine plus electric motor. Charges itself as you drive, no plug needed. Toyota Prius, RAV4 Hybrid, Corolla Hybrid, Honda e:HEV.'],
+    ['abbr' => 'PHEV', 'name' => 'Plug-in Hybrid',      'desc' => 'Larger battery than a hybrid. Charges from the wall and runs on electric first. Mitsubishi Outlander PHEV, Kia Niro PHEV, Hyundai Tucson PHEV.'],
+    ['abbr' => 'MHEV', 'name' => 'Mild Hybrid',         'desc' => 'Small battery assists the petrol engine. Most owners never notice it. Very common. Many Suzuki, Volvo, Land Rover, and Ford models.'],
 ];
 
 // ── Service cards ────────────────────────────────────────────────────────────
 $services = [
-    ['badge' => 'HV', 'title' => 'Hybrid Vehicle Servicing',  'desc' => 'Scheduled servicing for all hybrid types — HEV, PHEV, MHEV. Oil, filters, brakes, coolant, and hybrid-specific checks.', 'url' => '/hybrid-vehicle-servicing-manukau/',  'cta' => 'Hybrid Servicing →'],
-    ['badge' => 'EV', 'title' => 'Electric Vehicle Servicing', 'desc' => 'BEV service — brake fluid, coolant, cabin filter, tyres, suspension, 12V battery, and diagnostic health check.', 'url' => '/electric-vehicle-servicing-manukau/', 'cta' => 'EV Servicing →'],
-    ['badge' => 'BC', 'title' => 'Hybrid Battery Check',      'desc' => 'HV battery health assessment — individual cell data, state of charge balance, capacity vs original specification.', 'url' => '/hybrid-battery-check-manukau/',      'cta' => 'Battery Check →'],
-    ['badge' => 'PH', 'title' => 'PHEV Servicing',            'desc' => 'Plug-in hybrid service — covers both the petrol engine service schedule and EV-specific components.', 'url' => '/phev-servicing-manukau/',              'cta' => 'PHEV Service →'],
-    ['badge' => 'EB', 'title' => 'EV Brake Service',          'desc' => 'Regenerative brake system service — fluid change, pad inspection, calliper service. EVs use brakes differently.', 'url' => '/ev-brake-service-manukau/',           'cta' => 'EV Brakes →'],
+    ['badge' => 'HV', 'title' => 'Hybrid Vehicle Servicing',  'desc' => 'Scheduled servicing for all hybrid types: HEV, PHEV, MHEV. Oil, filters, brakes, coolant, and hybrid-specific checks.', 'url' => '/hybrid-vehicle-servicing-manukau/',  'cta' => 'Hybrid Servicing →'],
+    ['badge' => 'EV', 'title' => 'Electric Vehicle Servicing', 'desc' => 'BEV service: brake fluid, coolant, cabin filter, tyres, suspension, 12V battery, and diagnostic health check.', 'url' => '/electric-vehicle-servicing-manukau/', 'cta' => 'EV Servicing →'],
+    ['badge' => 'BC', 'title' => 'Hybrid Battery Check',      'desc' => 'HV battery health assessment: individual cell data, state of charge balance, capacity vs original specification.', 'url' => '/hybrid-battery-check-manukau/',      'cta' => 'Battery Check →'],
+    ['badge' => 'PH', 'title' => 'PHEV Servicing',            'desc' => 'Plug-in hybrid service. Covers both the petrol engine service schedule and EV-specific components.', 'url' => '/phev-servicing-manukau/',              'cta' => 'PHEV Service →'],
+    ['badge' => 'EB', 'title' => 'EV Brake Service',          'desc' => 'Regenerative brake system service: fluid change, pad inspection, calliper service. EVs use brakes differently.', 'url' => '/ev-brake-service-manukau/',           'cta' => 'EV Brakes →'],
 ];
 
 // ── What we service ──────────────────────────────────────────────────────────
-$same_as_petrol = ['Warrant of Fitness — NZTA Authorised on-site','Scheduled servicing — oil, filters, brake fluid','Brakes — pads, rotors, callipers','Tyres — supply, fit, and wheel alignment','Steering and suspension','Air conditioning — electric compressor systems','12V auxiliary battery — supply and fit','Cooling system — EVs have their own coolant circuit','Windscreen, wipers, lights','Diagnostic scanning — all EV/hybrid systems'];
-$ev_specific = ['High-voltage battery health check — cell data analysis','HV system diagnosis and repair — trained technicians','Inverter and drive motor — diagnosis and in-car repair','Regenerative brake system service and fluid change','HV battery 12V auxiliary replacement','EV-specific tyre sourcing — low rolling resistance','Hybrid transmission service — CVT and eCVT','Thermal management system — battery cooling','On-board charger diagnosis','DSG and dual-clutch service on PHEV models'];
+$same_as_petrol = ['Warrant of Fitness (NZTA Authorised, on-site)','Scheduled servicing: oil, filters, brake fluid','Brakes: pads, rotors, callipers','Tyres: supply, fit and wheel alignment','Steering and suspension','Air conditioning, including electric compressor systems','12V auxiliary battery supply and fit','Cooling system (EVs have their own coolant circuit)','Windscreen, wipers, lights','Diagnostic scanning on all EV/hybrid systems'];
+$ev_specific = ['High-voltage battery health check with cell data analysis','HV system diagnosis and repair by trained technicians','Inverter and drive motor diagnosis and in-car repair','Regenerative brake system service and fluid change','HV battery 12V auxiliary replacement','EV-specific tyre sourcing (low rolling resistance)','Hybrid transmission service: CVT and eCVT','Thermal management system (battery cooling)','On-board charger diagnosis','DSG and dual-clutch service on PHEV models'];
 
 // ── Vehicles ─────────────────────────────────────────────────────────────────
 $vehicles = [
-    ['region' => 'Japanese',               'makes' => ['Toyota — Prius, RAV4 Hybrid, Corolla Hybrid, Yaris Cross, C-HR, bZ4X','Nissan — Leaf, Ariya, e-Power variants','Honda — Jazz e:HEV, Civic e:HEV, HR-V e:HEV, ZR-V e:HEV','Mitsubishi — Outlander PHEV, Eclipse Cross PHEV','Lexus — UX300e, NX450h+, RX450h, ES300h','Suzuki — mild hybrid range (S-Cross, Swift, Vitara MHEV)']],
-    ['region' => 'Korean',                 'makes' => ['Hyundai — Ioniq 5, Ioniq 6, Kona Electric, Tucson PHEV','Kia — EV6, EV9, Niro EV, Niro PHEV, Sportage PHEV']],
-    ['region' => 'Chinese — Growing Fast', 'makes' => ['BYD — Atto 3, Seal, Dolphin, Sealion 6 PHEV','MG — ZS EV, MG4, HS PHEV','GWM / Haval — H6 HEV, Jolion HEV','LDV — eT60 (commercial EV ute)','New makes arriving — Chery, Xpeng, Zeekr — call us']],
-    ['region' => 'European',               'makes' => ['Volvo — mild hybrid range, XC40 Recharge','BMW / MINI — mild hybrid and PHEV variants','Volkswagen Group — ID.4, Golf GTE, Passat GTE','Peugeot — e-208, e-2008']],
+    ['region' => 'Japanese',               'makes' => ['Toyota: Prius, RAV4 Hybrid, Corolla Hybrid, Yaris Cross, C-HR, bZ4X','Nissan: Leaf, Ariya, e-Power variants','Honda: Jazz e:HEV, Civic e:HEV, HR-V e:HEV, ZR-V e:HEV','Mitsubishi: Outlander PHEV, Eclipse Cross PHEV','Lexus: UX300e, NX450h+, RX450h, ES300h','Suzuki: mild hybrid range (S-Cross, Swift, Vitara MHEV)']],
+    ['region' => 'Korean',                 'makes' => ['Hyundai: Ioniq 5, Ioniq 6, Kona Electric, Tucson PHEV','Kia: EV6, EV9, Niro EV, Niro PHEV, Sportage PHEV']],
+    ['region' => 'Chinese (Growing Fast)', 'makes' => ['BYD: Atto 3, Seal, Dolphin, Sealion 6 PHEV','MG: ZS EV, MG4, HS PHEV','GWM / Haval: H6 HEV, Jolion HEV','LDV: eT60 (commercial EV ute)','New makes arriving: Chery, Xpeng, Zeekr. Call us']],
+    ['region' => 'European',               'makes' => ['Volvo: mild hybrid range, XC40 Recharge','BMW / MINI: mild hybrid and PHEV variants','Volkswagen Group: ID.4, Golf GTE, Passat GTE','Peugeot: e-208, e-2008']],
 ];
 
 // ── Suburbs (17) ─────────────────────────────────────────────────────────────
@@ -108,7 +108,7 @@ $schema_faqs = [];
 foreach ($faqs as $faq) { $schema_faqs[] = ['@type'=>'Question','name'=>$faq['q'],'acceptedAnswer'=>['@type'=>'Answer','text'=>strip_tags($faq['a'])]]; }
 $schema = ['@context'=>'https://schema.org','@graph'=>[
     ['@type'=>'BreadcrumbList','itemListElement'=>[['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],['@type'=>'ListItem','position'=>2,'name'=>'Services','item'=>$site_url.'/services/'],['@type'=>'ListItem','position'=>3,'name'=>'EV & Hybrid Vehicle Servicing','item'=>$page_url]]],
-    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Electric and hybrid vehicle servicing in Manukau, South Auckland. BEV, HEV, PHEV, MHEV — all makes. HV-trained technicians. Battery health checks. Inverter and motor repair. MTA Assured. NZTA Authorised. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'priceRange'=>'$$','areaServed'=>'South Auckland','sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, GEM Finance, Aotea Finance'],
+    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Electric and hybrid vehicle servicing in Manukau, South Auckland. BEV, HEV, PHEV and MHEV, all makes. HV-trained technicians. Battery health checks. Inverter and motor repair. MTA Assured. NZTA Authorised. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'priceRange'=>'$$','areaServed'=>'South Auckland','sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'Motor Trade Association (MTA)'],'paymentAccepted'=>'Cash, EFTPOS, Visa, Mastercard, Afterpay, Q Card, GEM Finance, Aotea Finance'],
     ['@type'=>'SpeakableSpecification','cssSelector'=>['.evh-hero__sub','.evh-faq__item:first-of-type .evh-faq__a']],
     ['@type'=>'FAQPage','mainEntity'=>$schema_faqs],
 ]];
@@ -159,10 +159,10 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="evh-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="evh-w"><div class="evh-hero__inner">
   <div>
-    <span class="evh-eye evh-eye--green">Electric &amp; Hybrid — Manukau</span>
+    <span class="evh-eye evh-eye--green">Electric &amp; Hybrid · Manukau</span>
     <h1>EV &amp; Hybrid Vehicle<br><span>Servicing &amp; Repairs</span></h1>
     <p class="evh-hero__sub">All makes and models. BEV, HEV, PHEV, MHEV. HV-trained technicians. Battery health checks. Inverter and motor repairs. South Auckland's independent EV and hybrid specialist. <?php echo esc_html($years); ?> years of workshop experience.</p>
-    <div class="evh-hero__statement"><strong>You do not need to go back to the dealer.</strong> Out of warranty? An independent workshop with the right training and equipment is entirely appropriate — and significantly more affordable.</div>
+    <div class="evh-hero__statement"><strong>You do not need to go back to the dealer.</strong> Out of warranty? An independent workshop with the right training and equipment does the job properly, and costs a lot less.</div>
     <div class="evh-hero__tags"><?php foreach ($ev_types as $t): ?><span class="evh-hero__tag"><strong><?php echo esc_html($t['abbr']); ?></strong> <?php echo esc_html($t['name']); ?></span><?php endforeach; ?></div>
     <div class="evh-hero__ctas">
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="evh-btn evh-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
@@ -171,14 +171,14 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   </div>
   <div class="evh-sidebar">
     <div class="evh-sidebar__title">Our EV Capability</div>
-    <ul class="evh-sidebar__list"><li><strong>HV System Access</strong><em>Yes — trained technicians</em></li><li><strong>EV Qualifications</strong><em>2 technicians in training</em></li><li><strong>Battery Cell Data</strong><em>Toyota, Nissan, Honda + more</em></li><li><strong>Inverter / Motor</strong><em>Diagnosis &amp; in-car repair</em></li><li><strong>Regen Brake Service</strong><em>Yes — correct procedure</em></li><li><strong>EV Tyres</strong><em>Sourced fast — low rolling resistance</em></li></ul>
+    <ul class="evh-sidebar__list"><li><strong>HV System Access</strong><em>Yes, trained technicians</em></li><li><strong>EV Qualifications</strong><em>2 technicians in training</em></li><li><strong>Battery Cell Data</strong><em>Toyota, Nissan, Honda + more</em></li><li><strong>Inverter / Motor</strong><em>Diagnosis &amp; in-car repair</em></li><li><strong>Regen Brake Service</strong><em>Yes, correct procedure</em></li><li><strong>EV Tyres</strong><em>Sourced fast, low rolling resistance</em></li></ul>
     <hr>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="evh-sidebar__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="evh-sidebar__detail"><?php echo esc_html($phone_local); ?><br>Mon–Fri 7:30am–5:00pm</div>
   </div>
 </div></div></section>
 
-<div class="evh-phonestrip"><div class="evh-phonestrip__inner"><span class="evh-phonestrip__label">EV or hybrid — need servicing or a diagnostic?</span><a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="evh-phonestrip__num"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><?php echo esc_html($phone_free); ?></a></div></div>
+<div class="evh-phonestrip"><div class="evh-phonestrip__inner"><span class="evh-phonestrip__label">EV or hybrid? Need servicing or a diagnostic?</span><a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="evh-phonestrip__num"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><?php echo esc_html($phone_free); ?></a></div></div>
 
 <div class="evh-trust"><div class="evh-trust__inner"><div class="evh-trust__item">MTA Assured</div><div class="evh-trust__item">NZTA Authorised</div><div class="evh-trust__item">HV-Trained Technicians</div><div class="evh-trust__item">All EV Types</div><div class="evh-trust__item"><?php echo esc_html($rating); ?>★ · <?php echo esc_html($reviews); ?> Reviews</div><div class="evh-trust__item">Since <?php echo esc_html($established); ?></div></div></div>
 
@@ -187,8 +187,8 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <span class="evh-eye evh-eye--dark">Understanding EV &amp; Hybrid Servicing</span>
   <h2 class="evh-h2">Do Electric and Hybrid Vehicles Need Servicing?</h2>
   <div class="evh-content">
-    <p>Yes. An electric vehicle has fewer moving parts than a petrol car — no engine oil, no spark plugs, no exhaust system — but it still has brakes, suspension, steering, tyres, coolant, cabin filters, and a 12V battery that all need regular maintenance. Hybrids have all of that plus a petrol engine to service as well.</p>
-    <p>The difference is not that EVs need less servicing — it is that they need different servicing. Brake fluid still absorbs moisture regardless of how little the physical brakes are used. The HV battery has its own cooling circuit that needs monitoring. EV tyres wear faster because of the vehicle weight and instant torque. And the 12V auxiliary battery — the one that starts the car and runs the electronics — fails just like any other 12V battery.</p>
+    <p>Yes. An electric vehicle has fewer moving parts than a petrol car (no engine oil, no spark plugs, no exhaust system), but it still has brakes, suspension, steering, tyres, coolant, cabin filters, and a 12V battery that all need regular maintenance. Hybrids have all of that plus a petrol engine to service as well.</p>
+    <p>The difference is not that EVs need less servicing. They need different servicing. Brake fluid still absorbs moisture regardless of how little the physical brakes are used. The HV battery has its own cooling circuit that needs monitoring. EV tyres wear faster because of the vehicle weight and instant torque. And the 12V auxiliary battery, the one that starts the car and runs the electronics, fails just like any other 12V battery.</p>
     <p>The dealer is not your only option. Once the factory warranty expires, any qualified workshop with the right diagnostic equipment and training can service your EV or hybrid. We have that equipment, our technicians are completing EV-specific qualifications, and we are significantly more affordable than the dealer alternative.</p>
   </div>
   <div class="evh-types"><?php foreach ($ev_types as $t): ?><div class="evh-type"><div class="evh-type__abbr"><?php echo esc_html($t['abbr']); ?></div><div class="evh-type__name"><?php echo esc_html($t['name']); ?></div><div class="evh-type__desc"><?php echo esc_html($t['desc']); ?></div></div><?php endforeach; ?></div>
@@ -214,13 +214,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <h2 class="evh-h2">Why Choose an Independent Workshop?</h2>
   <div class="evh-dealer">
     <div class="evh-dealer__body">
-      <p>The dealer servicing model is built on the assumption that you have no alternative. For vehicles under factory warranty, check your terms — most manufacturers allow servicing at any qualified workshop provided the correct schedule, parts, and fluids are used.</p>
-      <p>For out-of-warranty EVs and hybrids, the decision is straightforward. We carry the same diagnostic tools the dealer uses — we read the same fault codes, the same live data, and the same battery cell information. The difference is cost. Dealer labour rates in Auckland are typically over $200 per hour. Ours are well under that — for the same diagnostic depth and repair quality. On a job that takes four or five hours, the saving is significant.</p>
-      <p>We are not anti-dealer. There are warranty repairs and recall work that must go through the dealer network. But for routine servicing, brake fluid changes, tyre replacements, suspension work, diagnostic scanning, and most repairs — an independent workshop with the right capability is the sensible choice.</p>
+      <p>The dealer servicing model is built on the assumption that you have no alternative. For vehicles under factory warranty, check your terms. Most manufacturers allow servicing at any qualified workshop provided the correct schedule, parts, and fluids are used.</p>
+      <p>For out-of-warranty EVs and hybrids, the decision is straightforward. We carry the same diagnostic tools the dealer uses. We read the same fault codes, the same live data, and the same battery cell information. The difference is cost. Dealer labour rates in Auckland are typically over $200 per hour. Ours are well under that, for the same diagnostic depth and repair quality. On a job that takes four or five hours, the saving is significant.</p>
+      <p>We are not anti-dealer. There are warranty repairs and recall work that must go through the dealer network. But for routine servicing, brake fluid changes, tyre replacements, suspension work, diagnostic scanning and most repairs, an independent workshop with the right capability is the sensible choice.</p>
     </div>
     <div class="evh-dealer__card">
       <div class="evh-dealer__quote">Same diagnostic data. Same repair quality. Less cost. No upselling.</div>
-      <ul class="evh-dealer__facts"><li class="evh-dealer__fact">HV system access — trained technicians</li><li class="evh-dealer__fact">Battery cell data reading — Toyota, Nissan, Honda + more</li><li class="evh-dealer__fact">Inverter and drive motor diagnosis</li><li class="evh-dealer__fact">Correct EV service procedures followed</li><li class="evh-dealer__fact">MTA Assured — <?php echo esc_html($years); ?> years trading</li><li class="evh-dealer__fact"><?php echo esc_html($customers); ?> customers serviced</li></ul>
+      <ul class="evh-dealer__facts"><li class="evh-dealer__fact">HV system access by trained technicians</li><li class="evh-dealer__fact">Battery cell data reading: Toyota, Nissan, Honda + more</li><li class="evh-dealer__fact">Inverter and drive motor diagnosis</li><li class="evh-dealer__fact">Correct EV service procedures followed</li><li class="evh-dealer__fact">MTA Assured, <?php echo esc_html($years); ?> years trading</li><li class="evh-dealer__fact"><?php echo esc_html($customers); ?> customers serviced</li></ul>
     </div>
   </div>
 </div></section>
@@ -228,12 +228,12 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="evh-section evh-section--dark"><div class="evh-w">
   <span class="evh-eye evh-eye--yellow">Vehicles We Service</span>
   <h2 class="evh-h2 evh-h2--white">Every EV &amp; Hybrid Make in New Zealand</h2>
-  <p class="evh-lead">The NZ EV market is changing fast. New makes arrive regularly — if your vehicle is not listed, call us. We almost certainly cover it.</p>
+  <p class="evh-lead">The NZ EV market is changing fast. New makes arrive regularly. If your vehicle is not listed, call us. We almost certainly cover it.</p>
   <div class="evh-vehicles"><?php foreach ($vehicles as $v): ?><div class="evh-vehicle"><div class="evh-vehicle__region<?php echo strpos($v['region'],'Chinese')!==false?' evh-vehicle__region--hot':''; ?>"><?php echo esc_html($v['region']); ?></div><ul class="evh-vehicle__list"><?php foreach ($v['makes'] as $m): ?><li class="evh-vehicle__item"><?php echo esc_html($m); ?></li><?php endforeach; ?></ul></div><?php endforeach; ?></div>
 </div></section>
 
 <div class="evh-finance"><div class="evh-finance__inner">
-  <div class="evh-finance__text"><strong>Finance available</strong> — EV-specific repairs can be significant. Don't delay.</div>
+  <div class="evh-finance__text"><strong>Finance available.</strong> EV-specific repairs can be significant. Don't delay.</div>
   <div class="evh-finance__logos"><?php foreach ($finance as $f): ?><span class="evh-fin"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
   <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" class="evh-finance__link">View finance options →</a>
 </div></div>
@@ -241,13 +241,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="evh-enquire" class="evh-section evh-section--dark"><div class="evh-w"><div class="evh-enquiry">
   <div>
     <span class="evh-eye evh-eye--yellow">Book or Enquire</span>
-    <h2 class="evh-h2 evh-h2--white">EV &amp; Hybrid Servicing — <span style="color:var(--ev-green);">Enquire Now</span></h2>
+    <h2 class="evh-h2 evh-h2--white">EV &amp; Hybrid Servicing: <span style="color:var(--ev-green);">Enquire Now</span></h2>
     <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your make, model, year, and whether it is BEV, hybrid, or plug-in hybrid. We will advise what service is due and provide an estimate.</p>
-    <ul class="evh-enquiry__list"><?php foreach (['HV-trained technicians — battery, inverter, motor','Written estimate before any work begins','All EV and hybrid types — Japanese, Korean, Chinese, European','Finance available — pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
+    <ul class="evh-enquiry__list"><?php foreach (['HV-trained technicians for battery, inverter and motor','Written estimate before any work begins','All EV and hybrid types: Japanese, Korean, Chinese, European','Finance available to pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="evh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="evh-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     <div class="evh-enquiry__badges"><?php foreach ($finance as $f): ?><span class="evh-enquiry__badge"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
-    <div class="evh-enquiry__note"><strong>Estimate before we start.</strong> We confirm the cost before any work begins — no surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
+    <div class="evh-enquiry__note"><strong>Estimate before we start.</strong> We confirm the cost before any work begins. No surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="evh-enquiry__form">
     <div class="evh-enquiry__form-title">Send Us Your Details</div>
@@ -271,7 +271,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="evh-section evh-section--white"><div class="evh-w">
   <span class="evh-eye evh-eye--dark">Common Questions</span>
-  <h2 class="evh-h2">EV &amp; Hybrid Servicing — FAQ</h2>
+  <h2 class="evh-h2">EV &amp; Hybrid Servicing FAQ</h2>
   <div class="evh-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="evh-faq__item<?php echo $i===0?' evh-faq__item--open':''; ?>"><button class="evh-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="evh-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="evh-a-<?php echo $i; ?>" class="evh-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

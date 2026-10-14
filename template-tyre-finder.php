@@ -112,7 +112,7 @@ body.page-template-template-tyre-finder{overflow-x:hidden;}
 
 <section class="tf-hero">
   <div class="tf-hero__inner">
-    <span class="tf-hero__eyebrow">Tyre Centre — Manukau</span>
+    <span class="tf-hero__eyebrow">Tyre Centre · Manukau</span>
     <h1>Tyre Finder<br><span>Search Our Stock</span></h1>
     <p class="tf-hero__sub">Enter your tyre width, profile and rim diameter. Budget to premium brands.</p>
   </div>
@@ -152,7 +152,7 @@ body.page-template-template-tyre-finder{overflow-x:hidden;}
 <section class="tf-section tf-section--grey" id="tf-help" style="display:block;">
   <div class="tf-section__inner">
     <h2 class="tf-section__heading">Where to Find Your Tyre Size</h2>
-    <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;max-width:720px;margin-bottom:16px;">Your tyre size is printed on the sidewall of every tyre — look for a number like <strong style="color:var(--taas-black,#111);">205/55R16</strong>. The first number (205) is the width in mm. The second (55) is the profile — the height as a percentage of the width. R16 is the rim diameter in inches.</p>
+    <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;max-width:720px;margin-bottom:16px;">Your tyre size is printed on the sidewall of every tyre. Look for a number like <strong style="color:var(--taas-black,#111);">205/55R16</strong>. The first number (205) is the width in mm. The second (55) is the profile: the height as a percentage of the width. R16 is the rim diameter in inches.</p>
     <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;max-width:720px;">You can also find the recommended tyre size on a sticker inside the driver's door, or in your vehicle handbook. If you are unsure, call us on <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a> with your rego and we will look it up.</p>
   </div>
 </section>
@@ -162,7 +162,7 @@ body.page-template-template-tyre-finder{overflow-x:hidden;}
     <div class="tf-enquiry">
       <div>
         <h2 class="tf-section__heading" style="color:var(--taas-white,#fff);">Get a Tyre Estimate</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your tyre size or vehicle rego — we will come back with pricing.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your tyre size or vehicle rego and we will come back with pricing.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="tf-enquiry__phone"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
         <div class="tf-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>Mon–Fri 7:30am–5:00pm · <?php echo esc_html(TAAS_PHONE_LOCAL); ?></div>
       </div>
@@ -232,7 +232,7 @@ body.page-template-template-tyre-finder{overflow-x:hidden;}
       });
       html += '</tbody></table>';
     } else {
-      html += '<p style="font-family:Inter,Arial,sans-serif;font-size:15px;color:#666;">No tyres found for this size. We may be able to source it — call <a href="tel:' + '<?php echo esc_attr($phone_free_tel); ?>' + '" style="color:#FFC800;font-weight:600;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>.</p>';
+      html += '<p style="font-family:Inter,Arial,sans-serif;font-size:15px;color:#666;">No tyres found for this size. We may be able to source it. Call <a href="tel:' + '<?php echo esc_attr($phone_free_tel); ?>' + '" style="color:#FFC800;font-weight:600;"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>.</p>';
     }
     resultsDiv.innerHTML = html;
     resultsSection.style.display = 'block';

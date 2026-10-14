@@ -46,19 +46,19 @@ $engine_master = [
     'engine-oil-leak-repair-manukau' => [
         'name'   => 'Engine Oil Leak Repair',
         'badge'  => 'OL',
-        'short'  => 'Rocker covers, sump gaskets, cam seals, crank seals — source identified before repair.',
+        'short'  => 'Rocker covers, sump gaskets, cam seals, crank seals. Source identified before repair.',
         'price'  => 'Diagnostic ' . $scan_price . ' · Repairs estimated individually',
     ],
     'engine-noise-diagnosis-manukau' => [
         'name'   => 'Engine Noise Diagnosis',
         'badge'  => 'EN',
-        'short'  => 'Knocking, ticking, rattling — isolated using mechanical testing, not guesswork.',
+        'short'  => 'Knocking, ticking, rattling. Isolated using mechanical testing, not guesswork.',
         'price'  => 'Full mechanical diagnosis ' . $mech_diag,
     ],
     'engine-misfire-manukau' => [
         'name'   => 'Engine Misfire Diagnosis',
         'badge'  => 'MF',
-        'short'  => 'Spark plugs, coils, injectors, compression — cause confirmed before parts ordered.',
+        'short'  => 'Spark plugs, coils, injectors, compression. Cause confirmed before parts ordered.',
         'price'  => 'Diagnostic scan ' . $scan_price . ' · Full diagnosis ' . $mech_diag,
     ],
     'engine-oil-consumption-manukau' => [
@@ -114,14 +114,14 @@ for ($i = 1; $i <= 6; $i++) {
 // Add standard FAQs — always top up to 10
 $standard_faqs = [
     ['q' => "How much does {$service_name} cost in Manukau?", 'a' => "The cost depends on the specific fault and your vehicle. Diagnostic scan {$scan_price}, full mechanical diagnosis {$mech_diag}. We give you a written estimate before starting work and keep you informed if anything changes. Call " . TAAS_PHONE_FREE . " for a ballpark figure."],
-    ['q' => "How long does {$service_name} take?", 'a' => "Diagnosis typically takes a few hours. Repair time varies depending on the fault — some are same-day, others require parts to be ordered. We give you a clear timeframe once we've diagnosed the issue."],
+    ['q' => "How long does {$service_name} take?", 'a' => "Diagnosis typically takes a few hours. Repair time varies depending on the fault. Some are same-day, others require parts to be ordered. We give you a clear timeframe once we've diagnosed the issue."],
     ['q' => "Do you provide a written estimate before starting work?", 'a' => "Yes. We diagnose the fault, explain what we've found in plain English, and give you a written estimate before starting the repair. If anything changes once we're into the job, we'll call you. If the repair isn't worth the cost, we'll tell you that too."],
     ['q' => "Can I use my MBI policy for this repair?", 'a' => "If you have Mechanical Breakdown Insurance, engine repairs are one of the most common claims. Tony Allen Auto Service is an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. Call your provider first, then bring your vehicle to us at 139 Cavendish Drive, Manukau. We liaise with the insurer and handle the claim process. You pay the excess and any costs the policy does not cover. We confirm these once the claim is approved and the costs are worked out."],
     ['q' => "Do you work on European engines?", 'a' => "Yes. Our TAAS European division handles " . TAAS_EURO_BRANDS . " with factory-spec diagnostic equipment. European engines often have specific service intervals, torque specs, and fault patterns that generic workshops miss. We have the tools and knowledge to get it right."],
-    ['q' => "Is it safe to drive my car if I think there's an engine problem?", 'a' => "It depends on the symptom. A minor oil leak or slight rough idle is usually safe for short distances — but book a diagnostic soon. If you hear knocking, see steam or white smoke, have a flashing check engine light, or your temperature gauge is in the red — stop driving and call us on " . TAAS_PHONE_FREE . ". Continuing to drive with a serious engine fault can turn a repairable problem into a replacement engine."],
-    ['q' => "Can I pay for engine repairs with Afterpay or finance?", 'a' => "Yes. We accept Afterpay, Q Card, Gem Finance, and Aotea Finance — so you can spread the cost of larger repairs. We also accept Visa, Mastercard, EFTPOS, and cash. Let us know which option you plan to use when you book."],
+    ['q' => "Is it safe to drive my car if I think there's an engine problem?", 'a' => "It depends on the symptom. A minor oil leak or slight rough idle is usually safe for short distances, but book a diagnostic soon. If you hear knocking, see steam or white smoke, have a flashing check engine light, or your temperature gauge is in the red, stop driving and call us on " . TAAS_PHONE_FREE . ". Continuing to drive with a serious engine fault can turn a repairable problem into a replacement engine."],
+    ['q' => "Can I pay for engine repairs with Afterpay or finance?", 'a' => "Yes. We accept Afterpay, Q Card, Gem Finance, and Aotea Finance, so you can spread the cost of larger repairs. We also accept Visa, Mastercard, EFTPOS, and cash. Let us know which option you plan to use when you book."],
     ['q' => "Do I need to book?", 'a' => "Yes. For engine diagnostics and repairs, booking means we can allocate the right time and equipment for your vehicle. Call " . TAAS_PHONE_FREE . " or use our online enquiry form."],
-    ['q' => "What accreditations does Tony Allen Auto Service hold?", 'a' => "We are MTA Assured through the Motor Trade Association quality assurance programme, and NZTA Authorised for Warrant of Fitness inspections — station number " . TAAS_MS_NUMBER . ". Family-owned and operating from 139 Cavendish Drive, Manukau since " . TAAS_ESTABLISHED . " — " . $years . " years at the same address."],
+    ['q' => "What accreditations does Tony Allen Auto Service hold?", 'a' => "We are MTA Assured through the Motor Trade Association quality assurance programme, and NZTA Authorised for Warrant of Fitness inspections, station number " . TAAS_MS_NUMBER . ". Family-owned and operating from 139 Cavendish Drive, Manukau since " . TAAS_ESTABLISHED . ", " . $years . " years at the same address."],
     ['q' => "Where is Tony Allen Auto Service?", 'a' => "139 Cavendish Drive, Manukau, Auckland 2104. Open Monday to Friday, 7:30am to 5:00pm. Free off-street parking on site. Call " . TAAS_PHONE_FREE . " to book an engine diagnostic. We serve Papatoetoe, Mangere, Otahuhu, Wiri, Manurewa, Flat Bush, Takanini, Papakura, Otara, Botany and all of South Auckland."],
 ];
 foreach ($standard_faqs as $sf) {
@@ -159,7 +159,7 @@ $schema = [
             ['@type'=>'ListItem','position'=>2,'name'=>'Engine Repairs','item'=>$site_url.'/engine-repairs/'],
             ['@type'=>'ListItem','position'=>3,'name'=>$service_name,'item'=>$page_url],
         ]],
-        ['@type'=>'Service','@id'=>$page_url.'#service','name'=>$service_name.' — Manukau','serviceType'=>'Engine Repair','description'=>wp_trim_words($what_it_is, 40, '…'),
+        ['@type'=>'Service','@id'=>$page_url.'#service','name'=>$service_name.', Manukau','serviceType'=>'Engine Repair','description'=>wp_trim_words($what_it_is, 40, '…'),
          'provider'=>['@type'=>'AutoRepair','@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','telephone'=>[TAAS_PHONE_LOCAL,TAAS_PHONE_FREE],'email'=>TAAS_EMAIL,
             'address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],
             'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],
@@ -366,13 +366,13 @@ body.page-template-template-engine-sub { overflow-x:hidden; }
   <div class="ers-w">
     <div class="ers-hero__inner">
       <div>
-        <span class="ers-eye ers-eye--hero">Engine Repairs — Manukau</span>
-        <h1 class="ers-hero__h1"><?php echo esc_html($h1_name); ?><br><span>Manukau — South Auckland</span></h1>
+        <span class="ers-eye ers-eye--hero">Engine Repairs · Manukau</span>
+        <h1 class="ers-hero__h1"><?php echo esc_html($h1_name); ?><br><span>Manukau, South Auckland</span></h1>
         <p class="ers-hero__sub"><?php
           if ($what_it_is) {
               echo esc_html(wp_trim_words($what_it_is, 35, '…'));
           } else {
-              echo esc_html($service_name) . ' — diagnosed and repaired in-house. Written estimate before work starts. ' . esc_html($years) . ' years of workshop experience.';
+              echo esc_html($service_name) . ', diagnosed and repaired in-house. Written estimate before work starts. ' . esc_html($years) . ' years of workshop experience.';
           }
         ?></p>
         <?php if ($price_signal): ?>
@@ -517,7 +517,7 @@ body.page-template-template-engine-sub { overflow-x:hidden; }
 <div class="ers-finance" role="region" aria-label="Finance options">
   <div class="ers-w">
     <div class="ers-finance__inner">
-      <span class="ers-finance__text">Spread the cost of engine repairs — <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">finance available</a></span>
+      <span class="ers-finance__text">Spread the cost of engine repairs: <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">finance available</a></span>
       <div class="ers-finance__badges">
         <span class="ers-finance__badge">Afterpay</span>
         <span class="ers-finance__badge">Q Card</span>
@@ -571,7 +571,7 @@ body.page-template-template-engine-sub { overflow-x:hidden; }
   <div class="ers-w" style="max-width:800px;text-align:center;">
     <span class="ers-eye ers-eye--yellow">MBI Approved Repairer</span>
     <h2 class="ers-sec__h2">Got an MBI policy? We handle the claim.</h2>
-    <p style="font-size:16px;color:#aaa;line-height:1.7;margin-bottom:24px;">Engine repairs are one of the most common MBI claims. We're an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. Call your provider first, then bring the vehicle to us — we liaise with the insurer and get the work authorised.</p>
+    <p style="font-size:16px;color:#aaa;line-height:1.7;margin-bottom:24px;">Engine repairs are one of the most common MBI claims. We're an approved repairer for Autosure, Assurant, Provident, Janssen, and Autolife. Call your provider first, then bring the vehicle to us. We liaise with the insurer and get the work authorised.</p>
     <a href="<?php echo esc_url($site_url . '/mechanical-breakdown-insurance/'); ?>" class="ers-btn ers-btn--primary">MBI Information →</a>
   </div>
 </section>
@@ -589,7 +589,7 @@ body.page-template-template-engine-sub { overflow-x:hidden; }
 <section class="ers-sec ers-sec--grey">
   <div class="ers-w">
     <span class="ers-eye ers-eye--dark">FAQ</span>
-    <h2 class="ers-sec__h2"><?php echo esc_html($service_name); ?> — Questions Answered</h2>
+    <h2 class="ers-sec__h2"><?php echo esc_html($service_name); ?>: Questions Answered</h2>
     <div class="ers-faq__list">
       <?php foreach ($faqs as $fi => $faq):
         $qid = 'ers-faq-q-' . $fi;

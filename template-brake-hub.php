@@ -42,13 +42,13 @@ $hero_bg  = $hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.86) 0%
 $finance = [['name'=>'Afterpay','logo'=>''],['name'=>'Q Card','logo'=>''],['name'=>'GEM Finance','logo'=>''],['name'=>'Aotea Finance','logo'=>'']];
 
 $services = [
-    ['badge'=>'PR','title'=>'Pad & Rotor Replacement','desc'=>'New pads plus rotor machining or replacement — always together, never pads only. The correct way to do brake work.','url'=>'/brake-pad-rotor-replacement-manukau/','cta'=>'Pads & Rotors →'],
+    ['badge'=>'PR','title'=>'Pad & Rotor Replacement','desc'=>'New pads plus rotor machining or replacement. Usually done together, which is the correct way to do brake work.','url'=>'/brake-pad-rotor-replacement-manukau/','cta'=>'Pads & Rotors →'],
     ['badge'=>'BF','title'=>'Brake Fluid Service','desc'=>'Brake fluid absorbs moisture and degrades over time. A fluid change restores the boiling point and prevents brake fade under heavy use.','url'=>'/brake-fluid-service-manukau/','cta'=>'Brake Fluid →'],
     ['badge'=>'CA','title'=>'Calliper Service & Repair','desc'=>'Seized, sticking, or leaking callipers cause uneven braking, pad wear, and vehicle pull. Rebuild or replacement.','url'=>'/brake-calliper-repair-manukau/','cta'=>'Callipers →'],
     ['badge'=>'DR','title'=>'Drum Brakes & Shoes','desc'=>'Rear drum brake inspection, shoe replacement, and wheel cylinder repair. Common on older vehicles and some modern rear axles.','url'=>'/drum-brake-repair-manukau/','cta'=>'Drum Brakes →'],
     ['badge'=>'HB','title'=>'Handbrake Repair','desc'=>'Cable adjustment, shoe replacement, and electronic handbrake diagnosis. Your handbrake is a WOF requirement.','url'=>'/handbrake-repair-manukau/','cta'=>'Handbrake →'],
-    ['badge'=>'BN','title'=>'Brake Noise Diagnosis','desc'=>'Squealing, grinding, or scraping? We identify the cause — pad wear indicators, glazed pads, rotor damage, seized calliper, or stone caught in the shield.','url'=>'/brake-noise-diagnosis-manukau/','cta'=>'Brake Noise →'],
-    ['badge'=>'WF','title'=>'WOF Brake Failure','desc'=>'Failed your WOF on brakes? We fix it and re-inspect on-site — NZTA Authorised. Same-day where possible.','url'=>'/wof-brake-failure-manukau/','cta'=>'WOF Brakes →'],
+    ['badge'=>'BN','title'=>'Brake Noise Diagnosis','desc'=>'Squealing, grinding, or scraping? We identify the cause: pad wear indicators, glazed pads, rotor damage, seized calliper, or stone caught in the shield.','url'=>'/brake-noise-diagnosis-manukau/','cta'=>'Brake Noise →'],
+    ['badge'=>'WF','title'=>'WOF Brake Failure','desc'=>'Failed your WOF on brakes? We fix it and re-inspect on-site. NZTA Authorised. Same-day where possible.','url'=>'/wof-brake-failure-manukau/','cta'=>'WOF Brakes →'],
 ];
 
 $related = [['label'=>'Manukau Brake & Clutch','url'=>'/manukau-brake-clutch/'],['label'=>'Clutch Replacement','url'=>'/clutch-replacement-manukau/'],['label'=>'Disc Skimming','url'=>'/disc-skimming/'],['label'=>'WOF Inspections','url'=>'/wof/'],['label'=>'Wheel Alignment','url'=>'/wheel-alignment-manukau/'],['label'=>'Steering & Suspension','url'=>'/steering-and-suspension/'],['label'=>'EV Brake Service','url'=>'/ev-brake-service-manukau/'],['label'=>'Vehicle Servicing','url'=>'/vehicle-servicing/'],['label'=>'Diagnostic Scanning','url'=>'/diagnostic-scanning/'],['label'=>'Finance Options','url'=>'/finance-options/']];
@@ -121,9 +121,9 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="brk-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>><div class="brk-w"><div class="brk-hero__inner">
   <div>
-    <span class="brk-eye brk-eye--yellow">Brakes — Manukau</span>
-    <h1>Brake Repairs<br><span>Manukau — South Auckland</span></h1>
-    <p class="brk-hero__sub">New pads plus rotor machining or replacement — always together, never pads only. On-site disc skimming. WOF brake failures fixed and re-inspected on-site. NZTA Authorised. <?php echo esc_html($years); ?> years of workshop experience.</p>
+    <span class="brk-eye brk-eye--yellow">Brakes · Manukau</span>
+    <h1>Brake Repairs<br><span>Manukau, South Auckland</span></h1>
+    <p class="brk-hero__sub">New pads plus rotor machining or replacement. Usually done together. On-site disc skimming. WOF brake failures fixed and re-inspected on-site. NZTA Authorised. <?php echo esc_html($years); ?> years of workshop experience.</p>
     <div class="brk-hero__price">Brake pad &amp; rotor replacement <?php echo esc_html($brake_price); ?></div>
     <div class="brk-hero__ctas">
       <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="brk-btn brk-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
@@ -145,19 +145,19 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="brk-section brk-section--white"><div class="brk-w">
   <span class="brk-eye brk-eye--dark">Understanding Brake Repairs</span>
-  <h2 class="brk-h2">Why We Never Fit Brake Pads Only</h2>
+  <h2 class="brk-h2">Why We Rarely Fit Brake Pads on Their Own</h2>
   <div class="brk-content">
     <p>The rotor surface is what the pad grips to slow your vehicle. Over thousands of kilometres, that surface develops grooves, heat spots, and uneven wear from the old pads. When you fit new pads to a grooved rotor, the new pads cannot make full contact with the surface. They ride on the high spots, wear unevenly, overheat at the contact points, and squeal because the pad is vibrating against an uneven surface.</p>
-    <p>Worse — the groove pattern from the old pads physically transfers into the new pads within the first few hundred kilometres. The new pads effectively become pre-worn to match the old rotor's imperfections. You have paid for new pads that are already compromised.</p>
-    <p>Machining the rotor (disc skimming) removes the old groove pattern and restores a flat, smooth surface. New pads on a machined rotor bed in evenly, wear correctly, and deliver consistent stopping power. If the rotor is below minimum thickness or too damaged to machine, we replace it. Either way — the surface is correct before the new pads go on.</p>
+    <p>Worse, the groove pattern from the old pads physically transfers into the new pads within the first few hundred kilometres. The new pads effectively become pre-worn to match the old rotor's imperfections. You have paid for new pads that are already compromised.</p>
+    <p>Machining the rotor (disc skimming) removes the old groove pattern and restores a flat, smooth surface. New pads on a machined rotor bed in evenly, wear correctly, and deliver consistent stopping power. If the rotor is below minimum thickness or too damaged to machine, we replace it. Either way, the surface is correct before the new pads go on.</p>
   </div>
   <div class="brk-compare">
-    <div class="brk-compare__card brk-compare__card--wrong"><h3>Pads Only — The Cheap Approach</h3><p>New pads on old grooved rotors. Uneven contact. Squealing. Accelerated wear. The pad grooves into the same pattern within months. Customer returns with the same complaint. False economy — you pay twice.</p></div>
-    <div class="brk-compare__card brk-compare__card--right"><h3>Pads + Rotors — Done Properly</h3><p>New pads on a machined or replaced rotor. Full surface contact from day one. Even wear. No squealing. Correct bedding. Consistent braking performance. Lasts significantly longer. One visit.</p></div>
+    <div class="brk-compare__card brk-compare__card--wrong"><h3>Pads Only: The Cheap Approach</h3><p>New pads on old grooved rotors. Uneven contact. Squealing. Accelerated wear. The pad grooves into the same pattern within months. Customer returns with the same complaint. False economy. You pay twice.</p></div>
+    <div class="brk-compare__card brk-compare__card--right"><h3>Pads + Rotors: Done Properly</h3><p>New pads on a machined or replaced rotor. Full surface contact from day one. Even wear. No squealing. Correct bedding. Consistent braking performance. Lasts significantly longer. One visit.</p></div>
   </div>
   <div class="brk-wof-cta">
     <div class="brk-wof-cta__title">Failed Your WOF on Brakes?</div>
-    <div class="brk-wof-cta__body">Brakes are one of the most common WOF failure items. We repair the fault and re-inspect on-site — NZTA Authorised. You do not need to go elsewhere. Same-day where possible, subject to parts availability. <a href="<?php echo esc_url($site_url.'/wof/'); ?>" style="color:#c0392b;font-weight:600;">More about WOF at TAAS →</a></div>
+    <div class="brk-wof-cta__body">Brakes are one of the most common WOF failure items. We repair the fault and re-inspect on-site. NZTA Authorised. You do not need to go elsewhere. Same-day where possible, subject to parts availability. <a href="<?php echo esc_url($site_url.'/wof/'); ?>" style="color:#c0392b;font-weight:600;">More about WOF at TAAS →</a></div>
   </div>
 </div></section>
 
@@ -172,14 +172,14 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <h2 class="brk-h2 brk-h2--white">Does This Sound Like Your Vehicle?</h2>
   <p class="brk-lead">If your vehicle is showing any of these, your brakes need inspecting. Do not wait until they fail.</p>
   <ul class="brk-symptoms">
-    <li>Squealing or high-pitched noise when braking — pad wear indicator contact</li>
-    <li>Grinding or scraping metal sound — pads completely worn, metal on metal</li>
-    <li>Vibration or pulsing through the brake pedal — warped or uneven rotors</li>
-    <li>Vehicle pulls to one side under braking — seized calliper or uneven pad wear</li>
-    <li>Longer stopping distance — pads worn thin or brake fluid degraded</li>
-    <li>Brake warning light on dashboard — low fluid, worn pads, or system fault</li>
-    <li>Soft or spongy brake pedal — air in the system or fluid degradation</li>
-    <li>Burning smell when braking — overheated pad or seized calliper</li>
+    <li>Squealing or high-pitched noise when braking: pad wear indicator contact</li>
+    <li>Grinding or scraping metal sound: pads completely worn, metal on metal</li>
+    <li>Vibration or pulsing through the brake pedal: warped or uneven rotors</li>
+    <li>Vehicle pulls to one side under braking: seized calliper or uneven pad wear</li>
+    <li>Longer stopping distance: pads worn thin or brake fluid degraded</li>
+    <li>Brake warning light on dashboard: low fluid, worn pads, or system fault</li>
+    <li>Soft or spongy brake pedal: air in the system or fluid degradation</li>
+    <li>Burning smell when braking: overheated pad or seized calliper</li>
   </ul>
   <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="brk-btn brk-btn--primary" style="margin-top:28px;">Call <?php echo esc_html($phone_free); ?></a>
 </div></section>
@@ -187,7 +187,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section class="brk-section brk-section--white"><div class="brk-w">
   <span class="brk-eye brk-eye--dark">Pricing</span>
   <h2 class="brk-h2">How Much Do Brake Repairs Cost?</h2>
-  <p class="brk-lead">We give you an estimate before starting work — and keep you informed if anything changes.</p>
+  <p class="brk-lead">We give you an estimate before starting work and keep you informed if anything changes.</p>
   <div class="brk-pricing">
     <div class="brk-pricing__title">Pad &amp; rotor replacement <?php echo esc_html($brake_price); ?></div>
     <div class="brk-pricing__body">Includes new pads and rotor machining or replacement. Price varies by vehicle make and model. Rear brakes, calliper work, and drum brakes priced separately after inspection. Call <?php echo esc_html($phone_free); ?> with your vehicle details for an estimate.</div>
@@ -195,7 +195,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 </div></section>
 
 <div class="brk-finance"><div class="brk-finance__inner">
-  <div class="brk-finance__text"><strong>Finance available</strong> — brake repairs are safety-critical. Don't delay because of cost.</div>
+  <div class="brk-finance__text"><strong>Finance available.</strong> Brake repairs are safety-critical. Don't delay because of cost.</div>
   <div class="brk-finance__logos"><?php foreach ($finance as $f): ?><span class="brk-fin"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
   <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" class="brk-finance__link">View finance options →</a>
 </div></div>
@@ -203,13 +203,13 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="brk-enquire" class="brk-section brk-section--dark"><div class="brk-w"><div class="brk-enquiry">
   <div>
     <span class="brk-eye brk-eye--yellow">Book or Enquire</span>
-    <h2 class="brk-h2 brk-h2--white">Brake Repairs — <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
-    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your vehicle make and model and what symptoms you are noticing — noise, vibration, warning light, WOF failure. We will advise on next steps.</p>
-    <ul class="brk-enquiry__list"><?php foreach (['Pads and rotors always — never pads only','Written estimate before any work begins','On-site disc skimming and WOF re-inspection','Finance available — pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
+    <h2 class="brk-h2 brk-h2--white">Brake Repairs: <span style="color:var(--taas-yellow);">Enquire Now</span></h2>
+    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us your vehicle make and model and what symptoms you are noticing: noise, vibration, warning light, WOF failure. We will advise on next steps.</p>
+    <ul class="brk-enquiry__list"><?php foreach (['Pads and rotors, done properly','Estimate before we start work','On-site disc skimming and WOF re-inspection','Finance available to pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="brk-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="brk-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     <div class="brk-enquiry__badges"><?php foreach ($finance as $f): ?><span class="brk-enquiry__badge"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
-    <div class="brk-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price before any work begins — no surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
+    <div class="brk-enquiry__note"><strong>Estimate before we start.</strong> We confirm the price before any work begins. No surprise invoices. <a href="<?php echo esc_url($site_url.'/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="brk-enquiry__form">
     <div class="brk-enquiry__form-title">Send Us Your Details</div>
@@ -233,7 +233,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="brk-section brk-section--white"><div class="brk-w">
   <span class="brk-eye brk-eye--dark">Common Questions</span>
-  <h2 class="brk-h2">Brake Repairs — FAQ</h2>
+  <h2 class="brk-h2">Brake Repairs FAQs</h2>
   <div class="brk-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="brk-faq__item<?php echo $i===0?' brk-faq__item--open':''; ?>"><button class="brk-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="brk-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="brk-a-<?php echo $i; ?>" class="brk-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>
@@ -241,10 +241,10 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="brk-section brk-section--grey"><div class="brk-w">
   <span class="brk-eye brk-eye--dark">South Auckland</span>
-  <h2 class="brk-h2">Brake Repairs — Manukau</h2>
+  <h2 class="brk-h2">Brake Repairs in Manukau</h2>
   <p class="brk-lead" style="margin-bottom:0;">Serving Papatoetoe, Māngere, Ōtāhuhu, Wiri, Ōtara, Flat Bush, Manurewa, Takanini, Papakura, Botany and all of South Auckland from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a>.</p>
   <div class="brk-close">
-    <div class="brk-close__text">Brakes are safety-critical — don't wait.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>
+    <div class="brk-close__text">Brakes are safety-critical. Don't wait.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>
     <div class="brk-close__ctas"><a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="brk-btn brk-btn--primary"><?php echo esc_html($phone_free); ?></a><a href="#brk-enquire" class="brk-btn brk-btn--dark">Book Online</a></div>
   </div>
 </div></section>

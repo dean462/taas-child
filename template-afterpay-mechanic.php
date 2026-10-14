@@ -37,7 +37,7 @@ $years_trading = date('Y') - intval($established);
 $faqs = [
     [
         'q' => 'Can I use Afterpay for any repair at Tony Allen Auto Service?',
-        'a' => 'Yes. Afterpay is accepted across our full range of services — WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, clutch, diagnostics, and more. The only limit is your individual Afterpay spend limit. Check your available balance in the Afterpay app before booking if your job is a larger one.',
+        'a' => 'Yes. Afterpay is accepted across all our services: WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, clutch, diagnostics, and more. The only limit is your individual Afterpay spend limit. Check your available balance in the Afterpay app before booking if your job is a larger one.',
     ],
     [
         'q' => 'Do I need an Afterpay account before I come in?',
@@ -49,19 +49,19 @@ $faqs = [
     ],
     [
         'q' => 'Is Afterpay really interest-free?',
-        'a' => 'Yes — when you pay all four instalments on time, there is no interest charged at all. If you miss a payment, a late fee may apply, capped at 25% of your order total or $68 NZD — whichever is less. See afterpay.com for full terms.',
+        'a' => 'Yes. When you pay all four instalments on time, there is no interest charged at all. If you miss a payment, a late fee may apply, capped at 25% of your order total or $68 NZD, whichever is less. See afterpay.com for full terms.',
     ],
     [
         'q' => 'What happens if I miss a payment?',
-        'a' => 'Afterpay sends reminder notifications before each payment date. You can also reschedule a payment in the Afterpay app up to three times per year. If a payment is missed, a late fee may apply and your account may be paused until the balance is cleared. Late fees are capped — they will never exceed 25% of your order total or $68.',
+        'a' => 'Afterpay sends reminder notifications before each payment date. You can also reschedule a payment in the Afterpay app up to three times per year. If a payment is missed, a late fee may apply and your account may be paused until the balance is cleared. Late fees are capped. They will never exceed 25% of your order total or $68.',
     ],
     [
         'q' => 'How do I pay with Afterpay when I pick up my vehicle?',
-        'a' => 'Before you arrive, open the Afterpay app and ensure the digital Afterpay Card is added to your phone\'s wallet. When you collect your vehicle, let our service desk know you\'re paying with Afterpay and tap your phone at the payment terminal. The first instalment — 25% of the total — is charged immediately. The remaining three are deducted automatically every two weeks.',
+        'a' => 'Before you arrive, open the Afterpay app and check the digital Afterpay Card is added to your phone\'s wallet. When you collect your vehicle, let our service desk know you\'re paying with Afterpay and tap your phone at the payment terminal. The first instalment (25% of the total) is charged immediately. The remaining three are deducted automatically every two weeks.',
     ],
     [
         'q' => 'Will using Afterpay affect my credit score?',
-        'a' => 'Afterpay performs a credit check when you first sign up — this may be visible to other lenders and could impact your credit score. For existing customers, credit checks for spend limit increases are not visible to other lenders and will not affect your score. Making consistent on-time payments may have a positive effect on your credit history.',
+        'a' => 'Afterpay performs a credit check when you first sign up. This may be visible to other lenders and could impact your credit score. For existing customers, credit checks for spend limit increases are not visible to other lenders and will not affect your score. Making consistent on-time payments may have a positive effect on your credit history.',
     ],
     [
         'q' => 'Can I use Afterpay for fleet or commercial vehicle repairs?',
@@ -713,7 +713,7 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <section class="taas-hero" aria-label="Page hero">
     <div>
-        <span class="taas-hero__eyebrow">Manukau's Afterpay Mechanic — Est. <?php echo esc_html($established); ?></span>
+        <span class="taas-hero__eyebrow">Manukau's Afterpay Mechanic · Est. <?php echo esc_html($established); ?></span>
 
         <h1>Car Repairs &amp; Servicing.<br>
         <span>Pay It in 4.</span></h1>
@@ -789,7 +789,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">How It Works</span>
         <h2 class="taas-section__title" id="how-heading">Four Steps. <span>Zero Interest.</span></h2>
-        <p class="taas-section__sub">Afterpay splits your repair or service bill into four equal payments over six weeks. You pay the first instalment at the time of collection — Afterpay covers us in full, and you settle the rest fortnightly from your debit or credit card.</p>
+        <p class="taas-section__sub">Afterpay splits your repair or service bill into four equal payments over six weeks. You pay the first instalment at the time of collection. Afterpay covers us in full, and you settle the rest fortnightly from your debit or credit card.</p>
 
         <div class="taas-steps">
             <div class="taas-step">
@@ -811,7 +811,7 @@ get_header();
             <div class="taas-step">
                 <div class="taas-step__num">04</div>
                 <div class="taas-step__title">Three More Payments</div>
-                <p class="taas-step__text">The remaining three equal instalments are automatically deducted every two weeks — always interest-free.</p>
+                <p class="taas-step__text">The remaining three equal instalments are automatically deducted every two weeks, always interest-free.</p>
                 <span class="taas-step__badge">Every 2 weeks</span>
             </div>
         </div>
@@ -825,7 +825,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">What's Covered</span>
         <h2 class="taas-section__title" id="services-heading">Use Afterpay Across <span>All Our Services</span></h2>
-        <p class="taas-section__sub">Afterpay is accepted for all repairs and servicing at Tony Allen Auto Service — WOF, brakes, engine work, the lot. Split any job into four payments with no interest.</p>
+        <p class="taas-section__sub">Afterpay is accepted for all repairs and servicing at Tony Allen Auto Service: WOF, brakes, engine work, the lot. Split any job into four payments with no interest.</p>
 
         <div class="taas-services">
             <?php foreach ($services as $service): ?>
@@ -866,10 +866,10 @@ get_header();
             <div>
                 <h3 style="color:var(--taas-white);font-size:18px;margin-bottom:4px;">Fees &amp; interest</h3>
                 <ul class="taas-checklist">
-                    <li>No interest — ever</li>
+                    <li>No interest, ever</li>
                     <li>No annual fees</li>
                     <li>No hidden fees when you pay on time</li>
-                    <li>Late fee applies if a payment is missed — capped at 25% of the order or $68 NZD, whichever is less</li>
+                    <li>Late fee applies if a payment is missed, capped at 25% of the order or $68 NZD, whichever is less</li>
                     <li>Orders under $40: one-off late fee capped at 25% of the total</li>
                     <li>Orders $40 and over: $10 late fee, then up to $7 if still unpaid after 7 days, until the cap is reached</li>
                 </ul>
@@ -946,7 +946,7 @@ get_header();
 <section class="taas-section" aria-labelledby="faq-heading">
     <div class="taas-container">
         <span class="taas-label">Common Questions</span>
-        <h2 class="taas-section__title" id="faq-heading">Afterpay at TAAS — <span>Frequently Asked</span></h2>
+        <h2 class="taas-section__title" id="faq-heading">Afterpay at TAAS: <span>Frequently Asked</span></h2>
 
         <ul class="taas-faq" role="list" style="margin-top:32px;">
             <?php foreach ($faqs as $i => $faq): ?>
@@ -977,7 +977,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">Service Area</span>
         <h2 class="taas-section__title" id="area-heading">Serving South Auckland <span>&amp; Manukau</span></h2>
-        <p class="taas-section__sub">Tony Allen Auto Service is located at 139 Cavendish Drive, Manukau. We're the go-to Afterpay mechanic for drivers across South Auckland, including the following areas:</p>
+        <p class="taas-section__sub">Tony Allen Auto Service is located at 139 Cavendish Drive, Manukau. We take Afterpay from drivers across South Auckland, including the following areas:</p>
 
         <ul class="taas-pills" aria-label="Areas served">
             <?php foreach ($service_areas as $area): ?>
@@ -1074,7 +1074,7 @@ get_header();
                     <div style="background:var(--taas-black);border:1px solid #2a2a2a;border-top:4px solid var(--taas-yellow);border-radius:var(--taas-radius);padding:36px;text-align:center;">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--taas-yellow)" stroke-width="2" style="margin-bottom:16px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         <h3 style="color:var(--taas-white);font-size:20px;margin-bottom:10px;">Message Sent</h3>
-                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks — we'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
+                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks, we'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
                     </div>
                 <?php else: ?>
                 <!-- Native fallback form — used when TAAS_CF7_FINANCE is not set -->
@@ -1121,7 +1121,7 @@ get_header();
                         <p style="margin-bottom:20px;">
                             <label for="taas_msg" style="display:block;color:#999;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">What do you need done? *</label>
                             <textarea id="taas_msg" name="taas_msg" required rows="4"
-                                      placeholder="e.g. Need a WOF and full service — want to pay with Afterpay"
+                                      placeholder="e.g. Need a WOF and full service, want to pay with Afterpay"
                                       style="width:100%;background:#1c1c1c;color:#fff;border:1px solid #383838;border-radius:5px;padding:14px 18px;font-size:15px;box-sizing:border-box;resize:vertical;min-height:110px;"><?php echo esc_textarea($_POST['taas_msg'] ?? ''); ?></textarea>
                         </p>
                         <button type="submit" class="taas-btn taas-btn--primary" style="width:100%;justify-content:center;">
@@ -1142,7 +1142,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">Google Reviews</span>
         <h2 class="taas-section__title" id="reviews-heading">
-            Trusted by South Auckland Drivers — <span><?php echo esc_html($years_trading); ?> Years</span>
+            Trusted by South Auckland Drivers for <span><?php echo esc_html($years_trading); ?> Years</span>
         </h2>
 
         <div class="taas-reviews-header">
@@ -1217,7 +1217,7 @@ get_header();
 <div class="taas-footer-cta">
     <div class="taas-container">
         <h2>Ready to Book Your Repair?</h2>
-        <p>Get your vehicle sorted today — split the cost over 6 weeks with Afterpay. Call us on <?php echo esc_html($phone_free); ?> or book online.</p>
+        <p>Get your vehicle sorted today and split the cost over 6 weeks with Afterpay. Call us on <?php echo esc_html($phone_free); ?> or book online.</p>
         <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
             <a href="#book" class="taas-btn taas-btn--primary">Book Now</a>
             <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>" class="taas-btn taas-btn--outline">
@@ -1232,7 +1232,7 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <div class="taas-disclaimer">
     <div class="taas-container">
-        Afterpay is provided by Afterpay NZ Limited. Late fees, eligibility criteria and terms &amp; conditions apply. Credit checks are required for new customers as required by NZ law. Spend limits apply and vary by customer — new customers start with a lower limit. Late fees are capped at 25% of the order total or $68 NZD, whichever is less. Tony Allen Auto Service Ltd is an independent Afterpay merchant — for account enquiries contact Afterpay directly via the app or
+        Afterpay is provided by Afterpay NZ Limited. Late fees, eligibility criteria and terms &amp; conditions apply. Credit checks are required for new customers as required by NZ law. Spend limits apply and vary by customer. New customers start with a lower limit. Late fees are capped at 25% of the order total or $68 NZD, whichever is less. Tony Allen Auto Service Ltd is an independent Afterpay merchant. For account enquiries contact Afterpay directly via the app or
         <a href="https://help.afterpay.com/hc/en-nz" target="_blank" rel="noopener noreferrer">Afterpay Help Centre</a>.
         See <a href="https://www.afterpay.com/en-NZ/terms-of-service" target="_blank" rel="noopener noreferrer">afterpay.com/en-NZ</a> for full terms.
     </div>

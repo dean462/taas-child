@@ -62,28 +62,28 @@ $finance = [
 
 // ── Services (10) ────────────────────────────────────────────────────────────
 $services = [
-    ['icon'=>csh_mono('RR'),'title'=>'Radiator Repair & Replacement','desc'=>'Stone damage, corrosion, or internal blockage — we repair or replace radiators on all makes. Full pressure test before and after.','url'=>'/radiator-repair-manukau/','cta'=>'Radiator Repair →'],
+    ['icon'=>csh_mono('RR'),'title'=>'Radiator Repair & Replacement','desc'=>'Stone damage, corrosion, or internal blockage. We repair or replace radiators on all makes. Full pressure test before and after.','url'=>'/radiator-repair-manukau/','cta'=>'Radiator Repair →'],
     ['icon'=>csh_mono('CF'),'title'=>'Coolant Flush','desc'=>'Remove old, contaminated coolant and replace with fresh fluid at the correct concentration. Recommended per manufacturer spec.','url'=>'/coolant-flush-manukau/','cta'=>'Coolant Flush →'],
-    ['icon'=>csh_mono('WP'),'title'=>'Water Pump Replacement','desc'=>'A failed water pump stops coolant circulation and causes overheating. Usually replaced at the same time as the cambelt — same labour cost.','url'=>'/water-pump-replacement-manukau/','cta'=>'Water Pump →'],
-    ['icon'=>csh_mono('TS'),'title'=>'Thermostat Replacement','desc'=>'A stuck-open or stuck-closed thermostat causes overheating or poor fuel economy. Inexpensive to replace — expensive to ignore.','url'=>'/thermostat-replacement-manukau/','cta'=>'Thermostat →'],
+    ['icon'=>csh_mono('WP'),'title'=>'Water Pump Replacement','desc'=>'A failed water pump stops coolant circulation and causes overheating. Usually replaced at the same time as the cambelt, for the same labour cost.','url'=>'/water-pump-replacement-manukau/','cta'=>'Water Pump →'],
+    ['icon'=>csh_mono('TS'),'title'=>'Thermostat Replacement','desc'=>'A stuck-open or stuck-closed thermostat causes overheating or poor fuel economy. Cheap to replace, expensive to ignore.','url'=>'/thermostat-replacement-manukau/','cta'=>'Thermostat →'],
     ['icon'=>csh_mono('WL'),'title'=>'Coolant Leak Repair','desc'=>'Coolant leaks from hoses, the radiator, water pump, or head gasket. We locate the source and repair it before the engine overheats.','url'=>'/coolant-leak-repair-manukau/','cta'=>'Leak Repair →'],
     ['icon'=>csh_mono('WH'),'title'=>'Radiator Hose Replacement','desc'=>'Radiator hoses split and crack with age and heat cycling. A burst hose causes immediate coolant loss and overheating. Upper and lower hoses replaced.','url'=>'/radiator-hoses-manukau/','cta'=>'Hose Replacement →'],
-    ['icon'=>csh_mono('HC'),'title'=>'Heater Core Repair','desc'=>'A leaking heater core causes wet carpets, fogged windows, and a sweet coolant smell inside the cabin. A significant job — done properly the first time.','url'=>'/heater-core-repair-manukau/','cta'=>'Heater Core →'],
-    ['icon'=>csh_mono('OE'),'title'=>'Overheating Engine','desc'=>'Engine running hot or temperature warning light on? Pull over immediately. We diagnose the cause — do not drive an overheating engine.','url'=>'/overheating-engine-manukau/','cta'=>'Overheating →'],
+    ['icon'=>csh_mono('HC'),'title'=>'Heater Core Repair','desc'=>'A leaking heater core causes wet carpets, fogged windows, and a sweet coolant smell inside the cabin. A big job, done properly the first time.','url'=>'/heater-core-repair-manukau/','cta'=>'Heater Core →'],
+    ['icon'=>csh_mono('OE'),'title'=>'Overheating Engine','desc'=>'Engine running hot or temperature warning light on? Pull over immediately. We diagnose the cause. Do not drive an overheating engine.','url'=>'/overheating-engine-manukau/','cta'=>'Overheating →'],
     ['icon'=>csh_mono('CT'),'title'=>'Coolant Temperature Sensor','desc'=>'A faulty coolant temp sensor causes incorrect gauge readings, poor fuel economy, and engine management faults. Diagnosed and replaced.','url'=>'/coolant-temperature-sensor-manukau/','cta'=>'Sensor →'],
-    ['icon'=>csh_mono('HG'),'title'=>'Head Gasket Repair','desc'=>'A blown head gasket is the result of sustained overheating. White smoke, milky oil, or unexplained coolant loss — get it diagnosed before it gets worse.','url'=>'/head-gasket-repair-manukau/','cta'=>'Head Gasket →'],
+    ['icon'=>csh_mono('HG'),'title'=>'Head Gasket Repair','desc'=>'A blown head gasket is the result of sustained overheating. White smoke, milky oil, or unexplained coolant loss? Get it diagnosed before it gets worse.','url'=>'/head-gasket-repair-manukau/','cta'=>'Head Gasket →'],
 ];
 
 // ── Why points ───────────────────────────────────────────────────────────────
 $why_points = [
-    'Diagnose first — we find the actual fault before recommending any work',
-    'Estimate before we start — no surprise invoices',
+    'Diagnose first: we find the actual fault before recommending any work',
+    'Estimate before we start, no surprise invoices',
     'Coolant flush recommended every 2 years or per manufacturer spec',
-    'All makes and models — Japanese, Korean, European',
-    $customers . ' customers serviced — South Auckland\'s largest independent workshop',
-    'MTA Assured workshop — Manukau since ' . $established,
-    'NZTA Authorised — ' . $ms_number,
-    'Finance available — Afterpay, Q Card, GEM, Aotea',
+    'All makes and models: Japanese, Korean, European',
+    $customers . ' customers serviced at South Auckland\'s largest independent workshop',
+    'MTA Assured workshop, Manukau since ' . $established,
+    'NZTA Authorised: ' . $ms_number,
+    'Finance available: Afterpay, Q Card, GEM, Aotea',
 ];
 // ── FAQ from shared library ──────────────────────────────────────────────────
 $faqs = [
@@ -315,7 +315,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div class="csh-w">
     <div class="csh-hero__inner">
       <div>
-        <span class="csh-eye csh-eye--yellow">Cooling System — Manukau</span>
+        <span class="csh-eye csh-eye--yellow">Cooling System · Manukau</span>
         <h1>Cooling System<br><span>Repairs &amp; Service</span></h1>
         <p class="csh-hero__sub">Radiator repair, coolant flush, thermostat, water pump, hoses, heater core, and head gasket. Diagnosed properly, repaired in-house. <?php echo esc_html($years); ?> years of workshop experience in South Auckland.</p>
         <div class="csh-hero__signal">Diagnose first · Estimate before any work begins · All makes &amp; models</div>
@@ -345,27 +345,27 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── HOW YOUR COOLING SYSTEM WORKS ── White ──────────────────────────────── -->
 <section class="csh-section csh-section--white"><div class="csh-w">
   <span class="csh-eye csh-eye--dark">Understanding Your Vehicle</span>
-  <h2 class="csh-h2">How Your Cooling System Works — and Why It Matters</h2>
+  <h2 class="csh-h2">How Your Cooling System Works and Why It Matters</h2>
   <div class="csh-edu">
-    <p>Your engine generates enormous heat during combustion — temperatures inside the cylinders reach over 2,000°C. The cooling system's job is to remove that heat and maintain the engine at its optimal operating temperature, typically around 90–100°C. Without it, the engine would overheat and destroy itself within minutes.</p>
-    <p>Coolant — a mixture of water and antifreeze/corrosion inhibitor — circulates through passages in the engine block, absorbing heat. The water pump drives this circulation. The thermostat controls flow: when the engine is cold, it keeps coolant in the engine to warm up faster; when it reaches operating temperature, it opens and allows coolant to flow through the radiator where air passing over the fins cools it down. The cooled fluid returns to the engine and the cycle repeats continuously.</p>
+    <p>Your engine generates enormous heat during combustion. Temperatures inside the cylinders reach over 2,000°C. The cooling system's job is to remove that heat and maintain the engine at its optimal operating temperature, typically around 90–100°C. Without it, the engine would overheat and destroy itself within minutes.</p>
+    <p>Coolant (a mixture of water and antifreeze/corrosion inhibitor) circulates through passages in the engine block, absorbing heat. The water pump drives this circulation. The thermostat controls flow: when the engine is cold, it keeps coolant in the engine to warm up faster; when it reaches operating temperature, it opens and allows coolant to flow through the radiator where air passing over the fins cools it down. The cooled fluid returns to the engine and the cycle repeats continuously.</p>
 
     <h3>Why Overheating Destroys Engines</h3>
-    <p>When the cooling system fails — a leak, a stuck thermostat, a failed water pump, a blocked radiator — the engine temperature rises rapidly. The cylinder head expands faster than the engine block because it is made of different material (usually aluminium on a cast iron block). This differential expansion warps the head and crushes the head gasket. Once the head gasket fails, coolant enters the combustion chambers and oil passages. Coolant in the oil destroys engine bearings. Oil in the coolant blocks the radiator. A thermostat replacement — typically <?php echo esc_html($cs_thermostat); ?> — ignored becomes a head gasket job that can run <?php echo esc_html($cs_headgasket); ?> or more. If the head is warped, machining typically adds <?php echo esc_html($cs_headmachine); ?> on top. If bearings are damaged, you are looking at an engine rebuild.</p>
-    <div class="csh-edu__alert"><p><strong>If your temperature warning light comes on, pull over immediately and turn the engine off.</strong> Do not continue driving "just to the next exit" or "home." Every minute of driving at elevated temperature increases the damage exponentially. Let the engine cool completely before checking the coolant level. Do not open the radiator cap while the engine is hot — pressurised coolant will spray out and cause serious burns.</p></div>
+    <p>When the cooling system fails (a leak, a stuck thermostat, a failed water pump, a blocked radiator), the engine temperature rises rapidly. The cylinder head expands faster than the engine block because it is made of different material (usually aluminium on a cast iron block). This differential expansion warps the head and crushes the head gasket. Once the head gasket fails, coolant enters the combustion chambers and oil passages. Coolant in the oil destroys engine bearings. Oil in the coolant blocks the radiator. Ignore a thermostat replacement (typically <?php echo esc_html($cs_thermostat); ?>) and it becomes a head gasket job that can run <?php echo esc_html($cs_headgasket); ?> or more. If the head is warped, machining typically adds <?php echo esc_html($cs_headmachine); ?> on top. If bearings are damaged, you are looking at an engine rebuild.</p>
+    <div class="csh-edu__alert"><p><strong>If your temperature warning light comes on, pull over immediately and turn the engine off.</strong> Do not continue driving "just to the next exit" or "home." Every minute of driving at elevated temperature increases the damage exponentially. Let the engine cool completely before checking the coolant level. Do not open the radiator cap while the engine is hot. Pressurised coolant will spray out and cause serious burns.</p></div>
 
     <h3>Coolant Is Not Just Water</h3>
-    <p>Modern coolant contains corrosion inhibitors that protect the aluminium and copper components inside your cooling system — the radiator, water pump, heater core, and engine block passages. Over time, these inhibitors break down and the coolant becomes acidic. Acidic coolant eats aluminium from the inside — you cannot see this happening until a radiator develops pinhole leaks, a water pump seal fails, or a heater core starts weeping inside the cabin. A coolant flush — typically <?php echo esc_html($cs_flush); ?> — every two years can prevent radiator replacements that start <?php echo esc_html($cs_radiator); ?> and heater core replacements <?php echo esc_html($cs_heatercore); ?> or more. It is one of the most cost-effective preventative maintenance items on the vehicle.</p>
+    <p>Modern coolant contains corrosion inhibitors that protect the aluminium and copper components inside your cooling system: the radiator, water pump, heater core, and engine block passages. Over time, these inhibitors break down and the coolant becomes acidic. Acidic coolant eats aluminium from the inside. You cannot see this happening until a radiator develops pinhole leaks, a water pump seal fails, or a heater core starts weeping inside the cabin. A coolant flush every two years (typically <?php echo esc_html($cs_flush); ?>) can prevent radiator replacements that start <?php echo esc_html($cs_radiator); ?> and heater core replacements <?php echo esc_html($cs_heatercore); ?> or more. It is one of the most cost-effective preventative maintenance items on the vehicle.</p>
 
     <h3>How One Failure Cascades</h3>
-    <p>Cooling system failures are interconnected. A small coolant leak drops the level. Low coolant reduces the system's ability to absorb heat. The engine runs hotter. Higher temperatures accelerate hose degradation. A weakened hose bursts. Now coolant loss is rapid. The engine overheats. The head gasket fails. Coolant enters the oil. Bearings are damaged. Each step in that chain was preventable — and each step was cheaper than the one that followed. This is why we diagnose the root cause, not just the symptom that brought the vehicle in.</p>
+    <p>Cooling system failures are interconnected. A small coolant leak drops the level. Low coolant reduces the system's ability to absorb heat. The engine runs hotter. Higher temperatures accelerate hose degradation. A weakened hose bursts. Now coolant loss is rapid. The engine overheats. The head gasket fails. Coolant enters the oil. Bearings are damaged. Each step in that chain was preventable, and each step was cheaper than the one that followed. This is why we diagnose the root cause, not just the symptom that brought the vehicle in.</p>
   </div>
 </div></section>
 
 <!-- ── SERVICES ── Grey ────────────────────────────────────────────────────── -->
 <section class="csh-section csh-section--grey"><div class="csh-w">
   <span class="csh-eye csh-eye--dark">Our Services</span>
-  <h2 class="csh-h2">Cooling System Services — All In-House</h2>
+  <h2 class="csh-h2">Cooling System Services, All In-House</h2>
   <p class="csh-lead">Everything done at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a>. Diagnose first, estimate before we start.</p>
   <div class="csh-svc-grid"><?php foreach ($services as $svc): ?>
     <a href="<?php echo esc_url($site_url . $svc['url']); ?>" class="csh-svc-card"><?php echo $svc['icon']; ?><div class="csh-svc-card__title"><?php echo esc_html($svc['title']); ?></div><div class="csh-svc-card__desc"><?php echo esc_html($svc['desc']); ?></div><span class="csh-svc-card__link"><?php echo $svc['cta']; ?></span></a>
@@ -374,7 +374,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <!-- ── FINANCE STRIP ────────────────────────────────────────────────────────── -->
 <div class="csh-finance"><div class="csh-finance__inner">
-  <div class="csh-finance__text"><strong>Finance available</strong> — don't delay a cooling system repair because of cost.</div>
+  <div class="csh-finance__text"><strong>Finance available.</strong> Don't delay a cooling system repair because of cost.</div>
   <div class="csh-finance__logos"><?php foreach ($finance as $f): ?><span class="csh-fin"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
   <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>" class="csh-finance__link">View finance options →</a>
 </div></div>
@@ -400,12 +400,12 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
   <div>
     <span class="csh-eye csh-eye--yellow">Book or Enquire</span>
     <h2 class="csh-h2 csh-h2--white">Enquire About Cooling System <span style="color:var(--taas-yellow);">Service</span></h2>
-    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us what symptoms you are noticing — overheating, coolant loss, warning light, wet carpet, sweet smell — and your vehicle make and model. We will advise on next steps.</p>
-    <ul class="csh-enquiry__list"><?php foreach (['Diagnose first — find the actual fault','Written estimate before any work begins','All makes and models — including European','Finance available — pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
+    <p style="font-size:16px;font-weight:300;color:#aaa;line-height:1.75;margin-bottom:20px;">Tell us what symptoms you are noticing (overheating, coolant loss, warning light, wet carpet, sweet smell) and your vehicle make and model. We will advise on next steps.</p>
+    <ul class="csh-enquiry__list"><?php foreach (['Diagnose first to find the actual fault','Written estimate before any work begins','All makes and models, including European','Finance available to pay over time'] as $ck): ?><li><span>✓</span><?php echo esc_html($ck); ?></li><?php endforeach; ?></ul>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="csh-enquiry__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="csh-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener">139 Cavendish Drive, Manukau</a><br><?php echo esc_html($hours); ?> · <?php echo esc_html($phone_local); ?></div>
     <div class="csh-enquiry__badges"><?php foreach ($finance as $f): ?><span class="csh-enquiry__badge"><?php if (!empty($f['logo'])): ?><img src="<?php echo esc_url($f['logo']); ?>" alt="<?php echo esc_attr($f['name']); ?>"><?php else: echo esc_html($f['name']); endif; ?></span><?php endforeach; ?></div>
-    <div class="csh-enquiry__note"><strong>Estimate before we start.</strong> We confirm the cost before any work begins — no surprise invoices. <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Finance options →</a></div>
+    <div class="csh-enquiry__note"><strong>Estimate before we start.</strong> We confirm the cost before any work begins. No surprise invoices. <a href="<?php echo esc_url($site_url . '/finance-options/'); ?>">Finance options →</a></div>
   </div>
   <div class="csh-enquiry__form">
     <div class="csh-enquiry__form-title">Send Us Your Details</div>
@@ -441,7 +441,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <!-- ── CLOSING CTA ── Grey ─────────────────────────────────────────────────── -->
 <section class="csh-section csh-section--grey"><div class="csh-w">
   <span class="csh-eye csh-eye--dark">South Auckland</span>
-  <h2 class="csh-h2">Cooling System Repairs — Manukau</h2>
+  <h2 class="csh-h2">Cooling System Repairs in Manukau</h2>
   <p class="csh-lead" style="margin-bottom:0;">Serving Papatoetoe, Māngere, Ōtāhuhu, Wiri, Ōtara, Flat Bush, Manurewa, Takanini, Papakura, Botany and all of South Auckland from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow2);font-weight:600;">139 Cavendish Drive, Manukau</a>.</p>
   <div class="csh-close">
     <div class="csh-close__text">Don't ignore an overheating engine.<span>Open <?php echo esc_html($hours); ?> · Sat &amp; Sun closed</span></div>

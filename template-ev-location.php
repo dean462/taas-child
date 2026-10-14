@@ -57,19 +57,19 @@ $ev_services = [
 // ── FAQs ─────────────────────────────────────────────────────────────────────
 $faqs = [
     ['q' => 'Do you service electric and hybrid vehicles from ' . $suburb_name . '?',
-     'a' => 'Yes. Tony Allen Auto Service at 139 Cavendish Drive, Manukau is ' . ($distance_note ? $distance_note . ' from ' . $suburb_name : 'easily accessible from ' . $suburb_name) . '. We service all EV and hybrid types — BEV, HEV, PHEV, and MHEV — all makes and models.'],
+     'a' => 'Yes. Tony Allen Auto Service at 139 Cavendish Drive, Manukau is ' . ($distance_note ? $distance_note . ' from ' . $suburb_name : 'easily accessible from ' . $suburb_name) . '. We service all EV and hybrid types (BEV, HEV, PHEV and MHEV), all makes and models.'],
     ['q' => 'What EV and hybrid services do you offer?',
      'a' => 'Hybrid and EV scheduled servicing, HV battery health checks, regenerative brake service, EV tyre supply and fitting, diagnostic scanning, WOF inspections, and all standard maintenance. Two of our technicians are fully trained in high-voltage systems, and two more are in training.'],
     ['q' => 'Do I have to take my EV or hybrid to the dealer?',
-     'a' => 'No. Once the factory warranty has expired, an independent workshop with the right equipment and training is entirely appropriate — and significantly more affordable. We have the diagnostic equipment for the EV and hybrid models we service. Call ' . $phone_free . ' to discuss your vehicle.'],
+     'a' => 'No. Once the factory warranty has expired, an independent workshop with the right equipment and training is entirely appropriate, and a lot more affordable. We have the diagnostic equipment for the EV and hybrid models we service. Call ' . $phone_free . ' to discuss your vehicle.'],
     ['q' => 'Can you check my hybrid battery health?',
-     'a' => 'Yes. We read HV battery cell data — individual cell voltages, state of charge balance, and capacity versus original specification — on Toyota, Nissan, Honda, and more. We advise what the data means for your vehicle and whether any action is needed.'],
+     'a' => 'Yes. We read HV battery cell data (individual cell voltages, state of charge balance, and capacity versus original specification) on Toyota, Nissan, Honda, and more. We advise what the data means for your vehicle and whether any action is needed.'],
     ['q' => 'How much does EV or hybrid servicing cost?',
      'a' => 'EV and hybrid servicing is comparable in cost to standard vehicle servicing. No engine oil on a BEV means fewer consumables. Contact us with your make, model, and year for a specific estimate. We give you an estimate before starting work. Call ' . $phone_free . '.'],
     ['q' => 'Do you offer finance for EV and hybrid repairs?',
-     'a' => 'Yes — Afterpay, Q Card, GEM Finance, and Aotea Finance accepted.'],
+     'a' => 'Yes. Afterpay, Q Card, GEM Finance and Aotea Finance accepted.'],
     ['q' => 'What makes and models do you service?',
-     'a' => 'All makes — Toyota, Nissan, Honda, Mitsubishi, Hyundai, Kia, BYD, MG, GWM/Haval, Volvo, BMW, Volkswagen, and more. The NZ EV market is changing fast — call ' . $phone_free . ' with your vehicle details.'],
+     'a' => 'All makes: Toyota, Nissan, Honda, Mitsubishi, Hyundai, Kia, BYD, MG, GWM/Haval, Volvo, BMW, Volkswagen, and more. The NZ EV market is changing fast, so call ' . $phone_free . ' with your vehicle details.'],
     ['q' => 'Where is your workshop?',
      'a' => '139 Cavendish Drive, Manukau, Auckland 2104. ' . ($distance_note ? ucfirst($distance_note) . ' from ' . $suburb_name . '. ' : '') . 'Open ' . $hours . '. Call ' . $phone_free . ' to book.'],
     ['q' => 'Why does my EV still need brake fluid changes?',
@@ -83,7 +83,7 @@ $schema_faqs = [];
 foreach ($faqs as $faq) { $schema_faqs[] = ['@type'=>'Question','name'=>$faq['q'],'acceptedAnswer'=>['@type'=>'Answer','text'=>strip_tags($faq['a'])]]; }
 $schema = ['@context'=>'https://schema.org','@graph'=>[
     ['@type'=>'BreadcrumbList','itemListElement'=>[['@type'=>'ListItem','position'=>1,'name'=>'Home','item'=>$site_url],['@type'=>'ListItem','position'=>2,'name'=>'EV & Hybrid Servicing','item'=>$site_url.'/electric-hybrid-vehicle-servicing/'],['@type'=>'ListItem','position'=>3,'name'=>'EV & Hybrid Service ' . $suburb_name,'item'=>$page_url]]],
-    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Electric and hybrid vehicle servicing for ' . $suburb_name . ', South Auckland. BEV, HEV, PHEV, MHEV — all makes. MTA Assured. NZTA Authorised. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'areaServed'=>$suburb_name,'sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'MTA New Zealand']],
+    ['@type'=>['AutoRepair','LocalBusiness'],'@id'=>$site_url.'/#organization','name'=>'Tony Allen Auto Service','url'=>$site_url,'description'=>'Electric and hybrid vehicle servicing for ' . $suburb_name . ', South Auckland. BEV, HEV, PHEV, MHEV, all makes. MTA Assured. NZTA Authorised. Established '.$established.'.','telephone'=>[$phone_free,$phone_local],'email'=>$email,'foundingDate'=>'1985-10','address'=>['@type'=>'PostalAddress','streetAddress'=>'139 Cavendish Drive','addressLocality'=>'Manukau','addressRegion'=>'Auckland','postalCode'=>'2104','addressCountry'=>'NZ'],'geo'=>['@type'=>'GeoCoordinates','latitude'=>-36.9936,'longitude'=>174.8671],'openingHoursSpecification'=>[['@type'=>'OpeningHoursSpecification','dayOfWeek'=>['Monday','Tuesday','Wednesday','Thursday','Friday'],'opens'=>'07:30','closes'=>'17:00']],'aggregateRating'=>['@type'=>'AggregateRating','ratingValue'=>$rating,'reviewCount'=>preg_replace('/\D+/','',$reviews),'bestRating'=>'5'],'areaServed'=>$suburb_name,'sameAs'=>['https://www.facebook.com/tonyallenautoservice/','https://www.instagram.com/tonyallenautoservice/','https://www.linkedin.com/company/7059060'],'memberOf'=>['@type'=>'Organization','name'=>'MTA New Zealand']],
     ['@type'=>'FAQPage','mainEntity'=>$schema_faqs],
     ['@type'=>'SpeakableSpecification','cssSelector'=>['.evl-hero__sub','.evl-faq__a:first-of-type']],
 ]];
@@ -155,9 +155,9 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="evl-hero"><div class="evl-w">
   <nav style="font-size:13px;color:#555;margin-bottom:20px;" aria-label="Breadcrumb"><a href="<?php echo esc_url($site_url); ?>" style="color:#555;text-decoration:none;">Home</a><span style="margin:0 6px;">›</span><a href="<?php echo esc_url($site_url.'/electric-hybrid-vehicle-servicing/'); ?>" style="color:#555;text-decoration:none;">EV &amp; Hybrid</a><span style="margin:0 6px;">›</span><span style="color:#888;"><?php echo esc_html($suburb_name); ?></span></nav>
-  <span class="evl-eye evl-eye--green">EV &amp; Hybrid — <?php echo esc_html($suburb_name); ?></span>
+  <span class="evl-eye evl-eye--green">EV &amp; Hybrid · <?php echo esc_html($suburb_name); ?></span>
   <h1>EV &amp; Hybrid Servicing<br><span><?php echo esc_html($suburb_name); ?></span></h1>
-  <p class="evl-hero__sub">Electric and hybrid vehicle servicing for <?php echo esc_html($suburb_name); ?> drivers. All makes and models — BEV, HEV, PHEV, MHEV. HV-trained technicians. <?php echo ($distance_note ? esc_html(ucfirst($distance_note)) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?><?php echo esc_html($customers); ?> customers serviced.</p>
+  <p class="evl-hero__sub">Electric and hybrid vehicle servicing for <?php echo esc_html($suburb_name); ?> drivers. All makes and models: BEV, HEV, PHEV, MHEV. HV-trained technicians. <?php echo ($distance_note ? esc_html(ucfirst($distance_note)) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?><?php echo esc_html($customers); ?> customers serviced.</p>
   <div class="evl-hero__ctas">
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="evl-btn evl-btn--primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>Call <?php echo esc_html($phone_free); ?></a>
     <a href="#evl-enquire" class="evl-btn evl-btn--outline">Book Online</a>
@@ -167,11 +167,11 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <div class="evl-trust" role="list"><div class="evl-trust__inner"><div class="evl-trust__item" role="listitem">MTA Assured</div><div class="evl-trust__item" role="listitem">NZTA Authorised</div><div class="evl-trust__item" role="listitem">HV-Trained Technicians</div><div class="evl-trust__item" role="listitem">All EV Types</div><div class="evl-trust__item" role="listitem"><?php echo esc_html($rating); ?>★ · <?php echo esc_html($reviews); ?> Reviews</div></div></div>
 
 <section class="evl-section evl-section--white"><div class="evl-w">
-  <span class="evl-eye evl-eye--dark">EV &amp; Hybrid — <?php echo esc_html($suburb_name); ?></span>
+  <span class="evl-eye evl-eye--dark">EV &amp; Hybrid · <?php echo esc_html($suburb_name); ?></span>
   <h2 class="evl-h2">EV &amp; Hybrid Servicing for <?php echo esc_html($suburb_name); ?> Drivers</h2>
   <div class="evl-content">
-    <p>Tony Allen Auto Service at 139 Cavendish Drive, Manukau provides electric and hybrid vehicle servicing for <?php echo esc_html($suburb_name); ?> and surrounding areas. <?php echo ($distance_note ? 'We are ' . esc_html($distance_note) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?>Two of our technicians are completing EV-specific qualification training with high-voltage system access — covering HV battery health assessments, inverter and drive motor diagnosis, and regenerative brake service.</p>
-    <p>We service all EV and hybrid types: BEV (battery electric), HEV (full hybrid), PHEV (plug-in hybrid), and MHEV (mild hybrid). All makes — Japanese, Korean, European, and Chinese. You do not need to use the dealer once your factory warranty has expired. We carry the same diagnostic tools and follow the same service procedures — at a significantly lower cost.</p>
+    <p>Tony Allen Auto Service at 139 Cavendish Drive, Manukau provides electric and hybrid vehicle servicing for <?php echo esc_html($suburb_name); ?> and surrounding areas. <?php echo ($distance_note ? 'We are ' . esc_html($distance_note) . ' from ' . esc_html($suburb_name) . '. ' : ''); ?>Two of our technicians are completing EV-specific qualification training with high-voltage system access, covering HV battery health assessments, inverter and drive motor diagnosis, and regenerative brake service.</p>
+    <p>We service all EV and hybrid types: BEV (battery electric), HEV (full hybrid), PHEV (plug-in hybrid), and MHEV (mild hybrid). All makes: Japanese, Korean, European and Chinese. You do not need to use the dealer once your factory warranty has expired. We carry the same diagnostic tools and follow the same service procedures, at a much lower cost.</p>
     <p>For detailed information on our EV and hybrid capability, vehicle coverage, and the dealer vs independent comparison, visit our <a href="<?php echo esc_url($site_url.'/electric-hybrid-vehicle-servicing/'); ?>" style="color:var(--ev-green);font-weight:600;">EV &amp; hybrid servicing hub page</a>.</p>
   </div>
 </div></section>
@@ -185,7 +185,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 <section id="evl-enquire" class="evl-section evl-section--dark"><div class="evl-w"><div class="evl-enquiry">
   <div>
     <span class="evl-eye evl-eye--green">Book Today</span>
-    <h2 class="evl-h2 evl-h2--white">EV &amp; Hybrid Service — <span style="color:var(--ev-green);">Enquire Now</span></h2>
+    <h2 class="evl-h2 evl-h2--white">EV &amp; Hybrid Service: <span style="color:var(--ev-green);">Enquire Now</span></h2>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" style="display:block;font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--taas-yellow);text-decoration:none;margin:16px 0 6px;"><?php echo esc_html($phone_free); ?></a>
     <div style="font-size:15px;color:#aaa;line-height:1.7;"><strong style="color:var(--taas-white);"><?php echo esc_html($phone_local); ?></strong><br><?php echo esc_html($hours); ?><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow);font-weight:600;">139 Cavendish Drive, Manukau</a></div>
   </div>
@@ -211,7 +211,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
 <section class="evl-section evl-section--grey"><div class="evl-w">
   <span class="evl-eye evl-eye--dark">Common Questions</span>
-  <h2 class="evl-h2">EV &amp; Hybrid Servicing <?php echo esc_html($suburb_name); ?> — FAQ</h2>
+  <h2 class="evl-h2">EV &amp; Hybrid Servicing <?php echo esc_html($suburb_name); ?> FAQ</h2>
   <div class="evl-faq__list"><?php foreach ($faqs as $i => $faq): ?>
     <div class="evl-faq__item<?php echo $i===0?' evl-faq__item--open':''; ?>"><button class="evl-faq__q" aria-expanded="<?php echo $i===0?'true':'false'; ?>" aria-controls="evl-a-<?php echo $i; ?>"><?php echo esc_html($faq['q']); ?></button><div id="evl-a-<?php echo $i; ?>" class="evl-faq__a"><?php echo wp_kses_post($faq['a']); ?></div></div>
   <?php endforeach; ?></div>

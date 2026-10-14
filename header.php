@@ -44,7 +44,7 @@
   <div class="taas-header__inner">
 
     <!-- Logo -->
-    <a href="<?php echo esc_url(home_url('/')); ?>" class="taas-logo" aria-label="Tony Allen Auto Service — Home">
+    <a href="<?php echo esc_url(home_url('/')); ?>" class="taas-logo" aria-label="Tony Allen Auto Service home page">
       <span class="taas-logo__top">Tony <span>Allen</span></span>
       <span class="taas-logo__bot">Auto Service Ltd &nbsp;·&nbsp; Est. 1985</span>
     </a>

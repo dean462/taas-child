@@ -32,8 +32,8 @@ $maps_url        = 'https://www.google.com/maps/place/Tony+Allen+Auto+Service,+1
 
 // ── Content ──────────────────────────────────────────────────────────────────
 $symptoms = [
-    'Car pulling left or right — steering wheel off-centre',
-    'Uneven or rapid tyre wear — one edge worn before the other',
+    'Car pulling left or right, steering wheel off-centre',
+    'Uneven or rapid tyre wear, one edge worn before the other',
     'Steering feels loose, wandering, or vague',
     'Vehicle drifts on straight, flat roads',
     'New tyres wearing out too fast',
@@ -42,29 +42,29 @@ $symptoms = [
 ];
 
 $process_steps = [
-    ['title' => 'Suspension & Tyre Check', 'desc' => 'Before any alignment, we inspect suspension components, tyre condition, and tyre pressures. Worn ball joints or damaged tyres make alignment impossible to hold — we find these first.'],
-    ['title' => '3D Laser Four-Wheel Alignment', 'desc' => 'We use a 3D laser alignment system to measure all four wheels simultaneously — camber, caster, and toe on every corner. Print-out before and after so you can see exactly what was adjusted.'],
-    ['title' => 'Adjustment to Manufacturer Spec', 'desc' => "All four wheels are adjusted to the vehicle manufacturer's specified tolerances. Not a best-guess — the actual values your vehicle was designed for, pulled from the alignment system database."],
+    ['title' => 'Suspension & Tyre Check', 'desc' => 'Before any alignment, we inspect suspension components, tyre condition, and tyre pressures. Worn ball joints or damaged tyres make alignment impossible to hold. We find these first.'],
+    ['title' => '3D Laser Four-Wheel Alignment', 'desc' => 'We use a 3D laser alignment system to measure all four wheels at once: camber, caster and toe on every corner. Print-out before and after so you can see exactly what was adjusted.'],
+    ['title' => 'Adjustment to Manufacturer Spec', 'desc' => "All four wheels are adjusted to the vehicle manufacturer's specified tolerances. Not a best guess. The actual values your vehicle was designed for, pulled from the alignment system database."],
     ['title' => 'Test Drive & Confirmation', 'desc' => 'We road test after alignment to confirm straight tracking and centred steering. If anything is still off, we recheck before returning the vehicle.'],
 ];
 
 $why_points = [
-    'Tyres last significantly longer with correct alignment — typically 20–30% more life',
-    'Fuel economy improves — misaligned wheels create rolling resistance the engine fights constantly',
-    'Safer handling — correct geometry means the car responds predictably in emergency manoeuvres',
-    'Protects suspension — misalignment puts stress on ball joints, tie rods, and wheel bearings',
+    'Tyres last longer with correct alignment, typically 20–30% more life',
+    'Better fuel economy. Misaligned wheels create rolling resistance the engine fights constantly',
+    'Safer handling. Correct geometry means the car responds predictably in emergency manoeuvres',
+    'Protects suspension. Misalignment puts stress on ball joints, tie rods, and wheel bearings',
     'A wheel knocked out of alignment by a pothole can cause tyre wear in weeks, not months',
 ];
 
 $faqs = [
     ['q' => 'How much does a wheel alignment cost in Manukau?', 'a' => 'Four-wheel alignment ' . $alignment_price . '. That covers the full 3D laser alignment check, suspension inspection, tyre pressure reset, and a before-and-after print-out. We give you an estimate before we start.'],
-    ['q' => 'What causes a wheel to go out of alignment?', 'a' => "Potholes, kerb strikes, and general road wear over time. Suspension work — replacing a control arm, ball joint, or strut — can also shift alignment angles and should always be followed by a check. Even normal driving gradually shifts alignment, which is why the 12-month or 20,000 km interval exists."],
-    ['q' => 'How often should I get a wheel alignment?', 'a' => "Every 12 months or 20,000 km — whichever comes first. Also immediately after any significant pothole, kerb strike, or suspension work. South Auckland roads can knock alignment out faster than the annual schedule suggests."],
-    ['q' => 'Can bad wheel alignment damage my car?', 'a' => 'Yes. Misalignment causes uneven tyre wear, increases fuel consumption, and puts ongoing stress on suspension components including ball joints, tie rods, and wheel bearings. Alignment is one of the cheapest preventative maintenance items — compared to the damage it prevents.'],
-    ['q' => 'Do you do wheel alignment on 4WDs and SUVs?', 'a' => 'Yes — we align all vehicle types including cars, SUVs, 4WDs, utes, and vans. Some 4WD vehicles have additional alignment points. Our 3D laser alignment system covers the full range.'],
-    ['q' => 'My new tyres are already wearing unevenly — what is wrong?', 'a' => 'New tyres wearing unevenly almost always means the alignment was not checked when the tyres were fitted. Uneven wear within the first few thousand kilometres is a clear sign the geometry is off. Bring the vehicle in as soon as you notice it — the sooner we correct it, the more tyre life you save.'],
+    ['q' => 'What causes a wheel to go out of alignment?', 'a' => "Potholes, kerb strikes, and general road wear over time. Suspension work (replacing a control arm, ball joint or strut) can also shift alignment angles and should always be followed by a check. Even normal driving gradually shifts alignment, which is why the 12-month or 20,000 km interval exists."],
+    ['q' => 'How often should I get a wheel alignment?', 'a' => "Every 12 months or 20,000 km, whichever comes first. Also immediately after any significant pothole, kerb strike, or suspension work. South Auckland roads can knock alignment out faster than the annual schedule suggests."],
+    ['q' => 'Can bad wheel alignment damage my car?', 'a' => 'Yes. Misalignment causes uneven tyre wear, increases fuel consumption, and puts ongoing stress on suspension components including ball joints, tie rods, and wheel bearings. Alignment is one of the cheapest preventative maintenance items compared to the damage it prevents.'],
+    ['q' => 'Do you do wheel alignment on 4WDs and SUVs?', 'a' => 'Yes. We align all vehicle types including cars, SUVs, 4WDs, utes, and vans. Some 4WD vehicles have additional alignment points. Our 3D laser alignment system covers the full range.'],
+    ['q' => 'My new tyres are already wearing unevenly. What is wrong?', 'a' => 'New tyres wearing unevenly almost always means the alignment was not checked when the tyres were fitted. Uneven wear within the first few thousand kilometres is a clear sign the geometry is off. Bring the vehicle in as soon as you notice it. The sooner we correct it, the more tyre life you save.'],
     ['q' => 'What does a wheel alignment print-out show?', 'a' => "Our 3D laser system produces a before-and-after print-out showing camber, caster, and toe on all four corners, compared against the manufacturer's range. Green values are within spec, red values were out. We always provide this print-out."],
-    ['q' => 'Is wheel alignment the same as wheel balancing?', 'a' => 'No. Alignment adjusts the angles of the wheels relative to the vehicle — camber, caster, and toe. Balancing distributes weight evenly around the wheel so it spins without vibration. Both are important but they address different problems. Alignment fixes pulling and uneven wear. Balancing fixes vibration at speed.'],
+    ['q' => 'Is wheel alignment the same as wheel balancing?', 'a' => 'No. Alignment adjusts the angles of the wheels relative to the vehicle: camber, caster and toe. Balancing distributes weight evenly around the wheel so it spins without vibration. Both are important but they address different problems. Alignment fixes pulling and uneven wear. Balancing fixes vibration at speed.'],
     ['q' => 'Do you check alignment when fitting new tyres?', 'a' => 'We recommend it every time and will advise you when the tyres are fitted. Fitting new tyres without alignment means any existing misalignment will immediately start wearing the new rubber unevenly.'],
     ['q' => 'Where is your alignment workshop?', 'a' => '139 Cavendish Drive, Manukau, Auckland 2104. Open ' . TAAS_HOURS . '. Call ' . TAAS_PHONE_FREE . ' to book. Dedicated alignment hoist on-site.'],
 ];
@@ -81,7 +81,7 @@ $schema = ['@context' => 'https://schema.org', '@graph' => [
         ['@type' => 'ListItem', 'position' => 3, 'name' => 'Wheel Alignment', 'item' => $page_url],
     ]],
     ['@type' => ['AutoRepair', 'LocalBusiness'],
-     'name' => 'Tony Allen Auto Service — Wheel Alignment',
+     'name' => 'Wheel Alignment at Tony Allen Auto Service',
      'url' => $page_url,
      'description' => 'Four-wheel 3D laser alignment in Manukau, South Auckland. Camber, caster and toe measured and adjusted to manufacturer spec. Before-and-after print-out included. ' . $alignment_price . '.',
      'telephone' => [TAAS_PHONE_LOCAL, TAAS_PHONE_FREE],
@@ -230,10 +230,10 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
 <section class="wa-hero"<?php if ($wa_hero_bg) echo ' style="' . esc_attr($wa_hero_bg) . '"'; ?>>
   <div class="wa-hero__inner">
     <div>
-      <span class="wa-hero__eyebrow">Tyre Centre — Manukau</span>
-      <h1>Wheel Alignment<br><span>Manukau — South Auckland</span></h1>
+      <span class="wa-hero__eyebrow">Tyre Centre · Manukau</span>
+      <h1>Wheel Alignment<br><span>Manukau, South Auckland</span></h1>
       <p class="wa-hero__price">Four-wheel alignment <?php echo esc_html($alignment_price); ?></p>
-      <p class="wa-hero__sub">Car pulling to one side? Tyres wearing unevenly? Steering off-centre? 3D laser four-wheel alignment at 139 Cavendish Drive — before-and-after print-out included. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
+      <p class="wa-hero__sub">Car pulling to one side? Tyres wearing unevenly? Steering off-centre? 3D laser four-wheel alignment at 139 Cavendish Drive, with a before-and-after print-out included. Serving <?php echo esc_html($customers); ?> customers since <?php echo esc_html($established); ?>.</p>
       <div class="wa-hero__ctas">
         <a href="#enquire" class="taas-btn taas-btn--primary">Book Alignment</a>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="taas-btn taas-btn--outline"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
@@ -242,7 +242,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
     <div class="wa-sidebar">
       <div class="wa-sidebar__title">What We Check</div>
       <ul class="wa-sidebar__list">
-        <li>Four-wheel alignment — all angles</li>
+        <li>Four-wheel alignment, all angles</li>
         <li>Camber, caster & toe</li>
         <li>Tyre pressure reset</li>
         <li>Suspension inspection</li>
@@ -271,7 +271,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
   <div class="wa-section__inner">
     <span class="wa-section__eyebrow">Warning Signs</span>
     <h2 class="wa-section__heading">Is Your Wheel Alignment Off?</h2>
-    <p class="wa-section__sub">Any one of these is worth getting checked — ignoring them costs tyre life and can accelerate suspension wear.</p>
+    <p class="wa-section__sub">Any one of these is worth getting checked. Ignoring them costs tyre life and can speed up suspension wear.</p>
     <div class="wa-symptoms">
       <?php foreach ($symptoms as $sym) : ?>
       <div class="wa-symptom"><?php echo esc_html($sym); ?></div>
@@ -284,7 +284,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
   <div class="wa-section__inner">
     <span class="wa-section__eyebrow">Our Process</span>
     <h2 class="wa-section__heading">How We Do Wheel Alignment</h2>
-    <p class="wa-section__sub">Measured, adjusted, confirmed — with a print-out before and after so you can see exactly what changed.</p>
+    <p class="wa-section__sub">Measured and adjusted, with a print-out before and after so you can see exactly what changed.</p>
     <div class="wa-process">
       <?php foreach ($process_steps as $step) : ?>
       <div class="wa-step">
@@ -302,7 +302,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
     <div class="wa-edu">
       <div>
         <h2 class="wa-section__heading">Why Correct Alignment Saves You Money</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:20px;">Wheel alignment is one of the lowest-cost preventative maintenance items on your vehicle — and one of the highest-value, because of what it prevents.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:var(--taas-mid,#666);line-height:1.7;margin-bottom:20px;">Wheel alignment is one of the lowest-cost preventative maintenance items on your vehicle, and one of the best value, because of what it prevents.</p>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
           <?php foreach ($why_points as $point) : ?>
           <li style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:15px;color:var(--taas-body,#333);padding-left:20px;position:relative;line-height:1.5;"><span style="position:absolute;left:0;color:var(--taas-yellow,#FFC800);font-weight:700;">✓</span><?php echo esc_html($point); ?></li>
@@ -322,7 +322,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
         </div>
         <div style="background:var(--taas-panel,#F7F7F5);border:1px solid var(--taas-border,#E8E8E4);border-radius:var(--taas-radius,6px);padding:24px;margin-top:16px;">
           <div style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;font-weight:700;color:var(--taas-black,#111);margin-bottom:8px;">Our Equipment</div>
-          <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;color:var(--taas-mid,#666);line-height:1.6;"><strong style="color:var(--taas-black,#111);">3D Laser Four-Wheel Alignment System</strong> — measures all four corners simultaneously with live readouts against manufacturer specifications. Covers the full vehicle range including cars, SUVs, 4WDs, utes, and vans.</p>
+          <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:14px;color:var(--taas-mid,#666);line-height:1.6;"><strong style="color:var(--taas-black,#111);">3D Laser Four-Wheel Alignment System</strong> measures all four corners at once with live readouts against manufacturer specifications. Covers the full vehicle range including cars, SUVs, 4WDs, utes, and vans.</p>
         </div>
       </div>
     </div>
@@ -346,7 +346,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
       <div>
         <span class="wa-section__eyebrow">Book or Enquire</span>
         <h2 class="wa-section__heading">Book a Wheel Alignment</h2>
-        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your vehicle make and model — we will confirm availability and book you in.</p>
+        <p style="font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your vehicle make and model. We will confirm availability and book you in.</p>
         <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="wa-enquiry__phone"><?php echo esc_html(TAAS_PHONE_FREE); ?></a>
         <div class="wa-enquiry__detail"><strong>Tony Allen Auto Service</strong><br><a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#aaa;text-decoration:underline;">139 Cavendish Drive, Manukau</a><br>Mon–Fri 7:30am–5:00pm · <?php echo esc_html(TAAS_PHONE_LOCAL); ?></div>
       </div>
@@ -392,7 +392,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
   <div class="wa-section__inner">
     <div class="wa-faq">
       <span class="wa-section__eyebrow">FAQ</span>
-      <h2 class="wa-section__heading">Wheel Alignment — Common Questions</h2>
+      <h2 class="wa-section__heading">Wheel Alignment: Common Questions</h2>
       <div class="wa-faq__list">
         <?php foreach ($faqs as $faq) : ?>
         <div class="wa-faq__item">

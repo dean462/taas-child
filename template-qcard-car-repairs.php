@@ -37,11 +37,11 @@ $years_trading = date('Y') - intval($established);
 $faqs = [
     [
         'q' => 'Can I use Q Card for any repair at Tony Allen Auto Service?',
-        'a' => 'Yes. Q Card is accepted across our full range of services — WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, clutch, and diagnostics. Your Q Card credit limit applies.',
+        'a' => 'Yes. Q Card is accepted across all our services: WOF, routine servicing, brakes, tyres, engine work, cambelt, suspension, clutch and diagnostics. Your Q Card credit limit applies.',
     ],
     [
         'q' => 'How do I get a Q Card?',
-        'a' => 'You can apply online at qcard.co.nz or apply in-store at Tony Allen Auto Service. You\'ll need NZ photo ID and proof of income. Approval is usually fast — you can use your card straight away once approved.',
+        'a' => 'You can apply online at qcard.co.nz or apply in-store at Tony Allen Auto Service. You\'ll need NZ photo ID and proof of income. Approval is usually fast and you can use your card straight away once approved.',
     ],
     [
         'q' => 'How much can I spend with Q Card?',
@@ -702,7 +702,7 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <section class="taas-hero" aria-label="Page hero">
     <div>
-        <span class="taas-hero__eyebrow">Manukau's Q Card Mechanic — Est. <?php echo esc_html($established); ?></span>
+        <span class="taas-hero__eyebrow">Manukau's Q Card Mechanic · Est. <?php echo esc_html($established); ?></span>
 
         <h1>Car Repairs &amp; Servicing.<br>
         <span>Pay with Q Card.</span></h1>
@@ -784,24 +784,24 @@ get_header();
             <div class="taas-step">
                 <div class="taas-step__num">01</div>
                 <div class="taas-step__title">Book Your Vehicle In</div>
-                <p class="taas-step__text">Call us on <?php echo esc_html($phone_free); ?> or book online. Let us know you'd like to pay with Afterpay.</p>
+                <p class="taas-step__text">Call us on <?php echo esc_html($phone_free); ?> or book online. Let us know you'd like to pay with Q Card.</p>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">02</div>
                 <div class="taas-step__title">We Complete the Work</div>
-                <p class="taas-step__text">Our technicians carry out the repair or service. We call before starting any additional work.</p>
+                <p class="taas-step__text">Our technicians carry out the repair or service. If anything changes once we're into the job, we'll contact you before going further.</p>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">03</div>
-                <div class="taas-step__title">Pay Your First Instalment</div>
-                <p class="taas-step__text">At checkout you pay 25% of the total. Afterpay pays us the full amount immediately.</p>
-                <span class="taas-step__badge">25% due today</span>
+                <div class="taas-step__title">Pay with Your Q Card</div>
+                <p class="taas-step__text">At collection, pay with your Q Card at our counter. Q Card pays us, and you repay Q Card over time.</p>
+                <span class="taas-step__badge">Pay at the counter</span>
             </div>
             <div class="taas-step">
                 <div class="taas-step__num">04</div>
-                <div class="taas-step__title">Three More Payments</div>
-                <p class="taas-step__text">The remaining three equal instalments are automatically deducted every two weeks — always interest-free.</p>
-                <span class="taas-step__badge">Every 2 weeks</span>
+                <div class="taas-step__title">Repay Over Time</div>
+                <p class="taas-step__text">Make your monthly repayments to Q Card under the current offer. See qcard.co.nz for terms and conditions.</p>
+                <span class="taas-step__badge">Monthly repayments</span>
             </div>
         </div>
     </div>
@@ -847,7 +847,7 @@ get_header();
 
                 <div class="taas-info-box" style="margin-top:24px;">
                     <strong>Apply In-Store</strong><br>
-                    You can apply for Q Card in-store at Tony Allen Auto Service. Ask our service desk — we'll walk you through the process. Approval is usually fast.
+                    You can apply for Q Card in-store at Tony Allen Auto Service. Ask our service desk and we'll walk you through the process. Approval is usually fast.
                 </div>
             </div>
 
@@ -858,7 +858,7 @@ get_header();
                     <li>See qcard.co.nz for current terms and conditions</li>
                     <li>Standard interest rate applies after the interest-free period ends</li>
                     <li>Minimum monthly repayment required during interest-free period</li>
-                    <li>Annual account fee applies — see qcard.co.nz for current fee</li>
+                    <li>Annual account fee applies. See qcard.co.nz for the current fee</li>
                     <li>No early repayment fees</li>
                 </ul>
 
@@ -901,7 +901,7 @@ get_header();
                     </tr>
                     <tr>
                         <td>Afterpay</td>
-                        <td><span class="taas-tick">✓ Always — 4 payments</span></td>
+                        <td><span class="taas-tick">✓ Always, 4 payments</span></td>
                         <td>4 × fortnightly</td>
                         <td>Varies</td>
                         <td>Afterpay app</td>
@@ -934,7 +934,7 @@ get_header();
 <section class="taas-section" aria-labelledby="faq-heading">
     <div class="taas-container">
         <span class="taas-label">Common Questions</span>
-        <h2 class="taas-section__title" id="faq-heading">Q Card at TAAS — <span>Frequently Asked</span></h2>
+        <h2 class="taas-section__title" id="faq-heading">Q Card at TAAS: <span>Frequently Asked</span></h2>
 
         <ul class="taas-faq" role="list" style="margin-top:32px;">
             <?php foreach ($faqs as $i => $faq): ?>
@@ -965,7 +965,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">Service Area</span>
         <h2 class="taas-section__title" id="area-heading">Serving South Auckland <span>&amp; Manukau</span></h2>
-        <p class="taas-section__sub">Tony Allen Auto Service is located at 139 Cavendish Drive, Manukau. We're the go-to Q Card mechanic for drivers across South Auckland.</p>
+        <p class="taas-section__sub">Tony Allen Auto Service is located at 139 Cavendish Drive, Manukau. Drivers from across South Auckland use their Q Card with us.</p>
 
         <ul class="taas-pills" aria-label="Areas served">
             <?php foreach ($service_areas as $area): ?>
@@ -1032,7 +1032,7 @@ get_header();
 
                     if ( $f_name && $f_phone && $f_msg ) {
                         $to      = $email; // enquiries@taas.co.nz
-                        $subject = 'Afterpay Finance Enquiry — ' . $f_name;
+                        $subject = 'Q Card Finance Enquiry: ' . $f_name;
                         $body    = "Name: {$f_name}\nPhone: {$f_phone}\nEmail: {$f_email}\nVehicle: {$f_vehicle}\n\nMessage:\n{$f_msg}\n\n(Sent via Q Card page)";
                         $headers = ['Content-Type: text/plain; charset=UTF-8'];
                         if ( $f_email ) {
@@ -1055,7 +1055,7 @@ get_header();
                     <div style="background:var(--taas-black);border:1px solid #2a2a2a;border-top:4px solid var(--taas-yellow);border-radius:var(--taas-radius);padding:36px;text-align:center;">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--taas-yellow)" stroke-width="2" style="margin-bottom:16px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         <h3 style="color:var(--taas-white);font-size:20px;margin-bottom:10px;">Message Sent</h3>
-                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks — we'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
+                        <p style="color:#bbb;font-size:16px;line-height:1.6;">Thanks. We'll be in touch shortly. If it's urgent, call us directly on <a href="tel:0800100876" style="color:var(--taas-yellow);"><?php echo esc_html($phone_free); ?></a>.</p>
                     </div>
                 <?php else: ?>
                 <!-- Native fallback form — used when TAAS_CF7_FINANCE is not set -->
@@ -1123,7 +1123,7 @@ get_header();
     <div class="taas-container">
         <span class="taas-label">Google Reviews</span>
         <h2 class="taas-section__title" id="reviews-heading">
-            Trusted by South Auckland Drivers — <span><?php echo esc_html($years_trading); ?> Years</span>
+            Trusted by South Auckland Drivers for <span><?php echo esc_html($years_trading); ?> Years</span>
         </h2>
 
         <div class="taas-reviews-header">
@@ -1198,7 +1198,7 @@ get_header();
 <div class="taas-footer-cta">
     <div class="taas-container">
         <h2>Ready to Book Your Repair?</h2>
-        <p>Use Q Card at Tony Allen Auto Service — interest-free terms under the current Q Card offer.</p>
+        <p>Use Q Card at Tony Allen Auto Service, with interest-free terms under the current Q Card offer.</p>
         <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
             <a href="#book" class="taas-btn taas-btn--primary">Book Now</a>
             <a href="tel:<?php echo esc_attr(preg_replace('/[^0-9+]/', '', $phone_free)); ?>" class="taas-btn taas-btn--outline">
@@ -1213,7 +1213,7 @@ get_header();
      ════════════════════════════════════════════════════════════════════ -->
 <div class="taas-disclaimer">
     <div class="taas-container">
-        Q Card is provided by Q Mastercard. Interest-free terms vary with the current Q Card offer. Standard interest rate applies after the promotional period ends. Minimum monthly repayments required. Annual fee applies. Terms and conditions apply — see qcard.co.nz for full details. Tony Allen Auto Service Ltd is an independent merchant.
+        Q Card is provided by Q Mastercard. Interest-free terms vary with the current Q Card offer. Standard interest rate applies after the promotional period ends. Minimum monthly repayments required. Annual fee applies. Terms and conditions apply. See qcard.co.nz for full details. Tony Allen Auto Service Ltd is an independent merchant.
         See <a href="https://www.qcard.co.nz/" target="_blank" rel="noopener noreferrer">qcard.co.nz</a> for full details.
     </div>
 </div>

@@ -31,12 +31,12 @@ $page_url      = get_permalink();
 $years_trading = date('Y') - intval($established);
 
 $process = [
-    ['step'=>'1','title'=>'Check Your Tyre Size','desc'=>'Your tyre size is on the sidewall of your current tyres — e.g. 205/55R16. Call us with this before coming in and we\'ll confirm stock. Most common sizes are available same-day.'],
+    ['step'=>'1','title'=>'Check Your Tyre Size','desc'=>'Your tyre size is on the sidewall of your current tyres, e.g. 205/55R16. Call us with this before coming in and we\'ll confirm stock. Most common sizes are available same-day.'],
     ['step'=>'2','title'=>'Remove & Inspect','desc'=>'Wheel removed from the vehicle. We inspect the rim for damage and the old tyre for any signs of sidewall damage, run-flat use, or puncture history before fitting the new tyre.'],
-    ['step'=>'3','title'=>'Fit New Tyre','desc'=>'Tyre mounted on the rim using our tyre changer. Tyre levers are not used — machine fitting only, which protects alloy rims from damage.'],
-    ['step'=>'4','title'=>'Balance','desc'=>'Every tyre we fit is balanced on our ER85 touchscreen balancer. Static, dynamic, and run-out measured in a single spin. Weights placed precisely. This step is included in the price — always.'],
-    ['step'=>'5','title'=>'Refit & Torque','desc'=>'Wheel refitted to manufacturer torque specification using a torque wrench — not air gun guesswork. Correct torque protects wheel studs and ensures the wheel stays on.'],
-    ['step'=>'6','title'=>'Tyre Pressure & Check','desc'=>'Tyre inflated to manufacturer specification. Final visual check before the vehicle is returned. If we notice anything else that needs attention, we\'ll tell you — no obligation.'],
+    ['step'=>'3','title'=>'Fit New Tyre','desc'=>'Tyre mounted on the rim using our tyre changer. Tyre levers are not used. Machine fitting only, which protects alloy rims from damage.'],
+    ['step'=>'4','title'=>'Balance','desc'=>'Every tyre we fit is balanced on our ER85 touchscreen balancer. Static, dynamic, and run-out measured in a single spin. Weights placed precisely. This step is always included in the price.'],
+    ['step'=>'5','title'=>'Refit & Torque','desc'=>'Wheel refitted to manufacturer torque specification using a torque wrench, not air gun guesswork. Correct torque protects the wheel studs and keeps the wheel on.'],
+    ['step'=>'6','title'=>'Tyre Pressure & Check','desc'=>'Tyre inflated to manufacturer specification. Final visual check before the vehicle is returned. If we notice anything else that needs attention, we\'ll tell you. No obligation.'],
 ];
 
 $vehicle_types = [
@@ -52,11 +52,11 @@ $vehicle_types = [
 $faqs = [
     [
         'q' => 'How long does tyre fitting take in Manukau?',
-        'a' => 'A single tyre is typically 20–30 minutes. A full set of four takes around 60–90 minutes including balancing all four wheels. Drop-in appointments are available in most cases — call ahead on ' . $phone_local . ' and we\'ll confirm wait times for the day.',
+        'a' => 'A single tyre is typically 20–30 minutes. A full set of four takes around 60–90 minutes including balancing all four wheels. Drop-in appointments are available in most cases. Call ahead on ' . $phone_local . ' and we\'ll confirm wait times for the day.',
     ],
     [
         'q' => 'Is wheel balancing included when you fit tyres?',
-        'a' => 'Yes — balancing is included with every tyre we fit. We do not fit tyres without balancing them. An unbalanced tyre causes steering wheel vibration and shortens tyre life. No extra charge.',
+        'a' => 'Yes. Balancing is included with every tyre we fit. We do not fit tyres without balancing them. An unbalanced tyre causes steering wheel vibration and shortens tyre life. No extra charge.',
     ],
     [
         'q' => 'Do I need to book for tyre fitting in Manukau?',
@@ -64,15 +64,15 @@ $faqs = [
     ],
     [
         'q' => 'Can I supply my own tyres and have you fit them?',
-        'a' => 'Yes — we fit customer-supplied tyres. Call ahead to confirm the tyre is appropriate for your vehicle and rim size. Balancing is still required and charged separately when fitting customer-supplied tyres.',
+        'a' => 'Yes, we fit customer-supplied tyres. Call ahead to confirm the tyre is appropriate for your vehicle and rim size. Balancing is still required and charged separately when fitting customer-supplied tyres.',
     ],
     [
         'q' => 'Do you fit tyres on alloy wheels?',
-        'a' => 'Yes — we use machine tyre fitting equipment, not tyre levers. Machine fitting is safer for alloy rims and reduces the risk of bead or wheel damage. Stick-on weights are used on alloy wheels where appropriate to avoid marking the rim.',
+        'a' => 'Yes. We use machine tyre fitting equipment, not tyre levers. Machine fitting is safer for alloy rims and reduces the risk of bead or wheel damage. Stick-on weights are used on alloy wheels where appropriate to avoid marking the rim.',
     ],
     [
         'q' => 'What happens if I need a wheel alignment after fitting tyres?',
-        'a' => 'We can do alignment on the same visit. We recommend it — new tyres wear unevenly if your alignment is out. Alignment is ' . $alignment_price . '. Let us know when you book and we\'ll schedule time for both.',
+        'a' => 'We can do alignment on the same visit. We recommend it, because new tyres wear unevenly if your alignment is out. Alignment is ' . $alignment_price . '. Let us know when you book and we\'ll schedule time for both.',
     ],
 ];
 
@@ -216,11 +216,11 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <span>Tyre Fitting Manukau</span>
             </nav>
             <div>
-                <span class="tf-ey tf-ey--yellow">Tyre Centre — Manukau</span>
+                <span class="tf-ey tf-ey--yellow">Tyre Centre · Manukau</span>
                 <h1 class="tf-h1">Tyre Fitting<br><em>Manukau</em></h1>
                 <p class="tf-hero__sub">
                     Supply and fit at 139 Cavendish Drive. All vehicle types. Budget through premium brands.
-                    Balancing included with every tyre — no exceptions.
+                    Balancing included with every tyre. No exceptions.
                 </p>
                 <div class="tf-hero__btns">
                     <a href="#tf-booking" class="tf-btn tf-btn--primary">Book Tyre Fitting</a>
@@ -228,7 +228,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 </div>
                 <div class="tf-hero__tags">
                     <span class="tf-hero__tag">✓ Balancing included</span>
-                    <span class="tf-hero__tag">✓ Machine fitting — no tyre levers</span>
+                    <span class="tf-hero__tag">✓ Machine fitting, no tyre levers</span>
                     <span class="tf-hero__tag">✓ Torqued to spec</span>
                     <span class="tf-hero__tag">✓ Alignment same visit</span>
                 </div>
@@ -236,8 +236,8 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div class="tf-hero__card">
                 <h3>Every Tyre Fit Includes</h3>
                 <ul>
-                    <li>Machine fitting — no lever damage</li>
-                    <li>ER85 wheel balance — included</li>
+                    <li>Machine fitting, no lever damage</li>
+                    <li>ER85 wheel balance included</li>
                     <li>Torqued to manufacturer spec</li>
                     <li>Tyre pressure set correctly</li>
                     <li>Visual inspection on removal</li>
@@ -259,7 +259,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
     <div class="tf-w">
         <div class="tf-trust__inner">
             <?php foreach ([
-                ['🔧','Machine Fitting — No Tyre Levers'],
+                ['🔧','Machine Fitting, No Tyre Levers'],
                 ['🔄','ER85 Balance Included'],
                 ['🏆','MTA Assured Workshop'],
                 ['⭐',$google_rating.' Stars · '.$google_reviews.' Reviews'],
@@ -281,8 +281,8 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
         <p class="tf-lead">Six steps. Every vehicle. Done right before it leaves the workshop.</p>
         <div class="tf-process__block">
             <div class="tf-process__header">
-                <h3>Tyre Fitting — Full Process</h3>
-                <p>From removal to refit — what we do on every tyre fit at 139 Cavendish Drive.</p>
+                <h3>Tyre Fitting: Full Process</h3>
+                <p>Removal to refit: what we do on every tyre fit at 139 Cavendish Drive.</p>
             </div>
             <div class="tf-steps">
                 <?php foreach ($process as $s): ?>
@@ -329,8 +329,8 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 </p>
                 <ul class="tf-includes__list">
                     <?php foreach ([
-                        'Machine tyre fitting — no lever marks on alloy rims',
-                        'ER85 wheel balance — static, dynamic, and run-out in one spin',
+                        'Machine tyre fitting, no lever marks on alloy rims',
+                        'ER85 wheel balance: static, dynamic and run-out in one spin',
                         'Tyre pressure set to manufacturer specification',
                         'Wheel torqued to spec with a torque wrench',
                         'Visual inspection of rim and old tyre on removal',
@@ -346,7 +346,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 <?php foreach ([
                     ['Wheel Alignment', $alignment_price, '/wheel-alignment-manukau/'],
                     ['Tyre Rotation','Rotate to even out wear pattern','/tyre-fitting-manukau/'],
-                    ['Puncture Repair','Assessed — repaired if safe','/tyre-centre/puncture-repair-manukau/'],
+                    ['Puncture Repair','Assessed, repaired if safe','/tyre-centre/puncture-repair-manukau/'],
                     ['WOF Inspection','NZTA-authorised from $80','/wof/'],
                 ] as $s): ?>
                 <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid #2a2a2a;">
@@ -383,7 +383,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
             <div>
                 <span class="tf-ey tf-ey--dark">Book Online</span>
                 <h2 class="tf-h2" id="tf-booking-h2">Book Tyre Fitting in Manukau</h2>
-                <p class="tf-lead">Tell us your tyre size and vehicle — we'll confirm stock and book you in. Or call <?php echo esc_html($phone_local); ?> directly.</p>
+                <p class="tf-lead">Tell us your tyre size and vehicle. We'll confirm stock and book you in. Or call <?php echo esc_html($phone_local); ?> directly.</p>
                 <ul class="tf-booking__checks">
                     <li><?php echo esc_html($hours); ?></li>
                     <li>139 Cavendish Drive, Manukau</li>
@@ -393,7 +393,7 @@ body,p,li,td,span,div,a,label,input,textarea,select,button{font-family:'Inter',A
                 </ul>
                 <div style="margin-top:24px;padding:18px;background:#F7F7F5;border-radius:6px;border:1px solid #E8E8E4;">
                     <p style="font-size:13px;font-weight:700;color:#111;margin-bottom:6px;">Finding your tyre size</p>
-                    <p style="font-size:13px;color:#666;line-height:1.6;">Check the sidewall of your current tyre — it's printed there e.g. <strong>205/55R16</strong>. Width / profile / rim diameter. Bring it in if you're not sure.</p>
+                    <p style="font-size:13px;color:#666;line-height:1.6;">Check the sidewall of your current tyre. It's printed there, e.g. <strong>205/55R16</strong>. Width / profile / rim diameter. Bring it in if you're not sure.</p>
                 </div>
             </div>
             <div class="tf-booking__form">

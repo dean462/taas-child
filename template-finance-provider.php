@@ -59,7 +59,7 @@ $provider_tagline= get_field('provider_tagline', $post_id) ?: get_post_meta($pos
 $suburb_name    = (get_field('suburb_name',    $post_id) ?: get_post_meta($post_id, 'suburb_name', true)) ?: 'Manukau';
 $provider_logo   = get_field('provider_logo_url', $post_id) ?: get_post_meta($post_id, 'provider_logo_url', true) ?: '';
 $provider_badge  = get_field('provider_badge',  $post_id) ?: get_post_meta($post_id, 'provider_badge', true) ?: 'Finance Option';
-$desc_1          = get_field('provider_desc_1', $post_id) ?: get_post_meta($post_id, 'provider_desc_1', true) ?: "Pay for your car repairs with {$provider_name} at Tony Allen Auto Service. We accept {$provider_name} across all services — WOF, servicing, brakes, tyres, engine work, and more.";
+$desc_1          = get_field('provider_desc_1', $post_id) ?: get_post_meta($post_id, 'provider_desc_1', true) ?: "Pay for your car repairs with {$provider_name} at Tony Allen Auto Service. We accept {$provider_name} across all services: WOF, servicing, brakes, tyres, engine work, and more.";
 $desc_2          = get_field('provider_desc_2', $post_id) ?: get_post_meta($post_id, 'provider_desc_2', true) ?: '';
 $steps_raw       = get_field('provider_steps',  $post_id) ?: get_post_meta($post_id, 'provider_steps', true) ?: '';
 $facts_raw       = get_field('provider_facts',  $post_id) ?: get_post_meta($post_id, 'provider_facts', true) ?: '';
@@ -147,17 +147,17 @@ if ($provider_id && isset($faq_map[$provider_id]) && !$is_location_page) {
 } else {
     // Generic fallback FAQs with provider_name interpolation
     $faqs = [
-        ['q'=>"Can I use {$provider_name} for any service at Tony Allen Auto Service?",'a'=>"{$provider_name} is available across all of our services — WOF, routine servicing, brakes, tyres, engine work, cambelts, suspension, clutch, diagnostics, and more. Check your {$provider_name} account for your available limit or spending cap before booking a larger repair."],
-        ['q'=>"Do I need a {$provider_name} account before I come in?",'a'=>"Yes. You'll need an active {$provider_name} account set up before paying. Check the {$provider_name} website or app for how to get started — it usually only takes a few minutes to apply."],
+        ['q'=>"Can I use {$provider_name} for any service at Tony Allen Auto Service?",'a'=>"{$provider_name} is available across all of our services: WOF, routine servicing, brakes, tyres, engine work, cambelts, suspension, clutch, diagnostics, and more. Check your {$provider_name} account for your available limit or spending cap before booking a larger repair."],
+        ['q'=>"Do I need a {$provider_name} account before I come in?",'a'=>"Yes. You'll need an active {$provider_name} account set up before paying. Check the {$provider_name} website or app for how to get started. It usually only takes a few minutes to apply."],
         ['q'=>"How do I pay with {$provider_name} when I collect my vehicle?",'a'=>"When you're ready to collect your vehicle, let our service desk know you're paying with {$provider_name}. We'll process the payment through our terminal. Make sure your account has sufficient limit or credit available."],
-        ['q'=>"Where is Tony Allen Auto Service?",'a'=>"We're at 139 Cavendish Drive, Manukau, Auckland 2104" . ($distance_text ? " — {$distance_text}" : "") . ". Open Monday to Friday, 7:30am to 5:00pm. We've been at the same address since 1985."],
-        ['q'=>"Can I use {$provider_name} for fleet or commercial vehicle repairs?",'a'=>"{$provider_name} is a consumer finance product. For commercial fleet servicing and account-based invoicing, speak with our team about TAAS Fleet arrangements — call {$phone_free} or email {$email}."],
-        ['q'=>"What accreditations does Tony Allen Auto Service hold?",'a'=>"We are MTA Assured through the Motor Trade Association quality assurance programme, and NZTA Authorised for Warrant of Fitness inspections — station number {$ms_number}. Family-owned and operating from 139 Cavendish Drive, Manukau since 1985."],
+        ['q'=>"Where is Tony Allen Auto Service?",'a'=>"We're at 139 Cavendish Drive, Manukau, Auckland 2104" . ($distance_text ? ", {$distance_text}" : "") . ". Open Monday to Friday, 7:30am to 5:00pm. We've been at the same address since 1985."],
+        ['q'=>"Can I use {$provider_name} for fleet or commercial vehicle repairs?",'a'=>"{$provider_name} is a consumer finance product. For commercial fleet servicing and account-based invoicing, speak with our team about TAAS Fleet arrangements. Call {$phone_free} or email {$email}."],
+        ['q'=>"What accreditations does Tony Allen Auto Service hold?",'a'=>"We are MTA Assured through the Motor Trade Association quality assurance programme, and NZTA Authorised for Warrant of Fitness inspections, station number {$ms_number}. Family-owned and operating from 139 Cavendish Drive, Manukau since 1985."],
         ['q'=>"Do you provide a written estimate before starting work?",'a'=>"Yes. We diagnose the issue, explain what's needed in plain English, and give you a clear written estimate. You decide whether to proceed. If anything changes once we're into the job, we'll contact you before going further. You can use {$provider_name} to spread the cost if the bill is larger than expected."],
         ['q'=>"What other finance options do you offer?",'a'=>"Alongside {$provider_name}, we accept Afterpay, Q Card, Gem Finance, and Aotea Finance. We also accept Visa, Mastercard, EFTPOS, and cash. Visit our finance options page to compare all four providers side by side."],
     ];
     if ($is_location_page) {
-        $faqs[] = ['q'=>"Where is the nearest mechanic to {$suburb_name} that accepts {$provider_name}?",'a'=>"Tony Allen Auto Service is at 139 Cavendish Drive, Manukau" . ($distance_text ? " — {$distance_text}" : "") . ". We accept {$provider_name} across all services. {$years} years in South Auckland, MTA Assured, NZTA Authorised. Call {$phone_free} to book."];
+        $faqs[] = ['q'=>"Where is the nearest mechanic to {$suburb_name} that accepts {$provider_name}?",'a'=>"Tony Allen Auto Service is at 139 Cavendish Drive, Manukau" . ($distance_text ? ", {$distance_text}" : "") . ". We accept {$provider_name} across all services. {$years} years in South Auckland, MTA Assured, NZTA Authorised. Call {$phone_free} to book."];
     }
 }
 
@@ -410,7 +410,7 @@ body.page-template-template-finance-provider { overflow-x:hidden; -webkit-text-s
           <?php echo esc_html($provider_name); ?> Car Repairs<br>
           <span><?php echo esc_html($suburb_name); ?></span>
         </h1>
-        <p class="fp-hero__sub"><?php echo esc_html($provider_tagline); ?><?php if ($distance_text): ?> Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a> — <?php echo esc_html($distance_text); ?>.<?php endif; ?></p>
+        <p class="fp-hero__sub"><?php echo esc_html($provider_tagline); ?><?php if ($distance_text): ?> Our workshop is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;text-decoration:underline;">139 Cavendish Drive, Manukau</a>, <?php echo esc_html($distance_text); ?>.<?php endif; ?></p>
         <div class="fp-hero__btns">
           <a href="<?php echo esc_url($cta_url); ?>" class="fp-btn fp-btn--primary" <?php echo (strpos($cta_url, 'http') === 0) ? 'target="_blank" rel="noopener"' : ''; ?>>
             <?php echo esc_html($cta_label); ?>
@@ -496,7 +496,7 @@ body.page-template-template-finance-provider { overflow-x:hidden; -webkit-text-s
       </div>
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:28px 24px;">
         <div style="font-size:15px;font-weight:700;color:#FFC800;margin-bottom:10px;"><?php echo esc_html($division_count); ?> Divisions</div>
-        <p style="font-size:14px;color:#999;line-height:1.65;"><?php echo esc_html(defined('TAAS_DIVISIONS') ? TAAS_DIVISIONS : 'Tony Allen Auto Service, Manukau Brake & Clutch, TAAS Tyre & WOF Centre, TAAS Auto Electrical & Air Conditioning, TAAS European, TAAS Fleet, Manukau Batteries'); ?> — all under one roof. One workshop, one invoice, one finance transaction.</p>
+        <p style="font-size:14px;color:#999;line-height:1.65;"><?php echo esc_html(defined('TAAS_DIVISIONS') ? TAAS_DIVISIONS : 'Tony Allen Auto Service, Manukau Brake & Clutch, TAAS Tyre & WOF Centre, TAAS Auto Electrical & Air Conditioning, TAAS European, TAAS Fleet, Manukau Batteries'); ?>, all under one roof. One workshop, one invoice, one finance transaction.</p>
       </div>
     </div>
   </div>
@@ -546,7 +546,7 @@ body.page-template-template-finance-provider { overflow-x:hidden; -webkit-text-s
       <div>
         <span class="fp-sec-eye fp-sec-eye--yellow">Accepted For</span>
         <h2 class="fp-sec-h2" id="fp-services-head"><?php echo esc_html($provider_name); ?> works across all TAAS services</h2>
-        <p class="fp-body">WOF, servicing, brakes, engine work — use <?php echo esc_html($provider_name); ?> to spread the cost of any repair.</p>
+        <p class="fp-body">WOF, servicing, brakes, engine work. Use <?php echo esc_html($provider_name); ?> to spread the cost of any repair.</p>
         <ul class="fp-checklist" style="margin-top:20px;">
           <?php foreach ($services as $svc): ?>
           <li><a href="<?php echo esc_url($site_url . $svc['url']); ?>"><?php echo esc_html($svc['label']); ?></a></li>
@@ -595,8 +595,8 @@ body.page-template-template-finance-provider { overflow-x:hidden; -webkit-text-s
   <div class="fp-w">
     <span class="fp-sec-eye fp-sec-eye--yellow"><?php echo esc_html($suburb_name); ?></span>
     <h2 class="fp-sec-h2" id="fp-location-head"><?php echo esc_html($provider_name); ?> Mechanic Near <?php echo esc_html($suburb_name); ?></h2>
-    <p class="fp-body">Tony Allen Auto Service is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;">139 Cavendish Drive, Manukau</a><?php echo $distance_text ? ' — ' . esc_html($distance_text) : ''; ?>. We have been serving <?php echo esc_html($suburb_name); ?> and surrounding South Auckland suburbs since <?php echo esc_html($established); ?>. MTA Assured, NZTA Authorised, and accepting <?php echo esc_html($provider_name); ?> across every service.</p>
-    <p class="fp-body">Whether your vehicle needs a WOF, a routine service, or a larger repair like a cambelt or clutch replacement — you can use <?php echo esc_html($provider_name); ?> to spread the cost. We provide a clear written estimate before any work begins. No pressure, no surprises.</p>
+    <p class="fp-body">Tony Allen Auto Service is at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#FFC800;font-weight:600;">139 Cavendish Drive, Manukau</a><?php echo $distance_text ? ', ' . esc_html($distance_text) : ''; ?>. We have been serving <?php echo esc_html($suburb_name); ?> and surrounding South Auckland suburbs since <?php echo esc_html($established); ?>. MTA Assured, NZTA Authorised, and accepting <?php echo esc_html($provider_name); ?> across every service.</p>
+    <p class="fp-body">If your vehicle needs a WOF, a routine service, or a larger repair like a cambelt or clutch replacement, you can use <?php echo esc_html($provider_name); ?> to spread the cost. We provide a clear written estimate before any work begins. No pressure, no surprises.</p>
 
     <?php if (!empty($area_served)): ?>
     <div style="margin-top:28px;">
@@ -628,7 +628,7 @@ body.page-template-template-finance-provider { overflow-x:hidden; -webkit-text-s
   <div class="fp-w" style="max-width:720px;">
     <span class="fp-sec-eye fp-sec-eye--dark">Not Sure?</span>
     <h2 class="fp-sec-h2">Compare all four finance options</h2>
-    <p class="fp-body" style="text-align:center;">We offer Afterpay, Q Card, Gem Finance, and Aotea Finance. Each works differently — see them side by side to find the right fit for your repair.</p>
+    <p class="fp-body" style="text-align:center;">We offer Afterpay, Q Card, Gem Finance, and Aotea Finance. Each works differently. See them side by side to find the right fit for your repair.</p>
     <a href="<?php echo esc_url($site_url . '/' . $hub_slug . '/'); ?>" class="fp-btn fp-btn--primary" style="margin-top:12px;">Compare All Options</a>
   </div>
 </section>
@@ -636,7 +636,7 @@ body.page-template-template-finance-provider { overflow-x:hidden; -webkit-text-s
 <!-- ══ CTA ══════════════════════════════════════════════════════════════════ -->
 <section class="fp-cta" aria-label="Book now">
   <div class="fp-w">
-    <h2 class="fp-cta__h2">Ready to pay with <span><?php echo esc_html($provider_name); ?>?</span><?php if ($is_location_page): ?><br><?php echo esc_html($suburb_name); ?> drivers — we're nearby.<?php endif; ?></h2>
+    <h2 class="fp-cta__h2">Ready to pay with <span><?php echo esc_html($provider_name); ?>?</span><?php if ($is_location_page): ?><br><?php echo esc_html($suburb_name); ?> drivers, we're nearby.<?php endif; ?></h2>
     <p class="fp-cta__sub"><?php echo esc_html($hours); ?> · <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:#999;text-decoration:underline;">139 Cavendish Drive, Manukau</a></p>
     <a href="tel:<?php echo esc_attr($phone_free_tel); ?>" class="fp-cta__phone"><?php echo esc_html($phone_free); ?></a>
     <div class="fp-cta__btns">

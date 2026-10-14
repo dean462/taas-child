@@ -35,7 +35,7 @@ $page_url       = get_permalink();
 $service_name   = ($has_acf ? get_field('service_name')   : null) ?: get_the_title();
 $price_signal   = ($has_acf ? get_field('price_signal')   : null) ?: '';
 $urgency_level  = ($has_acf ? get_field('urgency_level')  : null) ?: 'medium';
-$urgency_msg    = ($has_acf ? get_field('urgency_message'): null) ?: 'Book an inspection — catching brake faults early prevents more costly repairs.';
+$urgency_msg    = ($has_acf ? get_field('urgency_message'): null) ?: 'Book an inspection. Catching brake faults early prevents more costly repairs.';
 $what_it_is     = ($has_acf ? get_field('what_it_is')     : null) ?: '';
 $symptoms_raw   = ($has_acf ? get_field('symptoms')       : null) ?: '';
 $process_raw    = ($has_acf ? get_field('our_process')    : null) ?: '';
@@ -265,10 +265,10 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
     <div class="mbcs-enquiry">
       <div>
         <span class="mbcs-section__eyebrow">Book or Enquire</span>
-        <h2 class="mbcs-section__heading"><?php echo esc_html($service_name); ?> — Book Now</h2>
+        <h2 class="mbcs-section__heading"><?php echo esc_html($service_name); ?>: Book Now</h2>
         <p style="font-size:16px;color:#aaa;line-height:1.65;margin-bottom:8px;">Tell us your vehicle make, model and what you're experiencing.</p>
         <a href="tel:<?php echo str_replace(' ','',TAAS_PHONE_FREE); ?>" class="mbcs-enquiry__phone"><?php echo TAAS_PHONE_FREE; ?></a>
-        <div class="mbcs-enquiry__detail"><strong>Manukau Brake &amp; Clutch — Tony Allen Auto Service</strong><br>139 Cavendish Drive, Manukau<br>Mon–Fri 7:30am–5:00pm · Local: <?php echo TAAS_PHONE_LOCAL; ?></div>
+        <div class="mbcs-enquiry__detail"><strong>Manukau Brake &amp; Clutch at Tony Allen Auto Service</strong><br>139 Cavendish Drive, Manukau<br>Mon–Fri 7:30am–5:00pm · Local: <?php echo TAAS_PHONE_LOCAL; ?></div>
       </div>
       <div><?php echo do_shortcode(TAAS_CF7_GENERAL); ?></div>
     </div>

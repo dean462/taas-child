@@ -47,11 +47,11 @@ $review_count  = preg_replace('/\D+/', '', $reviews);
 
 // ── Master services array ────────────────────────────────────────────────────
 $ac_master = [
-    'air-conditioning-regas-manukau' => ['name'=>'Air Conditioning Regas','badge'=>'DR','short'=>'Full refrigerant evacuation and recharge with UV dye test. R134a and R1234yf — all makes and models.','hero_price'=>'Standard regas & dye test '.$aircon_price,'price'=>'Standard regas & dye test '.$aircon_price,'urgency'=>'low'],
-    'air-conditioning-diagnosis-manukau' => ['name'=>'AC System Diagnosis','badge'=>'SD','short'=>'Electronic and mechanical diagnosis of all AC faults — compressor, condenser, evaporator, expansion valve.','hero_price'=>'Contact for estimate — depends on fault complexity','price'=>'Contact for estimate — depends on fault complexity','urgency'=>'medium'],
-    'car-air-conditioning-repair-manukau' => ['name'=>'Air Conditioning Repair','badge'=>'CH','short'=>'Cooling and heating circuit repair — blend doors, heater cores, actuators, compressors, and condensers.','hero_price'=>'Contact for estimate — depends on fault and parts required','price'=>'Contact for estimate — depends on fault and parts required','urgency'=>'medium'],
-    'cabin-filter-replacement-manukau' => ['name'=>'Cabin Filter Replacement','badge'=>'CF','short'=>'Supply and fit the correct cabin filter for your vehicle. Improves air quality and reduces strain on the AC system.','hero_price'=>'Contact for estimate — price varies by make and model','price'=>'Contact for estimate — price varies by make and model','urgency'=>'low'],
-    'climate-control-repair-manukau' => ['name'=>'Climate Control Repair','badge'=>'CC','short'=>'Diagnosis and repair of electronic climate control — single-zone, dual-zone, and automatic systems on all makes.','hero_price'=>'Contact for estimate — depends on system and fault','price'=>'Contact for estimate — depends on system and fault','urgency'=>'low'],
+    'air-conditioning-regas-manukau' => ['name'=>'Air Conditioning Regas','badge'=>'DR','short'=>'Full refrigerant evacuation and recharge with UV dye test. R134a and R1234yf, all makes and models.','hero_price'=>'Standard regas & dye test '.$aircon_price,'price'=>'Standard regas & dye test '.$aircon_price,'urgency'=>'low'],
+    'air-conditioning-diagnosis-manukau' => ['name'=>'AC System Diagnosis','badge'=>'SD','short'=>'Electronic and mechanical diagnosis of all AC faults: compressor, condenser, evaporator, expansion valve.','hero_price'=>'Contact for estimate (depends on fault complexity)','price'=>'Contact for estimate (depends on fault complexity)','urgency'=>'medium'],
+    'car-air-conditioning-repair-manukau' => ['name'=>'Air Conditioning Repair','badge'=>'CH','short'=>'Cooling and heating circuit repair: blend doors, heater cores, actuators, compressors, and condensers.','hero_price'=>'Contact for estimate (depends on fault and parts required)','price'=>'Contact for estimate (depends on fault and parts required)','urgency'=>'medium'],
+    'cabin-filter-replacement-manukau' => ['name'=>'Cabin Filter Replacement','badge'=>'CF','short'=>'Supply and fit the correct cabin filter for your vehicle. Improves air quality and reduces strain on the AC system.','hero_price'=>'Contact for estimate (price varies by make and model)','price'=>'Contact for estimate (price varies by make and model)','urgency'=>'low'],
+    'climate-control-repair-manukau' => ['name'=>'Climate Control Repair','badge'=>'CC','short'=>'Diagnosis and repair of electronic climate control: single-zone, dual-zone, and automatic systems on all makes.','hero_price'=>'Contact for estimate (depends on system and fault)','price'=>'Contact for estimate (depends on system and fault)','urgency'=>'low'],
 ];
 
 // ── Current page data ────────────────────────────────────────────────────────
@@ -97,11 +97,11 @@ $faqs[] = ['q'=>"What is {$service_name}?",'a'=>$what_it_is ?: "Contact Tony All
 if ($causes_raw) { $faqs[] = ['q'=>"What causes problems with {$service_name}?",'a'=>implode('. ', $causes).'.'];}
 if ($symptoms_raw) { $faqs[] = ['q'=>"How do I know if I need {$service_name}?",'a'=>'Common signs include: '.strtolower(implode('; ', $symptoms)).'.'];}
 $faqs[] = ['q'=>"How much does {$service_name} cost in Manukau?",'a'=>$price_signal.'. We give you an estimate before starting work and keep you informed if anything changes. Call '.$phone_free.' for a current estimate on your vehicle.'];
-$faqs[] = ['q'=>"Do you diagnose before recommending repairs?",'a'=>"Yes — always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure."];
-$faqs[] = ['q'=>"Can you do this on European vehicles?",'a'=>"Yes. We service air conditioning on all makes including {$euro_brands}. European vehicles often have specific refrigerant requirements and dual-zone climate systems — we have the equipment and knowledge to handle these."];
-$faqs[] = ['q'=>"How long does {$service_name} take?",'a'=>"A standard regas takes 45 to 60 minutes. Diagnosis and repairs take longer depending on the fault — we give you a timeframe when we provide your estimate."];
+$faqs[] = ['q'=>"Do you diagnose before recommending repairs?",'a'=>"Yes, always. We test the system and confirm the fault before recommending any work. A regas without diagnosis risks wasting money on a system that has a leak or component failure."];
+$faqs[] = ['q'=>"Can you do this on European vehicles?",'a'=>"Yes. We service air conditioning on all makes including {$euro_brands}. European vehicles often have specific refrigerant requirements and dual-zone climate systems. We have the equipment and knowledge to handle these."];
+$faqs[] = ['q'=>"How long does {$service_name} take?",'a'=>"A standard regas takes 45 to 60 minutes. Diagnosis and repairs take longer depending on the fault. We give you a timeframe when we provide your estimate."];
 foreach ($custom_faqs as $cf) { $faqs[] = $cf; }
-$faqs[] = ['q'=>"Do you offer finance for AC work?",'a'=>"Yes — we accept Afterpay, Q Card, GEM Finance, and Aotea Finance. Spread the cost of your repair over time."];
+$faqs[] = ['q'=>"Do you offer finance for AC work?",'a'=>"Yes. We accept Afterpay, Q Card, GEM Finance, and Aotea Finance. Spread the cost of your repair over time."];
 $faqs[] = ['q'=>"Where is your air conditioning workshop?",'a'=>"Tony Allen Auto Service, 139 Cavendish Drive, Manukau, Auckland 2104. Open {$hours}. Call {$phone_free} to book."];
 if (count($faqs) < 10) {
     $faqs[] = ['q'=>"What refrigerant does my car use?",'a'=>"Most pre-2017 vehicles use R134a. Many newer models use R1234yf. We carry both and check which your vehicle requires before starting any work."];
@@ -203,8 +203,8 @@ body.page-template-template-aircon-sub-service{overflow-x:hidden;-webkit-text-si
 <section class="acs-hero"<?php if ($hero_bg) echo ' style="'.$hero_bg.'"'; ?>>
   <div class="acs-hero__inner">
     <div class="acs-hero__badge"><?php echo acs_badge($badge, 56); ?></div>
-    <span class="acs-hero__eyebrow">Air Conditioning — Manukau</span>
-    <h1><?php echo esc_html($service_name); ?><br><span>Manukau — South Auckland</span></h1>
+    <span class="acs-hero__eyebrow">Air Conditioning · Manukau</span>
+    <h1><?php echo esc_html($service_name); ?><br><span>Manukau, South Auckland</span></h1>
     <p class="acs-hero__sub"><?php echo esc_html($current['short']); ?> Estimate before we start. All makes and models. Family-owned since <?php echo esc_html($established); ?>.</p>
     <?php if ($hero_price) : ?>
       <div class="acs-hero__price"><?php echo esc_html($hero_price); ?></div>
@@ -230,7 +230,7 @@ body.page-template-template-aircon-sub-service{overflow-x:hidden;-webkit-text-si
 <section class="acs-sec acs-sec--white">
   <div class="acs-sec__inner">
     <span class="acs-sec__eyebrow">What Is It</span>
-    <h2 class="acs-sec__h2"><?php echo esc_html($service_name); ?> — Explained</h2>
+    <h2 class="acs-sec__h2"><?php echo esc_html($service_name); ?> Explained</h2>
     <div class="acs-sec__body"><?php echo wp_kses_post($what_it_is); ?></div>
     <?php if ($vehicles_note) : ?>
       <p style="font-size:14px;color:var(--taas-mid,#666666);line-height:1.75;font-style:italic;"><?php echo wp_kses_post($vehicles_note); ?></p>
@@ -280,7 +280,7 @@ body.page-template-template-aircon-sub-service{overflow-x:hidden;-webkit-text-si
 <section class="acs-sec acs-sec--grey">
   <div class="acs-sec__inner">
     <span class="acs-sec__eyebrow">Pricing</span>
-    <h2 class="acs-sec__h2"><?php echo esc_html($service_name); ?> — Pricing Guide</h2>
+    <h2 class="acs-sec__h2"><?php echo esc_html($service_name); ?> Pricing Guide</h2>
     <div class="acs-price-box">
       <div class="acs-price-box__title"><?php echo esc_html($service_name); ?></div>
       <p class="acs-price-box__body"><?php echo wp_kses_post($price_signal); ?>. All fees explained upfront before any work begins. We provide an estimate once we have tested the system. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow2,#e6b400);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> for an estimate specific to your vehicle.</p>
@@ -289,7 +289,7 @@ body.page-template-template-aircon-sub-service{overflow-x:hidden;-webkit-text-si
 </section>
 
 <!-- 7. ENQUIRY -->
-<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong> — Interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
+<div style="background:#FFFBEA;border-top:1px solid #F0E4B8;border-bottom:1px solid #F0E4B8;padding:22px 0;"><div style="max-width:var(--taas-container,1140px);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:center;gap:16px 24px;flex-wrap:wrap;text-align:center;font-family:var(--taas-font,Inter,Arial,sans-serif);"><span style="font-size:15px;font-weight:300;color:#333;"><strong style="font-weight:700;color:#111;">Split the Cost</strong>: interest-free options available</span><span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;"><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Afterpay</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Q Card</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">GEM</span><span style="display:inline-flex;align-items:center;height:30px;padding:0 12px;background:#fff;border:1px solid #E8E8E4;border-radius:5px;font-size:11px;font-weight:700;color:#1A1A1A;">Aotea</span></span><a href="<?php echo esc_url($site_url.'/finance-options/'); ?>" style="font-size:13px;font-weight:700;color:#e6b400;text-decoration:none;white-space:nowrap;">Finance Options →</a></div></div>
 <section class="acs-sec acs-sec--dark" id="enquire">
   <div class="acs-sec__inner">
     <div class="acs-enquiry">
@@ -342,7 +342,7 @@ body.page-template-template-aircon-sub-service{overflow-x:hidden;-webkit-text-si
 <section class="acs-sec acs-sec--grey">
   <div class="acs-sec__inner">
     <span class="acs-sec__eyebrow">FAQ</span>
-    <h2 class="acs-sec__h2"><?php echo esc_html($service_name); ?> — Common Questions</h2>
+    <h2 class="acs-sec__h2"><?php echo esc_html($service_name); ?>: Common Questions</h2>
     <div class="acs-faq">
       <?php foreach ($faqs as $i => $faq) : ?>
       <div class="acs-faq__item<?php echo $i===0?' acs-faq__item--open':''; ?>">
