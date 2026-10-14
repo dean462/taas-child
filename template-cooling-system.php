@@ -78,7 +78,7 @@ $services = [
 $why_points = [
     'Diagnose first: we find the actual fault before recommending any work',
     'Estimate before we start, no surprise invoices',
-    'Coolant flush recommended every 2 years or per manufacturer spec',
+    'Coolant flush at your manufacturer\'s recommended interval',
     'All makes and models: Japanese, Korean, European',
     $customers . ' customers serviced at South Auckland\'s largest independent workshop',
     'MTA Assured workshop, Manukau since ' . $established,
@@ -355,7 +355,7 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
     <div class="csh-edu__alert"><p><strong>If your temperature warning light comes on, pull over immediately and turn the engine off.</strong> Do not continue driving "just to the next exit" or "home." Every minute of driving at elevated temperature increases the damage exponentially. Let the engine cool completely before checking the coolant level. Do not open the radiator cap while the engine is hot. Pressurised coolant will spray out and cause serious burns.</p></div>
 
     <h3>Coolant Is Not Just Water</h3>
-    <p>Modern coolant contains corrosion inhibitors that protect the aluminium and copper components inside your cooling system: the radiator, water pump, heater core, and engine block passages. Over time, these inhibitors break down and the coolant becomes acidic. Acidic coolant eats aluminium from the inside. You cannot see this happening until a radiator develops pinhole leaks, a water pump seal fails, or a heater core starts weeping inside the cabin. A coolant flush every two years (typically <?php echo esc_html($cs_flush); ?>) can prevent radiator replacements that start <?php echo esc_html($cs_radiator); ?> and heater core replacements <?php echo esc_html($cs_heatercore); ?> or more. It is one of the most cost-effective preventative maintenance items on the vehicle.</p>
+    <p>Modern coolant contains corrosion inhibitors that protect the aluminium and copper components inside your cooling system: the radiator, water pump, heater core, and engine block passages. Over time, these inhibitors break down and the coolant becomes acidic. Acidic coolant eats aluminium from the inside. You cannot see this happening until a radiator develops pinhole leaks, a water pump seal fails, or a heater core starts weeping inside the cabin. A coolant flush at your manufacturer's interval (typically <?php echo esc_html($cs_flush); ?>) can prevent radiator replacements that start <?php echo esc_html($cs_radiator); ?> and heater core replacements <?php echo esc_html($cs_heatercore); ?> or more. It is one of the most cost-effective preventative maintenance items on the vehicle.</p>
 
     <h3>How One Failure Cascades</h3>
     <p>Cooling system failures are interconnected. A small coolant leak drops the level. Low coolant reduces the system's ability to absorb heat. The engine runs hotter. Higher temperatures accelerate hose degradation. A weakened hose bursts. Now coolant loss is rapid. The engine overheats. The head gasket fails. Coolant enters the oil. Bearings are damaged. Each step in that chain was preventable, and each step was cheaper than the one that followed. This is why we diagnose the root cause, not just the symptom that brought the vehicle in.</p>

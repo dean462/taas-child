@@ -586,7 +586,7 @@ body.page-template-template-steering-suspension { overflow-x:hidden; }
         <div class="ssh-pricing__card">
           <div class="ssh-pricing__card-label">Wheel Alignment</div>
           <div class="ssh-pricing__card-price"><?php echo esc_html($align_price); ?></div>
-          <p class="ssh-pricing__card-note">Included after every geometry repair</p>
+          <p class="ssh-pricing__card-note">Charged on its own invoice line when needed after a geometry repair</p>
         </div>
       </div>
     </div>

@@ -400,18 +400,18 @@ body,h1,h2,h3,h4,h5,h6,p,li,td,span,div,a,label,input,textarea,select,button{fon
 
   <div class="hgs-pricing">
     <div class="hgs-pricing__card">
-      <div class="hgs-pricing__card-label">Four-Cylinder</div>
-      <div class="hgs-pricing__card-price">Typically from $1,500</div>
-      <div class="hgs-pricing__card-body">Straightforward gasket replacement without head machining. Most common four-cylinder engines.</div>
+      <div class="hgs-pricing__card-label">Head Gasket Replacement</div>
+      <div class="hgs-pricing__card-price">Typically <?php echo esc_html(defined('TAAS_CS_HEADGASKET') ? TAAS_CS_HEADGASKET : 'from $3,000'); ?></div>
+      <div class="hgs-pricing__card-body">Gasket replacement without head machining, on most common engines.</div>
     </div>
     <div class="hgs-pricing__card">
       <div class="hgs-pricing__card-label">With Head Machining</div>
-      <div class="hgs-pricing__card-price">Can cost $2,000–$3,500+</div>
+      <div class="hgs-pricing__card-price">Add <?php echo esc_html(defined('TAAS_CS_HEADMACHINE') ? TAAS_CS_HEADMACHINE : '$400–$600'); ?></div>
       <div class="hgs-pricing__card-body">Warped cylinder head requires machinist resurfacing. Common after sustained overheating.</div>
     </div>
     <div class="hgs-pricing__card">
       <div class="hgs-pricing__card-label">Complex Engines</div>
-      <div class="hgs-pricing__card-price">Can cost $3,000–$5,000+</div>
+      <div class="hgs-pricing__card-price">Estimate after diagnosis</div>
       <div class="hgs-pricing__card-body">V6, European, turbocharged engines. Higher parts costs and significantly more labour.</div>
     </div>
   </div>
