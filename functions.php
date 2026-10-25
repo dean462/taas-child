@@ -674,3 +674,29 @@ add_action( 'wp_head', function () {
     if ( ! function_exists( 'wpcf7' ) ) return;
     echo '<style>.wpcf7 input[type="file"]{display:block!important;width:100%!important;padding:10px 13px!important;border:1px dashed #C9C9C2!important;border-radius:4px!important;background:#FAFAF8!important;font-family:\'Inter\',Arial,sans-serif!important;font-size:13px!important;color:#555!important;box-sizing:border-box!important;}.wpcf7 .taas-file-hint{display:block!important;font-size:12px!important;font-weight:300!important;color:#888!important;margin-top:6px!important;text-transform:none!important;letter-spacing:normal!important;line-height:1.6!important;}.wpcf7 p.taas-file-hint{margin:0 0 14px!important;font-size:13px!important;}.wpcf7 .wpcf7-radio{display:flex!important;flex-wrap:wrap;gap:8px 22px;margin-top:6px}.wpcf7 .wpcf7-radio .wpcf7-list-item{margin:0!important}.wpcf7 .wpcf7-radio label,.wpcf7 .wpcf7-checkbox label{display:inline-flex!important;flex-direction:row!important;align-items:flex-start!important;gap:8px;text-transform:none!important;letter-spacing:normal!important;font-size:14px!important;cursor:pointer}.wpcf7 .wpcf7-radio input,.wpcf7 .wpcf7-checkbox input{display:inline-block!important;width:auto!important;margin:3px 0 0!important;flex-shrink:0}.wpcf7 .wpcf7-list-item-label{display:inline!important;width:auto!important}</style>';
 }, 100 );
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Page-level meta description override (taas_meta_description post meta)
+// AIOSEO reads descriptions from its own table, which the WordPress connector
+// can't write. When a page has taas_meta_description set, it replaces the
+// AIOSEO description and the Facebook/Twitter descriptions. Pages without it
+// are untouched, so AIOSEO stays the default everywhere else.
+// ═══════════════════════════════════════════════════════════════════════════
+function taas_meta_description_override() {
+    if (!is_singular()) return '';
+    return trim((string) get_post_meta(get_queried_object_id(), 'taas_meta_description', true));
+}
+add_filter('aioseo_description', function ($desc) {
+    $o = taas_meta_description_override();
+    return $o !== '' ? $o : $desc;
+}, 20);
+add_filter('aioseo_facebook_tags', function ($tags) {
+    $o = taas_meta_description_override();
+    if ($o !== '' && is_array($tags)) $tags['og:description'] = $o;
+    return $tags;
+}, 20);
+add_filter('aioseo_twitter_tags', function ($tags) {
+    $o = taas_meta_description_override();
+    if ($o !== '' && is_array($tags)) $tags['twitter:description'] = $o;
+    return $tags;
+}, 20);
