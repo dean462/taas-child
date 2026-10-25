@@ -231,6 +231,8 @@ body.page-template-template-mb-location{overflow-x:hidden;-webkit-text-size-adju
   <?php if ($local_copy) : ?><p class="mbl-sec__body"><?php echo esc_html($local_copy); ?></p><?php endif; ?>
 </div></section>
 
+<?php require_once get_stylesheet_directory() . '/taas-local-proof.php'; echo taas_local_proof_section($suburb_slug, $suburb_name, 'battery'); ?>
+
 <section class="mbl-sec mbl-sec--grey"><div class="mbl-sec__inner">
   <span class="mbl-sec__eyebrow">Pricing</span>
   <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery Pricing for <?php echo esc_html($suburb_name); ?> Customers</h2>

@@ -796,6 +796,9 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCA
   </div>
 </section>
 
+<!-- ══ LOCAL PROOF (shared, taas-local-proof.php) ══ -->
+<?php require_once get_stylesheet_directory() . '/taas-local-proof.php'; echo taas_local_proof_section($suburb_slug, $suburb_name, 'wof'); ?>
+
 
 <!-- ══ WHAT WE CHECK (grey) ══════════════════════════════════════════════ -->
 <section class="wl-checks" aria-labelledby="wl-checks-head">
