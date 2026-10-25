@@ -157,7 +157,7 @@ add_action( 'wp_enqueue_scripts', 'taas_child_enqueue_styles' );
 function taas_child_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'taas-font', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap', array(), null );
-    wp_enqueue_style( 'taas-global', get_stylesheet_directory_uri() . '/taas-global.css', array( 'parent-style' ), '1.0.0' );
+    wp_enqueue_style( 'taas-global', get_stylesheet_directory_uri() . '/taas-global.css', array( 'parent-style' ), (string) filemtime( get_stylesheet_directory() . '/taas-global.css' ) );
 }
 
 add_filter( 'theme_page_templates', 'taas_register_templates' );

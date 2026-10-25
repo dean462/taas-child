@@ -426,3 +426,17 @@ form.wpcf7-form p,
   height: 0 !important;
   overflow: hidden !important;
 }
+
+/* Trust/badge strips: when items wrap onto more than one line (phones),
+   keep the space between rows tight. The inline `gap:40px` was also being
+   applied vertically, leaving big empty bands between badges. row-gap only
+   affects wrapped rows, so desktop single-line strips are unchanged. */
+[style*="flex-wrap:wrap"][style*="gap:40px"],
+[style*="flex-wrap:wrap"][style*="gap:32px"],
+[style*="flex-wrap:wrap"][style*="gap:28px"],
+[style*="flex-wrap:wrap"][style*="gap:24px"],
+[class*="trust__inner"],
+[class*="-trust__items"],
+[class*="-trust-row"] {
+  row-gap: 10px !important;
+}
