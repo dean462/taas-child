@@ -104,6 +104,51 @@ add_action('template_redirect', function() {
     ob_start('taas_linkify_contacts');
 }, 99);
 
+// ═══════════════════════════════════════════════════════════════════════════
+// No links to unpublished pages
+// Suburb pills, related-service cards and make/brand lists across the theme
+// link to spoke pages, and many spokes are held as drafts on purpose (see the
+// suburb page policy in the SEO rules). Any internal link whose path belongs
+// to a page that exists but is not published is turned into plain text, so
+// the name still shows (e.g. the suburbs we cover) but nobody hits a 404.
+// Only draft/pending/private pages are affected: published pages, posts,
+// redirects and external links are left alone. Pages are looked up once each
+// and the result is page-cached by Breeze, so the cost is small.
+// ═══════════════════════════════════════════════════════════════════════════
+function taas_path_is_unpublished_page($path) {
+    static $cache = [];
+    $path = trim($path, '/');
+    if ($path === '' || preg_match('#^(wp-|feed|\?)|\.[a-z0-9]{2,5}$#i', $path)) return false;
+    if (array_key_exists($path, $cache)) return $cache[$path];
+    $pg = get_page_by_path($path, OBJECT, 'page');
+    return $cache[$path] = ($pg && $pg->post_status !== 'publish');
+}
+
+function taas_unlink_unpublished($html) {
+    if (stripos($html, '<a') === false) return $html;
+    $home = wp_parse_url(home_url(), PHP_URL_HOST);
+    return preg_replace_callback(
+        '#<a\b([^>]*?)\bhref\s*=\s*(["\'])([^"\']*)\2([^>]*)>(.*?)</a>#is',
+        function ($m) use ($home) {
+            $url  = html_entity_decode($m[3]);
+            $host = wp_parse_url($url, PHP_URL_HOST);
+            if ($host && strcasecmp($host, $home) !== 0) return $m[0];
+            if (!$host && (strpos($url, '/') !== 0 || strpos($url, '//') === 0)) return $m[0];
+            $path = (string) wp_parse_url($url, PHP_URL_PATH);
+            if (!taas_path_is_unpublished_page($path)) return $m[0];
+            $attrs = preg_replace('#\s(target|rel)\s*=\s*(["\']).*?\2#i', '', $m[1] . $m[4]);
+            return '<span' . rtrim($attrs) . '>' . $m[5] . '</span>';
+        },
+        $html
+    );
+}
+
+add_action('template_redirect', function() {
+    if (is_admin() || is_feed() || wp_doing_ajax() || (defined('REST_REQUEST') && REST_REQUEST)) return;
+    if (is_user_logged_in() && current_user_can('edit_pages')) return; // editors still see draft links
+    ob_start('taas_unlink_unpublished');
+}, 98);
+
 add_action('wp_head', function() {
     echo '<style>a.taas-autolink{color:inherit;font-weight:600;text-decoration:underline!important;text-decoration-color:#FFC800!important;text-decoration-thickness:2px!important;text-underline-offset:3px}a.taas-autolink[href^="tel:"]{white-space:nowrap}a.taas-autolink:hover{opacity:.65}</style>' . "\n";
 }, 99);
