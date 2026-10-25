@@ -40,9 +40,10 @@ function taas_linkify_contacts($html) {
           : 'https://www.google.com/maps/search/?api=1&query=Tony+Allen+Auto+Service+139+Cavendish+Drive+Manukau';
 
     $rules = [
-        // 0800 100 876 (spaces, dashes or none)
-        '/\b0800[ \x{00A0}-]?100[ \x{00A0}-]?876\b/u' => function ($m) {
-            return '<a href="tel:0800100876" class="taas-autolink">' . $m[0] . '</a>';
+        // Any 0800 number: ours (0800 100 876) and the MBI insurers' claims
+        // lines (e.g. Provident 0800 676 864, Janssen 0800 526 7736)
+        '/\b0800[ \x{00A0}-]?\d{3}[ \x{00A0}-]?\d{3,4}\b/u' => function ($m) {
+            return '<a href="tel:' . preg_replace('/\D/', '', $m[0]) . '" class="taas-autolink">' . $m[0] . '</a>';
         },
         // 09 278 9556
         '/(?<![\d-])09[ \x{00A0}-]?278[ \x{00A0}-]?9556\b/u' => function ($m) {
