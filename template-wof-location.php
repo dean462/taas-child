@@ -90,6 +90,17 @@ $faqs = [
   $taas_faqs['finance'],
 ];
 
+// ── Local FAQs — per-page post meta (custom_faq_q1/a1, custom_faq_q2/a2) ─────
+// Written by hand for each suburb so the page carries real local content.
+// Read straight from post meta so they work whether or not ACF registers them.
+$local_faqs = [];
+foreach ([1, 2] as $n) {
+  $lq = trim((string) get_post_meta(get_the_ID(), "custom_faq_q{$n}", true));
+  $la = trim((string) get_post_meta(get_the_ID(), "custom_faq_a{$n}", true));
+  if ($lq !== '' && $la !== '') $local_faqs[] = ['q' => $lq, 'a' => $la];
+}
+if ($local_faqs) array_splice($faqs, 1, 0, $local_faqs);
+
 // ── Suburb pills — from shared library ────────────────────────────────────────
 $all_suburbs = [];
 foreach (taas_suburbs_library() as $slug => $data) {
