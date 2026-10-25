@@ -700,3 +700,21 @@ add_filter('aioseo_twitter_tags', function ($tags) {
     if ($o !== '' && is_array($tags)) $tags['twitter:description'] = $o;
     return $tags;
 }, 20);
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Clear page caches automatically after a theme deploy
+// A GitHub → Cloudways pull updates the theme files but leaves Breeze/Varnish
+// and Cloudflare serving old copies, so changes didn't show on phones. On the
+// first request after any theme file changes, clear every cache once.
+// ═══════════════════════════════════════════════════════════════════════════
+add_action('init', function () {
+    $files = glob(get_stylesheet_directory() . '/*.{php,css,json}', GLOB_BRACE) ?: [];
+    $stamp = 0;
+    foreach ($files as $f) { $m = @filemtime($f); if ($m > $stamp) $stamp = $m; }
+    if (!$stamp || (int) get_option('taas_theme_deploy_stamp') === $stamp) return;
+    update_option('taas_theme_deploy_stamp', $stamp, false); // set first so it runs once
+    do_action('breeze_clear_all_cache');                      // Breeze page cache + Varnish
+    if (class_exists('\CF\WordPress\Hooks')) {
+        try { (new \CF\WordPress\Hooks())->purgeCacheEverything(); } catch (\Throwable $e) {}
+    }
+}, 20);
