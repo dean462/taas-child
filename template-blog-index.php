@@ -112,24 +112,24 @@ echo '<script type="application/ld+json">' . wp_json_encode($blog_faq_schema, JS
 
 <style>
 /* Phone + trust strips: copied from the service-page standard (mp-phone-strip / mp-trust) */
-.bi-phone-strip{background:var(--taas-yellow,#FFC800);padding:14px 0}
-.bi-phone-strip__inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.bi-phone-strip__number{font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:28px;font-weight:900;color:var(--taas-dark,#1A1A1A)}
-.bi-phone-strip__number a{color:inherit;text-decoration:none}
-.bi-phone-strip__number a:hover{opacity:.65}
-.bi-phone-strip__right{display:flex;align-items:center;gap:20px}
-.bi-phone-strip__hours{font-size:14px;font-weight:600;color:var(--taas-dark,#1A1A1A)}
-.bi-phone-strip__email{display:inline-block;background:var(--taas-dark,#1A1A1A);color:var(--taas-yellow,#FFC800);font-size:12px;font-weight:700;padding:6px 14px;border-radius:3px;text-decoration:none}
-.bi-phone-strip__email:hover{opacity:.85}
-.bi-trust{background:var(--taas-panel,#F7F7F5);padding:18px 0;border-bottom:1px solid var(--taas-border,#E8E8E4)}
-.bi-trust__inner{display:flex;gap:40px;align-items:center;justify-content:center;flex-wrap:wrap}
-.bi-trust__item{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--taas-dark,#1A1A1A);white-space:nowrap}
-.bi-trust__item::before{content:'✓';font-weight:900;color:var(--taas-yellow,#FFC800)}
+.taas-blog-index .bi-phone-strip{background:var(--taas-yellow,#FFC800);padding:14px 0}
+.taas-blog-index .bi-phone-strip__inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.taas-blog-index .bi-phone-strip__number{font-family:var(--taas-font,'Inter',Arial,sans-serif);font-size:28px;font-weight:900;color:var(--taas-dark,#1A1A1A)}
+.taas-blog-index .bi-phone-strip__number a{color:inherit;text-decoration:none}
+.taas-blog-index .bi-phone-strip__number a:hover{opacity:.65}
+.taas-blog-index .bi-phone-strip__right{display:flex;align-items:center;gap:20px}
+.taas-blog-index .bi-phone-strip__hours{font-size:14px;font-weight:600;color:var(--taas-dark,#1A1A1A)}
+.taas-blog-index .bi-phone-strip__email{display:inline-block;background:var(--taas-dark,#1A1A1A);color:var(--taas-yellow,#FFC800);font-size:12px;font-weight:700;padding:6px 14px;border-radius:3px;text-decoration:none}
+.taas-blog-index .bi-phone-strip__email:hover{opacity:.85}
+.taas-blog-index .bi-trust{background:var(--taas-panel,#F7F7F5);padding:18px 0;border-bottom:1px solid var(--taas-border,#E8E8E4)}
+.taas-blog-index .bi-trust__inner{display:flex;gap:40px;align-items:center;justify-content:center;flex-wrap:wrap}
+.taas-blog-index .bi-trust__item{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--taas-dark,#1A1A1A);white-space:nowrap}
+.taas-blog-index .bi-trust__item::before{content:'✓';font-weight:900;color:var(--taas-yellow,#FFC800)}
 @media (max-width:640px){
-  .bi-phone-strip__inner{flex-direction:column;text-align:center}
-  .bi-phone-strip__right{flex-direction:column;gap:8px}
-  .bi-trust__inner{flex-direction:column;gap:8px;align-items:flex-start}
-  .bi-trust__item{font-size:12px}
+  .taas-blog-index .bi-phone-strip__inner{flex-direction:column;text-align:center}
+  .taas-blog-index .bi-phone-strip__right{flex-direction:column;gap:8px}
+  .taas-blog-index .bi-trust__inner{flex-direction:column;gap:8px;align-items:flex-start}
+  .taas-blog-index .bi-trust__item{font-size:12px}
 }
 
 /* ══ RESET ════════════════════════════════════════════════════════════════════ */
