@@ -54,6 +54,7 @@ $h1            = $battery_type . ' Battery ' . $suburb_name;
 
 // ── Suburb distances ─────────────────────────────────────────────────────────
 $suburbs_master = [
+    'manukau'=>['label'=>'Manukau','distance'=>'right here in Manukau, near Westfield Manukau','area'=>'Manukau, Wiri, Papatoetoe, and Ōtara'],
     'papatoetoe'=>['label'=>'Papatoetoe','distance'=>'~5 min via Great South Rd','area'=>'Papatoetoe, Hunters Corner, Manukau, and Wiri'],
     'mangere'=>['label'=>'Māngere','distance'=>'~10 min from Māngere town centre','area'=>'Māngere, Māngere Bridge, Māngere East, and Favona'],
     'otahuhu'=>['label'=>'Ōtāhuhu','distance'=>'~10 min via Great South Rd','area'=>'Ōtāhuhu, Māngere, Papatoetoe, and Mt Wellington'],
@@ -91,6 +92,11 @@ function mbl_badge($initials, $size = 36) {
     $fs = $len > 3 ? intval($size * 0.225) : ($len > 2 ? intval($size * 0.275) : intval($size * 0.35));
     return '<svg width="'.$size.'" height="'.$size.'" viewBox="0 0 '.$size.' '.$size.'" xmlns="http://www.w3.org/2000/svg"><circle cx="'.($size/2).'" cy="'.($size/2).'" r="'.($size/2).'" fill="#1A1A1A"/><text x="'.($size/2).'" y="'.($size/2+1).'" text-anchor="middle" dominant-baseline="central" fill="#FFC800" font-family="Inter,Arial,sans-serif" font-size="'.$fs.'" font-weight="800">'.$initials.'</text></svg>';
 }
+
+// Local suburb copy: shared library (intro + directions), so each page carries real local content
+require_once get_stylesheet_directory() . '/taas-suburbs.php';
+$sub_lib    = taas_suburb_data($suburb_slug, $suburb_name);
+$local_copy = empty($sub_lib['_fallback']) ? trim($sub_lib['intro'] . ' ' . $sub_lib['getting_here']) : '';
 
 // Custom FAQs
 $faq_q1 = get_post_meta($post_id, 'custom_faq_q1', true) ?: '';
@@ -219,7 +225,8 @@ body.page-template-template-mb-location{overflow-x:hidden;-webkit-text-size-adju
   <span class="mbl-sec__eyebrow"><?php echo esc_html($battery_type); ?> Battery for <?php echo esc_html($suburb_name); ?></span>
   <h2 class="mbl-sec__h2"><?php echo esc_html($battery_type); ?> Battery Near <?php echo esc_html($suburb_name); ?></h2>
   <p class="mbl-sec__body">Manukau Batteries provides <?php echo esc_html($battery_type_lower); ?> battery supply and fit from our workshop at <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>, <?php echo esc_html($distance_text); ?>. We test before we recommend, match the correct specification for your vehicle, and fit on the spot in most cases.</p>
-  <p class="mbl-sec__body">We serve <?php echo esc_html($area_served); ?> with authorised Neuton Power and Bosch batteries through YHI Automotive NZ. Free battery, alternator, and starter motor testing. No appointment needed. Walk-ins welcome. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> with your registration number for pricing.</p>
+  <p class="mbl-sec__body">We serve <?php echo esc_html($area_served); ?> with authorised Neuton Power and Bosch batteries through YHI Automotive NZ. Free battery testing, and we test your alternator when we fit a new battery. No appointment needed. Walk-ins welcome. Call <a href="tel:<?php echo esc_attr($phone_tel); ?>" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;"><?php echo esc_html($phone_free); ?></a> with your registration number for pricing.</p>
+  <?php if ($local_copy) : ?><p class="mbl-sec__body"><?php echo esc_html($local_copy); ?></p><?php endif; ?>
 </div></section>
 
 <section class="mbl-sec mbl-sec--grey"><div class="mbl-sec__inner">

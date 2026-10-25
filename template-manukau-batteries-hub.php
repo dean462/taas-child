@@ -211,7 +211,7 @@ body.page-template-template-manukau-batteries-hub{overflow-x:hidden;-webkit-text
       <li>Car, 4WD, AGM &amp; marine batteries</li>
       <li>Same-day supply &amp; fit</li>
       <li>Free battery load test</li>
-      <li>Free alternator &amp; starter test</li>
+      <li>Alternator tested when we fit a new battery</li>
       <li>BMS registration for European cars</li>
       <li>Old battery recycled free</li>
       <li>Walk-ins welcome</li>
