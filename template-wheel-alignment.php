@@ -49,7 +49,7 @@ $process_steps = [
 ];
 
 $why_points = [
-    'Tyres last longer with correct alignment, typically 20–30% more life',
+    'Tyres last longer with correct alignment',
     'Better fuel economy. Misaligned wheels create rolling resistance the engine fights constantly',
     'Safer handling. Correct geometry means the car responds predictably in emergency manoeuvres',
     'Protects suspension. Misalignment puts stress on ball joints, tie rods, and wheel bearings',
@@ -316,7 +316,7 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
             <li>Manufacturer-recommended interval for most vehicles</li>
             <li>Sooner after pothole, kerb strike, or suspension work</li>
             <li>South Auckland roads accelerate alignment drift</li>
-            <li>20–30% more tyre life with correct alignment</li>
+            <li>Longer tyre life with correct alignment</li>
             <li>A pothole can cause tyre wear in weeks, not months</li>
           </ul>
         </div>
@@ -363,30 +363,37 @@ $wa_hero_bg  = $wa_hero_img ? "background:linear-gradient(180deg,rgba(17,17,17,.
   </div>
 </section>
 
+<?php
+// Suburb links: only wheel-alignment suburb pages that are published are shown,
+// so held drafts never become dead links. Manukau is this page, so it's skipped.
+$wa_suburbs = [
+    ['label'=>'Papatoetoe','slug'=>'papatoetoe'],
+    ['label'=>'Māngere','slug'=>'mangere'],['label'=>'Ōtāhuhu','slug'=>'otahuhu'],
+    ['label'=>'Wiri','slug'=>'wiri'],['label'=>'Manurewa','slug'=>'manurewa'],
+    ['label'=>'Flat Bush','slug'=>'flat-bush'],['label'=>'Takanini','slug'=>'takanini'],
+    ['label'=>'Papakura','slug'=>'papakura'],['label'=>'Ōtara','slug'=>'otara'],
+    ['label'=>'Botany','slug'=>'botany'],['label'=>'Howick','slug'=>'howick'],
+    ['label'=>'Clover Park','slug'=>'clover-park'],['label'=>'Weymouth','slug'=>'weymouth'],
+    ['label'=>'Clendon','slug'=>'clendon'],['label'=>'Hunters Corner','slug'=>'hunters-corner'],
+];
+$wa_live_suburbs = array_values(array_filter($wa_suburbs, function ($s) {
+    $pg = get_page_by_path('wheel-alignment-' . $s['slug'], OBJECT, 'page');
+    return $pg && $pg->post_status === 'publish';
+}));
+if ($wa_live_suburbs) : ?>
 <section class="wa-section wa-section--grey">
   <div class="wa-section__inner">
     <span class="wa-section__eyebrow">South Auckland</span>
     <h2 class="wa-section__heading">Wheel Alignment Near You</h2>
     <p class="wa-section__sub">Serving all of South Auckland from <a href="<?php echo esc_url($maps_url); ?>" target="_blank" rel="noopener" style="color:var(--taas-yellow,#FFC800);font-weight:600;text-decoration:none;">139 Cavendish Drive, Manukau</a>.</p>
     <ul class="wa-pills">
-      <?php
-      $suburbs = [
-          ['label'=>'Papatoetoe','slug'=>'papatoetoe'],['label'=>'Manukau','slug'=>'manukau'],
-          ['label'=>'Māngere','slug'=>'mangere'],['label'=>'Ōtāhuhu','slug'=>'otahuhu'],
-          ['label'=>'Wiri','slug'=>'wiri'],['label'=>'Manurewa','slug'=>'manurewa'],
-          ['label'=>'Flat Bush','slug'=>'flat-bush'],['label'=>'Takanini','slug'=>'takanini'],
-          ['label'=>'Papakura','slug'=>'papakura'],['label'=>'Ōtara','slug'=>'otara'],
-          ['label'=>'Botany','slug'=>'botany'],['label'=>'Howick','slug'=>'howick'],
-          ['label'=>'Clover Park','slug'=>'clover-park'],['label'=>'Weymouth','slug'=>'weymouth'],
-          ['label'=>'Clendon','slug'=>'clendon'],['label'=>'Hunters Corner','slug'=>'hunters-corner'],
-      ];
-      foreach ($suburbs as $s) {
+      <?php foreach ($wa_live_suburbs as $s) {
           echo '<li><a href="' . esc_url($site_url . '/wheel-alignment-' . $s['slug'] . '/') . '">Alignment ' . esc_html($s['label']) . '</a></li>';
-      }
-      ?>
+      } ?>
     </ul>
   </div>
 </section>
+<?php endif; ?>
 
 <section class="wa-section wa-section--white">
   <div class="wa-section__inner">
