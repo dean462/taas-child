@@ -111,7 +111,7 @@ $not_covered = ['Routine maintenance (oil, filters, belts)', 'Tyres, brake pads,
 
 // ── Process steps ────────────────────────────────────────────────────────────
 $steps = [
-    ['num' => '01', 'title' => 'Call us first', 'text' => "Call {$phone_free} before authorising any repairs. Authorisation from {$provider_name} must be obtained before work begins. Without it, the claim may not be valid."],
+    ['num' => '01', 'title' => "Contact {$provider_name} first", 'text' => ($claims_phone ? "Call the {$provider_name} claims line on {$claims_phone} to confirm your policy is active and start your claim." : "Contact {$provider_name} to confirm your policy is active and start your claim.") . " Don't authorise any repairs until {$provider_name} approves them, or the claim may not be valid. Then call us on {$phone_free} to book your vehicle in."],
     ['num' => '02', 'title' => 'Diagnosis', 'text' => "We inspect the vehicle and confirm the fault. Our lead diagnostician Raj verifies the issue before any parts are ordered or replaced."],
     ['num' => '03', 'title' => 'Authorisation', 'text' => "We contact {$provider_name} directly. We provide the diagnosis, estimate, and any supporting information required. We keep you updated while we wait for their authorisation."],
     ['num' => '04', 'title' => 'Repair & invoice', 'text' => "Once authorised, we carry out the repair and invoice {$provider_name} for all covered amounts. Client contributions are costs not covered under your policy's terms and conditions. We'll explain your excess and any client contributions once the claim is approved and all costs are worked out."],
@@ -162,7 +162,7 @@ foreach ($generic_mbi_keys as $key) {
 if (empty($faqs)) {
     $faqs = [
         ['q' => "Is Tony Allen Auto Service an approved {$provider_name} repairer?", 'a' => "Yes. Tony Allen Auto Service is an approved repairer for {$provider_name} MBI policies. We handle the claim process from diagnosis through to invoice. You pay the excess and any client contributions, and {$provider_name} pays the approved amount directly to us. Client contributions are costs not covered under your policy's terms and conditions. We'll explain them once the claim is approved and all costs are worked out. We are at 139 Cavendish Drive, Manukau."],
-        ['q' => "What do I do if my car breaks down and I have {$provider_name}?", 'a' => "Call {$phone_free} before authorising any repairs. {$provider_name} must authorise the work before it begins. Bring your vehicle to 139 Cavendish Drive, Manukau."],
+        ['q' => "What do I do if my car breaks down and I have {$provider_name}?", 'a' => "Contact {$provider_name} first" . ($claims_phone ? " on {$claims_phone}" : '') . " and don't authorise any repairs until they approve the work. Then call us on {$phone_free} and bring your vehicle to 139 Cavendish Drive, Manukau."],
         ['q' => 'What is Mechanical Breakdown Insurance?', 'a' => 'MBI covers the cost of repairing or replacing mechanical and electrical components that fail due to sudden or unforeseen breakdown. It fills the gap left by standard car insurance.'],
         ['q' => "Does regular servicing at TAAS keep my {$provider_name} policy valid?", 'a' => "Yes. Tony Allen Auto Service is MTA Assured, which satisfies the servicing requirements of {$provider_name} and all other MBI providers we work with. Keep all service invoices."],
         ['q' => 'What is not covered by MBI?', 'a' => 'Common exclusions include routine maintenance, wear and tear, pre-existing faults, accident damage, modifications from factory specification, and failures from neglect or improper maintenance.'],
@@ -498,7 +498,7 @@ if ($_logo_id) {
         <div class="mp-hero__card-title">How It Works</div>
         <div class="mp-card-row">
           <div class="mp-card-tick">1</div>
-          <div class="mp-card-text"><strong>Call us first</strong>Authorisation needed before repairs begin</div>
+          <div class="mp-card-text"><strong>Contact <?php echo esc_html($provider_name); ?> first</strong>They approve the claim before repairs begin</div>
         </div>
         <div class="mp-card-row">
           <div class="mp-card-tick">2</div>
