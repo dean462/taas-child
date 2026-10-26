@@ -719,3 +719,23 @@ add_action('init', function () {
         try { (new \CF\WordPress\Hooks())->purgeCacheEverything(); } catch (\Throwable $e) {}
     }
 }, 20);
+
+// Clear page caches when page fields change (e.g. descriptions, FAQs, taglines
+// written through the WordPress connector). Those edits don't trigger the
+// normal "post updated" purge, so cached pages kept the old text for hours.
+// Runs once at the end of the request, however many fields changed.
+function taas_flag_cache_clear($meta_id, $post_id, $meta_key) {
+    if (strpos((string) $meta_key, '_edit_') === 0) return;
+    if (get_post_status($post_id) !== 'publish') return;
+    $GLOBALS['taas_clear_cache_posts'][$post_id] = true;
+}
+add_action('added_post_meta', 'taas_flag_cache_clear', 10, 3);
+add_action('updated_post_meta', 'taas_flag_cache_clear', 10, 3);
+add_action('deleted_post_meta', function ($ids, $post_id, $meta_key) { taas_flag_cache_clear(0, $post_id, $meta_key); }, 10, 3);
+add_action('shutdown', function () {
+    if (empty($GLOBALS['taas_clear_cache_posts'])) return;
+    do_action('breeze_clear_all_cache');
+    if (class_exists('\CF\WordPress\Hooks')) {
+        try { (new \CF\WordPress\Hooks())->purgeCacheEverything(); } catch (\Throwable $e) {}
+    }
+});
