@@ -25,7 +25,7 @@ define('TAAS_CUSTOMERS',      '10,000+');
 define('TAAS_DIVISIONS',      'Tony Allen Auto Service, Manukau Brake & Clutch, TAAS Tyre & WOF Centre, TAAS Auto Electrical & Air Conditioning, TAAS European, TAAS Fleet, Manukau Batteries');
 define('TAAS_EURO_BRANDS',    'Audi, BMW, Volkswagen, Skoda, Mercedes-Benz, Land Rover, Range Rover & more');
 define('TAAS_DIVISION_COUNT', '7');
-define('TAAS_TEAM_COUNT',     '13');   // people on the About team page — update when staff change
+define('TAAS_TEAM_COUNT',     '12');   // people on the About team page — update when staff change
 define('TAAS_FINANCE_LIST',   'Afterpay, Q Card, GEM, Aotea Finance');
 define('TAAS_MBI_LIST',       'Autosure, Assurant, Provident, Janssen, Autolife');
 

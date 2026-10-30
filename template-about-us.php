@@ -472,7 +472,7 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
           <div class="au-stat__label">Years trading in South Auckland</div>
         </div>
         <div class="au-stat">
-          <div class="au-stat__num"><?php echo esc_html(defined('TAAS_TEAM_COUNT') ? TAAS_TEAM_COUNT : '13'); ?></div>
+          <div class="au-stat__num"><?php echo esc_html(defined('TAAS_TEAM_COUNT') ? TAAS_TEAM_COUNT : '12'); ?></div>
           <div class="au-stat__label">Team members across <?php echo esc_html(defined('TAAS_DIVISION_COUNT') ? TAAS_DIVISION_COUNT : '7'); ?> divisions</div>
         </div>
         <div class="au-stat">
@@ -655,7 +655,6 @@ echo '<script type="application/ld+json">' . wp_json_encode($schema_faq_page, JS
         ['name'=>'Tanzeel',          'role'=>'Workshop Foreman',                      'bio'=>'Keeps the workshop floor running efficiently. Coordinates workflow and holds the standard on job card completion and quality of work. NZTA WOF authority holder.'],
         ['name'=>'Raj',              'role'=>'Lead Diagnostics &amp; Auto Electrical','bio'=>'TAAS diagnostics and auto electrical specialist. Fault diagnosis, electrical systems, alternators, wiring. Fault confirmed before any parts are replaced. NZTA WOF authority holder.'],
         ['name'=>'Hayden',           'role'=>'Technician',                  'bio'=>'Four-year apprenticeship completed. Broad mechanical skill range across servicing, brakes, and general repairs. Also looks after our tyre shop.'],
-        ['name'=>'Mana',             'role'=>'WOF Technician',                        'bio'=>'Carries out most of our WOF inspections as an NZTA WOF authority holder. Works through each check on the WOF checklist and flags anything that needs attention. Also helps with general servicing in the workshop.'],
         ['name'=>'Kiritnesh',        'role'=>'Technician & Auto Electrician',         'bio'=>'Technician and auto electrician, working on electrical faults alongside Raj as well as general servicing and our tyre shop. A reliable part of the workshop team day to day.'],
         ['name'=>'Lushen',           'role'=>'Technician',                            'bio'=>'Experienced technician originally from South Africa, with a strong background in European vehicles. A strong addition to TAAS European, as well as general servicing and repairs.'],
         ['name'=>'Tom',              'role'=>'Technician',                            'bio'=>'Seasoned technician with many years on the tools and NZTA WOF authority. Takes on the more involved mechanical jobs and brings a calm, experienced head to the workshop.'],
